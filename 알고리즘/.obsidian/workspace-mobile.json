@@ -1,0 +1,173 @@
+{
+  "main": {
+    "id": "3269985e3b94ce30",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa607f114b4c32f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8a00b67935c24033",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "인스턴스(instance).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "868fffcebdb91f30",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "974bac98f10d697d",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "38b8a36c0764a2e2",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "9933991a0a03188b",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "c9a36fa0bc1011c5",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "884998cd69335e89",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "875390eca95d0725",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "인스턴스(instance).md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "2aeccb89ba6ea0df",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "인스턴스(instance).md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "731814da9abb7015",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "인스턴스(instance).md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "8a00b67935c24033",
+  "lastOpenFiles": [
+    "클래스(class).md",
+    "매소드(Method).md",
+    "객체(Object).md",
+    "self.md",
+    "이진탐색트리(Binary Search Tree).md",
+    "재귀함수(Recursive Function).md",
+    "인접 리스트(adjacency list).md",
+    "image/Pasted image 20230919232604.png",
+    "DFS(Depth-First Search).md",
+    "인접 행렬(Adjacency Matrix).md",
+    "image/Pasted image 20230919202551.png",
+    "image/Pasted image 20230919231718.png",
+    "유방향 그래프(Digraph(Directed graph).md",
+    "image/Pasted image 20230919222358.png",
+    "get.md",
+    "image/Pasted image 20230919222339.png",
+    "image/Pasted image 20230919232038.png",
+    "입력.md",
+    "무방향 그래프(Undirected graph).md",
+    "BFS(Breadth-First Search).md",
+    "DP(Dynamic Programming).md",
+    "image/Pasted image 20230919201736.png",
+    "DAG(Directed Acyclic Graph).md",
+    "set.md",
+    "이진탐색트리의 삽입(BST-insertion).md",
+    "메모이제이션(Memoization).md",
+    "__init__.md",
+    "In-place 정렬.md",
+    "그래프(Graphs).md",
+    "위상정렬(Topological Sort).md",
+    "image/Pasted image 20230919192632.png",
+    "image/Pasted image 20230919185242.png",
+    "item().md",
+    "인스턴스(instance).md",
+    "exclusive.md",
+    "image/Pasted image 20230919184743.png"
+  ]
+}

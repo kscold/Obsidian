@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "ec7dd9a43e6e3cca",
+    "type": "split",
+    "children": [
+      {
+        "id": "3beb8bbea6017154",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7b34cbe4370cd34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "파이썬 문법/매개변수.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8eeb510dfa1c3244",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "다익스트라(dijkstra).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "91532e1b074a4a7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "이진트리(binary tree).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "666bc0593cca889a",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e9966a2632dfc1d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5b3465b6cba331e2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c0695b4cd4b9f8a6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "56f0c00a4523e806",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cb0fd22b1829d7b4",
+    "type": "split",
+    "children": [
+      {
+        "id": "a71b7095be7a9ae1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a2f66acbc124faf0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "이진트리(binary tree).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fdd197e687818e53",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "이진트리(binary tree).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "45c427b08e893611",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9ccb76267195038f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "이진트리(binary tree).md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "91532e1b074a4a7f",
+  "lastOpenFiles": [
+    "이진탐색트리의 삭제(BST-deletion).md",
+    "완전 이진 트리(Complete Binary Tree).md",
+    "다익스트라(dijkstra).md",
+    "최단 거리 알고리즘(Graph Shortest path).md",
+    "가중치 그래프(weighted graph).md",
+    "인접 리스트(adjacency list).md",
+    "그래프(Graphs).md",
+    "인접 행렬(Adjacency Matrix).md",
+    "힙 정렬(Heap Sort).md",
+    "유방향 그래프(Digraph(Directed graph).md",
+    "무방향 그래프(Undirected graph).md",
+    "In-place 정렬.md",
+    "O(logn).md",
+    "입력.md",
+    "이진트리(binary tree).md",
+    "이진탐색트리의 삽입(BST-insertion).md",
+    "DP(Dynamic Programming).md",
+    "DAG(Directed Acyclic Graph).md",
+    "BFS(Breadth-First Search).md",
+    "후위 순회(post-order traverse).md",
+    "중위 순회(in-order traverse).md",
+    "순차탐색(sequential search).md",
+    "삽입정렬(Insertion Sort).md",
+    "버킷정렬(Bin 혹은 Counting)(Bucket Sort).md",
+    "재귀함수(Recursive Function).md",
+    "파이썬 문법/매개변수.md",
+    "파이썬 문법",
+    "image/Pasted image 20231009174254.png",
+    "image/Pasted image 20230919231718.png",
+    "image/Pasted image 20230919232604.png",
+    "image/Pasted image 20230919232038.png",
+    "Pasted image 20230919231439.png",
+    "image/Pasted image 20230919192632.png",
+    "image/Pasted image 20230919222358.png",
+    "image/Pasted image 20230919222339.png",
+    "image/Pasted image 20230919202551.png",
+    "image/Pasted image 20230919201736.png",
+    "image"
+  ]
+}

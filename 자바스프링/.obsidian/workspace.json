@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "16e86aa14f3ada93",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a056ee0cbe12cb3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4a0acd4a4bdca3fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "자바/추상 클래스(Abstract Class).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4d3f6de8c7fea7d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "자바/super.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ac04a894b639efec",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "14e5e9b3a58d9471",
+    "type": "split",
+    "children": [
+      {
+        "id": "806c813cde3e8f87",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc65f794136683d2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "11933cf121731d8b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3b028e36612f48a5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8772200791b39149",
+    "type": "split",
+    "children": [
+      {
+        "id": "00d3a504b2b22dd1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7444b7642164e5be",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "자바/추상 클래스(Abstract Class).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9a3b959305cd4dfe",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "자바/추상 클래스(Abstract Class).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7eb5c01b7986a90a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e3824bbbdc8b43a1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "자바/추상 클래스(Abstract Class).md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "ac04a894b639efec",
+  "lastOpenFiles": [
+    "자바/추상 클래스(Abstract Class).md",
+    "자바/추상 메소드(Abstract Method).md",
+    "자바/super.md",
+    "자바/인터페이스(Interface).md",
+    "자바/접근제어자.md",
+    "자바/캡슐화(encapsulation).md",
+    "자바/public.md",
+    "자바/메소드(Method).md",
+    "자바/private.md",
+    "자바/Map.md",
+    "자바/HashMap.md",
+    "자바/생성자(constructor).md",
+    "스프링/인텔리제이 단축키.md",
+    "command + N 제네레이터.md",
+    "자바/클래스 변수.md",
+    "자바/인스턴스(Instance).md",
+    "자바/부모 클래스.md",
+    "자바/자식 클래스.md",
+    "자바/오버라이딩(Overriding).md",
+    "자바/@Override.md",
+    "자바/변수(variable).md",
+    "자바/배열(Array).md",
+    "자바/this.md",
+    "자바/어노테이션(Annotation).md",
+    "image/Pasted image 20231012205605.png",
+    "image/Pasted image 20231012205519.png",
+    "자바/클래스(Class).md",
+    "스프링/객체(Object).md",
+    "image/Pasted image 20231005111135.png",
+    "image/Pasted image 20231012133632.png",
+    "image/Pasted image 20231012133645.png",
+    "image/Pasted image 20231012172903.png",
+    "자바",
+    "image",
+    "스프링/Maven",
+    "무제 파일.canvas",
+    "노드(node/node.js",
+    "노드(node",
+    "스프링 수업",
+    "무제 폴더/무제 폴더",
+    "스프링"
+  ]
+}
