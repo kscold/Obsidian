@@ -8,31 +8,38 @@
         "type": "tabs",
         "children": [
           {
-            "id": "97cea9f7796c1f5e",
+            "id": "393d0f56955e9c40",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "프로퍼티(Property).md",
+                "file": "didSet, willSet.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4404fbb209a5134f",
+            "id": "a1f08fec560222b7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "메소드(method).md",
+                "file": "타입 프로퍼티(Type Properties).md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "9e4dc090f3b90d52",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "메소드(method).md",
+                "file": "didSet, willSet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "메소드(method).md",
+                "file": "didSet, willSet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "메소드(method).md"
+                "file": "didSet, willSet.md"
               }
             }
           }
@@ -159,34 +166,34 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "4404fbb209a5134f",
+  "active": "393d0f56955e9c40",
   "lastOpenFiles": [
-    "키 경로(key path).md",
     "프로퍼티(Property).md",
-    "함수(function).md",
-    "인스턴스(instance).md",
+    "didSet, willSet.md",
+    "get, set.md",
+    "접근제한자.md",
+    "타입 프로퍼티(Type Properties).md",
+    "set.md",
+    "get.md",
+    "저장 프로퍼티(Stored Properties).md",
+    "딕셔너리.md",
+    "기본 문법 및 주요함수.md",
     "구조체(struct).md",
-    "배열(Array).md",
-    "튜플.md",
-    "자료형.md",
-    "메소드(method).md",
-    "typealias.md",
-    "변수(variable).md",
-    "명명법(naming).md",
-    "while.md",
-    "for.md",
-    "switch.md",
-    "if.md",
-    "옵셔널(Optional).md",
-    "memverwise.md",
-    "클래스(class).md",
     "소멸자(deinitailizer).md",
     "생성자(initailizer).md",
-    "기본 문법 및 주요함수.md",
-    "문자열 보간법(String Interpolation).md",
-    "집합.md",
-    "매개변수(parameter).md",
-    "딕셔너리.md",
+    "열거형(enum).md",
+    "memberwise.md",
+    "재정의(override).md",
+    "하위클래스(SubClass).md",
+    "부모클래스(Super Class).md",
+    "self(인스턴스 자신).md",
+    "프로퍼티 감시자(Property Observers).md",
+    "연산 프로퍼티(Computed Properties).md",
+    "지연 저장 프로퍼티(Lazy Stroed Properties).md",
+    "Self(타입(클래스, 구조체) 자신).md",
+    "mutaing.md",
+    "타입 메서드(type method).md",
+    "메소드(method).md",
     "image"
   ]
 }
