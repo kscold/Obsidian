@@ -1,6 +1,9 @@
 
 
-위상정렬(topological sort) 및 최장 경로 알고리즘(Graph Longest path)으로 사용되며
+- 위상정렬(topological sort)은 일차원 배열의 관계로 평탄화 하는데 사용한다.
+
+
+최장 경로 알고리즘(Graph Longest path)으로 사용되며
 
 주로 선수과목이 필요한 문제와 같은 코딩테스트 문제에 많이 나옴
 

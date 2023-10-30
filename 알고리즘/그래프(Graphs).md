@@ -23,8 +23,9 @@ graph는 vertice들 간 연결을 형성하는 **vertices**(정점, 꼭짓점,
 
 
 
-파이썬에서는 그래프를 구현하는 방법에는 [[인접 행렬(Adjacency Matrix)]]와 [[인접 리스트(adjacency list)]] 인접 주로  이 2가지 종류를 사용한다.
+그래프를 구현하는 방법에는 [[에지 리스트(edge list)]] [[인접 행렬(Adjacency Matrix)]]와 [[인접 리스트(adjacency list)]] 인접 주로  이 3가지 종류를 사용한다.
 
+- 에지 리스트(edge list): 간선(에지, edge)를 중심으로 그래프의 연결 관계를  표현하는 방식
 - 인접행렬(Adjacency Matrix): 2차원 배열로 그래프의 연결 관계를 표현하는 방식
 - 인접리스트(Adjacency List): 리스트로 그래프의 연결 관계를 표현하는 방식
 
