@@ -185,14 +185,17 @@
   },
   "active": "e1db0a1380d0ee73",
   "lastOpenFiles": [
+    "인접 리스트(adjacency list).md",
+    "에지 리스트(edge list).md",
+    "유방향 그래프(Digraph(Directed graph).md",
+    "DFS(Depth-First Search).md",
+    "그래프(Graphs).md",
+    "유니온 파인드(union find).md",
+    "image/Pasted image 20231030195946.png",
     "image/Pasted image 20231030194326.png",
     "image/Pasted image 20231030194032.png",
     "위상정렬(Topological Sort).md",
-    "유니온 파인드(union find).md",
-    "인접 리스트(adjacency list).md",
-    "그래프(Graphs).md",
     "인접 행렬(Adjacency Matrix).md",
-    "에지 리스트(edge list).md",
     "가중치 그래프(weighted graph).md",
     "무방향 그래프(Undirected graph).md",
     "image/Pasted image 20231030183740.png",
@@ -203,7 +206,6 @@
     "다익스트라(dijkstra).md",
     "최단 거리 알고리즘(Graph Shortest path).md",
     "힙 정렬(Heap Sort).md",
-    "유방향 그래프(Digraph(Directed graph).md",
     "In-place 정렬.md",
     "O(logn).md",
     "입력.md",
@@ -220,8 +222,6 @@
     "image/Pasted image 20230919232604.png",
     "image/Pasted image 20230919232038.png",
     "Pasted image 20230919231439.png",
-    "image/Pasted image 20230919192632.png",
-    "image/Pasted image 20230919222358.png",
     "image"
   ]
 }
