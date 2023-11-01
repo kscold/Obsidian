@@ -1,6 +1,6 @@
 
 @ModelAttribute [[어노테이션(Annotation)]]
-[[@Controller]]의 [[메소드(Method)]]는 Model이라는 타입의 [[객체(Object)]]를 파라미터로 받을 수 있다.
+[[Controller]]의 [[메소드(Method)]]는 Model이라는 타입의 [[객체(Object)]]를 파라미터로 받을 수 있다.
 
 @ModelAttribute는 Spring MVC에서 Controller의 메소드 파라미터가 자동으로 모델에 추가되도록 하는 어노테이션
 
