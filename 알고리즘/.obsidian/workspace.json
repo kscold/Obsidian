@@ -49,14 +49,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "유니온 파인드(union find).md",
+                "file": "메모이제이션(Memoization).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5d03e2c88ab240f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "백 트래킹(Back Tracking).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "52136bd1d6f075ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "상태 공간 트리(State Space Tree).md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "유니온 파인드(union find).md",
+                "file": "백 트래킹(Back Tracking).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "유니온 파인드(union find).md",
+                "file": "백 트래킹(Back Tracking).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "유니온 파인드(union find).md"
+                "file": "백 트래킹(Back Tracking).md"
               }
             }
           }
@@ -183,14 +207,17 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "e1db0a1380d0ee73",
+  "active": "5d03e2c88ab240f3",
   "lastOpenFiles": [
+    "상태 공간 트리(State Space Tree).md",
+    "백 트래킹(Back Tracking).md",
+    "메모이제이션(Memoization).md",
+    "유니온 파인드(union find).md",
     "인접 리스트(adjacency list).md",
     "에지 리스트(edge list).md",
     "유방향 그래프(Digraph(Directed graph).md",
     "DFS(Depth-First Search).md",
     "그래프(Graphs).md",
-    "유니온 파인드(union find).md",
     "image/Pasted image 20231030195946.png",
     "image/Pasted image 20231030194326.png",
     "image/Pasted image 20231030194032.png",
@@ -213,9 +240,6 @@
     "DP(Dynamic Programming).md",
     "DAG(Directed Acyclic Graph).md",
     "BFS(Breadth-First Search).md",
-    "후위 순회(post-order traverse).md",
-    "중위 순회(in-order traverse).md",
-    "순차탐색(sequential search).md",
     "파이썬 문법",
     "image/Pasted image 20231009174254.png",
     "image/Pasted image 20230919231718.png",
