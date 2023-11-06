@@ -158,6 +158,7 @@
   "lastOpenFiles": [
     "스프링/내장객체.md",
     "스크립트릿.md",
+    "자바/생성자(constructor).md",
     "스프링/JSP.md",
     "image/Pasted image 20231101232952.png",
     "image/Pasted image 20231101232823.png",
@@ -186,7 +187,6 @@
     "자바/private.md",
     "자바/Map.md",
     "자바/HashMap.md",
-    "자바/생성자(constructor).md",
     "스프링/인텔리제이 단축키.md",
     "command + N 제네레이터.md",
     "자바/클래스 변수.md",
