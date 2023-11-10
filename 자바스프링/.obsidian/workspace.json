@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "스크립트릿.md",
+                "file": "스프링/인텔리제이 단축키.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "스크립트릿.md",
+                "file": "스프링/인텔리제이 단축키.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "스크립트릿.md",
+                "file": "스프링/인텔리제이 단축키.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "스크립트릿.md"
+                "file": "스프링/인텔리제이 단축키.md"
               }
             }
           }
@@ -156,8 +156,9 @@
   },
   "active": "ac04a894b639efec",
   "lastOpenFiles": [
-    "스프링/내장객체.md",
+    "스프링/Maven/이클립스 단축키.md",
     "스크립트릿.md",
+    "스프링/내장객체.md",
     "자바/생성자(constructor).md",
     "스프링/JSP.md",
     "image/Pasted image 20231101232952.png",
@@ -191,7 +192,6 @@
     "command + N 제네레이터.md",
     "자바/클래스 변수.md",
     "자바/인스턴스(Instance).md",
-    "자바/부모 클래스.md",
     "자바",
     "image",
     "스프링/Maven",
