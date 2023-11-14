@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "스프링/인텔리제이 단축키.md",
+                "file": "스프링/@RequestMapping.md",
                 "mode": "source",
                 "source": false
               }
@@ -27,7 +27,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "스프링/인텔리제이 단축키.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "스프링/인텔리제이 단축키.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "스프링/인텔리제이 단축키.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -154,8 +151,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "ac04a894b639efec",
+  "active": "eb4305584abe1c8c",
   "lastOpenFiles": [
+    "스프링/@RequestMapping.md",
+    "@PostMapping.md",
+    "스프링/@GetMapping.md",
+    "스프링/인텔리제이 단축키.md",
+    "스프링/Controller.md",
     "스프링/Maven/이클립스 단축키.md",
     "스크립트릿.md",
     "스프링/내장객체.md",
@@ -174,7 +176,6 @@
     "image/Pasted image 20231101230754.png",
     "스프링/MVC.md",
     "image/Pasted image 20231101230223.png",
-    "스프링/Controller.md",
     "스프링/view.md",
     "스프링/Model.md",
     "자바/추상 클래스(Abstract Class).md",
@@ -188,10 +189,6 @@
     "자바/private.md",
     "자바/Map.md",
     "자바/HashMap.md",
-    "스프링/인텔리제이 단축키.md",
-    "command + N 제네레이터.md",
-    "자바/클래스 변수.md",
-    "자바/인스턴스(Instance).md",
     "자바",
     "image",
     "스프링/Maven",

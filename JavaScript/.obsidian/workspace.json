@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "프로토타입(Prototype).md",
+                "file": "React/useEffect.md",
                 "mode": "source",
                 "source": false
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "프로토타입(Prototype).md",
+                "file": "React/useEffect.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "프로토타입(Prototype).md",
+                "file": "React/useEffect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "프로토타입(Prototype).md"
+                "file": "React/useEffect.md"
               }
             }
           }
@@ -217,8 +217,10 @@
   },
   "active": "c6e8e7717f85059b",
   "lastOpenFiles": [
-    "new.md",
     "프로토타입(Prototype).md",
+    "React/useEffect.md",
+    "React",
+    "new.md",
     "생성자(Constructor).md",
     "image/Pasted image 20231015173220.png",
     "Parsing.md",
@@ -244,7 +246,6 @@
     "splice().md",
     "find().md",
     "JWT.md",
-    "node.js/ctx.md",
     "node.js/MongoDB",
     "node.js"
   ]
