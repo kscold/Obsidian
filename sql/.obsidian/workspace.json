@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "6149bb12f0d465d6",
+    "type": "split",
+    "children": [
+      {
+        "id": "0418a0584d2adb65",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0b84fc3a9d6b84a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "d948ec84e8b5d7bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SHOW TABLES.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e44651002bcfca7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SELECT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "50936f66ded7cad7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WHERE.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "60baccb277da181d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GROUP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "de354f61a10c1070",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CREATE TABLE.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8c876fd66426283e",
+    "type": "split",
+    "children": [
+      {
+        "id": "b69f223df43d40f6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "249a37f4d770cdf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7076ceefc910d389",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a86255a418233186",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0e8a2e4347c92489",
+    "type": "split",
+    "children": [
+      {
+        "id": "d092d89f22e653f1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "958c72da8018dc25",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CREATE TABLE.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "48f27fdfe4ff1471",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CREATE TABLE.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f81c301ff24983cc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8728036c368b84d4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CREATE TABLE.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "de354f61a10c1070",
+  "lastOpenFiles": [
+    "image/Pasted image 20231115000103.png",
+    "image/Pasted image 20231115000101.png",
+    "image",
+    "SHOW TABLES.md",
+    "CREATE TABLE.md",
+    "GROUP.md",
+    "SELECT.md",
+    "WHERE.md"
+  ]
+}
