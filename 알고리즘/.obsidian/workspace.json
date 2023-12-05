@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "이진탐색트리의 삭제(BST-deletion).md",
+                "file": "파이썬 문법/join.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "이진탐색트리의 삭제(BST-deletion).md",
+                "file": "파이썬 문법/join.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "이진탐색트리의 삭제(BST-deletion).md",
+                "file": "파이썬 문법/join.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "이진탐색트리의 삭제(BST-deletion).md"
+                "file": "파이썬 문법/join.md"
               }
             }
           }
@@ -233,8 +233,9 @@
   },
   "active": "a803db4e3b3b4326",
   "lastOpenFiles": [
-    "이진탐색트리의 탐색(BST-find ).md",
     "이진탐색트리의 삭제(BST-deletion).md",
+    "파이썬 문법/join.md",
+    "이진탐색트리의 탐색(BST-find ).md",
     "이진탐색트리의 삽입(BST-insertion).md",
     "트리(Tree).md",
     "그래프(Graphs).md",
@@ -264,7 +265,6 @@
     "힙 정렬(Heap Sort).md",
     "In-place 정렬.md",
     "O(logn).md",
-    "입력.md",
     "파이썬 문법",
     "image/Pasted image 20231009174254.png",
     "image/Pasted image 20230919231718.png",
