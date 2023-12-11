@@ -8,62 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e0b84fc3a9d6b84a",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "d948ec84e8b5d7bc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SHOW TABLES.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e44651002bcfca7c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SELECT.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "50936f66ded7cad7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WHERE.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "60baccb277da181d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "GROUP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "de354f61a10c1070",
             "type": "leaf",
             "state": {
@@ -74,9 +18,32 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "25bc81c8c3f2c28d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NOW().md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3782cc4f145cdfaa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SET.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -205,13 +172,16 @@
   },
   "active": "de354f61a10c1070",
   "lastOpenFiles": [
+    "GROUP.md",
+    "WHERE.md",
+    "SELECT.md",
+    "SHOW TABLES.md",
+    "SET.md",
+    "?(Placeholder).md",
+    "NOW().md",
+    "CREATE TABLE.md",
     "image/Pasted image 20231115000103.png",
     "image/Pasted image 20231115000101.png",
-    "image",
-    "SHOW TABLES.md",
-    "CREATE TABLE.md",
-    "GROUP.md",
-    "SELECT.md",
-    "WHERE.md"
+    "image"
   ]
 }
