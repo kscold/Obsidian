@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "메소드(Method).md",
+                "file": "Virtual DOM.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/useEffect.md",
+                "file": "DOM(Document Object Model).md",
                 "mode": "source",
                 "source": false
               }
@@ -88,7 +88,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/useEffect.md",
+                "file": "Virtual DOM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/useEffect.md",
+                "file": "Virtual DOM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/useEffect.md"
+                "file": "Virtual DOM.md"
               }
             }
           }
@@ -215,17 +215,20 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "c6e8e7717f85059b",
+  "active": "ebfa3b8488bfb37f",
   "lastOpenFiles": [
-    "프로토타입(Prototype).md",
+    "image/Pasted image 20231218213654.png",
+    "DOM(Document Object Model).md",
+    "Virtual DOM.md",
     "React/useEffect.md",
+    "메소드(Method).md",
+    "프로토타입(Prototype).md",
     "React",
     "new.md",
     "생성자(Constructor).md",
     "image/Pasted image 20231015173220.png",
     "Parsing.md",
     "인스턴스(Instance).md",
-    "메소드(Method).md",
     "속성(Property).md",
     "객체(Object).md",
     "비동기.md",
@@ -243,9 +246,6 @@
     "node.js/koa-router.md",
     "image",
     "node.js/연결 상태.md",
-    "splice().md",
-    "find().md",
-    "JWT.md",
     "node.js/MongoDB",
     "node.js"
   ]

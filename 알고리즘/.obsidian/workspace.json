@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "파이썬 스니펫/이차원 리스트의 순회.md",
+                "file": "파이썬 문법/sorted.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "파이썬 스니펫/이차원 리스트의 순회.md",
+                "file": "파이썬 문법/sorted.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "파이썬 스니펫/이차원 리스트의 순회.md",
+                "file": "파이썬 문법/sorted.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "파이썬 스니펫/이차원 리스트의 순회.md"
+                "file": "파이썬 문법/sorted.md"
               }
             }
           }
@@ -233,8 +233,10 @@
   },
   "active": "52136bd1d6f075ad",
   "lastOpenFiles": [
-    "파이썬 문법/heapq.md",
+    "파이썬 문법/lambda.md",
+    "파이썬 문법/sorted.md",
     "파이썬 스니펫/이차원 리스트의 순회.md",
+    "파이썬 문법/heapq.md",
     "파이썬 스니펫",
     "상태 공간 트리(State Space Tree).md",
     "파이썬 문법/join.md",
@@ -264,8 +266,6 @@
     "이진트리(binary tree).md",
     "완전 이진 트리(Complete Binary Tree).md",
     "다익스트라(dijkstra).md",
-    "최단 거리 알고리즘(Graph Shortest path).md",
-    "힙 정렬(Heap Sort).md",
     "파이썬 문법",
     "image/Pasted image 20231009174254.png",
     "image/Pasted image 20230919231718.png",
