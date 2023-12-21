@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "css/상대단위.md",
+                "file": "css/line-height.md",
                 "mode": "source",
                 "source": false
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "css/상대단위.md",
+                "file": "css/line-height.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "css/상대단위.md",
+                "file": "css/line-height.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "css/상대단위.md"
+                "file": "css/line-height.md"
               }
             }
           }
@@ -229,8 +229,18 @@
   },
   "active": "f9c29c17a9189ed3",
   "lastOpenFiles": [
-    "css/절대단위.md",
+    "css/position.md",
+    "css/line-height.md",
+    "css/box-sizing.md",
+    "css/마크업.md",
+    "image/Pasted image 20231221212146.png",
+    "css/background-image.md",
+    "css/linear-gradient().md",
+    "css/-webkit-text-stroke.md",
+    "css/리액트 폰트 적용.md",
+    "css/vh, vw(Vertical Height, Vertical Width).md",
     "css/상대단위.md",
+    "css/절대단위.md",
     "React/클래스형 컴포넌트.md",
     "css",
     "super.md",
@@ -247,18 +257,9 @@
     "React/React.StrictMode.md",
     "React/JSX.md",
     "React/웹팩(webpack).md",
-    "React/import.md",
     "image/Pasted image 20231218213654.png",
-    "DOM(Document Object Model).md",
-    "React/useEffect.md",
-    "메소드(Method).md",
     "React",
-    "new.md",
-    "생성자(Constructor).md",
     "image/Pasted image 20231015173220.png",
-    "Parsing.md",
-    "인스턴스(Instance).md",
-    "속성(Property).md",
     "image",
     "node.js/MongoDB",
     "node.js"
