@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/클래스형 컴포넌트.md",
+                "file": "css/상대단위.md",
                 "mode": "source",
                 "source": false
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/클래스형 컴포넌트.md",
+                "file": "css/상대단위.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/클래스형 컴포넌트.md",
+                "file": "css/상대단위.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/클래스형 컴포넌트.md"
+                "file": "css/상대단위.md"
               }
             }
           }
@@ -229,9 +229,12 @@
   },
   "active": "f9c29c17a9189ed3",
   "lastOpenFiles": [
+    "css/절대단위.md",
+    "css/상대단위.md",
+    "React/클래스형 컴포넌트.md",
+    "css",
     "super.md",
     "프로토타입(Prototype).md",
-    "React/클래스형 컴포넌트.md",
     "React/props.md",
     "()=>{}(Arriw Funtion).md",
     "React/undefined.md",
@@ -256,8 +259,6 @@
     "Parsing.md",
     "인스턴스(Instance).md",
     "속성(Property).md",
-    "객체(Object).md",
-    "비동기.md",
     "image",
     "node.js/MongoDB",
     "node.js"
