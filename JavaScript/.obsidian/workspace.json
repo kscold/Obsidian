@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "css/line-height.md",
+                "file": "비동기.md",
                 "mode": "source",
                 "source": false
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "css/line-height.md",
+                "file": "비동기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "css/line-height.md",
+                "file": "비동기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "css/line-height.md"
+                "file": "비동기.md"
               }
             }
           }
@@ -229,8 +229,10 @@
   },
   "active": "f9c29c17a9189ed3",
   "lastOpenFiles": [
-    "css/position.md",
+    "동기.md",
+    "비동기.md",
     "css/line-height.md",
+    "css/position.md",
     "css/box-sizing.md",
     "css/마크업.md",
     "image/Pasted image 20231221212146.png",
@@ -255,8 +257,6 @@
     "React/const.md",
     "React/Virtual DOM.md",
     "React/React.StrictMode.md",
-    "React/JSX.md",
-    "React/웹팩(webpack).md",
     "image/Pasted image 20231218213654.png",
     "React",
     "image/Pasted image 20231015173220.png",
