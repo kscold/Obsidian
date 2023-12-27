@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "비동기.md",
+                "file": "삼항 연산자.md",
                 "mode": "source",
                 "source": false
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "비동기.md",
+                "file": "삼항 연산자.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "비동기.md",
+                "file": "삼항 연산자.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "비동기.md"
+                "file": "삼항 연산자.md"
               }
             }
           }
@@ -229,8 +229,8 @@
   },
   "active": "f9c29c17a9189ed3",
   "lastOpenFiles": [
-    "동기.md",
     "비동기.md",
+    "동기.md",
     "css/line-height.md",
     "css/position.md",
     "css/box-sizing.md",
