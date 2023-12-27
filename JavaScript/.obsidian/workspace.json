@@ -68,16 +68,6 @@
             }
           },
           {
-            "id": "fd01a2e01859cfbb",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.3"
-              }
-            }
-          },
-          {
             "id": "b308484a5a3872a7",
             "type": "leaf",
             "state": {
@@ -110,7 +100,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -237,7 +227,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "fd01a2e01859cfbb",
+  "active": "f9c29c17a9189ed3",
   "lastOpenFiles": [
     "비동기.md",
     "동기.md",

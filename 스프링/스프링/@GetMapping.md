@@ -1,4 +1,3 @@
-
 - [[@RequestMapping]]에서 @RequestMapping(value = "/경로", method = RequestMethod.GET)을 합쳐서 만든 어노테이션
 
 #### 형식
