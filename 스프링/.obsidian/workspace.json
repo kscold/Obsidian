@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "스프링/Gradle/mustache.md",
+                "file": "스프링/Gradle/{{>}}.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "스프링/Gradle/mustache.md",
+                "file": "스프링/Gradle/{{>}}.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "스프링/Gradle/mustache.md",
+                "file": "스프링/Gradle/{{>}}.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "스프링/Gradle/mustache.md"
+                "file": "스프링/Gradle/{{>}}.md"
               }
             }
           }
@@ -156,8 +156,10 @@
   },
   "active": "db45116fa69c2622",
   "lastOpenFiles": [
-    "스프링/Model.md",
+    "스프링/Gradle/{{}}.md",
+    "스프링/Gradle/{{>}}.md",
     "스프링/Gradle/mustache.md",
+    "스프링/Model.md",
     "스프링/@GetMapping.md",
     "스프링/@RequestMapping.md",
     "스프링/Controller.md",
@@ -191,8 +193,6 @@
     "image/Pasted image 20231217204340.png",
     "스프링/내장객체.md",
     "자바/static.md",
-    "자바/메서드(Method).md",
-    "스프링/jdbcTemplate.update.md",
     "스프링/SQL",
     "스프링/Maven/jsp",
     "자바",
