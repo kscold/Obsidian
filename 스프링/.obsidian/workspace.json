@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "자바/형변환.md",
+                "file": "스프링/Gradle/mustache.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "자바/형변환.md",
+                "file": "스프링/Gradle/mustache.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "자바/형변환.md",
+                "file": "스프링/Gradle/mustache.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "자바/형변환.md"
+                "file": "스프링/Gradle/mustache.md"
               }
             }
           }
@@ -156,8 +156,12 @@
   },
   "active": "db45116fa69c2622",
   "lastOpenFiles": [
-    "자바/스코프(Scope).md",
+    "스프링/Gradle/스프링 부트 한글 깨짐.md",
+    "스프링/Gradle/mustache.md",
+    "스프링/템플릿(Template).md",
     "자바/형변환.md",
+    "스프링/Gradle",
+    "자바/스코프(Scope).md",
     "인텔리제이 단축키.md",
     "자바/연산자(Operator).md",
     "Pasted image 2\u001f0231218181253.png.md",
@@ -189,9 +193,6 @@
     "스프링/queryForObject().md",
     "스프링/ResultSet.md",
     "자바/인터페이스(Interface).md",
-    "자바/인스턴스(Instance).md",
-    "스프링/Maven/jsp/EL(Expression Language).md",
-    "자바/부모 클래스.md",
     "스프링/SQL",
     "스프링/Maven/jsp",
     "자바",
@@ -201,7 +202,6 @@
     "노드(node/node.js",
     "노드(node",
     "스프링 수업",
-    "무제 폴더/무제 폴더",
-    "스프링"
+    "무제 폴더/무제 폴더"
   ]
 }
