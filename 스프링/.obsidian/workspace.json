@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "자바/자식 클래스(sub class).md",
+                "file": "스프링/Gradle/@SIf4j.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "자바/자식 클래스(sub class).md",
+                "file": "스프링/Gradle/@SIf4j.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "자바/자식 클래스(sub class).md",
+                "file": "스프링/Gradle/@SIf4j.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "자바/자식 클래스(sub class).md"
+                "file": "스프링/Gradle/@SIf4j.md"
               }
             }
           }
@@ -154,34 +154,34 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "cc65f794136683d2",
+  "active": "28e8821e3d97792c",
   "lastOpenFiles": [
-    "자바/extends.md",
-    "자바/자식 클래스(sub class).md",
-    "자바/상속.md",
-    "자바/부모 클래스(super class).md",
-    "자바/오버로딩(Overloading).md",
+    "스프링/Gradle/롬복(lombok).md",
+    "스프링/Gradle/@SIf4j.md",
+    "스프링/Gradle/로깅(logging).md",
+    "스프링/query().md",
+    "스프링/queryForObject().md",
+    "스프링/save().md",
+    "스프링/Gradle/리파지터리(repository).md",
+    "스프링/Gradle/@ToString.md",
+    "스프링/Gradle/@AllArgsConstructor.md",
+    "자바/상속(Inheritance).md",
     "자바/인터페이스(Interface).md",
+    "자바/implements.md",
+    "자바/오버라이딩(Overriding).md",
+    "스프링/인터페이스(Interface).md",
     "자바/추상 메서드(Abstract Method).md",
-    "스프링/빈(Bean).md",
+    "자바/오버로딩(Overloading).md",
     "스프링/@Autowired.md",
-    "스프링/@Bean.md",
-    "스프링/스프링 컨테이너(Spring Container).md",
-    "스프링/컴포넌트(Component).md",
     "스프링/DI(Dependency Injection).md",
-    "스프링/CrudRepository.md",
-    "스프링/@GeneratedValue.md",
-    "스프링/@Id.md",
-    "스프링/엔티티(entity).md",
-    "스프링/@Entity.md",
-    "스프링/리파지터리(repository).md",
-    "스프링/@Column.md",
-    "스프링/JPA(Java Persistence API).md",
-    "스프링/DTO(Data Transfer Object).md",
-    "스프링/DAO(Data Access Object).md",
-    "스프링/<input>.md",
-    "스프링/toString().md",
-    "스프링/객체(Object).md",
+    "자바/setter.md",
+    "자바/Getter and Setter.md",
+    "자바/생성자(constructor).md",
+    "자바/필드(field).md",
+    "스프링/스프링 컨테이너(Spring Container).md",
+    "자바/자식 클래스(sub class).md",
+    "자바/extends.md",
+    "자바/부모 클래스(super class).md",
     "image/Pasted image 20231228032827.png",
     "스프링/Gradle",
     "image/Pasted image 20231218181253.png",

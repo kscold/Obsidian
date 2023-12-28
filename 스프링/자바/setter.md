@@ -1,0 +1,1 @@
+- [[Getter and Setter]]로 선언된 쓰기 부분인 setter에 해당된다.

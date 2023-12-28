@@ -20,6 +20,30 @@
             }
           },
           {
+            "id": "0535d729c7f6d65a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "레코드(record).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6453b585249f5386",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "INSERT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "25bc81c8c3f2c28d",
             "type": "leaf",
             "state": {
@@ -43,7 +67,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CREATE TABLE.md",
+                "file": "INSERT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CREATE TABLE.md",
+                "file": "INSERT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CREATE TABLE.md"
+                "file": "INSERT.md"
               }
             }
           }
@@ -170,8 +195,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "de354f61a10c1070",
+  "active": "6453b585249f5386",
   "lastOpenFiles": [
+    "레코드(record).md",
+    "INSERT.md",
+    "CREATE TABLE.md",
     "GROUP.md",
     "WHERE.md",
     "SELECT.md",
@@ -179,7 +207,6 @@
     "SET.md",
     "?(Placeholder).md",
     "NOW().md",
-    "CREATE TABLE.md",
     "image/Pasted image 20231115000103.png",
     "image/Pasted image 20231115000101.png",
     "image"

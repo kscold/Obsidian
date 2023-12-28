@@ -1,7 +1,7 @@
 - [[extends]]로 확장된 클래스를 자식 클래스라고 한다.
 
 ```java
-// 부모 클래스 (슈퍼 클래스)
+// 부모 클래스(슈퍼 클래스)
 class Animal {
     String name;
 
@@ -14,7 +14,7 @@ class Animal {
     }
 }
 
-// 자식 클래스 (서브 클래스)
+// 자식 클래스(서브 클래스)
 class Dog extends Animal {
     public Dog(String name) {
         super(name); // 부모 클래스의 생성자 호출
