@@ -1,0 +1,1 @@
+- [[JPA(Java Persistence API)]]에서 제공하는 [[어노테이션(Annotation)]]으로 이 어노테이션이 붙은 클래스를 기반으로 DB에 테이블이 생성된다.

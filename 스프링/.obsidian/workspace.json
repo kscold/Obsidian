@@ -8,19 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "db45116fa69c2622",
+            "id": "28e8821e3d97792c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "스프링/Gradle/{{>}}.md",
+                "file": "자바/자식 클래스(sub class).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "28e8821e3d97792c",
+            "id": "714da1cd7280a7d5",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "스프링/Gradle/{{>}}.md",
+                "file": "자바/자식 클래스(sub class).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "스프링/Gradle/{{>}}.md",
+                "file": "자바/자식 클래스(sub class).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "스프링/Gradle/{{>}}.md"
+                "file": "자바/자식 클래스(sub class).md"
               }
             }
           }
@@ -154,45 +154,45 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "db45116fa69c2622",
+  "active": "cc65f794136683d2",
   "lastOpenFiles": [
-    "스프링/Gradle/{{}}.md",
-    "스프링/Gradle/{{>}}.md",
-    "스프링/Gradle/mustache.md",
-    "스프링/Model.md",
-    "스프링/@GetMapping.md",
-    "스프링/@RequestMapping.md",
-    "스프링/Controller.md",
+    "자바/extends.md",
+    "자바/자식 클래스(sub class).md",
+    "자바/상속.md",
+    "자바/부모 클래스(super class).md",
+    "자바/오버로딩(Overloading).md",
+    "자바/인터페이스(Interface).md",
+    "자바/추상 메서드(Abstract Method).md",
+    "스프링/빈(Bean).md",
+    "스프링/@Autowired.md",
+    "스프링/@Bean.md",
+    "스프링/스프링 컨테이너(Spring Container).md",
+    "스프링/컴포넌트(Component).md",
+    "스프링/DI(Dependency Injection).md",
+    "스프링/CrudRepository.md",
+    "스프링/@GeneratedValue.md",
+    "스프링/@Id.md",
+    "스프링/엔티티(entity).md",
+    "스프링/@Entity.md",
+    "스프링/리파지터리(repository).md",
+    "스프링/@Column.md",
+    "스프링/JPA(Java Persistence API).md",
+    "스프링/DTO(Data Transfer Object).md",
+    "스프링/DAO(Data Access Object).md",
+    "스프링/<input>.md",
+    "스프링/toString().md",
+    "스프링/객체(Object).md",
     "image/Pasted image 20231228032827.png",
-    "스프링/컴포넌트.md",
-    "스프링/패턴.md",
-    "스프링/MVC.md",
-    "스프링/addAttribute.md",
-    "스프링/Gradle/스프링 부트 한글 깨짐.md",
-    "스프링/템플릿(Template).md",
-    "자바/형변환.md",
     "스프링/Gradle",
-    "자바/스코프(Scope).md",
-    "인텔리제이 단축키.md",
-    "자바/연산자(Operator).md",
-    "Pasted image 2\u001f0231218181253.png.md",
     "image/Pasted image 20231218181253.png",
     "image/Pasted image 20231218181153.png",
     "image/Pasted image 20231218180419.png",
-    "자바/변수(Variable).md",
-    "자바/자바(Java).md",
-    "이클립스 단축키.md",
-    "자바/변수.md",
-    "자바/클래스 변수.md",
     "image/Pasted image 20231217213908.png",
-    "자바/패키지(package).md",
     "image/Pasted image 20231217210638.png",
     "image/Pasted image 20231217205658.png",
     "image/Pasted image 20231217205231.png",
     "image/Pasted image 20231217204533.png",
     "image/Pasted image 20231217204340.png",
-    "스프링/내장객체.md",
-    "자바/static.md",
     "스프링/SQL",
     "스프링/Maven/jsp",
     "자바",
