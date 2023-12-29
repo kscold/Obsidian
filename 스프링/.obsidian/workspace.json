@@ -27,7 +27,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "findById().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "findById().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "findById().md"
-              }
+              "state": {}
             }
           }
         ]
@@ -154,10 +151,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "28e8821e3d97792c",
+  "active": "714da1cd7280a7d5",
   "lastOpenFiles": [
-    "스프링/Optional.md",
     "findById().md",
+    "스프링/Optional.md",
     "스프링/Gradle/CrudRepository.md",
     "스프링/@PathVariable.md",
     "스프링/@GetMapping.md",

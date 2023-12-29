@@ -8,99 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "707e61cee33f2b5c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "콜백 함수(callback).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2338bdc2c14ed0cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "메소드(Method).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7d9002419cdcf473",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "비동기.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ebfa3b8488bfb37f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/클래스형 컴포넌트.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f9c29c17a9189ed3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "삼항 연산자.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b308484a5a3872a7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "인스턴스(Instance).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c6e8e7717f85059b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DOM(Document Object Model).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1a0c0c5c4a5d0fda",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {}
             }
+          },
+          {
+            "id": "92410a74e9301faf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "표현식(expression).md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -166,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "삼항 연산자.md",
+                "file": "표현식(expression).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "삼항 연산자.md",
+                "file": "표현식(expression).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "삼항 연산자.md"
+                "file": "표현식(expression).md"
               }
             }
           }
@@ -227,36 +155,36 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f9c29c17a9189ed3",
+  "active": "92410a74e9301faf",
   "lastOpenFiles": [
+    "리터럴(literal).md",
+    "표현식(expression).md",
+    "값(value).md",
+    "변수(Variable).md",
+    "식별자(Identifier).md",
+    "예약어(reserved word).md",
+    "가비지 콜렉터(garbage collector).md",
+    "매니지드 언어(managed language).md",
+    "할당(assignmet).md",
+    "초기화(initialization).md",
+    "상수(constant).md",
+    "const.md",
+    "var.md",
+    "css/linear-gradient().md",
+    "호이스팅(variable hoisting).md",
+    "런타임(runtime).md",
+    "소스코드의 평가 과정.md",
+    "실행 컨텍스트(execution context).md",
+    "React/undefined.md",
+    "키워드(Keyword).md",
+    "Web api.md",
+    "삼항 연산자.md",
     "비동기.md",
     "동기.md",
     "css/line-height.md",
     "css/position.md",
-    "css/box-sizing.md",
-    "css/마크업.md",
     "image/Pasted image 20231221212146.png",
-    "css/background-image.md",
-    "css/linear-gradient().md",
-    "css/-webkit-text-stroke.md",
-    "css/리액트 폰트 적용.md",
-    "css/vh, vw(Vertical Height, Vertical Width).md",
-    "css/상대단위.md",
-    "css/절대단위.md",
-    "React/클래스형 컴포넌트.md",
     "css",
-    "super.md",
-    "프로토타입(Prototype).md",
-    "React/props.md",
-    "()=>{}(Arriw Funtion).md",
-    "React/undefined.md",
-    "React/ReactDom.render.md",
-    "React/조건부 렌더링.md",
-    "삼항 연산자.md",
-    "스코프(Scope).md",
-    "React/const.md",
-    "React/Virtual DOM.md",
-    "React/React.StrictMode.md",
     "image/Pasted image 20231218213654.png",
     "React",
     "image/Pasted image 20231015173220.png",

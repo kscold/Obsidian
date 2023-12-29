@@ -29,29 +29,26 @@ linear-gradient(45deg, red 0 50%, blue 50% 100%);
 ```
 
 
-[`<side-or-corner>`](https://developer.mozilla.org/ko/docs/Web/CSS/gradient/linear-gradient#side-or-corner)
-
+`<side-or-corner>`
 그라데이션의 시작 지점의 위치. 이 값이 지정될 때에는 `to`라는 값과 함께 최대 2개의 키워드를 가질 수 있습니다. 한 경우는 `left`와 `right` 값을 통해 수평선을 의미하는 방식이고, 다른 경우는 `top`과 `bottom`을 이용해 수직선을 의미하는 방식입니다. 각 키워드의 순서는 중요하지 않습니다. 만약 이 값이 명시되지 않으면, 기본적으로 `to bottom`이 지정됩니다.
 
 `to top`, `to bottom`, `to left`, 그리고 `to right`은 각각 각도 `0deg`, `180deg`, `270deg`, `90deg`과 동일합니다. 다른 값의 경우는 각도 그 자체로 해석됩니다.
 
-[`<angle>`](https://developer.mozilla.org/ko/docs/Web/CSS/angle)
+`<angle>`
 
 그라데이션 선 방향의 각도. `0deg`은 `to top`과 동일한 의미를 가지며 값이 증가할수록 시계 방향으로 회전합니다.
 
-[`<linear-color-stop>`](https://developer.mozilla.org/ko/docs/Web/CSS/gradient/linear-gradient#linear-color-stop)
+`<linear-color-stop>`
+`<color>` 값의 색 중지점으로, 하나 혹은 두 개의 중지 위치에 대한 값이 뒤따라옵니다. 중지 위치에 대한 값은 그라데이션의 축을 따라 정해지는 `<percentage>`혹은 `<length>`값 입니다.
 
-[`<color>`](https://developer.mozilla.org/ko/docs/Web/CSS/color_value) 값의 색 중지점으로, 하나 혹은 두 개의 중지 위치에 대한 값이 뒤따라옵니다. 중지 위치에 대한 값은 그라데이션의 축을 따라 정해지는 [`<percentage>`](https://developer.mozilla.org/ko/docs/Web/CSS/percentage) 혹은 [`<length>`](https://developer.mozilla.org/ko/docs/Web/CSS/length) 값 입니다.
-
-[`<color-hint>`](https://developer.mozilla.org/ko/docs/Web/CSS/gradient/linear-gradient#color-hint)
-
+`<color-hint>`
 인접한 색상 중지점 사이에서, 그라데이션이 어떻게 색을 어떻게 변화시킬지를 정의하기 위한 보간 정보. 길이는 두 색상 중지점 사이의 어떤 지점에서 중간 색상에 도달해야 하는지를 명시합니다. 만약 이 값이 명시되지 않으면, 색상 변화의 중간지점은 두 색상 중지점의 중간이 됩니다.
 
-**참고:** [CSS 그라데이션의 색 중지점](https://developer.mozilla.org/ko/docs/Web/CSS/gradient/linear-gradient#%EC%84%A0%ED%98%95_%EA%B7%B8%EB%9D%BC%EB%8D%B0%EC%9D%B4%EC%85%98%EC%9D%98_%EA%B5%AC%EC%84%B1)의 렌더링 방식은 [SVG 그라데이션 (en-US)](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Gradients "Currently only available in English (US)")과 동일한 규칙을 따릅니다.
+**참고:** CSS 그라데이션의 색 중지점의 렌더링 방식은 SVG 그라데이션 (en-US)과 동일한 규칙을 따릅니다.
 
 Mozilla Firefox, 특히 80.0b3 버전에서는 위의 첫 예제가 동일하게 렌더링되지 않음에 유의하세요. 동일하게 렌더링되기 위해서는 HTML의 height 특성을 100% 혹은 100vh로 설정해야 합니다.
 
-## [설명](https://developer.mozilla.org/ko/docs/Web/CSS/gradient/linear-gradient#%EC%84%A4%EB%AA%85)
+## 설명
 
 다른 그라데이션 방식처럼, 선형 그라데이션은 [자체적인 크기 정보가 없습니다](https://developer.mozilla.org/ko/docs/Web/CSS/image#description). 즉, 선호되는 크기나 비율에 대한 정보가 없습니다. 그라데이션의 구체적인 크기는 해당 그라데이션이 적용되는 요소의 크기에 맞추어집니다.
 
@@ -110,73 +107,3 @@ linear-gradient(red 0%, orange 10% 30%, yellow 50% 70%, green 90% 100%);
 
 기본적으로 0% 색 중지점을 갖는 색상이 없으면 가장 첫번째로 정의된 색상이 그 지점에 표현됩니다. 비슷하게 마지막 색 중지점을 갖는 색상이 없으면 가장 마지막에 정의된 색상이 100%까지 표현됩니다.
 
-## [형식 구문](https://developer.mozilla.org/ko/docs/Web/CSS/gradient/linear-gradient#%ED%98%95%EC%8B%9D_%EA%B5%AC%EB%AC%B8)
-
-<linear-gradient()> =   
-  linear-gradient( [[](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#brackets "Brackets: enclose several entities, combinators, and multipliers to transform them as a single component") <linear-gradient-syntax> []](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#brackets "Brackets: enclose several entities, combinators, and multipliers to transform them as a single component") )    
-  
-<linear-gradient-syntax> =   
-  [[](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#brackets "Brackets: enclose several entities, combinators, and multipliers to transform them as a single component") [<angle>](https://developer.mozilla.org/ko/docs/Web/CSS/angle) [|](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#single_bar "Single bar: exactly one of the entities must be present") to <side-or-corner> []](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#brackets "Brackets: enclose several entities, combinators, and multipliers to transform them as a single component")[?](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#question_mark "Question mark: the entity is optional") , <color-stop-list>    
-  
-<side-or-corner> =   
-  [[](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#brackets "Brackets: enclose several entities, combinators, and multipliers to transform them as a single component") left [|](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#single_bar "Single bar: exactly one of the entities must be present") right []](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#brackets "Brackets: enclose several entities, combinators, and multipliers to transform them as a single component")  [||](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#double_bar "Double bar: one or several of the entities must be present, in any order")  
-  [[](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#brackets "Brackets: enclose several entities, combinators, and multipliers to transform them as a single component") top [|](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#single_bar "Single bar: exactly one of the entities must be present") bottom []](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#brackets "Brackets: enclose several entities, combinators, and multipliers to transform them as a single component")    
-  
-<color-stop-list> =   
-  <linear-color-stop> , [[](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#brackets "Brackets: enclose several entities, combinators, and multipliers to transform them as a single component") <linear-color-hint>[?](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#question_mark "Question mark: the entity is optional") , <linear-color-stop> []](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#brackets "Brackets: enclose several entities, combinators, and multipliers to transform them as a single component")[#](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#hash_mark "Hash mark: the entity is repeated one or several times, each occurence separated by a comma")    
-  
-<linear-color-stop> =   
-  [<color>](https://developer.mozilla.org/ko/docs/Web/CSS/color_value) <length-percentage>[?](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#question_mark "Question mark: the entity is optional")    
-  
-<linear-color-hint> =   
-  <length-percentage>    
-  
-<length-percentage> =   
-  [<length>](https://developer.mozilla.org/ko/docs/Web/CSS/length)      [|](https://developer.mozilla.org/ko/docs/Web/CSS/Value_definition_syntax#single_bar "Single bar: exactly one of the entities must be present")  
-  [<percentage>](https://developer.mozilla.org/ko/docs/Web/CSS/percentage)    
-  
-
-## [예제](https://developer.mozilla.org/ko/docs/Web/CSS/gradient/linear-gradient#%EC%98%88%EC%A0%9C)
-
-### [45도 각도를 가지는 그라데이션](https://developer.mozilla.org/ko/docs/Web/CSS/gradient/linear-gradient#45%EB%8F%84_%EA%B0%81%EB%8F%84%EB%A5%BC_%EA%B0%80%EC%A7%80%EB%8A%94_%EA%B7%B8%EB%9D%BC%EB%8D%B0%EC%9D%B4%EC%85%98)
-
-CSSPlayCopy to Clipboard
-
-```
-body {
-  background: linear-gradient(45deg, red, blue);
-}
-```
-
-Play
-
-### [그라데이션 선의 60% 지점부터 시작되는 그라데이션](https://developer.mozilla.org/ko/docs/Web/CSS/gradient/linear-gradient#%EA%B7%B8%EB%9D%BC%EB%8D%B0%EC%9D%B4%EC%85%98_%EC%84%A0%EC%9D%98_60_%EC%A7%80%EC%A0%90%EB%B6%80%ED%84%B0_%EC%8B%9C%EC%9E%91%EB%90%98%EB%8A%94_%EA%B7%B8%EB%9D%BC%EB%8D%B0%EC%9D%B4%EC%85%98)
-
-CSSPlayCopy to Clipboard
-
-```
-body {
-  background: linear-gradient(135deg, orange 60%, cyan);
-}
-```
-
-Play
-
-### [다중 위치 색 중지점을 갖는 그라데이션](https://developer.mozilla.org/ko/docs/Web/CSS/gradient/linear-gradient#%EB%8B%A4%EC%A4%91_%EC%9C%84%EC%B9%98_%EC%83%89_%EC%A4%91%EC%A7%80%EC%A0%90%EC%9D%84_%EA%B0%96%EB%8A%94_%EA%B7%B8%EB%9D%BC%EB%8D%B0%EC%9D%B4%EC%85%98)
-
-This example uses multi-position color stops, with adjacent colors having the same color stop value, creating a striped effect.
-
-CSSPlayCopy to Clipboard
-
-```
-body {
-  background: linear-gradient(
-    to right,
-    red 20%,
-    orange 20% 40%,
-    yellow 40% 60%,
-    green 60% 80%,
-    blue 80%
-  );
-}
-```
