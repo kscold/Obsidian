@@ -1,6 +1,6 @@
 
 라우터 기능을 만들어 다양한 경로를 처리할 수 있다.
-모든 유형의 post, put, get, delete [[메소드(Method)]]에 대해서 반응한다.
+모든 유형의 post, put, get, delete [[메서드(Method)]]에 대해서 반응한다.
 
 ## 미들웨어를 사용하지 않은 .use()
 
@@ -17,7 +17,7 @@ app.use(error)
 "GET /foo" 로 요청하더라도 index [[미들웨어(Middleware)]]가 동작해서 index.html 파일을 제공하는 것이다. 
 물론 에러가 발생할 때는 제외한다.
 
-밑에 코드는 .use() [[메소드(Method)]]를 사용하는 예시
+밑에 코드는 .use() [[메서드(Method)]]를 사용하는 예시
 
 ```js
 app.use("/", indexController)

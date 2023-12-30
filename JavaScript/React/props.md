@@ -16,7 +16,7 @@ export default App;
 
 ### defaultProps
 
-- 상위 컴포넌트에서 props가 안넘어 갔을 때, 기본적으로 사용되는 defaultProps
+- 상위 컴포넌트에서 props가 안넘어 갔을 때, 기본적으로 사용되는 것으로 [[키워드(Keyword)]]는 defaultProps이다.
 
 ```jsx
 const MyComponent = props => {
@@ -31,7 +31,7 @@ export default MyComponent;
 ```
 
 ### children
-- 리액트 컴포넌트 태그 사이의 내용을 보여저는 props
+- children은 리액트 컴포넌트 태그 사이의 내용을 보여주는 props이다.
 
 ```jsx
 import MyCompoent from './MyComponent'
@@ -66,6 +66,7 @@ export default MyComponent;
 // MyCompoent.js
 const MyComponent = props => {
 	const { name, children } = props;
+	
 	return (
 		<div>
 			안녕하시요, 제 이름은 {name}입니다. <br />
@@ -106,7 +107,7 @@ export default MyComponent;
 import MyComponent from './MyComponent';
 
 const App = () => {
-	return <MyComponent name={3}>리액트</MyComponent>;
+	return <MyComponent name={3}>리액트</MyComponent>; // name 3이기 때문에 propTypes에 의해 오류가 남
 }
 
 export default App;

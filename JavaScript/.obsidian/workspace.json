@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "표현식(expression).md",
+                "file": "React/클래스형 컴포넌트.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "표현식(expression).md",
+                "file": "React/클래스형 컴포넌트.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "표현식(expression).md",
+                "file": "React/클래스형 컴포넌트.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "표현식(expression).md"
+                "file": "React/클래스형 컴포넌트.md"
               }
             }
           }
@@ -157,8 +157,25 @@
   },
   "active": "92410a74e9301faf",
   "lastOpenFiles": [
-    "리터럴(literal).md",
+    "render().md",
+    "React/클래스형 컴포넌트.md",
+    "super().md",
+    "constructor().md",
+    "생성자(Constructor).md",
+    "React/this.state.md",
+    "React/useState.md",
+    "React/props.md",
+    "this.md",
+    "window.md",
+    "let.md",
+    "전역 객체(Global Object).md",
+    "메서드(Method).md",
+    "클래스(class).md",
+    "global.md",
+    "화살표함수(Arriw Funtion).md",
+    "function().md",
     "표현식(expression).md",
+    "리터럴(literal).md",
     "값(value).md",
     "변수(Variable).md",
     "식별자(Identifier).md",
@@ -166,23 +183,6 @@
     "가비지 콜렉터(garbage collector).md",
     "매니지드 언어(managed language).md",
     "할당(assignmet).md",
-    "초기화(initialization).md",
-    "상수(constant).md",
-    "const.md",
-    "var.md",
-    "css/linear-gradient().md",
-    "호이스팅(variable hoisting).md",
-    "런타임(runtime).md",
-    "소스코드의 평가 과정.md",
-    "실행 컨텍스트(execution context).md",
-    "React/undefined.md",
-    "키워드(Keyword).md",
-    "Web api.md",
-    "삼항 연산자.md",
-    "비동기.md",
-    "동기.md",
-    "css/line-height.md",
-    "css/position.md",
     "image/Pasted image 20231221212146.png",
     "css",
     "image/Pasted image 20231218213654.png",
