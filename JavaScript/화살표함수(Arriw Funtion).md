@@ -1,3 +1,5 @@
+- 값을 바로 반환하고 싶다면 코드 블록 { }를 생략하면 된다.
+
 
 ```jsx
 setTimeout(funtion() {
@@ -62,3 +64,9 @@ const triple = (value) => value * 3;
 
 - 따로 {}를 열어 주지 않으면, 연산한 값을 그대로 반환한다는 의미이다.
 
+```js
+const triple = (value) => {
+	return(value * 3);
+}
+```
+- () 소괄호는 바로 return을 의미한다.

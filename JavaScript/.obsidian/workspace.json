@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/클래스형 컴포넌트.md",
+                "file": "React/state.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/클래스형 컴포넌트.md",
+                "file": "React/state.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/클래스형 컴포넌트.md",
+                "file": "React/state.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/클래스형 컴포넌트.md"
+                "file": "React/state.md"
               }
             }
           }
@@ -157,13 +157,22 @@
   },
   "active": "92410a74e9301faf",
   "lastOpenFiles": [
-    "render().md",
+    "배열.md",
+    "React/state.md",
+    "확산 연산자(spread).md",
+    "React/useState.md",
+    "React/setState.md",
+    "컴포넌트.md",
+    "비구조화 할당.md",
+    "함수형 컴포넌트.md",
+    "React/무제 파일.md",
+    "화살표함수(Arriw Funtion).md",
+    "비동기.md",
     "React/클래스형 컴포넌트.md",
+    "render().md",
     "super().md",
     "constructor().md",
     "생성자(Constructor).md",
-    "React/this.state.md",
-    "React/useState.md",
     "React/props.md",
     "this.md",
     "window.md",
@@ -172,17 +181,8 @@
     "메서드(Method).md",
     "클래스(class).md",
     "global.md",
-    "화살표함수(Arriw Funtion).md",
     "function().md",
     "표현식(expression).md",
-    "리터럴(literal).md",
-    "값(value).md",
-    "변수(Variable).md",
-    "식별자(Identifier).md",
-    "예약어(reserved word).md",
-    "가비지 콜렉터(garbage collector).md",
-    "매니지드 언어(managed language).md",
-    "할당(assignmet).md",
     "image/Pasted image 20231221212146.png",
     "css",
     "image/Pasted image 20231218213654.png",
