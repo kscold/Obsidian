@@ -21,14 +21,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/state.md",
+                "file": "onChange.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4683ed08d7f7daeb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DOM(Document Object Model).md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -94,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/state.md",
+                "file": "DOM(Document Object Model).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/state.md",
+                "file": "DOM(Document Object Model).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/state.md"
+                "file": "DOM(Document Object Model).md"
               }
             }
           }
@@ -155,14 +167,24 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "92410a74e9301faf",
+  "active": "4683ed08d7f7daeb",
   "lastOpenFiles": [
-    "배열.md",
+    "image/Pasted image 20240101213717.png",
+    "이벤트(event).md",
+    "DOM.md",
+    "onMouseOver.md",
+    "HTML.md",
+    "onClick.md",
+    "alert().md",
+    "예약어(reserved word).md",
+    "onChange.md",
+    "컴포넌트.md",
     "React/state.md",
+    "image/Pasted image 20240101180454.png",
+    "배열.md",
     "확산 연산자(spread).md",
     "React/useState.md",
     "React/setState.md",
-    "컴포넌트.md",
     "비구조화 할당.md",
     "함수형 컴포넌트.md",
     "React/무제 파일.md",
@@ -174,15 +196,6 @@
     "constructor().md",
     "생성자(Constructor).md",
     "React/props.md",
-    "this.md",
-    "window.md",
-    "let.md",
-    "전역 객체(Global Object).md",
-    "메서드(Method).md",
-    "클래스(class).md",
-    "global.md",
-    "function().md",
-    "표현식(expression).md",
     "image/Pasted image 20231221212146.png",
     "css",
     "image/Pasted image 20231218213654.png",

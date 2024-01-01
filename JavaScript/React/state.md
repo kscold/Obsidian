@@ -24,3 +24,4 @@ nextArray.map(item => (item.id === 1 ? { ...item, value: false} : item);
 ```
 
 - 객체에  [[확산 연산자(spread)]]라고 불리는 ...을 이용하여 처리하고, 배열에 대한 사본을 만들 때는 배욜의 내장 함수들을 이용하여 활용한다.
+

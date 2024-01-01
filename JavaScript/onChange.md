@@ -1,0 +1,2 @@
+- 바닐라 html에서는 [[키워드(Keyword)]]가 onchange이다.
+- Form 요소 값이 바뀔 때 onChange 이벤트를 실행한다.
