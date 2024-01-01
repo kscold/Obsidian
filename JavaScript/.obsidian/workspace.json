@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "onChange.md",
+                "file": "이벤트(event).md",
                 "mode": "source",
                 "source": false
               }
@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DOM(Document Object Model).md",
+                "file": "SyntheticEvent.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DOM(Document Object Model).md",
+                "file": "SyntheticEvent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DOM(Document Object Model).md",
+                "file": "SyntheticEvent.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DOM(Document Object Model).md"
+                "file": "SyntheticEvent.md"
               }
             }
           }
@@ -169,15 +169,18 @@
   },
   "active": "4683ed08d7f7daeb",
   "lastOpenFiles": [
-    "image/Pasted image 20240101213717.png",
+    "onChange.md",
+    "SyntheticEvent.md",
     "이벤트(event).md",
+    "DOM(Document Object Model).md",
+    "React/Virtual DOM.md",
+    "image/Pasted image 20240101213717.png",
     "DOM.md",
     "onMouseOver.md",
     "HTML.md",
     "onClick.md",
     "alert().md",
     "예약어(reserved word).md",
-    "onChange.md",
     "컴포넌트.md",
     "React/state.md",
     "image/Pasted image 20240101180454.png",
@@ -194,8 +197,6 @@
     "render().md",
     "super().md",
     "constructor().md",
-    "생성자(Constructor).md",
-    "React/props.md",
     "image/Pasted image 20231221212146.png",
     "css",
     "image/Pasted image 20231218213654.png",

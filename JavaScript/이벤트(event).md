@@ -21,4 +21,36 @@
 ```
 
 - 사실 위의 예시에서 처럼 MyComponent에 onClick 값을 설정한다면 MyComponent를 클릭 할 때, doSomething 함수를 실행하는 것이 아니라, 그냥 이름이 onClick인 [[props]]를 MyComponent에 전달해 줄 뿐이다.
-- 따라서 [[컴포넌트]] 자체적으로 이벤트를 설정할 수는 없다. 하지만 전달받은 [[props]]를 컴포넌트 내부의 [[DOM(Document Object Model)]] 이벤트로 설정할 수는 있다.
+- 따라서 [[컴포넌트]] 자체적으로 이벤트를 설정할 수는 없다. 하지만 밑의 예시처럼 전달받은 [[props]]를 컴포넌트 내부의 [[DOM(Document Object Model)]] 이벤트로 설정할 수는 있다.
+
+```jsx
+<div onClick={this.props.onClick}> {/* 현재 onClick 객체를 가르킨다. */}
+	{/* (...) */}
+</div>
+```
+
+- 이런식으로 [[onChange]]
+```jsx
+import { Component } from 'react';
+
+  
+class EventPractice extends Component {
+	render() {
+		return (
+			<div>
+				<h1>이벤트 연습</h1>
+				<input
+					type="text"
+					name="message"
+					placeholder="아무거나 입력해 보세요"
+					onChange={(e) => {
+						console.log(e.target.value);
+					}}
+				/>
+			</div>
+		);
+	}
+}
+
+export default EventPractice;
+```
