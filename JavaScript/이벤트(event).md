@@ -54,3 +54,10 @@ class EventPractice extends Component {
 
 export default EventPractice;
 ```
+
+
+## event.target.value
+- [[onChange]] 같은 이벤트가 발생할 때, 값이 바뀔 때 마다 e.target.value가 들어간다.
+
+### [[state]]에 input 값 담기
+- 

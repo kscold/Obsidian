@@ -33,14 +33,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SyntheticEvent.md",
+                "file": "onChange.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7675ad2cbf7a3a4c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "bind().md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -106,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SyntheticEvent.md",
+                "file": "bind().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SyntheticEvent.md",
+                "file": "bind().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SyntheticEvent.md"
+                "file": "bind().md"
               }
             }
           }
@@ -167,36 +179,37 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "4683ed08d7f7daeb",
+  "active": "7675ad2cbf7a3a4c",
   "lastOpenFiles": [
+    "바인딩.md",
     "onChange.md",
-    "SyntheticEvent.md",
+    "bind().md",
+    "렉시컬 환경(Lexical Environment).md",
+    "실행 컨텍스트.md",
+    "식별자(Identifier).md",
+    "함수(Function).md",
+    "메서드(Method).md",
+    "setTimeout().md",
+    "this.md",
+    "window.md",
+    "let.md",
+    "onClick.md",
+    "HTML/<input>.md",
+    "HTML/<form>.md",
+    "HTML/Select-box.md",
+    "HTML/HTML.md",
     "이벤트(event).md",
+    "HTML",
+    "React/state.md",
+    "SyntheticEvent.md",
+    "비동기.md",
     "DOM(Document Object Model).md",
     "React/Virtual DOM.md",
     "image/Pasted image 20240101213717.png",
     "DOM.md",
     "onMouseOver.md",
-    "HTML.md",
-    "onClick.md",
     "alert().md",
-    "예약어(reserved word).md",
-    "컴포넌트.md",
-    "React/state.md",
     "image/Pasted image 20240101180454.png",
-    "배열.md",
-    "확산 연산자(spread).md",
-    "React/useState.md",
-    "React/setState.md",
-    "비구조화 할당.md",
-    "함수형 컴포넌트.md",
-    "React/무제 파일.md",
-    "화살표함수(Arriw Funtion).md",
-    "비동기.md",
-    "React/클래스형 컴포넌트.md",
-    "render().md",
-    "super().md",
-    "constructor().md",
     "image/Pasted image 20231221212146.png",
     "css",
     "image/Pasted image 20231218213654.png",

@@ -5,16 +5,17 @@
 
 ## Event Pooling
 
-SyntheticEvent는 브라우저의 이벤트와 다른점이 있다. 브라우저의 이벤트 객체를 포함하고 있고, `EventPooling` 이라고 불리는 현상이 발생한다.
+- SyntheticEvent는 브라우저의 이벤트와 다른점이 있다. 브라우저의 이벤트 객체를 포함하고 있고, `EventPooling` 이라고 불리는 현상이 발생한다.
 
-`EventPooling`은 StntheticEvent객체가 재사용 되기 때문에 발생한다.
+- `EventPooling`은 StntheticEvent객체가 재사용 되기 때문에 발생한다.
 
 위의 문장은 React 공식 문서에 적혀 있는 문장이다.
 
 > React의 SyntheticEvent는 풀링된다. 이는 SyntheticEvent객체는 재사용되고, 이벤트 콜백이 호출된 후 모든 속성이 무효화됨을 의미한다. 이것은 성능상의 문제 때문이다. 따라서 비동기적으로 이벤트에 엑세스 할 수 없다.  
 > -React Docs해석
 
-공식 문서를 확인해보면 SyntheticEvent객체는 재사용이 된다고 한다. 따라서 SyntheticEvent는 이벤트 객체를 재활용하여 동작한다. 따라서 재활용이 된 이후에는 SyntheticEvent객체의 모든 속성(프로퍼티)이 `null`로 변하게 된다.
+- 공식 문서를 확인해보면 SyntheticEvent객체는 재사용이 된다고 한다. 
+- 따라서 SyntheticEvent는 이벤트 객체를 재활용하여 동작한다. 따라서 재활용이 된 이후에는 SyntheticEvent객체의 모든 속성(프로퍼티)이 `null`로 변하게 된다.
 
 아래는 React 공식 문서에서 제공하는 예제 코드이다.
 
@@ -50,17 +51,17 @@ function onClick(event) {
 EventPooling으로 인한 변화는 다음과 같다.
 
 - 성능상의 이유로 발생하며 SyntheticEvent객체가 초기화가 된다.
-    
+
 - SyntheticEvent객체를 재활용하여 사용하기 때문에 메모리 사용량이 적다.
-    
+
 - 해당 이벤트(`onClick()`)가 실행될때 한번만 실행된다.
-    
+
 
 EventPolling에 대해 `React 공식문서`에서는 비동기적으로 엑세스 할 수 없다고 말했다. 그렇다면 SyntheticEvent객체를 비동기통신에서 사용해야 한다면 어떨까.
 
 ## Asynchronous
 
-React에서는 비동기상태에서 SyntheticEvent를 EventPolling이 발생하지 않고 사용하는 방법이 여럿 존재한다.
+React에서는 [[비동기]]상태에서 SyntheticEvent를 EventPolling이 발생하지 않고 사용하는 방법이 여럿 존재한다.
 
 첫 번째는, 해당 이벤트 객체를 복사하고, 복사된 객체를 비동기 동작이 끝난 다음 사용하는 방법이다. 이 방법을 사용하면 코드가 몇 줄 더 늘어나긴 해도 좋은 방법이다. 따라서 강력한 콜백함수가 여럿 존재 하지 않는 이상 이러한 방법을 선호하는 것이 옳바르다.
 
@@ -104,7 +105,7 @@ function onClick(event) {
 
 ## Debounce & Throttle
 
-[Lodash](https://lodash.com/)라고 불리는 자바스크립트 유틸리티 라이브러리가 있는데, 이 라이브러리에서 제공하는 기능인 `debounce` 및 `throttle`은 스크롤 이벤트와 같은 곳에서 주로 쓰인다.
+Lodash라고 불리는 자바스크립트 유틸리티 라이브러리가 있는데, 이 라이브러리에서 제공하는 기능인 `debounce` 및 `throttle`은 스크롤 이벤트와 같은 곳에서 주로 쓰인다.
 
 스크롤 이벤트는 스크롤이 발생할 때 마다 이벤트를 동작시킨다. 우리가 스크롤을 내리면 발생하는 스크롤 이벤트는 어마어마하게 많다. 만약 스크롤 이벤트에 엄청난 리소스를 잡아먹는 콜백이 잡혀있다면.. 큰 일이 발생할 것 이다. 이때 debounce와 throttle를 사용하면 이런 말도안되는 상황을 바로잡을 수 있다.
 
