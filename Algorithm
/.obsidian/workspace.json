@@ -102,9 +102,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "68c073c320d153cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "구현/상하좌우 이동.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cc55a6a65f82298b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ord.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -170,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "파이썬 문법/sorted.md",
+                "file": "ord.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "파이썬 문법/sorted.md",
+                "file": "ord.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "파이썬 문법/sorted.md"
+                "file": "ord.md"
               }
             }
           }
@@ -231,10 +255,17 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "52136bd1d6f075ad",
+  "active": "cc55a6a65f82298b",
   "lastOpenFiles": [
-    "파이썬 문법/lambda.md",
+    "구현/체스.md",
+    "ord.md",
+    "구현/상하좌우 이동.md",
+    "image/스크린샷 2024-01-03 오후 9.17.48.png",
+    "image/IMG_1808.jpeg",
+    "무제 파일.md",
+    "구현",
     "파이썬 문법/sorted.md",
+    "파이썬 문법/lambda.md",
     "파이썬 스니펫/이차원 리스트의 순회.md",
     "파이썬 문법/heapq.md",
     "파이썬 스니펫",
@@ -260,17 +291,11 @@
     "위상정렬(Topological Sort).md",
     "인접 행렬(Adjacency Matrix).md",
     "가중치 그래프(weighted graph).md",
-    "무방향 그래프(Undirected graph).md",
     "image/Pasted image 20231030183740.png",
     "image/Pasted image 20231030183348.png",
-    "이진트리(binary tree).md",
-    "완전 이진 트리(Complete Binary Tree).md",
-    "다익스트라(dijkstra).md",
     "파이썬 문법",
     "image/Pasted image 20231009174254.png",
     "image/Pasted image 20230919231718.png",
-    "image/Pasted image 20230919232604.png",
-    "image/Pasted image 20230919232038.png",
     "image"
   ]
 }
