@@ -51,8 +51,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,7 +117,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "const.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +133,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "const.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,9 +154,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "const.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -179,12 +174,25 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "7675ad2cbf7a3a4c",
+  "active": "1a0c0c5c4a5d0fda",
   "lastOpenFiles": [
+    "React/React.StrictMode.md",
+    "JWT.md",
+    "node.js/send().md",
+    "node.js/get().md",
+    "React/state.md",
+    "배열.md",
+    "객체(Object).md",
+    "React/클래스형 컴포넌트.md",
+    "렉시컬 환경(Lexical Environment).md",
+    "css/-webkit-text-stroke.md",
+    "매소드(Method).md",
+    "node.js/MongoDB/mongoDB.md",
+    "이벤트(event).md",
+    "onChange.md",
+    "const.md",
     "bind().md",
     "바인딩.md",
-    "onChange.md",
-    "렉시컬 환경(Lexical Environment).md",
     "실행 컨텍스트.md",
     "식별자(Identifier).md",
     "함수(Function).md",
@@ -194,21 +202,8 @@
     "window.md",
     "let.md",
     "onClick.md",
-    "HTML/<input>.md",
-    "HTML/<form>.md",
-    "HTML/Select-box.md",
-    "HTML/HTML.md",
-    "이벤트(event).md",
     "HTML",
-    "React/state.md",
-    "SyntheticEvent.md",
-    "비동기.md",
-    "DOM(Document Object Model).md",
-    "React/Virtual DOM.md",
     "image/Pasted image 20240101213717.png",
-    "DOM.md",
-    "onMouseOver.md",
-    "alert().md",
     "image/Pasted image 20240101180454.png",
     "image/Pasted image 20231221212146.png",
     "css",

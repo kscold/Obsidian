@@ -1,4 +1,6 @@
 
+.remove() .findByIdAndRemove() .findOneAndRemove()
+
 .remove(): 특정 조건을 만독하는 데이터를 모두 지운다.
 .findByIdAndRemove(): id를 찾아서 지운다.
 .findOneAndRemove() : 특정 조건을 만족하는 데이터 하나를 찾아서 제거한다.
