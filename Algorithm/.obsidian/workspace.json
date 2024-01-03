@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ord.md",
+                "file": "구현/상하좌우 이동.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ord.md",
+                "file": "구현/상하좌우 이동.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ord.md",
+                "file": "구현/상하좌우 이동.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ord.md"
+                "file": "구현/상하좌우 이동.md"
               }
             }
           }
@@ -257,8 +257,8 @@
   },
   "active": "cc55a6a65f82298b",
   "lastOpenFiles": [
-    "구현/체스.md",
     "ord.md",
+    "구현/체스.md",
     "구현/상하좌우 이동.md",
     "image/스크린샷 2024-01-03 오후 9.17.48.png",
     "image/IMG_1808.jpeg",
