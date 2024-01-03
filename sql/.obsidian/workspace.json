@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "INSERT.md",
+                "file": "SET.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "INSERT.md",
+                "file": "SET.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "INSERT.md",
+                "file": "SET.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "INSERT.md"
+                "file": "SET.md"
               }
             }
           }
@@ -197,16 +197,16 @@
   },
   "active": "6453b585249f5386",
   "lastOpenFiles": [
-    "레코드(record).md",
+    "NOW().md",
+    "?(Placeholder).md",
     "INSERT.md",
+    "레코드(record).md",
     "CREATE TABLE.md",
     "GROUP.md",
     "WHERE.md",
     "SELECT.md",
     "SHOW TABLES.md",
     "SET.md",
-    "?(Placeholder).md",
-    "NOW().md",
     "image/Pasted image 20231115000103.png",
     "image/Pasted image 20231115000101.png",
     "image"

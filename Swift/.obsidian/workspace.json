@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "393d0f56955e9c40",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "didSet, willSet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a1f08fec560222b7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "타입 프로퍼티(Type Properties).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "9e4dc090f3b90d52",
             "type": "leaf",
             "state": {
@@ -105,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "didSet, willSet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "didSet, willSet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "didSet, willSet.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -166,13 +138,17 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "393d0f56955e9c40",
+  "active": "9e4dc090f3b90d52",
   "lastOpenFiles": [
-    "프로퍼티(Property).md",
+    "타입 프로퍼티(Type Properties).md",
+    "기본 문법 및 주요함수 2.md",
+    "딕셔너리 2.md",
+    "while.md",
+    "while 2.md",
     "didSet, willSet.md",
+    "프로퍼티(Property).md",
     "get, set.md",
     "접근제한자.md",
-    "타입 프로퍼티(Type Properties).md",
     "set.md",
     "get.md",
     "저장 프로퍼티(Stored Properties).md",
@@ -190,10 +166,6 @@
     "프로퍼티 감시자(Property Observers).md",
     "연산 프로퍼티(Computed Properties).md",
     "지연 저장 프로퍼티(Lazy Stroed Properties).md",
-    "Self(타입(클래스, 구조체) 자신).md",
-    "mutaing.md",
-    "타입 메서드(type method).md",
-    "메소드(method).md",
     "image"
   ]
 }

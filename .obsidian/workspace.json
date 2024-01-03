@@ -1,48 +1,35 @@
 {
   "main": {
-    "id": "16e86aa14f3ada93",
+    "id": "041a6023b9da2d91",
     "type": "split",
     "children": [
       {
-        "id": "5a056ee0cbe12cb3",
+        "id": "bee44edc891049ea",
         "type": "tabs",
         "children": [
           {
-            "id": "28e8821e3d97792c",
+            "id": "763975dfcfd814df",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "findById().md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "714da1cd7280a7d5",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "14e5e9b3a58d9471",
+    "id": "01bc0dc901a97af2",
     "type": "split",
     "children": [
       {
-        "id": "806c813cde3e8f87",
+        "id": "1974948c6a83711f",
         "type": "tabs",
         "children": [
           {
-            "id": "cc65f794136683d2",
+            "id": "6c88386274628cd5",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -52,7 +39,7 @@
             }
           },
           {
-            "id": "11933cf121731d8b",
+            "id": "0233acaf9bf55175",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -67,7 +54,7 @@
             }
           },
           {
-            "id": "3b028e36612f48a5",
+            "id": "0e8c09aaf22fd61a",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,15 +68,15 @@
     "width": 300
   },
   "right": {
-    "id": "8772200791b39149",
+    "id": "6fcf03603fb45e37",
     "type": "split",
     "children": [
       {
-        "id": "00d3a504b2b22dd1",
+        "id": "55a3d95946605dfa",
         "type": "tabs",
         "children": [
           {
-            "id": "7444b7642164e5be",
+            "id": "52a1afdbb930187b",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -105,7 +92,7 @@
             }
           },
           {
-            "id": "9a3b959305cd4dfe",
+            "id": "92527126d84c76c3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -116,7 +103,7 @@
             }
           },
           {
-            "id": "7eb5c01b7986a90a",
+            "id": "2146986f9b88c3d3",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -127,7 +114,7 @@
             }
           },
           {
-            "id": "e3824bbbdc8b43a1",
+            "id": "7148a34107cdcef8",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -151,54 +138,8 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "714da1cd7280a7d5",
+  "active": "763975dfcfd814df",
   "lastOpenFiles": [
-    "스프링/@PostMapping.md",
-    "findById().md",
-    "스프링/Optional.md",
-    "스프링/Gradle/CrudRepository.md",
-    "스프링/@PathVariable.md",
-    "스프링/@GetMapping.md",
-    "스프링/Gradle/@SIf4j.md",
-    "스프링/Gradle/롬복(lombok).md",
-    "스프링/Gradle/로깅(logging).md",
-    "스프링/query().md",
-    "스프링/queryForObject().md",
-    "스프링/save().md",
-    "스프링/Gradle/리파지터리(repository).md",
-    "스프링/Gradle/@ToString.md",
-    "스프링/Gradle/@AllArgsConstructor.md",
-    "자바/상속(Inheritance).md",
-    "자바/인터페이스(Interface).md",
-    "자바/implements.md",
-    "자바/오버라이딩(Overriding).md",
-    "스프링/인터페이스(Interface).md",
-    "자바/추상 메서드(Abstract Method).md",
-    "자바/오버로딩(Overloading).md",
-    "스프링/@Autowired.md",
-    "스프링/DI(Dependency Injection).md",
-    "자바/setter.md",
-    "자바/Getter and Setter.md",
-    "image/Pasted image 20231228032827.png",
-    "스프링/Gradle",
-    "image/Pasted image 20231218181253.png",
-    "image/Pasted image 20231218181153.png",
-    "image/Pasted image 20231218180419.png",
-    "image/Pasted image 20231217213908.png",
-    "image/Pasted image 20231217210638.png",
-    "image/Pasted image 20231217205658.png",
-    "image/Pasted image 20231217205231.png",
-    "image/Pasted image 20231217204533.png",
-    "image/Pasted image 20231217204340.png",
-    "스프링/SQL",
-    "스프링/Maven/jsp",
-    "자바",
-    "image",
-    "스프링/Maven",
-    "무제 파일.canvas",
-    "노드(node/node.js",
-    "노드(node",
-    "스프링 수업",
-    "무제 폴더/무제 폴더"
+    "스프링/스프링/@Autowired.md"
   ]
 }
