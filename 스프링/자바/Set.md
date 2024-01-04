@@ -5,7 +5,7 @@
 ![[Pasted image 20240104211842.png]]
 ## [[HashSet]] [[클래스(Class)]]
 
-- HashSet은 자바에서 가장 일반적으로 사용되는 Set 인터페이스의 구현 클래스이다.
+- HashSet은 자바에서 가장 일반적으로 사용되는 Set [[인터페이스(Interface)]]의 구현 [[클래스(Class)]]이다.
 - HashSet은 해시 테이블을 사용하여 요소를 저장하며, 순서가 보장되지 않는다.
 - HashSet은 다양한 데이터 유형을 저장할 수 있으며, 중복된 값을 자동으로 제거한다.
 
@@ -18,13 +18,14 @@ names.add("Alice"); // 중복된 값이므로 무시됨
 System.out.println(names); // 출력: [Alice, Bob]
 ```
 
-위의 예시에서는 HashSet을 사용하여 문자열을 저장하고 있습니다. "Alice"는 중복된 값이므로 한 번만 저장되고, 순서는 보장되지 않으므로 출력 결과가 다를 수 있습니다.
+위의 예시에서는 HashSet을 사용하여 문자열을 저장하고 있습니다. "Alice"는 중복된 값이므로 한 번만 저장되고, 순서는 보장되지 않으므로 출력 결과가 다를 수 있다.
 
 ## TreeSet 클래스
 
-TreeSet은 Set 인터페이스의 다른 구현 클래스로, 이진 검색 트리(Binary Search Tree)를 사용하여 요소를 저장합니다. TreeSet은 요소들을 정렬된 상태로 유지하며, 자동으로 중복된 값을 제거합니다.
+- TreeSet은 Set 인터페이스의 다른 구현 클래스로, 이진 검색 트리(Binary Search Tree)를 사용하여 요소를 저장한다.
+- TreeSet은 요소들을 정렬된 상태로 유지하며, 자동으로 중복된 값을 제거한다.
 
-```
+```java
 Set<Integer> numbers = new TreeSet<>();
 numbers.add(5);
 numbers.add(2);
