@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "구현/상하좌우 이동.md",
+                "file": "재귀함수(Recursive Function).md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "구현/상하좌우 이동.md",
+                "file": "재귀함수(Recursive Function).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "구현/상하좌우 이동.md",
+                "file": "재귀함수(Recursive Function).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "구현/상하좌우 이동.md"
+                "file": "재귀함수(Recursive Function).md"
               }
             }
           }
@@ -257,12 +257,16 @@
   },
   "active": "cc55a6a65f82298b",
   "lastOpenFiles": [
-    "ord.md",
-    "구현/체스.md",
+    "파이썬 문법/deque().md",
+    "자료구조",
+    "자료구조/큐(Queue).md",
+    "백 트래킹(Back Tracking).md",
+    "자료구조/스택(Stack).md",
     "구현/상하좌우 이동.md",
+    "파이썬 문법/ord.md",
+    "구현/체스.md",
     "image/스크린샷 2024-01-03 오후 9.17.48.png",
     "image/IMG_1808.jpeg",
-    "무제 파일.md",
     "구현",
     "파이썬 문법/sorted.md",
     "파이썬 문법/lambda.md",
@@ -278,7 +282,6 @@
     "그래프(Graphs).md",
     "image/Pasted image 20231106014554.png",
     "이진탐색트리(Binary Search Tree).md",
-    "백 트래킹(Back Tracking).md",
     "메모이제이션(Memoization).md",
     "유니온 파인드(union find).md",
     "인접 리스트(adjacency list).md",
@@ -288,9 +291,6 @@
     "image/Pasted image 20231030195946.png",
     "image/Pasted image 20231030194326.png",
     "image/Pasted image 20231030194032.png",
-    "위상정렬(Topological Sort).md",
-    "인접 행렬(Adjacency Matrix).md",
-    "가중치 그래프(weighted graph).md",
     "image/Pasted image 20231030183740.png",
     "image/Pasted image 20231030183348.png",
     "파이썬 문법",

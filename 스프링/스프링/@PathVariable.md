@@ -1,5 +1,5 @@
-
-- REST API에서 URI에 변수가 들어가는걸 실무에서 많이 볼 수 있다.
+- 매개변수 앞에 @PathVariavle [[어노테이션(Annotation)]]을 붙여야 URL의 id를 가져올 수 있다.
+- REST API에서 URI에 변수가 들어가는걸 실제 실무에서 많이 볼 수 있다.
 
 예를 들면, 아래 URI에서 밑줄 친 부분이 @PathVariable로 처리해줄 수 있는 부분이다.
 

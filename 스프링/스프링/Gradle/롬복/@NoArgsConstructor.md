@@ -1,0 +1,2 @@
+- 기본 생성자를 추가해 주는 어노테이션이다.
+- 따라서 @NoArgsConstructor [[어노테이션(Annotation)]]을 사용하면 기본 [[생성자(constructor)]] 코드를 작성하지 않아도 된다.
