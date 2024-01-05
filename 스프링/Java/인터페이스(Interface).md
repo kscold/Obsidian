@@ -3,7 +3,7 @@
 - 인터페이스는 클래스 내에 선언된 모든 메서드가 [[추상 메서드(Abstract Method)]]인 클래스를 의미한다.  
 - 이 인터페이스를 상속받는 클래스는 인터페이스에서 정의된 추상 메서드를 모두 구현해야 한다.
 
-## 클래스로 다중상속을 하게 될 시의 문제점
+## 클래스로 [[다중상속]]을 하게 될 시의 문제점
 
 ```java
 public class Son extends Father, Mother{ // 다중 상속 미지원
@@ -18,13 +18,13 @@ public class Son extends Father, Mother{ // 다중 상속 미지원
 
 
 - 다중 상속의 이점을 버릴 수는 없기에 자바에서는 인터페이스라는 것을 통해 다중 상속을 지원하고 있다.
-- 자바에서 [[추상 클래스(Abstract Class)]]는 [[추상 메서드(Abstract Method)]]뿐만 아니라 [[생성자(constructor)]], [[필드(field)]], 일반 [[메서드(Method)]]도 포함할 수 있다.
+- 자바에서 [[추상 클래스(Abstract Class)]]는 [[추상 메서드(Abstract Method)]]뿐만 아니라 [[생성자(constructor)]], [[Java/필드(field)]], 일반 [[메서드(Method)]]도 포함할 수 있다.
 - 하지만 인터페이스는 오로지 추상 메서드와 상수만을 포함할 수 있다.
 
 ### 인터페이스의 선언
 
 - 자바에서 인터페이스를 선언하는 방법은 클래스를 작성하는 방법과 같다.
-- 인터페이스를 선언할 때에는 [[접근제어자]]와 함께 interface 키워드를 사용하면 된다.
+- 인터페이스를 선언할 때에는 [[접근제어자(Access modifier)]]와 함께 interface 키워드를 사용하면 된다.
 
 
 - 자바에서 인터페이스는 다음과 같이 선언합니다.
@@ -37,16 +37,16 @@ public class Son extends Father, Mother{ // 다중 상속 미지원
 
     ...
 
-    public abstract 메서드이름(매개변수목록);
+    public abstract 타입 메서드이름(매개변수목록);
 
     ...
 
 }
 ```
 
-- 단, 클래스와는 달리 인터페이스의 모든 필드는 [[public]] [[static]] final이어야 하며, 모든 메소드는 public abstract이어야 한다.
+- 단, 클래스와는 달리 인터페이스의 모든 필드는 [[public]] [[static]] final이어야 하며, 모든 메서드는 public abstract이어야 한다.
 
-- 이 부분은 모든 인터페이스에 공통으로 적용되는 부분이므로 이 제어자는 생략할 수 있다.
+- 이 부분은 모든 인터페이스에 공통으로 적용되는 부분이므로  [[접근제어자(Access modifier)]] public를 포함해 static final과 abstract 생략할 수 있다.
 - 이렇게 생략된 제어자는 컴파일 시 자바 컴파일러가 자동으로 추가해 준다.
 
 ### 인터페이스의 구현

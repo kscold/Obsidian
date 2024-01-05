@@ -1,20 +1,18 @@
- 
+- 접근제어자는 [[클래스(Class)]]의 [[멤버 변수]]와 [[메서드(Method)]]들의 접근 권한을 지정한다.
 
-접근제어자는 [[클래스(Class)]]의 멤버인 [[변수(Variable)]]와 [[메서드(Method)]]들의 접근 권한을 지정한다.
-
-접근제어자의 종류는 4가지로 public, protected, default, private이며,  접근 허용 가능 범위 순서 또한 아래와 같이 나타낼 수 있다.
+- 접근제어자의 종류는 4가지로 [[public]], protected, default, [[private]]이며,  접근 허용 가능 범위 순서 또한 아래와 같이 나타낼 수 있다.
 
 [[public]] > protected > default > [[private]]
 
 아래의 표로 접근 권한 범위를 자세하게 확인할 수 있습니다.(허용 : O, 제한 : X)
 
-|   |   
-|---|---|---|---|---|
-|**접근자**|클래스 내부|패키지|상속받은 클래스|이외의 영역|
-|_**private**_|O|X|X|X|
-|_**default**_|O|O|X|X|
-|_**protected**_|O|O|O|X|
-|_**public**_|O|O|O|O|
+|  |  |  |  |  |
+| ---- | ---- | ---- | ---- | ---- |
+| **접근자** | 클래스 내부 | 패키지 | 상속받은 클래스 [[자식 클래스(sub class)]] | 이외의 영역 |
+| private | O | X | X | X |
+| default | O | O | X | X |
+| protected | O | O | O | X |
+| public | O | O | O | O |
 
 - public : 접근 제한이 없다.
 - protected : 동일한 패키지(package 형식 파일) 내에 존재하거나, 파생 클래스에서만 접근이 가능하다.

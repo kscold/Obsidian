@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/Gradle/엔티티(entity).md",
+                "file": "Java/인스턴스 변수.md",
                 "mode": "source",
                 "source": false
               }
@@ -27,8 +27,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Java/인스턴스 변수.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Java/인스턴스 변수.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Java/인스턴스 변수.md"
+              }
             }
           }
         ]
@@ -151,39 +154,40 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f4faf621b4fb9ee6",
+  "active": "28e8821e3d97792c",
   "lastOpenFiles": [
-    "Spring/Gradle/엔티티(entity).md",
-    "특성(Attribute).md",
-    "Spring/sql/스키마(Schema).md",
-    "Spring/Gradle/리파지터리(repository).md",
-    "Spring/sql/테이블(Table).md",
-    "Spring/sql/레코드(Record).md",
-    "Spring/Gradle/@Entity.md",
-    "Spring/sql/필드(Fields).md",
-    "Spring/sql/SQL.md",
-    "Java/필드(field).md",
+    "default.md",
+    "Java/인스턴스 변수.md",
+    "Java/변수(Variable).md",
+    "지역 변수.md",
+    "Java/클래스 변수.md",
+    "멤버 변수.md",
+    "전역 변수.md",
+    "Java/Getter and Setter.md",
+    "Java/private.md",
+    "Java/패키지(package).md",
+    "Java/접근제어자(Access modifier).md",
+    "Java/인스턴스(Instance).md",
+    "Java/new.md",
+    "image/Pasted image 20240106042214.png",
+    "Java/this().md",
+    "Java/super().md",
+    "Java/인스턴스 메서드(instance method).md",
+    "Java/클래스 메서드.md",
+    "Java/자식 클래스(sub class).md",
+    "Java/extends.md",
+    "Java/클래스(Class).md",
+    "Java/인터페이스(Interface).md",
+    "함수형 인터페이스.md",
+    "Spring/람다식(lambda).md",
+    "forEach().md",
+    "Iterable.md",
+    "Java/lterable.md",
     "image/Pasted image 20240106023715.png",
     "image/Pasted image 20240106023542.png",
-    "Java/다중상속.md",
-    "Spring/Gradle/mustache.md",
     "Spring/sql",
     "image/Pasted image 20240106023137.png",
-    "Spring/JPA(Java Persistence API).md",
     "image/Pasted image 20240106022633.png",
-    "Spring/JPA/findAll().md",
-    "Java/인터페이스(Interface).md",
-    "Java/static.md",
-    "Java/오버로딩(Overloading).md",
-    "Spring/List.md",
-    "Java/클래스(Class).md",
-    "Java/메서드(Method).md",
-    "Java/캐스팅(casting).md",
-    "Java/ArrayList.md",
-    "Java/of().md",
-    "Java/Iterator.md",
-    "Java/asList().md",
-    "Java/add().md",
     "image/Pasted image 20240104211842.png",
     "image/Pasted image 20240104211341.png",
     "Spring/Gradle/롬복",
@@ -191,7 +195,6 @@
     "image/Pasted image 20231101230919.png",
     "image/Pasted image 20231217203644.png",
     "image/Pasted image 20231217205658.png",
-    "image/Pasted image 20231228032827.png",
     "Spring/Gradle",
     "스프링/SQL",
     "Spring/Maven/jsp",
