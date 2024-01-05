@@ -67,7 +67,7 @@ public class ArrayListTest {
 
 #### **3. ArrayList 엘레멘트 삭제**
 
-추가했던 값을 삭제할 때는 remove() 메소드를 호출한다.
+- 추가했던 값을 삭제할 때는 remove() 메소드를 호출한다.
 
 ```java
 import java.util.ArrayList;
@@ -88,19 +88,16 @@ public class ArrayListTest {
 }
 ```
 
-삭제할 때는 엘레멘트의 인덱스를 입력하거나 엘레멘트를 직접 입력할 수 있습니다.
-
-인덱스를 통해 삭제할 경우 삭제되는 엘레멘트를 리턴받을 수 있습니다.
-
-값을 지움과 동시에 해당 값으로 별도의 작업이 필요한 경우 리턴을 받아서 사용하면 됩니다.
-
-ArrayList 안의 내용을 전체 삭제할 때는 clear()를 호출하면 됩니다.
+- 위의 코드를 보면 일반 배열을 ArrayList로 바꾸기 위해 [[asList()]] 메서드를 사용했다.
+- 삭제할 때는 엘레멘트의 인덱스를 입력하거나 엘레멘트를 직접 입력할 수 있다.
+- 인덱스를 통해 삭제할 경우 삭제되는 엘레멘트를 리턴받을 수 있다.
+- 값을 지움과 동시에 해당 값으로 별도의 작업이 필요한 경우 리턴을 받아서 사용하면 된다.
+- ArrayList 안의 내용을 전체 삭제할 때는 clear()를 호출하면 된다.
 
 #### **4. ArrayList 전체 값 확인**
+- ArrayList의 모든 값들을 순회해서 출력하고 싶은 경우 다양한 방법을 사용할 수 있다.
 
-ArrayList의 모든 값들을 순회해서 출력하고 싶은 경우 다양한 방법을 사용할 수 있습니다.
-
-```
+```java
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -138,13 +135,10 @@ public class ArrayListTest {
 }
 ```
 
-for-each 반복문으로 각각의 값을 순회해서 출력하는 것이 가능합니다.
-
-또한 get() 메소드로 각 인덱스의 값을 순차적으로 탐색하는 방법도 가능합니다.
-
-그리고 iterator나 listIterator를 통해 값들을 순회하는 것도 가능합니다.
-
-listIterator의 경우 생성 시 ArrayList의 크기를 입력해주고 역방향으로 출력할 수 있습니다.
+- for-each 반복문으로 각각의 값을 순회해서 출력하는 것이 가능하다.
+- 또한 get() 메소드로 각 인덱스의 값을 순차적으로 탐색하는 방법도 가능하다.
+- 그리고 iterator나 listIterator를 통해 값들을 순회하는 것도 가능하다.
+- listIterator의 경우 생성 시 ArrayList의 크기를 입력해주고 역방향으로 출력할 수 있다.
 
 ![](https://blog.kakaocdn.net/dn/DZXoS/btqM9p7K6js/lECX8GgwgS5i1o511AsxAK/img.png)
 
@@ -187,22 +181,22 @@ indexOf()는 값이 존재하는 경우 해당 엘레멘트의 인덱스를 리�
 
 
 
-- **주요 메소드**
-    - **.add((index), val)**: 순서대로 리스트를 추가, 배열 사이즈 초과 시 초기 설정된 사이즈만큼 자동으로 사이즈가 증가함, 인덱스를 추가로 지정해주면 해당 인덱스에 값을 삽입
-    - **.get(index)**: 해당 인덱스의 값 반환
-    - **.set(index, val)**: 인덱스로 값 변경
-    - **.indexOf(val)**: 값을 제공하면 해당 값의 첫번째 인덱스를 반환
-    - **.lastindexOf(val)**: 해당 값의 마지막 인덱스 반환
-    - **.remove(index or val)**: 해당 인덱스의 값 or 해당 값 중 첫번째 값 삭제
-    - **.contains(val)**: 해당 값이 배열에 있는지 검색해서 true / false 반환
-    - .containsAll(val1, val2...): argument로 제공한 컬렉션의 모든 값이 포함되어 있는지 여부를 true / false로 반환
-    - .toArray(): ArrayList 타입의 인스턴스를 일반 배열 타입으로 반환, 저장할 배열 타입에 맞춰 자동 형변환, 배열 크기 또한 자동으로 맞춰서 바꿔줌
-    - **.clear()**: 값 모두 삭제
-    - **.isEmpty()**: 비었으면 true, 하나라도 값이 있으면 false 반환
-    - .addAll(arr2): 두 컬렉션을 합침
-    - .retainAll(arr2): argument로 제공한 컬렉션 내에 들어있는 값을 제외하고 모두 지워줌
-    - **.removeAll(arr2)**: argument로 제공한 컬렉션 내에 들어있는 값과 일치하는 값을 모두 지워줌, retainAll() 메소드와 반대
-    - **.size()**: 요소 개수 반환
+## 이 밖에 주요 메소드
+- **.add((index), val)**: 순서대로 리스트를 추가, 배열 사이즈 초과 시 초기 설정된 사이즈만큼 자동으로 사이즈가 증가함, 인덱스를 추가로 지정해주면 해당 인덱스에 값을 삽입
+- **.get(index)**: 해당 인덱스의 값 반환
+- **.set(index, val)**: 인덱스로 값 변경
+- **.indexOf(val)**: 값을 제공하면 해당 값의 첫번째 인덱스를 반환
+- **.lastindexOf(val)**: 해당 값의 마지막 인덱스 반환
+- **.remove(index or val)**: 해당 인덱스의 값 or 해당 값 중 첫번째 값 삭제
+- **.contains(val)**: 해당 값이 배열에 있는지 검색해서 true / false 반환
+- .containsAll(val1, val2...): argument로 제공한 컬렉션의 모든 값이 포함되어 있는지 여부를 true / false로 반환
+- .toArray(): ArrayList 타입의 인스턴스를 일반 배열 타입으로 반환, 저장할 배열 타입에 맞춰 자동 형변환, 배열 크기 또한 자동으로 맞춰서 바꿔줌
+- **.clear()**: 값 모두 삭제
+- **.isEmpty()**: 비었으면 true, 하나라도 값이 있으면 false 반환
+- .addAll(arr2): 두 컬렉션을 합침
+- .retainAll(arr2): argument로 제공한 컬렉션 내에 들어있는 값을 제외하고 모두 지워줌
+- **.removeAll(arr2)**: argument로 제공한 컬렉션 내에 들어있는 값과 일치하는 값을 모두 지워줌, retainAll() 메소드와 반대
+- **.size()**: 요소 개수 반환
 
 ```java
 import java.util.ArrayList;
