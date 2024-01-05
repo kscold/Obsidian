@@ -57,7 +57,7 @@ public static void main(String[] args) {
 }
 ```
 
-위와 같이 RowMapper [[자바/인터페이스(Interface)|인터페이스(Interface)]]를 기반으로 클래스를 만들고 해당 클래스에서 mapRow 메서드를 작성해주면 된다.  이때 mapRow 메서드의 rs는 [[ResultSet]] 객체, rowNum은 결과로 받은 sql 행의 개수라고 생각하면 된다. 그리고 만든 클래스의 객체를 생성하여 위와 같이 queryForObject로 넘겨주면 Role 객체를 얻어올 수 있다. 위와 같이 클래스를 만들지 않고 필드로 선언하여 사용할 수도 있다.
+위와 같이 RowMapper [[인터페이스(Interface)|인터페이스(Interface)]]를 기반으로 클래스를 만들고 해당 클래스에서 mapRow 메서드를 작성해주면 된다.  이때 mapRow 메서드의 rs는 [[ResultSet]] 객체, rowNum은 결과로 받은 sql 행의 개수라고 생각하면 된다. 그리고 만든 클래스의 객체를 생성하여 위와 같이 queryForObject로 넘겨주면 Role 객체를 얻어올 수 있다. 위와 같이 클래스를 만들지 않고 필드로 선언하여 사용할 수도 있다.
 
 ```java
 // RoleDao.java

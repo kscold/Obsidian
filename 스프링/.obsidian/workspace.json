@@ -13,13 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "자바/캐스팅(casting).md",
+                "file": "Spring/Gradle/엔티티(entity).md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "f4faf621b4fb9ee6",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "자바/캐스팅(casting).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "자바/캐스팅(casting).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "자바/캐스팅(casting).md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,54 +151,54 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "28e8821e3d97792c",
+  "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
-    "자바/of().md",
-    "자바/Iterator.md",
-    "스프링/List.md",
-    "자바/ArrayList.md",
-    "asList().md",
-    "자바/add().md",
-    "자바/배열(Array).md",
-    "자바/캐스팅(casting).md",
-    "자바/implements.md",
-    "자바/Set.md",
+    "Spring/Gradle/엔티티(entity).md",
+    "특성(Attribute).md",
+    "Spring/sql/스키마(Schema).md",
+    "Spring/Gradle/리파지터리(repository).md",
+    "Spring/sql/테이블(Table).md",
+    "Spring/sql/레코드(Record).md",
+    "Spring/Gradle/@Entity.md",
+    "Spring/sql/필드(Fields).md",
+    "Spring/sql/SQL.md",
+    "Java/필드(field).md",
+    "image/Pasted image 20240106023715.png",
+    "image/Pasted image 20240106023542.png",
+    "Java/다중상속.md",
+    "Spring/Gradle/mustache.md",
+    "Spring/sql",
+    "image/Pasted image 20240106023137.png",
+    "Spring/JPA(Java Persistence API).md",
+    "image/Pasted image 20240106022633.png",
+    "Spring/JPA/findAll().md",
+    "Java/인터페이스(Interface).md",
+    "Java/static.md",
+    "Java/오버로딩(Overloading).md",
+    "Spring/List.md",
+    "Java/클래스(Class).md",
+    "Java/메서드(Method).md",
+    "Java/캐스팅(casting).md",
+    "Java/ArrayList.md",
+    "Java/of().md",
+    "Java/Iterator.md",
+    "Java/asList().md",
+    "Java/add().md",
     "image/Pasted image 20240104211842.png",
-    "자바/HashSet.md",
     "image/Pasted image 20240104211341.png",
-    "스프링/JPA/findAll().md",
-    "스프링/Gradle/리파지터리(repository).md",
-    "스프링/Optional.md",
-    "자바/orElse().md",
-    "자바/ofNullable().md",
-    "스프링/@Test.md",
-    "스프링/JPA/findById().md",
-    "스프링/@PathVariable.md",
-    "스프링/Gradle/롬복/@NoArgsConstructor.md",
-    "스프링/Gradle/롬복/로깅(logging).md",
-    "스프링/Gradle/롬복/@SIf4j.md",
-    "스프링/Gradle/롬복/@Id.md",
-    "스프링/Gradle/@Entity.md",
-    "스프링/Gradle/롬복/롬복(lombok).md",
-    "스프링/JPA/findAllById().md",
-    "스프링/Gradle/롬복",
-    "스프링/JPA",
+    "Spring/Gradle/롬복",
+    "Spring/JPA",
     "image/Pasted image 20231101230919.png",
     "image/Pasted image 20231217203644.png",
     "image/Pasted image 20231217205658.png",
     "image/Pasted image 20231228032827.png",
-    "스프링/Gradle",
-    "image/Pasted image 20231218181253.png",
-    "image/Pasted image 20231218181153.png",
-    "image/Pasted image 20231218180419.png",
-    "image/Pasted image 20231217213908.png",
+    "Spring/Gradle",
     "스프링/SQL",
-    "스프링/Maven/jsp",
-    "자바",
+    "Spring/Maven/jsp",
+    "Java",
     "image",
-    "스프링/Maven",
+    "Spring/Maven",
     "무제 파일.canvas",
-    "노드(node/node.js",
-    "노드(node"
+    "노드(node/node.js"
   ]
 }
