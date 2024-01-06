@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/인스턴스 변수.md",
+                "file": "Java/패키지(package).md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/인스턴스 변수.md",
+                "file": "Java/패키지(package).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/인스턴스 변수.md",
+                "file": "Java/패키지(package).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/인스턴스 변수.md"
+                "file": "Java/패키지(package).md"
               }
             }
           }
@@ -156,16 +156,17 @@
   },
   "active": "28e8821e3d97792c",
   "lastOpenFiles": [
-    "default.md",
     "Java/인스턴스 변수.md",
+    "Java/패키지(package).md",
+    "Java/디펄트 메서드(Default Method).md",
+    "Java/default.md",
     "Java/변수(Variable).md",
-    "지역 변수.md",
+    "Java/지역 변수.md",
     "Java/클래스 변수.md",
-    "멤버 변수.md",
-    "전역 변수.md",
+    "Java/멤버 변수.md",
+    "Java/전역 변수.md",
     "Java/Getter and Setter.md",
     "Java/private.md",
-    "Java/패키지(package).md",
     "Java/접근제어자(Access modifier).md",
     "Java/인스턴스(Instance).md",
     "Java/new.md",
@@ -178,11 +179,10 @@
     "Java/extends.md",
     "Java/클래스(Class).md",
     "Java/인터페이스(Interface).md",
-    "함수형 인터페이스.md",
+    "Java/함수형 인터페이스.md",
     "Spring/람다식(lambda).md",
-    "forEach().md",
+    "Java/forEach().md",
     "Iterable.md",
-    "Java/lterable.md",
     "image/Pasted image 20240106023715.png",
     "image/Pasted image 20240106023542.png",
     "Spring/sql",
