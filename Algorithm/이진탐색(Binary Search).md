@@ -29,3 +29,45 @@
 - 기본적인 이분탐색에서 요구하는 값은 항상 mid값중 최대이거나, 최소인 값들이라는 점이다.
 - 그렇다는건 문제의 출력과 mid를 연결해서 생각하면 좀더 쉽게 생각할수 있다는 것이다.
 - 나는 목표레벨 T가 결국 k를 여러명에게 나눠서 더해주었을 때, 가장 큰 mid값이라고 생각했다.
+
+ 
+### 이진 탐색 구현
+```python
+def binary_search(target, data):
+	data.sort() # 데이터를 먼저 정렬
+    start = 0 # 시작 인덱스를 설정
+    end = len(data) - 1 # 마지막 인덱스를 설정
+    
+    while start <= end: # 시작인덱스가 마지막 인덱스를 넘어서면 탐색을 다한 것이므로 종료
+        mid = (start + end) // 2 # 중간 mid 인덱스 값을 설정
+        
+        if data[mid] == target: # mid 인덱스값이 target 값이면 탐색 종료
+            return mid # 함수를 끝내버린다.
+        elif data[mid] < target: # mid 인덱스값이 target 보다 작으면 start 값을 증가
+            start = mid + 1
+        else: # mid 인덱스값이 target 보다 크면 end 값을 감소
+            end = mid - 1 
+            
+    return None # target 값을 찾지 못하면 None을 반환
+```
+
+- 이렇게 푸는 문제가 대부분이나 백준 1920 수 찾기의 경우 O(1000,000) 이라 힘들다.
+- 따라서 O(n)인 리스트를 사용하지 않고 O(1)인 상수 시간인 set를 사용하여 풀면 된다.
+
+- 이진 탐색은 아니지만 set과 in을 이용한 탐색
+```java
+import sys  
+  
+input = sys.stdin.readline  
+  
+n = int(input())  
+data = set(map(int, input().split()))  
+m = int(input())  
+target = list(map(int, input().split()))  
+  
+for t in target:  
+    if t in data:  
+        print(1)  
+    else:  
+        print(0)
+```
