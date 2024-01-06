@@ -18,7 +18,7 @@ public class Son extends Father, Mother{ // 다중 상속 미지원
 
 
 - 다중 상속의 이점을 버릴 수는 없기에 자바에서는 인터페이스라는 것을 통해 다중 상속을 지원하고 있다.
-- 자바에서 [[추상 클래스(Abstract Class)]]는 [[추상 메서드(Abstract Method)]]뿐만 아니라 [[생성자(constructor)]], [[Java/필드(field)]], 일반 [[메서드(Method)]]도 포함할 수 있다.
+- 자바에서 [[추상 클래스(Abstract Class)]]는 [[추상 메서드(Abstract Method)]]뿐만 아니라 [[생성자(constructor)]], [[Java/필드(Field)]], 일반 [[메서드(Method)]]도 포함할 수 있다.
 - 하지만 인터페이스는 오로지 추상 메서드와 상수만을 포함할 수 있다.
 
 ### 인터페이스의 선언

@@ -1,19 +1,18 @@
+- List는 [[인터페이스(Interface)]]이고 ArrayList는 [[클래스(Class)]]이다.
 - ArrayList는 자바에서 기본적으로 많이 사용되는 [[클래스(Class)]]이다.
 - ArrayList는 자바의 List [[인터페이스(Interface)]]를 상속받은 여러 클래스 중 하나이다.
 - 일반 [[배열(Array)]]과 동일하게 연속된 메모리 공간을 사용하며 인덱스는 0부터 시작한다.
 
 ![](https://blog.kakaocdn.net/dn/dTm8ja/btqMYaopkFc/uZL2zJbY7fFvX0NrF0Sudk/img.png)
 
-- 배열과의 차이점은 배열이 크기가 고정인 반면 ArrayList는 크기가 가변적으로 변한다.
+- [[배열(Array)]]과의 차이점은 배열이 크기가 고정인 반면 ArrayList는 크기가 가변적으로 변한다.
 - 내부적으로 저장이 가능한 메모리 용량(Capacity)이 있으며 현재 사용 중인 공간의 크기(Size)가 있다.
 - 만약 현재 가용량(Capacity) 이상을 저장하려고 할 때 더 큰 공간의 메모리를 새롭게 할당한다.
 - 데이터 중복이 가능하며, null 값도 허용한다.
+
 - 자료를 대량으로 추가하거나 삭하면 내부 처리 작업이 늘어나서 성능이 떨어 질 수 있다.
 
- 
- 밑에는 자바의 ArrayList를 활용하는 방법이다.
-#### 1. ArrayList 생성
-
+### 1. ArrayList 생성
 - 자바에서 ArrayList를 사용하려면 아래 구문을 먼저 추가해야 한다.
 
 ```java
@@ -31,10 +30,10 @@ ArrayList<Integer> integers5 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5)); //
 ```
 
 - 보통 생성할 때는 new ArrayList<>()와 같이 타입을 생략해서 작성한다.
-- ArrayList를 생성할 때 [[Set]]이나 다른 ArrayList를 전달하면 해당 Collections의 값들로 초기화된다.
-- 마지막으로 가변 인자를 전달받는 Arrays.asList()를 사용하면 기본 값들로 생성 가능하다.
+- ArrayList를 생성할 때 [[Set]]이나 다른 ArrayList를 전달하면 해당 [[Collection]]의 값들로 초기화된다.
+- 마지막으로 가변 인자를 전달받는 Arrays.[[asList()]]를 사용하면 기본 값들로 생성 가능하다.
 
-#### **2. ArrayList 엘레멘트 추가/변경**
+### 2. ArrayList 엘레멘트 추가/변경
 - ArrayList를 생성한 후 [[add()]] 메서드로 엘레멘트를 추가할 수 있다.
 - 또한 set() 메서드로 기존에 추가된 값을 변경하는 것도 가능하다.
 
