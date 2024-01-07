@@ -21,7 +21,7 @@ queue.reverse() # 다음 출력을 위해 역순으로 바꾸기
 print(queue) # 나중에 들어온 원소부터 출력
 
 >> dequeue([3, 7, 1, 4])
->> dequeue([4, 7, 1, 4])
+>> dequeue([4, 1, 7, 3])
 ```
 
 - 파이썬으로 큐를 구현할 때는 collections 모듈에서 제공하는 [[deque()]] 자료구조를 활용한다.

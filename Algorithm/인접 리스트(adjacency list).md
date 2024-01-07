@@ -11,6 +11,23 @@
 
 ![[Pasted image 20230919232038.png]]
 
+- 밑의 코드는 인접리스트를 표현하는 예시로 가중치가 있는 유향 그래프를 만드는 방법이다.
+```python
+# 행(Row)이 3개인 2차원 리스트로 인접 리스트 표현  
+graph = [[] for _ in range(3)]  
+  
+# 노드 0에 연결된 노드 정보 저장(노드, 거리)  
+graph[0].append((1, 7))  # 0과 이어진 left 1 data와 weight 7graph[0].append((2, 5))  # 0과 이어진 right 2 data와 weight 5  
+# 노드 1에 연결된 노드 정보 저장(노드, 거리)  
+graph[1].append((0, 7))  
+  
+# 노드 2에 연결된 노드 정보 저장(노드, 거리)  
+graph[2].append((0, 5))  
+  
+print(graph)
+```
+
+
 가중치가 없는 [[무방향 그래프(Undirected graph)]]
 : 그림과 같이 가중치 표현 없이 인접한 노드 정보가 저장된다.
 
