@@ -1,6 +1,6 @@
 - [[@Id]]는 해당 프로퍼티가 테이블의 주키(primary key) 역할을 한다는 것을 나타낸다.
 - @GeneratedValue는 주키의 값을 위한 자동 생성 전략을 명시하는데 사용한다.
-- Primary 키 생성 전략으로 JPA가 지원하는 것은 아래의 네 가지이다.
+- Primary 키 생성 전략으로 [[JPA(Java Persistence API)]]가 지원하는 것은 아래의 네 가지이다.
 
 
 1. AUTO : (persistence provider가) 특정 DB에 맞게 자동 선택

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/asList().md",
+                "file": "Spring/JPA/롬복/@Getter.md",
                 "mode": "source",
                 "source": false
               }
@@ -27,7 +27,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/asList().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/asList().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Java/asList().md"
-              }
+              "state": {}
             }
           }
         ]
@@ -154,12 +151,22 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f4faf621b4fb9ee6",
+  "active": "a974a05feea5e18f",
   "lastOpenFiles": [
-    "Java/add().md",
+    "Spring/JPA/롬복/@Getter.md",
+    "Spring/JPA/롬복/@AllArgsConstructor.md",
+    "Spring/JPA/롬복/@NoArgsConstructor.md",
+    "Java/final.md",
+    "Java/static.md",
+    "Java/필드(Field).md",
+    "Spring/JPA/롬복/@GeneratedValue.md",
+    "Spring/리다이렉트(redirect).md",
+    "Java/Collection.md",
+    "Spring/링크(link).md",
+    "Spring/RowMapper.md",
     "Java/asList().md",
+    "Java/add().md",
     "Java/ArrayList.md",
-    "Collection.md",
     "Java/Map.md",
     "image/Pasted image 20240106200211.png",
     "Java/Set.md",
@@ -170,20 +177,10 @@
     "Java/캡슐화(encapsulation).md",
     "Java/변수(Variable).md",
     "Java/멤버 변수.md",
-    "Java/필드(Field).md",
     "Java/지역 변수(lv, local variable).md",
     "Java/클래스 변수(cv, class variable).md",
     "Java/전역 변수.md",
-    "Java/패키지(package).md",
-    "Untitled.md",
-    "Java/디펄트 메서드(Default Method).md",
-    "Java/default.md",
-    "Java/Getter and Setter.md",
-    "Java/private.md",
-    "Java/접근제어자(Access modifier).md",
-    "Java/인스턴스(Instance).md",
     "image/Pasted image 20240106042214.png",
-    "Java/this().md",
     "image/Pasted image 20240106023715.png",
     "image/Pasted image 20240106023542.png",
     "Spring/sql",
@@ -191,7 +188,7 @@
     "image/Pasted image 20240106022633.png",
     "image/Pasted image 20240104211842.png",
     "image/Pasted image 20240104211341.png",
-    "Spring/Gradle/롬복",
+    "Spring/JPA/롬복",
     "Spring/JPA",
     "image/Pasted image 20231101230919.png",
     "image/Pasted image 20231217203644.png",

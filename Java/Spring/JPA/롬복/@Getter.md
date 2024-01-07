@@ -1,0 +1,1 @@
+- [[롬복(lombok)]]의 기능으로 [[JPA(Java Persistence API)]]의 [[엔티티(entity)]]에서 [[Getter and Setter]]에서 getter() 함수를 자동적으로 선언해 주는 [[어노테이션(Annotation)]]이다.
