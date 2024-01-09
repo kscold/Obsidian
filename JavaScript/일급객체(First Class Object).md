@@ -1,13 +1,10 @@
-
-## 일급객체에 대한 정의
-
 - 일급객체(First-class Object)란 다른 [[객체(Object)]]들에 일반적으로 적용 가능한 연산을 모두 지원하는 객체를 가리킨다. 
 
  - 변수에 할당(assignment)할 수 있다.
  - 다른 함수를 인자(argument)로 전달 받는다.
  - 다른 함수의 결과로서 리턴될 수 있다.
 
-위에 대한 조건으로 인해 알 수 있는 것은 [[함수(Function)]]를 데이터(`string`, `number`, `boolean`, `array`, `object`) 다루 듯이 다룰 수 있다는 점이다.
+- 위에 대한 조건으로 인해 알 수 있는 것은 [[함수(Function)]]를 데이터(`string`, `number`, `boolean`, `array`, `object`) 다루 듯이 다룰 수 있다는 점이다.
 
 ## 다른 언어와의 객체의 정의 구별
 

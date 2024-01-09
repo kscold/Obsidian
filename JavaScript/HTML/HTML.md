@@ -7,6 +7,8 @@
 <button onclick="alert('executed')">Click</button>
 ```
 
+### [[DOM(Document Object Model)]] 요소의 id
+- 바닐라 HTML에서 DOM 요소의 이름을 달 때에는 id를 사용한다.
 
 ### 리엑트에서 이벤트
 - 리액트의 이벤트 시스템은 웹 브라우저의 HTML 이벤트와 인터페이스가 돌일하기 때문에 사용법이 거의 비슷하다.([[JSX]] 이용한다.)

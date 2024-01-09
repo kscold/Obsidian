@@ -1,7 +1,6 @@
-- `setTimeout`에 메서드를 전달할 때처럼, 객체 메서드를 콜백으로 전달할 때 ’`this` 정보가 사라지는’ 문제가 생긴다.
+- `setTimeout`에 [[메서드(Method)]]드를 전달할 때처럼, 객체 메서드를 콜백으로 전달할 때 ’`this` 정보가 사라지는’ 문제가 생긴다.
 
-
-## 사라진 ‘this’
+## 사라진 [[this]]
 - `this` 정보가 사라지는 문제가 종종 나타난다.
 - [[객체(Object)]] [[메서드(Method)]]가 객체 내부가 아닌 다른 곳에 전달되어 호출되면 `this`가 사라진다.
 
@@ -81,42 +80,53 @@ user = { sayHi() { alert("또 다른 사용자!"); } };
 
 - 따라서 두 번째 방법인 [[bind()]] [[키워드(Keyword)]]를 사용하면 이런 일이 발생하지 않는다.
 
+## 부분적용
 
-## [부분 적용](https://ko.javascript.info/bind#ref-16)
+- 지금까진 `this` 바인딩에 대해서만 이야기했다.
+- `this` 뿐만 아니라 인수도 바인딩이 가능하다.
+- 인수 바인딩은 잘 쓰이진 않지만 가끔 유용할 때가 있습니다.
+- `bind`의 전체 문법은 다음과 같다.
 
-지금까진 `this` 바인딩에 대해서만 이야기해보았습니다. 한 단계 더 나아가 봅시다.
+```jsx
+let bound = func.bind(context, [`arg1`],[`arg2`], ...);
+```
 
-`this` 뿐만 아니라 인수도 바인딩이 가능합니다. 인수 바인딩은 잘 쓰이진 않지만 가끔 유용할 때가 있습니다.
+- `bind`는 컨텍스트를 `this`로 고정하는 것 뿐만 아니라 함수의 인수도 고정한다.
 
-`bind`의 전체 문법은 다음과 같습니다.
+- 곱셈을 해주는 함수 `mul(a, b)`를 예시로 들어보자.
 
-``` `let` bound `=` `func``.``bind``(`context`,` `[`arg1`]``,` `[`arg2`]``,` `...``)``;` ```
+```jsx
+function mul(a, b) {
+	return a * b;
+}
+```
 
-`bind`는 컨텍스트를 `this`로 고정하는 것 뿐만 아니라 함수의 인수도 고정해줍니다.
+- `bind`를 사용해 새로운 함수 `double`을 만든다.
 
-곱셈을 해주는 함수 `mul(a, b)`를 예시로 들어보겠습니다.
+```jsx
+function mul(a, b) {
+	 return a * b;
+} 
 
-```` `function` `mul``(```a`,` b```)` `{`   `return` a `*` b`;` `}` ````
+let double = mul.bind(null, 2);
 
-`bind`를 사용해 새로운 함수 `double`을 만들겠습니다.
+alert(double(3)); // = mul(2, 3) = 6
+alert(double(4)); // = mul(2, 4) = 8
+alert(double(5)); // = mul(2, 5) = 10
+```
 
-[](https://ko.javascript.info/bind# "실행")
+- `mul.bind(null, 2)`를 호출하면 새로운 함수 `double`이 만들어진다. 
+- `double`엔 컨텍스트가 `null`, 첫 - 번째 인수는 `2`인 `mul`의 호출 결과가 전달된다.
+- 추가 인수는 ‘그대로’ 전달된다.
 
-[](https://ko.javascript.info/bind# "샌드박스에서 열기")
+- 이런 방식을 부분 적용(partial application)이라고 부른다.
+- 부분 적용을 사용하면 기존 함수의 매개변수를 고정하여 새로운 함수를 만들 수 있다.
 
-```` `function` `mul``(```a`,` b```)` `{`   `return` a `*` b`;` `}`  _`let` double `=` `mul``.``bind``(``null``,` `2``)``;`_  `alert``(` `double``(``3``)` `)``;` `// = mul(2, 3) = 6` `alert``(` `double``(``4``)` `)``;` `// = mul(2, 4) = 8` `alert``(` `double``(``5``)` `)``;` `// = mul(2, 5) = 10` ````
+- 위 예시에선 `this`를 사용하지 않았다는 점에 주목하시기 바란다. 
+- `bind`엔 컨텍스트를 항상 넘겨줘야 하므로 `null`을 사용했다.
 
-`mul.bind(null, 2)`를 호출하면 새로운 함수 `double`이 만들어집니다. `double`엔 컨텍스트가 `null`, 첫 번째 인수는 `2`인 `mul`의 호출 결과가 전달됩니다. 추가 인수는 ‘그대로’ 전달됩니다.
+- 부분 적용을 사용해 3을 곱해주는 함수 `triple`을 만들어보자.
 
-이런 방식을 [부분 적용(partial application)](https://en.wikipedia.org/wiki/Partial_application)이라고 부릅니다. 부분 적용을 사용하면 기존 함수의 매개변수를 고정하여 새로운 함수를 만들 수 있습니다.
-
-위 예시에선 `this`를 사용하지 않았다는 점에 주목하시기 바랍니다. `bind`엔 컨텍스트를 항상 넘겨줘야 하므로 `null`을 사용했습니다.
-
-부분 적용을 사용해 3을 곱해주는 함수 `triple`을 만들어보겠습니다.
-
-[](https://ko.javascript.info/bind# "실행")
-
-[](https://ko.javascript.info/bind# "샌드박스에서 열기")
 
 ```` `function` `mul``(```a`,` b```)` `{`   `return` a `*` b`;` `}`  _`let` triple `=` `mul``.``bind``(``null``,` `3``)``;`_  `alert``(` `triple``(``3``)` `)``;` `// = mul(3, 3) = 9` `alert``(` `triple``(``4``)` `)``;` `// = mul(3, 4) = 12` `alert``(` `triple``(``5``)` `)``;` `// = mul(3, 5) = 15` ````
 

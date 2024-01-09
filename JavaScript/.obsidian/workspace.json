@@ -8,35 +8,11 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1a0c0c5c4a5d0fda",
+            "id": "4683ed08d7f7daeb",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {}
-            }
-          },
-          {
-            "id": "92410a74e9301faf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "이벤트(event).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4683ed08d7f7daeb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "onChange.md",
-                "mode": "source",
-                "source": false
-              }
             }
           },
           {
@@ -45,13 +21,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "const.md",
+                "file": "React/ref.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -117,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "React/ref.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "React/ref.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "React/ref.md"
+              }
             }
           }
         ]
@@ -174,34 +155,34 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "1a0c0c5c4a5d0fda",
+  "active": "7675ad2cbf7a3a4c",
   "lastOpenFiles": [
-    "res.md",
-    "이벤트(event).md",
-    "React/React.StrictMode.md",
-    "JWT.md",
-    "node.js/send().md",
-    "node.js/get().md",
-    "React/state.md",
-    "배열.md",
-    "객체(Object).md",
-    "React/클래스형 컴포넌트.md",
-    "렉시컬 환경(Lexical Environment).md",
-    "css/-webkit-text-stroke.md",
-    "매소드(Method).md",
-    "node.js/MongoDB/mongoDB.md",
+    "컴포넌트.md",
+    "React/ref.md",
+    "React/index.js.md",
+    "HTML/HTML.md",
+    "DOM(Document Object Model).md",
+    "HTML/<input>.md",
+    "React/useState.md",
     "onChange.md",
-    "const.md",
-    "bind().md",
-    "바인딩.md",
-    "실행 컨텍스트.md",
-    "식별자(Identifier).md",
+    "React/setState.md",
+    "React/state.md",
+    "객체(Object).md",
+    "리터럴(literal).md",
+    "표현식(expression).md",
+    "new.md",
+    "속성(Property).md",
     "함수(Function).md",
-    "메서드(Method).md",
-    "setTimeout().md",
-    "this.md",
-    "window.md",
-    "let.md",
+    "일급객체(First Class Object).md",
+    "변수(Variable).md",
+    "바인딩(binding).md",
+    "렉시컬 환경(Lexical Environment).md",
+    "화살표함수(Arriw Funtion).md",
+    "확산 연산자(spread).md",
+    "bind().md",
+    "super().md",
+    "const.md",
+    "이벤트(event).md",
     "HTML",
     "image/Pasted image 20240101213717.png",
     "image/Pasted image 20240101180454.png",

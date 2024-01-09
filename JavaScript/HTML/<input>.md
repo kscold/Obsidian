@@ -78,3 +78,20 @@
  
   ## [[onChange]]
   - `<input>` 태그의 [[이벤트(event)]]를 받아 event.target.value로 input창의 값을 저장할 수 있다.
+- 이벤트를 여러개 다뤄야할 때는 [e.target.name] : e.target.value를 사용해 받아주면 더 좋을 수도 있다.
+
+```jsx
+	state = {
+		username: '',
+		message: '',
+	};
+
+	  
+	handleChange = (e) => {
+		// 화살표함수로 선언하면 메서드 바인딩을 생략할 수 있다.
+		this.setState({
+			[e.target.name]: e.target.value,
+		});
+	};
+	
+```

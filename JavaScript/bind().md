@@ -28,23 +28,30 @@ funcUser(); // John
 - 인자는 원본 함수 `func`에 ‘그대로’ 전달된다.
 
 
-``` `let` user `=` `{`   firstName`:` `"John"` `}``;`  `function` `func``(``phrase``)` `{`   `alert``(`phrase `+` `', '` `+` `this``.`firstName`)``;` `}`  `// this를 user로 바인딩합니다.` `let` funcUser `=` `func``.``bind``(`user`)``;`  _`funcUser``(``"Hello"``)``;` `// Hello, John (인수 "Hello"가 넘겨지고 this는 user로 고정됩니다.)`_ ```
+```jsx
+let user = {
+	firstName: "John" 
+};
 
-이제 객체 메서드에 `bind`를 적용해 봅시다.
+function func(phrase) {
+	alert(phrase + ', ' + this.firstName);
+} // this를 user로 바인딩합니다.
 
-[](https://ko.javascript.info/bind# "실행")
+let funcUser = func.bind(user);
 
-[](https://ko.javascript.info/bind# "샌드박스에서 열기")
+funcUser("Hello"); // Hello, John (인수 "Hello"가 넘겨지고 this는 user로 고정됩니다.)
+```
 
-````` `let` user `=` `{`   firstName`:` `"John"``,`   `sayHi``(``)` `{`     `alert``(`````` `` ` ```Hello,` ``` `${``this``.`firstName`}` ````!``` ` `` ``````)``;`   `}` `}``;`  _`let` sayHi `=` user`.``sayHi``.``bind``(`user`)``;` `// (*)`_  `// 이제 객체 없이도 객체 메서드를 호출할 수 있습니다.` `sayHi``(``)``;` `// Hello, John!`  `setTimeout``(`sayHi`,` `1000``)``;` `// Hello, John!`  `// 1초 이내에 user 값이 변화해도` `// sayHi는 기존 값을 사용합니다.` user `=` `{`   `sayHi``(``)` `{` `alert``(``"또 다른 사용자!"``)``;` `}` `}``;` `````
+이제 [[객체(Object)]] [[메서드(Method)]]에 `bind`를 적용해 보자.
+
+```jsx
+`let` user `=` `{`   firstName`:` `"John"``,`   `sayHi``(``)` `{`     `alert``(`````` `` ` ```Hello,` ``` `${``this``.`firstName`}` ````!``` ` `` ``````)``;`   `}` `}``;`  _`let` sayHi `=` user`.``sayHi``.``bind``(`user`)``;` `// (*)`_  `// 이제 객체 없이도 객체 메서드를 호출할 수 있습니다.` `sayHi``(``)``;` `// Hello, John!`  `setTimeout``(`sayHi`,` `1000``)``;` `// Hello, John!`  `// 1초 이내에 user 값이 변화해도` `// sayHi는 기존 값을 사용합니다.` user `=` `{`   `sayHi``(``)` `{` `alert``(``"또 다른 사용자!"``)``;` `}` `}``;` 
+```
 
 `(*)`로 표시한 줄에서 메서드 `user.sayHi`를 가져오고, 메서드에 `user`를 바인딩합니다. `sayHi`는 이제 ‘묶인(bound)’ 함수가 되어 단독으로 호출할 수 있고 `setTimeout`에 전달하여 호출할 수도 있습니다. 어떤 방식이든 컨택스트는 원하는 대로 고정됩니다.
 
 아래 예시를 실행하면 인수는 ‘그대로’ 전달되고 `bind`에 의해 `this`만 고정된 것을 확인할 수 있습니다.
 
-[](https://ko.javascript.info/bind# "실행")
-
-[](https://ko.javascript.info/bind# "샌드박스에서 열기")
 
 ````` `let` user `=` `{`   firstName`:` `"John"``,`   `say``(``phrase``)` `{`     `alert``(`````` `` ` ```` `${`phrase`}` ```,` ``` `${``this``.`firstName`}` ````!``` ` `` ``````)``;`   `}` `}``;`  `let` say `=` user`.``say``.``bind``(`user`)``;`  `say``(``"Hello"``)``;` `// Hello, John (인수 "Hello"가 say로 전달되었습니다.)` `say``(``"Bye"``)``;` `// Bye, John ("Bye"가 say로 전달되었습니다.)` `````
 

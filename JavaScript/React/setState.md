@@ -1,4 +1,4 @@
-- 리액트 [[클래스형 컴포넌트]]에서 [[useState]] 대신 사용되는 예약어로 [[this]]를 통해 접근한다.
+- 리액트 [[클래스형 컴포넌트]]에서 [[useState]]([[함수형 컴포넌트]]) 대신 사용되는 예약어로 [[this]]를 통해 접근한다.
 - this.state는 여러 값을 넣을 수 있다.
 - this.setState를 사용하여 state값을 업데이트할 때는 상태가 [[비동기]]적으로 업데이트 된다.
 
@@ -137,3 +137,87 @@ this.setState((prevState) => ({ // 이때 () 소괄호는 return을 포함한다
 ```
 
 - [[화살표함수(Arriw Funtion)]]에서 값을 바로 반환하고 싶다면 코드 블록 { }를 생략하면 된다.
+
+## 클래스 컴포넌트에서 input 여러 개 다루기(onChange)
+- input이 여러 개일 때는 event 객체를 활용하면 훨씬 편하다.
+- event 객체 중에 event.target.name 값을 사용하여 유동적으로 input을 다룬다. onChange 이벤트 핸들러에서 event.target.name은 해당 인풋의 name을 가리킨다.
+
+```jsx
+import { Component } from 'react';
+
+class EventPractice extends Component {
+	state = {
+		username: '',
+		message: '',
+	};
+
+	  
+	handleChange = (e) => {
+		// 화살표함수로 선언하면 메서드 바인딩을 생략할 수 있다.
+		this.setState({
+			[e.target.name]: e.target.value,
+		});
+	};
+	
+	  
+	
+	handleClick = () => {
+		alert(this.state.username + ': ' + this.state.message);
+		this.setState({
+			username: '',
+			message: '',
+		});
+	};
+
+	render() {
+		return (
+			<div>
+				<h1>이벤트 연습</h1>
+				<input
+					type="text"
+					name="username"
+					placeholder="사용자명"
+					value={this.state.username}
+					onChange={this.handleChange}
+				/>
+				<input
+					type="text"
+					name="message"
+					placeholder="아무거나 입력해 보세요"
+					value={this.state.message}
+					onChange={this.handleChange}
+				/>
+				<button onClick={this.handleClick}>확인</button>
+			</div>
+		);
+	}
+}
+
+export default EventPractice;
+
+```
+
+- 이 코드에서 핵심은 [[객체(Object)]] 안에서 key를 `[ ]`로 감싸면 그 안에 넣은 레퍼런스가 가리키는 실제 값(value)가 key 값으로 사용되는 점을 이용한다.
+
+## 특정 키 값으로 메서드 실행하기
+- onKeyPress 객체에 메서드를 넘기면 실행가능하다.
+
+```jsx
+
+handleKeyPress = (e) => { // event를 받아서
+	if (e.key === 'Enter') { // e.key로 특정키 여기서는 Enter를 눌렀을 때
+		this.handleClick(); // 동작을 실행
+	}
+};
+
+// 이후 리턴 부에
+<input
+	type="text"
+	name="message"
+	placeholder="아무거나 입력해 보세요"
+	value={this.state.message}
+	onChange={this.handleChange}
+	onKeyPress={this.handleKeyPress}
+/> // onKeyPress를 넘겨줌
+
+```

@@ -30,7 +30,7 @@ zero.lastName = 'Lee';
 zero; // { firstName: 'Zero', lastName: 'Lee' }
 ```
 
-객체 속성 추가 및 변경
+- 객체 속성 추가 및 변경
 
 ```jsx
 var zero = {
@@ -42,16 +42,23 @@ var zero = {
 zero.body.height; // 173
 ```
 
+### 객체의 key와 value 값을 이용한 접근
 
-**delete**를 이용한 객체 삭제
+```jsx
+const name = 'variantKey'
+const object = {
+	[name]: 'value' // variantKey : value로 설정된다.
+};
+```
+
+### delete를 이용한 객체 삭제
 
 ```jsx
 delete zero.body.height;
 zero.body; // { weight: 66 }
 ```
 
-
-new를 이용한 객체 복사 생성
+### [[new]]를 이용한 객체 복사 생성
 
 ```jsx
 var zero = new Object();
@@ -62,7 +69,7 @@ zero.body.height = 173;
 zero.body.weight = 66;
 ```
 
-{ }를 사용해서 객체를 만드는 것이 더 일반적이며 이를  **객체 리터럴(literal)**이라고 한다. ^objectliteral
+{ }를 사용해서 객체를 만드는 것이 더 일반적이며 이를  객체 [[리터럴(literal)]]이라고 한다.
 
 
-객체 중에는 특수한 객체가 있습니다. 바로 **함수(Function)**와 [[배열(Array)]]입니다.
+객체 중에는 특수한 객체가 있습니다. 바로 [[함수(Function)]]와 [[배열(Array)]]입니다.
