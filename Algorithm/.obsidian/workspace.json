@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "자료구조/스와프(Swap).md",
+                "file": "그래프(Graphs).md",
                 "mode": "source",
                 "source": false
               }
@@ -27,7 +27,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "자료구조/스와프(Swap).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "자료구조/스와프(Swap).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "자료구조/스와프(Swap).md"
-              }
+              "state": {}
             }
           }
         ]
@@ -154,22 +151,24 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "5b3465b6cba331e2",
+  "active": "4c16b3d10ed20a85",
   "lastOpenFiles": [
-    "선택정렬(Selection Sort).md",
-    "자료구조/스와프(Swap).md",
-    "시간 복잡도.md",
-    "BFS(Breadth-First Search).md",
     "구현/상하좌우 이동.md",
-    "자료구조/큐(Queue).md",
+    "그래프(Graphs).md",
+    "인접 리스트(adjacency list).md",
+    "유방향 그래프(Digraph(Directed graph).md",
+    "이진트리(binary tree).md",
+    "BFS(Breadth-First Search).md",
     "DFS(Depth-First Search).md",
+    "자료구조/스와프(Swap).md",
+    "선택정렬(Selection Sort).md",
+    "시간 복잡도.md",
+    "자료구조/큐(Queue).md",
     "인접 행렬(Adjacency Matrix).md",
     "자료구조/스택(Stack).md",
     "무방향 그래프(Undirected graph).md",
-    "인접 리스트(adjacency list).md",
     "파이썬 문법/replace().md",
     "이진탐색(Binary Search).md",
-    "유방향 그래프(Digraph(Directed graph).md",
     "image/Pasted image 20240105215609.png",
     "재귀함수(Recursive Function).md",
     "파이썬 문법/deque().md",
@@ -186,8 +185,6 @@
     "파이썬 문법/heapq.md",
     "파이썬 스니펫",
     "상태 공간 트리(State Space Tree).md",
-    "파이썬 문법/join.md",
-    "이진탐색트리의 삭제(BST-deletion).md",
     "image/Pasted image 20231106014554.png",
     "image/Pasted image 20231030195946.png",
     "image/Pasted image 20231030194326.png",
