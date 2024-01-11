@@ -1,9 +1,9 @@
 - 데이터 타입을 변환하는 것을 말하며 형변환이라고도 한다.
-- [[List]]와 [[Set]]은 공통적으로 [[Iterator]]을 사용할 수 있다. 
+- [[List]]와 [[Java/Set]]은 공통적으로 [[Iterator]]을 사용할 수 있다. 
 
 그럼 두 [[인터페이스(Interface)]]가 공통적으로 가지고 있는 이 [[Iterator]]라는 속성을 Collection 인터페이스가 가지고 있을까?
 
-- 정확히는 [[List]], [[Set]] => Collection => Iterable의 순서로 [[implements]] 하고 있다.
+- 정확히는 [[List]], [[Java/Set]] => Collection => Iterable의 순서로 [[implements]] 하고 있다.
 
 ![[Pasted image 20240104211341.png]]
 
@@ -64,7 +64,7 @@ while(iterator.hasNext()) {
 
 Iterable 하위 인터페이스 계층 구조
 
-- Collection 인터페이스와 [[List]], [[Set]], Queue 인터페이스의 계층 구조를 통해 Iterable과 Iterator에 대해서 조금 더 살펴보자
+- Collection 인터페이스와 [[List]], [[Java/Set]], Queue 인터페이스의 계층 구조를 통해 Iterable과 Iterator에 대해서 조금 더 살펴보자
 
 - Iterable은 Collection의 상위 인터페이스이다.
 - 위에서 본 것처럼 Iterable 인터페이스에는 iterator() 메서드가 선언되어 있다.

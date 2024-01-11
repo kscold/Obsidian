@@ -8,67 +8,14 @@
         "type": "tabs",
         "children": [
           {
-            "id": "de354f61a10c1070",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CREATE TABLE.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0535d729c7f6d65a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "레코드(record).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "6453b585249f5386",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SET.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "25bc81c8c3f2c28d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NOW().md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3782cc4f145cdfaa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SET.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SET.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SET.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "SET.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -197,18 +140,30 @@
   },
   "active": "6453b585249f5386",
   "lastOpenFiles": [
-    "NOW().md",
-    "?(Placeholder).md",
-    "INSERT.md",
+    "SHOW TABLES 1.md",
     "레코드(record).md",
-    "CREATE TABLE.md",
-    "GROUP.md",
     "WHERE.md",
-    "SELECT.md",
     "SHOW TABLES.md",
     "SET.md",
+    "SELECT.md",
+    "NOW().md",
+    "INSERT.md",
     "image/Pasted image 20231115000103.png",
     "image/Pasted image 20231115000101.png",
+    "GROUP.md",
+    "CREATE TABLE.md",
+    "?(Placeholder).md",
+    "?(Placeholder) 1.md",
+    "WHERE 1.md",
+    "SET 1.md",
+    "NOW() 1.md",
+    "INSERT 1.md",
+    "레코드(record) 1.md",
+    "CREATE TABLE 1.md",
+    "GROUP 1.md",
+    "SELECT 1.md",
+    "Pasted image 20231115000103.png",
+    "Pasted image 20231115000101.png",
     "image"
   ]
 }

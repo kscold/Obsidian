@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/JPA/롬복/@Getter.md",
+                "file": "Spring/JPA/@Entity.md",
                 "mode": "source",
                 "source": false
               }
@@ -27,8 +27,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Spring/JPA/@Entity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Spring/JPA/@Entity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Spring/JPA/@Entity.md"
+              }
             }
           }
         ]
@@ -151,35 +154,39 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "a974a05feea5e18f",
+  "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
-    "Spring/JPA/롬복/@Getter.md",
-    "Spring/JPA/롬복/@AllArgsConstructor.md",
-    "Spring/JPA/롬복/@NoArgsConstructor.md",
-    "Java/final.md",
-    "Java/static.md",
-    "Java/필드(Field).md",
-    "Spring/JPA/롬복/@GeneratedValue.md",
-    "Spring/리다이렉트(redirect).md",
-    "Java/Collection.md",
-    "Spring/링크(link).md",
-    "Spring/RowMapper.md",
-    "Java/asList().md",
-    "Java/add().md",
-    "Java/ArrayList.md",
-    "Java/Map.md",
+    "Spring/JPA/리파지터리(repository).md",
+    "Spring/JPA/CrudRepository.md",
+    "Spring/JPA/@Entity.md",
+    "Spring/JPA/엔티티(entity).md",
+    "Spring/HTML/<form>.md",
+    "Spring/HTML/<input>.md",
+    "Spring/HTML",
+    "Spring/DTO(Data Transfer Object).md",
+    "Spring/sql/UPDATE.md",
+    "Spring/sql/무제.md",
+    "image/Pasted image 20240112012957.png",
+    "Spring/sql/WHERE.md",
+    "Spring/sql/SQL.md",
+    "Spring/sql/SHOW TABLES.md",
+    "Spring/sql/SELECT.md",
+    "Spring/sql/NOW().md",
+    "Spring/sql/INSERT.md",
+    "Spring/sql/?(Placeholder).md",
+    "Spring/sql/더미 데이터.md",
+    "Spring/sql/스키마(Schema).md",
+    "Spring/sql/필드(Field).md",
+    "Spring/sql/CREATE TABLE.md",
+    "Spring/sql/GROUP.md",
+    "Spring/sql/레코드(Record).md",
+    "Spring/sql/레코드(record) 1.md",
+    "Spring/sql/테이블(Table).md",
+    "image/Pasted image 20231115000103.png",
+    "Spring/sql/Pasted image 20231115000103.png",
+    "Spring/JPA/findById().md",
+    "Java/orElse().md",
     "image/Pasted image 20240106200211.png",
-    "Java/Set.md",
-    "Spring/List.md",
-    "Java/배열(Array).md",
-    "Java/new.md",
-    "Java/인스턴스 변수(iv, instance variable).md",
-    "Java/캡슐화(encapsulation).md",
-    "Java/변수(Variable).md",
-    "Java/멤버 변수.md",
-    "Java/지역 변수(lv, local variable).md",
-    "Java/클래스 변수(cv, class variable).md",
-    "Java/전역 변수.md",
     "image/Pasted image 20240106042214.png",
     "image/Pasted image 20240106023715.png",
     "image/Pasted image 20240106023542.png",
@@ -187,18 +194,14 @@
     "image/Pasted image 20240106023137.png",
     "image/Pasted image 20240106022633.png",
     "image/Pasted image 20240104211842.png",
-    "image/Pasted image 20240104211341.png",
     "Spring/JPA/롬복",
     "Spring/JPA",
-    "image/Pasted image 20231101230919.png",
-    "image/Pasted image 20231217203644.png",
     "Spring/Gradle",
     "스프링/SQL",
     "Spring/Maven/jsp",
     "Java",
     "image",
     "Spring/Maven",
-    "무제 파일.canvas",
-    "노드(node/node.js"
+    "무제 파일.canvas"
   ]
 }
