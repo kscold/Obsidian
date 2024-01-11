@@ -3,7 +3,7 @@
 
 - .jsp 확장자로 html코드 안에 자바 코드가 들어가는 방식이다.
 - 서블릿을 보완하고 기술을 확장한 스크립트 방식 표준이다. ([[servlet]](서블릿)의 모든 기능 + 추가기능)
-- presentation에 좋다.([[view]])
+- presentation에 좋다.([[뷰(View)]])
 
 ![[Pasted image 20231101232712.png]]
 

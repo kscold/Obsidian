@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/JPA/@Entity.md",
+                "file": "인텔리제이 단축키.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/JPA/@Entity.md",
+                "file": "인텔리제이 단축키.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/JPA/@Entity.md",
+                "file": "인텔리제이 단축키.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/JPA/@Entity.md"
+                "file": "인텔리제이 단축키.md"
               }
             }
           }
@@ -156,36 +156,36 @@
   },
   "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
-    "Spring/JPA/리파지터리(repository).md",
+    "Spring/JPA/findAllById().md",
     "Spring/JPA/CrudRepository.md",
+    "Spring/JPA/findAll().md",
+    "Java/Iterable.md",
+    "Java/Iterator.md",
     "Spring/JPA/@Entity.md",
     "Spring/JPA/엔티티(entity).md",
-    "Spring/HTML/<form>.md",
-    "Spring/HTML/<input>.md",
+    "Spring/JPA/findById().md",
+    "Spring/JPA/리파지터리(repository).md",
+    "Spring/@Repository.md",
+    "Spring/update().md",
+    "Spring/JPA(Java Persistence API).md",
+    "@Controller.md",
+    "Spring/비즈니스 로직(Business Logic).md",
+    "@service.md",
+    "Spring/servlet.md",
+    "Spring/Controller.md",
+    "Spring/Model.md",
+    "Spring/뷰(View).md",
+    "Spring/MVC.md",
+    "Spring/스프링 컨테이너(Spring Container).md",
+    "@Configuration.md",
+    "@ApplicationContext(AppConfig.class).md",
+    "Java/캡슐화(encapsulation).md",
+    "Spring/DI(Dependency Injection).md",
+    "Spring/빈(Bean).md",
     "Spring/HTML",
-    "Spring/DTO(Data Transfer Object).md",
-    "Spring/sql/UPDATE.md",
-    "Spring/sql/무제.md",
     "image/Pasted image 20240112012957.png",
-    "Spring/sql/WHERE.md",
-    "Spring/sql/SQL.md",
-    "Spring/sql/SHOW TABLES.md",
-    "Spring/sql/SELECT.md",
-    "Spring/sql/NOW().md",
-    "Spring/sql/INSERT.md",
-    "Spring/sql/?(Placeholder).md",
-    "Spring/sql/더미 데이터.md",
-    "Spring/sql/스키마(Schema).md",
-    "Spring/sql/필드(Field).md",
-    "Spring/sql/CREATE TABLE.md",
-    "Spring/sql/GROUP.md",
-    "Spring/sql/레코드(Record).md",
-    "Spring/sql/레코드(record) 1.md",
-    "Spring/sql/테이블(Table).md",
     "image/Pasted image 20231115000103.png",
     "Spring/sql/Pasted image 20231115000103.png",
-    "Spring/JPA/findById().md",
-    "Java/orElse().md",
     "image/Pasted image 20240106200211.png",
     "image/Pasted image 20240106042214.png",
     "image/Pasted image 20240106023715.png",
