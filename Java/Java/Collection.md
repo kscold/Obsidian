@@ -5,17 +5,17 @@
 
 ![[Pasted image 20240106200211.png]]
 
-- collection 인터페이스는 List, Set, Queue로 크게 3가지 상위 인터페이스로 분류할 수 있다.
+- collection 인터페이스는 [[List]], [[Set]], Queue로 크게 3가지 상위 [[인터페이스(Interface)]]로 분류할 수 있다.
 - 그리고 여기에 Map의 경우 Collection 인터페이스를 상속받고 있지 않지만 Collection으로 분류된다.
 ## Collection 인터페이스의 특징
 | 인터페이스 | 구현클래스 | 특징 |
 | ---- | ---- | ---- |
-| [[Java/Set]] | HashSet<br><br>TreeSet | 순서를 유지하지 않는 데이터의 집합으로 데이터의 중복을 허용하지 않는다. |
+| [[Set]] | [[HashSet]]<br><br>TreeSet | 순서를 유지하지 않는 데이터의 집합으로 데이터의 중복을 허용하지 않는다. |
 | [[List]] | LinkedList<br><br>Vector<br><br>[[ArrayList]] | 순서가 있는 데이터의 집합으로 데이터의 중복을 허용한다. |
 | Queue | LinkedList<br><br>PriorityQueue | List와 유사하다. |
-| [[Map]] | Hashtable<br><br>HashMap<br><br>TreeMap | 키(Key), 값(Value)의 쌍으로 이루어진 데이터으 집합으로,<br>순서는 유지되지 않으며 키(Key)의 중복을 허용하지 않으나 값(Value)의 중복은 허용한다. |
+| [[Map]] | Hashtable<br><br>[[HashMap]]<br><br>TreeMap | 키(Key), 값(Value)의 쌍으로 이루어진 데이터으 집합으로,<br>순서는 유지되지 않으며 키(Key)의 중복을 허용하지 않으나 값(Value)의 중복은 허용한다. |
 
-### 1. [[Java/Set]]인터페이스
+### 1. [[Set]] 인터페이스
 
 - 순서를 유지하지 않는 데이터의 집합으로 데이터의 중복을 허용하지 않는다.
 
