@@ -23,8 +23,12 @@
             "id": "4c16b3d10ed20a85",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "구현/중복된 요소 검출.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -94,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "구현/중복된 요소 검출.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "구현/중복된 요소 검출.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "구현/중복된 요소 검출.md"
+              }
             }
           }
         ]
@@ -153,6 +161,8 @@
   },
   "active": "4c16b3d10ed20a85",
   "lastOpenFiles": [
+    "시간 복잡도.md",
+    "구현/중복된 요소 검출.md",
     "구현/상하좌우 이동.md",
     "그래프(Graphs).md",
     "인접 리스트(adjacency list).md",
@@ -162,7 +172,6 @@
     "DFS(Depth-First Search).md",
     "자료구조/스와프(Swap).md",
     "선택정렬(Selection Sort).md",
-    "시간 복잡도.md",
     "자료구조/큐(Queue).md",
     "인접 행렬(Adjacency Matrix).md",
     "자료구조/스택(Stack).md",
@@ -184,7 +193,6 @@
     "파이썬 스니펫/이차원 리스트의 순회.md",
     "파이썬 문법/heapq.md",
     "파이썬 스니펫",
-    "상태 공간 트리(State Space Tree).md",
     "image/Pasted image 20231106014554.png",
     "image/Pasted image 20231030195946.png",
     "image/Pasted image 20231030194326.png",
