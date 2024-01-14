@@ -21,14 +21,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/ref.md",
+                "file": "map().md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e0a290b71da24979",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Document.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -94,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/ref.md",
+                "file": "Document.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/ref.md",
+                "file": "Document.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/ref.md"
+                "file": "Document.md"
               }
             }
           }
@@ -155,34 +167,34 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "7675ad2cbf7a3a4c",
+  "active": "e0a290b71da24979",
   "lastOpenFiles": [
-    "컴포넌트.md",
-    "React/ref.md",
-    "React/index.js.md",
     "HTML/HTML.md",
-    "DOM(Document Object Model).md",
+    "Document.md",
+    "map().md",
+    "배열(Array).md",
+    "splice().md",
+    "일급 함수(First Class Function).md",
+    "일급 객체(First Class Object).md",
+    "리터럴(literal).md",
+    "배열.md",
+    "객체(Object).md",
     "HTML/<input>.md",
+    "HTML/<select>.md",
+    "HTML/<hr>.md",
+    "HTML/<br>.md",
+    "HTML/<span>.md",
+    "HTML/<div>.md",
+    "React/ref.md",
+    "컴포넌트.md",
+    "React/index.js.md",
+    "DOM(Document Object Model).md",
     "React/useState.md",
     "onChange.md",
     "React/setState.md",
     "React/state.md",
-    "객체(Object).md",
-    "리터럴(literal).md",
     "표현식(expression).md",
     "new.md",
-    "속성(Property).md",
-    "함수(Function).md",
-    "일급객체(First Class Object).md",
-    "변수(Variable).md",
-    "바인딩(binding).md",
-    "렉시컬 환경(Lexical Environment).md",
-    "화살표함수(Arriw Funtion).md",
-    "확산 연산자(spread).md",
-    "bind().md",
-    "super().md",
-    "const.md",
-    "이벤트(event).md",
     "HTML",
     "image/Pasted image 20240101213717.png",
     "image/Pasted image 20240101180454.png",

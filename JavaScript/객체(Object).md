@@ -1,5 +1,6 @@
 
-객체란, 현실의 사물을 프로그래밍에 반영한 것 -> 덩어리
+- 객체란, 현실의 사물을 코딩을 통해 컴퓨터에게 설명하기 위해 만든 덩어리이다.
+- 객체 하나만 사용하는 것이 아니라 [[배열(Array)]]을 통한 또 하나의 덩어리를 통해 접근하여 사용하기도 한다.
 
 ```jsx
 var zero = {
@@ -14,11 +15,15 @@ var zero = {
 
 속성값이 함수인 것을 우리는 [[메서드(Method)]]라고 부름
 
-객체 속성값에 접근하는 2가지 방법
+### 객체 속성값에 접근하는 2가지 방법
+- .를 찍고 접근하는 Dot Notation이 있다.
+- `[]` 대괄호를 치고 접근하는 Bracket Notation이 있다.
+- Bracket Notation보다는 주로 Dot Notation를 많이 사용한다.
 
 ```jsx
-zero.firstName; // 'Zero'
-zero['firstName']; // 'Zero' (이렇게도 가능합니다)
+zero.firstName; // 'Zero' 
+zero['firstName']; // 'Zero' 
+
 zero.lastName; // 'Cho'
 zero['lastName']; // 'Cho'
 ```

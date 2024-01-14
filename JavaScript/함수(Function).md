@@ -1,3 +1,3 @@
--  JavaScript에의 함수는 [[일급객체(First Class Object)]]이다.
+-  JavaScript에의 함수는 [[일급 객체(First Class Object)]]이다.
 - JavaScript에서 함수는 [[객체(Object)]]이고 거기다가 '일급' 객체이다. 
  - 따라서  JavaScript에에서는 함수를 arguments(인자)로도, 리턴 값으로도 사용할 수 있고 [[변수(Variable)]]에 함수를 넣을 수도 있다.
