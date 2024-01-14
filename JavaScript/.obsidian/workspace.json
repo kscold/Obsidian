@@ -16,31 +16,19 @@
             }
           },
           {
-            "id": "7675ad2cbf7a3a4c",
+            "id": "3af4181dd344a4a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "map().md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e0a290b71da24979",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Document.md",
+                "file": "React/불변성 유지.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Document.md",
+                "file": "React/불변성 유지.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Document.md",
+                "file": "React/불변성 유지.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Document.md"
+                "file": "React/불변성 유지.md"
               }
             }
           }
@@ -167,11 +155,31 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "e0a290b71da24979",
+  "active": "3af4181dd344a4a1",
   "lastOpenFiles": [
-    "HTML/HTML.md",
-    "Document.md",
+    "let.md",
+    "React/불변성 유지.md",
+    "React/state.md",
+    "Redux.md",
+    "React/key.md",
     "map().md",
+    "React/ref.md",
+    "css/linear-gradient().md",
+    "css/vh, vw(Vertical Height, Vertical Width).md",
+    "css/position.md",
+    "image/Pasted image 20240115012822.png",
+    "image/Pasted image 20240115012629.png",
+    "image/Pasted image 20240115012332.png",
+    "image/Pasted image 20240115011622.png",
+    "image/Pasted image 20240115011602.png",
+    "HTML/<input>.md",
+    "HTML/<select>.md",
+    "image/Pasted image 20240114222341.png",
+    "React/setState.md",
+    "컴포넌트(component).md",
+    "image/Pasted image 20240114220133.png",
+    "Document.md",
+    "HTML/HTML.md",
     "배열(Array).md",
     "splice().md",
     "일급 함수(First Class Function).md",
@@ -179,30 +187,15 @@
     "리터럴(literal).md",
     "배열.md",
     "객체(Object).md",
-    "HTML/<input>.md",
-    "HTML/<select>.md",
     "HTML/<hr>.md",
     "HTML/<br>.md",
     "HTML/<span>.md",
-    "HTML/<div>.md",
-    "React/ref.md",
-    "컴포넌트.md",
-    "React/index.js.md",
-    "DOM(Document Object Model).md",
-    "React/useState.md",
-    "onChange.md",
-    "React/setState.md",
-    "React/state.md",
-    "표현식(expression).md",
-    "new.md",
     "HTML",
     "image/Pasted image 20240101213717.png",
     "image/Pasted image 20240101180454.png",
     "image/Pasted image 20231221212146.png",
     "css",
-    "image/Pasted image 20231218213654.png",
     "React",
-    "image/Pasted image 20231015173220.png",
     "image",
     "node.js/MongoDB",
     "node.js"
