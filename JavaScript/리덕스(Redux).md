@@ -7,7 +7,7 @@
 - 동일한 데이터는 항상 같은 곳에서 가지고 온다.
 - 즉, 스토어라는 하나뿐인 데이터 공간이 있다는 의미이다.
 ### 2. State is read-only
-- 리액트에서는 [[setState]] 혹은 [[useState]] [[메서드(Method)]]를 활용해야만 상태([[state]]) 변경이 가능하다.
+- 리액트에서는 [[setState]] 혹은 [[useState()]] [[메서드(Method)]]를 활용해야만 상태([[state]]) 변경이 가능하다.
 - 리덕스에서도 action이라는 [[객체(Object)]]를 통해서만 상태([[state]])를 변경할 수 있다.
 ### 3. Changes are made with pure functions
 - 변경은 순수함수로만 가능하다.
