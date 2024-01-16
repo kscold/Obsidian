@@ -23,11 +23,16 @@
             "id": "a974a05feea5e18f",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Java/인터페이스(Interface).md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "인텔리제이 단축키.md",
+                "file": "Java/인터페이스(Interface).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "인텔리제이 단축키.md",
+                "file": "Java/인터페이스(Interface).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "인텔리제이 단축키.md"
+                "file": "Java/인터페이스(Interface).md"
               }
             }
           }
@@ -154,8 +159,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f4faf621b4fb9ee6",
+  "active": "a974a05feea5e18f",
   "lastOpenFiles": [
+    "Java/private.md",
+    "Java/접근제어자(Access modifier).md",
+    "Java/인스턴스 변수(iv, instance variable).md",
+    "Java/생성자(constructor).md",
+    "Java/메서드(Method).md",
+    "인텔리제이 단축키.md",
     "Java/HashMap.md",
     "Java/Collection.md",
     "Java/HashSet.md",
@@ -169,19 +180,13 @@
     "Spring/JDBC Template.md",
     "Spring/query().md",
     "Java/클래스 변수(cv, class variable).md",
-    "Java/인스턴스 변수(iv, instance variable).md",
     "Java/오버로딩(Overloading).md",
     "Java/스코프(Scope).md",
     "Java/부모 클래스(super class).md",
     "Java/다중상속.md",
-    "Java/메서드(Method).md",
     "Java/어노테이션(Annotation).md",
     "Spring/JPA/롬복/@AllArgsConstructor.md",
-    "인텔리제이 단축키.md",
     "Java/필드(Field).md",
-    "Java/클래스(Class).md",
-    "Spring/JPA/findAllById().md",
-    "Spring/JPA/CrudRepository.md",
     "Spring/HTML",
     "image/Pasted image 20240112012957.png",
     "image/Pasted image 20231115000103.png",

@@ -1,0 +1,1 @@
+- [[constructor()]] 생성자 [[메서드(Method)]]로 [[컴포넌트(component)]]를 만들 때 처음 실행된다.
