@@ -16,31 +16,19 @@
             }
           },
           {
-            "id": "deea626a5ab65c09",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Parsing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "b9450828faa23d1e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/useCallback().md",
+                "file": "React/useRef().md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/useCallback().md",
+                "file": "React/useRef().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/useCallback().md",
+                "file": "React/useRef().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/useCallback().md"
+                "file": "React/useRef().md"
               }
             }
           }
@@ -169,8 +157,11 @@
   },
   "active": "b9450828faa23d1e",
   "lastOpenFiles": [
-    "React/useMemo().md",
+    "React/클래스형 컴포넌트.md",
+    "React/useRef().md",
+    "React/ref.md",
     "React/useCallback().md",
+    "React/useMemo().md",
     "함수(Function).md",
     "리터럴(literal).md",
     "원시타입(Primitive type).md",
@@ -193,9 +184,6 @@
     "random().md",
     "동기.md",
     "DOM(Document Object Model).md",
-    "React/componentWillUnmount().md",
-    "React/componentDidMount().md",
-    "React/getDerivedStateFromProps().md",
     "image/Pasted image 20240115170757.png",
     "image/Pasted image 20240115165714.png",
     "image/Pasted image 20240115164222.png",

@@ -1,0 +1,143 @@
+{
+  "main": {
+    "id": "e56925ff0a2b7fac",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d38f04004f852ea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c2a12de24095b3ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "this.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "546b37d87fd953eb",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "0e02f940d10f5d19",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "208c40ba954a4e32",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "1c54c3e44a42bac1",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "f64a302753c28b3e",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "1993ced8082ef9dd",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "5daa74ca44ef5cae",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "this.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "8f4364ebd95f5c33",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "this.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "6b6eae1fd5fecf14",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "this.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "0e02f940d10f5d19",
+  "lastOpenFiles": [
+    "인스턴스(Instance).md",
+    "실행 컨텍스트(execution context).md",
+    "실행 컨텍스트.md",
+    "고차함수(Higher-Order Function).md",
+    "일급 객체(First Class Object).md",
+    "소스코드의 평가 과정.md"
+  ]
+}

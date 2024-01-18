@@ -1,13 +1,12 @@
 - 리액트 [[컴포넌트(component)]] 안에도 id를 사용할 수 있으나, 같은 [[컴포넌트(component)]]를 재사용하는 방법에 있어, [[DOM(Document Object Model)]]에서 id는 unique(유일)해야 하는데 이런 상황에서 중복 id를 가진 DOM이 여러 개 생기니 잘못된 사용이 된다.
 
 
-
 ## ref를 만드는 방법
 
 - ref를 만드는 방법은 크게 3가지가 있다.
 	1. ref는 [[콜백 함수(callback)]]를 통해 만들 수 있다.
 	2. createRef를 통해 ref를 설정할 수 있다.([[클래스형 컴포넌트]])
-	3. useRef를 사용하여 ref를 설정할 수 있다.([[함수형 컴포넌트]])
+	3. [[useRef()]]를 사용하여 ref를 설정할 수 있다.([[함수형 컴포넌트]])
 
 - 밑에 코드는 콜백 함수로 만드는 방법이다.
 
@@ -37,6 +36,8 @@ class RefSample extends Component {
 
 export default RefSample;
 ```
+
+- current.focus() [[메서드(Method)]]를 사용해서 접근할 수 있다.
 - 이렇게 ref를 설정해 준 DOM에 접근하려면 this.input.current를 조회하면 된다.
 
 ## 컴포넌트에 ref 달기
