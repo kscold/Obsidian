@@ -1,4 +1,4 @@
-- undefined는 자바스크립트에서 제공하는 원시 타입의 값(orimitive value)이다.
+- undefined는 자바스크립트에서 제공하는 [[원시타입(Primitive type)]]의 값이다.
 - 리액트 컴포넌트에서는 함수의 undefined만 반환하여 렌더링하는 상황을 만들면 안된다.
 
 - 밑의 코드를 작성하면 오류가 난다.

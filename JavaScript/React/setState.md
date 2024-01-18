@@ -137,7 +137,7 @@ this.setState((prevState) => ({ // 이때 () 소괄호는 return을 포함한다
 }));
 ```
 
-- [[화살표함수(Arriw Funtion)]]에서 값을 바로 반환하고 싶다면 코드 블록 { }를 생략하면 된다.
+- [[화살표 함수(Arriw Funtion)]]에서 값을 바로 반환하고 싶다면 코드 블록 { }를 생략하면 된다.
 
 ## 클래스 컴포넌트에서 input 여러 개 다루기(onChange)
 - input이 여러 개일 때는 event 객체를 활용하면 훨씬 편하다.

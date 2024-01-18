@@ -1,7 +1,7 @@
 - 바닐라 html에서는 [[키워드(Keyword)]]가 onchange이다.
 - Form 요소 값이 바뀔 때 onChange 이벤트를 실행한다.
 
-- onChange의 value에 [[화살표함수(Arriw Funtion)]]로 [[이벤트(event)]]를 [[변수(Variable)]]로 받으면 그 변수에 이벤트 [[객체(Object)]]가 들어간다.
+- onChange의 value에 [[화살표 함수(Arriw Funtion)]]로 [[이벤트(event)]]를 [[변수(Variable)]]로 받으면 그 변수에 이벤트 [[객체(Object)]]가 들어간다.
 
 ## [[클래스형 컴포넌트]]의 event 담기
 ```jsx

@@ -11,8 +11,24 @@
             "id": "4683ed08d7f7daeb",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "prototype.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "88e87929be2b4200",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "this.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -21,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/useRef().md",
+                "file": "css/css Selector.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/useRef().md",
+                "file": "this.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/useRef().md",
+                "file": "this.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/useRef().md"
+                "file": "this.md"
               }
             }
           }
@@ -155,35 +171,36 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "b9450828faa23d1e",
+  "active": "88e87929be2b4200",
   "lastOpenFiles": [
-    "React/클래스형 컴포넌트.md",
-    "React/useRef().md",
-    "React/ref.md",
-    "React/useCallback().md",
-    "React/useMemo().md",
-    "함수(Function).md",
-    "리터럴(literal).md",
-    "원시타입(Primitive type).md",
-    "참조타입(Reference Type).md",
-    "reduce().md",
+    "화살표 함수(Arriw Funtion).md",
+    "this.md",
+    "HTML/HTML.md",
+    "바인딩(binding).md",
+    "클래스(class).md",
+    "인스턴스(Instance).md",
+    "prototype.md",
+    "상속.md",
+    "객체(Object).md",
+    "css/css Selector.md",
     "배열(Array).md",
-    "Parsing.md",
-    "parseInt().md",
+    "속성(Property).md",
+    "함수(Function).md",
+    "image/Pasted image 20240119013246.png",
+    "React/subscribe().md",
+    "React/dispatch().md",
+    "React/state.md",
     "React/useReducer().md",
-    "dispatch.md",
-    "React/useState().md",
-    "React/useEffect().md",
-    "React/Hooks.md",
-    "React/componentDidupdate().md",
-    "React/shouldComponentUpdate().md",
-    "React/생명 주기(Life Cycle).md",
-    "React/componentDidCatch().md",
-    "React/getSnapshotBeforeUpdate().md",
-    "image/Pasted image 20240116220818.png",
-    "random().md",
+    "React/dispath().md",
+    "React/reducer().md",
+    "React/리덕스(Redux).md",
+    "상수(constant).md",
+    "실행 컨텍스트(execution context).md",
     "동기.md",
-    "DOM(Document Object Model).md",
+    "값(value).md",
+    "React/스토어(Store).md",
+    "React/action.md",
+    "image/Pasted image 20240116220818.png",
     "image/Pasted image 20240115170757.png",
     "image/Pasted image 20240115165714.png",
     "image/Pasted image 20240115164222.png",
@@ -192,7 +209,6 @@
     "image/Pasted image 20240115030907.png",
     "image/Pasted image 20240115012822.png",
     "image/Pasted image 20240115012629.png",
-    "image/Pasted image 20240115012332.png",
     "HTML",
     "css",
     "React",

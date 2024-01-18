@@ -1,6 +1,7 @@
-- `setTimeout`에 [[메서드(Method)]]드를 전달할 때처럼, 객체 메서드를 콜백으로 전달할 때 ’`this` 정보가 사라지는’ 문제가 생긴다.
+- `setTimeout`에 [[메서드(Method)]]드를 전달할 때처럼, [[객체(Object)]] 메서드를 콜백으로 전달할 때 '[[this]] 정보가 사라지는' 문제가 생긴다.
 
 ## 사라진 [[this]]
+
 - `this` 정보가 사라지는 문제가 종종 나타난다.
 - [[객체(Object)]] [[메서드(Method)]]가 객체 내부가 아닌 다른 곳에 전달되어 호출되면 `this`가 사라진다.
 
@@ -53,7 +54,7 @@ setTimeout(function() {
 
 - 위 예시가 의도한 대로 동작하는 이유는 외부 [[렉시컬 환경(Lexical Environment)]]에서 `user`를 받아서 보통 때처럼 메서드를 호출했기 때문이다.
 
-- 따라서 [[화살표함수(Arriw Funtion)]]를 사용하여 아래와 같이 변경할 수도 있다.
+- 따라서 [[화살표 함수(Arriw Funtion)]]를 사용하여 아래와 같이 변경할 수도 있다.
 
 ``` js
 setTimeout(() => user.sayHi(), 1000); // Hello, John!

@@ -1,6 +1,7 @@
 - 프로퍼티란 속성이란 뜻으로 자바스크립트에서 [[객체(Object)]] 내부의 속성을 의미한다.
 - 객체는 프로퍼티로 구성된다. 프로퍼티는 `"key(키)" : "value(값)"` 의 형식으로 객체 안의 콤마(쉼표 **,**)로 구분되어 할당된다. 
 
+
 - Key는 속성명이라 생각해도 되고 문자열만 가능하며, 문자열이지만 따옴표가 없어도 된다.
 - Value는 속성값이라고도 부르며, 어떤 값이든지(문자열, 숫자, 객체, 함수 등 아무거나) 상관없다. 
 
@@ -18,6 +19,14 @@
 변수명['a']; // 'a'
 ```
 
+```js
+zero.firstName; // 'Zero' 
+zero['firstName']; // 'Zero' 
+
+zero.lastName; // 'Cho'
+zero['lastName']; // 'Cho'
+```
+
 - 대괄호([])로 접근 (브라캣 연산자)
 - 점 표기법을 이용한 접근  
     - 주로 마침표를 사용하고 대괄호는 속성명에 띄어쓰기가 들어가 있는 경우 사용한다.  
@@ -25,7 +34,7 @@
 
 ### 하위 Namespaces
 
-다른 객체를 객체 멤버의 값으로 갖는 것도 가능하다.
+- 다른 객체를 [[객체(Object)]] 멤버의 값으로 갖는 것도 가능하다.
 
 ```js
 var obj = {
@@ -39,9 +48,44 @@ obj.a.cc; // "ccc"
 ```
 
 
-### 객체의 속성 삭제
+### 객체 속성 추가 및 변경
 
-객체의 속성을 삭제하는 방법도 있다. 앞에 delete 키워드를 붙이면 된다.
+```jsx
+// 원 객체
+var zero = {
+  firstName: 'Zero',
+  lastName: 'Cho'
+};
+```
+
+- 밑의 코드는 객체 속성값을 변경하는 예시이다.
+
+```jsx
+zero.lastName = 'Lee'; // lastName 속성값 변경
+zero; // { firstName: 'Zero', lastName: 'Lee' }
+```
+
+```jsx
+var zero = {
+  body: {
+    height: 173,
+    weight: 66
+  }
+};
+zero.body.height; // 173
+```
+
+### 객체의 key와 value 값을 이용한 접근
+
+```jsx
+const name = 'variantKey'
+const object = {
+	[name]: 'value' // variantKey : value로 설정된다.
+};
+```
+
+### 객체의 속성 삭제
+- 객체의 속성을 삭제하는 방법도 있다. 앞에 delete [[키워드(Keyword)]]를 붙이면 된다.
 
 ```js
 var obj = {
@@ -50,13 +94,30 @@ var obj = {
     cc: 'ccc'
   }
 }
+
 delete obj.a.bb;
 obj.a; // { cc: 'ccc' }
 ```
 
+```jsx
+delete zero.body.height;
+zero.body; // { weight: 66 }
+```
+
+### [[new]]를 이용한 객체 복사 생성
+
+```jsx
+var zero = new Object();
+zero.firstName = 'Zero';
+zero.lastName = 'Cho';
+zero.body = new Object();
+zero.body.height = 173;
+zero.body.weight = 66;
+```
+
 ## 객체와 반복문
 
-배열에 있는 값을 가져올 때, 객체의 속성들을 반복하여 작업할 때 사용한다.
+- 배열에 있는 값을 가져올 때, 객체의 속성들을 반복하여 작업할 때 사용한다.
 
 ```js
 var obj = {'prop1': 100, 'prop2': 200, 'prop3': 300 } // 변수에 객체를 만듬.
