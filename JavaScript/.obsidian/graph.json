@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "클래스",
+  "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -17,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.0650161897707275,
-  "close": false
+  "scale": 0.7462448376588716,
+  "close": true
 }

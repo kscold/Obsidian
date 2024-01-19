@@ -4,6 +4,7 @@
 - onChange의 value에 [[화살표 함수(Arriw Funtion)]]로 [[이벤트(event)]]를 [[변수(Variable)]]로 받으면 그 변수에 이벤트 [[객체(Object)]]가 들어간다.
 
 ## [[클래스형 컴포넌트]]의 event 담기
+
 ```jsx
 import { Component } from 'react';
 
