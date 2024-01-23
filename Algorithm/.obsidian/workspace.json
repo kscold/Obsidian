@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "구현/문자열 그룹.md",
+                "file": "파이썬 문법/sep.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "구현/문자열 그룹.md",
+                "file": "파이썬 문법/sep.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "구현/문자열 그룹.md",
+                "file": "파이썬 문법/sep.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "구현/문자열 그룹.md"
+                "file": "파이썬 문법/sep.md"
               }
             }
           }
@@ -158,10 +158,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "cc55a6a65f82298b",
+  "active": "5b3465b6cba331e2",
   "lastOpenFiles": [
-    "그래프(Graphs).md",
+    "파이썬 문법/*.md",
+    "파이썬 문법/sep.md",
+    "구현/2차원 배열 덧셈.md",
+    "파이썬 문법/리스트(List).md",
     "구현/문자열 그룹.md",
+    "그래프(Graphs).md",
     "구현/중복된 요소 검출.md",
     "시간 복잡도.md",
     "구현/상하좌우 이동.md",
@@ -184,13 +188,9 @@
     "자료구조",
     "백 트래킹(Back Tracking).md",
     "파이썬 문법/ord.md",
-    "구현/체스.md",
     "image/스크린샷 2024-01-03 오후 9.17.48.png",
     "image/IMG_1808.jpeg",
     "구현",
-    "파이썬 문법/sorted.md",
-    "파이썬 문법/lambda.md",
-    "파이썬 스니펫/이차원 리스트의 순회.md",
     "파이썬 스니펫",
     "image/Pasted image 20231106014554.png",
     "image/Pasted image 20231030195946.png",

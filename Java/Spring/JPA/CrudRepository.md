@@ -12,7 +12,7 @@
 	 - 책 예시는 Article이다.
 
 3. ID
-	- 관리 대상 엔티티의 대푯값 타입니다. 
+	- 관리 대상 [[엔티티(entity)]]의 대푯값 타입니다. 
 	- Article.java 파일에 가 보면 id를 대푯값으로 지정했다.
 	- id의 타입은 Long이므로 Long을 입력한다.
 
@@ -49,10 +49,10 @@ long count()
 
 #### Read (조회)
 
-- [[Iterable]]`<T>` [[findById()]], 매개변수(`id`)
-	- 주어진 id를 가진 엔티티가 존재하는지 반환함
-	- 반환 : 존재하면 true, 아니면 false
-	- id가 null이면 `IllegalArgumentException`을 던짐
+- [[Optional]]`<T>` [[findById()]], 매개변수(`id`)
+	- 주어진 id를 가진 [[엔티티(entity)]]가 존재하는지 반환한다.
+	- 조회된 엔티티 객체를 Optional로 감싸서 반환한다.
+	- id가 null이면 `IllegalArgumentException`을 던진다.
 
 - `boolean existsById(ID id)`
     - 주어진 id를 가진 엔티티가 존재하는지 반환함

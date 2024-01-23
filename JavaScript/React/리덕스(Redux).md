@@ -1,6 +1,9 @@
 - Redux(리덕스)란 자바스트립트 상태관리 라이브러리이다.
 - Redux(리덕스)의 본질은 Node.js 모듈이다.
 
+
+```
+```
 ## Redux의 기본 개념 
 - 세 가지 원칙을 가진다.
 ### 1. Single source of truth

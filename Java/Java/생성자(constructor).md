@@ -1,5 +1,5 @@
 
-- 자바에서는 객체의 생성과 동시에 [[인스턴스 변수(iv, instance variable)]]를 원하는 값으로 초기화할 수 있는 생성자(constructor)라는 메소드를 제공한다.
+- 자바에서는 객체의 생성과 동시에 [[인스턴스 변수(instance variable)]]를 원하는 값으로 초기화할 수 있는 생성자(constructor)라는 메소드를 제공한다.
 
 - 자바에서 생성자(constructor)의 이름은 해당 [[클래스(Class)]] 이름과 같아야 한다.
 

@@ -1,6 +1,6 @@
 - Java에서 Iterable은 for-each 루프 또는 [[Iterator]]를 사용하여 반복하거나 반복할 수 있는 개체 컬렉션을 나타내는 [[인터페이스(Interface)]]이다.
 
-- Iterable 인터페이스는 Iterator [[객체(Object)]]를 반환하는 단일 [[메서드(Method)]]인 iterator()를 제공한다.
+- Iterable 인터페이스는 [[Iterator]] [[객체(Object)]]를 반환하는 단일 [[메서드(Method)]]인 iterator()를 제공한다.
 - Iterator 객체는 Iterable의 객체 컬렉션을 반복하는 데 사용할 수 있다.
 
 - 밑의 코드는 Iterable을 사용하는 방법의 예시이다.
