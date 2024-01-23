@@ -14,6 +14,9 @@ logging.level.org.hibernate.SQL=DEBUG
 
 # 쿼리 줄바꿈하기  
 spring.jpa.properties.hibernate.format_sql=true
+
+# 매개변수 값 보여 주기  
+logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
 ```
 
 

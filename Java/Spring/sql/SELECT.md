@@ -4,8 +4,19 @@
 
 밑에 코드는 임의의 orders 테이블에서 전체 필드 데이터를 불러오는 예시
 
+## 문법
+
 ```sql
-SELECT * FROM orders
+SELECT 
+	속성명1, 속성명2, 속성명3
+FROM
+	테이블명
+WHERE
+	조건;
+```
+
+```sql
+SELECT * FROM 테이블명
 ```
 
 
