@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "node.js/koa-router.md",
+                "file": "React.js/React.memo().md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "node.js/koa-router.md",
+                "file": "React.js/React.memo().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "node.js/koa-router.md",
+                "file": "React.js/React.memo().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "node.js/koa-router.md"
+                "file": "React.js/React.memo().md"
               }
             }
           }
@@ -173,6 +173,18 @@
   },
   "active": "0eadd82022d64b17",
   "lastOpenFiles": [
+    "React.js/리렌더링(Re-rendering).md",
+    "React.js/React.memo().md",
+    "React.js/클래스형 컴포넌트.md",
+    "React.js/생명 주기(Life Cycle).md",
+    "React.js/dispatch().md",
+    "React.js/CSR(Client Side Rendering).md",
+    "React.js/componentWillUnmount().md",
+    "React.js/componentDidMount().md",
+    "React.js/componentDidCatch().md",
+    "React.js/리액트(React).md",
+    "React.js/SPA(Single Page Application).md",
+    "node.js/koa-router.md",
     "Web api.md",
     "node.js/MongoDB/exec().md",
     "node.js/MongoDB/find().md",
@@ -185,22 +197,10 @@
     "DOM(Document Object Model).md",
     "image/Pasted image 20240124182916.png",
     "React.js/SSG(Static Site Generation).md",
-    "React.js/CSR(Client Side Rendering).md",
     "React.js/MPA(Multiple Page Application).md",
     "React.js/SEO(Search Engine Optimization).md",
     "웹(web).md",
-    "Hydration.md",
-    "React.js/SPA(Single Page Application).md",
-    "React.js/SSR(Server Side Rendering).md",
-    "AJAX(Asynchronous JavaScript and XML).md",
-    "pre-rendering.md",
-    "React.js/웹팩(webpack).md",
     "image/Pasted image 20240124171749.png",
-    "객체(Object).md",
-    "안녕.md",
-    "React.js/preventDefault().md",
-    "배열(Array).md",
-    "메서드(Method).md",
     "image/Pasted image 20240119013246.png",
     "image/Pasted image 20240116220818.png",
     "image/Pasted image 20240115170757.png",
