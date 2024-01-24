@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "88e87929be2b4200",
+            "id": "ffe281f2a3a42cd1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "객체(Object).md",
+                "file": "node.js/MongoDB/exec().md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "40f1090e027b2fcd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "React.js/SPA(Single Page Application).md",
                 "mode": "source",
                 "source": false
               }
@@ -23,12 +35,16 @@
             "id": "0eadd82022d64b17",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "node.js/koa-router.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -94,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "객체(Object).md",
+                "file": "node.js/koa-router.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "객체(Object).md",
+                "file": "node.js/koa-router.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "객체(Object).md"
+                "file": "node.js/koa-router.md"
               }
             }
           }
@@ -157,32 +173,34 @@
   },
   "active": "0eadd82022d64b17",
   "lastOpenFiles": [
-    "안녕.md",
+    "Web api.md",
+    "node.js/MongoDB/exec().md",
+    "node.js/MongoDB/find().md",
+    "node.js/MongoDB/findById().md",
+    "node.js/MongoDB/findByIdAndUpdate().md",
+    "node.js/MongoDB/mongoDB.md",
+    "node.js/MongoDB/mongoose.Types.md",
+    "node.js/MongoDB/ObjectID.md",
+    "React.js/Virtual DOM.md",
+    "DOM(Document Object Model).md",
+    "image/Pasted image 20240124182916.png",
+    "React.js/SSG(Static Site Generation).md",
+    "React.js/CSR(Client Side Rendering).md",
+    "React.js/MPA(Multiple Page Application).md",
+    "React.js/SEO(Search Engine Optimization).md",
+    "웹(web).md",
+    "Hydration.md",
+    "React.js/SPA(Single Page Application).md",
+    "React.js/SSR(Server Side Rendering).md",
+    "AJAX(Asynchronous JavaScript and XML).md",
+    "pre-rendering.md",
+    "React.js/웹팩(webpack).md",
+    "image/Pasted image 20240124171749.png",
     "객체(Object).md",
-    "React/preventDefault().md",
+    "안녕.md",
+    "React.js/preventDefault().md",
     "배열(Array).md",
     "메서드(Method).md",
-    "참조타입(Reference Type).md",
-    "함수(Function).md",
-    "일급 객체(First Class Object).md",
-    "일급 함수(First Class Function).md",
-    "태규.md",
-    "속성(Property).md",
-    "React/componentDidCatch().md",
-    "React/children.md",
-    "React/리덕스(Redux).md",
-    "HTML/<button>.md",
-    "css/마크업.md",
-    "css/절대단위.md",
-    "css/상대단위.md",
-    "css/리액트 폰트 적용.md",
-    "React/useState().md",
-    "React/useRef().md",
-    "함수형 컴포넌트.md",
-    "HTML/<form>.md",
-    "onChange.md",
-    "HTML/<input>.md",
-    "React/useCallback().md",
     "image/Pasted image 20240119013246.png",
     "image/Pasted image 20240116220818.png",
     "image/Pasted image 20240115170757.png",
@@ -191,11 +209,9 @@
     "image/Pasted image 20240115163609.png",
     "image/Pasted image 20240115163453.png",
     "image/Pasted image 20240115030907.png",
-    "image/Pasted image 20240115012822.png",
-    "image/Pasted image 20240115012629.png",
     "HTML",
     "css",
-    "React",
+    "React.js",
     "image",
     "node.js/MongoDB",
     "node.js"
