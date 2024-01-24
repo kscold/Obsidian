@@ -1,5 +1,6 @@
 - 자바 언어에서 final은 오직 한 번만 할당할 수 있는 [[엔티티(entity)]]를 정의할 때 사용된다.
 - final로 선언된 변수가 할당되면 항상 같은 값을 가진다.
+
 - 만약 final [[변수(Variable)]]가 [[객체(Object)]]를 참조하고 있다면, 그 객체의 상태가 바뀌어도 final 변수는 매번 동일한 내용을 참조한다.
 
 - 즉, 한 번 값을 넣어두면 절대 바뀌지 않는 값이다.
@@ -15,7 +16,7 @@ public class ThisIsWrong extends MyFinalClass {...} // 상속 불가!
 ```
 
  - final이 붙어있는 클래스는 상속할 수 없다.
- - 이렇게 하면 보안이나 효율성 측면에서 장점이 있습니다. 
+ - 이렇게 하면 보안이나 효율성 측면에서 장점이 있다. 
  - `java.lang.System`이나 `java.lang.String`처럼 자바에서 기본적으로 제공하는 라이브러리 클래스는 final을 사용한다.
 
 ### final 메서드
@@ -30,11 +31,11 @@ public class Base
 public class Derived extends Base
 {
     public void m1() {...}  // Base 클래스의 m1() 상속
-    public void m2() {...}  // 오버라이딩, 즉 상속받은 메서드 수정 불가!
+    public void m2() {...}  // 오버라이딩, 즉 상속받은 메서드 수정 불가
 }
 ```
 
-- 만약 어떤 클래스를 상속하는데 그 안에 final 메서드가 있다면, 오버라이딩으로 수정할 수 없다.
+- 만약 어떤 클래스를 상속하는데 그 안에 final 메서드가 있다면, [[오버라이딩(Overriding)]]으로 수정할 수 없다.
 
 ### final 변수
 
@@ -69,7 +70,7 @@ public class Test {
   private final int value;
 
   public Test(int value) {
-    this.value = value;
+	this.value = value;
   }
 
   public int getValue() {

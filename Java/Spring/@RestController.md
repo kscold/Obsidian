@@ -6,6 +6,8 @@
 - 최근에 데이터를 응답으로 제공하는 REST API를 개발할 때 주로 사용하며 객체를 ResponseEntity([[엔티티(entity)]])로 감싸서 반환한다.
 - 이러한 이유로 동작 과정 역시 @Controller에 @ReponseBody를 붙인 것과 완벽히 동일하다.
 
+- [[@Controller]]와 큰 차이점은 [[@Controller]]는 [[View]] 페이지인 html 값으로 반환한다는 것이고 @RestController는 [[JSON(Java Script Object Notation)]]이나 텍스트 같은 데이터를 반환한다.
+
 ## @RestController 동작과정
 
 ![](https://blog.kakaocdn.net/dn/bozaJn/btsteSlYKCB/5WrQAZZDVpLjKSwVPw4cK1/img.png)
