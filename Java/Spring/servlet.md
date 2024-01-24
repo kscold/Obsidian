@@ -1,13 +1,16 @@
 - servlet(서블릿)은 클라이언트의 요청을 처리하고, 그 결과를 반환하는 Servlet [[클래스(Class)]]의 구현 규칙을 지킨 자바 웹 프로그래밍 기술이다.
-- Java를 웹어플리케이션에 조금 더 개발하기 쉽게 하기 위해 만든 API(라이브러리, 클래스 들)이며 이 규약에 맞는 라이브러리나 클래스들을 상속 및 구현하여 만든 클래스들을 서블릿이라고 한다.
+- 자바를 웹어플리케이션에 조금 더 개발하기 쉽게 하기 위해 만든 API(라이브러리, 클래스 들)이며 이 규약에 맞는 라이브러리나 클래스들을 상속 및 구현하여 만든 클래스들을 서블릿이라고 한다.
 
 ![[Pasted image 20231101230754.png]]
 
 - 동적 웹페이지 서버에서 수행되는 소형 프로그램이다.  
 - 서버사이드에서 돌아가는 java program이다.
+- 서블릿(servlet)은 자바를 사용해 웹 페이지를 동적으로 생성하는 서버내 프로그램이라고 한다.
+
 - 각 사용자의 요청이 서버의 하나의 스레드로 수행된다. 
-- 'servlet'은 자바를 사용해 웹 페이지를 동적으로 생성하는 서버내 프로그램이라고 한다.
+
 - [[JSP]]와 달리 자바코드 안에 html을 포함하고 있다는 점이 다르다.(JSP는 html에 자바 코드 포함  .java 확장자)
+
 - data processing에 좋다.([[Controller]])
 
 ## 실제 서블릿의 다이어그램
@@ -16,9 +19,10 @@
 
 - 사용자는 실제로 ServletEx와 같은 Class만 만들면 된다.
 
-## 서블릿의 [[MVC]] 패턴
+## 서블릿의 [[MVC(Mode View Controller)]] 패턴
 
-- MVC 패턴에서 Controller로 이용한다.
+- MVC 패턴에서 [[Controller]]로 이용한다.
+
 ![[Pasted image 20231101230919.png]]
 
 1. 사용자(클라이언트)가 URL을 입력하면 HTTP Request가 Servlet Container로 전송한다.
@@ -86,24 +90,29 @@ public class HelloServlet extends HttpServlet {
 }
 ```
 
-### HttpServletRequest : 요청에 대한 정보를 가지고 있는 객체
-- request.getCookies();
-- request.getSession();
-- request.getAttribute(null);
-- request.setAttribute(null, null);
-- request.getParameter(null);
-- request.getParameterNames();
-- request.getParameterValues(null);
+### HttpServletRequest
 
-### HttpServletResponse : 응답에 대한 정보를 가지고 있는 객체
-- response.addCookie(null);
-- response.getStatus();
-- response.sendRedirect(null);
-- response.getWriter();
-- response.getOutputStream();
+- 요청에 대한 정보를 가지고 있는 객체이다.
+	- request.getCookies();
+	- request.getSession();
+	- request.getAttribute(null);
+	- request.setAttribute(null, null);
+	- request.getParameter(null);
+	- request.getParameterNames();
+	- request.getParameterValues(null);
+
+### HttpServletResponse
+
+- 응답에 대한 정보를 가지고 있는 객체이다.
+	- response.addCookie(null);
+	- response.getStatus();
+	- response.sendRedirect(null);
+	- response.getWriter();
+	- response.getOutputStream();
 
 
 ## Life Cycle(생명주기)
+
 - 생성(init) 단계에서 body(request 패킷에서 data에 대해)등의 자원 관련 작업을 많이 한다.
 - service에서 http 요청(requset)에 해당하는 메서드가 실행된다.
 

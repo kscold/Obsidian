@@ -1,19 +1,23 @@
-스프링 return 값반환 때는 JsonConverter와 StringConverter가 있는데 여기서는 JsonConverter가 이용되는 것임
+- 스프링에서 [[비동기(Asynchronous)]] 응답(Response) 처리를 하는 경우 @ResponseBody를 사용한다.
+- 자바 [[객체(Object)]]를 [[HTTP]] 요청의 body(본문) 내용으로 매핑하여 클라이언트로 전송한다.
 
-mvc같은 방식과 다르게 html를 주는 것이 아니라(JsonConverter) @GetMapping() 함수를 사용할 때, @ResponseBody를 설정하고 함수를 만들면 return 값을 줄 때 html이 같이 나오는 view가 작동되는 것이 아니라 정말 딱 그 값만 반환이 됨(StringConverter)
+- @ResponseBody 가 붙은 파라미터가 있으면 HTTP요청의 미디어타입과 파라미터의 타입을 먼저 확인한다.
+- dispatcher-servlet.xml 의 `<annotation-drvien>` 태그 내에 선언하는 `<message-converter>` 에서 확인한다.
 
-더 자세한 @ResponseBody의 작동 방법
+![](https://blog.kakaocdn.net/dn/Ljh4L/btq4dcqj9lb/kNckzEIKwF6tXQ4z4ItSC0/img.png)
 
-HTTP의 BODY에 문자 내용을 직접 반환
+- 메세지 변환기 중에서 해당 미디어타입과 파라미터 타입을 처리할 수 있다면, HTTP요청의 본문 부분을 통째로 변환해서 지정된 메서드 매개변수로 전달해준다.
 
-viewResolver 대신에 HttpMessageConverter가 동작
+```java
+@ResponseBody
+@RequestMapping(value = "/ajaxTest.do")
+public UserVO ajaxTest() throws Exception {
 
-기본 문자처리 StringHttpMessag
+  UserVO userVO = new UserVO();
+  userVO.setId("테스트");
 
-eConverter
+  return userVO;
+}
+```
 
-기본 객체처리 MappingJackson2HttpMessageConverter
-
-byre 처리 등등 기타 여러 HttpMessageConverter가 기본으로 등록되어 있음
-
--> 이 과정은 실무에서도 거의 건들지않고 그대로 사용을 함
+- 즉, @Responsebody [[어노테이션(Annotation)]]을 사용하면 [[HTTP]] 요청 body를 자바 [[객체(Object)]]로 전달받을 수 있다.

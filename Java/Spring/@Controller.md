@@ -1,5 +1,5 @@
  - @Controller [[어노테이션(Annotation)]]은 해당 [[클래스(Class)]]가 웹 애플리케이션의 컨트롤러([[Controller]])임을 나타낸다.
- - 이 어노테이션을 붙이면 핸들러가 스캔할 수 있는 빈(Bean) 객체가 되어 서블릿([[servlet]])용 컨테이너에 생성된다.
- - [[스프링 컨테이너(Spring Container)]]는 @Controller 어노테이션이 지정된 클래스를 [[빈(Bean)]]으로 등록하고, 요청을 해당 컨트롤러에 매핑하여 처리한다.
- -  @Controller 어노테이션은 스프링 [[MVC]]의 핵심 요소 중 하나로, 클라이언트의 요청을 처리하는 [[비즈니스 로직(Business Logic)]]과 [[뷰(View)]]를 결합하여 전체적인 웹 애플리케이션의 동작을 제어한다.
+ - 이 어노테이션을 붙이면 핸들러가 스캔할 수 있는 빈(Bean) 객체가 되어 서블릿([[Servlet]])용 컨테이너에 생성된다.
+ - [[스프링 컨테이너(Spring Container)]]는 @Controller 어노테이션이 지정된 클래스를 [[Bean]]으로 등록하고, 요청을 해당 컨트롤러에 매핑하여 처리한다.
+ -  @Controller 어노테이션은 스프링 [[MVC(Mode View Controller)]]의 핵심 요소 중 하나로, 클라이언트의 요청을 처리하는 [[비즈니스 로직(Business Logic)]]과 [[View]]를 결합하여 전체적인 웹 애플리케이션의 동작을 제어한다.
 - 프레젠테이션 레이어(presetation layer)로 웹 요청과 응답을 처리한다.

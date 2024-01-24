@@ -1,9 +1,7 @@
+- GenericXmlApplicationContext는 스프링 애플리케이션 컨텍스트를 초기화하고 관리하는 역할을 한다.
+- 즉, 스프링 설정 파일을 이용하여 [[객체(Object)]]를 생성한다.
 
-
-`GenericXmlApplicationContext`는 스프링 애플리케이션 컨텍스트를 초기화하고 관리하는 역할을 한다.
-즉, 스프링 설정 파일을 이용하여 객체를 생성한다.
-
-스프링 애플리케이션은 여러 [[빈(Bean)]]을 관리하고, 
+스프링 애플리케이션은 여러 [[Bean]]을 관리하고, 
 이 빈들 사이의 의존성을 관리하기 위해 컨테이너를 사용합니다. `GenericXmlApplicationContext`는 주로 XML 형식의 스프링 설정 파일을 로드하고, 설정된 빈들을 생성하며, 빈들 사이의 의존성을 해결합니다.
 
 `GenericXmlApplicationContext`를 사용하는 주요 단계는 다음과 같다.
