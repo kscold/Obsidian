@@ -11,8 +11,12 @@
             "id": "f4faf621b4fb9ee6",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Spring/JPA/CrudRepository.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -93,6 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Spring/JPA/CrudRepository.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Spring/JPA/CrudRepository.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +136,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Spring/JPA/CrudRepository.md"
+              }
             }
           }
         ]
@@ -152,6 +160,21 @@
   },
   "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
+    "save().md",
+    "Spring/쿼리(query).md",
+    "Spring/sql/SQL.md",
+    "Spring/JPA/롬복/@GeneratedValue.md",
+    "Spring/JPA/롬복/@Id.md",
+    "원시 타입(Primitive Type).md",
+    "참조 타입(Reference Type).md",
+    "Spring/JPA/CrudRepository.md",
+    "Spring/HttpStatus.md",
+    "Java/열거(Enum).md",
+    "Spring/HTTP 상태 코드(HTTP Status).md",
+    "Spring/ResponseEntity.md",
+    "Java/타입(Type).md",
+    "Java/인터페이스 상수.md",
+    "Spring/@RestController.md",
     "Spring/@Autowired.md",
     "Java/setter.md",
     "Java/final.md",
@@ -163,21 +186,6 @@
     "Java/필드(Field).md",
     "Java/멤버 변수.md",
     "Java/클래스 변수(class variable).md",
-    "Java/default.md",
-    "Java/접근제어자(Access modifier).md",
-    "Java/무제 파일 1.md",
-    "Spring/DI(Dependency Injection).md",
-    "Spring/스프링 컨테이너(Spring Container).md",
-    "Spring/@Async.md",
-    "Spring/@RestController.md",
-    "Spring/View.md",
-    "Spring/@ResponseBody.md",
-    "Spring/비동기(Asynchronous).md",
-    "Spring/@RequestBody.md",
-    "Spring/JSON(Java Script Object Notation).md",
-    "Spring/Spring Context.md",
-    "Spring/Servlet.md",
-    "Spring/Maven/GenericXmlApplicationContext.md",
     "Spring/mustache",
     "Spring/HTML",
     "image/Pasted image 20240112012957.png",

@@ -11,24 +11,8 @@
             "id": "ffe281f2a3a42cd1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "node.js/MongoDB/exec().md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "40f1090e027b2fcd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React.js/SPA(Single Page Application).md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -43,8 +27,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +93,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React.js/React.memo().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +109,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React.js/React.memo().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,9 +130,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "React.js/React.memo().md"
-              }
+              "state": {}
             }
           }
         ]
@@ -171,10 +150,16 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "0eadd82022d64b17",
+  "active": "ffe281f2a3a42cd1",
   "lastOpenFiles": [
-    "React.js/리렌더링(Re-rendering).md",
+    "node.js/MongoDB/exec().md",
+    "React.js/SPA(Single Page Application).md",
     "React.js/React.memo().md",
+    "React.js/리액트(React).md",
+    "HTML/HTML.md",
+    "이벤트(event).md",
+    "React.js/JSX.md",
+    "React.js/리렌더링(Re-rendering).md",
     "React.js/클래스형 컴포넌트.md",
     "React.js/생명 주기(Life Cycle).md",
     "React.js/dispatch().md",
@@ -182,11 +167,8 @@
     "React.js/componentWillUnmount().md",
     "React.js/componentDidMount().md",
     "React.js/componentDidCatch().md",
-    "React.js/리액트(React).md",
-    "React.js/SPA(Single Page Application).md",
     "node.js/koa-router.md",
     "Web api.md",
-    "node.js/MongoDB/exec().md",
     "node.js/MongoDB/find().md",
     "node.js/MongoDB/findById().md",
     "node.js/MongoDB/findByIdAndUpdate().md",
@@ -197,9 +179,6 @@
     "DOM(Document Object Model).md",
     "image/Pasted image 20240124182916.png",
     "React.js/SSG(Static Site Generation).md",
-    "React.js/MPA(Multiple Page Application).md",
-    "React.js/SEO(Search Engine Optimization).md",
-    "웹(web).md",
     "image/Pasted image 20240124171749.png",
     "image/Pasted image 20240119013246.png",
     "image/Pasted image 20240116220818.png",

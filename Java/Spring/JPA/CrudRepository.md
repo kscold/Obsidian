@@ -71,10 +71,10 @@ long count()
 
 #### Create (저장)
 
-- `<S extends T> S save(S entity)`
-    - 주어진 엔티티를 저장함
-    - 저장된 엔티티를 반환함
-    - 주어진 엔티티가 null이면 `IllegalArgumentException`을 던짐
+- `<S extends T> S` [[save()]], 매개변수(S entity)
+    - 매개변수로 주어진 [[엔티티(entity)]]를 저장한다.
+    - 저장된 [[엔티티(entity)]]를 반환한다.
+    - 매개변수로 주어진 엔티티가 null이면 `IllegalArgumentException` 오류를 반환한다.
     
 - `<S extends T> Iterable<S> saveAll(Iterable<S> entities)`
     - 주어진 모든 엔티티들을 저장함
