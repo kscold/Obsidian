@@ -102,7 +102,7 @@ const Average = () => {
 export default Average;
 ```
 
-- 위의 코드에서 인풋창의 number 바뀌면 getAverage 함수가 계속 호출되는 이유는 자바스크립트에서 [[객체(Object)]]는 [[원시타입(Primitive type)]]이 아니라 [[참조 타입(Reference Type)]]이기 주소 값으로 저장되기 때문에 number [[state]]가 바뀌면 [[컴포넌트(component)]]가 재호출되면서 getAverage 함수도 재호출 되었다고 인식한다.
+- 위의 코드에서 인풋창의 number 바뀌면 getAverage 함수가 계속 호출되는 이유는 자바스크립트에서 [[객체(Object)]]는 [[원시 타입(Primitive type)]]이 아니라 [[참조 타입(Reference Type)]]이기 주소 값으로 저장되기 때문에 number [[state]]가 바뀌면 [[컴포넌트(component)]]가 재호출되면서 getAverage 함수도 재호출 되었다고 인식한다.
 
 ```jsx
 	const avg = useMemo(() => getAverage(list), [list]);

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "배열(Array).md",
+                "file": "React.js/immer.md",
                 "mode": "source",
                 "source": false
               }
@@ -23,8 +23,12 @@
             "id": "0eadd82022d64b17",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "React.js/React.memo().md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -93,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "배열(Array).md",
+                "file": "React.js/immer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "배열(Array).md",
+                "file": "React.js/immer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "배열(Array).md"
+                "file": "React.js/immer.md"
               }
             }
           }
@@ -156,13 +160,18 @@
   },
   "active": "ffe281f2a3a42cd1",
   "lastOpenFiles": [
+    "React.js/react-virtualized.md",
+    "React.js/immer.md",
+    "확산 연산자(spread operator).md",
+    "React.js/불변성 유지.md",
+    "React.js/React.memo().md",
+    "원시 타입(Primitive type).md",
+    "React.js/useReducer().md",
     "concat().md",
     "배열(Array).md",
     "push().md",
     "참조 타입(Reference Type).md",
-    "React.js/useReducer().md",
     "React.js/useCallback().md",
-    "React.js/React.memo().md",
     "React.js/useState().md",
     "React.js/리렌더링(Re-rendering).md",
     "React.js/React.memo.md",
@@ -177,11 +186,6 @@
     "React.js/생명 주기(Life Cycle).md",
     "React.js/dispatch().md",
     "React.js/CSR(Client Side Rendering).md",
-    "React.js/componentWillUnmount().md",
-    "React.js/componentDidMount().md",
-    "React.js/componentDidCatch().md",
-    "node.js/koa-router.md",
-    "Web api.md",
     "image/Pasted image 20240124182916.png",
     "image/Pasted image 20240124171749.png",
     "image/Pasted image 20240119013246.png",
