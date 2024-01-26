@@ -1,5 +1,5 @@
 
-- 자바 스크립트의 변수 타입에는 크게 Primitive type(원시타입)과 [[참조타입(Reference Type)]]으로 나누어져 있다. 
+- 자바 스크립트의 변수 타입에는 크게 Primitive type(원시타입)과 [[참조 타입(Reference Type)]]으로 나누어져 있다. 
 - 원시값이라고도 한다.
 
 - 원시타입(Primitive type)의 [[변수(Variable)]]들은 데이터 복사가 일어날 때 메모리 공간을 새로 확보하여 독립적인 값을 저장한다. 

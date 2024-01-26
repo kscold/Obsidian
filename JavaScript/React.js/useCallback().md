@@ -3,10 +3,13 @@
 
 - 예를 들어, 자식 컴포넌트에 전달되는 [[콜백 함수(callback)]]를 최적화하고 싶은 경우나, 외부에서 값을 가져오는 api를 호출하는 경우에 사용한다.
 
+## 이벤트 핸들러 함수가 자주 재생성되는 경우
 
-## 자식 컴포넌트에 props로 함수를 전달하는 경우
+- useCallback을 사용하지 않으면 이벤트 핸들러 함수는 매번 새로운 인스턴스가 생성된다.
+- 그러나 useCallback을 사용하면 함수가 처음 생성될 때 한 번만 생성되며, 나중에는 동일한 함수 인스턴스를 재사용하게 된다.
+## 자식 컴포넌트에 props로 함수가 자주 재생성되는 경우
 
-- 먼저 [[함수(Function)]]는 값이 아닌 참조([[참조타입(Reference Type)]])로 비교된다.
+- 먼저 [[함수(Function)]]는 값이 아닌 참조([[참조 타입(Reference Type)]])로 비교된다.
 
 ```js
 const functionOne = function() {
@@ -44,7 +47,7 @@ function App() {
 }
 ```
 
-- useCallback을 사용하지 않을 경우, name이 변경되어 리렌더링이 발생하면 onSave함수가 새로 만들어지고, Profile 컴포넌트의 props로 onSave함수가 새로 전달되게 된다.
+- useCallback을 사용하지 않을 경우, name이 변경되어 [[리렌더링(Re-rendering)]]이 발생하면 onSave함수가 새로 만들어지고, Profile 컴포넌트의 [[props]]로 onSave함수가 새로 전달되게 된다.
 
 - 이때 Profile 컴포넌트에서 [[useMemo()]]를 사용해도 이전 onSave와 이후 onSave가 같은 값을 반환하지만 참조(주소)가 다른 [[함수(Function)]]([[객체(Object)]])가 되어버리기 때문에 리렌더링이 일어나게 된다.
  - 부모 컴포넌트만 수정하려고 했지만 연쇄적으로 하위 컴포넌트들 모두 렌더링이 일어나게 된다.
@@ -77,6 +80,41 @@ function App() {
 
 - useCallback을 사용해서 onSave라는 함수를 재사용하는 것으로 자식 컴포넌트의 리렌더링을 방지할 수 있다.
 
+- 또 다른 [[콜백 함수(callback)]]가 자식 컴포넌트에 props로 전달되는 예시이다.
+
+```jsx
+// ParentComponent.jsx
+function ParentComponent() {
+	const [count, setCount] = useState(0);
+	
+	const handleClick = useCallback(() => {
+		setCount(prevCount => prevCount + 1);
+	}, []);
+	
+	return (
+		<div>
+			<ChildComponent onClick={handleClick} />
+		</div>
+	);
+}
+
+// ChildComponent.jsx
+function ChildComponent({ onClick }) {
+
+	return (
+		<button onClick={onClick}>Click me</button>
+	);
+}
+```
+
+- handleClick 함수가 ParentComponent 컴포넌트에서 생성되어 ChildComponent 컴포넌트에 props로 전달된다. 
+- 만약 useCallback을 사용하지 않으면 ParentComponent가 리렌더링 될 때마다 handleClick 함수가 새로 생성된다. 
+- 이 경우 ChildComponent는 onClick props가 변경되었으므로 불필요한 리렌더링이 발생하게 된다. 이를 방지하기 위해 useCallback을 사용하여 handleClick 함수를 메모이제이션한다.
+
+## 렌더링 최적화가 필요한 경우
+
+- useCallback을 사용하여 함수를 재사용하면, 렌더링 최적화를 수행할 수 있다. 
+- 이는 컴포넌트의 불필요한 재렌더링을 방지하고, 성능을 향상시킬 수 있다.
 ## 외부에서 값을 가져오는 api를 호출하는 경우
 
 ```jsx

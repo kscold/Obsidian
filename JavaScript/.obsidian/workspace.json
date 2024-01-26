@@ -11,20 +11,20 @@
             "id": "ffe281f2a3a42cd1",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "배열(Array).md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
             "id": "0eadd82022d64b17",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React.js/React.memo().md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -93,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "배열(Array).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "배열(Array).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "배열(Array).md"
+              }
             }
           }
         ]
@@ -152,14 +156,23 @@
   },
   "active": "ffe281f2a3a42cd1",
   "lastOpenFiles": [
+    "concat().md",
+    "배열(Array).md",
+    "push().md",
+    "참조 타입(Reference Type).md",
+    "React.js/useReducer().md",
+    "React.js/useCallback().md",
+    "React.js/React.memo().md",
+    "React.js/useState().md",
+    "React.js/리렌더링(Re-rendering).md",
+    "React.js/React.memo.md",
+    "React.js/shouldComponentUpdate().md",
     "node.js/MongoDB/exec().md",
     "React.js/SPA(Single Page Application).md",
-    "React.js/React.memo().md",
     "React.js/리액트(React).md",
     "HTML/HTML.md",
     "이벤트(event).md",
     "React.js/JSX.md",
-    "React.js/리렌더링(Re-rendering).md",
     "React.js/클래스형 컴포넌트.md",
     "React.js/생명 주기(Life Cycle).md",
     "React.js/dispatch().md",
@@ -169,16 +182,7 @@
     "React.js/componentDidCatch().md",
     "node.js/koa-router.md",
     "Web api.md",
-    "node.js/MongoDB/find().md",
-    "node.js/MongoDB/findById().md",
-    "node.js/MongoDB/findByIdAndUpdate().md",
-    "node.js/MongoDB/mongoDB.md",
-    "node.js/MongoDB/mongoose.Types.md",
-    "node.js/MongoDB/ObjectID.md",
-    "React.js/Virtual DOM.md",
-    "DOM(Document Object Model).md",
     "image/Pasted image 20240124182916.png",
-    "React.js/SSG(Static Site Generation).md",
     "image/Pasted image 20240124171749.png",
     "image/Pasted image 20240119013246.png",
     "image/Pasted image 20240116220818.png",
