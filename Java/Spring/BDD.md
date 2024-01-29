@@ -1,0 +1,3 @@
+- Behavior Driven Development의 줄임말고 행위 주도 개발이라고 부른다.
+- 시나리오 기반의 테스트 코드를 작성하는 개발 방법이다.
+- 하나의 시나리오는 Given, When, Then 구조를 가진다.

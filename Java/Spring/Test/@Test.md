@@ -1,4 +1,4 @@
--  JUnit 프레임워크에서 테스트 메서드임을 나타내는 [[어노테이션(Annotation)]]이다.
+-  [[TDD(Test Driven Development)]] JUnit 프레임워크에서 테스트 메서드임을 나타내는 [[어노테이션(Annotation)]]이다.
 - Spring Framework에서도 JUnit을 기반으로 하므로 @Test 어노테이션을 사용하여 테스트 코드를 작성할 수 있다. 
 - 이 어노테이션은 메서드에 붙여서 해당 메서드가 테스트 [[메서드(Method)]]임을 나타내며, 해당 메서드가 실행되면서 자동으로 단위 테스트가 수행된다.
 
