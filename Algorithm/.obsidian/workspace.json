@@ -23,15 +23,12 @@
             "id": "4c16b3d10ed20a85",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "구현/중복된 요소 검출.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "파이썬 문법/sep.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "파이썬 문법/sep.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "파이썬 문법/sep.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -158,15 +151,15 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "5b3465b6cba331e2",
+  "active": "4c16b3d10ed20a85",
   "lastOpenFiles": [
-    "파이썬 문법/*.md",
+    "구현/중복된 요소 검출.md",
     "파이썬 문법/sep.md",
+    "파이썬 문법/*.md",
     "구현/2차원 배열 덧셈.md",
     "파이썬 문법/리스트(List).md",
     "구현/문자열 그룹.md",
     "그래프(Graphs).md",
-    "구현/중복된 요소 검출.md",
     "시간 복잡도.md",
     "구현/상하좌우 이동.md",
     "인접 리스트(adjacency list).md",

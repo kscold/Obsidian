@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/JPA/CrudRepository.md",
+                "file": "Spring/DI(Dependency Injection).md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/Test/@ParameterizedTest.md",
+                "file": "Java/객체지향.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/Test/@ParameterizedTest.md",
+                "file": "Spring/DI(Dependency Injection).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/Test/@ParameterizedTest.md",
+                "file": "Spring/DI(Dependency Injection).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/Test/@ParameterizedTest.md"
+                "file": "Spring/DI(Dependency Injection).md"
               }
             }
           }
@@ -159,11 +158,20 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "e013613dbf564785",
+  "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
+    "Spring/스프링 컨테이너(Spring Container).md",
+    "Spring/DI(Dependency Injection).md",
+    "Java/인스턴스(Instance).md",
+    "Spring/객체(Object).md",
+    "Java/생성자(constructor).md",
+    "Java/메서드(Method).md",
+    "Java/객체지향.md",
+    "Spring/JPA/CrudRepository.md",
+    "Java/자바(Java).md",
+    "Spring/Test/@ParameterizedTest.md",
     "Spring/Test/TDD(Test Driven Development).md",
     "Spring/Test/@Test.md",
-    "Spring/Test/@ParameterizedTest.md",
     "Spring/Test/AssertJ.md",
     "Java/참조 타입(Reference Type).md",
     "Java/원시 타입(Primitive Type).md",
@@ -178,17 +186,8 @@
     "Spring/BDD.md",
     "Spring/Docker/Docker.md",
     "Spring/Docker",
-    "Spring/JPA/CrudRepository.md",
     "Java/private.md",
     "Java/클래스(Class).md",
-    "Java/인스턴스(Instance).md",
-    "Spring/객체(Object).md",
-    "Java/생성자(constructor).md",
-    "Java/메서드(Method).md",
-    "Spring/@Autowired.md",
-    "Spring/쿼리(query).md",
-    "Spring/sql/SQL.md",
-    "Spring/JPA/롬복/@GeneratedValue.md",
     "Spring/mustache",
     "Spring/HTML",
     "image/Pasted image 20240112012957.png",
