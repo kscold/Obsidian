@@ -1,4 +1,4 @@
-- option태그를 select로 감싼 형태이다.
+- option태그를 [[<select>]]로 감싼 형태이다.
  
 ```html
 <form>

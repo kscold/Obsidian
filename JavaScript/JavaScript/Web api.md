@@ -1,2 +1,2 @@
-- web api는 node.js와 달리 크롬 브라우저에서만 동작하는 함수들을 가지고 있다.
-- 따라서 클라이언트 사이드 WEB API는 Node.js 환경에서 실행할 수 없다.
+- WeB API는 node.js와 달리 크롬 브라우저에서만 동작하는 [[함수(Function)]]들을 가지고 있다.
+- 따라서 클라이언트 사이드([[CSR(Client Side Rendering)]]) WeB API는 Node.js 환경에서 실행할 수 없다.

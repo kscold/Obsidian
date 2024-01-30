@@ -1,6 +1,6 @@
 - 사용자가 웹 르바우저에서 DOM 요소들과 상호작용하는 것을 event라고 한다.
 
-- [[HTML]]에서 [[onMouseOver]], [[onClick]], [[onChange]] 이벤트를 실행한다.
+- [[HTML]]에서 [[onMouseOver]], [[onClick]], [[JavaScript/onChange]] 이벤트를 실행한다.
 
 - 바닐라 [[HTML]]에서는 카멜케이스를 사용하지 않는다.
 
@@ -29,7 +29,7 @@
 </div>
 ```
 
-- 이런식으로 [[onChange]]
+- 이런식으로 [[JavaScript/onChange]]
 ```jsx
 import { Component } from 'react';
 
@@ -57,7 +57,7 @@ export default EventPractice;
 
 
 ## event.target.value
-- [[onChange]] 같은 이벤트가 발생할 때, 값이 바뀔 때 마다 e.target.value가 들어간다.
+- [[JavaScript/onChange]] 같은 이벤트가 발생할 때, 값이 바뀔 때 마다 e.target.value가 들어간다.
 
 ### [[state]]에 input 값 담기
 - 

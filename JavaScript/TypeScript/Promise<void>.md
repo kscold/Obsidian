@@ -1,0 +1,1 @@
+- [[비동기(asynchronous)]] 요청([[async await]]을 한 이우에 아무것도 리턴을 안해주는 것이기 때문에 그냥 void가 아닌 `Promise<void>`를 해주어야한다.

@@ -11,7 +11,7 @@ it("더하기 잘 되는지 테스트 해보기", () => { // it으로 테스트
 ```
 
 ## Test Matcher
-### toBe, toEqual
+### toBe, [[toEqual()]]
 
 - toBe는 기본 값을 단순 비교하거나, 객체 [[인스턴스(Instance)]]의 참조 ID를 확인하는데 사용된다.
 - 공식문서에서는 부동 소수점 숫자와는 함께 사용하지 말라고하며 대신 다른 것(toBeCloseTo)을 이용하라고 나와있다.
@@ -28,3 +28,18 @@ it("더하기 잘 되는지 테스트 해보기", () => { // it으로 테스트
 - 위 예제를 보면 각 test()와 it()이 실행한 후에는 num을 0으로 할당한다.
 - 위 예제에서는 쓸모가 없어 보이지만 일부 임시 상태를 정리하는데 유용하게 사용된다.
 
+### toBeInTheDocument()
+
+- [[Jest]]의 [[Virtual DOM]] 안에 잘 렌더링 되는지 확인할 때 사용하는 메서드이다.
+- 사용하기 위해서는 @testing-library/jest-dom와 "@testing-library/react"의 { render, screen }를 임포트하여 사용한다.
+
+### toMatchSnapshot()
+
+- 일전 렌더링되는 [[컴포넌트(component)]]의 사진을 찍어 비교하는 메서드이다.
+- 사진이 없는 경우에는 사진을 찍게 되고 사진이 있는 경우는 비교하게 된다.
+- yarn test를 하게 되면 컴포넌트의 렌더링을 찍어 `__snapshot__`이라는 폴더에 코드 형태가 생긴다.
+- 사진을 다시 찍고 싶다면 yarn test -u를 사용하여 update 하면 된다.
+
+## toHaveTextContent()
+
+- [[이벤트(event)]]를 통해 렌더링 변경되는 영역 내용의 예상 값을 적용하는 메서드이다.

@@ -1,0 +1,2 @@
+- [[<input>]] 입력 필드에 사용자가 적절한 값을 입력할 수 있도록 도와주는 짧은 도움말을 명시한다.
+- placeholder 속성이 제대로 동작하는 type 속성은 email, password, search, tel, text, url가 있다.

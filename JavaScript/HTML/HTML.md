@@ -27,8 +27,6 @@ Our DIV node
 - 반면에 HTML properties는 변할 수 있다. 
 - 예를 들어 사용자가 체크박스를 체크했거나 input 박스에 텍스트를 넣었거나 자바스크립트로 값을 변경하면 property의 값은 변한다.
 
-
-
 ![](https://miro.medium.com/v2/resize:fit:500/0*MM0sob6OFnfbn5ID.png)
 
 - 위의 이미지를 설명하면 사용자가 그의 이름 "Joe"를 input박스에 입력했다고 가정하자. 

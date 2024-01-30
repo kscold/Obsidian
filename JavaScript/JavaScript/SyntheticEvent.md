@@ -61,7 +61,7 @@ EventPolling에 대해 `React 공식문서`에서는 비동기적으로 엑세�
 
 ## Asynchronous
 
-React에서는 [[비동기]]상태에서 SyntheticEvent를 EventPolling이 발생하지 않고 사용하는 방법이 여럿 존재한다.
+React에서는 [[비동기(asynchronous)]]상태에서 SyntheticEvent를 EventPolling이 발생하지 않고 사용하는 방법이 여럿 존재한다.
 
 첫 번째는, 해당 이벤트 객체를 복사하고, 복사된 객체를 비동기 동작이 끝난 다음 사용하는 방법이다. 이 방법을 사용하면 코드가 몇 줄 더 늘어나긴 해도 좋은 방법이다. 따라서 강력한 콜백함수가 여럿 존재 하지 않는 이상 이러한 방법을 선호하는 것이 옳바르다.
 

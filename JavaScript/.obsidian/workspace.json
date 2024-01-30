@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React.js/jest/테스트 블록.md",
+                "file": "HTML/<input>.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React.js/jest/테스트 블록.md",
+                "file": "HTML/<input>.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React.js/jest/테스트 블록.md",
+                "file": "HTML/<input>.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React.js/jest/테스트 블록.md"
+                "file": "HTML/<input>.md"
               }
             }
           }
@@ -157,34 +157,40 @@
   },
   "active": "373480e7b3224c8d",
   "lastOpenFiles": [
-    "React.js/jest/expect().md",
-    "React.js/jest/it().md",
-    "JavaScript/값(value).md",
-    "React.js/jest/jest.md",
-    "React.js/jest/테스트 블록.md",
-    "JavaScript/가비지 콜렉터(garbage collector).md",
-    "JavaScript/무제 파일.md",
+    "HTML/attribute/onChange.md",
+    "HTML/<input>.md",
+    "placeholder.md",
+    "value.md",
+    "querySelector().md",
+    "HTML/<form>.md",
+    "HTML/<div>.md",
+    "HTML/<button>.md",
+    "querySelectorAll().md",
+    "HTML/attribute/name.md",
+    "HTML/Select-box.md",
+    "HTML/<hr>.md",
+    "HTML/attribute/onSubmit.md",
+    "HTML/attribute/onClick.md",
+    "HTML/attribute/role.md",
+    "JavaScript/onChange.md",
+    "className.md",
+    "HTML/HTML.md",
+    "HTML/attribute",
+    "HTML/<br>.md",
+    "addEventListener().md",
+    "이벤트 루프(Event Loop).md",
+    "Task Queue.md",
+    "JavaScript/setTimeout().md",
+    "setInterval().md",
+    "JavaScript/비동기(asynchronous).md",
+    "JavaScript/Web API.md",
+    "image/Pasted image 20240131013509.png",
+    "image/Pasted image 20240131013502.png",
+    "image/Pasted image 20240131013317.png",
+    "async",
+    "TypeScript",
     "JavaScript",
-    "JavaScript/인스턴스(Instance).md",
-    "React.js/immer.md",
-    "React.js/jest/describe.md",
     "React.js/jest",
-    "React.js/React.memo().md",
-    "React.js/react-virtualized.md",
-    "JavaScript/확산 연산자(spread operator).md",
-    "React.js/불변성 유지.md",
-    "JavaScript/원시 타입(Primitive type).md",
-    "React.js/useReducer().md",
-    "JavaScript/concat().md",
-    "JavaScript/배열(Array).md",
-    "JavaScript/push().md",
-    "JavaScript/참조 타입(Reference Type).md",
-    "React.js/useCallback().md",
-    "React.js/useState().md",
-    "React.js/리렌더링(Re-rendering).md",
-    "React.js/React.memo.md",
-    "React.js/shouldComponentUpdate().md",
-    "node.js/MongoDB/exec().md",
     "image/Pasted image 20240124182916.png",
     "image/Pasted image 20240124171749.png",
     "image/Pasted image 20240119013246.png",
@@ -192,14 +198,10 @@
     "image/Pasted image 20240115170757.png",
     "image/Pasted image 20240115165714.png",
     "image/Pasted image 20240115164222.png",
-    "image/Pasted image 20240115163609.png",
-    "image/Pasted image 20240115163453.png",
-    "image/Pasted image 20240115030907.png",
     "HTML",
     "css",
     "React.js",
     "image",
-    "node.js/MongoDB",
-    "node.js"
+    "node.js/MongoDB"
   ]
 }
