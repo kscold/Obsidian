@@ -1,13 +1,16 @@
 
 
-### 클래스 컴포넌트의 사용 방식
+## 클래스 컴포넌트의 사용 방식
+
 - 클래스 컴포넌트에서 props를 사용할기 위해서는 아래의 방식을 따라야 한다.
-1. [[constructor()]] [[키워드(Keyword)]]를 통해 [[props]]를 생성한다.
-2. [[super()]] 키워드를 통해 props를 오버라이딩 한다. 혹은 바로 state에 접근하여 1 2 번 과정을 생략한다.
-3. [[setState]] [[메서드(Method)]]를 사용해서 [[객체(Object)]]형식으로 key:value를 정의한다.
-4. 이후 [[render()]] 키워드를 사용해서 화면에 렌더링하는 부분을 정의한다. (return 부 포함)
+
+	1. [[constructor()]] [[키워드(Keyword)]]를 통해 [[props]]를 생성한다.
+	2. [[super()]] 키워드를 통해 props를 오버라이딩 한다. 혹은 바로 state에 접근하여 1 2 번 과정을 생략한다.
+	3. [[setState]] [[메서드(Method)]]를 사용해서 [[객체(Object)]]형식으로 key:value를 정의한다.
+	4. 이후 [[render()]] 키워드를 사용해서 화면에 렌더링하는 부분을 정의한다.(return 부를 포함한다.)
 
 - 클래스형 컴포넌트는 render() 함수를 사용하여 렌더링을 지정해주어야 한다.
+
 ```jsx
 import React, { Component } from 'react';
 
@@ -18,8 +21,6 @@ class App extends Component {
 	}
 }
 ```
-
-
 
 ```jsx
 import React, { Component } from 'react';
@@ -40,7 +41,8 @@ dog.say(); // 흰둥이: 멍멍
 
 ```
 
-### 클래스형 컴포넌트에서 props 사용하기
+## 클래스형 컴포넌트에서 props 사용하기
+
 - 클래스형 컴포넌트에서 props를 사용할 때는 render 함수에서 this.props를 조회하면 된다.
 - defaultProps와 propTypes는 똑같은 방식으로 설정할 수 있다.
 
@@ -109,7 +111,8 @@ class MyComponent extends Component {
 export default MyComponent;
 ```
 
-### 클래스형 컴포넌트의 state
+## 클래스형 컴포넌트의 state
+
 - [[super()]]를 이용한다.
 
 ```jsx

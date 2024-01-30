@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML/<input>.md",
+                "file": "JavaScript/실행 컨텍스트(execution context).md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HTML/<input>.md",
+                "file": "JavaScript/실행 컨텍스트(execution context).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HTML/<input>.md",
+                "file": "JavaScript/실행 컨텍스트(execution context).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTML/<input>.md"
+                "file": "JavaScript/실행 컨텍스트(execution context).md"
               }
             }
           }
@@ -157,40 +157,42 @@
   },
   "active": "373480e7b3224c8d",
   "lastOpenFiles": [
-    "HTML/attribute/onChange.md",
-    "HTML/<input>.md",
-    "placeholder.md",
-    "value.md",
-    "querySelector().md",
-    "HTML/<form>.md",
-    "HTML/<div>.md",
-    "HTML/<button>.md",
-    "querySelectorAll().md",
-    "HTML/attribute/name.md",
-    "HTML/Select-box.md",
-    "HTML/<hr>.md",
-    "HTML/attribute/onSubmit.md",
-    "HTML/attribute/onClick.md",
-    "HTML/attribute/role.md",
-    "JavaScript/onChange.md",
-    "className.md",
-    "HTML/HTML.md",
-    "HTML/attribute",
-    "HTML/<br>.md",
-    "addEventListener().md",
-    "이벤트 루프(Event Loop).md",
-    "Task Queue.md",
-    "JavaScript/setTimeout().md",
-    "setInterval().md",
+    "image/Pasted image 20240131041052.png",
+    "JavaScript/테스크 큐(Task Queue).md",
+    "JavaScript/Ajax의(Asynchronous JavaScript and XML).md",
+    "JavaScript/힙(Heap).md",
+    "JavaScript/콜 스택(Call Stack).md",
     "JavaScript/비동기(asynchronous).md",
-    "JavaScript/Web API.md",
+    "JavaScript/이벤트 루프(Event Loop).md",
+    "JavaScript/실행 컨텍스트(execution context).md",
+    "React.js/key.md",
+    "React.js/Libaray/Redux/useReducer().md",
+    "React.js/reducer().md",
+    "React.js/ReactDOM.render.md",
+    "React.js/props.md",
+    "React.js/import.md",
+    "React.js/Libaray/Redux/리덕스(Redux).md",
+    "React.js/웹팩(webpack).md",
+    "React.js/Libaray/Redux",
+    "React.js/Libaray/Redux/스토어(Store).md",
+    "React.js/shouldComponentUpdate().md",
+    "React.js/Libaray/immer.md",
+    "React.js/Hooks.md",
+    "React.js/Libaray",
+    "React.js/함수형 컴포넌트(Functional Component).md",
+    "React.js/클래스형 컴포넌트(Class Component).md",
+    "JavaScript/함수형 프로그래밍(Functional Programming).md",
+    "JavaScript/원시 타입(Primitive type).md",
+    "JavaScript/웹(web).md",
+    "JavaScript/예약어(reserved word).md",
+    "HTML/property",
     "image/Pasted image 20240131013509.png",
     "image/Pasted image 20240131013502.png",
     "image/Pasted image 20240131013317.png",
     "async",
     "TypeScript",
     "JavaScript",
-    "React.js/jest",
+    "React.js/Jest",
     "image/Pasted image 20240124182916.png",
     "image/Pasted image 20240124171749.png",
     "image/Pasted image 20240119013246.png",
@@ -199,9 +201,7 @@
     "image/Pasted image 20240115165714.png",
     "image/Pasted image 20240115164222.png",
     "HTML",
-    "css",
-    "React.js",
-    "image",
-    "node.js/MongoDB"
+    "CSS",
+    "React.js"
   ]
 }

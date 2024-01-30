@@ -256,7 +256,7 @@ Array.from(children).forEach(function (el) {
  });
 ```
 
-## 6. [[화살표 함수(Arriw Funtion)]]로 쓴 this
+## 6. [[화살표 함수(Arrow function)]]로 쓴 this
 
 - 일반 함수 키워드인 funtion 안에서 this가 전역 객체가 되는 것을 피하고 싶으면 화살표 함수를 쓰면 된다.
 - 화살표 함수는 전역 컨텍스트에서 실행되더라도 this를 새로 정의하지 않고, 바로 바깥 함수나 클래스의 this를 사용하기 때문이다.

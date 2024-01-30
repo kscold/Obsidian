@@ -1,5 +1,14 @@
-- addEventListener()는 document의 특정요소(Id,class,tag 등등..) [[이벤트(event)]]( 예) click하면 함수를 실행한다, 마우스를 올리면 함수를 실행한다)를 등록할 때 사용한다.
+- addEventListener()는 document의 특정요소([[id]], [[class]], tag 등) [[이벤트(event)]]( 예) click하면 함수를 실행한다, 마우스를 올리면 함수를 실행한다)를 등록할 때 사용한다.
 
+## 문법
+
+```js
+.addEventListener(eventType, eventHandler, options);
+```
+
+- eventType: 이벤트 유형을 나타내는 문자열이다.( 예) 'click', 'scroll' 등이 있다.)
+- eventHandler: 이벤트가 발생했을 때 실행될 [[함수(Function)]] 또는 [[콜백 함수(Callback Function)]]를 전달한다.
+- options: 이벤트 리스너 등록에 대한 추가적인 옵션을 설정할 수 있습니다. 객체 또는 불리언 값을 사용할 수 있ek.
 
 ## 예시
 

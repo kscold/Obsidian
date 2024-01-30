@@ -14,7 +14,7 @@ const value = useMemo(() => {
 },[item])
 ```
 
-- useMemo는 [[useEffect()]]처럼 첫 번째 인자로 [[콜백 함수(callback)]], 두 번째 인자로 의존성 배열(dependancyArray)을 받는다.
+- useMemo는 [[useEffect()]]처럼 첫 번째 인자로 [[콜백 함수(Callback Function)]], 두 번째 인자로 의존성 배열(dependancyArray)을 받는다.
 - 의존성 배열 안에있는 값이 업데이트 될 때에만 콜백 함수를 다시 호출하여 메모리에 저장된 값을 업데이트 해준다.
 
 - 만약 빈 배열을 넣는다면 [[useEffect()]]와 마찬가지로 마운트 될 때에만 값을 계산하고 그 이후론 계속 memoization된 값을 꺼내와 사용한다.

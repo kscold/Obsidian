@@ -56,4 +56,4 @@ useEffect(() => { // 처음과 name이 바뀔 때만 실행
 
 ## 클래스 컴포넌트와 비교
 
-- useEffect를 사용할 때, 특정 값이 변경될 때만 호출하는 경우, [[클래스형 컴포넌트]]였다면 [[componentDidupdate()]]를 사용한다.
+- useEffect를 사용할 때, 특정 값이 변경될 때만 호출하는 경우, [[클래스형 컴포넌트(Class Component)]]였다면 [[componentDidupdate()]]를 사용한다.

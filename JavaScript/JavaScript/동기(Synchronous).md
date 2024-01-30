@@ -12,7 +12,7 @@
 
 ![](https://blog.kakaocdn.net/dn/8XRnQ/btqFQKwWMDa/pX0jhdyajUYb1OOQKMfR01/img.png)
 
-- 위의 이미지 Memory [[Heap]]과 [[Call Stack]]은 자바스크립트의 엔진의 주요 구성 요소이다.
+- 위의 이미지 Memory [[힙(Heap)]]과 [[콜 스택(Call Stack)]]은 자바스크립트의 엔진의 주요 구성 요소이다.
 
 ```js
 console.log("hi"); 

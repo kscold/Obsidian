@@ -54,7 +54,7 @@ setTimeout(function() {
 
 - 위 예시가 의도한 대로 동작하는 이유는 외부 [[렉시컬 환경(Lexical Environment)]]에서 `user`를 받아서 보통 때처럼 메서드를 호출했기 때문이다.
 
-- 따라서 [[화살표 함수(Arriw Funtion)]]를 사용하여 아래와 같이 변경할 수도 있다.
+- 따라서 [[화살표 함수(Arrow function)]]를 사용하여 아래와 같이 변경할 수도 있다.
 
 ``` js
 setTimeout(() => user.sayHi(), 1000); // Hello, John!

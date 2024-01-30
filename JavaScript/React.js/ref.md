@@ -4,9 +4,9 @@
 ## ref를 만드는 방법
 
 - ref를 만드는 방법은 크게 3가지가 있다.
-	1. ref는 [[콜백 함수(callback)]]를 통해 만들 수 있다.
-	2. createRef를 통해 ref를 설정할 수 있다.([[클래스형 컴포넌트]])
-	3. [[useRef()]]를 사용하여 ref를 설정할 수 있다.([[함수형 컴포넌트]])
+	1. ref는 [[콜백 함수(Callback Function)]]를 통해 만들 수 있다.
+	2. createRef를 통해 ref를 설정할 수 있다.([[클래스형 컴포넌트(Class Component)]])
+	3. [[useRef()]]를 사용하여 ref를 설정할 수 있다.([[함수형 컴포넌트(Functional Component)]])
 
 - 밑에 코드는 콜백 함수로 만드는 방법이다.
 

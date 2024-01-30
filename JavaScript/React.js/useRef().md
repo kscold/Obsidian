@@ -1,4 +1,4 @@
-- useRef는 [[함수형 컴포넌트]]에서 [[ref]]를 쉽게 사용할 수 있도록 만들어 준다.
+- useRef는 [[함수형 컴포넌트(Functional Component)]]에서 [[ref]]를 쉽게 사용할 수 있도록 만들어 준다.
 - [[useState()]]가 있는데 useRef를 사용하는 이유는 보통 ref로 설정하는 값들은 렌더링되는 정보가 아니기 때문이다.
 
 ## useRef의 사용이유
@@ -18,7 +18,7 @@
 ## 예시
 - 지역 [[변수(Variable)]]를 만들 때도 useRef를 사용할 수 있다.
 
-- [[클래스형 컴포넌트]]에서 로컬 변수를 사용하는 예시이다.
+- [[클래스형 컴포넌트(Class Component)]]에서 로컬 변수를 사용하는 예시이다.
 ```jsx
 
 import { Component } from 'react';
@@ -39,7 +39,7 @@ class RefSampleClass extends Component {
 }
 ```
 
--  [[함수형 컴포넌트]]로 작성한 예시이다.
+-  [[함수형 컴포넌트(Functional Component)]]로 작성한 예시이다.
 
 ```jsx
 import React from 'react';

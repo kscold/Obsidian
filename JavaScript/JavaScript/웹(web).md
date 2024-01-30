@@ -1,9 +1,9 @@
 - 일반적인 바닐라 웹 애플리케이션은 MPA 방식으로 사용자가 한 페이지에서 다른 페이지로 이동하면 전체 콘텐츠를 로드하는 많은 정적 페이지를 연결하였으나 나중에는 많은 페이지가 연결된 웹 응용 프로그램이 속도가 느려지는 이슈가 있었다.
 
-- 이 문제를 해결하기 위해 개발자는 2000년대 초반에 [[AJAX(Asynchronous JavaScript and XML)]] 를 사용하여 [[MPA(Multiple Page Application)]]를 개선했다.
+- 이 문제를 해결하기 위해 개발자는 2000년대 초반에 [[Ajax의(Asynchronous JavaScript and XML)]] 를 사용하여 [[MPA(Multiple Page Application)]]를 개선했다.
 - 이 기술은 [[MPA(Multiple Page Application)]] 웹 앱 의 성능을 향상시킬 수 있었으나 이것 역시 온라인 페이지의 복잡성 증가와 같은 몇 가지 역효과를 가져왔다.
 
-- 거의 10년 후, [[SPA(Single Page Application)]] 모델이 출시되었고 이것은 [[MPA(Multiple Page Application)]] + [[AJAX(Asynchronous JavaScript and XML)]]의 업그레이드 버전이었다.
+- 거의 10년 후, [[SPA(Single Page Application)]] 모델이 출시되었고 이것은 [[MPA(Multiple Page Application)]] + [[Ajax의(Asynchronous JavaScript and XML)]]의 업그레이드 버전이었다.
 
 - [[SPA(Single Page Application)]]는 페이지 데이터와 레이아웃을 별도로 요청하고 결과를 브라우저에 직접 렌더링할 수 있다.( 예) 유저가 온라인 쇼핑 중에 색상, 브랜드 등으로 선택 항목을 지정하고 페이지를 다시 로드하지 않고도 화면에 렌더링 가능해졌다.)
 

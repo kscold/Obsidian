@@ -6,7 +6,7 @@
 - 함수는 `Function` 객체이다.
 
 - 자바스크립트가 [[일급 객체(First Class Object)]]이기 때문에 아래와 같은 것들을 할 수 있다.
-	- [[콜백 함수(callback)]]  
+	- [[콜백 함수(Callback Function)]]  
 	- [[고차함수(Higher-Order Function)]]
 	- 클로저(Closure)
 

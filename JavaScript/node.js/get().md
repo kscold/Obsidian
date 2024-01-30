@@ -1,7 +1,7 @@
 app = [[express()]] 또는 app = require('Koa')
 
 app.get('/라우팅', (req, res) => {
-[[콜백 함수(callback)]]
+[[콜백 함수(Callback Function)]]
 })
 
 

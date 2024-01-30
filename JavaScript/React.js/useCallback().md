@@ -1,7 +1,7 @@
 - useCallback는 [[함수(Function)]]를 메모이제이션하고 [[함수(Function)]]를 반환한다.
 - useCallback은 자주 렌더링되는 [[컴포넌트(component)]]에서 함수를 최적화하고, 불필요한 함수 재생성을 방지하는 데 사용한다.
 
-- 예를 들어, 자식 컴포넌트에 전달되는 [[콜백 함수(callback)]]를 최적화하고 싶은 경우나, 외부에서 값을 가져오는 api를 호출하는 경우에 사용한다.
+- 예를 들어, 자식 컴포넌트에 전달되는 [[콜백 함수(Callback Function)]]를 최적화하고 싶은 경우나, 외부에서 값을 가져오는 api를 호출하는 경우에 사용한다.
 
 ## 이벤트 핸들러 함수가 자주 재생성되는 경우
 
@@ -80,7 +80,7 @@ function App() {
 
 - useCallback을 사용해서 onSave라는 함수를 재사용하는 것으로 자식 컴포넌트의 리렌더링을 방지할 수 있다.
 
-- 또 다른 [[콜백 함수(callback)]]가 자식 컴포넌트에 props로 전달되는 예시이다.
+- 또 다른 [[콜백 함수(Callback Function)]]가 자식 컴포넌트에 props로 전달되는 예시이다.
 
 ```jsx
 // ParentComponent.jsx

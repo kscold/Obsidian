@@ -9,11 +9,11 @@
 ### [[onSubmit]]
 
 - form을 제출할 때 [[이벤트(event)]]가 발생한다.
-- onSubmit 이벤트는 브라우저를 새로고침을 시킨다.
+- onSubmit [[이벤트(event)]]는 브라우저를 새로고침을 시킨다.
 - onSubmit 이벤트의 경우 "Enter" 키를 눌렀을 때도 발생하기 때문에 [[<input>]] 태그에 onKeyPress를 굳이 추가하지 않아도 된다.
 
 ### onInput
 
 - 요소의 값이 변경될 때 발생한다.(권장하지 않는 옵션이다.)
-- [[JavaScript/onChange]]는 이벤트가 포커스를 잃을 때 뿐만 아니라 키를 입력할 때 마다 발생한다. 
+- [[onChange]]는 이벤트가 포커스를 잃을 때 뿐만 아니라 키를 입력할 때 마다 발생한다. 
 - onInput은 [[DOM(Document Object Model)]]의 onInput 이벤트를 감싼 것으로, 변경할 때마다 발생한다.

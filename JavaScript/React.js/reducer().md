@@ -27,7 +27,7 @@ function counter(state, action) {
 }
 ```
 
-- [[useReducer()]] 에선 일반적으로 `default:` 부분에 `throw new Error('Unhandled Action')`과 같이 에러를 발생시키도록 처리하는게 일반저이다.
+- [[useReducer()]] 에선 일반적으로 `default:` 부분에 `throw new Error('Unhandled Action')`과 같이 에러를 발생시키도록 처리하는게 일반적이다.
 - 그러나 [[리덕스(Redux)]]의 리듀서에서는 기존 [[state]]를 그대로 반환하도록 작성해야한다.
 
 - [[리덕스(Redux)]]를 사용 할 때에는 여러개의 리듀서를 만들고 이를 합쳐서 루트 리듀서 (Root Reducer)를 만들 수 있다.(루트 리듀서 안의 작은 리듀서들은 서브 리듀서라고 부른다.)

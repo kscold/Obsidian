@@ -1,4 +1,4 @@
-- 리액트 [[클래스형 컴포넌트]]에서 [[useState()]]([[함수형 컴포넌트]]) 대신 사용되는 예약어로 [[this]]를 통해 접근한다.
+- 리액트 [[클래스형 컴포넌트(Class Component)]]에서 [[useState()]]([[함수형 컴포넌트(Functional Component)]]) 대신 사용되는 예약어로 [[this]]를 통해 접근한다.
 - useStaet에서 사실 setter 함수 작동 방식은 setState와 같다.
 - this.state는 여러 값을 넣을 수 있다.
 - this.setState를 사용하여 state값을 업데이트할 때는 상태가 [[비동기(asynchronous)]]적으로 업데이트 된다.
@@ -137,7 +137,7 @@ this.setState((prevState) => ({ // 이때 () 소괄호는 return을 포함한다
 }));
 ```
 
-- [[화살표 함수(Arriw Funtion)]]에서 값을 바로 반환하고 싶다면 코드 블록 { }를 생략하면 된다.
+- [[화살표 함수(Arrow function)]]에서 값을 바로 반환하고 싶다면 코드 블록 { }를 생략하면 된다.
 
 ## 클래스 컴포넌트에서 input 여러 개 다루기(onChange)
 - input이 여러 개일 때는 event 객체를 활용하면 훨씬 편하다.

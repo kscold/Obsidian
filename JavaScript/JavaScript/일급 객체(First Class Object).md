@@ -19,7 +19,7 @@
 ## 함수가 일급객체일 때의 장점
 
 - 고차함수(Higher order function)를 만들 수 있다.
-- [[콜백 함수(callback)]]을 사용할 수 있다.
+- [[콜백 함수(Callback Function)]]을 사용할 수 있다.
 
 
 ## 아래는 일급객체의 조건
