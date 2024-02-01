@@ -1,7 +1,8 @@
 - Document [[객체(Object)]]는 웹 페이지 그 자체를 의미한다.
-- 웹 페이지에 존재하는 [[HTML]] 요소에 접근하고자 할 때는 반드시 Document 객체부터 시작해야 한다.
+- 웹 페이지에 존재하는 [[HTML]] 요소에 접근하고자 할 때는 반드시 Document [[객체(Object)]]부터 시작해야 한다.
 
 ## Document [[메서드(Method)]]
+
 - Document 객체는 HTML 요소와 관련된 작업을 도와주는 다양한 메소드를 제공한다.
 	- HTML 요소의 선택
 	- HTML 요소의 생성

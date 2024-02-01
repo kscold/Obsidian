@@ -1,0 +1,1 @@
+- async await 문법을 사용하면 [[Promise chainning]]없이 훨신 간단하게 [[비동기(asynchronous)]] 작업을 처리할 수 있다.

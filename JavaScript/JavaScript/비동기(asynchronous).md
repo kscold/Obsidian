@@ -65,4 +65,84 @@ login('별코딩', (username) => {
 
 ## Promise로 동기처리
 
-- [[Promise]]
+- [[콜백 함수(Callback Function)]] 대신 [[Promise]] 동작으로 바꾸는 예시이다.
+
+```js
+// 1. 로그인
+function login(usernaem) {
+	return new Promise((reslove, reject) => {
+		setTimeout(() => {
+			if (username) {
+				resolve(username);
+			} else {
+				reject(new Error('아이디를 입력해주세요'))
+			}
+		}, 1000);
+	});
+}
+
+// 2. 장바구니에 넣기
+function addToCart(product) {
+	return new Promise((resolve, reject) => {
+		setTimeout(() => {
+			if (product) {
+				resolve(product);
+			} else {
+				reject(new Error('장바구니에 넣을 상품이 없어요!'));
+			}
+		}, 1000);
+	});
+}
+
+// 3. 결제하기
+function makePayment(cardNumber, product) {
+	return new Promise((resolve, reject) => {
+		seTimeout(() => {
+			if (cardNumber.length !== 16) {
+				reject(new Error("잘못된 카드 번호 입니다."))
+				return
+			}
+			
+			if (!product) {
+				reject(new Error("결제할 상품을 넣어주세요."))
+				return
+			}
+			resolve(product);
+		}, 1000);
+	});
+}
+
+login('')
+	.catch((error) => {
+		return '익명'; // 만약 에러가 발생한다명 바로 resolve가 되어 return 됨
+	})
+	.then((username) => {
+		console.log(`${username}님 환영합니다.`);
+		return addToCart("감자");
+	})
+	.catch((error) => {
+		return '옥수수';
+	})
+	.then((product) => {
+		console.log(`${product}를 장바구니에 넣었어요`);
+		return makePayment('1234123412341234', product)
+	})
+	.then((product) => {
+		console.log(`${product}를 결제를 완료했습니다.`);
+	})
+	.catch((error) => {
+		console.log(error.message);
+	}).finallt(() => {
+		console.log('마무리 작업');
+	})
+
+// return 생략
+login('')
+	.catch(() => '익명')
+	.﻿﻿then((username) => addToCart('')
+	.﻿catch(() => '옥수수')
+	.then((product) => makePayment('1234123412341234', product))
+	.then(product) => (console.log(`${product}를 결제를 완료했습니다.`))
+	.catch((error) => console.log(error.message))
+	.finally(() => console. log('마무리 작업'));
+```

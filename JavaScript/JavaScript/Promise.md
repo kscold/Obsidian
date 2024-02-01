@@ -43,6 +43,8 @@ const promise = new Promise((resolve, reject) => {
 // >> 비동기 작업
 ```
 
+## 예시
+
 - 밑의 코드는 기본적인 Promise의 동작 예시이다.
 
 ```js
@@ -73,7 +75,7 @@ setTimeout(() => {
 ```
 
 - 그러나 위의 코드의 경우 데이터를 받아 왔을 때, 후처리가 어렵다.
-- 따라서 Promise는 [[then()]], [[catch()]], [[finally()]]라는 [[메서드(Method)]]를 제공한다.
+- 따라서 Promise는 [[then()]], [[catch()]], [[finally()]]라는 [[메서드(Method)]]를 제공하여 [[Promise chainning]]을 할 수 있다.
 
 ```js
 function getData() {
@@ -95,6 +97,7 @@ function getData() {
 	return promise
 }
 
+// Promise chaining
 // then(), catch(), finally()
 getData().then((data) => {
 	const name = data.name
@@ -106,46 +109,12 @@ getData().then((data) => {
 })
 ```
 
-### Promise chainning
+## Promise 메서드
 
-```js
-function getData() {
-	const promise = new Promise((resolve, reject) => {
-		setTimeout(() => {
-			const data = { name: '철수' };
-			// const data = null
-			
-			if(data) { // 성공했을 때
-				console.log('네트워크 요청 성공');
-				resolve(data)
-			} else { // 실패했을 때
-				reject(new Error('네트워크 문제'));
-			}
-			
-		}, 1000);
-	});
-	
-	return promise
-}
-
-// Promise chaining
-const promise = getData();
-promise.then((data) => {
-	return getData()
-}).then((data) => {
-	return getData()
-}).then((data) => {
-	console.log(data);
-})
-
-// 바로 리턴
-const promise = getData();
-promise
-	.then((data) => getData())
-	.then((data) => getData())
-	.then((data) => getData())
-
-```
+- [[Promise.all()]]
+- [[Promise.allSettled()]]
+- [[Promise.any()]]
+- [[Promise.race()]]
 
 ## Promise의 작동원리
 
