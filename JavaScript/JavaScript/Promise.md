@@ -73,7 +73,7 @@ setTimeout(() => {
 ```
 
 - 그러나 위의 코드의 경우 데이터를 받아 왔을 때, 후처리가 어렵다.
-- 따라서 Promise는 [[then()]], [[catch()]], [[finally()]]라는 메서드를 제공한다.
+- 따라서 Promise는 [[then()]], [[catch()]], [[finally()]]라는 [[메서드(Method)]]를 제공한다.
 
 ```js
 function getData() {
@@ -104,6 +104,47 @@ getData().then((data) => {
 }).finally(() => {
 	console.log('마무리 작업');
 })
+```
+
+### Promise chainning
+
+```js
+function getData() {
+	const promise = new Promise((resolve, reject) => {
+		setTimeout(() => {
+			const data = { name: '철수' };
+			// const data = null
+			
+			if(data) { // 성공했을 때
+				console.log('네트워크 요청 성공');
+				resolve(data)
+			} else { // 실패했을 때
+				reject(new Error('네트워크 문제'));
+			}
+			
+		}, 1000);
+	});
+	
+	return promise
+}
+
+// Promise chaining
+const promise = getData();
+promise.then((data) => {
+	return getData()
+}).then((data) => {
+	return getData()
+}).then((data) => {
+	console.log(data);
+})
+
+// 바로 리턴
+const promise = getData();
+promise
+	.then((data) => getData())
+	.then((data) => getData())
+	.then((data) => getData())
+
 ```
 
 ## Promise의 작동원리

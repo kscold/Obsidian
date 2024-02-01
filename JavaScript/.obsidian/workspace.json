@@ -21,14 +21,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSS/display.md",
+                "file": "JavaScript/fetch().md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +93,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSS/display.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +109,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSS/display.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,9 +130,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "CSS/display.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -155,35 +150,37 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "373480e7b3224c8d",
+  "active": "ffe281f2a3a42cd1",
   "lastOpenFiles": [
-    "HTML/<a>.md",
-    "CSS/display.md",
-    "HTML/<Link>.md",
-    "CSS/align-items.md",
-    "CSS/flex-flow.md",
-    "CSS/flex-wrap.md",
-    "CSS/justify-content.md",
-    "HTML/<img>.md",
-    "HTML/<p>.md",
-    "HTML/<li>.md",
-    "React.js/조건부 렌더링.md",
-    "React.js/import.md",
-    "CSS/position.md",
-    "CSS/grid.md",
+    "JavaScript/fetch().md",
+    "JSON(Java Script Object Notation).md",
+    "stringify().md",
+    "JavaScript/Number().md",
+    "JavaScript/parseInt().md",
+    "JavaScript/생성자(Constructor).md",
+    "JavaScript/constructor().md",
+    "json().md",
+    "JavaScript/리터럴(literal).md",
+    "HTTP.md",
+    "HTTP 응답 상태(status).md",
+    "Node.js/CRUD.md",
+    "JavaScript/Web API.md",
+    "JavaScript/Promise.md",
+    "JavaScript/콜백 함수(Callback Function).md",
+    "JavaScript/setTimeout().md",
+    "CSS/미디어 쿼리(Media Query).md",
     "CSS/flex.md",
-    "CSS/flex-direction.md",
+    "CSS/grid.md",
+    "CSS/SCSS/@mixin.md",
+    "CSS/SCSS/@extend.md",
+    "CSS/SCSS/@include.md",
+    "CSS/SCSS",
+    "image/Pasted image 20240201231316.png",
+    "CSS/position.md",
+    "CSS/display.md",
+    "HTML/<a>.md",
+    "HTML/<Link>.md",
     "image/Pasted image 20240201201746.png",
-    "React.js/Context API.md",
-    "React.js/Prop Drilling.md",
-    "React.js/Custom Hooks.md",
-    "React.js/Jest/describe().md",
-    "React.js/Libaray/Redux/리덕스(Redux).md",
-    "React.js/액션(Action).md",
-    "React.js/리듀서(Reducer).md",
-    "JavaScript/reduce().md",
-    "React.js/Libaray/Redux/스토어(Store).md",
-    "JavaScript/배열(Array).md",
     "image/Pasted image 20240131165727.png",
     "image/Pasted image 20240131165530.png",
     "image/Pasted image 20240131165408.png",
@@ -195,13 +192,11 @@
     "HTML/property",
     "image/Pasted image 20240131013509.png",
     "image/Pasted image 20240131013502.png",
-    "image/Pasted image 20240131013317.png",
     "async",
     "TypeScript",
     "JavaScript",
     "React.js/Jest",
     "HTML",
-    "CSS",
-    "React.js"
+    "CSS"
   ]
 }

@@ -6,6 +6,6 @@
 
 ## Web API의 종류
 
-- [[fetch]]
+- [[fetch()]]
 - [[DOM(Document Object Model)]]
 - [[setTimeout()]]
