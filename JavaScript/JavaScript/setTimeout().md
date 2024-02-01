@@ -4,8 +4,16 @@
 
 ## 문법
 
+- 2개의 [[매개변수(paramiter)]] 중 첫번째가 [[콜백 함수(Callback Function)]]고 두번째가 ms 초 뒤에 첫번째 콜백 함수를 실행할 함수이다.
+
 ```js
 setTimeout(function, milliseconds, parameter1, parameter2, ...);
+```
+
+```js
+setTimeout(() => {
+	콜백함수
+}, 1000(ms의 정수))
 ```
 
 - setTimeout() 함수의 첫 번째 매개변수에는 실행시킬 자바스크립트 함수를 넣는다. 

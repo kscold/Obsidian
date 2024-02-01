@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/실행 컨텍스트(execution context).md",
+                "file": "CSS/display.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaScript/실행 컨텍스트(execution context).md",
+                "file": "CSS/display.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaScript/실행 컨텍스트(execution context).md",
+                "file": "CSS/display.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaScript/실행 컨텍스트(execution context).md"
+                "file": "CSS/display.md"
               }
             }
           }
@@ -157,34 +157,41 @@
   },
   "active": "373480e7b3224c8d",
   "lastOpenFiles": [
-    "image/Pasted image 20240131041052.png",
-    "JavaScript/테스크 큐(Task Queue).md",
-    "JavaScript/Ajax의(Asynchronous JavaScript and XML).md",
-    "JavaScript/힙(Heap).md",
-    "JavaScript/콜 스택(Call Stack).md",
-    "JavaScript/비동기(asynchronous).md",
-    "JavaScript/이벤트 루프(Event Loop).md",
-    "JavaScript/실행 컨텍스트(execution context).md",
-    "React.js/key.md",
-    "React.js/Libaray/Redux/useReducer().md",
-    "React.js/reducer().md",
-    "React.js/ReactDOM.render.md",
-    "React.js/props.md",
+    "HTML/<a>.md",
+    "CSS/display.md",
+    "HTML/<Link>.md",
+    "CSS/align-items.md",
+    "CSS/flex-flow.md",
+    "CSS/flex-wrap.md",
+    "CSS/justify-content.md",
+    "HTML/<img>.md",
+    "HTML/<p>.md",
+    "HTML/<li>.md",
+    "React.js/조건부 렌더링.md",
     "React.js/import.md",
+    "CSS/position.md",
+    "CSS/grid.md",
+    "CSS/flex.md",
+    "CSS/flex-direction.md",
+    "image/Pasted image 20240201201746.png",
+    "React.js/Context API.md",
+    "React.js/Prop Drilling.md",
+    "React.js/Custom Hooks.md",
+    "React.js/Jest/describe().md",
     "React.js/Libaray/Redux/리덕스(Redux).md",
-    "React.js/웹팩(webpack).md",
-    "React.js/Libaray/Redux",
+    "React.js/액션(Action).md",
+    "React.js/리듀서(Reducer).md",
+    "JavaScript/reduce().md",
     "React.js/Libaray/Redux/스토어(Store).md",
-    "React.js/shouldComponentUpdate().md",
-    "React.js/Libaray/immer.md",
-    "React.js/Hooks.md",
+    "JavaScript/배열(Array).md",
+    "image/Pasted image 20240131165727.png",
+    "image/Pasted image 20240131165530.png",
+    "image/Pasted image 20240131165408.png",
+    "image/Pasted image 20240131165355.png",
+    "image/Pasted image 20240131165114.png",
+    "image/Pasted image 20240131041052.png",
+    "React.js/Libaray/Redux",
     "React.js/Libaray",
-    "React.js/함수형 컴포넌트(Functional Component).md",
-    "React.js/클래스형 컴포넌트(Class Component).md",
-    "JavaScript/함수형 프로그래밍(Functional Programming).md",
-    "JavaScript/원시 타입(Primitive type).md",
-    "JavaScript/웹(web).md",
-    "JavaScript/예약어(reserved word).md",
     "HTML/property",
     "image/Pasted image 20240131013509.png",
     "image/Pasted image 20240131013502.png",
@@ -193,13 +200,6 @@
     "TypeScript",
     "JavaScript",
     "React.js/Jest",
-    "image/Pasted image 20240124182916.png",
-    "image/Pasted image 20240124171749.png",
-    "image/Pasted image 20240119013246.png",
-    "image/Pasted image 20240116220818.png",
-    "image/Pasted image 20240115170757.png",
-    "image/Pasted image 20240115165714.png",
-    "image/Pasted image 20240115164222.png",
     "HTML",
     "CSS",
     "React.js"
