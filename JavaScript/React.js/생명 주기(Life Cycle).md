@@ -20,7 +20,7 @@
 
 - [[constructor()]]: [[컴포넌트(component)]]를 새로 만들 때마다 호출되는 [[클래스(class)]] [[생성자(Constructor)]] 메서드이다.
 - [[getDerivedStateFromProps()]]: [[props]]에 있는 값을 [[state]]에 넣을 때 사용하는 메서드이다.
-- [[render()]]: 준비한 UI를 렌더링하는 메서드이다.
+- [[JavaScript/render()]]: 준비한 UI를 렌더링하는 메서드이다.
 - [[componentDidMount()]]: [[컴포넌트(component)]]가 웹 브라우저상에 나타나 후 호출하는 메서드이다.
 ### 업데이트
 
@@ -45,9 +45,9 @@
 	- 컴포넌트가 리렌더링을 해야 할지 말아야 할지를 결정하는 메서드이다. 
 	- 이 메서드에서는 true 혹은 false 값을 반환해야 하며, true를 반환하면 다음 라이프사이클 메서드를 계속 실행하고, false를 반환하면 작업을 중지한다.
 	- 즉, 컴포넌트가 리렌더링 되지 않는다. 
-	- 만약 특정 함수에서 this.forceUpdate 함수를 호출한다면 이 과정을 생략하고 바로 [[render()]] 함수를 호출한다.
+	- 만약 특정 함수에서 this.forceUpdate 함수를 호출한다면 이 과정을 생략하고 바로 [[JavaScript/render()]] 함수를 호출한다.
 
-- [[render()]]: 컴포넌트를 리렌더링합니다.
+- [[JavaScript/render()]]: 컴포넌트를 리렌더링합니다.
 
 - ﻿﻿[[getSnapshotBeforeUpdate()]]: 컴포년트 변화를 DOM에 반영하기 바로 직전에 호출하는 메서드이다.
 

@@ -11,20 +11,20 @@
             "id": "ffe281f2a3a42cd1",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "얕은 복사.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
             "id": "373480e7b3224c8d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript/가비지 콜렉터(garbage collector).md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -93,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "얕은 복사.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "얕은 복사.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "얕은 복사.md"
+              }
             }
           }
         ]
@@ -152,7 +156,24 @@
   },
   "active": "ffe281f2a3a42cd1",
   "lastOpenFiles": [
+    "JavaScript/확산 연산자(spread operator).md",
+    "얕은 복사.md",
+    "JavaScript/힙(Heap).md",
+    "React.js/Jest/beforeAll().md",
+    "afterAll().md",
+    "React.js/Jest/describe().md",
+    "React.js/Libaray/msw(mock-service-worker).md",
+    "Next.js/useRouter().md",
+    "React.js/Jest/render().md",
+    "React.js/Jest/fireEvent.md",
+    "React.js/Jest/테스트.md",
+    "JavaScript/속성(Property).md",
+    "React.js/Jest/screen.md",
+    "Next.js",
     "JavaScript/가비지 콜렉터(garbage collector).md",
+    "React.js/useCallback().md",
+    "JavaScript/async await.md",
+    "JavaScript/json().md",
     "JavaScript/고차함수(Higher-Order Function).md",
     "JavaScript/비동기(asynchronous).md",
     "JavaScript/삼항 연산자.md",
@@ -160,27 +181,11 @@
     "Node.js/JWT.md",
     "JavaScript/findIndex().md",
     "JavaScript/find().md",
-    "JavaScript/async await.md",
     "JavaScript/HTTP.md",
     "JavaScript/prototype.md",
-    "JavaScript/filter().md",
-    "JavaScript/undefined.md",
-    "JavaScript/finally().md",
-    "JavaScript/Promise.md",
-    "JavaScript/Promise.race().md",
-    "JavaScript/Promise.any().md",
-    "JavaScript/Promise.allSettled().md",
-    "JavaScript/Promise.all().md",
-    "JavaScript/Promise chainning.md",
     "image/Pasted image 20240202024338.png",
     "image/Pasted image 20240202022302.png",
     "image/Pasted image 20240202021721.png",
-    "JavaScript/Document.md",
-    "JavaScript/콜백 함수(Callback Function).md",
-    "JavaScript/setTimeout().md",
-    "JavaScript/화살표 함수(Arrow function).md",
-    "JavaScript/fetch().md",
-    "JavaScript/JSON(Java Script Object Notation).md",
     "CSS/SCSS",
     "image/Pasted image 20240201231316.png",
     "image/Pasted image 20240201201746.png",
@@ -196,7 +201,6 @@
     "TypeScript",
     "JavaScript",
     "React.js/Jest",
-    "HTML",
-    "CSS"
+    "HTML"
   ]
 }

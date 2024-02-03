@@ -1,5 +1,7 @@
 - API에서 데이터를 가져오는 가장 쉬운 방법은 .[[json()]] [[메서드(Method)]]를 통해 [[JSON(Java Script Object Notation)]] 응답을 자바스크립트 [[객체(Object)]] [[리터럴(literal)]] 또는 [[배열(Array)]]로 자동으로 구문분석하는 [[fetch()]]를 사용하는 것이다.
 
+- json() 메서드도 [[Promise]]를 반환하다.
+
 ```js
 fetch('https://api.chucknorris.io/jokes/random?category=dev')
   .then(res => res.json()) // .json() 메서드는 JSON 응답을 자바스크립트 객체 리터럴로 구문분석합
