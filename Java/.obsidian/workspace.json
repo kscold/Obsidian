@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/DI(Dependency Injection).md",
+                "file": "isinstance().md",
                 "mode": "source",
                 "source": false
               }
@@ -23,12 +23,8 @@
             "id": "e013613dbf564785",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Java/객체지향.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -97,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/DI(Dependency Injection).md",
+                "file": "isinstance().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/DI(Dependency Injection).md",
+                "file": "isinstance().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/DI(Dependency Injection).md"
+                "file": "isinstance().md"
               }
             }
           }
@@ -160,34 +156,34 @@
   },
   "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
-    "Spring/스프링 컨테이너(Spring Container).md",
+    "Spring/Test/AssertJ.md",
+    "isinstance().md",
+    "Java/instanceof().md",
+    "Spring/Test/TDD(Test Driven Development).md",
+    "Spring/Test/JUnit5.md",
+    "Spring/Test/테스트 메서드.md",
+    "Spring/Gradle/스프링 부트 한글 깨짐.md",
+    "Java/객체지향.md",
+    "Java/열거(Enum).md",
+    "Java/Stream.md",
+    "Java/디폴트 메서드(Default Method).md",
+    "Java/컬렉션(Collection).md",
+    "Spring/람다(lambda).md",
+    "Java/epuals.md",
+    "Spring/Test/@Test.md",
+    "Spring/Test/@DisplayName.md",
+    "Java/어노테이션(Annotation).md",
+    "Spring/Servlet.md",
+    "Spring/JSP.md",
+    "Spring/JSON(Java Script Object Notation).md",
+    "Spring/HTTP 상태 코드(HTTP Status).md",
+    "Spring/HTTP.md",
     "Spring/DI(Dependency Injection).md",
+    "Spring/스프링 컨테이너(Spring Container).md",
     "Java/인스턴스(Instance).md",
     "Spring/객체(Object).md",
-    "Java/생성자(constructor).md",
-    "Java/메서드(Method).md",
-    "Java/객체지향.md",
-    "Spring/JPA/CrudRepository.md",
-    "Java/자바(Java).md",
-    "Spring/Test/@ParameterizedTest.md",
-    "Spring/Test/TDD(Test Driven Development).md",
-    "Spring/Test/@Test.md",
-    "Spring/Test/AssertJ.md",
-    "Java/참조 타입(Reference Type).md",
-    "Java/원시 타입(Primitive Type).md",
-    "Spring/JPA/save().md",
-    "JUint5.md",
-    "JUnit5.md",
-    "테스트 메서드.md",
-    "Spring/무제 파일.md",
     "Spring/Test",
-    "인텔리제이 단축키.md",
-    "Spring/@DisplayName.md",
-    "Spring/BDD.md",
-    "Spring/Docker/Docker.md",
     "Spring/Docker",
-    "Java/private.md",
-    "Java/클래스(Class).md",
     "Spring/mustache",
     "Spring/HTML",
     "image/Pasted image 20240112012957.png",

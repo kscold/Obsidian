@@ -30,7 +30,7 @@ ArrayList<Integer> integers5 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5)); //
 ```
 
 - 보통 생성할 때는 new ArrayList<>()와 같이 타입을 생략해서 작성한다.
-- ArrayList를 생성할 때 [[Java/Set]]이나 다른 ArrayList를 전달하면 해당 [[Collection]]의 값들로 초기화된다.
+- ArrayList를 생성할 때 [[Java/Set]]이나 다른 ArrayList를 전달하면 해당 [[컬렉션(Collection)]]의 값들로 초기화된다.
 - 마지막으로 가변 인자를 전달받는 Arrays.[[asList()]]를 사용하면 기본 값들로 생성 가능하다.
 
 ### 2. ArrayList 엘레멘트 추가/변경

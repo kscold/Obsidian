@@ -1,4 +1,4 @@
-- HashMap은 [[Map]] [[인터페이스(Interface)]]를 구현한 대표적인 Map 컬렉션([[Collection]])이다.
+- HashMap은 [[Map]] [[인터페이스(Interface)]]를 구현한 대표적인 Map 컬렉션([[컬렉션(Collection)]])이다.
 - Map 인터페이스를 상속하고 있기에 Map의 성질을 그대로 가지고 있다.
 - Map은 키와 값으로 구성된 Entry [[객체(Object)]]를 저장하는 구조를 가지고 있는 자료구조이다.
 

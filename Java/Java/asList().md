@@ -54,7 +54,7 @@ public class TestArrayAsList {
   
   
 - 만약 진짜 ArrayList를 받기 위해서는 다음과 같이 변환([[캐스팅(casting)]])하면 된다.  
-- ArrayList 생성자는 java.util.Arrays.ArrayList의 [[부모 클래스(super class)]](상위(super) 클래스)인 [[Collection]] Type도 받아들일 수 있다.
+- ArrayList 생성자는 java.util.Arrays.ArrayList의 [[부모 클래스(super class)]](상위(super) 클래스)인 [[컬렉션(Collection)]] Type도 받아들일 수 있다.
 
 ```java
 List<String> list = new ArrayList<String>(Arrays.asList(arr)); // List로 업캐스팅
