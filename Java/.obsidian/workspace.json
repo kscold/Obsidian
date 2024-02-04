@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "isinstance().md",
+                "file": "Java/Stream.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "isinstance().md",
+                "file": "Java/Stream.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "isinstance().md",
+                "file": "Java/Stream.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "isinstance().md"
+                "file": "Java/Stream.md"
               }
             }
           }
@@ -156,14 +156,18 @@
   },
   "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
+    "Java/for.md",
+    "인텔리제이 단축키.md",
+    "이클립스 단축키.md",
+    "Java/인스턴스 변수(instance variable).md",
     "Spring/Test/AssertJ.md",
+    "Java/객체지향.md",
     "isinstance().md",
     "Java/instanceof().md",
     "Spring/Test/TDD(Test Driven Development).md",
     "Spring/Test/JUnit5.md",
     "Spring/Test/테스트 메서드.md",
     "Spring/Gradle/스프링 부트 한글 깨짐.md",
-    "Java/객체지향.md",
     "Java/열거(Enum).md",
     "Java/Stream.md",
     "Java/디폴트 메서드(Default Method).md",
@@ -178,10 +182,6 @@
     "Spring/JSON(Java Script Object Notation).md",
     "Spring/HTTP 상태 코드(HTTP Status).md",
     "Spring/HTTP.md",
-    "Spring/DI(Dependency Injection).md",
-    "Spring/스프링 컨테이너(Spring Container).md",
-    "Java/인스턴스(Instance).md",
-    "Spring/객체(Object).md",
     "Spring/Test",
     "Spring/Docker",
     "Spring/mustache",
