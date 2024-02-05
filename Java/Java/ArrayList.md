@@ -1,4 +1,5 @@
-- List는 [[인터페이스(Interface)]]이고 ArrayList는 [[클래스(Class)]]이다.
+- [[List]]는 [[인터페이스(Interface)]]이고 ArrayList는 [[클래스(Class)]]이다.
+
 - ArrayList는 자바에서 기본적으로 많이 사용되는 [[클래스(Class)]]이다.
 - ArrayList는 자바의 List [[인터페이스(Interface)]]를 상속받은 여러 클래스 중 하나이다.
 - 일반 [[배열(Array)]]과 동일하게 연속된 메모리 공간을 사용하며 인덱스는 0부터 시작한다.
@@ -12,7 +13,7 @@
 
 - 자료를 대량으로 추가하거나 삭하면 내부 처리 작업이 늘어나서 성능이 떨어 질 수 있다.
 
-### 1. ArrayList 생성
+## ArrayList 생성
 - 자바에서 ArrayList를 사용하려면 아래 구문을 먼저 추가해야 한다.
 
 ```java
@@ -33,7 +34,9 @@ ArrayList<Integer> integers5 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5)); //
 - ArrayList를 생성할 때 [[Java/Set]]이나 다른 ArrayList를 전달하면 해당 [[컬렉션(Collection)]]의 값들로 초기화된다.
 - 마지막으로 가변 인자를 전달받는 Arrays.[[asList()]]를 사용하면 기본 값들로 생성 가능하다.
 
-### 2. ArrayList 엘레멘트 추가/변경
+## ArrayList 메서드
+### ArrayList 엘레멘트 추가/변경
+
 - ArrayList를 생성한 후 [[add()]] 메서드로 엘레멘트를 추가할 수 있다.
 - 또한 set() 메서드로 기존에 추가된 값을 변경하는 것도 가능하다.
 
@@ -64,9 +67,9 @@ public class ArrayListTest {
 - 따라서 결과는 아래와 같이 출력된다.
 ![](https://blog.kakaocdn.net/dn/cjTrLd/btqM4z1RyZB/aGIkXjHSxyf11QhDu7TjvK/img.png)
 
-#### **3. ArrayList 엘레멘트 삭제**
+### ArrayList 엘레멘트 삭제
 
-- 추가했던 값을 삭제할 때는 remove() 메소드를 호출한다.
+- 추가했던 값을 삭제할 때는 remove() [[메서드(Method)]]를 호출한다.
 
 ```java
 import java.util.ArrayList;
@@ -87,7 +90,7 @@ public class ArrayListTest {
 }
 ```
 
-- 위의 코드를 보면 일반 배열을 ArrayList로 바꾸기 위해 [[asList()]] 메서드를 사용했다.
+- 위의 코드를 보면 일반 [[배열(Array)]] ArrayList로 바꾸기 위해 [[asList()]] 메서드를 사용했다.
 - 삭제할 때는 엘레멘트의 인덱스를 입력하거나 엘레멘트를 직접 입력할 수 있다.
 - 인덱스를 통해 삭제할 경우 삭제되는 엘레멘트를 리턴받을 수 있다.
 - 값을 지움과 동시에 해당 값으로 별도의 작업이 필요한 경우 리턴을 받아서 사용하면 된다.
