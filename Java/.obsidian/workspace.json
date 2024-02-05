@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/제네릭(Generic).md",
+                "file": "List.of().md",
                 "mode": "source",
                 "source": false
               }
@@ -27,8 +27,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "List.of().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "List.of().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "List.of().md"
+              }
             }
           }
         ]
@@ -151,14 +154,19 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "e013613dbf564785",
+  "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
+    "Java/Optional.of().md",
+    "Java/Optional.ofNullable().md",
+    "Java/Optional.orElse().md",
+    "List.of().md",
+    "Java/배열(Array).md",
+    "Java/List.md",
+    "Java/ArrayList.md",
+    "Java/asList().md",
+    "Java/add().md",
     "Java/제네릭(Generic).md",
     "Java/LinkedList.md",
-    "Java/add().md",
-    "Java/List.md",
-    "Java/asList().md",
-    "Java/배열(Array).md",
     "Java/hashCode().md",
     "Java/isinstance().md",
     "Java/equals.md",
@@ -169,16 +177,11 @@
     "Spring/Test/일급 컬렉션(Frist Class Collection).md",
     "Java/HashMap.md",
     "Java/컬렉션(Collection).md",
-    "Java/ArrayList.md",
     "Java/메서드(Method).md",
     "Java/형변환(Casting).md",
     "Java/Stream.md",
     "Java/for.md",
     "인텔리제이 단축키.md",
-    "이클립스 단축키.md",
-    "Java/인스턴스 변수(instance variable).md",
-    "Spring/Test/AssertJ.md",
-    "Java/객체지향.md",
     "Spring/Test",
     "Spring/Docker",
     "Spring/mustache",

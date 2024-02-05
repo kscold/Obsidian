@@ -133,3 +133,19 @@ System.out.println(hasBanana);
 
 //출력 : true
 ```
+
+
+## [[List.of()]]
+
+- List.of()는 JAVA 9에서 도입된 메소드이다.
+- Arrays.of()와는 대조적으로, 이 메소드는 변경불가한(unmodifiable) list 객체를 생성한다.
+
+```java
+@DisplayName("List.of() 사용방법")
+@Test
+void usageOfListOf() {
+    Integer[] array = new Integer[]{1, 2, 3};
+    List<Integer> list = List.of(array);
+    assertThat(list).containsExactly(1, 2, 3)
+}
+```

@@ -3,7 +3,7 @@
 
 
 ###  예시 - 들어올 데이터 가 null일 때
-- Optional.[[ofNullable()]]이 아닌 Optional.[[of()]] [[메서드(Method)]]를 이용하면 NullPointerException이 발생한다. Optional.of()는 들어올 데이터가 절대 null이 아닌 경우에만 사용하는데 null을 넣었기 때문이다. 
+- Optional.[[Optional.ofNullable()]]이 아닌 Optional.[[Optional.of()]] [[메서드(Method)]]를 이용하면 NullPointerException이 발생한다. Optional.of()는 들어올 데이터가 절대 null이 아닌 경우에만 사용하는데 null을 넣었기 때문이다. 
 
 ### 형식
 - Optional<객체> [[findById()]] (Long id)  | findByName(String name)

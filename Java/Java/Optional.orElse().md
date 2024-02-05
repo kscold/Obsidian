@@ -15,7 +15,7 @@ name = Optional.ofNullable(isNull).orElse("test"); // null인 경우에 test 문
 System.out.println(name); //isNull값이 null이므로 "test" 출력
 ```
 
-- 여기서 [[ofNullable()]]를 사용하여 Optional이 null 일 때도 가능하게 만들었다.
+- 여기서 [[Optional.ofNullable()]]를 사용하여 Optional이 null 일 때도 가능하게 만들었다.
 
 
 - 그래서 orElse~는 if문을 이용해 처리해야 하는 명령어를 짧게 람다식처럼 처리할 수 있는 메소드라고 볼 수 있다.

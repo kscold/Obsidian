@@ -96,7 +96,8 @@ public class ArrayListTest {
 - 값을 지움과 동시에 해당 값으로 별도의 작업이 필요한 경우 리턴을 받아서 사용하면 된다.
 - ArrayList 안의 내용을 전체 삭제할 때는 clear()를 호출하면 된다.
 
-#### **4. ArrayList 전체 값 확인**
+### 4. ArrayList 전체 값 확인
+
 - ArrayList의 모든 값들을 순회해서 출력하고 싶은 경우 다양한 방법을 사용할 수 있다.
 
 ```java
@@ -144,13 +145,11 @@ public class ArrayListTest {
 
 ![](https://blog.kakaocdn.net/dn/DZXoS/btqM9p7K6js/lECX8GgwgS5i1o511AsxAK/img.png)
 
-출력 결과
+- 마지막의 경우 역순서로 출력이 되는 것을 확인할 수 있다.
 
-마지막의 경우 역순서로 출력이 되는 것을 확인할 수 있습니다.
+### 5. 값 존재 유무 확인
 
-#### **5. 값 존재 유무 확인**
-
-ArrayList의 안에 값이 존재하는지 존재한다면 어느 위치에 존재하는지 알고 싶은 경우가 있습니다.
+- ArrayList의 안에 값이 존재하는지 존재한다면 어느 위치에 존재하는지 알고 싶은 경우가 있다.
 
 먼저 값이 존재하는지만 알고 싶은 경우 contains()를 사용합니다.
 

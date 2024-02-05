@@ -5,5 +5,5 @@
 - 만약 해당 `id`에 대한 [[엔티티(entity)]]가 존재하면 해당 엔티티를 감싼 [[Optional]] [[객체(Object)]]를 반환하고, 그렇지 않으면 비어있는 [[Optional]]을 반환한다.
 
 - 매개변수인 id가 null이면 `IllegalArgumentException` 오류가 난다.
-- 특별히 조회나 데이터가 없는 경우도 처리해야 하므로 [[orElse()]] 메서드로 null이 반환되도록 한다.
+- 특별히 조회나 데이터가 없는 경우도 처리해야 하므로 [[Optional.orElse()]] 메서드로 null이 반환되도록 한다.
 
