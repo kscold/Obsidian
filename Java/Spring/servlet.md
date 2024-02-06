@@ -11,7 +11,7 @@
 
 - [[JSP]]와 달리 자바코드 안에 html을 포함하고 있다는 점이 다르다.(JSP는 html에 자바 코드 포함  .java 확장자)
 
-- data processing에 좋다.([[Controller]])
+- data processing에 좋다.([[컨트롤러(Controller)]])
 
 ## 실제 서블릿의 다이어그램
 
@@ -21,7 +21,7 @@
 
 ## 서블릿의 [[MVC(Mode View Controller)]] 패턴
 
-- MVC 패턴에서 [[Controller]]로 이용한다.
+- MVC 패턴에서 [[컨트롤러(Controller)]]로 이용한다.
 
 ![[Pasted image 20231101230919.png]]
 

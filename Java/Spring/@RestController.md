@@ -1,4 +1,4 @@
-- REST API용으로 사용할 [[Controller]]라는 것을 명시해주는 [[어노테이션(Annotation)]]이다.
+- REST API용으로 사용할 [[컨트롤러(Controller)]]라는 것을 명시해주는 [[어노테이션(Annotation)]]이다.
 
 - @RestController는 [[@Controller]]에 [[@ResponseBody]]가 추가된 것이다.
 
@@ -6,7 +6,7 @@
 - 최근에 데이터를 응답으로 제공하는 REST API를 개발할 때 주로 사용하며 객체를 [[ResponseEntity]]로 감싸서 반환한다.
 - 이러한 이유로 동작 과정 역시 @Controller에 @ReponseBody를 붙인 것과 완벽히 동일하다.
 
-- [[@Controller]]와 큰 차이점은 [[@Controller]]는 [[View]] 페이지인 html 값으로 반환한다는 것이고 @RestController는 [[JSON(Java Script Object Notation)]]이나 텍스트 같은 데이터를 반환한다.
+- [[@Controller]]와 큰 차이점은 [[@Controller]]는 [[뷰(View)]] 페이지인 html 값으로 반환한다는 것이고 @RestController는 [[JSON(Java Script Object Notation)]]이나 텍스트 같은 데이터를 반환한다.
 
 ## @RestController 동작과정
 

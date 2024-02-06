@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "List.of().md",
+                "file": "Spring/JPA/CrudRepository/findById().md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "List.of().md",
+                "file": "Spring/JPA/CrudRepository/findById().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "List.of().md",
+                "file": "Spring/JPA/CrudRepository/findById().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "List.of().md"
+                "file": "Spring/JPA/CrudRepository/findById().md"
               }
             }
           }
@@ -156,10 +156,28 @@
   },
   "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
+    "Spring/@RequestBody.md",
+    "Spring/비동기(Asynchronous).md",
+    "Spring/서비스(Service).md",
+    "Spring/@Service.md",
+    "Spring/DI(Dependency Injection).md",
+    "Spring/트랜젝션(transaction).md",
+    "image/Pasted image 20240206212431.png",
+    "image/Pasted image 20240206211234.png",
+    "Spring/비즈니스 로직(Business Logic).md",
+    "Spring/JPA/CrudRepository/build().md",
+    "Spring/컨트롤러(Controller).md",
+    "Spring/뷰(View).md",
+    "Spring/모델(Model).md",
+    "Java/어노테이션(Annotation).md",
+    "Spring/JPA/CrudRepository/ResponseEntity.md",
+    "Spring/JPA/RedirectAttributes.md",
+    "Spring/JPA/CrudRepository/CrudRepository.md",
+    "Java/List.of().md",
+    "Spring/JPA/CrudRepository",
     "Java/Optional.of().md",
     "Java/Optional.ofNullable().md",
     "Java/Optional.orElse().md",
-    "List.of().md",
     "Java/배열(Array).md",
     "Java/List.md",
     "Java/ArrayList.md",
@@ -167,21 +185,6 @@
     "Java/add().md",
     "Java/제네릭(Generic).md",
     "Java/LinkedList.md",
-    "Java/hashCode().md",
-    "Java/isinstance().md",
-    "Java/equals.md",
-    "Java/HashSet.md",
-    "Java/String.md",
-    "Java/원시 타입(Primitive Type).md",
-    "Spring/객체(Object).md",
-    "Spring/Test/일급 컬렉션(Frist Class Collection).md",
-    "Java/HashMap.md",
-    "Java/컬렉션(Collection).md",
-    "Java/메서드(Method).md",
-    "Java/형변환(Casting).md",
-    "Java/Stream.md",
-    "Java/for.md",
-    "인텔리제이 단축키.md",
     "Spring/Test",
     "Spring/Docker",
     "Spring/mustache",
@@ -195,13 +198,10 @@
     "image/Pasted image 20240106023542.png",
     "Spring/sql",
     "image/Pasted image 20240106023137.png",
-    "image/Pasted image 20240106022633.png",
-    "image/Pasted image 20240104211842.png",
     "Spring/JPA/롬복",
     "Spring/JPA",
     "Spring/Gradle",
     "스프링/SQL",
-    "Spring/Maven/jsp",
     "무제 파일.canvas"
   ]
 }

@@ -3,7 +3,9 @@
 - RedirectAttributes를 사용하려면, [[CrudRepository]]의 [[메서드(Method)]]의 매개변수로 받아와야 한다.
 
 
-## addFlashAttribute()
+## 메서드
+### addFlashAttribute()
+
 - RedirectAttributes 객체 안에 정의되어 있는 메서드로 첫번째 매개변수에는 key를 두번째 매개변수에는 value를 넣어서 데이터를 이동시킨다.
 
 ```java

@@ -26,7 +26,7 @@
 - [[Servlet]] 각자의 [[Bean]]들이 모인 공간이다.
 - 웹, 앱 마다 한 개씩 존재하므로 웹 앱 그자체를 의미하기도 한다.
 - 이 Context 내에서의 Bean들은 서로 공유될 수 없다.
-- [[MVC(Mode View Controller)]]의 [[Controller]]가 이에 해당된다.
+- [[MVC(Mode View Controller)]]의 [[컨트롤러(Controller)]]가 이에 해당된다.
 
 ## Context의 구조
 
