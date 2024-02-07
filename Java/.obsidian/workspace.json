@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/JPA/CrudRepository/findById().md",
+                "file": "Java/Stream.of().md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/JPA/CrudRepository/findById().md",
+                "file": "Java/Stream.of().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/JPA/CrudRepository/findById().md",
+                "file": "Java/Stream.of().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/JPA/CrudRepository/findById().md"
+                "file": "Java/Stream.of().md"
               }
             }
           }
@@ -156,35 +156,35 @@
   },
   "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
+    "Java/스트림(Stream).md",
+    "Java/Stream.of().md",
+    "Java/collect().md",
+    "Java/배열(Array).md",
+    "Spring/트랜젝션(transaction).md",
+    "Spring/JPA/CrudRepository/findById().md",
+    "Spring/컨트롤러(Controller).md",
+    "Spring/모델(Model).md",
+    "Spring/람다(lambda).md",
+    "Spring/@RequestMapping.md",
+    "Spring/sql/다대다.md",
+    "Spring/JPA/CrudRepository/build().md",
+    "Spring/JPA/@Entity.md",
+    "Spring/@Service.md",
+    "Spring/sql/관계형 데이터베이스.md",
+    "Spring/sql/무제.md",
+    "Spring/sql/스키마(Schema).md",
+    "Spring/sql/DELETE.md",
+    "Java/클래스(Class).md",
+    "Spring/객체(Object).md",
+    "Java/생성자(constructor).md",
+    "Java/메서드(Method).md",
     "Spring/@RequestBody.md",
     "Spring/비동기(Asynchronous).md",
     "Spring/서비스(Service).md",
-    "Spring/@Service.md",
     "Spring/DI(Dependency Injection).md",
-    "Spring/트랜젝션(transaction).md",
     "image/Pasted image 20240206212431.png",
     "image/Pasted image 20240206211234.png",
-    "Spring/비즈니스 로직(Business Logic).md",
-    "Spring/JPA/CrudRepository/build().md",
-    "Spring/컨트롤러(Controller).md",
-    "Spring/뷰(View).md",
-    "Spring/모델(Model).md",
-    "Java/어노테이션(Annotation).md",
-    "Spring/JPA/CrudRepository/ResponseEntity.md",
-    "Spring/JPA/RedirectAttributes.md",
-    "Spring/JPA/CrudRepository/CrudRepository.md",
-    "Java/List.of().md",
     "Spring/JPA/CrudRepository",
-    "Java/Optional.of().md",
-    "Java/Optional.ofNullable().md",
-    "Java/Optional.orElse().md",
-    "Java/배열(Array).md",
-    "Java/List.md",
-    "Java/ArrayList.md",
-    "Java/asList().md",
-    "Java/add().md",
-    "Java/제네릭(Generic).md",
-    "Java/LinkedList.md",
     "Spring/Test",
     "Spring/Docker",
     "Spring/mustache",

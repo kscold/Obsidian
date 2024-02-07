@@ -123,7 +123,7 @@ class Student {
 
 ### JUnit
 
-- Junit에서는 [[Stream]]과 [[람다(lambda)]]를 사용하여 해결하였다.
+- Junit에서는 [[스트림(Stream)]]과 [[람다(lambda)]]를 사용하여 해결하였다.
 
 ```java
 import org.junit.jupiter.api.Assertions;
