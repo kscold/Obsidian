@@ -21,7 +21,7 @@ Arrays.stream(array)                        // return St
     .forEach(System.out::println);      // 인쇄물 1, 2, 3, …
 ```
 
-- Stream.of() [[메서드(Method)]]는 단순히 호출 `Arrays.stream()` 의 소스 코드에서 명백한 비 기본 유형에 대한 방법 `Stream.of()` 방법:
+- Stream.of() [[메서드(Method)]]는 단순히 호출 Arrays.stream()는 소스 코드에서 명백한 비 기본 유형에 대한 방법 `Stream.of()` 방
 
 |   |   |
 |---|---|

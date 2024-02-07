@@ -1,4 +1,4 @@
-- [[Iterator]] [[인터페이스(Interface)]]의 [[메서드(Method)]]로 자주 사용된다.
+- [[Iterator()]] [[인터페이스(Interface)]]의 [[메서드(Method)]]로 자주 사용된다.
 - boolean 타입만 반환가능하다.
 
 ### hasNext()와 [[next()]]의 차이

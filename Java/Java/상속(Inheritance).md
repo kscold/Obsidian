@@ -8,7 +8,8 @@
 
 
 ### 상속 정리
-1. extends는 일반 [[클래스(Class)]]와 [[추상 클래스(Abstract Class)]] 상속에 사용되고, implement는 [[인터페이스(Interface)]] 상속에 사용된다.
+
+1. [[extends]]는 일반 [[클래스(Class)]]와 [[추상 클래스(Abstract Class)]] 상속에 사용되고, [[implements]]는 [[인터페이스(Interface)]] 상속에 사용된다.
 
 2. class가 class를 상속받을 땐 extends를 사용하고, interface가 interface를 상속 받을 땐 extends를 사용한다.
 

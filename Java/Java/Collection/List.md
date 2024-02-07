@@ -24,23 +24,6 @@ List<객체> findAll()
 ### [[add()]]
 
 - 데이터를 추가한다.
-
-```java
-List<String> fruits = new ArrayList<>();
-fruits.add("apple");
-fruits.add("banana");
-fruits.add("cherry");
-
- for (String item : fruits) {
-            System.out.println(item);
-        }
-        
- // 출력 : apple
- // 출력 : banana
- // 출력 : cherry
-```
-
-
 ### remove()
 
 - 데이터를 삭제한다.
@@ -137,15 +120,4 @@ System.out.println(hasBanana);
 
 ## [[List.of()]]
 
-- List.of()는 JAVA 9에서 도입된 메소드이다.
-- Arrays.of()와는 대조적으로, 이 메소드는 변경불가한(unmodifiable) list 객체를 생성한다.
-
-```java
-@DisplayName("List.of() 사용방법")
-@Test
-void usageOfListOf() {
-    Integer[] array = new Integer[]{1, 2, 3};
-    List<Integer> list = List.of(array);
-    assertThat(list).containsExactly(1, 2, 3)
-}
-```
+- [[Arrays.of()]]와는 대조적으로, 이 메서드는 변경불가한(unmodifiable) list 객체를 생성한다.

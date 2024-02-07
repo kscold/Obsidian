@@ -14,6 +14,7 @@
 - 자료를 대량으로 추가하거나 삭하면 내부 처리 작업이 늘어나서 성능이 떨어 질 수 있다.
 
 ## ArrayList 생성
+
 - 자바에서 ArrayList를 사용하려면 아래 구문을 먼저 추가해야 한다.
 
 ```java
@@ -27,18 +28,19 @@ ArrayList<Integer> integers1 = new ArrayList<Integer>(); // 타입 지정
 ArrayList<Integer> integers2 = new ArrayList<>(); // 타입 생략 가능
 ArrayList<Integer> integers3 = new ArrayList<>(10); // 초기 용량(Capacity) 설정
 ArrayList<Integer> integers4 = new ArrayList<>(integers1); // 다른 Collection값으로 초기화
-ArrayList<Integer> integers5 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5)); // Arrays.asList()
+ArrayList<Integer> integers5 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5)); 
+// Arrays.asList()로 List로 만들어서 초기화(배열에 고정된 값)
 ```
 
 - 보통 생성할 때는 new ArrayList<>()와 같이 타입을 생략해서 작성한다.
-- ArrayList를 생성할 때 [[Java/Set]]이나 다른 ArrayList를 전달하면 해당 [[컬렉션(Collection)]]의 값들로 초기화된다.
-- 마지막으로 가변 인자를 전달받는 Arrays.[[asList()]]를 사용하면 기본 값들로 생성 가능하다.
+- ArrayList를 생성할 때 [[Java/Set]]이나 다른 ArrayList를 전달하면 해당 [[Collection]]의 값들로 초기화된다.
+- 마지막으로 가변 인자를 전달받는 [[Arrays.asList()]]를 사용하면 기본 값들로 생성 가능하다.
 
 ## ArrayList 메서드
 ### ArrayList 엘레멘트 추가/변경
 
-- ArrayList를 생성한 후 [[add()]] 메서드로 엘레멘트를 추가할 수 있다.
-- 또한 set() 메서드로 기존에 추가된 값을 변경하는 것도 가능하다.
+- ArrayList를 생성한 후 [[add()]] [[메서드(Method)]]로  요소(element)를 추가할 수 있다.
+- 또한 [[set()]] 메서드로 기존에 추가된 값을 변경하는 것도 가능하다.
 
 ```java
 import java.util.ArrayList;
@@ -65,6 +67,7 @@ public class ArrayListTest {
 - 마지막으로 set() 메소드를 통해 가장 앞(Index: 0)의 Green이 Blue로 변경된다.
 
 - 따라서 결과는 아래와 같이 출력된다.
+
 ![](https://blog.kakaocdn.net/dn/cjTrLd/btqM4z1RyZB/aGIkXjHSxyf11QhDu7TjvK/img.png)
 
 ### ArrayList 엘레멘트 삭제
@@ -90,7 +93,7 @@ public class ArrayListTest {
 }
 ```
 
-- 위의 코드를 보면 일반 [[배열(Array)]] ArrayList로 바꾸기 위해 [[asList()]] 메서드를 사용했다.
+- 위의 코드를 보면 일반 [[배열(Array)]] ArrayList로 바꾸기 위해 [[Arrays.asList()]] 메서드를 사용했다.
 - 삭제할 때는 엘레멘트의 인덱스를 입력하거나 엘레멘트를 직접 입력할 수 있다.
 - 인덱스를 통해 삭제할 경우 삭제되는 엘레멘트를 리턴받을 수 있다.
 - 값을 지움과 동시에 해당 값으로 별도의 작업이 필요한 경우 리턴을 받아서 사용하면 된다.
@@ -151,11 +154,10 @@ public class ArrayListTest {
 
 - ArrayList의 안에 값이 존재하는지 존재한다면 어느 위치에 존재하는지 알고 싶은 경우가 있다.
 
-먼저 값이 존재하는지만 알고 싶은 경우 contains()를 사용합니다.
+- 먼저 값이 존재하는지만 알고 싶은 경우 contains()를 사용한다.
+- 값이 존재할 때 어느 위치에 존재하는지 알고 싶은 경우 indexOf()를 사용할 수 있다.
 
-값이 존재할 때 어느 위치에 존재하는지 알고 싶은 경우 indexOf()를 사용할 수 있습니다.
-
-```
+```java
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -174,30 +176,44 @@ public class ArrayListTest {
 }
 ```
 
-contains()는 값이 있는 경우 true를, 값이 없는 경우 false를 리턴합니다.
+- contains()는 값이 있는 경우 true를, 값이 없는 경우 false를 리턴한다.(boolean)
+- indexOf()는 값이 존재하는 경우 해당 엘레멘트의 인덱스를 리턴한다.(int)
 
-indexOf()는 값이 존재하는 경우 해당 엘레멘트의 인덱스를 리턴합니다.
-
-값이 존재하지 않을 경우 -1을 리턴하기 때문에 별도로 처리가 가능합니다.
-
-
+- 값이 존재하지 않을 경우 -1을 리턴하기 때문에 별도로 처리가 가능하다.
 
 ## 이 밖에 주요 메소드
-- **.add((index), val)**: 순서대로 리스트를 추가, 배열 사이즈 초과 시 초기 설정된 사이즈만큼 자동으로 사이즈가 증가함, 인덱스를 추가로 지정해주면 해당 인덱스에 값을 삽입
-- **.get(index)**: 해당 인덱스의 값 반환
-- **.set(index, val)**: 인덱스로 값 변경
-- **.indexOf(val)**: 값을 제공하면 해당 값의 첫번째 인덱스를 반환
-- **.lastindexOf(val)**: 해당 값의 마지막 인덱스 반환
-- **.remove(index or val)**: 해당 인덱스의 값 or 해당 값 중 첫번째 값 삭제
-- **.contains(val)**: 해당 값이 배열에 있는지 검색해서 true / false 반환
-- .containsAll(val1, val2...): argument로 제공한 컬렉션의 모든 값이 포함되어 있는지 여부를 true / false로 반환
-- .toArray(): ArrayList 타입의 인스턴스를 일반 배열 타입으로 반환, 저장할 배열 타입에 맞춰 자동 형변환, 배열 크기 또한 자동으로 맞춰서 바꿔줌
-- **.clear()**: 값 모두 삭제
-- **.isEmpty()**: 비었으면 true, 하나라도 값이 있으면 false 반환
-- .addAll(arr2): 두 컬렉션을 합침
-- .retainAll(arr2): argument로 제공한 컬렉션 내에 들어있는 값을 제외하고 모두 지워줌
-- **.removeAll(arr2)**: argument로 제공한 컬렉션 내에 들어있는 값과 일치하는 값을 모두 지워줌, retainAll() 메소드와 반대
-- **.size()**: 요소 개수 반환
+
+- .add((index), val): 순서대로 리스트를 추가, 배열 사이즈 초과 시 초기 설정된 사이즈만큼 자동으로 사이즈가 증가함, 인덱스를 추가로 지정해주면 해당 인덱스에 값을 삽입한다.
+
+- .get(index): 해당 인덱스의 값 반환한다.
+
+- .set(index, val): 인덱스로 값 변경한다.
+
+- .indexOf(val): 값을 제공하면 해당 값의 첫번째 인덱스를 반환한다.
+
+- .lastindexOf(val): 해당 값의 마지막 인덱스 반환한다.
+
+- .remove(index or val): 해당 인덱스의 값 or 해당 값 중 첫번째 값 삭제한다.
+
+- .contains(val): 해당 값이 [[배열(Array)]]에 있는지 검색해서 true / false 반환한다.
+
+- .containsAll(val1, val2...): argument로 제공한 컬렉션의 모든 값이 포함되어 있는지 여부를 true / false로 반환한다.
+
+- .[[toArray()]]: [[ArrayList]] 타입의 [[인스턴스(Instance)]]를 일반 [[배열(Array)]] 타입으로 반환, 저장할 배열 타입에 맞춰 자동 [[형변환(Casting)]], 배열 크기 또한 자동으로 맞춰서 바꿔준다.
+
+- .clear(): 값을 모두 삭제한다.
+
+- .isEmpty(): 비었으면 true, 하나라도 값이 있으면 false 반환한다.
+
+- .addAll(arr2): 두 [[Collection]]을 합친다.
+
+- .retainAll(arr2): argument로 제공한 [[Collection]] 내에 들어있는 값을 제외하고 모두 지워준다.
+
+- .removeAll(arr2): argument로 제공한 컬렉션 내에 들어있는 값과 일치하는 값을 모두 지워준다, retainAll() 메서드와 반대이다.
+
+- .size(): 요소 개수 반환한다.
+
+- 밑의 코드는 위의 메서드를 활용한 예시이다.
 
 ```java
 import java.util.ArrayList;

@@ -1,23 +1,24 @@
 - 자바는 [[List]] [[객체(Object)]]를 만들거나 일반 [[배열(Array)]]을 [[ArrayList]]로 변환할 때 asList()를 사용한다.
 
 - Arrays.asList는 리스트를 초기화할 때 자주 사용된다.
-- 처음에 다 초기화를 해버리는 Array와 달리 [[List]]는 빈 리스트를 만든 후 add를 해주는 식으로만 초기화를 해줄 수 있다는 점이 매우 불편하기 때문이다.
+- 처음에 다 초기화를 해버리는 [[배열(Array)]]와 달리 [[List]]는 빈 리스트를 만든 후 [[add()]]를 해주는 식으로만 초기화를 해줄 수 있다는 점이 매우 불편하기 때문이다.
 
 - Arrays.asList를 사용할 때에는 주의할 점이 있다.
-- 이 메서드를 사용할 경우, 이를 할당받는 [[변수(Variable)]]는 원래 만들어진 [[배열(Array)]]의 [[인스턴스(Instance)]]를 가리킨다.
+- 이 [[메서드(Method)]]를 사용할 경우, 이를 할당받는 [[변수(Variable)]]는 원래 만들어진 [[배열(Array)]]의 [[인스턴스(Instance)]]를 가리킨다.
 - 이런 이유 때문에 위의 방법으로 초기화된 리스트는 ArrayList의 특성(변경이 자유로운)을 갖지 못한다.(따라서 add() 메서드를 사용하지 못한다.)
 - 즉, 고정된 리스트로써 [[add()]]나 remove() 시 UnsupportedOperationException 발생시킨다.
 
 
+## 문법
 
 ```java
 List<String> list = Arrays.asList(arr);
 ```
 
 
-## 원본 array 변경 시 list에도 변경이 반영될 수 있다.
+## 원본 Array 변경 시 List에도 변경이 반영될 수 있다.
 
-- 입력된 원본 array를 List 인터페이스로 감쌀 뿐이기 때문에 기존 array의 변경이 list에도 반영될 수 있다.
+- 입력된 원본 [[배열(Array)]]를 [[List]] [[인터페이스(Interface)]]로 감쌀 뿐이기 때문에 기존 [[배열(Array)]]의 변경이 List에도 반영될 수 있다.
 
 ```java
 @DisplayName("원본 배열 변경이 list에도 반영됨")
@@ -26,7 +27,7 @@ void changeArrayReflectToList() {
     Integer[] integerArray = new Integer[]{1, 2, 3};
     List<Integer> list1 = Arrays.asList(integerArray);
     integerArray[0] = 1000;
-    assertThat(list1.get(0)).isEqualTo(1000);
+    assertThat(list1.get(0)).isEqualTo(1000); // 성공, list1[0]을 조회하면 1000이 나옴
 }
 ```
 
@@ -34,6 +35,7 @@ void changeArrayReflectToList() {
 
 - Arrays.asList()로 생성된 리스트는 가변적(mutable)이다.
 - 즉 list 안의 각 element는 변경될 수 있다.
+- [[set()]] 메서드는 사용할 수 있다.
 
 ```java
 @DisplayName("Mutable list이므로 list의 각 요소를 변경할 수 있고, 변경이 원본 array에 반영됨")
@@ -41,7 +43,7 @@ void changeArrayReflectToList() {
 void mutableList() {
     // 생성된 list의 각 element를 변경할 수 있다.
     List<Integer> list1 = Arrays.asList(1, 2, 3, 4); // 배열을 asList로 초기화
-    list1.set(1, 1000);
+    list1.set(1, 1000); // 
     assertThat(list1.get(1)).isEqualTo(1000);
 
     // 생성된 list의 변경이 원본 array에 반영된다.
@@ -96,8 +98,8 @@ public class TestArrayAsList {
 - 따라서 Arrays.asList()는 배열의 내용을 수정하려고 할 때 List로 바꿔서 편리하게 사용하기 위함이다.
   
   
-- 만약 진짜 ArrayList를 받기 위해서는 다음과 같이 변환([[캐스팅(casting)]])하면 된다.  
-- ArrayList 생성자는 java.util.Arrays.ArrayList의 [[부모 클래스(super class)]](상위(super) 클래스)인 [[컬렉션(Collection)]] Type도 받아들일 수 있다.
+- 만약 진짜 ArrayList를 받기 위해서는 다음과 같이 변환([[형변환(Casting)]])하면 된다.  
+- ArrayList 생성자는 java.util.Arrays.ArrayList의 [[부모 클래스(super class)]](상위(super) 클래스)인 [[Collection]] Type도 받아들일 수 있다.
 
 ```java
 List<String> list = new ArrayList<String>(Arrays.asList(arr)); // List로 업캐스팅

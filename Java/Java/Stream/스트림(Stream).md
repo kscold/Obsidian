@@ -1,6 +1,6 @@
 - 자바 8에서 추가한 스트림(Stream)은 [[람다(lambda)]]를 활용할 수 있는 기술 중 하나이다.
 
-- 자바 8 이전에는 [[배열(Array)]] 또는 [[컬렉션(Collection)]] [[인스턴스(Instance)]]를 다루는 방법은 for 또는 foreach문을 돌면서 요소 하나씩을 꺼내서 다루는 방법이었다. 
+- 자바 8 이전에는 [[배열(Array)]] 또는 [[Collection]] [[인스턴스(Instance)]]를 다루는 방법은 for 또는 foreach문을 돌면서 요소 하나씩을 꺼내서 다루는 방법이었다. 
 
 - 간단한 경우라면 상관없지만 로직이 복잡해질수록 코드의 양이 많아져 여러 로직이 섞이게 되고, [[메서드(Method)]]를 나눌 경우 루프를 여러 번 도는 경우가 발생한다.
 
@@ -15,9 +15,9 @@
 
 ## 스트림 문법
 
-1. 생성하기 : 스트림 인스턴스를 생성한다.
-2. 가공하기 : 필터링(_filtering_) 및 맵핑(_mapping_) 등 원하는 결과를 만들어가는 중간 작업(_intermediate operations_)이다.
-3. 결과 만들기 : 최종적으로 결과를 만들어내는 작업(_terminal operations_)이다.
+1. 생성하기 : 스트림 [[인스턴스(Instance)]]를 생성한다.
+2. 가공하기 : 필터링(filtering) 및 맵핑(mapping) 등 원하는 결과를 만들어가는 중간 작업(intermediate operations)이다.
+3. 결과 만들기 : 최종적으로 결과를 만들어내는 작업(terminal operations)이다.
 
 ```java
 전체 -> 맵핑 -> 필터링 1 -> 필터링 2 -> 결과 만들기 -> 결과물
@@ -32,11 +32,18 @@ String[] arr = new String[]{"a", "b", "c"};
 Stream<String> stream = Arrays.stream(arr);
 ```
 
-- [[컬렉션(Collection)]] 스트림(stream())이다.
+- [[Collection]]을 이용한 스트림(stream())이다.
 
 ```java
 List<String> list = Arrays.asList("a","b","c");
+
 Stream<String> stream = list.stream();
+```
+
+- Stream.of() 이용한 스트림 생성이다.
+
+```java
+Stream<String> stream = Stream.of("a", "b", "c");
 ```
 
 - Stream.builder()이다.
@@ -50,10 +57,10 @@ Stream<String> builderStream = Stream.<String>builder()
 - [[람다(lambda)]]식 Stream.generate(), iterate()이다.
 
 ```java
-Stream<String> generatedStream = Stream.generate(()->"a").limit(3);
+Stream<String> generatedStream = Stream.generate(() -> "a").limit(3);
 // 생성할 때 스트림의 크기가 정해져있지 않기(무한하기)때문에 최대 크기를 제한해줘야 한다.
 
-Stream<Integer> iteratedStream = Stream.iterate(0, n->n+2).limit(5); //0,2,4,6,8
+Stream<Integer> iteratedStream = Stream.iterate(0, n -> n + 2).limit(5); //0,2,4,6,8
 ```
 
 - 기본 타입형 스트림이다.
@@ -68,7 +75,7 @@ IntStream intStream = IntStream.range(1, 5); // [1, 2, 3, 4]
 Stream<String> parallelStream = list.parallelStream();
 ```
 
-### 2. 중간 연산 (가공하기)
+### 2. [[중간 연산]] (가공하기)
 
 #### Filtering
 

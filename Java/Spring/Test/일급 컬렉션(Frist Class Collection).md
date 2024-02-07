@@ -1,8 +1,8 @@
 - Collection을 Wrapping하면서, 그 외 다른 [[멤버 변수]]가 없는 상태를 일급 컬렉션이라 한다.
-- 즉, [[컬렉션(Collection)]]을 포함한 [[클래스(Class)]] 는 반드시 다른 [[멤버 변수]]가 없어야 한다.  
+- 즉, [[Collection]]을 포함한 [[클래스(Class)]] 는 반드시 다른 [[멤버 변수]]가 없어야 한다.  
 
 - 불변성 유지를 위하여 사용한다.
-- [[final]] 키워드로 일급 컬렉션을 만들 수 없기 때문에 [[컬렉션(Collection)]]을 따로 정의해서 사용한다.
+- [[final]] 키워드로 일급 컬렉션을 만들 수 없기 때문에 [[Collection]]을 따로 정의해서 사용한다.
 
 ## 예시
 
@@ -96,7 +96,7 @@ public class GameRanking {
 ![immutable1](https://t1.daumcdn.net/cfile/tistory/99F1823C5CD0EA8B3B)
 
 - 위를 실행해보면 값이 추가되는 것을 확인할 수 있다.
-- 이미 [[컬렉션(Collection)]]은 비어있는 [[HashMap]]으로 선언되었음에도 값이 변경될수 있다는 것이다.
+- 이미 [[Collection]]은 비어있는 [[HashMap]]으로 선언되었음에도 값이 변경될수 있다는 것이다.
 
 ```java
     @Test

@@ -19,7 +19,7 @@ void usageOfListOf() {
 
 ## Arrays.asList()와의 차이점
 
-- [[배열(Array)]].[[asList()]]와 대조되는 List.of()의 특징은 다음과 같다.
+- [[배열(Array)]].[[Arrays.asList()]]와 대조되는 List.of()의 특징은 다음과 같다.
 
 - 입력된 array에 대해 불변의(immutable) list를 반환한다.
 - 즉, 원본 array의 변경이 생성된 list에 반영되지 않는다.
