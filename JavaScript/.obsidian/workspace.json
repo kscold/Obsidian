@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "얕은 복사.md",
+                "file": "HTML/<script>.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "얕은 복사.md",
+                "file": "HTML/<script>.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "얕은 복사.md",
+                "file": "HTML/<script>.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "얕은 복사.md"
+                "file": "HTML/<script>.md"
               }
             }
           }
@@ -156,8 +156,9 @@
   },
   "active": "ffe281f2a3a42cd1",
   "lastOpenFiles": [
-    "JavaScript/확산 연산자(spread operator).md",
     "얕은 복사.md",
+    "HTML/<script>.md",
+    "JavaScript/확산 연산자(spread operator).md",
     "JavaScript/힙(Heap).md",
     "React.js/Jest/beforeAll().md",
     "afterAll().md",
@@ -182,7 +183,6 @@
     "JavaScript/findIndex().md",
     "JavaScript/find().md",
     "JavaScript/HTTP.md",
-    "JavaScript/prototype.md",
     "image/Pasted image 20240202024338.png",
     "image/Pasted image 20240202022302.png",
     "image/Pasted image 20240202021721.png",
