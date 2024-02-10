@@ -8,27 +8,26 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cc55a6a65f82298b",
+            "id": "4c16b3d10ed20a85",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "파이썬 문법/sep.md",
+                "file": "퀵 정렬(Quick Sort).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4c16b3d10ed20a85",
+            "id": "cc55a6a65f82298b",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "퀵 정렬(Quick Sort).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "퀵 정렬(Quick Sort).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "퀵 정렬(Quick Sort).md"
+              }
             }
           }
         ]
@@ -153,11 +156,16 @@
   },
   "active": "4c16b3d10ed20a85",
   "lastOpenFiles": [
-    "구현/중복된 요소 검출.md",
+    "병합 정렬(Merge Sort).md",
+    "퀵 정렬(Quick Sort).md",
+    "선택 정렬(Selection Sort).md",
+    "삽입 정렬(Insertion Sort).md",
     "파이썬 문법/sep.md",
+    "파이썬 문법/리스트(List).md",
+    "자료구조/스와프(Swap).md",
+    "구현/중복된 요소 검출.md",
     "파이썬 문법/*.md",
     "구현/2차원 배열 덧셈.md",
-    "파이썬 문법/리스트(List).md",
     "구현/문자열 그룹.md",
     "그래프(Graphs).md",
     "시간 복잡도.md",
@@ -167,8 +175,6 @@
     "이진트리(binary tree).md",
     "BFS(Breadth-First Search).md",
     "DFS(Depth-First Search).md",
-    "자료구조/스와프(Swap).md",
-    "선택정렬(Selection Sort).md",
     "자료구조/큐(Queue).md",
     "인접 행렬(Adjacency Matrix).md",
     "자료구조/스택(Stack).md",
@@ -177,10 +183,7 @@
     "이진탐색(Binary Search).md",
     "image/Pasted image 20240105215609.png",
     "재귀함수(Recursive Function).md",
-    "파이썬 문법/deque().md",
     "자료구조",
-    "백 트래킹(Back Tracking).md",
-    "파이썬 문법/ord.md",
     "image/스크린샷 2024-01-03 오후 9.17.48.png",
     "image/IMG_1808.jpeg",
     "구현",
