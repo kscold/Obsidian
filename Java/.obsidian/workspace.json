@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/sql/일대다(1-n).md",
+                "file": "Spring/Component Scan.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/sql/일대다(1-n).md",
+                "file": "Spring/Component Scan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/sql/일대다(1-n).md",
+                "file": "Spring/Component Scan.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/sql/일대다(1-n).md"
+                "file": "Spring/Component Scan.md"
               }
             }
           }
@@ -156,6 +156,20 @@
   },
   "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
+    "Spring/JPA/JDBC Template.md",
+    "Spring/Component Scan.md",
+    "Spring/Bean.md",
+    "@Component.md",
+    "Spring/JPA/JDBC.md",
+    "image/Pasted image 20240211213841.png",
+    "Spring/queryForObject().md",
+    "Spring/JPA/CRUD.md",
+    "Spring/sql/영속성(Persistence).md",
+    "Spring/sql/단방향.md",
+    "Spring/sql/양방향.md",
+    "Spring/sql/다대일(@ManyToOne).md",
+    "Spring/sql/연관관계의 주인.md",
+    "Spring/sql/일대다(1-n).md",
     "Spring/sql/JOIN.md",
     "Spring/sql/테이블(Table).md",
     "Spring/sql/레코드(Record).md",
@@ -163,25 +177,12 @@
     "Spring/sql/속성(Attribute).md",
     "Spring/JPA/엔티티(entity).md",
     "Java/필드(Field).md",
-    "Spring/sql/일대다(1-n).md",
     "Spring/sql/다대다.md",
     "Spring/sql/무제.md",
     "Spring/Test/@SpringBootTest.md",
     "Java/Collection/toArray().md",
     "Spring/서비스(Service).md",
     "Java/클래스(Class).md",
-    "Java/인스턴스 변수(instance variable).md",
-    "Java/멤버 변수.md",
-    "Java/스코프(Scope).md",
-    "Java/추상 클래스(Abstract Class).md",
-    "Java/추상 메서드(Abstract Method).md",
-    "Spring/@Transactional.md",
-    "Spring/@Service.md",
-    "Spring/트랜젝션(transaction).md",
-    "toList().md",
-    "Java/Collection/collect().md",
-    "Java/Iterable.md",
-    "Java/Collection/set().md",
     "Java/Collection",
     "Java/Stream",
     "image/Pasted image 20240206212431.png",
@@ -199,7 +200,6 @@
     "image/Pasted image 20240106023715.png",
     "image/Pasted image 20240106023542.png",
     "Spring/sql",
-    "image/Pasted image 20240106023137.png",
     "Spring/JPA/롬복",
     "Spring/JPA",
     "무제 파일.canvas"
