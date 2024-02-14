@@ -6,7 +6,7 @@
 
 - 모든 [[인스턴스 메서드(instance method)]]소드에서는 자신이 속한 인스턴스의 주소가 지역변수로 저장이 되는데, 이것이 참조변수인 this와 super의 값이 된다.
 
-- [[static]] [[메서드(Method)]]([[클래스 메서드]])는 [[인스턴스(Instance)]]와 관련이 없어 static 메서드에서는 사용이 불가하다.
+- [[static]] [[메서드(Method)]]([[클래스 메서드(Class Method)]])는 [[인스턴스(Instance)]]와 관련이 없어 static 메서드에서는 사용이 불가하다.
 즉, [[인스턴스 메서드(instance method)]]에서만 사용이 가능하다.
 
 ## [[부모 클래스(super class)]]의 [[생성자(constructor)]]  == super

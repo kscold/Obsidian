@@ -18,10 +18,10 @@
 Iterator<T> iterator();
 ```
 
-- 즉, 실제 [[iterator()]] [[메서드(Method)]]의 구현은 [[자식 클래스(sub class)]]([[ArrayList]], [[LinkedList]] 등)에서 구현을 하고 있다.
+- 즉, 실제 [[Iterator()]] [[메서드(Method)]]의 구현은 [[자식 클래스(sub class)]]([[ArrayList]], [[LinkedList]] 등)에서 구현을 하고 있다.
 
 - Iterable [[인터페이스(Interface)]]에는 Iterator 구현체를 반환하는 iterator() 메서드가 선언되어 있다.
-- 따라서 해당 인터페이스를 상속받은 하위 클래스들은 [[iterator()]] 메서드를 구현해야 하고, 해당 메서드의 구현을 통해 iterator를 사용할 수 있다.
+- 따라서 해당 인터페이스를 상속받은 하위 클래스들은 [[Iterator()]] 메서드를 구현해야 하고, 해당 메서드의 구현을 통해 iterator를 사용할 수 있다.
 
 - 또한 이 인터페이스는 for-each loop를 사용할 수 있는 [[클래스(Class)]]라는 것을 명시해주는 기능도 제공한다.
 - Iterable을 상속받는 클래스는 Iterator를 사용하여 for-each loop를 사용할 수 있게 된다.

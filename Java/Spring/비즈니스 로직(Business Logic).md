@@ -1,5 +1,5 @@
-- [[MVC(Mode View Controller)]][[패턴]]은크게 2가지 Presentation 영역 혹은 [[뷰(View)]]영역으로 나눌 수 있다.
-- Logic 영역, [[모델(Model)]] 영역을 코딩을 흔히, 비지니스 로직이라 부른다.
+- [[MVC(Mode View Controller)]] [[패턴]]은크게 2가지 Presentation 영역 혹은 [[뷰(View)]]영역으로 나눌 수 있다.
+- 즉, Logic 영역과 [[모델(Model)]] 영역을 코딩을 흔히, 비지니스 로직이라 부른다.
 
 ## 비즈니스 로직의 예시
 

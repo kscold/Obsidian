@@ -109,7 +109,7 @@ public class ArrayList<E> extends AbstractList<E>
       
 4. 그리고 위 코드 예시는 ArrayList에서 iterator() 메서드를 구현하는 부분에 대한 자세한 코드이다.
 
-- [[iterator()]] 메서드는 Iterator를 구현한 Itr [[클래스(Class)]]의 [[객체(Object)]]를 반환한다. (Itr [[클래스(Class)]] 내부에 hasNext(), next() 메서드가 구현된 것도 볼 수 있다.)
+- [[Iterator()]] 메서드는 Iterator를 구현한 Itr [[클래스(Class)]]의 [[객체(Object)]]를 반환한다. (Itr [[클래스(Class)]] 내부에 hasNext(), next() 메서드가 구현된 것도 볼 수 있다.)
 
 ## 업캐스팅(upcasting)과 다운캐스팅(downcasting)
 
