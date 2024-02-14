@@ -1,4 +1,4 @@
-- 개발자가 [[JDBC]] 기술을 쉽게 사용할 수 있도록 도와주는 [[클래스(Class)]]로 아래와 같은 작업을 대신 처리한다.
+- 개발자가 [[JDBC(Java DataBase Connectivity)]] 기술을 쉽게 사용할 수 있도록 도와주는 [[클래스(Class)]]로 아래와 같은 작업을 대신 처리한다.
 
 ## 예시
 
@@ -9,7 +9,7 @@
 	- SQL 조회, 업데이트, ResultSet 반복호출 등이 가능하다.
 	- JDBC 예외 발생시 org.springframework.dao 패키지에 정의된 일반 예외로 변환한다.
 
-- 위와 같은 기능들을 대신 해주기 때문에 작성한 바닐라 [[JDBC]] 코드들은 훨씬 간편해진다. 
+- 위와 같은 기능들을 대신 해주기 때문에 작성한 바닐라 [[JDBC(Java DataBase Connectivity)]] 코드들은 훨씬 간편해진다. 
 
 ```java
 @Repository

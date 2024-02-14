@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "동기화(Synchronization).md",
+                "file": "Spring/sql/SQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "동기화(Synchronization).md",
+                "file": "Spring/sql/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "동기화(Synchronization).md",
+                "file": "Spring/sql/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "동기화(Synchronization).md"
+                "file": "Spring/sql/SQL.md"
               }
             }
           }
@@ -156,34 +156,37 @@
   },
   "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
-    "synchronized.md",
-    "싱글톤(Singleton).md",
-    "동기화(Synchronization).md",
-    "syncronized.md",
-    "Race Condition.md",
-    "멀티스레드(Multi Thread).md",
-    "Spring/Servlet.md",
-    "ExecutorService.md",
-    "Thread Pool.md",
-    "컨텍스트 스위칭(Context Switching).md",
-    "Java/Thread.md",
-    "Java/인스턴스 메서드(instance method).md",
-    "Java/클래스 메서드(Class Method).md",
-    "Java/정적 메서드(Static Method).md",
-    "Spring/WAS.md",
-    "Java/CGI(Common Gateway Interface).md",
-    "Spring/비즈니스 로직(Business Logic).md",
-    "Spring/패턴.md",
-    "Spring/스프링 컨테이너(Spring Container).md",
+    "Spring/sql/DELETE.md",
+    "Spring/sql/SQL.md",
+    "Spring/sql/UPDATE.md",
+    "Spring/sql/SELECT.md",
+    "Spring/sql/레코드(Record).md",
+    "Spring/sql/INSERT.md",
+    "Spring/sql/DROP.md",
+    "인텔리제이 단축키.md",
+    "Spring/sql/CREATE TABLE.md",
+    "Spring/sql/SHOW.md",
+    "Spring/sql/USE.md",
+    "Spring/sql/관계형 데이터베이스.md",
+    "Spring/sql/식별자(Identifier).md",
+    "Spring/sql/속성(Attribute).md",
+    "Spring/sql/필드(Field).md",
+    "Spring/sql/대리키(Surrogate Key).md",
+    "Spring/sql/대체키(Alternate Key).md",
+    "Spring/sql/복합 키(Composite Key).md",
+    "Spring/sql/기본 키(Primary Key).md",
+    "Spring/sql/후보키(Candidate Key).md",
+    "image/Pasted image 20240215024637.png",
+    "Spring/sql/@JoinColumn.md",
+    "image/Pasted image 20240215024046.png",
+    "Spring/sql/다대일.md",
+    "Spring/sql/다대다.md",
+    "Java/동기화(Synchronization).md",
+    "Spring/sql/외래 키(Foreign Key).md",
+    "Java/컨텍스트 스위칭(Context Switching).md",
+    "image/Pasted image 20240215001140.png",
     "image/Pasted image 20240213224850.png",
     "image/Pasted image 20240213224447.png",
-    "Future.md",
-    "Callable.md",
-    "Java/Runnable.md",
-    "Executor.md",
-    "Java/InputStream.md",
-    "Java/다중 상속.md",
-    "Java/함수형 인터페이스.md",
     "image/Pasted image 20240211213841.png",
     "Java/Collection",
     "Java/Stream",
@@ -196,9 +199,6 @@
     "Spring/HTML",
     "image/Pasted image 20240112012957.png",
     "image/Pasted image 20231115000103.png",
-    "Spring/sql/Pasted image 20231115000103.png",
-    "image/Pasted image 20240106200211.png",
-    "image/Pasted image 20240106042214.png",
     "Spring/sql",
     "Spring/JPA/롬복",
     "Spring/JPA",

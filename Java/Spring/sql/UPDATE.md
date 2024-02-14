@@ -3,21 +3,16 @@
 
 ## 문법
 
-- `UPDATE [테이블] SET [열] = '변경할값' WHERE [조건]`로 사용한다.
+- UPDATE 테이블 SET 열 = '변경할값' WHERE 조건 형식으로 사용한다.
 
 ![[Pasted image 20240112012957.png]]
   
 ```sql
-UPDATE
-	테이블명 
-SET 
-	속성명 = 변경할 값
-WHERE 
-	조건;
+UPDATE 테이블명 SET 속성명 = 변경할 값 WHERE 조건;
 ```
 
-
 ## 예시
+
 - [[SELECT]] * FROM userTbl를 통해 밑의 이미지와 같은 userTbl이 있다고 가정하자.
 
 ![](https://t1.daumcdn.net/cfile/tistory/2508683B51AB2D0805) 
@@ -61,3 +56,4 @@ SELECT * FROM userTbl
 ```
 
 ![](https://t1.daumcdn.net/cfile/tistory/27588E3951AB2D0923) 
+
