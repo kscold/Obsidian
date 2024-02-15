@@ -40,21 +40,100 @@ document.write(age);  // 20
 - localStorage에는 문자열만을 저장할 수 있다.
 - 따라서, 20을 숫자로 저장하더라도, 문자열로 저장된다.
 - getItem() 함수에 key를 전달하여 localStorage에 저장된 값을 읽어 왔다.
+
 ### removeItem()
 
-- item 삭제한다.
+- localStorage의 요소(item)를 삭제한다.
+
+```js
+window.localStorage.removeItem(key);
+```
+
+```js
+// setItem
+window.localStorage.setItem('name', 'anna');
+window.localStorage.setItem('age', '20'); // removeItem
+window.localStorage.removeItem('name');
+window.localStorage.removeItem('grade'); // getItem
+
+const name = window.localStorage.getItem('name');
+const age = window.localStorage.getItem('age'); // 결과 출력
+
+document.write(name); // null
+document.write('<br/>');document.write(age); // 20
+```
+
+- removeItem() 함수를 사용하여 key가 'name'인 아이템을 삭제하였다.
+
+- 'grade'라는 key는 localStorage에 존재하지 않는데, removeItem에 존재하지 않는 key를 파라미터로 전달하면, 아무일도 일어나지 않는다.
+
 ### clear()
 
-- 도메인 내의 localStorage 값 삭제한다.
+- 도메인 내의 localStorage 값을 삭제한다.
+
+```js
+window.localStorage.clear();
+```
+
+```js
+// setItem
+window.localStorage.setItem('name', 'anna');
+window.localStorage.setItem('age', '20'); // clear
+window.localStorage.clear(); // getItem
+
+const name = window.localStorage.getItem('name');
+const age = window.localStorage.getItem('age'); // 결과 출력
+
+document.write(name); // null
+document.write('<br/>');
+document.write(age); // null
+```
+
+- localStorage의 도메인의 모든 아이템을 삭제하였다.
 
 ### length
 
-- 전체 item 갯수이다.
+- *localStorage의 전체 요소(item) 갯수이다.
+
+```js
+window.localStorage.length;
+```
+
+```js
+// 초기화
+window.localStorage.clear(); // setItem
+window.localStorage.setItem('name', 'anna');
+window.localStorage.setItem('age', 20); // localStorage item 갯수
+
+const length = window.localStorage.length // 결과 출력
+
+document.write(length); // 2
+```
+
+- localStorage에 저장된 값의 갯수를 확인하기 위해서 localStorage의 length 속성을 이용하였다.
 
 ### key()
-- index로 key값 찾는다.
 
+- localStorage의 index로 key값 찾는다.
 
+```js
+window.localStorage.key(index);
+```
+
+```js
+// setItem
+window.localStorage.setItem('name', 'anna');
+window.localStorage.setItem('age', '20'); // key
+
+const key_1 = window.localStorage.key(0);
+const key_2 = window.localStorage.key(1); // 결과 출력
+
+document.write(key_1); // age
+document.write('<br/>');
+document.write(key_2); // name
+```
+
+- key() 함수의 파라미터로 index를 전달하여 해당 index의 key 값을 조회하였다.
 
 
 ## localStorage에 객체, 배열 저장하기
@@ -105,77 +184,6 @@ document.write('<br/>');
 
 - JSON 문자열을 localStorage에 저장했다.
 
-## **localStorage에 값 삭제하기**
-
-**removeItem()**
-
-> window.localStorage.removeItem(key);
-
-```
-// setItemwindow.localStorage.setItem('name', 'anna');window.localStorage.setItem('age', '20'); // removeItemwindow.localStorage.removeItem('name');window.localStorage.removeItem('grade'); // getItemconst name = window.localStorage.getItem('name');const age = window.localStorage.getItem('age'); // 결과 출력document.write(name); // nulldocument.write('<br/>');document.write(age); // 20
-```
-
-_**window.localStorage.removeItem('name');**_
-
-removeItem() 함수를 사용하여 
-
-key가 'name'인 아이템을 삭제하였습니다.
-
-_**window.localStorage.removeItem('grade');**_
-
-'grade'라는 key는 localStorage에 존재하지 않습니다.
-
-이렇게 removeItem에 존재하지 않는 key를 파라미터로 전달하면,
-
-아무일도 일어나지 않습니다.
-
-## **localStorage에 값 전체 삭제하기**
-
-**clear()**
-
-> window.localStorage.clear();
-
-```
-// setItemwindow.localStorage.setItem('name', 'anna');window.localStorage.setItem('age', '20'); // clearwindow.localStorage.clear(); // getItemconst name = window.localStorage.getItem('name');const age = window.localStorage.getItem('age'); // 결과 출력document.write(name); // nulldocument.write('<br/>');document.write(age); // null
-```
-
-_**window.localStorage.clear();**_
-
-localStorage의 도메인의 모든 아이템을 삭제하였습니다.
-
-## **localStorage의 아이템 갯수 구하기**
-
-**length**
-
-> window.localStorage.length;
-
-```
-// 초기화window.localStorage.clear(); // setItemwindow.localStorage.setItem('name', 'anna');window.localStorage.setItem('age', 20); // localStorage item 갯수const length = window.localStorage.length // 결과 출력document.write(length); // 2
-```
-
-_**const length = window.localStorage.length;**_
-
-localStorage에 저장된 값의 갯수를 확인하기 위해서
-
-localStorage의 length 속성을 이용하였습니다.
-
-## **localStorage의 key 이름 찾기**
-
-**key()**
-
-> window.localStorage.key(index);
-
-```
-// setItemwindow.localStorage.setItem('name', 'anna');window.localStorage.setItem('age', '20'); // keyconst key_1 = window.localStorage.key(0);const key_2 = window.localStorage.key(1); // 결과 출력document.write(key_1); // agedocument.write('<br/>');document.write(key_2); // name
-```
-
-_**const key_1 = window.localStorage.key(0);**_
-
-_**const key_2 = window.localStorage.key(1);**_
-
-key() 함수의 파라미터로 index를 전달하여
-
-해당 index의 key 값을 조회하였습니다.
 
 ## **전체 key, value 가져오기**
 
@@ -240,9 +248,3 @@ _**const keys = Object.keys(window.localStorage)**_
 localStorage의 key 목록을 조회하기 위해
 
 Object.keys() 함수를 사용하였습니다.
-
----
-
-지금까지 localStorage의 값을 읽고, 쓰고, 지우는 방법을 알아보았습니다.
-
-출처: [https://hianna.tistory.com/697](https://hianna.tistory.com/697) [어제 오늘 내일:티스토리]

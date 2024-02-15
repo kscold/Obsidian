@@ -27,7 +27,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/sql/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/sql/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Spring/sql/SQL.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -154,10 +151,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f4faf621b4fb9ee6",
+  "active": "e013613dbf564785",
   "lastOpenFiles": [
-    "Spring/sql/DELETE.md",
     "Spring/sql/SQL.md",
+    "Spring/sql/DELETE.md",
     "Spring/sql/UPDATE.md",
     "Spring/sql/SELECT.md",
     "Spring/sql/레코드(Record).md",
