@@ -1,0 +1,1 @@
+- sessionStorage는 브라우저 창이 닫히면 세션이 종료되면서 storage에 저장된 데이터도 소멸된다.

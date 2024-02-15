@@ -340,7 +340,7 @@ Chuck Norris's keyboard doesn't have a Ctrl key because nothing controls Chuck N
 
 또한 `fs.readFile()`이 비동기적으로 작동하지만, 작업이 완료되면 읽히는 전체 파일을 메모리로 로딩한다는 점은 `fs.readFile()`과 같습니다. 대용량 파일이 있는 경우 대신 [Node.js 스트림(stream)](https://www.freecodecamp.org/news/node-js-streams-everything-you-need-to-know-c9141306be93/)을 사용하는 것을 추천합니다.
 
-### Node.js에서 `JSON.stringify()`를 사용해 JSON 문자열로 변환하기
+### Node.js에서 [[JSON.stringify()]]를 사용해 JSON 문자열로 변환하기
 
 마지막으로, Node.js로 JSON을 구문분석하면 API 응답으로 JSON을 반환해야 할 수도 있습니다.
 
