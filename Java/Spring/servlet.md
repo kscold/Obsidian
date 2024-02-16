@@ -16,18 +16,27 @@
 
 - data processing에 좋다.([[컨트롤러(Controller)]])
 
-## 실제 서블릿의 다이어그램
+## 실제 Servlet의 다이어그램
+
 
 ![[Pasted image 20231101230803.png]]
 
-- 사용자는 실제로 ServletEx와 같은 Class만 만들면 된다.
+## Servlet [[인터페이스(Interface)]] 및 [[추상 메서드(Abstract Method)]]의 차이점
+
+- Servlet [[인터페이스(Interface)]]만 사용할려면 [[상속(Inheritance)]]받은 후, init(), service(), destroy(), getServletConfig(), getServletInfo()의 [[메서드(Method)]]를 필요 없어도 전부 [[오버라이딩(Overriding)]]하여 구현해야한다.
+
+- GenericServlet는 [[추상 클래스(Abstract Class)]]이기 때문에 [[extends]]로 [[상속(Inheritance)]] 받고  service() [[메서드(Method)]]만 구현하면 된다.
+
+- HttpServlet [[추상 메서드(Abstract Method)]]를 사용할려면 [[접근제어자(Access modifier)]]를 protected로 바꾸고 인자를 [[HttpServletRequest]]와 [[HttpServletResponse]]로 바꾸면 된다.
+
+- 따라서 사용자는 실제로 [[HttpServlet]]를 [[상속(Inheritance)]]받아 사용하면 되고, ServletEx와 같이 UserDefinedServlet [[클래스(Class)]]를 만들어 사용하면 된다.
 
 ![[Pasted image 20240216183111.png]]
 
 
 ## ServletContainer
 
-- 서블릿의 생성부터 소멸까지의 라이프사이클을 관리하는 역할을 한다.([[스프링 컨테이너(Spring Container)]]의 개념과 비슷하다.)
+- 서블릿의 생성부터 소멸까지의 [[생명 주기(Life Cycle)]]을 관리하는 역할을 한다.([[스프링 컨테이너(Spring Container)]]의 개념과 비슷하다.)
 - 서블릿 컨테이너는 웹 서버와 소켓을 만들고 통신하는 과정을 대신 처리해준다.
 - 즉, 개발자는 [[비즈니스 로직(Business Logic)]]만 집중하면 된다.
 - 서블릿 [[객체(Object)]]를 [[싱글톤(Singleton)]]으로 관리한다. ([[인스턴스(Instance)]] 하나만 생성하여 공유하는 방식이다.)
@@ -49,10 +58,12 @@
 ### [[HttpServletRequest]]
 
 - 클라이언트가 데이터를 입력하거나 클라이언트의 정보에 대한 요청 값을 가지고 있는 클래스이다.
+- 요청에 대한 정보를 가지고 있는 객체이다.
 
 ### [[HttpServletResponse]]
 
 - 클라이언트가 요청한 정보를 처리하고 다시 응답하기 위한 정보를 담고 있는 클래스이다.
+- 응답에 대한 정보를 가지고 있는 객체이다.
 
 ### [[HttpSession]]
 
@@ -104,14 +115,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
+/*
  * Servlet implementation class HelloServlet
  */
+ 
 @WebServlet("/hs") // 어노테이션으로 서블릿 맵핑 한 것 (url) -> 대신 web.xml에서 정의해줄 수 있음
 public class HelloServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
+    /*
      * @see HttpServlet#HttpServlet()
      */
     public HelloServlet() {
@@ -119,7 +131,7 @@ public class HelloServlet extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
-	/**
+	/*
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -138,8 +150,8 @@ public class HelloServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
-
-	/**
+	
+	/*
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -149,34 +161,4 @@ public class HelloServlet extends HttpServlet {
 
 }
 ```
-
-### HttpServletRequest
-
-- 요청에 대한 정보를 가지고 있는 객체이다.
-	- request.getCookies();
-	- request.getSession();
-	- request.getAttribute(null);
-	- request.setAttribute(null, null);
-	- request.getParameter(null);
-	- request.getParameterNames();
-	- request.getParameterValues(null);
-
-### HttpServletResponse
-
-- 응답에 대한 정보를 가지고 있는 객체이다.
-	- response.addCookie(null);
-	- response.getStatus();
-	- response.sendRedirect(null);
-	- response.getWriter();
-	- response.getOutputStream();
-
-
-## Life Cycle(생명주기)
-
-- 생성(init) 단계에서 body(request 패킷에서 data에 대해)등의 자원 관련 작업을 많이 한다.
-- service에서 http 요청(requset)에 해당하는 메서드가 실행된다.
-
-![[Pasted image 20231101232203.png]]
-
-![[Pasted image 20231101232216.png]]
 
