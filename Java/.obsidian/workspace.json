@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/sql/SQL.md",
+                "file": "Spring/Servlet.md",
                 "mode": "source",
                 "source": false
               }
@@ -27,8 +27,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Spring/Servlet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Spring/Servlet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Spring/Servlet.md"
+              }
             }
           }
         ]
@@ -151,36 +154,37 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "e013613dbf564785",
+  "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
+    "ServletConfig.md",
+    "Spring/Servlet.md",
+    "getServletInfo.md",
+    "Java/클래스(Class).md",
+    "Java/메서드(Method).md",
+    "HttpServletRequest.md",
+    "HttpServletResponse.md",
+    "HttpSession.md",
+    "HttpServlet.md",
+    "Spring/톰캣(tomcat).md",
+    "아파치(apache).md",
+    "Spring/웹 서버(Web Server).md",
+    "Spring/WAS(Web Application Sever).md",
+    "Spring/URL(Uniform Resource Locator).md",
+    "Spring/WAS.md",
+    "Java/CGI(Common Gateway Interface).md",
     "Spring/sql/SQL.md",
-    "Spring/sql/DELETE.md",
-    "Spring/sql/UPDATE.md",
-    "Spring/sql/SELECT.md",
-    "Spring/sql/레코드(Record).md",
-    "Spring/sql/INSERT.md",
-    "Spring/sql/DROP.md",
-    "인텔리제이 단축키.md",
-    "Spring/sql/CREATE TABLE.md",
-    "Spring/sql/SHOW.md",
-    "Spring/sql/USE.md",
-    "Spring/sql/관계형 데이터베이스.md",
-    "Spring/sql/식별자(Identifier).md",
-    "Spring/sql/속성(Attribute).md",
-    "Spring/sql/필드(Field).md",
-    "Spring/sql/대리키(Surrogate Key).md",
-    "Spring/sql/대체키(Alternate Key).md",
-    "Spring/sql/복합 키(Composite Key).md",
-    "Spring/sql/기본 키(Primary Key).md",
-    "Spring/sql/후보키(Candidate Key).md",
+    "Spring/JPA/lombok/롬복(lombok).md",
+    "Spring/JPA/lombok/@SIf4j.md",
+    "Spring/JPA/lombok/SIf4j.md",
+    "Spring/JPA/로깅(logging).md",
+    "image/Pasted image 20240216183111.png",
+    "Spring/HTTP.md",
+    "Spring/@RequestBody.md",
+    "Java/Collection/Arrays.asList().md",
+    "Java/Collection/Arrays.of().md",
+    "Spring/JPA/lombok/@AllArgsConstructor.md",
     "image/Pasted image 20240215024637.png",
-    "Spring/sql/@JoinColumn.md",
     "image/Pasted image 20240215024046.png",
-    "Spring/sql/다대일.md",
-    "Spring/sql/다대다.md",
-    "Java/동기화(Synchronization).md",
-    "Spring/sql/외래 키(Foreign Key).md",
-    "Java/컨텍스트 스위칭(Context Switching).md",
     "image/Pasted image 20240215001140.png",
     "image/Pasted image 20240213224850.png",
     "image/Pasted image 20240213224447.png",
@@ -195,9 +199,8 @@
     "Spring/mustache",
     "Spring/HTML",
     "image/Pasted image 20240112012957.png",
-    "image/Pasted image 20231115000103.png",
     "Spring/sql",
-    "Spring/JPA/롬복",
+    "Spring/JPA/lombok",
     "Spring/JPA",
     "무제 파일.canvas"
   ]

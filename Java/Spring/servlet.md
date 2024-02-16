@@ -22,6 +22,9 @@
 
 - 사용자는 실제로 ServletEx와 같은 Class만 만들면 된다.
 
+![[Pasted image 20240216183111.png]]
+
+
 ## ServletContainer
 
 - 서블릿의 생성부터 소멸까지의 라이프사이클을 관리하는 역할을 한다.([[스프링 컨테이너(Spring Container)]]의 개념과 비슷하다.)
@@ -30,6 +33,51 @@
 - 서블릿 [[객체(Object)]]를 [[싱글톤(Singleton)]]으로 관리한다. ([[인스턴스(Instance)]] 하나만 생성하여 공유하는 방식이다.)
 	- 상태를 유지(stateful)하게 설계하면 안된다.
 	- Thread safety 하지 않는다.
+
+## Servlet [[인터페이스(Interface)]]
+
+- 서블릿 컨테이너가 서블릿 [[인터페이스(Interface)]]에 있는 [[메서드(Method)]]들을 호출한다.
+
+## Servlet 메서드
+
+- 서블릿 생명주기(Life Cycle)와 관련된 [[메서드(Method)]]가 있다.
+
+### [[HttpServlet]]
+
+- 서블릿을 만들기 위해 반드시 [[상속(Inheritance)]]해야 할 필수 [[클래스(Class)]]이다.
+
+### [[HttpServletRequest]]
+
+- 클라이언트가 데이터를 입력하거나 클라이언트의 정보에 대한 요청 값을 가지고 있는 클래스이다.
+
+### [[HttpServletResponse]]
+
+- 클라이언트가 요청한 정보를 처리하고 다시 응답하기 위한 정보를 담고 있는 클래스이다.
+
+### [[HttpSession]]
+
+- 클라이언트가 세션을 정보를 저장하고 세션 기능을 유지하기 위해서 제공되는 클래스이다.
+
+### 서블릿 기타 [[메서드(Method)]]
+
+#### getServletConfig()
+
+- 서블릿 설정 정보를 다루는 [[ServletConfig]] [[객체(Object)]]를 반환 한다.
+- 예시로 서블릿 이름, 서블릿 초기 매개변수 값, 서블릿 환경정보를 들 수 있다.
+#### getServletInfo()
+
+- 서블릿을 작성한 사람에 대한 정보이다.
+- 예시로 서블릿 버전, 권리를 들 수 있다.
+
+
+## 서블릿 설정(gradle)
+
+- [[톰캣(tomcat)]]를 추가하면 서블릿 설정이 한번에 된다.
+
+```
+implementation 'org.apache.tomcat.embed:tomcat-embed-core:8.5.42'  
+implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:8.5.42'
+```
 
 ## 서블릿의 [[MVC(Mode View Controller)]] 패턴
 

@@ -3,6 +3,7 @@
 - 프로그램의 수행 과정을 기록으로 남기는 [[로깅(logging)]] 기능을 통해 println()문을 개선할 수 있다.
 
 ### 롬복 설정
+
 ```
 dependencies {  
     compileOnly 'org.projectlombok:lombok'  
@@ -12,8 +13,8 @@ dependencies {
 }
 ```
 
-
 ### 롬복의 종류
+
 - [[@AllArgsConstructor]] : 자동으로 생성자를 만들어준다.
 - [[@ToString]] : 자동으로 toString() 메서드를 대체해준다.
 - [[@SIf4j]]: 이 어노테이션을 통해 로깅 기능을 사용할 수 있다.

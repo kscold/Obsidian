@@ -1,7 +1,8 @@
 - [[로깅(logging)]]을 할 수 있게 만들어 주는 [[어노테이션(Annotation)]]이다.
 
 ### 문법
-- 어노테이션을 선언한 후 원하는 위치에서 log.info(클래스.toString())으로 부르면 된다.
+
+- [[어노테이션(Annotation)]]을 선언한 후 원하는 위치에서 log.info([[메서드(Method)]].[[toString()]])으로 부르면 된다.
 
 ```java
 package com.example.firstproject.controller;  

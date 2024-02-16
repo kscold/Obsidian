@@ -27,6 +27,7 @@
 
 - [[레코드(Record)]] 삭제
 
+
 ## 추가적인 SQL 명령
 
 ### CREATE DATABASE
