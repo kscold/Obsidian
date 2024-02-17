@@ -1,13 +1,11 @@
 
 
-
-## primitive type의 종류
+## [[원시 타입(Primitive Type)]]의  종류
 
 - short, int, long, float, double, char, boolean, byte 등이 있다.
 
 
-
-## reference type의 종류
+## [[참조 타입(Reference Type)]]의 종류
 
 - 참조 자료형은 위의 기본 자료형을 제외한 모든 자료형을 말한다. 
 

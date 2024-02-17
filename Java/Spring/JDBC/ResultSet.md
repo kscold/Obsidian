@@ -1,11 +1,14 @@
-- ResultSet(java.sql.ResultSet)은 executeQuery(String sql)을 통해 쿼리 실행하면 ResultSet타입으로 반환을 해주어 결과값을 저장할 수 있다.
+- ResultSet은 executeQuery(String sql)을 통해 쿼리 실행하면 ResultSet타입으로 반환을 해주어 결과값을 저장할 수 있다.
 
-### ResultSet의 사용이유
+- java.sql.ResultSet [[인터페이스(Interface)]]에 정의되어 있다.
+
+## ResultSet의 사용이유
+
 - 결과값을 저장할 수 있다.
-
 - 저장된 값을 한 행 단위로 불러올 수 있다.
+- 한 행에서 값을 가져올 때는 [[타입(Type)]]을 지정해 불러올 수 있다.
 
-- 한 행에서 값을 가져올 때는 타입을 지정해 불러올 수 있다.
+## 예시
 
 ```java
 package jdbc; 
@@ -28,9 +31,10 @@ public class OJDBC {
 			String OraclePasswd = "1234"; 
 			
 			con = DriverManager.getConnection(OracleUrl, OracleUser, OraclePasswd); 
+			// Connection 연결 설정
 			
 			System.out.println("DB연결 성공"); 
-			stmt = con.createStatement(); 
+			stmt = con.createStatement(); // Statement 만들기
 			System.out.println("Statement객체 생성 성공"); 
 			rs = stmt.executeQuery("select * from coffee"); //조회한 결과들을 ResultSet에 rs에 저장한다. 
 			rs.close(); stmt.close(); 
@@ -49,34 +53,27 @@ public class OJDBC {
 ```
 
 
-**ResultSet**은 **Statement**를 통해 값을 저장할 수 있다.
+- ResultSet은 [[Statement]]를 통해 값을 저장할 수 있다.
+- 이때, 사용하는 메서드는 [[executeQuery()]](String sql) [[메서드(Method)]]를 통해 저장할 수 있다.
+- [[next()]] 메소드를 통해, 선택되는 행을 바꿀 수 있다.
 
-이때, 사용하는 메소드는 executeQuery(String sql) 메소드를 통해 저장할 수 있다.
-
-next() 메소드를 통해, 선택되는 행을 바꿀 수 있다.
-
-그리고, 다음행이 내려갈 다음행이 있을 경우 **TRUE**를 반환하고, 없을 경우 **FALSE**를 반환한다.
+- 그리고, 다음행이 내려갈 다음행이 있을 경우 TRUE를 반환하고, 없을 경우 FALSE를 반환한다.
 
 ![](https://blog.kakaocdn.net/dn/k9YWa/btqEZ9kuQ06/AvAkgE4XORM0mQIi2M5hx0/img.png)
 
-커서가 현재 아무행도 가르키지 않고 있다.
-
-위 이미지에서 커서가 현재 아무것도 가리키지 않아, 만약 getString()/ getInt()등 메소드를 사용했을 경우 에러가 발생한다.
+- 위의 이미지에서 커서가 현재 아무행도 가르키지 않고 있다.
+- 위 이미지에서 커서가 현재 아무것도 가리키지 않아, 만약 getString()/ getInt()등 Getter [[메서드(Method)]]를 사용했을 경우 에러가 발생한다.
 
 ![](https://blog.kakaocdn.net/dn/cadHMb/btqE00fBm5t/yKIF92P6EdtKSFir3QsZ90/img.png)
 
-커서가 한칸이 내려갔다
-
-그래서 **next()** 메소드를 실행하면 위와 같이 **커서**가 잡하게 된다.
-
-
-**get타입()** 메소드를 통해 데이터를 불러올 수 있다.
+- 커서가 한칸이 내려갔다.
+- 그래서 next() 메서드를 실행하면 위와 같이 커서가 잡하게 된다.
+- Geter 메서드를 통해 데이터를 불러올 수 있다.
 
 ![](https://blog.kakaocdn.net/dn/vluhM/btqE0xyq3Lo/thGr8TrNnZoKj0RxQMEHN1/img.png)
 
-많은 타입을 지정할 수 있다.
-
-**get타입**은 컬럼의 숫자나, 컬럼의 이름을 지정해서 값을 불러 올 수 있게 된다.
+- 많은 타입을 지정할 수 있다.
+- get타입**은 컬럼의 숫자나, 컬럼의 이름을 지정해서 값을 불러 올 수 있게 된다.
 
 예시) **c_no**의 INT형 컬럼이 있다. 이 컬럼의 번호는 **1**번째 이다. 그러면 **getInt(1)** 이나 / getInt("c_no")를 통해 불러올 수 있다.
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/Servlet.md",
+                "file": "Spring/JDBC/queryForObject().md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/Servlet.md",
+                "file": "Spring/JDBC/queryForObject().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/Servlet.md",
+                "file": "Spring/JDBC/queryForObject().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/Servlet.md"
+                "file": "Spring/JDBC/queryForObject().md"
               }
             }
           }
@@ -156,33 +156,36 @@
   },
   "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
-    "HttpServletResponse.md",
-    "HttpServlet.md",
-    "Spring/Servlet.md",
-    "Java/추상 클래스(Abstract Class).md",
-    "Spring/sql/SQL.md",
-    "ServletConfig.md",
-    "HttpServletRequest.md",
-    "getParameter().md",
-    "생명 주기(Life Cycle).md",
-    "getServletInfo.md",
-    "Java/클래스(Class).md",
-    "Java/메서드(Method).md",
-    "HttpSession.md",
-    "Spring/톰캣(tomcat).md",
-    "아파치(apache).md",
+    "Spring/JDBC/executeQuery().md",
+    "Spring/JDBC/Statement.md",
+    "Spring/아파치(apache).md",
+    "Spring/Servlet/생명 주기(Life Cycle).md",
+    "Spring/Servlet/getParameter().md",
+    "Spring/링크(link).md",
     "Spring/웹 서버(Web Server).md",
-    "Spring/WAS(Web Application Sever).md",
-    "Spring/URL(Uniform Resource Locator).md",
-    "Spring/WAS.md",
-    "Java/CGI(Common Gateway Interface).md",
-    "Spring/JPA/lombok/롬복(lombok).md",
-    "Spring/JPA/lombok/@SIf4j.md",
-    "Spring/JPA/lombok/SIf4j.md",
-    "Spring/JPA/로깅(logging).md",
-    "image/Pasted image 20240216183111.png",
+    "Spring/sql/쿼리(query).md",
+    "Spring/JDBC/queryForObject().md",
+    "Spring/JDBC/query().md",
+    "Spring/Servlet/WAS(Web Application Sever).md",
+    "Spring/Servlet/Servlet.md",
+    "Spring/Servlet/HttpStatus.md",
+    "Spring/Servlet/HttpServlet.md",
+    "Spring/HTTP 상태 코드(HTTP Status).md",
     "Spring/HTTP.md",
-    "Spring/@RequestBody.md",
+    "Spring/Servlet",
+    "Spring/DBCP/Commons DBCP.md",
+    "Spring/DBCP",
+    "Spring/JPA/JPA(Java Persistence API).md",
+    "Spring/JDBC/JDBC(Java DataBase Connectivity).md",
+    "Spring/JDBC/PreparedStatement.md",
+    "Spring/JPA/RedirectAttributes.md",
+    "Spring/JDBC/JDBC Template.md",
+    "Spring/JPA/JpaRepository.md",
+    "Spring/JDBC/ResultSet.md",
+    "Spring/JPA/CRUD.md",
+    "Spring/JDBC",
+    "Java/next().md",
+    "image/Pasted image 20240216183111.png",
     "image/Pasted image 20240215024637.png",
     "image/Pasted image 20240215024046.png",
     "image/Pasted image 20240215001140.png",
@@ -199,9 +202,6 @@
     "Spring/mustache",
     "Spring/HTML",
     "image/Pasted image 20240112012957.png",
-    "Spring/sql",
-    "Spring/JPA/lombok",
-    "Spring/JPA",
     "무제 파일.canvas"
   ]
 }

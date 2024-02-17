@@ -29,3 +29,30 @@ public class Main {
 ```
 
 - 여기서 new Animal() 코드는 컴퓨터 메모리에 클래스를 복사해서 빈값의 인스턴스를 선언한 것이다.
+
+
+## 메모리의 객체
+
+```java
+public class Test {
+	String str = "test";
+    
+    public void setTest(String str) {
+    	this.str = str
+    }
+}
+```
+
+- 위의 간단한 Test 객체가 있다.
+- 이 객체는 현재 자바 파일로 존재할 뿐이지 실제로 사용되진 않은 라이브러리 객체이기때문에 JVM의 메모리 영역에 올라가있진 않다.
+
+### 객체 생성
+
+```java
+Test t1 = new Test();
+```
+
+- 어디선가 Test 객체를 생성([[new]])했다.
+
+- 이 객체는 이제 JVM 메모리 어딘가에 생성되었다는 뜻이고, 메모리 영역 중 힙 영역(Heap Area)이다. 
+- 즉, 힙 영역은 객체가 생성되는 공간이다.
