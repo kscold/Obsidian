@@ -14,7 +14,7 @@
 
 - SQL의 가장 기본 명령은 4가지가 있다.
 
-### [[Spring/sql/SELECT|SELECT]]
+### [[SELECT|SELECT]]
 
 - [[레코드(Record)]] 조회
 ### [[INSERT]]
@@ -40,7 +40,7 @@
 
 - 데이터 베이스 사용
 
-### [[CREATE TABLE]]
+### [[CREATE]]
 
 -  테이블 생성
 

@@ -26,7 +26,7 @@ ex) ~에 대한 권한이 없습니다.
 ## 2. QBE
 
 - `query by example`의 약자로 예제를 통해 쿼리를 제시한다는 것이다. 
-- 이 방법은 비어있는 [[레코드(Record)]]를 보여주고, 사용자가 비어있는 [[Spring/sql/필드(Field)|필드(Field)]]값을 채워 query를 정의토록 한다.
+- 이 방법은 비어있는 [[레코드(Record)]]를 보여주고, 사용자가 비어있는 [[Spring/SQL/필드(Field)|필드(Field)]]값을 채워 query를 정의토록 한다.
 
 ### 3. query언어 사용
 

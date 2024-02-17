@@ -10,8 +10,9 @@
 ## @Autowired의 3가지 구현
 
 - 아래 3가지의 경우에 @Autowired를 사용할 수 있다.
+
 	- [[생성자(constructor)]]
-	- [[setter]]
+	- [[Getter and Setter]]의 Setter
 	- [[Java/필드(Field)|필드(Field)]]
 
 - 그리고 @Autowired는 기본값이 true이기 때문에 의존성 주입을 할 대상을 찾지 못한다면 애플리케이션 구동에 실패한다.(404와 같은 오류가 발생한다.)

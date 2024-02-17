@@ -20,7 +20,7 @@
 
 메소드 이름 앞에 synchronized 키워드를 사용하면 해당 메소드 전체를 임계영역으로 설정하실수 있습니다. 
 
-```
+```java
 synchronized void increase() {
 	count++;
 	System.out.println(count);

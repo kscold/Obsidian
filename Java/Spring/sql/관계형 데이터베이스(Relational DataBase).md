@@ -18,7 +18,7 @@
 - 레코드, 튜플, 로우, 행이 전부 같은 말을 의미한다.
 - 하나의 항목을 대표하는 데이터이다. ( 예) 이름)
     
-### [[속성(Attribute)]]/칼럼/[[Spring/sql/필드(Field)|필드(Field)]]/열(attribute/column/field)
+### [[속성(Attribute)]]/칼럼/[[Spring/SQL/필드(Field)|필드(Field)]]/열(attribute/column/field)
 
 - 속성, 칼럼, 필드, 열이 전부 같은 의미로 혼용된다.
 - 항목을 구분하는 데이터이다. ( 예) 나이, 성별)

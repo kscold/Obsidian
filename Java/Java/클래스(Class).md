@@ -14,7 +14,7 @@
 
 ## 클래스 내부에 Getter and Setter 사용
 
-- [[Spring/sql/필드(Field)|필드(Field)]]에 [[private]] 선언된 [[인스턴스 변수(instance variable)]]의 경우 [[Getter and Setter]]를 사용하여 접근할 수 있다.
+- [[Spring/SQL/필드(Field)|필드(Field)]]에 [[private]] 선언된 [[인스턴스 변수(instance variable)]]의 경우 [[Getter and Setter]]를 사용하여 접근할 수 있다.
 - [[private]]를 사용하는 이유는 은닉([[캡슐화(encapsulation)]]) 때문이다.
 
 ```java

@@ -1,12 +1,77 @@
-- ResultSet은 executeQuery(String sql)을 통해 쿼리 실행하면 ResultSet타입으로 반환을 해주어 결과값을 저장할 수 있다.
+- ResultSet은 [[executeQuery()]]을 통해 쿼리 실행하면 ResultSet타입으로 반환을 해주어 결과값을 저장할 수 있다.
 
 - java.sql.ResultSet [[인터페이스(Interface)]]에 정의되어 있다.
 
-## ResultSet의 사용이유
+- ResultSet은 [[SQL]] [[쿼리(query)]]에 의해 생성된 [[테이블(Table)]]의 값을 가지게 된다.
 
-- 결과값을 저장할 수 있다.
-- 저장된 값을 한 행 단위로 불러올 수 있다.
+- 즉, ResultSet은 결과값을 저장할 수 있다.
+- 저장된 값을 한 행([[레코드(Record)]]) 단위로 불러올 수 있다.
 - 한 행에서 값을 가져올 때는 [[타입(Type)]]을 지정해 불러올 수 있다.
+
+## Cursor
+
+- ResultSet [[객체(Object)]]는 '커서(Cursor)' 라고 불리는 것을 가지고 있는데, 그것으로 ResultSet에서 특정 행([[레코드(Record)]])에 대한 참조를 조작할 수 있다.
+- 커서는 초기에 첫 번째 행의 이전에 위치하도록 되어있다.
+
+- ResultSet 객체의 [[next()]] [[메서드(Method)]]드를 사용하면 다음 위치로 커서를 옮길 수 있다.
+
+### Cursor의 메서드
+
+#### first()
+
+- 커서를 첫 번째 행으로 옮긴다.
+#### last() 
+
+- 커서를 마지막 행으로 옮긴다.
+#### beforeFirst()
+
+- 커서를 첫번째 행 이전으로 옮긴다.
+#### afterLast()
+
+- 커서를 마지막 행 다음으로 옮긴다.
+#### next()
+
+- 커서를 다음 행으로 옮기고, 다음행이 있으면 true, 없으면 false를 리턴한다.
+#### previous()
+
+- 커서를 이전 행으로 옮긴다.
+
+### Cursor 예시
+
+- ResultSet에서 행을 처리하는데 반복문을 사용하며 [[next()]] [[메서드(Method)]]가 유효한 행([[레코드(Record)]])이 있으면 true, 없으면 false 를 리턴하는 것을 이용하여 while 으로 제어할 수 있다.
+
+```java
+while(rs.next()) {
+	System.out.println(true라서 실행중); 
+}
+
+if(rs.next()) { 
+	System.out.println(true라서 실행); 
+}
+```
+
+- ResultSet [[객체(Object)]]에서 현재 행에서 필드명 혹은 [[레코드(Record)]] 셋에서의 위치를 통해서 어떤 [[Spring/SQL/필드(Field)|필드(Field)]]의 값을 가져올 수 있는데, 이때 getXxx() 메소드를 제공한다.
+
+- 해당 칼럼([[속성(Attribute)]])의 데이터 타입이 문자열이면 getString() 해당 칼럼의 데이터 타입이 int이면 getInt()가 된다.
+
+### getXxx() 종류
+
+#### getString()
+
+#### getDate()
+
+#### getBytes()
+
+#### getDouble()
+
+#### getInt()
+
+#### getTimestamp()
+
+#### getObject()
+
+#### getLong()
+
 
 ## 예시
 

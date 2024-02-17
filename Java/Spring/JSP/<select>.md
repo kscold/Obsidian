@@ -1,5 +1,5 @@
 
-- 여러 개의 항목이 나타나는 목록 상자에서 항목을 선택하는 태그
+- 여러 개의 항목이 나타나는 목록 상자에서 항목을 선택하는 태그이다.
 
 - 시작 태그와 종료 태그가 있으며, 리스트 박스에 여러 항목을 추가 삽입하기 위해 반드시 option 태그를 포함해야 함
 
@@ -81,4 +81,3 @@ ${result}에는 밀크티, 라떼, 아아가 들어있습니다. ${user.selected
 
 jsp에서 jstel을 활용한 select박스 selected, radio 박스 checked, 그리고 forEach, <c:if>문까지 알아보았습니다. 감사합니다.
 
-출처: [https://bluemint.tistory.com/16](https://bluemint.tistory.com/16) [BLUEMINT:티스토리]

@@ -1,49 +1,22 @@
+- [[queryForObject()]]의 반환형은 데이터형만 가능하다.
+- 그러나 RowMapper를 사용하면, 원하는 형태의 결과값을 반환할 수 있다.
 
-앞에서 말하길 queryForObject의 **반환형은 데이터형만 가능**하다고 했다.
+- RowMapper를 사용하면 [[SELECT]]로 나온 여러개의 값을 반환할 수 있을 뿐만 아니라, 사용자가 원하는 형태로도 얼마든지 받을 수 있다.  
 
-하지만 말도 안된다.  
-그럼 **"SELECT * FROM USER"** 구문으로 **User 객체 자체를 반환받는건 포기**해야 하는걸까?
 
-그걸 위해서 필요한 것이 바로 **RowMapper 인터페이스**이다.
+## 예시
 
----
-
-## 1. RowMapper란?
-
-RowMapper를 사용하면, **원하는 형태의 결과값을 반환**할 수 있다.
-
-SELECT로 나온 **여러개의 값을 반환**할 수 있을 뿐만 아니라,  
-**사용자가 원하는 형태로도 얼마든지** 받을 수 있다.  
-즉, 다음과 같이 가능하다는 것이다.
+- 순수 [[JDBC(Java DataBase Connectivity)]]를 배울땐 이런 고민을 할 필요 없이 결과값을 [[ResultSet]]으로 반환 받았다.
 
 ```java
-// UserMapper로 인해, User 형태로 반환 가능
-List<User> userList = jdbcTemplate.queryForObject(
-        "SELECT * FROM USER WHERE id=?",
-        UserMapper,
-        1000L);
-```
-
-이게 어떻게 가능할까?  
-우선 잠시 과거로 돌아가보자.
-
----
-
-## 2. 과거로...
-
-우리가 순수 JDBC를 배울땐 이런 고민을 하지 않았다.  
-왜일까?  
-그 이유는 우린 **결과값을 ResultSet으로 반환** 받았기 때문이다.
-
-```java
-// 쿼리 날리기
-ResultSet rs = stat.excuteQuery("SELECT * FROM USER");
+// 쿼리 실행
+ResultSet rs = stat.excuteQuery("SELECT * FROM USER"); 
 
 // 결과값 가져오기
-while(rs.next()) {
+while(rs.next()) { // 쿼리 결과가 있을 때까지 반복
      // user 객체에 값 저장
-     user = new User();
-     user.setId(rs.getInt(1));
+     user = new User(); // User 객체 생성
+     user.setId(rs.getInt(1)); // 
      user.setName(rs.getString(2));
      user.setDescription(rs.getString(3));
      
@@ -52,17 +25,25 @@ while(rs.next()) {
 }
 ```
 
-아무런 생각없이 사용했지만, 사실
+- 우의 코드는 사실 아래와 같은 3 단계를 거친다.
+	
+	 - [[ResultSet]]으로 먼저 값을 받는다.
+	 - 그다음 User [[객체(Object)]]에 담는다.
+	 - 반환한다.
 
-> - **ResultSet으로 먼저 값을 받고,**
-> - **그다음 User 객체에 담아서**
-> - **반환!**
+- 그렇기 때문에 아무 고민없이 결과값을 받을 수 있었다.
 
-이 3가지 단계를 거쳤던 것이다!!
+- 밑의 코드를 보면 [[JDBC Template]]에서  `SELECT * FROM USER` 구문을 [[queryForObject()]] 사용하면 User [[객체(Object)]] 자체를 반환받을 수 없다.
 
-그렇기 때문에 아무 고민없이 결과값을 받을 수 있었다.
+```java
+// UserMapper로 인해, User 형태로 반환 가능
+List<User> userList = jdbcTemplate.queryForObject(
+    "SELECT * FROM USER WHERE id=?", UserMapper, 1000L 
+); // sql
+```
 
----
+ - 따라서 이 때 필요한 것이 바로 RowMapper [[인터페이스(Interface)]]이다.
+
 
 ## 3. RowMapper 사용법
 
