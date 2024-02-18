@@ -13,18 +13,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/리플렉션(Reflection).md",
+                "file": "Spring/패턴(Pattern).md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "f1f7d86a6e40ee36",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
             }
           }
         ]
@@ -93,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/리플렉션(Reflection).md",
+                "file": "Spring/패턴(Pattern).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/리플렉션(Reflection).md",
+                "file": "Spring/패턴(Pattern).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/리플렉션(Reflection).md"
+                "file": "Spring/패턴(Pattern).md"
               }
             }
           }
@@ -151,57 +143,58 @@
       "canvas:새 캔버스 만들기": false,
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false
+      "command-palette:명령어 팔레트 열기": false,
+      "obsidian-file-cleaner:Clean files": false
     }
   },
   "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
-    "DataSource.md",
-    "Spring/리플렉션(Reflection).md",
-    "Spring/JDBC/getConnection().md",
-    "Spring/DBCP/DBCP(Database Connection Pool).md",
-    "Spring/Pool.md",
-    "Spring/DBCP/HikariCP.md",
-    "인텔리제이 단축키.md",
-    "Spring/JDBC/PreparedStatement.md",
-    "Spring/JDBC/executeQuery().md",
+    "Spring/프론트 패턴.md",
     "Spring/아파치(apache).md",
-    "Spring/JDBC/Statement.md",
-    "Spring/JDBC/queryForObject().md",
-    "Spring/RowMapper.md",
-    "Spring/JDBC/ResultSet.md",
-    "콜백 함수(Callback Fuction).md",
-    "Spring/JDBC/JDBC Template.md",
-    "Spring/JDBC/executeUpdate().md",
-    "Spring/SQL/?(Placeholder).md",
-    "Spring/SQL/TO_CHAR.md",
-    "Spring/DAO(Data Access Object).md",
-    "Spring/모델(Model).md",
-    "Spring/템플릿(Template).md",
-    "Spring/컴포넌트(Component).md",
-    "Spring/패턴.md",
-    "Spring/JPA/CRUD.md",
-    "Spring/URLConnection.md",
+    "Spring/JDBC/executeQuery().md",
+    "Spring/JDBC/PreparedStatement.md",
+    "인텔리제이 단축키.md",
+    "Spring/DBCP/HikariCP.md",
+    "Spring/Pool.md",
+    "Spring/DBCP/DBCP(Database Connection Pool).md",
+    "Spring/DBCP/DataSource.md",
+    "Spring/리플렉션(Reflection).md",
+    "Java/콜백 함수(Callback Fuction).md",
+    "Spring/getDeclaredFields().md",
+    "Spring/SQL/@JoinColumn.md",
+    "Spring/SQL/기본 키(Primary Key).md",
+    "Spring/SQL/다대일.md",
+    "Spring/SQL/단방향.md",
+    "image/Pasted image 20240213224850.png",
+    "image/Pasted image 20240206212431.png",
+    "image/Pasted image 20231101224851.png",
+    "image/Pasted image 20231012205605.png",
+    "image/Pasted image 20231012205519.png",
+    "image/Pasted image 20231012172903.png",
+    "image/Pasted image 20231012133632.png",
+    "image/Pasted image 20231005111135.png",
+    "@Column.md",
+    "Arrays.of().md",
+    "URLConnection.md",
+    "참조 타입(Reference Type).md",
+    "image/Pasted image 20240219022021.png",
+    "Spring/패턴(Pattern).md",
+    "image/Pasted image 20240219021536.png",
+    "Java/클래스(Class).md",
+    "Spring/객체(Object).md",
+    "Java/멤버 변수(Nember Variable).md",
+    "Java/인스턴스 변수(Instance Variable).md",
+    "Java/클래스 변수(Class Variable).md",
     "Spring/Servlet",
     "Spring/DBCP",
     "Spring/JDBC",
-    "image/Pasted image 20240216183111.png",
-    "image/Pasted image 20240215024637.png",
-    "image/Pasted image 20240215024046.png",
-    "image/Pasted image 20240215001140.png",
-    "image/Pasted image 20240213224850.png",
-    "image/Pasted image 20240213224447.png",
-    "image/Pasted image 20240211213841.png",
     "Java/Collection",
     "Java/Stream",
-    "image/Pasted image 20240206212431.png",
-    "image/Pasted image 20240206211234.png",
     "Spring/JPA/CrudRepository",
     "Spring/Test",
     "Spring/Docker",
     "Spring/mustache",
     "Spring/HTML",
-    "image/Pasted image 20240112012957.png",
     "무제 파일.canvas"
   ]
 }

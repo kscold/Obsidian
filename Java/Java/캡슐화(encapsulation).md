@@ -6,4 +6,4 @@
 
 - [[private]]인 [[변수(Variable)]]의 값을 읽고 변경할수 있도록 [[public]] [[메서드(Method)]]인 [[Getter and Setter]]를 제공함으로써 간접적으로 멤버변수의 값을 다룰 수 있도록 하는것이 바람직하다.
 
-- 보통 [[Getter and Setter]], setter(매개변수에 지정된 값을 검사하여 조건에 맞는 값일때만 [[멤버 변수]]의 값을 변경하는 메소드)와 getter(멤버변수의 값을 반환하는 메소드)가 있다.
+- 보통 [[Getter and Setter]], setter(매개변수에 지정된 값을 검사하여 조건에 맞는 값일때만 [[멤버 변수(Nember Variable)]]의 값을 변경하는 메소드)와 getter(멤버변수의 값을 반환하는 메소드)가 있다.

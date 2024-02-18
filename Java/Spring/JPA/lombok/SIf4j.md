@@ -9,7 +9,7 @@ private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 ### static으로 선언한 이유 
 
-- [[static]]을 선언하면 [[클래스 변수(class variable)]]로 객체 생성이 될 때마다 해당 객체를 매번 생성하지 않고 초기 [[클래스(Class)]] 로딩 시 한 번만 생성해서 사용하게 된다.
+- [[static]]을 선언하면 [[클래스 변수(Class Variable)]]로 객체 생성이 될 때마다 해당 객체를 매번 생성하지 않고 초기 [[클래스(Class)]] 로딩 시 한 번만 생성해서 사용하게 된다.
 
 - 그러나, Spring에서는 [[객체(Object)]]를 굳이 [[싱글톤(Singleton)]] 형태로 디자인하지 않아도 객체를 [[싱글톤(Singleton)]]과 같이 한 번만 생성해서 사용하게 된다. 
 

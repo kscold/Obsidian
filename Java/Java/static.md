@@ -1,5 +1,5 @@
 - static 키워드는 특정 멤버 혹은 [[Java/필드(Field)|필드(Field)]]([[변수(Variable)]], [[메서드(Method)]], 블록 등)가 [[클래스(Class)]] 속해 있음을 나타낸다. 
-- 즉, [[정적 메서드(Static Method)]]를 선언하거나 [[클래스 변수(class variable)]]를 선언할 때 static 키워드를 사용한다.
+- 즉, [[정적 메서드(Static Method)]]를 선언하거나 [[클래스 변수(Class Variable)]]를 선언할 때 static 키워드를 사용한다.
 
 - static으로 선언된 멤버는 클래스의 [[인스턴스(Instance)]]에 속하는 것이 아니라 [[클래스(Class)]] 자체에 속하게 된다.
 - static을 붙이면 메모리에 딱 한 번만 할당되어 메모리를 효율적으로 사용할 수 있다.

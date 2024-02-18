@@ -4,7 +4,7 @@
 - [[객체(Object)]] 자기자신의 메모리 주소를 담고있으므로 도트연산자(.)를 이용해 접근하여 멤버 [[변수(Variable)]]와 [[메서드(Method)]]를 사용할 수 있다.
 
 
-밑에는 this를 통해 멤버변수([[클래스 변수(class variable)]]와 [[인스턴스 변수(instance variable)]])나 메소드에 접근하여 사용하는 예시
+밑에는 this를 통해 멤버변수([[클래스 변수(Class Variable)]]와 [[인스턴스 변수(Instance Variable)]])나 메소드에 접근하여 사용하는 예시
 ```java
 public class User {
     private Integer id;

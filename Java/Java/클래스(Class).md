@@ -14,7 +14,7 @@
 
 ## 클래스 내부에 Getter and Setter 사용
 
-- [[Spring/SQL/필드(Field)|필드(Field)]]에 [[private]] 선언된 [[인스턴스 변수(instance variable)]]의 경우 [[Getter and Setter]]를 사용하여 접근할 수 있다.
+- [[Spring/SQL/필드(Field)|필드(Field)]]에 [[private]] 선언된 [[인스턴스 변수(Instance Variable)]]의 경우 [[Getter and Setter]]를 사용하여 접근할 수 있다.
 - [[private]]를 사용하는 이유는 은닉([[캡슐화(encapsulation)]]) 때문이다.
 
 ```java
@@ -42,3 +42,23 @@ class product { // public, private가 없으므로 패키지(package) 내에서�
 
 - 따라서 위의 코드에서 setName() [[메서드(Method)]]와 setPrice() [[메서드(Method)]]로 이름과 가격을 매개변수로 받아 대입하고, getName()와 getPrice() 이름으로 가격을 반환받아 사용이 가능하다. 
 
+## 힙 영역에 로드되어 있는 클래스 타입 [[객체(Object)]]를 가지고 오는 방법  
+
+- 밑의 코드처럼 대표적으로 3가지가 있다.
+
+```java
+@Test  
+void load() throws ClassNotFoundException {  
+    
+    // 1. Class 객체의 타입을 명시해줌
+    Class<User> clazz = User.class;  
+	  
+    // 2. getClass() 메서드는 해당 클래스로 객체를 생성했을 때만 사용할 수 있음
+    User user = new User("serverewizard", "김승찬"); 
+    Class<? extends User> clazz2 = user.getClass();  
+	  
+    // 3. 정적 메서드는 forName()을 이용해야 함
+    Class<?> clazz3 = Class.forName("org.example.model.User");  
+	  
+}
+```

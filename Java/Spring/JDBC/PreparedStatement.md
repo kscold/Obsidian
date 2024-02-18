@@ -162,7 +162,7 @@ try (Connection conn = DBConnecter.getConnection(); PreparedStatement pstmt = co
 }
 ```
 
-- 사용법은 ResultSet 타입의 [[인스턴스 변수(instance variable)]]에 pstmt.executeQuerty()를 해주면 조회한 결과가 담기게 된다.  
+- 사용법은 ResultSet 타입의 [[인스턴스 변수(Instance Variable)]]에 pstmt.executeQuerty()를 해주면 조회한 결과가 담기게 된다.  
 - while문으로 반복해 값이 없을때 까지 데이터를 추출할 수 있다.
 ### [[executeUpdate()]]
 

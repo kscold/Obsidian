@@ -1,8 +1,8 @@
 
-- 클래스 메소드([[정적 메서드(Static Method)]])의 경우 [[인스턴스 변수(instance variable)]] 또는 [[인스턴스 메서드(instance method)]]를 사용할 수 없다.
+- 클래스 메소드([[정적 메서드(Static Method)]])의 경우 [[인스턴스 변수(Instance Variable)]] 또는 [[인스턴스 메서드(instance method)]]를 사용할 수 없다.
 
 - 또한, 클래스 메서드(정적 메서드)는 [[인스턴스(Instance)]] 생성 없이 호출이 가능하다.
-- 반대로, [[인스턴스 메서드(instance method)]]에서는 [[인스턴스 변수(instance variable)]]를 사용할 수 있다.
+- 반대로, [[인스턴스 메서드(instance method)]]에서는 [[인스턴스 변수(Instance Variable)]]를 사용할 수 있다.
 
 ## 예시
 

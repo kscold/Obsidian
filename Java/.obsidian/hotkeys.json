@@ -1,1 +1,13 @@
-{}
+{
+  "editor:toggle-bold": [],
+  "obsidian-file-cleaner:clean-files": [
+    {
+      "modifiers": [
+        "Alt",
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "B"
+    }
+  ]
+}
