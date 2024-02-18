@@ -2,17 +2,17 @@
 - 
 - 사용자의 요청이 들어오면 프로그램 코드를 실행해서 애플리케이션 로직을 수행한 후, 그 결과를 HTML이나 HTTP API([[JSON(Java Script Object Notation)]])으로 제공한다.  
 
-- WAS는 서블릿([[Servlet]]) 컨테이너를 포함하는 개념이다.(거의 동일하다.)
+- WAS는 서블릿 컨테이너([[Servlet Container]])를 포함하는 개념이다.
+- 즉, WAS는 자바로 만들어진 [[JSP]]와 [[Servlet]]을 구동하기 위한 서블릿 컨테이너 역할을 수행한다.
+- 웹 컨테이너라고도 부른다.
 
 - 매 요청마다 쓰레드([[Thread]]) 풀에서 기존 쓰레드를 사용한다.
 - 주요 튜닝 포인트는 max thread 수이다.
 
-- 웹 컨테이너라고도 부른다.
-
-- 예시로 [[톰캣(tomcat)]], Jetty, Undertow가 있다.
+- 예시로 [[톰캣(Tomcat)]], Jetty, Undertow가 있다.
 
 
-## 웹 서버와 웹 어플리케이션의 차이
+## [[웹 서버(Web Server)]]와 웹 어플리케이션 서버(Web Application Sever)의 차이
 
 - 간단하게 살펴보면 웹 서버는 정적 리소스(파일)를 제공하고, WAS는 어플리케이션 로직까지 실행할 수 있다는 점이다.
 

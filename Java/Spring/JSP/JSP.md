@@ -48,7 +48,7 @@
 
 - 요청은 getParameterValues 메서드로 [[배열(Array)]] 형태로 받아올 수 있다.
 
-- 응답은 현제 요청 페이지에서 다른 페이지로 [[리다이렉트(redirect)]] 하는 코드이다.
+- 응답은 현제 요청 페이지에서 다른 페이지로 [[Redirect]] 하는 코드이다.
 
 ![](https://velog.velcdn.com/images%2Fqlgks1%2Fpost%2Feebd26cc-e68c-4e6c-b397-68c08cf290c5%2Fimage.png)
 

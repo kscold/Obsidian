@@ -1,5 +1,5 @@
 - RedirectAttributes [[객체(Object)]] 타입의 매개변수 타입이다.
-- RedirectAttributes [[객체(Object)]]를 사용해서 [[리다이렉트(redirect)]] 페이지에서 사용할 데이터를 남길 수 있다.
+- RedirectAttributes [[객체(Object)]]를 사용해서 [[Redirect]] 페이지에서 사용할 데이터를 남길 수 있다.
 - RedirectAttributes를 사용하려면, [[CrudRepository]]의 [[메서드(Method)]]의 매개변수로 받아와야 한다.
 
 

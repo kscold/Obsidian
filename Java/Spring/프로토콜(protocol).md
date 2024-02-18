@@ -4,6 +4,7 @@
 
 
 ## 프로토콜의 종류
+
 - FTP(File Tranfer Protocol): 파일 전송을 위한 프로토콜이다.
 - SMTP(Simple Mail Transfer Protocol): 이메일 전송을 위한 프로토콜이다.
 - [[HTTP]](HyperText Tranfer Protocol): 웹 서비스에 사용하는 프로토콜이다.

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/패턴(Pattern).md",
+                "file": "Spring/Servlet/Forward.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/패턴(Pattern).md",
+                "file": "Spring/Servlet/Forward.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/패턴(Pattern).md",
+                "file": "Spring/Servlet/Forward.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/패턴(Pattern).md"
+                "file": "Spring/Servlet/Forward.md"
               }
             }
           }
@@ -149,8 +149,25 @@
   },
   "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
-    "Spring/프론트 패턴.md",
+    "Spring/Servlet/Servlet.md",
+    "Spring/Servlet/DispatcherServlet.md",
+    "Spring/Servlet/Forward.md",
+    "Spring/Redirect.md",
+    "Spring/톰캣(Tomcat).md",
+    "image/Pasted image 20240219034238.png",
+    "Spring/프론트 패턴(Front Pattern).md",
+    "Java/HashMap.md",
+    "Spring/Servlet/WAS(Web Application Sever).md",
     "Spring/아파치(apache).md",
+    "Spring/Servlet/생명 주기(Life Cycle).md",
+    "Spring/Servlet/getParameter().md",
+    "Spring/웹 서버(Web Server).md",
+    "Spring/SQL/쿼리(query).md",
+    "Spring/Servlet/Servlet Container.md",
+    "Java/Thread.md",
+    "Spring/스프링 컨테이너(Spring Container).md",
+    "Spring/프로토콜(protocol).md",
+    "Spring/패턴(Pattern).md",
     "Spring/JDBC/executeQuery().md",
     "Spring/JDBC/PreparedStatement.md",
     "인텔리제이 단축키.md",
@@ -159,12 +176,6 @@
     "Spring/DBCP/DBCP(Database Connection Pool).md",
     "Spring/DBCP/DataSource.md",
     "Spring/리플렉션(Reflection).md",
-    "Java/콜백 함수(Callback Fuction).md",
-    "Spring/getDeclaredFields().md",
-    "Spring/SQL/@JoinColumn.md",
-    "Spring/SQL/기본 키(Primary Key).md",
-    "Spring/SQL/다대일.md",
-    "Spring/SQL/단방향.md",
     "image/Pasted image 20240213224850.png",
     "image/Pasted image 20240206212431.png",
     "image/Pasted image 20231101224851.png",
@@ -173,18 +184,7 @@
     "image/Pasted image 20231012172903.png",
     "image/Pasted image 20231012133632.png",
     "image/Pasted image 20231005111135.png",
-    "@Column.md",
-    "Arrays.of().md",
-    "URLConnection.md",
-    "참조 타입(Reference Type).md",
     "image/Pasted image 20240219022021.png",
-    "Spring/패턴(Pattern).md",
-    "image/Pasted image 20240219021536.png",
-    "Java/클래스(Class).md",
-    "Spring/객체(Object).md",
-    "Java/멤버 변수(Nember Variable).md",
-    "Java/인스턴스 변수(Instance Variable).md",
-    "Java/클래스 변수(Class Variable).md",
     "Spring/Servlet",
     "Spring/DBCP",
     "Spring/JDBC",
