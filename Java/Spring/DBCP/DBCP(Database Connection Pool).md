@@ -1,12 +1,15 @@
 - 미리 일정량의 DB Connenction을 생성해서 풀에 저장해 두고 있다가 [[HTTP]] 요청에 따라 필요할 때 풀에서 커넥션을 가져다 사용하는 기법이다.
-- DB와 커넥션을 맺고 있는 객체를 관리하는 역할을 한다.
+- DB와 커넥션을 맺고 있는 [[객체(Object)]]를 관리하는 역할을 한다.
 
-- 참고로 스프링 부트 2.0 부터는 default Connection Pool로 HikariCP 사용한다.
+- 참고로 스프링 부트 2.0 부터는 default Connection Pool로 [[HikariCP]] 사용한다.
 
 - 웹 컨테이너([[WAS(Web Application Sever)]])가 실행되면 DB와 미리 connection(연결)을 해놓은 [[객체(Object)]]들을 [[Pool]]에 저장해둔다.
-- 클라이언트 요청이 오면 connection을 빌려주고, 처리가 끝나면 다시 connection을 반납받아 pool에 저장하는 방식을 말한다.
+- 클라이언트 요청이 오면 [[Connection]]을 빌려주고, 처리가 끝나면 다시 [[Connection]]을 반납 받아 [[Pool]]에 저장하는 방식을 말한다.
+- 따리서 커넥션풀에는 여러 개의 [[Connection]] [[객체(Object)]]가 생성되어 운용되는데, 이를 직접 웹 애플리케이션에서 다루기 힘들기 때문에 [[DataSource]]라는 개념을 도입하여 사용한다.
 
-- [[JDBC(Java DataBase Connectivity)]]의 단점을 보완하기 위해 커넥션 풀을 사용한다.
+- [[JDBC(Java DataBase Connectivity)]]의 단점을 보완하기 위해 커넥션 풀(Connection Pool)을 사용한다.
+
+
 
 [![cp-s1](https://linked2ev.github.io/assets/img/devlog/201908/cp-s1.png)](https://linked2ev.github.io/spring/2019/08/14/Spring-3-%EC%BB%A4%EB%84%A5%EC%85%98-%ED%92%80%EC%9D%B4%EB%9E%80/)
 

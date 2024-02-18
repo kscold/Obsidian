@@ -27,7 +27,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "useLoaction().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "useLoaction().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "useLoaction().md"
-              }
+              "state": {}
             }
           }
         ]
@@ -154,12 +151,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "ffe281f2a3a42cd1",
+  "active": "373480e7b3224c8d",
   "lastOpenFiles": [
+    "useLoaction().md",
     "쿼리스트링(Querystring).md",
     "React.js/URL 파라미터.md",
     "React.js/Libaray/react-router-dom/useParams().md",
-    "useLoaction().md",
     "JavaScript/속성(Property).md",
     "React.js/조건부 렌더링.md",
     "React.js/Libaray/react-router-dom/React Router.md",

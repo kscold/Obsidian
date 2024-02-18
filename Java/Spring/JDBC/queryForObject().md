@@ -36,8 +36,8 @@ Integer roleId = roleDao.selectId("Developer");
 System.out.println(roleId);
 ```
 
-- 이와 같이 queryForObject 메서드는 단 한 개의 결과만 가져올 수 있기 때문에 주석 처리된  문장은 에러가 발생한다. 
-- CEO에 해당하는 결과는 2개 쿼리라인이 발생한다.
+- 이와 같이 queryForObject [[메서드(Method)]]는 단 한 개의 결과만 가져올 수 있기 때문에 주석 처리된  문장은 에러가 발생한다. 
+- CEO에 해당하는 결과는 2개 [[쿼리(query)]] 라인이 발생한다.
 
 - 만약 Integer 같은 기존에 선언된 타입이 아니라 우리가 선언한 [[클래스(Class)]] 타입으로 반환받고 싶다면 [[RowMapper]]를 사용할 수 있다. 
 
@@ -82,7 +82,7 @@ public static void main(String[] args) {
 - 이때 mapRow 메서드의 rs는 [[ResultSet]] 객체, rowNum은 결과로 받은 sql 행의 개수라고 생각하면 된다. 
 - 그리고 만든 클래스의 객체를 생성하여 위와 같이 queryForObject()로 넘겨주면 Role 객체를 얻어올 수 있다.
 
-- 위와 같이 클래스를 만들지 않고 [[Java/필드(Field)|필드(Field)]]로 선언하여 사용할 수도 있다.
+- 아래 코드와 같이 클래스를 만들지 않고 [[Java/필드(Field)|필드(Field)]]로 선언하여 사용할 수도 있다.
 
 ```java
 // RoleDao.java
@@ -90,7 +90,7 @@ private RowMapper<Role> roleMapper = new RowMapper<Role>() {
 	@Override
 	public Role mapRow(ResultSet rs, int rowNum) throws SQLException{
 		Role role = new Role();
-
+		
 		role.setRoleId(rs.getInt("role_id"));
 		role.setDescription(rs.getString("description"));
 		
@@ -103,7 +103,7 @@ public Role selectOneRow1(int roleId){
 }
 ```
 
-혹은 아래와 같이 queryForObject를 사용할 때 선언하는 방식도 사용할 수 있다.
+- 혹은 아래와 같이 queryForObject를 사용할 때, [[람다(lambda)]]식을 통해 선언하는 방식도 사용할 수 있다.
 
 ```java
 // RoleDao.java

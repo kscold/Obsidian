@@ -1,4 +1,4 @@
-- ResultSet은 [[executeQuery()]]을 통해 쿼리 실행하면 ResultSet타입으로 반환을 해주어 결과값을 저장할 수 있다.
+- ResultSet은 [[executeQuery()]] [[메서드(Method)]]를 통해 [[쿼리(query)]] 실행하면 ResultSet타입으로 반환을 해주어 결과값을 저장할 수 있다.
 
 - java.sql.ResultSet [[인터페이스(Interface)]]에 정의되어 있다.
 

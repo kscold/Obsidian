@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "퀵 정렬(Quick Sort).md",
+                "file": "시간 복잡도.md",
                 "mode": "source",
                 "source": false
               }
@@ -27,7 +27,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "퀵 정렬(Quick Sort).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "퀵 정렬(Quick Sort).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "퀵 정렬(Quick Sort).md"
-              }
+              "state": {}
             }
           }
         ]
@@ -154,10 +151,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "4c16b3d10ed20a85",
+  "active": "cc55a6a65f82298b",
   "lastOpenFiles": [
-    "병합 정렬(Merge Sort).md",
+    "시간 복잡도.md",
     "퀵 정렬(Quick Sort).md",
+    "병합 정렬(Merge Sort).md",
     "선택 정렬(Selection Sort).md",
     "삽입 정렬(Insertion Sort).md",
     "파이썬 문법/sep.md",
@@ -168,7 +166,6 @@
     "구현/2차원 배열 덧셈.md",
     "구현/문자열 그룹.md",
     "그래프(Graphs).md",
-    "시간 복잡도.md",
     "구현/상하좌우 이동.md",
     "인접 리스트(adjacency list).md",
     "유방향 그래프(Digraph(Directed graph).md",

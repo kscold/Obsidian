@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/JDBC/queryForObject().md",
+                "file": "Spring/리플렉션(Reflection).md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/JDBC/queryForObject().md",
+                "file": "Spring/리플렉션(Reflection).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/JDBC/queryForObject().md",
+                "file": "Spring/리플렉션(Reflection).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/JDBC/queryForObject().md"
+                "file": "Spring/리플렉션(Reflection).md"
               }
             }
           }
@@ -156,17 +156,24 @@
   },
   "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
-    "콜백 함수(Callback Fuction).md",
+    "DataSource.md",
+    "Spring/리플렉션(Reflection).md",
+    "Spring/JDBC/getConnection().md",
+    "Spring/DBCP/DBCP(Database Connection Pool).md",
+    "Spring/Pool.md",
+    "Spring/DBCP/HikariCP.md",
+    "인텔리제이 단축키.md",
+    "Spring/JDBC/PreparedStatement.md",
+    "Spring/JDBC/executeQuery().md",
+    "Spring/아파치(apache).md",
+    "Spring/JDBC/Statement.md",
     "Spring/JDBC/queryForObject().md",
     "Spring/RowMapper.md",
-    "Spring/JDBC/JDBC Template.md",
     "Spring/JDBC/ResultSet.md",
-    "Spring/JDBC/Statement.md",
-    "Spring/JDBC/PreparedStatement.md",
+    "콜백 함수(Callback Fuction).md",
+    "Spring/JDBC/JDBC Template.md",
     "Spring/JDBC/executeUpdate().md",
     "Spring/SQL/?(Placeholder).md",
-    "Spring/JDBC/executeQuery().md",
-    "Spring/JDBC/getConnection().md",
     "Spring/SQL/TO_CHAR.md",
     "Spring/DAO(Data Access Object).md",
     "Spring/모델(Model).md",
@@ -175,13 +182,6 @@
     "Spring/패턴.md",
     "Spring/JPA/CRUD.md",
     "Spring/URLConnection.md",
-    "Spring/JPA/CrudRepository/save().md",
-    "Spring/JSP/<select>.md",
-    "Spring/@Autowired.md",
-    "Java/setter.md",
-    "Spring/SQL/CREATE.md",
-    "Spring/toString().md",
-    "Spring/웹 서버(Web Server).md",
     "Spring/Servlet",
     "Spring/DBCP",
     "Spring/JDBC",
