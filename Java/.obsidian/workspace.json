@@ -13,10 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/Servlet/Forward.md",
+                "file": "Spring/Servlet/DispatcherServlet.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "7404b9682d4df5fa",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/Servlet/Forward.md",
+                "file": "Spring/Servlet/DispatcherServlet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/Servlet/Forward.md",
+                "file": "Spring/Servlet/DispatcherServlet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/Servlet/Forward.md"
+                "file": "Spring/Servlet/DispatcherServlet.md"
               }
             }
           }
@@ -149,11 +157,14 @@
   },
   "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
+    "Spring/MVC(Mode View Controller).md",
     "Spring/Servlet/Servlet.md",
-    "Spring/Servlet/DispatcherServlet.md",
-    "Spring/Servlet/Forward.md",
-    "Spring/Redirect.md",
+    "Spring/Servlet/Servlet Container.md",
     "Spring/톰캣(Tomcat).md",
+    "Spring/템플릿(Template).md",
+    "Spring/Servlet/Forward.md",
+    "Spring/Servlet/DispatcherServlet.md",
+    "Spring/Redirect.md",
     "image/Pasted image 20240219034238.png",
     "Spring/프론트 패턴(Front Pattern).md",
     "Java/HashMap.md",
@@ -163,7 +174,6 @@
     "Spring/Servlet/getParameter().md",
     "Spring/웹 서버(Web Server).md",
     "Spring/SQL/쿼리(query).md",
-    "Spring/Servlet/Servlet Container.md",
     "Java/Thread.md",
     "Spring/스프링 컨테이너(Spring Container).md",
     "Spring/프로토콜(protocol).md",
@@ -174,8 +184,6 @@
     "Spring/DBCP/HikariCP.md",
     "Spring/Pool.md",
     "Spring/DBCP/DBCP(Database Connection Pool).md",
-    "Spring/DBCP/DataSource.md",
-    "Spring/리플렉션(Reflection).md",
     "image/Pasted image 20240213224850.png",
     "image/Pasted image 20240206212431.png",
     "image/Pasted image 20231101224851.png",

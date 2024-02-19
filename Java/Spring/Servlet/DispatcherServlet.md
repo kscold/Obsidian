@@ -12,7 +12,7 @@
 
 ## Dispatcher Servlet(디스패처 서블릿)의 동작 방식
 
-- 앞서 설명한대로 디스패처 서블릿은 적합한 컨트롤러와 메소드를 찾아 요청을 위임해야 한다. 
+- 앞서 설명한대로 디스패처 서블릿은 적합한 [[컨트롤러(Controller)]]와 [[메서드(Method)]]를 찾아 요청을 위임해야 한다. 
 - Dispatcher Servlet의 처리 과정을 살펴보면 다음과 같다.
 
 ![](https://blog.kakaocdn.net/dn/bcff5H/btstbdRuSr9/pNKnGdMwftSWmiGLHA7yL0/img.png)
