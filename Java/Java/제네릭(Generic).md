@@ -46,12 +46,21 @@ LinkedList<Character> list4 = new LinkedList<Character>();
 
 ```java
 public class ClassName <T> { ... }
+public class ClassName <T> T { 
+	public <T> T Method() {
+		
+	}	
+}
 
 public interface InterfaceName <T> { ... }
 ```
 
 - 기본적으로 제네릭 타입의 [[클래스(Class)]]나 [[인터페이스(Interface)]]의 경우 위와같이 선언한다.
 - T 타입은 해당 블럭 { ... } 안에서까지 유효하다.
+- 또한 `<T>` 뒤에 `T`를 한 번 더 붙여주는 것은 제네릭 타입 매개변수를 반환 타입으로 사용하겠다는 것을 의미한다.
+- 즉, [[메서드(Method)]]가 제네릭 타입을 사용하고 있고, 이 메서드는 해당 제네릭 타입을 반환할 것임을 나타낸다.
+
+
 - 또한 여기서 더 나아가 제네릭 타입을 두 개로 둘 수도 있다. (대표적으로 타입 인자로 두 개 받는 대표적인 컬렉션인 [[HashMap]]을 생각해보자.)
 
 ```java

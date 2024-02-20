@@ -7,3 +7,165 @@
 - 만약 기존에 저장된 키와 동일한 키로 값을 저장하면 기존의 값은 없어지고 새로운 값으로 대치된다.
 
 - HashMap은 이름 그대로 해싱(Hashing)을 사용하기 때문에 많은 양의 데이터를 검색하는 데 있어서 뛰어난 성능을 가진다.
+
+## HashMap [[메서드]]
+### map.entrySet()
+
+> public Set<Map.Entry<K,​V>> entrySet()
+
+map.entrySet() 메소드는
+
+해당 map의  key와 value를 가지는 Set 객체를 리턴합니다.
+
+  **코드**  
+
+```java
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry; 
+
+public class HashMapPrint {    
+	public static void main(String[] args) {         // HashMap 준비   
+	Map<Integer, String> map = new HashMap<Integer, String>();       
+	map.put(1, "Apple");        
+	map.put(2, "Banana");        
+	map.put(3, "Orange"); // for loop (entrySet())        for (Entry<Integer, String> entrySet : map.entrySet()) {            System.out.println(entrySet.getKey() + " : " + entrySet.getValue());        }     }}
+```
+
+  **결과**  
+
+```
+1 : Apple2 : Banana3 : Orange
+```
+
+- map.entrySet() [[메서드(Method)]]를 호출하여
+
+map의 key와 value를 포함하는 Entry객체의 Set을 얻어왔습니다.
+
+그리고, 이 Set 객체를 순회하면서
+
+map의 key와 value를 출력하였다.
+
+## **2. map.keySet(), mep.get()**
+
+```
+public Set<K> keySet()
+```
+
+map의 key들을 모아서 Set 형태로 반환합니다.
+
+> public V get​(Object key)
+
+파라미터로 key값을 전달하면, 
+
+map에서 해당 key의 value를 찾아서 리턴합니다.
+
+  **코드**  
+
+```
+import java.util.HashMap;import java.util.Map;import java.util.Set; public class HashMapPrint {    public static void main(String[] args) {         // HashMap 준비        Map<Integer, String> map = new HashMap<Integer, String>();        map.put(1, "Apple");        map.put(2, "Banana");        map.put(3, "Orange");         // for loop (keySet())        Set<Integer> keySet = map.keySet();        for (Integer key : keySet) {            System.out.println(key + " : " + map.get(key));        }    }}
+```
+
+  **결과**  
+
+```
+1 : Apple2 : Banana3 : Orange
+```
+
+```
+Set<Integer> keySet = map.keySet();
+```
+
+먼저 map.keySet() 메소드를 호출하여, key 목록을 Set 형태로 가지고 왔습니다.
+```
+_**for (Integer key : keySet) {**_   
+   _**System.out.println(key + " : " + map.get(key));**_   
+_**}**_
+```
+key Set을 순회하면서 key를 출력하고,
+
+해당 key를 가지고, map.get() 메소드를 호출하여
+
+해당 key의 value를 출력하였습니다.
+
+### map.values() 
+
+- value만 가져올 때 사용한다.
+
+```java
+public Collection<V> values()
+```
+
+- HashMap의 values()는, 해당 map의 value 목록을 [[Collection]] 형태로 리턴한다.
+
+
+```java
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map; 
+
+public class HashMapPrint {   
+	public static void main(String[] args) { // HashMap 준비        
+		Map<Integer, String> map = new HashMap<Integer, String>();        
+		
+		map.put(1, "Apple");        
+		map.put(2, "Banana");        
+		map.put(3, "Orange"); // map.values()        
+		
+		Collection<String> values = map.values();       
+		System.out.println(values);  // [Apple, Banana, Orange]    
+	}
+}
+```
+
+```
+[Apple, Banana, Orange]
+```
+
+Collection<String> values = map.values();
+
+map.values()에서 가져온 value 목록을 출력하였습니다.
+
+## **4. Iterator**
+
+  **코드**  
+
+```
+import java.util.HashMap;import java.util.Iterator;import java.util.Map;import java.util.Map.Entry; public class HashMapPrint {    public static void main(String[] args) {         // HashMap 준비        Map<Integer, String> map = new HashMap<Integer, String>();        map.put(1, "Apple");        map.put(2, "Banana");        map.put(3, "Orange");         // Iterator        Iterator<Entry<Integer,String>> it = map.entrySet().iterator();        while(it.hasNext()) {            Entry<Integer, String> entrySet = (Entry<Integer, String>) it.next();            // key, value 출력            System.out.println(entrySet.getKey() + " : " + entrySet.getValue());        }     }}
+```
+
+  **결과**  
+
+```
+1 : Apple2 : Banana3 : Orange
+```
+
+_**map.entrySet().iterator();**_
+
+map.entrySet() 이 리턴하는 Set 객체의 Iterator를 사용하여
+
+key, value 목록을 출력하였습니다.
+
+## **5. forEach (Java 8 이후)**
+
+  **코드**  
+
+```
+import java.util.HashMap;import java.util.Map; public class HashMapPrint {    public static void main(String[] args) {         // HashMap 준비        Map<Integer, String> map = new HashMap<Integer, String>();        map.put(1, "Apple");        map.put(2, "Banana");        map.put(3, "Orange");         // forEach        map.forEach((key, value) -> {            System.out.println(key + " : " + value);        });    }}
+```
+
+  **결과**  
+
+```
+1 : Apple2 : Banana3 : Orange
+```
+
+Java 8 이후로는 forEach 문을 사용하여
+
+map을 순회하면서 key와  value를 출력할 수 있습니다.
+
+---
+
+HashMap의 key와 value를 출력하는 여러가지 방법을 알아보았습니다.
+
+출처: [https://hianna.tistory.com/573](https://hianna.tistory.com/573) [어제 오늘 내일:티스토리]

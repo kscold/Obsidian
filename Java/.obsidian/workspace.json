@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/Servlet/DispatcherServlet.md",
+                "file": "Spring/DI(Dependency Injection).md",
                 "mode": "source",
                 "source": false
               }
@@ -23,11 +23,28 @@
             "id": "7404b9682d4df5fa",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Spring/리플렉션(Reflection).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ba0af9de3506234b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java/제네릭(Generic).md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/Servlet/DispatcherServlet.md",
+                "file": "Java/제네릭(Generic).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/Servlet/DispatcherServlet.md",
+                "file": "Java/제네릭(Generic).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/Servlet/DispatcherServlet.md"
+                "file": "Java/제네릭(Generic).md"
               }
             }
           }
@@ -155,35 +172,35 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "f4faf621b4fb9ee6",
+  "active": "ba0af9de3506234b",
   "lastOpenFiles": [
+    "LinkedList.md",
+    "Java/제네릭(Generic).md",
+    "Spring/리플렉션(Reflection).md",
+    "Java/HashMap.md",
+    "Spring/DI(Dependency Injection).md",
+    "Spring/톰캣(Tomcat).md",
+    "Spring/Servlet/DispatcherServlet.md",
+    "인텔리제이 단축키.md",
+    "Java/인스턴스(Instance).md",
+    "Java/instanceof.md",
+    "Spring/Servlet/Filter.md",
+    "Java/Collection/Map.md",
+    "Java/Collection/Collection.md",
     "Spring/MVC(Mode View Controller).md",
     "Spring/Servlet/Servlet.md",
     "Spring/Servlet/Servlet Container.md",
-    "Spring/톰캣(Tomcat).md",
     "Spring/템플릿(Template).md",
     "Spring/Servlet/Forward.md",
-    "Spring/Servlet/DispatcherServlet.md",
     "Spring/Redirect.md",
     "image/Pasted image 20240219034238.png",
     "Spring/프론트 패턴(Front Pattern).md",
-    "Java/HashMap.md",
     "Spring/Servlet/WAS(Web Application Sever).md",
     "Spring/아파치(apache).md",
     "Spring/Servlet/생명 주기(Life Cycle).md",
     "Spring/Servlet/getParameter().md",
     "Spring/웹 서버(Web Server).md",
     "Spring/SQL/쿼리(query).md",
-    "Java/Thread.md",
-    "Spring/스프링 컨테이너(Spring Container).md",
-    "Spring/프로토콜(protocol).md",
-    "Spring/패턴(Pattern).md",
-    "Spring/JDBC/executeQuery().md",
-    "Spring/JDBC/PreparedStatement.md",
-    "인텔리제이 단축키.md",
-    "Spring/DBCP/HikariCP.md",
-    "Spring/Pool.md",
-    "Spring/DBCP/DBCP(Database Connection Pool).md",
     "image/Pasted image 20240213224850.png",
     "image/Pasted image 20240206212431.png",
     "image/Pasted image 20231101224851.png",

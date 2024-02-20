@@ -1,8 +1,8 @@
 - instanceof는 [[객체(Object)]] 타입을 확인하는 연산자이다.
 - 형변환 가능 여부를 확인하며 true / false로 결과를 반환한다.
 
-- 주로 [[상속(Inheritance)]] 관계에서 부모 객체인지 자식 객체인지 확인하는 데 사용된다.
-- 쉽게 말해 instancof는 해당 [[클래스(Class)]]가 자기집이 맞는지 확인해 주는 것이라고 생각하면 된다.
+- 주로 [[상속(Inheritance)]] 관계에서 부모 [[객체(Object)]]인지 자식 [[객체(Object)]]인지 확인하는 데 사용된다.
+- 쉽게 말해 instancof는 해당 [[클래스(Class)]]가 자기집([[인터페이스(Interface)]] 혹은 [[클래스(Class)]]의 [[인스턴스(Instance)]]인지)이 맞는지 확인해 주는 것이라고 생각하면 된다.
 - instanceof의 오른쪽 값이 부모 객체 왼쪽 값이 자식 객체라고 생각하면 편하다.
 
 - instanceof의 기본 사용방법은 객체 instanceof 클래스를 선언함으로써 사용한다.
