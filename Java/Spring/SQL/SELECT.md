@@ -18,6 +18,25 @@ WHERE
 SELECT * FROM 테이블명
 ```
 
+## 유저 생성 및 확인(MySQL)
+
+- [[CREATE]]를 통해 user [[테이블(Table)]]에 아이디와 비빌번호 정보를 생성한 뒤, user 테이블을 선택해 확인한다.
+
+```sql
+create user 'kscold'@'localhost' identified by 'Tmdcks6502@'; -- user 아이디를 생성하는 코드  
+select `user` from `mysql`.user; -- user가 제대로 생성됐는지 확인하는 코드
+```
+
+```sql
+show grants for 'kscold'@'localhost'; -- 권한이 있는지 확인
+-- GRANT USAGE ON *.* TO `kscold`@`localhost`로 뜬다면 아무런 권한이 없다는 말임
+
+grant all on 'board'.* to 'kscold'@'localhost' with grant option; -- 모든 권한을 위임
+-- 제대로 권한이 들어 갔다면 GRANT ALL PRIVILEGES ON `board`.* TO `kscold`@`localhost` WITH GRANT OPTION 모든 권한이 추가된 것을 확인할 수 있음
+
+
+flush privileges; -- 정상적으로 동작하는지 log를 통해 확인할 수 있음
+```
 ## 예시
 
 - 밑에 코드는 orders [[테이블(Table)]]에서 특정 [[속성(Attribute)]] order_no, created_at, payment_method의 데이터를 불러오는 예시이다.

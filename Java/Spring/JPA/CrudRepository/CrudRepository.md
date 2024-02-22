@@ -1,8 +1,8 @@
-- CrudRepository는 [[JPA(Java Persistence API)]]에서 제공하는 [[인터페이스(Interface)]]로 이를 상속해 [[엔티티(entity)]]를 관리(생성, 조회, 수정, 삭제)할 수 있다.
+- CrudRepository는 [[JPA(Java Persistence API)]]에서 제공하는 [[인터페이스(Interface)]]로 이를 상속해 [[엔티티(Entity)]]를 관리(생성, 조회, 수정, 삭제)할 수 있다.
 
 - [[클래스(Class)]]를 선언 후 [[extends]]를 통해 CrudRepository선택하여 가져올 수 있다.
 - [[@Repository]] [[어노테이션(Annotation)]]를 사용하여 좀 더 명시적으로 표현할 수 있다.
-- [[리파지터리(repository)]]에서 설정한다.
+- [[리파지터리(Repository)]]에서 설정한다.
 
 - 우리가 정의하지 않은 기능을 인터페이스로 제공하면, 문제가 발생할 수 있다.
 - 예를 들어, 삭제 메서드는 제공하지 않기를 바라지만 jpaRepository 는 삭제 메서드와 필요 없는 다른 메서드들에 대한 인터페이스도 제공한다.
@@ -17,17 +17,17 @@
 - CrudRepository에 홑화살괄호(<>)를 붙이고 그 안에 다음과 같이 2개의 제네릭 요소를 받는다.
 
 1. T
-	 - 관리 대상 [[엔티티(entity)]]의 [[클래스(Class)]] 타입이다. 
+	 - 관리 대상 [[엔티티(Entity)]]의 [[클래스(Class)]] 타입이다. 
 	 - 책 예시는 Article이다.
 
 3. ID
-	- 관리 대상 [[엔티티(entity)]]의 대푯값 타입니다. 
+	- 관리 대상 [[엔티티(Entity)]]의 대푯값 타입니다. 
 	- Article.java 파일에 가 보면 id를 대푯값으로 지정했다.
 	- id의 타입은 Long이므로 Long을 입력한다.
 
 ## 예시
 
-- 밑의 코드는 [[리파지터리(repository)]] [[클래스(Class)]]를 만들고 [[@Repository]] [[어노테이션(Annotation)]]을 붙여 CrudRepository를 [[상속(Inheritance)]]받는 예시이다.
+- 밑의 코드는 [[리파지터리(Repository)]] [[클래스(Class)]]를 만들고 [[@Repository]] [[어노테이션(Annotation)]]을 붙여 CrudRepository를 [[상속(Inheritance)]]받는 예시이다.
 
 ```java
 @Repository
@@ -60,7 +60,7 @@ public interface ArticleRepository extends CrudRepository<Article, Long> { // Cr
 
 #### void deleteAll(Iterable`<? extends T>` entities)
 
-   - 주어진 [[엔티티(entity)]]들을 삭제한다.
+   - 주어진 [[엔티티(Entity)]]들을 삭제한다.
    - entities 및 entities들 중 하나라도 null이어서는 안된다.
    - entities 및 entities들 중 하나라도 null이면 IllegalArgumentException을 던진다.
 
@@ -68,7 +68,7 @@ public interface ArticleRepository extends CrudRepository<Article, Long> { // Cr
 
 #### [[Optional]]`<T>` [[findById()]], 매개변수(`id`)
 
-- 주어진 id를 가진 [[엔티티(entity)]]가 존재하는지 반환한다.
+- 주어진 id를 가진 [[엔티티(Entity)]]가 존재하는지 반환한다.
 - 조회된 엔티티 객체를 [[Optional]]로 감싸서 반환한다.
 - id가 null이면 IllegalArgumentException을 던진다.
 
@@ -80,7 +80,7 @@ public interface ArticleRepository extends CrudRepository<Article, Long> { // Cr
    
 #### [[Iterable]]`<T>`[[findAll()]]
 
-- [[리파지터리(repository)]]의 모든 [[인스턴스(Instance)]]([[엔티티(entity)]])를 반환한다. ([[Iterable]]`<T>`타입으로 반환한다.)
+- [[리파지터리(Repository)]]의 모든 [[인스턴스(Instance)]]([[엔티티(Entity)]])를 반환한다. ([[Iterable]]`<T>`타입으로 반환한다.)
     
 #### [[Iterable]]`<T>` [[findAllById()]], 매개변수([[Iterable]]`<ID> ids`)
 
@@ -94,8 +94,8 @@ public interface ArticleRepository extends CrudRepository<Article, Long> { // Cr
 
 #### `<S extends T> S` [[save()]], 매개변수(S entity)
 
-- 매개변수로 주어진 [[엔티티(entity)]]를 저장한다.
-- 저장된 [[엔티티(entity)]]를 반환한다.
+- 매개변수로 주어진 [[엔티티(Entity)]]를 저장한다.
+- 저장된 [[엔티티(Entity)]]를 반환한다.
 - 매개변수로 주어진 엔티티가 null이면 IllegalArgumentException 오류를 반환한다.
 
 #### `<S extends T>` [[Iterable]]`<S>` saveAll([[Iterable]]`<S>` entities)

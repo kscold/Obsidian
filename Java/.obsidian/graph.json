@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "제네릭",
+  "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -17,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.7114048199028339,
-  "close": false
+  "scale": 0.8686757944727397,
+  "close": true
 }

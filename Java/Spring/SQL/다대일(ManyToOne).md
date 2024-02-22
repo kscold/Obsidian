@@ -1,8 +1,9 @@
-- 객체는 양방향 참조가 존재하기 때문에 어느 쪽에서 [[외래 키(Foreign Key)]]를 관리할지 정해야한다.
-- 외래 키를 가진 테이블을 매핑한 엔티티에서 외래 키를 관리하는게 효율적이다.
+- [[객체(Object)]]는 양방향 참조가 존재하기 때문에 어느 쪽에서 [[외래 키(Foreign Key)]]를 관리할지 정해야 한다.
+
+- [[외래 키(Foreign Key)]]를 가진 [[테이블(Table)]]을 매핑한 [[엔티티(Entity)]]에서 [[외래 키(Foreign Key)]]를 관리하는게 효율적이다.
 - 따라서 이곳을 연관관계의 주인으로 선택한다.
 
-- 외래 키를 가진 [[엔티티(entity)]]가 주인이라고 생각하면 쉽다. 
+- 외래 키를 가진 [[엔티티(Entity)]]가 주인이라고 생각하면 쉽다. 
 
 - 일대다, 다대일 관계에서 항상 '다'쪽이 외래키를 가진다.
 
@@ -18,7 +19,8 @@
 @Entity
 public class Member {
     
-    @Id @GeneratedValue
+    @Id 
+    @GeneratedValue
     @Column(name = "MEMBER_ID")
     private Long id;
     

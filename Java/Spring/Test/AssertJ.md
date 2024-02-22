@@ -1,9 +1,9 @@
 - AssertJ는 자바 테스트에서 유창하고 풍부한 assertions를 작성하는데 사용되는 오픈소스 라이브러리이다.
 
 
-## 메서드
+## [[테스트 메서드(Test Method)]]
 
-### assertThat
+### [[assertThat()]]
 
 - assertThat은 주로 값을 비교하는 데 사용한다.
 - 예를 들어, [[객체(Object)]]의 [[Java/필드(Field)|필드(Field)]]나 [[메서드(Method)]] 호출 결과와 기대값을 비교할 때 주로 사용된다.

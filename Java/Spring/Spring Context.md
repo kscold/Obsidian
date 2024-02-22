@@ -19,7 +19,7 @@
 ### 1. ROOT-CONTEXT (공통 부분)
 
 - 모든 [[Servlet]]이 공유할 수 있는 Bean들이 모인 공간이다.
-- DB와 관련된 [[리파지터리(repository)]], Service 등이 있다.
+- DB와 관련된 [[리파지터리(Repository)]], Service 등이 있다.
 
 ### 2. SERLVET-CONTEXT (개별 부분)
 

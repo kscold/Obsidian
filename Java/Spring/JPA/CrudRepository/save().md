@@ -21,11 +21,11 @@ public <S extends T> S save(S entity) { // 엔티티(T)를 추상 메서드로 �
 }
 ```
 
-- JPA 내부에서 1번의 isNew 메서드를 통해 매개변수로 들어온 [[엔티티(entity)]]가 새로운 것인지, 이미 존재하는 entity인지 확인을 한다.
+- JPA 내부에서 1번의 isNew 메서드를 통해 매개변수로 들어온 [[엔티티(Entity)]]가 새로운 것인지, 이미 존재하는 entity인지 확인을 한다.
 	- [[참조 타입(Reference Type)]] `[String, Long etc..]` 일 경우 null인지 확인한다.
 	- [[원시 타입(Primitive Type)]] `[int, long, char etc..]` 일 경우 값이 0인지 확인한다.
 
-- 따라서 [[@Id ]]생성 방식이 [[@GeneratedValue]] 일 경우에는 2번의 em.persist를 하기 전까지 해당 멤버 변수가 null 혹은 0이기 때문에 새로운 entity임을 인지하고 if문을 타서 2, 3번을 순차적으로 수행한다.
+- 따라서 [[@Id]]생성 방식이 [[@GeneratedValue]] 일 경우에는 2번의 em.persist를 하기 전까지 해당 멤버 변수가 null 혹은 0이기 때문에 새로운 entity임을 인지하고 if문을 타서 2, 3번을 순차적으로 수행한다.
 - 3번의 return entity; 와 같이 save를 호출한 곳에서는 entity를 사용할 수 있으며, return을 통해 넘어간 entity에는 원래는 null 이었을 @Id의 멤버 필드가 JPA의 @GeneratedValue 전략에 맞춰 값이 채워져 있는 것을 확인할 수 있다.
 
 - 그러나 만약 @Id가 @GeneratedValue가 아닌 사용자가 직접 입력을 받는 변수일 경우는 어떻게 될까?
@@ -59,8 +59,8 @@ public class Member {
 
 - [[SELECT]] [[쿼리(query)]]를 한 번 날림으로써 실제로 해당 이메일이 DB에 존재하는지, 존재하지 않는지 확인한다.
 
-- DB에 있을 경우에는 [[엔티티(entity)]]에 입력된 정보로 merge가 발생한다.
-- DB에 없을 경우에는 새로운 [[엔티티(entity)]]이므로 [[INSERT]] [[쿼리(query)]]가 발생한다.
+- DB에 있을 경우에는 [[엔티티(Entity)]]에 입력된 정보로 merge가 발생한다.
+- DB에 없을 경우에는 새로운 [[엔티티(Entity)]]이므로 [[INSERT]] [[쿼리(query)]]가 발생한다.
 
 - 밑의 코드는 클래스의 엔티티 테스트코드 예시이다.
 ```java
@@ -85,7 +85,7 @@ class MemberTest {
 ![](https://blog.kakaocdn.net/dn/TIckD/btrmbWhMAQ1/rz5xnmhZI4hlo7ttB480c0/img.png)
 
 - 이처럼 순수하게 save를 원하는 상황에서 SELECT라는 불필요한 쿼리가 날아가게 되므로 잘못 설계한 도메인이라 할 수 있다.
-- 이와 같은 방법을 쉽게 해결하려면 [[엔티티(entity)]]자체의 @Id 값을 @GeneratedValue로 설정하면 되겠지만, 부득이하게 사용자의 입력에 의존하는 @Id를 설계해야 할 경우도 있다.
+- 이와 같은 방법을 쉽게 해결하려면 [[엔티티(Entity)]]자체의 @Id 값을 @GeneratedValue로 설정하면 되겠지만, 부득이하게 사용자의 입력에 의존하는 @Id를 설계해야 할 경우도 있다.
 
 - 이 경우에는 다음과 같이 해결할 수 있습니다.
 

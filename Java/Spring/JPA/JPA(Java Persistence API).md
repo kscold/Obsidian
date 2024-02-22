@@ -4,7 +4,7 @@
 - 자바 표준 ORM(Object-Relational Mapping) 기술이다.
 - ORM은 객체 지향 프로그래밍 언어와 [[관계형 데이터베이스(Relational DataBase)]] 사이의 데이터를 매핑하는 기술을 의미한다.
 
-- JPA의 핵심 도구는 [[엔티티(entity)]]와 [[리파지터리(repository)]]이 있다.
+- JPA의 핵심 도구는 [[엔티티(Entity)]]와 [[리파지터리(Repository)]]이 있다.
 
 - 자바 언어로 DB에 명령을 내리는 도구로, 데이터를 객체 지향적으로 관리할 수 있게 해준다.
 

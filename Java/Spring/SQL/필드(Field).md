@@ -1,5 +1,5 @@
 - 필드 Field는 엑셀에서 열 column에 해당하는 가장 작은 단위의 데이터를 의미한다. 
-- 이 필드는 [[엔티티(entity)]]의 [[속성(Attribute)]]을 표현한다.
+- 이 필드는 [[엔티티(Entity)]]의 [[속성(Attribute)]]을 표현한다.
 
 ![[Pasted image 20240106023715.png]]
 

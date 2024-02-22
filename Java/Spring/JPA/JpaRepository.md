@@ -15,7 +15,7 @@
 ## JPARepository 사용법
 
 - Entity 클래스 정의한다.
-- JPARepository를 사용하여 액세스할 [[엔티티(entity)]] [[클래스(Class)]]를 정의해야한다.
+- JPARepository를 사용하여 액세스할 [[엔티티(Entity)]] [[클래스(Class)]]를 정의해야한다.
 
 ```java
 @Getter @Setter
@@ -96,7 +96,7 @@ public class UserService {
 
 #### findAll  
 
-- [[엔티티(entity)]] [[클래스(Class)]]에 대한 모든 데이터를 조회한다.
+- [[엔티티(Entity)]] [[클래스(Class)]]에 대한 모든 데이터를 조회한다.
 - 반환값은 List 형태이며, T는 엔티티 클래스이다.
 - 모든 데이터를 조회하므로, 대용량의 데이터를 조회할 때는 성능 이슈가 발생할 수 있다.
 

@@ -13,38 +13,33 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/DI(Dependency Injection).md",
+                "file": "Spring/JPA/@MappedSuperClass.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7404b9682d4df5fa",
+            "id": "94cc9ad73d838f85",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/리플렉션(Reflection).md",
+                "file": "Spring/SQL/다대일(ManyToOne).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ba0af9de3506234b",
+            "id": "fb68d644cb93a811",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Java/제네릭(Generic).md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/제네릭(Generic).md",
+                "file": "Spring/JPA/@MappedSuperClass.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/제네릭(Generic).md",
+                "file": "Spring/JPA/@MappedSuperClass.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/제네릭(Generic).md"
+                "file": "Spring/JPA/@MappedSuperClass.md"
               }
             }
           }
@@ -172,35 +167,36 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "ba0af9de3506234b",
+  "active": "f4faf621b4fb9ee6",
   "lastOpenFiles": [
-    "LinkedList.md",
-    "Java/제네릭(Generic).md",
-    "Spring/리플렉션(Reflection).md",
-    "Java/HashMap.md",
+    "@CreatedBy.md",
+    "Spring/JPA/@MappedSuperClass.md",
+    "Spring/JPA/@CreatedDate.md",
+    "Spring/JPA/@EntityListeners.md",
+    "Spring/JPA/Auditing.md",
+    "Spring/Gradle/yaml.md",
+    "Spring/JPA/@AutoConfigureTestDatabase.md",
+    "Spring/Test/assertThat().md",
+    "Spring/Test/AssertJ.md",
+    "테스트 메서드(Test Method).md",
+    "Spring/Test/@Test.md",
+    "Spring/Test/Given-When-Then.md",
+    "Spring/JPA/lombok/@ToString.md",
+    "Spring/JPA/@ManyToOne.md",
+    "Spring/SQL/관계형 데이터베이스(Relational DataBase).md",
+    "@OneToMany.md",
+    "Spring/JPA/@GeneratedValue.md",
+    "Spring/SQL/필드(Field).md",
+    "Spring/SQL/다대일(ManyToOne).md",
+    "Spring/SQL/외래 키(Foreign Key).md",
+    "Spring/JPA/엔티티(Entity).md",
+    "Spring/SQL/속성(Attribute).md",
     "Spring/DI(Dependency Injection).md",
-    "Spring/톰캣(Tomcat).md",
-    "Spring/Servlet/DispatcherServlet.md",
-    "인텔리제이 단축키.md",
-    "Java/인스턴스(Instance).md",
-    "Java/instanceof.md",
-    "Spring/Servlet/Filter.md",
-    "Java/Collection/Map.md",
-    "Java/Collection/Collection.md",
-    "Spring/MVC(Mode View Controller).md",
-    "Spring/Servlet/Servlet.md",
-    "Spring/Servlet/Servlet Container.md",
-    "Spring/템플릿(Template).md",
-    "Spring/Servlet/Forward.md",
-    "Spring/Redirect.md",
+    "Spring/SQL/다대다(ManyToMany).md",
+    "Spring/JPA/@Column.md",
+    "Spring/JPA/@LastModifiedDate.md",
+    "Spring/무제 폴더",
     "image/Pasted image 20240219034238.png",
-    "Spring/프론트 패턴(Front Pattern).md",
-    "Spring/Servlet/WAS(Web Application Sever).md",
-    "Spring/아파치(apache).md",
-    "Spring/Servlet/생명 주기(Life Cycle).md",
-    "Spring/Servlet/getParameter().md",
-    "Spring/웹 서버(Web Server).md",
-    "Spring/SQL/쿼리(query).md",
     "image/Pasted image 20240213224850.png",
     "image/Pasted image 20240206212431.png",
     "image/Pasted image 20231101224851.png",
@@ -219,7 +215,6 @@
     "Spring/Test",
     "Spring/Docker",
     "Spring/mustache",
-    "Spring/HTML",
     "무제 파일.canvas"
   ]
 }

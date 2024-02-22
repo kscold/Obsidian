@@ -1,4 +1,4 @@
-- 스프링에서 [[엔티티(entity)]]를 생성했을 때 @NoArgsConstructor를 필수적으로 사용한다.
+- 스프링에서 [[엔티티(Entity)]]를 생성했을 때 @NoArgsConstructor를 필수적으로 사용한다.
 - 따라서 @NoArgsConstructor [[어노테이션(Annotation)]]을 사용하면 기본 [[생성자(constructor)]] 코드를 작성하지 않아도 된다
 
 - 엔티티를 다루다보면 생성자를 만들어야 할 때가 생기고, 개발자의 편의를 위해 [[롬복(lombok)]] 를 자주 쓰기 마련이다.
@@ -76,7 +76,7 @@ class SubClass {
 
 ####  프록시가 적용되는 방식
 
-- [[엔티티(entity)]]를 상속하는 프록시 [[객체(Object)]]를 정의한다.
+- [[엔티티(Entity)]]를 상속하는 프록시 [[객체(Object)]]를 정의한다.
 - 이 프록시 객체를 초기화하기 위해 부모 객체, 즉 엔티티의 NoArgsConstructor를 호출한다.
 - 그래서 NoArgsConstructor가 필요한 것이다.
 
