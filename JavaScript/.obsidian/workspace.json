@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "useLoaction().md",
+                "file": "JavaScript/History API.md",
                 "mode": "source",
                 "source": false
               }
@@ -27,8 +27,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "JavaScript/History API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "JavaScript/History API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "JavaScript/History API.md"
+              }
             }
           }
         ]
@@ -151,19 +154,21 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "373480e7b3224c8d",
+  "active": "edc002dfb78ff5ff",
   "lastOpenFiles": [
-    "useLoaction().md",
-    "쿼리스트링(Querystring).md",
+    "React.js/Libaray/react-router-dom/useLoaction().md",
+    "JavaScript/History API.md",
+    "React.js/쿼리스트링(Querystring).md",
+    "HTML/<Tr>.md",
+    "HTML/<table>.md",
+    "JavaScript/속성(Property).md",
     "React.js/URL 파라미터.md",
     "React.js/Libaray/react-router-dom/useParams().md",
-    "JavaScript/속성(Property).md",
     "React.js/조건부 렌더링.md",
     "React.js/Libaray/react-router-dom/React Router.md",
     "React.js/Libaray/react-router-dom",
     "React.js/Libaray/react-router-dom/<Link>.md",
     "JavaScript/스코프(Scope).md",
-    "History API.md",
     "React.js/componentDidMount().md",
     "React.js/SPA(Single Page Application).md",
     "React.js/라우팅(Routing).md",
@@ -178,8 +183,6 @@
     "JavaScript/JSON.stringify().md",
     "JavaScript/JSON(Java Script Object Notation).md",
     "JavaScript/storage 이벤트.md",
-    "JavaScript/sessionStorage.md",
-    "JavaScript/prototype.md",
     "image/Pasted image 20240215192907.png",
     "React.js/Next.js",
     "image/Pasted image 20240202024338.png",
