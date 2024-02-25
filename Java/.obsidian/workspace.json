@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f4faf621b4fb9ee6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spring/JPA/@MappedSuperClass.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "94cc9ad73d838f85",
             "type": "leaf",
             "state": {
@@ -35,11 +23,36 @@
             "id": "fb68d644cb93a811",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spring/Test/@WebMvcTest.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4045aec963db931e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spring/JSP/Thymeleaf.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "13fcf24f269ef861",
+            "type": "leaf",
+            "state": {
               "type": "graph",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -105,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/JPA/@MappedSuperClass.md",
+                "file": "Spring/JSP/Thymeleaf.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/JPA/@MappedSuperClass.md",
+                "file": "Spring/JSP/Thymeleaf.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/JPA/@MappedSuperClass.md"
+                "file": "Spring/JSP/Thymeleaf.md"
               }
             }
           }
@@ -167,34 +180,34 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "f4faf621b4fb9ee6",
+  "active": "4045aec963db931e",
   "lastOpenFiles": [
-    "@CreatedBy.md",
-    "Spring/JPA/@MappedSuperClass.md",
-    "Spring/JPA/@CreatedDate.md",
-    "Spring/JPA/@EntityListeners.md",
-    "Spring/JPA/Auditing.md",
-    "Spring/Gradle/yaml.md",
-    "Spring/JPA/@AutoConfigureTestDatabase.md",
-    "Spring/Test/assertThat().md",
-    "Spring/Test/AssertJ.md",
-    "테스트 메서드(Test Method).md",
+    "Spring/템플릿(Template).md",
+    "Spring/JSP/Thymeleaf.md",
+    "인텔리제이 단축키.md",
+    "Spring/Test/MockMvc.md",
+    "Spring/Test/TDD(Test Driven Development).md",
     "Spring/Test/@Test.md",
+    "Spring/Test/테스트 메서드(Test Method).md",
+    "Spring/Test/@MockBean.md",
     "Spring/Test/Given-When-Then.md",
-    "Spring/JPA/lombok/@ToString.md",
-    "Spring/JPA/@ManyToOne.md",
-    "Spring/SQL/관계형 데이터베이스(Relational DataBase).md",
-    "@OneToMany.md",
-    "Spring/JPA/@GeneratedValue.md",
-    "Spring/SQL/필드(Field).md",
-    "Spring/SQL/다대일(ManyToOne).md",
-    "Spring/SQL/외래 키(Foreign Key).md",
-    "Spring/JPA/엔티티(Entity).md",
+    "Spring/Test/@WebMvcTest.md",
+    "Spring/@ApplicationContext(AppConfig.class).md",
+    "Spring/SQL/?(Placeholder).md",
+    "Spring/JPA/queryDSL.md",
+    "ERD(Entity Relationship Diagram).md",
     "Spring/SQL/속성(Attribute).md",
-    "Spring/DI(Dependency Injection).md",
+    "Spring/SQL/연관 관계(Relationships).md",
+    "Spring/API(Application Programming Interface).md",
+    "Spring/JPA/엔티티(Entity).md",
     "Spring/SQL/다대다(ManyToMany).md",
-    "Spring/JPA/@Column.md",
-    "Spring/JPA/@LastModifiedDate.md",
+    "Spring/SQL/레코드(Record).md",
+    "Spring/SQL/다대일(ManyToOne).md",
+    "Spring/SQL/일대다(OnetoMany).md",
+    "Spring/JPA/@OneToMany.md",
+    "참조 타입(Reference Type).md",
+    "Java/HashMap.md",
+    "Java/Collection/Iterator().md",
     "Spring/무제 폴더",
     "image/Pasted image 20240219034238.png",
     "image/Pasted image 20240213224850.png",
@@ -214,7 +227,7 @@
     "Spring/JPA/CrudRepository",
     "Spring/Test",
     "Spring/Docker",
-    "Spring/mustache",
+    "Spring/JSP/mustache",
     "무제 파일.canvas"
   ]
 }

@@ -74,7 +74,7 @@ public class OrderServiceImpl implements OrderService {
 ```
 
 - 의존해야하는 객체를 우선 private final로 선언한다.
-- 자바 빈 프로퍼티 규약에 따라 해당 변수에 대한 [[setter]] 메서드를 생성하고, 해당 setter에 @Autowired를 붙여서 사용한다.
+- 자바 빈 프로퍼티 규약에 따라 해당 변수에 대한 setter 메서드를 생성하고, 해당 setter에 @Autowired를 붙여서 사용한다.
 
 ### 필드 주입
 
