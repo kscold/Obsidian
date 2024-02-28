@@ -8,7 +8,7 @@
 - ddl-auto는 데이터베이스의 [[테이블(Table)]]을 [[JPA(Java Persistence API)]] 의 구현체가 자동으로 생성해주는 기능을 말한다.
 - 테이블 자동 생성 전략이라고 불린다.
 
-- 데이터베이스에는 다양한 dialect가 존재하는데 JPA 구현체는 application.[[yaml]]에 지정되어 있는 dialect에 맞는 적정한 DDL을 생성한다.
+- 데이터베이스에는 다양한 dialect가 존재하는데 JPA 구현체는 [[application.yaml]]에 지정되어 있는 dialect에 맞는 적정한 DDL을 생성한다.
 
 ### ddl-auto 속성
 

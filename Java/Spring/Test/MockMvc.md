@@ -146,27 +146,32 @@ public void testController() throws Exception{
 
 - MockMvc는 요청에 대한 설정을 할 수 있다.  
 
-#### param / params 
+#### param() / params()
 
 - 쿼리 스트링을 설정한다.
-#### cookie
+#### cookie()
 
 - 쿠키를 설정한다.
-#### requestAttr 
+#### requestAttr ()
 
 - 요청 스코프 객체를 설정한다.
-#### sessionAttr
+#### sessionAttr()
 
 - 세션 스코프 객체를 설정한다.
-#### content
+#### content()
 
 - 요청 본문 설정한다.
-#### header / headers
+#### header() / headers()
 
 - 요청 헤더 설정한다.
-#### contentType
+#### contentType()
 
 - 본문 타입을 설정한다.
+
+#### contentTypeCompatibleWith()
+
+- 본문 타입을 설정하는 뒤에 부가정보를 비교하지 않는다.
+- 예를 들어 :UTF-8과 같은 정보까지 비교하지 않기 때문에 실 개발에서 많이 쓰인다.
 
 
 ```java

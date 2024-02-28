@@ -4,7 +4,7 @@
 - 하지만, 다양한 View의 요구사항을 만족시키는 HTTP API를 만드는데는 Spring MVC를 사용하는 것이 빠르다.
 
 
-## build.gradle과 appliaction.[[yaml]] 설정
+## build.gradle과 [[application.yaml]] 설정
 
 ```yaml
 data:  
@@ -202,5 +202,3 @@ curl --location --request GET 'http://192.168.78.154:8080/api/comments/1/keyword
     }
 }
 ```
-
-출처: [https://mulmandu17.tistory.com/56](https://mulmandu17.tistory.com/56) [개발 일지:티스토리]

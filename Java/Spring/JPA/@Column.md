@@ -1,4 +1,6 @@
-- @Column 어노테이션은 [[객체(Object)]] [[Java/필드(Field)|필드(Field)]]와 DB [[테이블(Table)]] 컬럼([[Spring/SQL/필드(Field)|필드(Field)]])을 맵핑한다.
+- @Column [[어노테이션(Annotation)]]은 [[객체(Object)]] [[Java/필드(Field)|필드(Field)]]와 DB [[테이블(Table)]] 컬럼([[Spring/SQL/필드(Field)|필드(Field)]])을 맵핑한다.
+
+- [[JPA(Java Persistence API)]]의 경우 자동적으로 [[SQL]] [[쿼리(query)]]를 날려 [[테이블(Table)]]을 만들어주기 때문에 [[Spring/SQL/필드(Field)|필드(Field)]]마다 원하는 설정을 하기 위해서 @Column [[어노테이션(Annotation)]]을 사용한다.
 
 ### @Column의 속성  
 

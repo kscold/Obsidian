@@ -117,7 +117,7 @@ public class MemberApp {
 }
 ```
 
-- [[@ApplicationContext(AppConfig.class)]]와 [[@Configuration]]를 사용하여 스프링 컨테이너를 생성하고 등록할 수 있다.
+- [[@ApplicationContext()]]와 [[@Configuration]]를 사용하여 스프링 컨테이너를 생성하고 등록할 수 있다.
 
 ### XML을 이용한 방법(Meven)
 

@@ -8,51 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "94cc9ad73d838f85",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spring/SQL/다대일(ManyToOne).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fb68d644cb93a811",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spring/Test/@WebMvcTest.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4045aec963db931e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spring/JSP/Thymeleaf.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "13fcf24f269ef861",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Spring/SQL/DELETE.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d4cd0ccc4a179caf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "인텔리제이 단축키.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -118,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/JSP/Thymeleaf.md",
+                "file": "인텔리제이 단축키.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/JSP/Thymeleaf.md",
+                "file": "인텔리제이 단축키.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/JSP/Thymeleaf.md"
+                "file": "인텔리제이 단축키.md"
               }
             }
           }
@@ -180,34 +160,36 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "4045aec963db931e",
+  "active": "d4cd0ccc4a179caf",
   "lastOpenFiles": [
-    "Spring/템플릿(Template).md",
-    "Spring/JSP/Thymeleaf.md",
-    "인텔리제이 단축키.md",
+    "Spring/SQL/DELETE.md",
+    "Spring/JPA/@Column.md",
+    "Spring/JPA/Spring Data Rest.md",
+    "데이터베이스(DataBase).md",
+    "Spring/SQL/CREATE.md",
+    "Spring/SQL/사용자(USER).md",
+    "@ConfigurationProperties.md",
+    "Spring/프로퍼티 바인딩(Property Binding).md",
+    "@Value.md",
+    "Spring/JPA/@AutoConfigureTestDatabase.md",
+    "Spring/JPA/DDL(Data Definition Language).md",
     "Spring/Test/MockMvc.md",
+    "Spring/Test/@WebMvcTest.md",
+    "Spring/Gradle/application.yaml.md",
+    "Spring/@ApplicationContext().md",
+    "Spring/@Configuration.md",
+    "image/Pasted image 20240226020336.png",
+    "image/Pasted image 20240226020200.png",
+    "Java/싱글톤(Singleton).md",
+    "Spring/JPA/@CreatedBy.md",
+    "Spring/@Component.md",
+    "Spring/@Bean.md",
+    "Spring/@Autowired.md",
+    "Spring/JSP/Thymeleaf.md",
+    "Spring/템플릿(Template).md",
+    "인텔리제이 단축키.md",
     "Spring/Test/TDD(Test Driven Development).md",
     "Spring/Test/@Test.md",
-    "Spring/Test/테스트 메서드(Test Method).md",
-    "Spring/Test/@MockBean.md",
-    "Spring/Test/Given-When-Then.md",
-    "Spring/Test/@WebMvcTest.md",
-    "Spring/@ApplicationContext(AppConfig.class).md",
-    "Spring/SQL/?(Placeholder).md",
-    "Spring/JPA/queryDSL.md",
-    "ERD(Entity Relationship Diagram).md",
-    "Spring/SQL/속성(Attribute).md",
-    "Spring/SQL/연관 관계(Relationships).md",
-    "Spring/API(Application Programming Interface).md",
-    "Spring/JPA/엔티티(Entity).md",
-    "Spring/SQL/다대다(ManyToMany).md",
-    "Spring/SQL/레코드(Record).md",
-    "Spring/SQL/다대일(ManyToOne).md",
-    "Spring/SQL/일대다(OnetoMany).md",
-    "Spring/JPA/@OneToMany.md",
-    "참조 타입(Reference Type).md",
-    "Java/HashMap.md",
-    "Java/Collection/Iterator().md",
     "Spring/무제 폴더",
     "image/Pasted image 20240219034238.png",
     "image/Pasted image 20240213224850.png",
@@ -217,8 +199,6 @@
     "image/Pasted image 20231012205519.png",
     "image/Pasted image 20231012172903.png",
     "image/Pasted image 20231012133632.png",
-    "image/Pasted image 20231005111135.png",
-    "image/Pasted image 20240219022021.png",
     "Spring/Servlet",
     "Spring/DBCP",
     "Spring/JDBC",
