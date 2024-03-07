@@ -43,7 +43,7 @@ class Car2 { // private로 만들어서 fuel에 조건을 걸음
 
 - 따라서 [[클래스(Class)]]에 데이터([[Java/필드(Field)|필드(Field)]])와 기능([[메서드(Method)]])을 한 곳에 모아둔 다음 보호하고 싶은 멤버에 private 를 붙여 접근을 제한하는 기능을 일컬어 [[캡슐화(encapsulation)]]라고 한다.
 
-- 참고로 보통의 경우 [[Java/필드(Field)|필드(Field)]][[변수(Variable)]]([[멤버 변수(Nember Variable)]])는 private로, 함수([[메서드(Method)]])는 [[public]] 로 지정한다.
+- 참고로 보통의 경우 [[Java/필드(Field)|필드(Field)]][[변수(Variable)]]([[멤버 변수(Member Variable)]])는 private로, 함수([[메서드(Method)]])는 [[public]] 로 지정한다.
 
 ## 에시
 

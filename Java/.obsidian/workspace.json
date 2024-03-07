@@ -25,14 +25,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "인텔리제이 단축키.md",
+                "file": "Spring/CORS(Cross-Origin Resource Sharing Policy).md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "abefa52c6235ab22",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +106,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "인텔리제이 단축키.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +122,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "인텔리제이 단축키.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +143,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "인텔리제이 단축키.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -160,36 +164,38 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "d4cd0ccc4a179caf",
+  "active": "abefa52c6235ab22",
   "lastOpenFiles": [
-    "Spring/SQL/DELETE.md",
-    "Spring/JPA/@Column.md",
-    "Spring/JPA/Spring Data Rest.md",
-    "데이터베이스(DataBase).md",
+    "Java/어노테이션(Annotation).md",
+    "Java/클래스(Class).md",
+    "Spring/객체(Object).md",
+    "Spring/CORS(Cross-Origin Resource Sharing Policy).md",
+    "WebMvcConfigurer.md",
+    "Spring/템플릿(Template).md",
+    "@ControllerAdvice.md",
+    "Spring/@Component.md",
+    "Spring/@RestControllerAdvice.md",
+    "Spring/SQL/WHERE.md",
+    "Spring/SQL/SQL.md",
+    "Spring/SQL/기호 문자(Wildcard Character).md",
+    "LIKE.md",
+    "Spring/SQL/INSERT.md",
+    "Spring/SQL/GROUP.md",
+    "Spring/SQL/DROP.md",
     "Spring/SQL/CREATE.md",
-    "Spring/SQL/사용자(USER).md",
-    "@ConfigurationProperties.md",
-    "Spring/프로퍼티 바인딩(Property Binding).md",
-    "@Value.md",
-    "Spring/JPA/@AutoConfigureTestDatabase.md",
-    "Spring/JPA/DDL(Data Definition Language).md",
-    "Spring/Test/MockMvc.md",
-    "Spring/Test/@WebMvcTest.md",
-    "Spring/Gradle/application.yaml.md",
-    "Spring/@ApplicationContext().md",
-    "Spring/@Configuration.md",
+    "Spring/JPA/Paging.md",
+    "Spring/JPA/JPA(Java Persistence API).md",
+    "Java/Stream/IntStream.md",
+    "Java/Stream/boxed().md",
+    "Java/Stream/Stream.of().md",
+    "Spring/JPA/lombok/@Builder.md",
+    "Spring/JPA/lombok/@SuperBuilder.md",
+    "Spring/빌더 패턴(Builder Pattern).md",
+    "Spring/@Value.md",
+    "image/Pasted image 20240229173714.png",
+    "image/Pasted image 20240229150251.png",
     "image/Pasted image 20240226020336.png",
     "image/Pasted image 20240226020200.png",
-    "Java/싱글톤(Singleton).md",
-    "Spring/JPA/@CreatedBy.md",
-    "Spring/@Component.md",
-    "Spring/@Bean.md",
-    "Spring/@Autowired.md",
-    "Spring/JSP/Thymeleaf.md",
-    "Spring/템플릿(Template).md",
-    "인텔리제이 단축키.md",
-    "Spring/Test/TDD(Test Driven Development).md",
-    "Spring/Test/@Test.md",
     "Spring/무제 폴더",
     "image/Pasted image 20240219034238.png",
     "image/Pasted image 20240213224850.png",
@@ -197,8 +203,6 @@
     "image/Pasted image 20231101224851.png",
     "image/Pasted image 20231012205605.png",
     "image/Pasted image 20231012205519.png",
-    "image/Pasted image 20231012172903.png",
-    "image/Pasted image 20231012133632.png",
     "Spring/Servlet",
     "Spring/DBCP",
     "Spring/JDBC",

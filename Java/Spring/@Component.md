@@ -1,4 +1,4 @@
-- @Component [[어노테이션(Annotation)]]의 경우 개발자가 직접 작성한 [[클래스(Class)]]를 [[Bean]]으로 등록하기 위한 어노테이션이다. 
+- @Component [[어노테이션(Annotation)]]의 경우 개발자가 직접 작성한 [[클래스(Class)]]를 [[Bean]]으로 등록하기 위한 [[어노테이션(Annotation)]]이다. 
 
 
 ## 예시

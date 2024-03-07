@@ -1,5 +1,5 @@
-- Collection을 Wrapping하면서, 그 외 다른 [[멤버 변수(Nember Variable)]]가 없는 상태를 일급 컬렉션이라 한다.
-- 즉, [[Collection]]을 포함한 [[클래스(Class)]] 는 반드시 다른 [[멤버 변수(Nember Variable)]]가 없어야 한다.  
+- Collection을 Wrapping하면서, 그 외 다른 [[멤버 변수(Member Variable)]]가 없는 상태를 일급 컬렉션이라 한다.
+- 즉, [[Collection]]을 포함한 [[클래스(Class)]] 는 반드시 다른 [[멤버 변수(Member Variable)]]가 없어야 한다.  
 
 - 불변성 유지를 위하여 사용한다.
 - [[final]] 키워드로 일급 컬렉션을 만들 수 없기 때문에 [[Collection]]을 따로 정의해서 사용한다.

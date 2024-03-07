@@ -1,4 +1,4 @@
-- 접근제어자는 [[클래스(Class)]]의 [[멤버 변수(Nember Variable)]]와 [[메서드(Method)]]들의 접근 권한을 지정한다.
+- 접근제어자는 [[클래스(Class)]]의 [[멤버 변수(Member Variable)]]와 [[메서드(Method)]]들의 접근 권한을 지정한다.
 
 - 접근제어자의 종류는 4가지로 [[public]], protected, default, [[private]]이며,  접근 허용 가능 범위 순서 또한 아래와 같이 나타낼 수 있다.
 
