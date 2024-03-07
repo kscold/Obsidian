@@ -19,6 +19,6 @@ navigate({ // /book?sort=asc&page=3 으로 이동
       search: `?${createSearchParams({
         sort: 'asc',
         page: 3,
-      })}`,
+      })}`, // /book?sort=asc&page=3
 });
 ```

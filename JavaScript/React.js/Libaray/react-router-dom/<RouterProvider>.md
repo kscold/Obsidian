@@ -1,38 +1,4 @@
-- 지금까지 [[React Router]] 라이브러리에서 사용했던 라우터 방식말고 React Router v6.4에 추가된 방식이다.
-
-## 기존 방식
-
-- `<BrowserRouter>` 태그를 사용하여 하위 컴포넌트를 모두 감싸는 방식으로 등록을 하였다.
-
-```jsx
-import { BrowserRouter } from 'react-router-dom'
-
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(
-  <BrowserRouter> // 최상단 root에서 BrowserRouter로 감싸기
-      <App /> 
-  </BrowserRouter>
-)
-```
-
-- 이후 `<Routes>`와 `<Route>`를 사용하여 모든 패스를 묶어주었다.
-
-```jsx
-import { Route, Routes } from 'react-router-dom'
-
-const App = () => {
-  return (
-    <Routes>
-      <Route path='/' element={<Layout />} > // outlet을 이용한 중첩라우팅
-        <Route index element={<Main />} /> 
-        <Route path='/pageA' element={<PageA />} />
-        <Route path='/pageB' element={<PageB />} />
-        <Route path='/pageC' element={<PageC />} />
-      </Route>
-      </Routes>
-  )
-}
-```
+- 지금까지 [[React Router]] 라이브러리에서 사용했던 [[<BrowserRouter>]]라우터 방식말고 React Router v6.4에 추가된 방식이다.
 
 ## RouterProvider와 CreateBrowserRouter
 
@@ -82,7 +48,7 @@ export const RouterInfo = [ // 패스 설정파일을 새로 만듬
 ```
 
 - 우선 기존의 방식처럼 BrowserRouter로 감싸지 않는다.
-- RouterProvider를 이용해서 구성요소들을 전달하고 활성화 한다.
+- RouterProvider를 이용해서 router [[props]]에 구성요소들을 전달하고 활성화한다.
 
 ```js
 import { createBrowserRouter, RouterProvider, } from 'react-router-dom';
@@ -135,9 +101,9 @@ export default root;
 ```
 
 
-## `<Outlet>`
+## [[<Outlet>]]
 
-- 또한 `<RouterProvider>`와 CreateBrowserRouter를 사용하였을 때 패스에서 children을 설정하면 uri 패스에 따라 `<Outlet>`를 통해 [[children]] [[컴포넌트(component)]]를 설정할 수 있다.
+- 또한 `<RouterProvider>`와 CreateBrowserRouter를 사용하였을 때 패스에서 children을 설정하면 uri 패스에 따라 [[<Outlet>]]를 통해 [[children]] [[컴포넌트(component)]]를 설정할 수 있다.
 
 ```jsx
 import { createBrowserRouter } from 'react-router-dom';
@@ -217,7 +183,7 @@ const IndexPage = () => {
 				</div>
 				
 				<div className="flex flex-wrap w-full">
-					<Outlet />
+					<Outlet /> {/* todo/list element로 연결됨 */} 
 				</div>
 			</div>
 		</BasicLayout>

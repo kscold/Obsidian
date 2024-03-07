@@ -8,19 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ffe281f2a3a42cd1",
+            "id": "5f5640c8a58c50e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React.js/Libaray/react-router-dom/createSearchParams().md",
+                "file": "JavaScript/클래스(class).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5f5640c8a58c50e3",
+            "id": "003391b88b273696",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React.js/Libaray/react-router-dom/createSearchParams().md",
+                "file": "JavaScript/클래스(class).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React.js/Libaray/react-router-dom/createSearchParams().md",
+                "file": "JavaScript/클래스(class).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React.js/Libaray/react-router-dom/createSearchParams().md"
+                "file": "JavaScript/클래스(class).md"
               }
             }
           }
@@ -154,35 +154,36 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "ffe281f2a3a42cd1",
+  "active": "5f5640c8a58c50e3",
   "lastOpenFiles": [
-    "React.js/Libaray/react-router-dom/useNavigate().md",
+    "JavaScript/prototype.md",
+    "JavaScript/클래스(class).md",
+    "JavaScript/메서드(Method).md",
+    "JavaScript/인스턴스(Instance).md",
+    "JavaScript/this.md",
+    "JavaScript/window.md",
+    "JavaScript/생성자 함수(Constructor Function).md",
+    "생성자 함수(Constructor Function) 1.md",
+    "JavaScript/function.md",
     "JavaScript/속성(Property).md",
-    "React.js/Libaray/react-router-dom/createSearchParams().md",
-    "React.js/Libaray/react-router-dom/<RouterProvider>.md",
-    "React.js/Libaray/react-router-dom/useParams().md",
-    "React.js/Libaray/react-router-dom/<Navigate>.md",
-    "React.js/Libaray/react-router-dom/<Link>.md",
-    "React.js/쿼리스트링(Querystring).md",
-    "React.js/Libaray/react-router-dom/useSearchParams().md",
-    "React.js/Libaray/react-router-dom/useLocation().md",
-    "React.js/Hooks.md",
-    "JavaScript/req.md",
-    "JavaScript/컴포넌트(component).md",
-    "React.js/lazy().md",
-    "React.js/<Suspense>.md",
-    "React.js/Libaray/react-router-dom/React Router.md",
-    "JavaScript/History API.md",
-    "HTML/<Tr>.md",
-    "HTML/<table>.md",
-    "React.js/URL 파라미터.md",
-    "React.js/조건부 렌더링.md",
+    "생성자 함수(Constructor Function)에 의해서 [[함수(Function).md",
+    "JavaScript/함수(Function).md",
+    "JavaScript/생성자(Constructor).md",
+    "JavaScript/constructor().md",
+    "JavaScript/참조 타입(Reference Type).md",
+    "JavaScript/일급 객체(First Class Object).md",
+    "JavaScript/고차함수(Higher Order Function).md",
+    "React.js/Libaray/axios.md",
+    "고차함수(Higher order function).md",
+    "JavaScript/콜백 함수(Callback Function).md",
+    "JavaScript/매개변수(parameter).md",
+    "JavaScript/일급 함수(First Class Function).md",
+    "JavaScript/비구조화 할당.md",
+    "React.js/props.md",
+    "React.js/children.md",
+    "React.js/Libaray/react-router-dom/<NavLink>.md",
+    "React.js/Libaray/axios",
     "React.js/Libaray/react-router-dom",
-    "JavaScript/스코프(Scope).md",
-    "React.js/componentDidMount().md",
-    "React.js/SPA(Single Page Application).md",
-    "React.js/라우팅(Routing).md",
-    "React.js/Next.js/Next.js.md",
     "image/Pasted image 20240215192907.png",
     "React.js/Next.js",
     "image/Pasted image 20240202024338.png",
@@ -200,7 +201,6 @@
     "HTML/property",
     "async",
     "TypeScript",
-    "JavaScript",
-    "React.js/Jest"
+    "JavaScript"
   ]
 }

@@ -3,10 +3,10 @@
 
 - 즉, 선언이 아닌 호출에 따라 달라진다.
 
-## 1. 단독으로 쓴 this
+## 단독으로 쓴 this
 
 - 단독으로 this를 호출하는 경우엔 global object(전역 객체)를 가리킨다.
-- 브라우저에서 호출하는 경우 object Window가 된다.
+- 브라우저에서 호출하는 경우 object [[window]]가 된다.
 
 - 이는 ES5에서 추가된 strict mode(엄격 모드)에서도 마찬가지이다.
 
@@ -18,14 +18,14 @@ var x = this;
 console.log(x); //Window
 ```
 
-## 2. [[함수(Function)]] 안에서 쓴 this
+## [[함수(Function)]] 안에서 쓴 this
 
 - 함수 안에서 this는 함수의 주인에게 [[바인딩(binding)]]된다.
-- 함수의 주인은  [[window]] [[객체(Object)]]이다.
+- 함수의 주인은 [[window]] [[객체(Object)]]이다.
 
 ```javascript
 function myFunction() { 
-	return this;
+	return this; // 단독으로 this를 명시했기 때문에 window 객체를 가리킴
 }
 
 console.log(myFunction()); // window
@@ -39,7 +39,7 @@ function addNum() {
 	num++;    
 	
 	console.log(num); // 101 
-	console.log(window.num); // 101 
+	console.log(window.num); // 101 전역 객체인 window 객에 안에 addNum가 있기 때문에 결과 동일
 	console.log(num === window.num); // true
 } 
 
@@ -75,14 +75,20 @@ function addNum() {
 
 - 따라서 this.num을 호출하면 undefined.num을 호출하는 것과 마찬가지기 때문에 에러가 난다.
 
-## 3. [[메서드(Method)]] 안에서 쓴 this
+## [[메서드(Method)]] 안에서 쓴 this
 
 - 메서드 호출 시 메서드 내부 코드에서 사용된 this는 해당 메서드를 호출한 객체로 바인딩된다.
 
 ```javascript
-var person = { firstName: 'John', lastName: 'Doe', fullName: function () {
-	return this.firstName + ' ' + this.lastName; 
-},}; 
+var person = { 
+	firstName: 'John', 
+	lastName: 'Doe', 
+	fullName: 
+	
+	function () {
+		return this.firstName + ' ' + this.lastName; 
+	},
+}; 
 
 person.fullName(); //"John Doe"
 ```
@@ -105,7 +111,7 @@ btn.addEventListener('click', function() {
 
 ## 5. [[생성자(Constructor)]] 안에서 쓴 this
 
-- 생성자 함수가 생성하는 객체로 this가 [[바인딩(binding)]]된다.
+- [[생성자 함수(Constructor Function)]]가 생성하는 객체로 this가 [[바인딩(binding)]]된다.
 
 ```javascript
 function Person(name) {  
@@ -256,7 +262,7 @@ Array.from(children).forEach(function (el) {
  });
 ```
 
-## 6. [[화살표 함수(Arrow function)]]로 쓴 this
+## [[화살표 함수(Arrow function)]]로 쓴 this
 
 - 일반 함수 키워드인 funtion 안에서 this가 전역 객체가 되는 것을 피하고 싶으면 화살표 함수를 쓰면 된다.
 - 화살표 함수는 전역 컨텍스트에서 실행되더라도 this를 새로 정의하지 않고, 바로 바깥 함수나 클래스의 this를 사용하기 때문이다.

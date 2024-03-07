@@ -1,5 +1,6 @@
-- [[React Router]] 라이브러리의 useNavigate는 프로그래밍 방식으로 방향을 처리(navigate)할 수 있는 [[함수(Function)]]를 반환한다.
+- [[React Router]] 라이브러리의 useNavigate()는 프로그래밍 방식으로 [[<Link>]] [[컴포넌트(component)]]를 사용하지 않고 다른 페이지로 이동해야 하는 상황에 사용하는 [[Hooks]]이다.
 
+- 방향을 처리(navigate)할 수 있는 [[함수(Function)]]를 반환한다.
 
 ## 문법
 
@@ -8,7 +9,7 @@ navigate("../success",  { replace: true });
 ```
 
 - navigate(0), navigate(-1) 과 같은 값을 넣어 페이지 새로고침, 히스토리의 뒤로가기 버튼과 같은 동작을 시킬 수도 있다.
-- 옵셔널한 두 번째 인자로 [[객체(Object)]]를 전달하면서 replace와 state를 설정할 수 있다.
+- 옵셔널한 두 번째 인자로 [[객체(Object)]]를 전달하면서 replace와 [[state]]를 설정할 수 있다.
 
 ### replace
 

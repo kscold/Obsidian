@@ -1,4 +1,4 @@
-- props는 properties를 줄인 표현으로 컴포넌트 속성을 선정할 때 사용하는 요소이다.
+- [[리액트(React)]]에서 props는 properties를 줄인 표현으로 [[컴포넌트(component)]] 속성을 선정할 때 사용하는 요소이다.
 
 ### JSX 내부에서 props 렌더링
 
@@ -12,7 +12,7 @@ const App = () => {
 export default App;
 ```
 
-- key값으로 props가 넘어감
+- 속성 이름이 key값으로 실제 데이터가 value로 props가 넘어간다.
 
 ### defaultProps
 
@@ -30,7 +30,8 @@ MyComponent.defaultProps = {
 export default MyComponent;
 ```
 
-### children
+### [[children]]
+
 - children은 리액트 컴포넌트 태그 사이의 내용을 보여주는 props이다.
 
 ```jsx
@@ -60,7 +61,7 @@ MyComponent.defaultProps = {
 export default MyComponent;
 ```
 
-### 비구조화 할당을 사용한 예시
+## [[비구조화 할당]]을 사용한 예시
 
 ```jsx
 // MyCompoent.js
