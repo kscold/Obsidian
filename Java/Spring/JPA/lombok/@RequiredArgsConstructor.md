@@ -3,9 +3,9 @@
 
 ## @RequiredArgsConstructor
 
-- [[final]]이 붙거나 @NotNull이 붙은 [[Java/필드(Field)|필드(Field)]]의 생성자를 자동 생성해주는 [[롬복(lombok)]] [[어노테이션(Annotation)]]이다.
+- [[final]]이 붙거나 @NotNull이 붙은 [[Java/필드(Field)|필드(Field)]]의 [[생성자(constructor)]]를 자동 생성해주는 [[롬복(lombok)]] [[어노테이션(Annotation)]]이다.
 
-- 필드 주입방식을 사용한 기존 Service이다.
+- [[Java/필드(Field)|필드(Field)]] 주입방식을 사용한 기존 [[서비스(Service)]]이다.
 
 ```java
 @Service

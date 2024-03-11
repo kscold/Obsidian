@@ -1,8 +1,8 @@
 - @OneToMany [[어노테이션(Annotation)]]을 가지고 있는 쪽이 부모 [[엔티티(Entity)]]가 된다.
+- 보통 [[다대일(ManyToOne)]], [[일대다(OnetoMany)]] 관계에서 사용됨으로 [[@ManyToOne]]과 같이 쓰인다.
 
 
-
-## @ManyToOne 속성
+## @OneToMany 속성
 
 - @ManyToOne 속성에는 다음과 같은 것들이 있다.
 	- targetEntity

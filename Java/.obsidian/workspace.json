@@ -35,8 +35,12 @@
             "id": "abefa52c6235ab22",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Spring/JPA/@ElementCollection.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -106,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Spring/JPA/@ElementCollection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,6 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Spring/JPA/@ElementCollection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +149,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Spring/JPA/@ElementCollection.md"
+              }
             }
           }
         ]
@@ -166,6 +174,25 @@
   },
   "active": "abefa52c6235ab22",
   "lastOpenFiles": [
+    "Spring/JPA/@OneToMany.md",
+    "Spring/JPA/@ManyToOne.md",
+    "Spring/JPA/@ElementCollection.md",
+    "Java/원시 타입(Primitive Type).md",
+    "Spring/JPA/@Embedded.md",
+    "Spring/SQL/속성(Attribute).md",
+    "값 타입 컬렉션.md",
+    "Java/String.md",
+    "Spring/JPA/@EntityGraph.md",
+    "Spring/SQL/연관 관계(Relationships).md",
+    "Spring/SQL/다대일(ManyToOne).md",
+    "Spring/SQL/일대다(OnetoMany).md",
+    "Spring/SQL/필드(Field).md",
+    "Java/Path.md",
+    "Spring/@PostConstruct.md",
+    "Spring/JPA/lombok/@RequiredArgsConstructor.md",
+    "파일 업로드.md",
+    "Spring/MultipartFile.md",
+    "Spring/JPA/lombok/@Builder.md",
     "Java/어노테이션(Annotation).md",
     "Java/클래스(Class).md",
     "Spring/객체(Object).md",
@@ -173,25 +200,6 @@
     "WebMvcConfigurer.md",
     "Spring/템플릿(Template).md",
     "@ControllerAdvice.md",
-    "Spring/@Component.md",
-    "Spring/@RestControllerAdvice.md",
-    "Spring/SQL/WHERE.md",
-    "Spring/SQL/SQL.md",
-    "Spring/SQL/기호 문자(Wildcard Character).md",
-    "LIKE.md",
-    "Spring/SQL/INSERT.md",
-    "Spring/SQL/GROUP.md",
-    "Spring/SQL/DROP.md",
-    "Spring/SQL/CREATE.md",
-    "Spring/JPA/Paging.md",
-    "Spring/JPA/JPA(Java Persistence API).md",
-    "Java/Stream/IntStream.md",
-    "Java/Stream/boxed().md",
-    "Java/Stream/Stream.of().md",
-    "Spring/JPA/lombok/@Builder.md",
-    "Spring/JPA/lombok/@SuperBuilder.md",
-    "Spring/빌더 패턴(Builder Pattern).md",
-    "Spring/@Value.md",
     "image/Pasted image 20240229173714.png",
     "image/Pasted image 20240229150251.png",
     "image/Pasted image 20240226020336.png",
