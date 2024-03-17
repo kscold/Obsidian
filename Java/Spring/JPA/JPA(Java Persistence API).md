@@ -11,6 +11,18 @@
 - [[JDBC(Java DataBase Connectivity)]]와 JPA(Java Persistence API) 모두 [[데이터베이스(DataBase)]]와 상호작용하기 위한 기술이나, JPA는 개발자는 [[SQL]] 쿼리를 직접 작성하는 대신 JPA의 기능을 사용하여 데이터베이스 작업을 수행할 수 있다.
 
 
+## JPA에서 컬렉션
+
+- JPA는 자바에서 기본으로 제공하는 [[Collection]], [[List]], [[Set]], [[Map]] 컬렉션을 지원하고, 아래와 같은 상황에서 컬렉션을 사용할 수 있다.
+
+- [[@OneToMany]], @ManyToMany를 사용해서 [[일대다(OnetoMany)]]나 [[다대다(ManyToMany)]] 관계를 매핑할 때 사용한다.
+- @ElementCollection 을 사용해서 값 타입을 하나 이상 보관할 때 사용한다.
+
+- [[Hibernate]]는 [[엔티티(Entity)]]를 영속상태로 만들 때 컬렉션 [[Spring/SQL/필드(Field)|필드(Field)]]를 하이버네이트에서 준비한 컬렉션으로 감싸서 사용 한다. 
+- 이는 [[Hibernate]]가 컬렉션을 효율적으로 관기하기 위함이다.  
+- 하이버네이트는 본 컬렉션을 감싸고 있는 내장 컬렉션을 생성한 뒤, 이 내장 컬렉션을 사용하도록 참조를 변경한다.
+
+
 ## JPA 반환 타입
 ### Page`<T>
 

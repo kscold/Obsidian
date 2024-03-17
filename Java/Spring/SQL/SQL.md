@@ -33,17 +33,17 @@
 
 ### CREATE DATABASE
 
-- 데이터 베이스 생성
+- [[데이터베이스(DataBase)]] 생성
 ### [[SHOW]]
 
-- 데이터 베이스 보기
+- [[데이터베이스(DataBase)]] 보기
 ### [[USE]]
 
-- 데이터 베이스 사용
+- [[데이터베이스(DataBase)]] 사용
 
 ### [[CREATE]]
 
--  테이블 생성
+-  [[테이블(Table)]] 생성
 
 ```sql
 CREATE TABLE 테이블명( 

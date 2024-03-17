@@ -13,38 +13,34 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/SQL/DELETE.md",
+                "file": "Spring/Spring Security/Spring Security.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d4cd0ccc4a179caf",
+            "id": "8f3154af782b40a8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/CORS(Cross-Origin Resource Sharing Policy).md",
+                "file": "Spring/dependency/GSON.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "abefa52c6235ab22",
+            "id": "5576efec9d23ce6a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spring/JPA/@ElementCollection.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/JPA/@ElementCollection.md",
+                "file": "Spring/dependency/GSON.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/JPA/@ElementCollection.md",
+                "file": "Spring/dependency/GSON.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/JPA/@ElementCollection.md"
+                "file": "Spring/dependency/GSON.md"
               }
             }
           }
@@ -172,39 +168,39 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "abefa52c6235ab22",
+  "active": "cc65f794136683d2",
   "lastOpenFiles": [
-    "Spring/JPA/@OneToMany.md",
-    "Spring/JPA/@ManyToOne.md",
-    "Spring/JPA/@ElementCollection.md",
-    "Java/원시 타입(Primitive Type).md",
-    "Spring/JPA/@Embedded.md",
-    "Spring/SQL/속성(Attribute).md",
-    "값 타입 컬렉션.md",
-    "Java/String.md",
-    "Spring/JPA/@EntityGraph.md",
-    "Spring/SQL/연관 관계(Relationships).md",
-    "Spring/SQL/다대일(ManyToOne).md",
-    "Spring/SQL/일대다(OnetoMany).md",
-    "Spring/SQL/필드(Field).md",
-    "Java/Path.md",
-    "Spring/@PostConstruct.md",
-    "Spring/JPA/lombok/@RequiredArgsConstructor.md",
-    "파일 업로드.md",
-    "Spring/MultipartFile.md",
-    "Spring/JPA/lombok/@Builder.md",
-    "Java/어노테이션(Annotation).md",
-    "Java/클래스(Class).md",
-    "Spring/객체(Object).md",
-    "Spring/CORS(Cross-Origin Resource Sharing Policy).md",
-    "WebMvcConfigurer.md",
-    "Spring/템플릿(Template).md",
-    "@ControllerAdvice.md",
+    "Spring/dependency",
+    "Spring/SQL/JOIN.md",
+    "Spring/dependency/GSON.md",
+    "Spring/Spring Security/CSRF.md",
+    "Spring/Spring Security/Spring Security.md",
+    "Spring/Spring Security/권한(Authority).md",
+    "Spring/Spring Security/SimpleGrantedAuthority.md",
+    "Spring/Spring Security/인가(Authorization).md",
+    "Spring/Spring Security/인증(Authentication).md",
+    "Spring/JPA/lombok/@log4j2.md",
+    "Spring/JPA/로깅(logging).md",
+    "Java/멀티스레드(Multi Thread).md",
+    "Spring/JPA/lombok/@SIf4j.md",
+    "Spring/Test/@SpringBootTest.md",
+    "Spring/JPA/JPA(Java Persistence API).md",
+    "Spring/JPA/JPQL(Java Persitence Query Language).md",
+    "Arrays.of().md",
+    "Spring/JPA/fetch Join.md",
+    "URLConnection.md",
+    "USE.md",
+    "LinkedList.md",
+    "인텔리제이 단축키.md",
+    "참조 타입(Reference Type).md",
+    "@FunctionalInterface.md",
+    "Spring/Hibernate.md",
+    "Spring/SQL/스키마(Schema).md",
+    "Spring/Spring Security",
     "image/Pasted image 20240229173714.png",
     "image/Pasted image 20240229150251.png",
     "image/Pasted image 20240226020336.png",
     "image/Pasted image 20240226020200.png",
-    "Spring/무제 폴더",
     "image/Pasted image 20240219034238.png",
     "image/Pasted image 20240213224850.png",
     "image/Pasted image 20240206212431.png",

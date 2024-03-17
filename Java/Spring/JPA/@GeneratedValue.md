@@ -1,4 +1,4 @@
-- [[@Id]]는 해당 [[속성(Attribute)]]([[Spring/SQL/필드(Field)|필드(Field)]])가 [[테이블(Table)]]의 주키([[기본 키(Primary Key)]]) 역할을 한다는 것을 나타낸다.
+T- [[@Id]]는 해당 [[속성(Attribute)]]([[Spring/SQL/필드(Field)|필드(Field)]])가 [[테이블(Table)]]의 주키([[기본 키(Primary Key)]]) 역할을 한다는 것을 나타낸다.
 - @GeneratedValue는 [[기본 키(Primary Key)]]의 값을 위한 자동 생성 전략을 명시하는데 사용한다.
 
 - [[기본 키(Primary Key)]] 생성 전략으로 [[JPA(Java Persistence API)]]가 지원하는 것은 IDENTITY, SEQUENCE, TABLE, AUTO  4가지이다.
@@ -17,6 +17,12 @@
 - DB의 identity 컬럼을 이용한다.
 - [[기본 키(Primary Key)]] 생성을 데이터베이스에 위임하는 방법(데이터베이스에 의존적)이다. 
 - 주로 MySQL, PostgresSQL, SQL Server, DB2에서 사용한다.
+
+- 만약 [[테이블(Table)]]을 [[DROP]]하고 다시 key를 1부터 실행시키고 싶으면 아래 [[SQL]] [[쿼리(query)]]를 실행시키면 된다.
+
+```sql
+ALTER TABLE your_table_name AUTO_INCREMENT = 1;
+```
 
 ### 3. SEQUENCE 
 

@@ -1,6 +1,6 @@
 - API란 Application Programming Interface의 약자로, 어떤 서버의 특정한 부분에 접속해서 그 안에 있는 데이터와 서비스를 이용할 수 있게 해주는 소프트웨어 도구이다.
 
-- [[JSON(Java Script Object Notation)]]을 뱉는 방식으로 [[@ResponseBody]] [[어노테이션(Annotation)]]을 선행적으로 이용해 필요한 값으로만 json 형식 파일을 만든다.
+- [[JSON(Java Script Object Notation)]]을 반환하는 방식으로 [[@ResponseBody]] [[어노테이션(Annotation)]]을 선행적으로 이용해 필요한 값으로만 [[JSON(Java Script Object Notation)]] 형식 파일을 만든다.
 
 ## 예시
 

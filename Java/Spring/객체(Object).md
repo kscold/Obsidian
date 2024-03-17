@@ -31,7 +31,7 @@ public class Main {
 - 여기서 new Animal() 코드는 컴퓨터 메모리에 클래스를 복사해서 빈값의 인스턴스를 선언한 것이다.
 
 
-## 메모리의 객체
+### 메모리의 객체
 
 ```java
 public class Test {

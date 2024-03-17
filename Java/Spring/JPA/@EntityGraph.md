@@ -1,10 +1,10 @@
-- [[연관 관계(Relationships)]]가 있는 [[엔티티(Entity)]]를 조회할 경우 지연 로딩으로 설정되어 있으면 [[연관 관계(Relationships)]]에서 종속된 [[엔티티(Entity)]]는 [[쿼리(query)]] 실행 시 [[SELECT]] 되지 않고 proxy [[객체(Object)]]를 만들어 [[엔티티(Entity)]]가 적용시킨다.
+- [[연관 관계(Relationships)]]가 있는 [[엔티티(Entity)]]를 조회할 경우 [[지연 로딩(Lazy Loading)]]으로 설정되어 있으면 [[연관 관계(Relationships)]]에서 종속된 [[엔티티(Entity)]]는 [[쿼리(query)]] 실행 시 [[SELECT]] 되지 않고 proxy [[객체(Object)]]를 만들어 [[엔티티(Entity)]]가 적용시킨다.
 
 - 그 후 해당 proxy [[객체(Object)]]를 호출할 때마다 그때그때 [[SELECT]] [[쿼리(query)]]가 실행된다. 
 
-- 추가적인 내용은 [[JPA(Java Persistence API)]]의 지연 로딩에 관련이 있다.
+- 추가적인 내용은 [[JPA(Java Persistence API)]]의 [[지연 로딩(Lazy Loading)]]에 관련이 있다.
 
-- [[연관 관계(Relationships)]]가 지연 로딩으로 되어있을 경우 fetch [[JOIN]]을 사용하여 여러 번의 [[쿼리(query)]]를 한 번에 해결할 수 있다.
+- [[연관 관계(Relationships)]]가 [[지연 로딩(Lazy Loading)]]으로 되어있을 경우 [[fetch Join]]을 사용하여 여러 번의 [[쿼리(query)]]를 한 번에 해결할 수 있다.
 
 - @EntityGraph는 Data JPA에서 fect [[JOIN]]을 [[어노테이션(Annotation)]]으로 사용할 수 있도록 만들어 준 기능이다.
 

@@ -2,9 +2,11 @@
  
 - 실제 개발을 할때에 println()문을 사용하면 데이터를 바로 출력해 볼 수 있지만, 나중에 따로 찾아볼 수는 없고 성능 또한 저하가 된다. 따라서 로깅을 사용해야 한다.
 
-- 콘솔창에 로깅을 하기 위해서는 [[@SIf4j]](Simple Logging Facade for Java) [[어노테이션(Annotation)]]을 이용하거나 [[SIf4j]] 의존
+- 콘솔창에 로깅을 하기 위해서는 [[@SIf4j]](Simple Logging Facade for Java)나 [[@log4j2]] [[어노테이션(Annotation)]]이용하거나 logback 프레임워크를 이용하면 로깅을 할 수 있다.
 
-- [[JPA(Java Persistence API)]] 로깅을 하기 위해서는 application.properies 파일에 logging.level.org.hibernate.SQL=DEBUG 설정을 한다.
+## 로깅 설정
+
+- [[JPA(Java Persistence API)]] 로깅을 하기 위해서는 [[application.yaml]] 파일에 logging.level.org.hibernate.SQL=DEBUG 설정을 한다.
 
 ```
 # JPA 로깅 설정

@@ -1,14 +1,16 @@
 - [[값 타입 컬렉션]]을 매핑할 때 사용합니다.
-- [[관계형 데이터베이스(Relational DataBase)]]에는 컬렉션([[Collection]])과 같은 형태의 데이터를 컬럼에 저장할 수 없기 때문에, 별도의 [[테이블(Table)]]을 생성하여 컬렉션([[Collection]])을 관리해야 한다.
+- [[관계형 데이터베이스(Relational DataBase)]]에는 컬렉션([[Collection]])과 같은 형태의 데이터를 컬럼([[Spring/SQL/필드(Field)|필드(Field)]])에 저장할 수 없기 때문에, 별도의 [[테이블(Table)]]을 생성하여 컬렉션([[Collection]])을 관리해야 한다.
 
 - 이때 해당 [[Spring/SQL/필드(Field)|필드(Field)]]가 컬렉션([[Collection]]) [[객체(Object)]]임을 [[JPA(Java Persistence API)]]에게 알려주는 [[어노테이션(Annotation)]]이 @ElementCollection이다.
+
+- ElementCollection의 장점은 종속적이기 때문에 데이터를 삭제 할 때 [[엔티티(Entity)]]만 지우면 ElementCollection도 따라서 같이 지워진다.
 
 - [[@Entity]]가 아닌 [[원시 타입(Primitive Type)]]이나 Embeddable Class로 정의된 컬렉션[[@Embedded]])을 [[테이블(Table)]]로 생성하며 [[일대다(OnetoMany)]] 관계로 다룬다.
 
 
 ## @ElementCollection의 예시
 
-- 아래에는 스터디그룹과 멤버 구성을 관리하는 Entity이다.  
+- 아래에는 스터디그룹과 멤버 구성을 관리하는 Entity이다. 
 - 스터디 그룹에 대해 멤버는 [[일대다(OnetoMany)]] 관계로 구성되며, 멤버는 다양한 스터디 그룹에 참여할 수 있다.
 
 - StudyGroup entity : Entity, 스터디 그룹을 관리

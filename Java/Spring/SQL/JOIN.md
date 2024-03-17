@@ -1,4 +1,6 @@
 - 2개 이상의 [[테이블(Table)]] 묶어서 하나의 결과 [[테이블(Table)]]을 만드는 것이다.
+- [[SELECT]]문과 같이 사용한다.
+
 ## Inner join(통상 조인)
 
 - 교집합, 조인 조건을 만족하는 행만 출력하는 조인이다.
@@ -12,6 +14,45 @@ WHERE [검색 조건]
 ```
 
 ![](https://blog.kakaocdn.net/dn/0dSZe/btqXwcCrisQ/Tju9MYaN7o8BpGK6kWEPZK/img.jpg)
+
+## LEFT JOIN 
+
+- 조인기준 왼쪽에 있는것 전부 [[SELECT]]된다.
+- 공통적인 부분과 LEFT에 있는 데이터만 합쳐진다.
+
+![](https://blog.kakaocdn.net/dn/HbXSf/btqBjVcc5nt/1IlFXWNOBg7VExLDL4kcF1/img.png)
+
+
+- 테이블 A가 아래와 같다고 가정한다.
+
+| ID  | ENAME |
+| --- | ----- |
+| 1   | AAA   |
+| 2   | BBB   |
+| 3   | CCC   |
+
+- 테이블 B가 아래와 같다고 가정한다.
+
+| ID  | KNAME |
+| --- | ----- |
+| 1   | 가     |
+| 2   | 나     |
+| 4   | 라     |
+| 5   | 마     |
+
+
+```sql
+SELECT A.ID, A.ENAME, A.KNAME
+	FROM A LEFT 
+		OUTER JOIN B
+			ON A.ID = B.ID;
+```
+
+| ID    | ENAME   | KNAME    |
+| ----- | ------- | -------- |
+| 1     | AAA     | 가        |
+| 2     | BBB     | 나        |
+| **3** | **CCC** | **NULL** |
 
 ## **Outer join** 
 
