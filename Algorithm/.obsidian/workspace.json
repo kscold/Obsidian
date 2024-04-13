@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "시간 복잡도.md",
+                "file": "Algorithm/시간 복잡도.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "파이썬 문법/*.md",
+                "file": "Implement/그래프 자체를 이동하는 구현.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "파이썬 문법/*.md",
+                "file": "Implement/그래프 자체를 이동하는 구현.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "파이썬 문법/*.md",
+                "file": "Implement/그래프 자체를 이동하는 구현.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "파이썬 문법/*.md"
+                "file": "Implement/그래프 자체를 이동하는 구현.md"
               }
             }
           }
@@ -161,37 +161,38 @@
   },
   "active": "cc55a6a65f82298b",
   "lastOpenFiles": [
-    "시간 복잡도.md",
-    "퀵 정렬(Quick Sort).md",
-    "병합 정렬(Merge Sort).md",
-    "선택 정렬(Selection Sort).md",
-    "삽입 정렬(Insertion Sort).md",
-    "파이썬 문법/sep.md",
-    "파이썬 문법/리스트(List).md",
-    "자료구조/스와프(Swap).md",
-    "구현/중복된 요소 검출.md",
-    "파이썬 문법/*.md",
-    "구현/2차원 배열 덧셈.md",
-    "구현/문자열 그룹.md",
-    "그래프(Graphs).md",
-    "구현/상하좌우 이동.md",
-    "인접 리스트(adjacency list).md",
-    "유방향 그래프(Digraph(Directed graph).md",
-    "이진트리(binary tree).md",
-    "BFS(Breadth-First Search).md",
-    "DFS(Depth-First Search).md",
-    "자료구조/큐(Queue).md",
-    "인접 행렬(Adjacency Matrix).md",
-    "자료구조/스택(Stack).md",
-    "무방향 그래프(Undirected graph).md",
-    "파이썬 문법/replace().md",
-    "이진탐색(Binary Search).md",
+    "Python/sorted.md",
+    "Implement/그래프 자체를 이동하는 구현.md",
+    "Python/set.md",
+    "Python/sep.md",
+    "Python/self.md",
+    "Python/ord().md",
+    "Python/lambda.md",
+    "Python/join().md",
+    "Data Structure/큐(Queue).md",
+    "Data Structure/스택(Stack).md",
+    "Python/클래스(class).md",
+    "Algorithm/시간 복잡도.md",
+    "Implement/입력.md",
+    "Algorithm/가중치 그래프(weighted graph).md",
+    "Implement/이차원 리스트의 순회.md",
+    "Algorithm",
+    "Python/메서드(Method).md",
+    "Algorithm/다익스트라(dijkstra).md",
+    "Implement/리스트 요소의 횟수를 딕셔너리로 구현.md",
+    "Implement/2차원 배열 덧셈 구현.md",
+    "Implement/리스트 양쪽에 같은 요소 찾는 구현.md",
+    "Implement/체스.md",
+    "Implement/문자열 그룹.md",
+    "Implement/상하좌우 이동.md",
+    "Python/*.md",
+    "Algorithm/퀵 정렬(Quick Sort).md",
+    "Algorithm/병합 정렬(Merge Sort).md",
     "image/Pasted image 20240105215609.png",
-    "재귀함수(Recursive Function).md",
-    "자료구조",
+    "Data Structure",
     "image/스크린샷 2024-01-03 오후 9.17.48.png",
     "image/IMG_1808.jpeg",
-    "구현",
+    "Implement",
     "파이썬 스니펫",
     "image/Pasted image 20231106014554.png",
     "image/Pasted image 20231030195946.png",
@@ -199,7 +200,7 @@
     "image/Pasted image 20231030194032.png",
     "image/Pasted image 20231030183740.png",
     "image/Pasted image 20231030183348.png",
-    "파이썬 문법",
+    "Python",
     "image/Pasted image 20231009174254.png",
     "image"
   ]
