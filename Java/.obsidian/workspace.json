@@ -23,18 +23,6 @@
             "id": "8f3154af782b40a8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spring/dependency/GSON.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5576efec9d23ce6a",
-            "type": "leaf",
-            "state": {
               "type": "graph",
               "state": {}
             }
@@ -106,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/dependency/GSON.md",
+                "file": "Spring/Spring Security/Spring Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/dependency/GSON.md",
+                "file": "Spring/Spring Security/Spring Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/dependency/GSON.md"
+                "file": "Spring/Spring Security/Spring Security.md"
               }
             }
           }
@@ -168,11 +156,20 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "cc65f794136683d2",
+  "active": "8f3154af782b40a8",
   "lastOpenFiles": [
+    "Java/메서드(Method).md",
+    "Java/클래스(Class).md",
+    "Spring/객체(Object).md",
+    "Spring/SQL/SELECT.md",
+    "Spring/dependency/GSON.md",
+    "Spring/JPA/@JoinColumn.md",
+    "Java/싱글톤(Singleton).md",
+    "Spring/Bean.md",
+    "Java/new.md",
+    "Spring/모델(Model).md",
     "Spring/dependency",
     "Spring/SQL/JOIN.md",
-    "Spring/dependency/GSON.md",
     "Spring/Spring Security/CSRF.md",
     "Spring/Spring Security/Spring Security.md",
     "Spring/Spring Security/권한(Authority).md",
@@ -188,14 +185,6 @@
     "Spring/JPA/JPQL(Java Persitence Query Language).md",
     "Arrays.of().md",
     "Spring/JPA/fetch Join.md",
-    "URLConnection.md",
-    "USE.md",
-    "LinkedList.md",
-    "인텔리제이 단축키.md",
-    "참조 타입(Reference Type).md",
-    "@FunctionalInterface.md",
-    "Spring/Hibernate.md",
-    "Spring/SQL/스키마(Schema).md",
     "Spring/Spring Security",
     "image/Pasted image 20240229173714.png",
     "image/Pasted image 20240229150251.png",
@@ -215,7 +204,6 @@
     "Spring/JPA/CrudRepository",
     "Spring/Test",
     "Spring/Docker",
-    "Spring/JSP/mustache",
     "무제 파일.canvas"
   ]
 }
