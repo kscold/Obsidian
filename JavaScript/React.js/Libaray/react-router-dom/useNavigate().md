@@ -1,4 +1,4 @@
-- [[React Router]] 라이브러리의 useNavigate()는 프로그래밍 방식으로 [[<Link>]] [[컴포넌트(component)]]를 사용하지 않고 다른 페이지로 이동해야 하는 상황에 사용하는 [[Hooks]]이다.
+- [[React Router]] 라이브러리의 useNavigate()는 프로그래밍 방식으로 [[<Link>]] [[컴포넌트(Component)]]를 사용하지 않고 다른 페이지로 이동해야 하는 상황에 사용하는 [[Hooks]]이다.
 
 - 방향을 처리(navigate)할 수 있는 [[함수(Function)]]를 반환한다.
 

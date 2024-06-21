@@ -1,0 +1,1 @@
+- [[시퀄라이즈(Sequelize)]]에서 remove+[[모델(model)]]명의 형식으로 [[연관 관계(Relationships)]]에 있는 데이터를 삭제 가능하다.

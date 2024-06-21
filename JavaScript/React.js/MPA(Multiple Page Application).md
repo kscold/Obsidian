@@ -3,7 +3,7 @@
 - MPA는 새로운 페이지를 요청할 때마다 정적 리소스가 다운로드된다. 
 - 새로운 페이지를 요청할 때마다 서버에서 렌더링된 정적 리소스(HTML, CSS, JavaScript)가 다운로드된다.  
 - 따라서 매번 전체 페이지가 다시 렌더링 되고, 페이지 이동하거나 새로고침해도 전체 페이지를 다시 렌더링한다.
-
+[[SPA(Single Page Application)]]
 - 주로 MPA를 [[SSR(Server Side Rendering)]] 방식으로 렌더링한다고 말한다.
 
 - [[JSX]] 문법을 사용하는 Next.js가 대표적이다.

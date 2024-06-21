@@ -30,7 +30,7 @@ useEffect(() => { // 처음과 name이 바뀔 때만 실행
 }, [name]);
 ```
 
-- 마운트될때 effect 로그를 찍고, name [[state]]가 업데이트 될 때마다 동작, [[컴포넌트(component)]]가 언마운트 될 때, cleanup 로그와 업데이트되기 직전의 값을 name을 보여준다.
+- 마운트될때 effect 로그를 찍고, name [[state]]가 업데이트 될 때마다 동작, [[컴포넌트(Component)]]가 언마운트 될 때, cleanup 로그와 업데이트되기 직전의 값을 name을 보여준다.
 
 ```jsx
 useEffect(() => { // 처음과 name이 바뀔 때만 실행

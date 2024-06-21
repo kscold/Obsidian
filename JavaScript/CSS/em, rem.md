@@ -39,11 +39,11 @@
 
   - 여기서부터 rem과의 차이가 발생하게 된다.
   - 코드를 적다 보면 중첩이라는 게 발생할 수밖에 없다. 
-  - 중첩이란 여러 요소들이 서로를 포함하는 것을 말하는데 [[HTML]]을 작성할 때 당연히 일어날 수밖에 없다.
+  - 중첩이란 여러 요소들이 서로를 포함하는 것을 말하는데 [[HTML(Hyper Text Markup Language)]]을 작성할 때 당연히 일어날 수밖에 없다.
 
 ## rem
 - em이 해당 단위가 사용되고 있는 요소의 font-size가 기준이 되었다면 rem은 r = root 최상위 요소를 font-size 1 rem으로 여기고 변화한다.
-- [[HTML]]에서 최상위 값은 `<html>`으로 rem의 경우는 html요소의 font-size를 기준으로 한다.
+- [[HTML(Hyper Text Markup Language)]]에서 최상위 값은 `<html>`으로 rem의 경우는 html요소의 font-size를 기준으로 한다.
 - 따라서 중첩이 일어나더라도 em과 달리 기준이 되는 font-size가 변하지 않는다.
 
 - html의 폰트 사이즈가 10px이라면 해당 html문서 안에 있는 모든 요소의 1 rem = 10px이 된다.

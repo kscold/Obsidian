@@ -1,0 +1,2 @@
+- console.time() [[메서드(Method)]]는 console.timeEnd()와 짝으로 사용한다.
+- console.time()과 console.timeEnd()의 차이를 보여준다.

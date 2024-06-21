@@ -1,9 +1,9 @@
 - [[URL 파라미터]]는 useParams라는 [[Hooks]]을 사용하여 [[객체(Object)]] 형식으로 조회할 수 있다.
-- [[URL 파라미터]]의 이름은 라우트 설정을 할 때 Route [[컴포넌트(component)]]의 path [[props]]를 통해 설정된다.
+- [[URL 파라미터]]의 이름은 라우트 설정을 할 때 Route [[컴포넌트(Component)]]의 path [[props]]를 통해 설정된다.
 
 ## 예시
 
-- 상위 [[컴포넌트(component)]]에서 [[URL 파라미터]]를 /:이름 형식으로 정의한다.
+- 상위 [[컴포넌트(Component)]]에서 [[URL 파라미터]]를 /:이름 형식으로 정의한다.
 
 ```jsx
 import React from 'react';

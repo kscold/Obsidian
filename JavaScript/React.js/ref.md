@@ -1,4 +1,4 @@
-- 리액트 [[컴포넌트(component)]] 안에도 id를 사용할 수 있으나, 같은 [[컴포넌트(component)]]를 재사용하는 방법에 있어, [[DOM(Document Object Model)]]에서 id는 unique(유일)해야 하는데 이런 상황에서 중복 id를 가진 DOM이 여러 개 생기니 잘못된 사용이 된다.
+- 리액트 [[컴포넌트(Component)]] 안에도 id를 사용할 수 있으나, 같은 [[컴포넌트(Component)]]를 재사용하는 방법에 있어, [[DOM(Document Object Model)]]에서 id는 unique(유일)해야 하는데 이런 상황에서 중복 id를 가진 DOM이 여러 개 생기니 잘못된 사용이 된다.
 
 
 ## ref를 만드는 방법
@@ -53,7 +53,7 @@ export default RefSample;
 
 - 위와 같은 형식을 사용하여 내부의 ref도 접근할 수 있다.
 
-## 바닐라 [[HTML]]에서의 id 사용법
+## 바닐라 [[HTML(Hyper Text Markup Language)]]에서의 id 사용법
 
 ```html
 <html lang="en">

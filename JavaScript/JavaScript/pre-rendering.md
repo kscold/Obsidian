@@ -1,1 +1,1 @@
-- 사전 렌더링(pre-rendering)은 서버단에서 [[DOM(Document Object Model)]] 요소들을 Build하여 [[HTML]] 문서를 렌더링하는 것을 말한다.
+- 사전 렌더링(pre-rendering)은 서버단에서 [[DOM(Document Object Model)]] 요소들을 Build하여 [[HTML(Hyper Text Markup Language)]] 문서를 렌더링하는 것을 말한다.

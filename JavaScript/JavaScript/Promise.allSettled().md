@@ -1,4 +1,7 @@
-- Promise.allSettled를 사용하면 [[Promise]]가 성공했는지 실패했는지 세세하게 알려준다.
+- 현재 [[Promise.all()]]을 대체해서 사용되는 [[메서드(Method)]]이다.
+
+- Promise.allSettled()를 사용하면 [[Promise]]가 성공했는지 실패했는지 세세하게 알려준다.
+- 따라서 Promise.allSettled()를 사용하여 실패한 경우만 추려낼 수 있다.
 
 ## 예시
 

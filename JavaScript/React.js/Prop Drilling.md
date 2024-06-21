@@ -1,4 +1,4 @@
-- prop Drilling은 [[props]]를 오로지 하위 [[컴포넌트(component)]]로 전달하는 용도로만 쓰이는 [[컴포넌트(component)]]들을 거치면서 React Component 트리의 한 부분에서 다른 부분으로 데이터를 전달하는 과정이다.
+- prop Drilling은 [[props]]를 오로지 하위 [[컴포넌트(Component)]]로 전달하는 용도로만 쓰이는 [[컴포넌트(Component)]]들을 거치면서 React Component 트리의 한 부분에서 다른 부분으로 데이터를 전달하는 과정이다.
 
 ## 예시
 

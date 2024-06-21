@@ -3,7 +3,7 @@
 
 ## [[비동기(asynchronous)]] 데이터 가져오기
 
-- Suspense를 사용하면 [[컴포넌트(component)]]에서 비동기 작업을 수행하거나 외부 데이터를 가져오는 동안 화면에 로딩 상태를 표시할 수 있다.
+- Suspense를 사용하면 [[컴포넌트(Component)]]에서 비동기 작업을 수행하거나 외부 데이터를 가져오는 동안 화면에 로딩 상태를 표시할 수 있다.
 - 이로써 사용자 경험을 향상시킬 수 있다.
 
 ## 코드 스플리팅
@@ -21,8 +21,8 @@
 
 ## fallback
 
-- fallback [[props]]은 [[컴포넌트(component)]]가 로드될 때까지 기다리는 동안 렌더링하려는 React 엘리먼트를 받는다.
+- fallback [[props]]은 [[컴포넌트(Component)]]가 로드될 때까지 기다리는 동안 렌더링하려는 React 엘리먼트를 받는다.
 
 - [[<Suspense>]] 컴포넌트는 lazy 컴포넌트를 감싼다.
-- 하나의 Suspense 컴포넌트로 여러 [[lazy()]] [[컴포넌트(component)]]를 감쌀 수도 있다.
-- [[lazy()]] [[컴포넌트(component)]]는 Suspense 컴포넌트 하위에서 렌더링되어야 하며, Suspense는 lazy 컴포넌트가 로드되길 기다리는 동안 로딩 화면과 같은 예비 콘텐츠를 보여줄 수 있게 해 준다.
+- 하나의 Suspense 컴포넌트로 여러 [[lazy()]] [[컴포넌트(Component)]]를 감쌀 수도 있다.
+- [[lazy()]] [[컴포넌트(Component)]]는 Suspense 컴포넌트 하위에서 렌더링되어야 하며, Suspense는 lazy 컴포넌트가 로드되길 기다리는 동안 로딩 화면과 같은 예비 콘텐츠를 보여줄 수 있게 해 준다.

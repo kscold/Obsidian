@@ -64,6 +64,7 @@
 - name 속성은 폼([[<form>]])이 제출된 후 서버에서 폼 데이터(form data)를 참조하기 위해 사용되거나, 자바스크립트에서 태그를 참조하기 위해 사용된다.
 - 예를 들어 type="ratio" 에서 같은 폼(form) 임을 나타내기 위해 name를 같은 이름으로 묶어 줄 수 있다.
 - css 파일들을 연동시킬 수 있다.
+- [[이벤트(event)]] [[객체(Object)]]의 `[e.target.name]`를 동적으로 바꿀 때 유용하게 사용된다.
 
 ### [[className]](리액트)
 
@@ -74,9 +75,11 @@
 
 - 입력 필드에 사용자가 적절한 값을 입력할 수 있도록 도와주는 짧은 도움말을 명시한다.
 - placeholder 속성이 제대로 동작하는 type 속성은 email, password, search, tel, text, url가 있다.
+
 ## [[value]]
 
 - 사용자 세팅 초기값이다.
+- [[리액트(React)]]에서는 input창의 e.target.value 거의 필수적으로 사용된다
 - value 속성은 `<input>` 태그의 초깃값(value)을 명시한다.
 - value 속성은 `<input>` 태그의 type 속성값에 따라 다른 용도로 사용된다.
 	- “button”, “reset”, “submit” : 버튼 내의 텍스트를 정의한다.
@@ -84,7 +87,7 @@
 	- “checkbox”, “image”, “radio” : 해당 입력 필드를 선택 시 서버로 제출되는 값을 정의한다.
 	- 또한, `<input>` 요소의 type 속성값이 “file”인 경우에는 value 속성을 사용할 수 없다.
 
-  ## [[onChange]]
+## [[onChange]]
   
 - `<input>` 태그의 [[이벤트(event)]]를 받아 event.target.value로 input창의 값을 저장할 수 있다.
 - 이벤트를 여러개 다뤄야할 때는 `[e.target.name]` : e.target.value를 사용하면 하나의 함수로 받을 수 있다.

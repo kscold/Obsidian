@@ -1,4 +1,4 @@
-- [[생명 주기(Life Cycle)]] [[메서드(Method)]]로 props로 받아온 값을 state에 동화시키는 용도 사용하면, [[컴포넌트(component)]]가 마운트될 때 업데이트될 때 호출된다.
+- [[생명 주기(Life Cycle)]] [[메서드(Method)]]로 props로 받아온 값을 state에 동화시키는 용도 사용하면, [[컴포넌트(Component)]]가 마운트될 때 업데이트될 때 호출된다.
 
 ```js
 static getDerivedStateFromProps(nextProps, prevState) {

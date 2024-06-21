@@ -1,2 +1,2 @@
-- [[컴포넌트(component)]]를 [[DOM(Document Object Model)]]에서 제거할 때 실행한다.
+- [[컴포넌트(Component)]]를 [[DOM(Document Object Model)]]에서 제거할 때 실행한다.
 - [[componentDidMount()]]에서 등록한 [[이벤트(event)]], 타이머, 직접 생성한 [[DOM(Document Object Model)]]이 있다면 여기서 제거 작업을 해야 한다.

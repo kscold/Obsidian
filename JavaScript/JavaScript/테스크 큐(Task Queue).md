@@ -42,12 +42,12 @@ console.log("end", new Date())
 - 심지어 4번째 while문에서 강제로 블로킹 처리를 해서 페이지가 멈추는 현상까지 발생는데도 불구하고 [[setTimeout()]]이 가장 늦게 호출이 되었다.
 
 - 위 예시의 실제 동작은 아래와 같다.
-	1. [[콜 스택(Call Stack)]]에 console,log("start")가 push되고 출력되면서 pop된다.
-	2. setTimeout이 [[콜 스택(Call Stack)]]에 push되고 콜백 내용이 테스크 큐(Task Queue)에 등록되면서 pop된다.
-	3. 0 ms가 지나고 [[이벤트 루프(Event Loop)]]는 [[콜 스택(Call Stack)]]이 비워질때까지 기다리면서 콜백을 실행시킬 준비를 한다.
-	4. wakeUpTime의 [[변수(Variable)]]가 메모리 [[힙(Heap)]]에 올라가고 이후부턴 [[콜 스택(Call Stack)]]들이 동작된다.
+	1. [[호출 스택(Call Stack)]]에 console,log("start")가 push되고 출력되면서 pop된다.
+	2. setTimeout이 [[호출 스택(Call Stack)]]에 push되고 콜백 내용이 테스크 큐(Task Queue)에 등록되면서 pop된다.
+	3. 0 ms가 지나고 [[이벤트 루프(Event Loop)]]는 [[호출 스택(Call Stack)]]이 비워질때까지 기다리면서 콜백을 실행시킬 준비를 한다.
+	4. wakeUpTime의 [[변수(Variable)]]가 메모리 [[힙(Heap)]]에 올라가고 이후부턴 [[호출 스택(Call Stack)]]들이 동작된다.
 
-- 위와 같은 [[비동기(asynchronous)]] 처리나 I/O의 작업이 자바스크립트에서 발생하면 [[콜백 함수(Callback Function)]]가 [[콜 스택(Call Stack)]]에서 처리되는게 아니라 별도의 테스크 큐라는 곳에 쌓였다가 [[이벤트 루프(Event Loop)]]에 의해 실행되기 때문에 뜻밖의 결과를 얻을 수 있다.
+- 위와 같은 [[비동기(asynchronous)]] 처리나 I/O의 작업이 자바스크립트에서 발생하면 [[콜백 함수(Callback Function)]]가 [[호출 스택(Call Stack)]]에서 처리되는게 아니라 별도의 테스크 큐라는 곳에 쌓였다가 [[이벤트 루프(Event Loop)]]에 의해 실행되기 때문에 뜻밖의 결과를 얻을 수 있다.
 
 ## 브라우저의 내부 환경
 
@@ -55,7 +55,7 @@ console.log("end", new Date())
 
 ![](https://blog.kakaocdn.net/dn/odxEo/btsiM9eNaUQ/DhCi8WlybuE3GSrhr7TukK/img.png)
 
-- 그림에서도 볼 수 있듯이 개발하면서 자주 사용했던 [[Ajax의(Asynchronous JavaScript and XML)]], [[setTimeout()]]과 같은 [[비동기(asynchronous)]] 처리들은 자바스크립트가 해주는게 아니라 [[Web API]]영역에 따로 정의되어 있다. 
+- 그림에서도 볼 수 있듯이 개발하면서 자주 사용했던 [[Ajax(Asynchronous JavaScript and XML)]], [[setTimeout()]]과 같은 [[비동기(asynchronous)]] 처리들은 자바스크립트가 해주는게 아니라 [[Web API]]영역에 따로 정의되어 있다. 
 
 - Node.js에서는 동시성을 위해 libuv라이브러리를 도입했는데, 이 libuv라이브러리가 [[이벤트 루프(Event Loop)]]를 제공한다.
 

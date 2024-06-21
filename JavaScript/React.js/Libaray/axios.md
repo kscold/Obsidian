@@ -1,9 +1,19 @@
-## axios의 기본 메서드
+- [[Ajax(Asynchronous JavaScript and XML)]] 요청 시 Response를 자동적으로 [[JSON(Java Script Object Notation)]]으로 바꿔서 보내줌으로 axios 라이브러리를 사용하는게 편하다.
+- axios 라이브러리는 [[Promise]] [[객체(Object)]]를 공식적으로 지원하기 때문에 [[async await]] 문법이랑 같이 사용할 수 있다.
 
-- GET: 데이터 조회 axios.get(url`[, config]`)  
-- POST: 데이터 등록 axios.post(url, data`[, config]`)  
-- PUT: 데이터 수정 axios.put(url, data`[, config]`)  
-- DELETE: 데이터 제거 axios.delete(url`[, config]`)
+- axios 라이브러리를 이용하여 이미지나 영상을 업로드하고 싶은 경우, 즉 [[HTML(Hyper Text Markup Language)]] [[<form>]] 태그에 담긴 데이터를 [[Ajax(Asynchronous JavaScript and XML)]] 요청으로 보내고 싶은 경우에는 [[FormData]] [[객체(Object)]]를 이용한다.
+
+## HTML에서 사용하는 방법
+
+- [[HTML(Hyper Text Markup Language)]]에서도 아래 코드처럼 스크립트를 추가하면 사용할 수 있다.
+
+```html
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+	// 로직 작성
+</script>
+```
+
 
 ## 문법
 ### axios(config)
@@ -12,15 +22,18 @@
 - url 속성만 필수이며 나머지 속성은 옵션이다.
 - method가 지정되지 않으면 GET으로 기본 설정된다.
 
-### 2) 기본 Params
+### [[매개변수(parameter)]]
 
 - Method
 - Url
 - Data (optional)
 - Params (optional)
 
-## axios.get()
+## axios의 기본 메서드
 
+###  axios.get(url`[, config]`)  
+
+- 데이터 조회를 할 때 사용한다. (GET)
 - 사용상황에 따라 params: {} [[객체(Object)]]가 존재할지 안할지가 결정된다.
 
 - 단순 데이터(페이지 요청, 지정된 요청) 요청을 수행할 경우에는 params 객체가 필요 없다.
@@ -75,8 +88,10 @@ try {
 }
 ```
 
-## axios.post()
 
+### axios.post(url, data`[, config]`)  
+
+- 데이터 등록할 때 사용한다.(POST)
 - post 메서드에는 일반적으로 데이터를 `Message Body`에 포함시켜서 보낸다.
 - get 메서드에서 params를 사용한 경우와 비슷하게 수행된다.
 
@@ -96,13 +111,18 @@ axios.post("url", {
 
 // async await 함수를 사용할 때, 
 try {
-	const data = await axios.post("url");
+	const data = await axios.post("url", {
+         username: "",
+         password: ""
+    });
 } catch {
 	// 오류 발생시 실행
 }
 ```
 
-## axios.put()
+### axios.put(url, data`[, config]`)  
+
+- 데이터를 수정할 때 사용한다. (PUT)
 
 - put 메서드는 서버 내부적으로 get에서 post 변환되는 과정을 거치기 때문에 post 메서드와 비슷한 형태이다.
 
@@ -131,9 +151,11 @@ try {
 }
 ```
 
-## axios.delete()
+### axios.delete(url`[, config]`)
 
+- 데이터를 제거할 때 사용한다. (DELETE)
 - delete 메서드에는 일반적으로 body가 비어있다.
+
 - 그래서 형태는 get과 비슷한 형태를 띄지만 한 번 delete 메서드가 서버에 들어가게 된다면 서버 내에서 삭제 process를 진행하게 된다.
 
 ```javascript

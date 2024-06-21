@@ -1,6 +1,7 @@
-- [[리액트(React)]]에서 props는 properties를 줄인 표현으로 [[컴포넌트(component)]] 속성을 선정할 때 사용하는 요소이다.
+- [[리액트(React)]]에서 props는 properties를 줄인 표현으로 [[컴포넌트(Component)]] 속성을 선정할 때 사용하는 요소이다.
 
-### JSX 내부에서 props 렌더링
+
+## JSX 내부에서 props 렌더링
 
 ```jsx
 import MyComponent from './MyComponent'
@@ -59,6 +60,49 @@ MyComponent.defaultProps = {
 }
 
 export default MyComponent;
+```
+
+## 함수 props 호출 예시
+
+- 만약 props로 [[function]] [[키워드(Keyword)]] [[함수(Function)]]나 [[화살표 함수(Arrow function)]]를 호출한다면 ()=>함수() 를 통해서 렌더링되자마자 호출되는 것을 막을 수 있다.
+
+```jsx
+function App() {
+	const handleSelect = (selectedButton) => {
+		console.log('Hello World - selected!');
+	};
+	
+	return <TapButton onSelect={() => handleSelect()}>Components</TapButton>
+	// 만약 handleSelct()로 호출했다면 렌더링과 동시에 호출이 되어버림
+}	
+```
+
+- 또한 위의 코드처럼 사용하면 자식 [[컴포넌트(Component)]]로 onSelect로 [[함수(Function)]]를 props로 보낸때 [[매개변수(parameter)]]를 넣어 [[함수(Function)]] 호출할 수 있고 자식 [[컴포넌트(Component)]]에서 원하는 때에 이 [[함수(Function)]]를 호출할 수 있게 된다.
+
+```jsx
+// App.js
+function App() {
+	const handleSelect = (selectedButton) => {
+		console.log('Hello World - selected!');
+	};
+	
+	return <TapButton onSelect={() => handleSelect('components')}>Components</TapButton>
+	// 만약 handleSelct()로 호출했다면 렌더링과 동시에 호출이 되어버림
+}	
+
+
+// TapButton.js
+const TapButton = ({ children, onSelect }) => { 
+	
+	return ( // 자식 컴포넌트의 버튼이 눌렸을 때 부모의 handleSelect 함수를 호출
+		<li>
+			<button onClick={onSelect}>{children}</button> 
+		</li>
+	);
+};
+
+  
+export default TapButton;
 ```
 
 ## [[비구조화 할당]]을 사용한 예시

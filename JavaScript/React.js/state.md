@@ -1,4 +1,4 @@
-- state(상태)는 [[컴포넌트(component)]] 안에서 관리되는 것이다.
+- state(상태)는 [[컴포넌트(Component)]] 안에서 관리되는 것이다.
 - [[클래스형 컴포넌트(Class Component)]]든 [[함수형 컴포넌트(Functional Component)]]든 state를 사용하여 값을 바꾼다.
 - state값을 바꾸어야 할 때는 [[setState]] 혹은 [[useState()]]를 통해 전달받은 세터 함수(set이름)를 사용해야한다.
 - state는 바뀔 때마다 [[불변성 유지]]가 된다.

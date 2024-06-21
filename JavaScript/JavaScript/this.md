@@ -1,13 +1,20 @@
-- [[클래스(class)]]나 [[객체(Object)]] 내에서 [[메서드(Method)]]끼리 소통하기 위해서는 [[this]]가 필요하다.
+- [[클래스(Class)]]나 [[객체(Object)]] 내에서 [[메서드(Method)]]끼리 소통하기 위해서는 [[this]]가 필요하다.
 - 자바스크립트 내에서 this는 '누가 나를 불렀느냐'를 한다.
 
 - 즉, 선언이 아닌 호출에 따라 달라진다.
 
+- [[노드(Node.js)]]에서 this는 [[module.exports()]]와 같다.
+
+
 ## 단독으로 쓴 this
 
-- 단독으로 this를 호출하는 경우엔 global object(전역 객체)를 가리킨다.
-- 브라우저에서 호출하는 경우 object [[window]]가 된다.
+- 단독으로 this를 호출하는 경우엔 [[전역 객체(Global Object)]])를 가리킨다.
+- 브라우저에서 호출하는 경우의 [[객체(Object)]]는 [[window]]가 된다.
 
+- [[노드(Node.js)]]에서 호출하는 경우 [[객체(Object)]]는 빈 [[객체(Object)]](`{}`)인 Anonymous가 된다.
+- 이는 브라우저와는 전혀 다른 [[런타임(runtime)]] 환경이기 때문에, 브라우저 관련 객체 (window 등) 에는 접근할 수 없다.  
+- 대신, [[웹 서버(Web Server)]]를 구축할 때 필요한 다른 변수들 (환경변수 등) 에 접근할 수 있도록 설정되어 있다.
+ 
 - 이는 ES5에서 추가된 strict mode(엄격 모드)에서도 마찬가지이다.
 
 ![](https://blog.kakaocdn.net/dn/duY8YT/btqDKUV2At7/shsc6qD3lLN9gpxQgeqKi0/img.png)
@@ -99,7 +106,7 @@ var num = 0; function showNum() {  console.log(this.num);} showNum(); //0 var ob
 
 ## 4. [[이벤트(event)]] 핸들러 안에서 쓴 this
 
-- 이벤트 핸들러에서 this는 이벤트를 받는 [[HTML]] 요소를 가리킨다.
+- 이벤트 핸들러에서 this는 이벤트를 받는 [[HTML(Hyper Text Markup Language)]] 요소를 가리킨다.
 
 ```javascript
 var btn = document.querySelector('#btn')

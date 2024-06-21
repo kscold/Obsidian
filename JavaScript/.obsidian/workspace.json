@@ -4,30 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "422f518949d18e1d",
+        "id": "604f136700d3db1f",
         "type": "tabs",
         "children": [
           {
-            "id": "5f5640c8a58c50e3",
+            "id": "256f244e33383b11",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/클래스(class).md",
+                "file": "React.js/Libaray/Redux/connect().md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "003391b88b273696",
+            "id": "700fb5a6386461df",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaScript/클래스(class).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaScript/클래스(class).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "JavaScript/클래스(class).md"
-              }
+              "state": {}
             }
           }
         ]
@@ -154,53 +151,54 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "5f5640c8a58c50e3",
+  "active": "700fb5a6386461df",
   "lastOpenFiles": [
-    "JavaScript/prototype.md",
-    "JavaScript/클래스(class).md",
+    "React.js/Libaray/Redux/액션 생성함수(Action Creator).md",
+    "React.js/Libaray/Redux/connect().md",
+    "React.js/Libaray/Redux/mapStateToProps.md",
+    "React.js/Libaray/Redux/handleActions().md",
+    "React.js/Libaray/Redux/createAction().md",
+    "React.js/Libaray/Redux/useSelector().md",
+    "React.js/Libaray/immer.md",
+    "JavaScript/find().md",
+    "JavaScript/findIndex().md",
+    "React.js/Libaray/Redux/스토어(Store).md",
+    "JavaScript/push().md",
+    "JavaScript/splice().md",
+    "React.js/Libaray/Redux/Reducer.md",
+    "React.js/Libaray/Redux/dispatch().md",
+    "React.js/Libaray/Redux/action.md",
+    "React.js/Context API.md",
+    "React.js/createContext().md",
     "JavaScript/메서드(Method).md",
-    "JavaScript/인스턴스(Instance).md",
-    "JavaScript/this.md",
-    "JavaScript/window.md",
-    "JavaScript/생성자 함수(Constructor Function).md",
-    "생성자 함수(Constructor Function) 1.md",
-    "JavaScript/function.md",
-    "JavaScript/속성(Property).md",
-    "생성자 함수(Constructor Function)에 의해서 [[함수(Function).md",
-    "JavaScript/함수(Function).md",
-    "JavaScript/생성자(Constructor).md",
-    "JavaScript/constructor().md",
-    "JavaScript/참조 타입(Reference Type).md",
-    "JavaScript/일급 객체(First Class Object).md",
-    "JavaScript/고차함수(Higher Order Function).md",
-    "React.js/Libaray/axios.md",
-    "고차함수(Higher order function).md",
-    "JavaScript/콜백 함수(Callback Function).md",
-    "JavaScript/매개변수(parameter).md",
-    "JavaScript/일급 함수(First Class Function).md",
-    "JavaScript/비구조화 할당.md",
-    "React.js/props.md",
-    "React.js/children.md",
-    "React.js/Libaray/react-router-dom/<NavLink>.md",
-    "React.js/Libaray/axios",
-    "React.js/Libaray/react-router-dom",
-    "image/Pasted image 20240215192907.png",
-    "React.js/Next.js",
-    "image/Pasted image 20240202024338.png",
-    "image/Pasted image 20240202022302.png",
-    "image/Pasted image 20240202021721.png",
-    "CSS/SCSS",
-    "image/Pasted image 20240201231316.png",
-    "image/Pasted image 20240201201746.png",
-    "image/Pasted image 20240131165727.png",
-    "image/Pasted image 20240131165530.png",
-    "image/Pasted image 20240131165408.png",
-    "image/Pasted image 20240131165355.png",
-    "React.js/Libaray/Redux",
-    "React.js/Libaray",
-    "HTML/property",
-    "async",
-    "TypeScript",
-    "JavaScript"
+    "React.js/Libaray/Redux/mapDispatchToProps.md",
+    "React.js/Libaray/Redux/리덕스(Redux).md",
+    "React.js/state.md",
+    "JavaScript/순수 함수(Pure function).md",
+    "Node.js/export.md",
+    "React.js/useContext().md",
+    "React.js/Context.Consumer.md",
+    "React.js/Context.Provider.md",
+    "무제 파일.canvas",
+    "image/Pasted image 20240501134435.png",
+    "JavaScript/DOM",
+    "image/Pasted image 20240430002056.png",
+    "Node.js/Module/passport",
+    "Node.js/Module/Sequelize",
+    "Node.js/Module/MongoDB",
+    "Node.js/MongoDB",
+    "image/Pasted image 20240413032925.png",
+    "image/Pasted image 20240413030415.png",
+    "image/Pasted image 20240413030438.png",
+    "image/Pasted image 20240413032627.png",
+    "image/Pasted image 20240413031623.png",
+    "image/Pasted image 20231115000103.png",
+    "image/Pasted image 20231115000101.png",
+    "Node.js/Module/fs",
+    "Node.js/Module/koa",
+    "Node.js/Module/http",
+    "Node.js/Module/Express",
+    "Node.js/Module",
+    "image/Pasted image 20240402174940.png"
   ]
 }

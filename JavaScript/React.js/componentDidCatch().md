@@ -1,5 +1,5 @@
 - [[생명 주기(Life Cycle)]] [[메서드(Method)]]이다.
-- componentDidCatch, [[컴포넌트(component)]] 렌더링 도중에 에러가 발생했을 때 애플리케이션이 먹통이 되지 않고 오류 UI를 보여 줄 수 있게 해준다.
+- componentDidCatch, [[컴포넌트(Component)]] 렌더링 도중에 에러가 발생했을 때 애플리케이션이 먹통이 되지 않고 오류 UI를 보여 줄 수 있게 해준다.
 
 ```jsx
 import { Component } from 'react';

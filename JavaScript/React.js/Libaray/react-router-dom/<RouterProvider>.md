@@ -103,7 +103,7 @@ export default root;
 
 ## [[<Outlet>]]
 
-- 또한 `<RouterProvider>`와 CreateBrowserRouter를 사용하였을 때 패스에서 children을 설정하면 uri 패스에 따라 [[<Outlet>]]를 통해 [[children]] [[컴포넌트(component)]]를 설정할 수 있다.
+- 또한 `<RouterProvider>`와 CreateBrowserRouter를 사용하였을 때 패스에서 children을 설정하면 uri 패스에 따라 [[<Outlet>]]를 통해 [[children]] [[컴포넌트(Component)]]를 설정할 수 있다.
 
 ```jsx
 import { createBrowserRouter } from 'react-router-dom';

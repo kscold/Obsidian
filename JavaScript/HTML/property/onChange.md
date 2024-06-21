@@ -1,5 +1,5 @@
-- [[리액트(React)]]에서 사용하는 [[객체(Object)]]형식의 [[HTML]] 태그의 attibute이다.
-- 바닐라 [[HTML]]에서는 [[키워드(Keyword)]]는 onchange이다.
+- [[리액트(React)]]에서 사용하는 [[객체(Object)]]형식의 [[HTML(Hyper Text Markup Language)]] 태그의 attibute이다.
+- 바닐라 [[HTML(Hyper Text Markup Language)]]에서는 [[키워드(Keyword)]]는 onchange이다.
 
 - 유저의 입력이 어떤 식으로든 변경될 때 [[이벤트(event)]]가 발생하는 것이다.
 
@@ -35,7 +35,7 @@ export default EventPractice;
 ```
 
 - 이 때 이벤트 객체 e는 [[SyntheticEvent]]로 웹 브라우저의 네이티브 이벤트를 감싸는 객체이다. 
-- 네이티브 이벤트와 인터페이스가 같으므로 순수 자바스크립트에서 [[HTML]] 이벤트를 다둘 때와 똑같이 사용하면 된다.
+- 네이티브 이벤트와 인터페이스가 같으므로 순수 자바스크립트에서 [[HTML(Hyper Text Markup Language)]] 이벤트를 다둘 때와 똑같이 사용하면 된다.
 
 - [[SyntheticEvent]]는 네이티브 이벤트와 달리 이벤트가 끝나고 이벤트가 초기화되므로 정보를 참조할 수 없다.
 - 예를 들어, 0.5초 뒤에 e 객체를 참조하면 e 객체 내부의 모든 값이 비워지게 된다.

@@ -177,74 +177,118 @@ document.write('<br/>');
 ```
 
 - localStorage 에는 문자열만 저장된다.
-
 - 따라서, localStorage에 객체나 배열를 저장하기 위해서는 [[객체(Object)]]를 문자열로 변환해서 저장해야 한다.
 
 - 여기서는 [[JSON.stringify()]] 함수를 사용하여 객체와 배열을 JSON 문자열로 변환했다.
-
 - JSON 문자열을 localStorage에 저장했다.
 
 
-## **전체 key, value 가져오기**
+## 전체 key, value 가져오기
 
-  **for 문**  
+### [[for]] 문
 
-```
-// 초기화window.localStorage.clear(); // setItemwindow.localStorage.setItem('name', 'anna');window.localStorage.setItem('age', 20); // 모든 key, value 출력// output =>//    age : 20//    name : annafor(let i = 0; i < window.localStorage.length; i++) {  // key 찾기  const key = window.localStorage.key(i);    // value 찾기  const value = window.localStorage.getItem(key);    // 결과 출력  document.write(key + " : " + value + "<br />");}
-```
+```js
+// 초기화
+window.localStorage.clear(); 
 
-_**for(let i = 0; i < window.localStorage.length; i++)**_
+// setItem
+window.localStorage.setItem('name', 'anna');
+window.localStorage.setItem('age', 20); // 모든 key, value 출력
 
-length 속성을 사용하여 전체 아이템의 길이를 구하여 for문을 돌렸습니다.
+// output =>
+//    age : 20
+//    name : anna
 
-_**const key = window.localStorage.key(i);**_
+for(let i = 0; i < window.localStorage.length; i++) {  // key 찾기 
 
-for문의 index 값과 key() 함수를 사용하여 key 이름을 읽어왔습니다.
+const key = window.localStorage.key(i);    // value 찾기  
+const value = window.localStorage.getItem(key);    // 결과 출력 
 
-_**const value = window.localStorage.getItem(key);**_
-
-앞에서 찾아온 key값과 getItem() 함수를 이용하여
-
-해당 key의 value를 읽어왔습니다.
-
-  **for...in**  
-
-```
-// 초기화window.localStorage.clear(); // setItemwindow.localStorage.setItem('name', 'anna');window.localStorage.setItem('age', 20); // 모든 key, value 출력// output => //     age : 20//    name : anna//    length : null//    clear : null//    getItem : null//    key : null//    removeItem : null//    setItem : nullfor(const key in window.localStorage) {  // value 찾기  const value = window.localStorage.getItem(key);    // 결과 출력  document.write(key + " : " + value + "<br />");}
+document.write(key + " : " + value + "<br />");}
 ```
 
-for...in 문을 사용하여 localStorage의 key 목록을 조회하였습니다.
+- length 속성을 사용하여 전체 아이템의 길이를 구하여 for문을 돌고 const key = window.localStorage.key(i); for문의 index 값과 key() 함수를 사용하여 key 이름을 읽었다.
 
-그런데 for...in 문을 사용하면, 
+-  이후 const value = window.localStorage.getItem(key); 앞에서 찾아온 key값과 getItem() 함수를 이용하여 해당 key의 value를 읽었다.
 
-사용자가 정의한 key 이외에
+### [[for]] ... in 문
 
-localStorage의 built-in 항목까지 조회된다는 단점이 있습니다.
+```js
+// 초기화
+window.localStorage.clear(); 
 
-for...in 문을 사용하고 싶다면
+// setItem
+window.localStorage.setItem('name', 'anna');
+window.localStorage.setItem('age', 20); // 모든 key, value 출력
+// output => 
+//     age : 20
+//    name : anna
+//    length : null
+//    clear : null
+//    getItem : null
+//    key : null
+//    removeItem : null
+//    setItem : null
 
-아래 예제와 같이 코드가 수정되어야 합니다.
-
-  **built-in propery 제거**  
-
+for(const key in window.localStorage) {  // value 찾기  
+	
+	const value = window.localStorage.getItem(key);    // 결과 출력
+	document.write(key + " : " + value + "<br />");
+}
 ```
-// 초기화window.localStorage.clear(); // setItemwindow.localStorage.setItem('name', 'anna');window.localStorage.setItem('age', 20); // 모든 key, value 출력// output => //    age : 20//    name : annafor(const key in window.localStorage) {    if(window.localStorage.hasOwnProperty(key)) {    // value 찾기    const value = window.localStorage.getItem(key);     // 결과 출력    document.write(key + " : " + value + "<br />");  }}
+
+- for...in 문을 사용하여 localStorage의 key 목록을 조회하였다.
+
+- 그런데 for...in 문을 사용하면,  사용자가 정의한 key 이외에 localStorage의 built-in 항목까지 조회된다는 단점이 있다.
+
+- 따라서 for...in 문을 사용하고 싶다면 아래 예제와 같이 코드가 수정되어야 한다.
+
+- 아래 코드는 built-in propery 제거된 코드이다.
+
+```js
+// 초기화
+window.localStorage.clear(); 
+
+// setItem
+window.localStorage.setItem('name', 'anna');
+window.localStorage.setItem('age', 20); // 모든 key, value 출력
+
+// output => 
+//    age : 20
+//    name : anna
+
+for(const key in window.localStorage) {
+	
+	if(window.localStorage.hasOwnProperty(key)) { // value 찾기
+		const value = window.localStorage.getItem(key); // 결과 출력 
+		document.write(key + " : " + value + "<br />");  
+	}
+}
 ```
 
-_**if(window.localStorage.hasOwnProperty(key))**_
+- for...in 문에서 조회되는 built-in 항목을 제거하기 위해서 hasOwnProperty() 함수를 사용했다.
 
-for...in 문에서 조회되는 built-in 항목을 제거하기 위해서
+### Object.keys()  
 
-hasOwnProperty() 함수를 사용하였습니다.
+```js
+// 초기화
+window.localStorage.clear(); 
 
-  **Object.keys()**  
+// setItem
+window.localStorage.setItem('name', 'anna');
+window.localStorage.setItem('age', 20); // key 목록 조회 / 출력
+const keys = Object.keys(window.localStorage);
+document.write(keys);document.write('<br/>'); // 모든 key, value 출력
 
+// output => 
+//     age,name
+//     age : 20
+//     name : anna
+
+for(const key of keys) {    // value 찾기    
+	const value = window.localStorage.getItem(key); // 결과 출력    
+	document.write(key + " : " + value + "<br />");
+}
 ```
-// 초기화window.localStorage.clear(); // setItemwindow.localStorage.setItem('name', 'anna');window.localStorage.setItem('age', 20); // key 목록 조회 / 출력const keys = Object.keys(window.localStorage);document.write(keys);document.write('<br/>'); // 모든 key, value 출력// output => //     age,name//     age : 20//     name : annafor(const key of keys) {    // value 찾기    const value = window.localStorage.getItem(key);     // 결과 출력    document.write(key + " : " + value + "<br />");}
-```
 
-_**const keys = Object.keys(window.localStorage)**_
-
-localStorage의 key 목록을 조회하기 위해
-
-Object.keys() 함수를 사용하였습니다.
+- localStorage의 key 목록을 조회하기 위해 Object.keys() 함수를 사용한다.

@@ -1,6 +1,6 @@
-- 리엑트에서 [[컴포넌트(component)]] 파일을 코드의 최상단에 [[import]]로 정의하고 동적으로 불러오기를 사용하면 에러가 발생한다.
+- 리엑트에서 [[컴포넌트(Component)]] 파일을 코드의 최상단에 [[import]]로 정의하고 동적으로 불러오기를 사용하면 에러가 발생한다.
 
-- 따라서 [[컴포넌트(component)]]를 동적으로 불러오기 위해서는 React.lazy()를 사용해야 한다.
+- 따라서 [[컴포넌트(Component)]]를 동적으로 불러오기 위해서는 React.lazy()를 사용해야 한다.
 - React.lazy() [[메서드(Method)]]를 사용하면 동적 가져오기를 사용하여 구성 요소 수준에서 React 애플리케이션을 쉽게 코드 분할할 수 있다.
 
 ## React.lazy를 사용하는 이유
@@ -20,8 +20,8 @@ const About = React.lazy(() => import('./About'));
 - React.lazy()는 import() 구문을 반환하는 [[콜백 함수(Callback Function)]]를 인자로 받는다.
 
 - 동적으로 불러오는 컴포넌트 파일에는 반드시 지켜줘야하는 두 가지 규칙이 있다.
-	1. React [[컴포넌트(component)]]를 포함해야 합니다.
-	2. default export를 가진 [[컴포넌트(component)]]여야 한다.
+	1. React [[컴포넌트(Component)]]를 포함해야 합니다.
+	2. default export를 가진 [[컴포넌트(Component)]]여야 한다.
 
 ## [[React Router]]와 함께 사용
 

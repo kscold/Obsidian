@@ -1,4 +1,4 @@
-- children은 [[리액트(React)]] [[컴포넌트(component)]] 태그 사이의 내용을 보여주는 [[props]]이다.
+- children은 [[리액트(React)]] [[컴포넌트(Component)]] 태그 사이의 내용을 보여주는 [[props]]이다.
 
 ## 예시
 

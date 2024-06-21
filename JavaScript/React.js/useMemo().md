@@ -1,4 +1,4 @@
-- useMemo를 사용하면 [[컴포넌트(component)]] 내부에서 발생하는 연산을 최적화할 수 있다.
+- useMemo를 사용하면 [[컴포넌트(Component)]] 내부에서 발생하는 연산을 최적화할 수 있다.
 
 - useMemo는 값([[리터럴(literal)]])을 메모이제이션하고 연산 결과를 반환한다.
 - useMemo는 계산 비용이 큰 연산을 최적화하는 데 사용한다.
@@ -44,7 +44,7 @@ export default function App() {
 }
 ```
 
-- [[컴포넌트(component)]]의 [[state]] 값이 변하면 리렌더링이 일어난다.
+- [[컴포넌트(Component)]]의 [[state]] 값이 변하면 리렌더링이 일어난다.
 
 - 버튼을 클릭할 경우 [[setState]]로 인해 [[state]]값이 변화되어 리렌더링이 일어나면 console.log가 찍히도록 위처럼 코드를 작성하면 된다.
 - 사실, 위처럼 코드를 작성할 경우 X버튼, Y버튼, 혹은 컴포넌트가 부모 컴포넌트에 의해서 리렌더링이 될 경우 상태 값에 관계 없이 console.log가 찍히는 연산이 발생하게 된다.
@@ -102,7 +102,7 @@ const Average = () => {
 export default Average;
 ```
 
-- 위의 코드에서 인풋창의 number 바뀌면 getAverage 함수가 계속 호출되는 이유는 자바스크립트에서 [[객체(Object)]]는 [[원시 타입(Primitive type)]]이 아니라 [[참조 타입(Reference Type)]]이기 주소 값으로 저장되기 때문에 number [[state]]가 바뀌면 [[컴포넌트(component)]]가 재호출되면서 getAverage 함수도 재호출 되었다고 인식한다.
+- 위의 코드에서 인풋창의 number 바뀌면 getAverage 함수가 계속 호출되는 이유는 자바스크립트에서 [[객체(Object)]]는 [[원시 타입(Primitive type)]]이 아니라 [[참조 타입(Reference Type)]]이기 주소 값으로 저장되기 때문에 number [[state]]가 바뀌면 [[컴포넌트(Component)]]가 재호출되면서 getAverage 함수도 재호출 되었다고 인식한다.
 
 ```jsx
 	const avg = useMemo(() => getAverage(list), [list]);

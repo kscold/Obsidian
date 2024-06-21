@@ -44,7 +44,7 @@ class App extends Component {
 export default App;
 ```
 
-- 먼저 [[ComponentDidMount()]] [[생명 주기(Life Cycle)]]로 [[컴포넌트(component)]]가 마운트되는 시점에 [[이벤트(event)]]를 등록한다.
+- 먼저 [[ComponentDidMount()]] [[생명 주기(Life Cycle)]]로 [[컴포넌트(Component)]]가 마운트되는 시점에 [[이벤트(event)]]를 등록한다.
 
 - window객체에 history의 [[state]]가 pop되면 콘솔에 정보를 출력합니다. 
 - onpopstate 뒤로 가기 이용한다.

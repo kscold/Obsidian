@@ -1,4 +1,4 @@
-- render 함수는 [[생명 주기(Life Cycle)]] 중에서 [[컴포넌트(component)]]의 [[생성자(Constructor)]] 과정에 속한다.
+- render 함수는 [[생명 주기(Life Cycle)]] 중에서 [[컴포넌트(Component)]]의 [[생성자(Constructor)]] 과정에 속한다.
 - [[생명 주기(Life Cycle)]] [[메서드(Method)]] 중 유일한 필수 메서드이다.
 
 - 이 메서드 안에서 [[this]].[[props]]와 [[this]].[[state]]에 접근할 수 있으며, 리액트 요소를 반환한다.
