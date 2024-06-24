@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React.js/Libaray/Redux/connect().md",
+                "file": "JavaScript/DOM/DOM(Document Object Model).md",
                 "mode": "source",
                 "source": false
               }
@@ -23,8 +23,12 @@
             "id": "700fb5a6386461df",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CSS/flex.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -94,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CSS/flex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "CSS/flex.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "CSS/flex.md"
+              }
             }
           }
         ]
@@ -153,32 +161,32 @@
   },
   "active": "700fb5a6386461df",
   "lastOpenFiles": [
-    "React.js/Libaray/Redux/액션 생성함수(Action Creator).md",
+    "CSS/flex-basis.md",
+    "CSS/flex-direction.md",
+    "CSS/flex-flow.md",
+    "CSS/flex-grow.md",
+    "CSS/flex-shrink.md",
+    "CSS/flex-wrap.md",
+    "CSS/box-sizing.md",
+    "CSS/css Selector.md",
+    "CSS/background-image.md",
+    "CSS/SCSS/@extend.md",
+    "CSS/SCSS/map-get.md",
+    "CSS/SCSS/@funtion.md",
+    "CSS/SCSS/@mixin.md",
+    "CSS/SCSS/$(Argument).md",
+    "CSS/SCSS/@include.md",
+    "JavaScript/정규표현식(Regex).md",
+    "JavaScript/DOM/DOM(Document Object Model).md",
+    "JavaScript/DOM/document.md",
+    "HTML/property/class.md",
+    "HTML/property/id.md",
+    "JavaScript/DOM/window.document.md",
+    "JavaScript/blob.md",
+    "JavaScript/Blob URL.md",
     "React.js/Libaray/Redux/connect().md",
+    "React.js/Libaray/Redux/액션 생성함수(Action Creator).md",
     "React.js/Libaray/Redux/mapStateToProps.md",
-    "React.js/Libaray/Redux/handleActions().md",
-    "React.js/Libaray/Redux/createAction().md",
-    "React.js/Libaray/Redux/useSelector().md",
-    "React.js/Libaray/immer.md",
-    "JavaScript/find().md",
-    "JavaScript/findIndex().md",
-    "React.js/Libaray/Redux/스토어(Store).md",
-    "JavaScript/push().md",
-    "JavaScript/splice().md",
-    "React.js/Libaray/Redux/Reducer.md",
-    "React.js/Libaray/Redux/dispatch().md",
-    "React.js/Libaray/Redux/action.md",
-    "React.js/Context API.md",
-    "React.js/createContext().md",
-    "JavaScript/메서드(Method).md",
-    "React.js/Libaray/Redux/mapDispatchToProps.md",
-    "React.js/Libaray/Redux/리덕스(Redux).md",
-    "React.js/state.md",
-    "JavaScript/순수 함수(Pure function).md",
-    "Node.js/export.md",
-    "React.js/useContext().md",
-    "React.js/Context.Consumer.md",
-    "React.js/Context.Provider.md",
     "무제 파일.canvas",
     "image/Pasted image 20240501134435.png",
     "JavaScript/DOM",

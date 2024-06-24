@@ -19,7 +19,7 @@
 
 ## [[window]] [[객체(Object)]]에서의 DOM 
 
-- [[Web API]]의 시리즈인 [[BOM(Browser Object Model)]] 안에 window.location, window.navigator, window.history, window.screen 등이 있는데 그 중에서 [[window.document]]를 DOM이라고 부른다.
+- [[Web API]]의 시리즈인 [[BOM(Browser Object Model)]] 안에 window.location, window.navigator, window.history, window.screen 등이 있는데 그 중에서 window.[[document]]를 DOM이라고 부른다.
 
 ![[Pasted image 20240430002056.png]]
 

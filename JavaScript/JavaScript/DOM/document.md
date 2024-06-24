@@ -23,7 +23,7 @@
 | document.getElementsByClassName(클래스이름) | 해당 클래스에 속한 요소를 모두 선택한다.       |
 | document.getElementsByName(name속성값)    | 해당 name 속성값을 가지는 요소를 모두 선택한다. |
 | document.querySelectorAll(선택자)         | 해당 선택자로 선택되는 요소를 모두 선택한다.     |
-- 이 중 document.querySelectorAll() 메서드는 브라우저별로 지원 여부가 달라 사용시 확인 필요하다.
+- 이 중 document.[[querySelectorAll()]] [[메서드(Method)]]는 브라우저별로 지원 여부가 달라 사용시 확인 필요하다.
 
 #### 하나의 요소에 접근하는 방법
 
@@ -38,7 +38,7 @@ document.getElementByName(name속성값)
 document.querySelector(선택자)
 ```
 
-- 예시로 id="hello"이면 `#hello`로 class="hello"면 .hello로 선택이 된다.
+- 예시로 [[id]]="hello"이면 `#hello`로 [[class]]="hello"면 `.hello`로 선택이 된다.
 
 #### 여러 개의 요소에 접근하는 방법
 
