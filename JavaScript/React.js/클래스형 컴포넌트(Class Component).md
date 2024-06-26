@@ -111,7 +111,7 @@ class MyComponent extends Component {
 export default MyComponent;
 ```
 
-## 클래스형 컴포넌트의 state
+## 클래스형 컴포넌트의 [[state]]
 
 - [[super()]]를 이용한다.
 

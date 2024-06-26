@@ -2,7 +2,7 @@
 
 - 요청과 응답은 이벤트 방식이다. 
 - 요청이 왔을 때 어떤 작업을 수행할지 [[이벤트(event)]] 리스너를 미리 등록해두어야 한다.
-- [[웹(web)]] 브라우저에서 요청을 처리하기 위해서 [[HTTP(Hyper Tranfer Protocol)]] 서버가 있어야 한다.
+- [[웹(Web)]] 브라우저에서 요청을 처리하기 위해서 [[HTTP(Hyper Tranfer Protocol)]] 서버가 있어야 한다.
 
 - 서버의 종류에는 뷰(view)로 서비스가 되는 [[웹 서버(Web Server)]]가 있고 [[JSON(Java Script Object Notation)]]형식으로 제공되는 api 서버가 있다.
 

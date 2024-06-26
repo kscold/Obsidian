@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "256f244e33383b11",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript/DOM/DOM(Document Object Model).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "700fb5a6386461df",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "CSS/flex.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "256f244e33383b11",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript/객체(Object).md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSS/flex.md",
+                "file": "JavaScript/객체(Object).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSS/flex.md",
+                "file": "JavaScript/객체(Object).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSS/flex.md"
+                "file": "JavaScript/객체(Object).md"
               }
             }
           }
@@ -159,34 +159,36 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "700fb5a6386461df",
+  "active": "256f244e33383b11",
   "lastOpenFiles": [
+    "JavaScript/속성(Property).md",
+    "JavaScript/객체(Object).md",
+    "JavaScript/확산 연산자(spread operator).md",
+    "CSS/flex.md",
+    "React.js/클래스형 컴포넌트(Class Component).md",
+    "React.js/state.md",
+    "React.js/Props Drilling.md",
+    "React.js/JSX Key.md",
+    "JavaScript/map().md",
+    "CSS/border-bottom.md",
+    "CSS/float.md",
+    "JavaScript/CRP(Critical Rendering Path).md",
+    "React.js/Virtual DOM.md",
+    "JavaScript/DOM/DOM(Document Object Model).md",
+    "image/Pasted image 20240626175122.png",
+    "CSS/box-shadow.md",
+    "HTML/<input>.md",
+    "JavaScript/CSSOM(CSS Object Model).md",
+    "image/Pasted image 20240626160831.png",
+    "JavaScript/웹(Web).md",
+    "Node.js/웹 서버(Web Server).md",
+    "Node.js/서버(Server).md",
+    "React.js/데이터 바인딩.md",
     "CSS/flex-basis.md",
     "CSS/flex-direction.md",
     "CSS/flex-flow.md",
     "CSS/flex-grow.md",
     "CSS/flex-shrink.md",
-    "CSS/flex-wrap.md",
-    "CSS/box-sizing.md",
-    "CSS/css Selector.md",
-    "CSS/background-image.md",
-    "CSS/SCSS/@extend.md",
-    "CSS/SCSS/map-get.md",
-    "CSS/SCSS/@funtion.md",
-    "CSS/SCSS/@mixin.md",
-    "CSS/SCSS/$(Argument).md",
-    "CSS/SCSS/@include.md",
-    "JavaScript/정규표현식(Regex).md",
-    "JavaScript/DOM/DOM(Document Object Model).md",
-    "JavaScript/DOM/document.md",
-    "HTML/property/class.md",
-    "HTML/property/id.md",
-    "JavaScript/DOM/window.document.md",
-    "JavaScript/blob.md",
-    "JavaScript/Blob URL.md",
-    "React.js/Libaray/Redux/connect().md",
-    "React.js/Libaray/Redux/액션 생성함수(Action Creator).md",
-    "React.js/Libaray/Redux/mapStateToProps.md",
     "무제 파일.canvas",
     "image/Pasted image 20240501134435.png",
     "JavaScript/DOM",
@@ -201,12 +203,10 @@
     "image/Pasted image 20240413032627.png",
     "image/Pasted image 20240413031623.png",
     "image/Pasted image 20231115000103.png",
-    "image/Pasted image 20231115000101.png",
     "Node.js/Module/fs",
     "Node.js/Module/koa",
     "Node.js/Module/http",
     "Node.js/Module/Express",
-    "Node.js/Module",
-    "image/Pasted image 20240402174940.png"
+    "Node.js/Module"
   ]
 }

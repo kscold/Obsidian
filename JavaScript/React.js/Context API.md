@@ -1,7 +1,7 @@
 - Context는 [[리액트(React)]] [[컴포넌트(Component)]]간에 어떠한 값을 공유할수 있게 해주는 기능이다.
 
 - 주로 Context는 전역적(global)으로 필요한 값을 다룰 때 사용하나, 꼭 전역적일 필요는 없다.
-- 따라서 Context API는 [[Prop Drilling]]을 방지할 수 있다.
+- 따라서 Context API는 [[Props Drilling]]을 방지할 수 있다.
 
 
 ## [[리액트(React)]] context를 사용하는 4단계

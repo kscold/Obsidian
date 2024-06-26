@@ -1,9 +1,10 @@
-- 웹 서버는 클라이언트로부터 HTTP 요청을 받아 정적인 콘텐츠(HTML 페이지, 이미지, CSS 파일 등)를 제공하는 서버이다.
+- 웹 서버는 클라이언트로부터 HTTP 요청을 받아 정적인 콘텐츠(HTML 페이지, 이미지, CSS 파일 등)를 제공하는 [[서버(Server)]]이다.
 
 - 주로 정적인 파일을 제공하며, 동적인 컨텐츠 생성에는 WAS나 다른 서버와의 협력이 필요하다.
 - 대표적으로 Apache, Nginx 등이 있다.
 
 - [[리액트(React)]] 및 [[넥스트(Next.js)]]는 프론트엔드 웹 서버(View 담당)이고 [[노드(Node.js)]]는 백엔드 웹 서버(비즈니스 로직 담당)라고 볼 수 있다.
+
 
 ## 프론트엔드 웹 서버와 SPA의 등장 배경
 
@@ -30,5 +31,5 @@
 
 - 위 사진처럼 [[HTML(Hyper Text Markup Language)]]을 미리 렌더링하고, 그 뒤에 요청이 오면 Chunk 단위로 자바스크립트를 보내주어 이벤트가 작동하게 되는 것이 [[Hydration]]이며, [[넥스트(Next.js)]]에서 사용되는 방법이다.
 
-- 이러한 빌드 과정, [[웹(web)]]페이지 요청 과정이 [[SSR(Server Side Rendering)]]인 것은 아니다.
+- 이러한 빌드 과정, [[웹(Web)]]페이지 요청 과정이 [[SSR(Server Side Rendering)]]인 것은 아니다.
 - 서버에서 [[pre-rendering]]하는 것까지가 [[넥스트(Next.js)]]의 특징인 것이고, [[pre-rendering]]을 동적으로 해서 페이지를 생성하느냐, 정적으로 페이지를 생성하느냐의 차이가 [[SSR(Server Side Rendering)]]과 [[SSG(Static Site Generation)]]의 차이라고 생각하면 된다.

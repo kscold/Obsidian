@@ -55,7 +55,10 @@ newObject.sayJS(); // JS
 console.log(newObject.ES6); // Fantasitc
 ```
 
+
 ## 객체 [[메서드(Method)]]
+
+- 자바스크립트에서는 객체 안에 정의되어 있는 [[함수(Function)]]를 [[메서드(Method)]]라고 부른다.
 
 ```js
 const user = {
@@ -70,3 +73,62 @@ const user = {
 console.log(user.name);
 user.greet()
 ```
+
+
+## 객체 조합
+
+- 아래처럼 또 하나의 객체로 묶으면 객체 안의 [[속성(Property)]]으로 객체가 들어가게 된다.
+
+```js
+const obj1 = {
+	a: 'A',
+	b: 'B'
+}
+
+const obj2 = {
+	a: 'C',
+	b: 'B'
+}
+
+const objWrap = {obj1, obj2};
+console.log(objWrap);
+
+/*
+{
+	obj1: {
+		a: "A"
+		b: "B"
+	obj2: {
+		a: "C"
+		b: "B"
+	}
+}
+*/
+```
+
+- 그러나 [[확산 연산자(spread operator)]]를 사용하여 조합하면 객체 자체가 아닌 각각의 값으로 [[속성(Property)]]이 된다.
+
+```js
+const obj1 = {
+	a: 'A',
+	b: 'B'
+}
+
+const obj2 = {
+	a: 'C',
+	b: 'B'
+}
+
+const objWrap = {...obj1, ...obj2};
+console.log(objWrap);
+
+/*
+{
+	a: "A"
+	b: "B"
+	a: "C"
+	b: "B"
+}
+*/
+```
+

@@ -8,7 +8,7 @@
 
 	1.Text
 	`<input type = "text">`  
-	- 텍스트로 입력받을 수 있음
+	- 텍스트로 입력받을 수 있다.
 	
 	2.Radio 
 	`<input type = "radio">` 
@@ -17,6 +17,7 @@
 	3.Checkbox
 	 `<input type = "checkbox">`
 	 - 다중 선택 체크박스
+	 - defaultChecked={false} 속성을 통해 버튼의 선택 유무를 설정할 수 있다.
 	
 	4.Submit
 	`<input type = "submit">` 

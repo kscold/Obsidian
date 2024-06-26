@@ -29,7 +29,7 @@
 - DOM API를 사용하는 서비스들은 동적 UI에 최적화되어 있지 않다는 문제가 있다. HTML 자체는 정적이므로 자바스크립트를 이용해 동적으로 만들 수 있다.
 
 - 따라서 DOM은 트리 구조로 되어 있어서 이해하기 쉽지만, 노드의 수가 많아질 수록 속도가 느려지고, DOM 업데이트에 잦은 오류를 발생시킬 수 있다.
-- 또한, 최근 모던 [[웹(web)]]은 [[SPA(Single Page Application)]]을 사용한다. 
+- 또한, 최근 모던 [[웹(Web)]]은 [[SPA(Single Page Application)]]을 사용한다. 
 - 하나의 웹 페이지를 어플리케이션처럼 구성하는 [[SPA(Single Page Application)]]에서는 [[HTML(Hyper Text Markup Language)]] 문서 자체가 하나이며, 여러 동적인 기능이 들어가기 때문에 안그래도 리소스가 모두 합쳐진 무거운 [[HTML(Hyper Text Markup Language)]] 문서를 지속적으로 재랜더링 해줘야한다는 문제점이 발생하게 되었다.
 
 - 즉, DOM을 업데이트 하는 것은 콘텐츠 변경을 포함할 뿐만이 아니라 훨씬 더 많은 작업들이 요구된다. 
