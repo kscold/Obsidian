@@ -1,7 +1,10 @@
 - [[리액트(React)]]에서 props는 properties를 줄인 표현으로 [[컴포넌트(Component)]] 속성을 선정할 때 사용하는 요소이다.
 
+- props는 읽기 전용이므로 자식 [[컴포넌트(Component)]] 입장에서는 변하지 않는다.
+- 따라서 변하게 하고자 한다면 부모 [[컴포넌트(Component)]]에서 [[state]]를 변경시켜주어야 한다.
 
-## JSX 내부에서 props 렌더링
+
+## [[JSX]] 내부에서 props 렌더링
 
 ```jsx
 import MyComponent from './MyComponent'
@@ -61,6 +64,7 @@ MyComponent.defaultProps = {
 
 export default MyComponent;
 ```
+
 
 ## 함수 props 호출 예시
 
