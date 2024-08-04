@@ -12,10 +12,10 @@
 - 브라우저에서 호출하는 경우의 [[객체(Object)]]는 [[window]]가 된다.
 
 - [[노드(Node.js)]]에서 호출하는 경우 [[객체(Object)]]는 빈 [[객체(Object)]](`{}`)인 Anonymous가 된다.
-- 이는 브라우저와는 전혀 다른 [[런타임(runtime)]] 환경이기 때문에, 브라우저 관련 객체 (window 등) 에는 접근할 수 없다.  
+- 이는 브라우저와는 전혀 다른 [[런타임(runtime)]] 환경이기 때문에, 브라우저 관련 객체([[window]] 등) 에는 접근할 수 없다.  
 - 대신, [[웹 서버(Web Server)]]를 구축할 때 필요한 다른 변수들 (환경변수 등) 에 접근할 수 있도록 설정되어 있다.
  
-- 이는 ES5에서 추가된 strict mode(엄격 모드)에서도 마찬가지이다.
+- 이는 ES5에서 추가된 [[strict mode]](엄격 모드)에서도 마찬가지이다.
 
 ![](https://blog.kakaocdn.net/dn/duY8YT/btqDKUV2At7/shsc6qD3lLN9gpxQgeqKi0/img.png)
 
@@ -84,7 +84,7 @@ function addNum() {
 
 ## [[메서드(Method)]] 안에서 쓴 this
 
-- 메서드 호출 시 메서드 내부 코드에서 사용된 this는 해당 메서드를 호출한 객체로 바인딩된다.
+- 메서드 호출 시 메서드 내부 코드에서 사용된 this는 해당 [[메서드(Method)]]를 호출한 [[객체(Object)]]로 [[바인딩(binding)]]된다.
 
 ```javascript
 var person = { 
@@ -97,14 +97,26 @@ var person = {
 	},
 }; 
 
-person.fullName(); //"John Doe"
+person.fullName(); // "John Doe"
 ```
 
 ```javascript
-var num = 0; function showNum() {  console.log(this.num);} showNum(); //0 var obj = {  num: 200,  func: showNum,}; obj.func(); //200
+var num = 0; 
+function showNum() {  
+	console.log(this.num);
+} 
+
+showNum(); // 0
+
+var obj = {  
+	num: 200,  
+	func: showNum,
+};
+
+obj.func(); //200
 ```
 
-## 4. [[이벤트(event)]] 핸들러 안에서 쓴 this
+## [[이벤트(event)]] 핸들러 안에서 쓴 this
 
 - 이벤트 핸들러에서 this는 이벤트를 받는 [[HTML(Hyper Text Markup Language)]] 요소를 가리킨다.
 
@@ -112,11 +124,11 @@ var num = 0; function showNum() {  console.log(this.num);} showNum(); //0 var ob
 var btn = document.querySelector('#btn')
 
 btn.addEventListener('click', function() { 
-	console.log(this); //#btn
+	console.log(this); // #btn
 });
 ```
 
-## 5. [[생성자(Constructor)]] 안에서 쓴 this
+## [[생성자(Constructor)]] 안에서 쓴 this
 
 - [[생성자 함수(Constructor Function)]]가 생성하는 객체로 this가 [[바인딩(binding)]]된다.
 
@@ -128,11 +140,11 @@ function Person(name) {
 var kim = new Person('kim');
 var lee = new Person('lee');
 
-console.log(kim.name); //kim
-console.log(lee.name); //lee
+console.log(kim.name); // kim
+console.log(lee.name); // lee
 ```
 
-- 하지만 [[new]] [[키워드(Keyword)]]를 빼먹는 순간 일반 함수 호출과 같아지기 때문에, 이 경우는 this가 [[window]]에 바인딩된다.
+- 하지만 [[new]] [[키워드(Keyword)]]를 빼먹는 순간 일반 [[함수(Function)]] 호출과 같아지기 때문에, 이 경우는 this가 [[window]]에 바인딩된다.
 
 ```javascript
 var name = 'window';
@@ -143,30 +155,17 @@ function Person(name) {
 
 var kim = Person('kim');
 
-console.log(window.name); //kim
+console.log(window.name); // kim
 ```
 
-## 7. 명시적 바인딩을 한 this
+## 명시적 바인딩을 한 this
 
 - 명시적 바인딩은 짝을 지어주는 것이다. 
-- apply()와 call() [[메서드(Method)]]는 Function Object에 기본적으로 정의된 메서드이다.
+- [[apply()]]와 [[call()]] [[메서드(Method)]]는 Function Object에 기본적으로 정의된 [[메서드(Method)]]이다.
 - 인자를 this로 만들어주는 기능을 한다.
 
-```javascript
-function whoisThis() {
-	console.log(this);
-}
-
-whoisThis(); // window 
-
-var obj = {  
-	x: 123,
-}; 
-
-whoisThis.call(obj); // { x: 123 }
-```
-
-- apply()에서 매개변수로 받은 첫 번째 값은 함수 내부에서 사용되는 this에 바인딩되고, 두 번째 값인 배열은 자신을 호출한 함수의 인자로 사용한다.
+- 아래는 코드는 [[apply()]] [[메서드(Method)]]에 대한 설명이다.
+- [[apply()]]에서 [[매개변수(parameter)]]로 받은 첫 번째 값은 [[함수(Function)]] 내부에서 사용되는 this에 [[바인딩(binding)]]되고, 두 번째 값인 [[배열(Array)]]은 자신을 호출한 [[함수(Function)]]의 인자로 사용한다.
 
 ```javascript
 function Character(name, level) {  
@@ -181,8 +180,8 @@ function Player(name, level, job) {
 }
 ```
 
-- 이렇게 두 생성자 함수가 있다고 가정했을 때, this.name과 this.level을 받아오는 부분이 똑같다.
-- 이럴 때 apply()을 쓸 수 있다.
+- 이렇게 두 [[생성자 함수(Constructor Function)]]가 있다고 가정했을 때, this.name과 this.level을 받아오는 부분이 똑같다.
+- 이럴 때 [[apply()]]을 쓸 수 있다.
 
 ```javascript
 function Character(name, level) { 
@@ -198,10 +197,10 @@ function Player(name, level, job) {
 var me = new Player('Nana', 10, 'Magician');
 ```
 
-- call()도 apply()와 거의 같다.
-- 차이점이 있다면 call()은 인수 목록을 받고 apply()는 인수 배열을 받는다는 차이가 있다.
+- [[call()]]도 [[apply()]]와 거의 같다.
+- 차이점이 있다면 [[call()]]은 인자 목록을 받고 apply()는 인자 [[배열(Array)]]을 받는다는 차이가 있다.
 
-- 위 코드를 call()로 바꿔 쓴다면 아래와 같다.
+- 위 코드를 [[call()]]로 바꿔 쓴다면 아래와 같다.
 - 둘다 일단은 함수를 호출한다는 것에 주의해야 한다.
 
 ```javascript
@@ -218,6 +217,20 @@ function Player(name, level, job) {
 var me = {};
 
 Player.call(me, 'nana', 10, 'Magician');
+```
+
+```javascript
+function whoisThis() {
+	console.log(this);
+}
+
+whoisThis(); // window 
+
+var obj = {  
+	x: 123,
+}; 
+
+whoisThis.call(obj); // { x: 123 }
 ```
 
 - apply()나 call()은 보통 유사배열 객체에게 [[배열(Array)]] 메서드를 쓰고자 할 때 사용한다.

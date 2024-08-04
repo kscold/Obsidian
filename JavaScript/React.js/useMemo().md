@@ -6,6 +6,7 @@
 
 - [[useCallback()]]함수와 큰 차이는 useMemo는 useMemo는 계산 비용이 큰 연산의 결과를 메모이제이션하여 재사용하고, useCallback은 함수를 메모이제이션하여 재사용하는 것에 차이가 있다.
 
+
 ## 문법
 
 ```jsx
@@ -15,7 +16,7 @@ const value = useMemo(() => {
 ```
 
 - useMemo는 [[useEffect()]]처럼 첫 번째 인자로 [[콜백 함수(Callback Function)]], 두 번째 인자로 의존성 배열(dependancyArray)을 받는다.
-- 의존성 배열 안에있는 값이 업데이트 될 때에만 콜백 함수를 다시 호출하여 메모리에 저장된 값을 업데이트 해준다.
+- 의존성 배열 안에있는 값이 업데이트 될 때에만 [[콜백 함수(Callback Function)]]를 다시 호출하여 메모리에 저장된 값을 업데이트 해준다.
 
 - 만약 빈 배열을 넣는다면 [[useEffect()]]와 마찬가지로 마운트 될 때에만 값을 계산하고 그 이후론 계속 memoization된 값을 꺼내와 사용한다.
 
@@ -123,3 +124,36 @@ export default Average;
 		</div>
 	);
 ```
+
+
+## useMemo()와 [[React.memo()]]의 공통점과 차이점
+
+### 공통점
+
+- [[React.memo()]]와 useMemo() 모두 [[props]]가 변하지 않으면(이전 props와 동일하면) 인자로 넘긴 함수는 재실행되지 않고, 이전의 메모이즈된 결과를 반환한다는 점에서 공통점이있다. 
+
+- 아래 React.memo와 useMemo를 사용한 코드를 보면 두가지 코드는 props.name의 값이 변하지 않는다면 [[리렌더링(Re-rendering)]] 되지 않고 이전의 값을 반환한다는 점에서 동일하게 동작한다.
+
+```jsx
+// 별도로 두번째 인자를 넘기지 않을 경우 props가 변하지 않는다면 재렌더링 되지 않음
+const NameTag = React.memo(
+	(props) => <div>{props.name}</div>
+);
+
+// 만약 두번째 인자로 특정 props.name값이 같지 않을때만 재렌더링 하도록 커스텀 비교 함수를 넣어주고 싶을 때
+const NameTag = React.memo(
+	(props) => <div>{props.name}</div>,
+	(prevProps, nextProps) => prevProps.name === nextProps.name
+)
+```
+
+```jsx
+function NameTag(props) {
+	return useMemo(() => <div>{props.name}</div>, [props.name])
+}
+```
+
+### 차이점
+
+- [[React.memo()]]는 [[HOC(Higher-Order-Components)]], useMemo는 [[Hooks]]이다.
+- [[React.memo()]]는 [[HOC(Higher-Order-Components)]]이기 때문에 [[클래스형 컴포넌트(Class Component)]], [[함수형 컴포넌트(Functional Component)]] 모두 사용 가능하지만, useMemo는 [[Hooks]]이기 때문에 오직 [[함수형 컴포넌트(Functional Component)]] 안에서만 사용 가능하다.

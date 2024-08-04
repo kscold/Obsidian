@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "cc55a6a65f82298b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Implement/그래프 자체를 이동하는 구현.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Implement/그래프 자체를 이동하는 구현.md",
+                "file": "Algorithm/시간 복잡도.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Implement/그래프 자체를 이동하는 구현.md",
+                "file": "Algorithm/시간 복잡도.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Implement/그래프 자체를 이동하는 구현.md"
+                "file": "Algorithm/시간 복잡도.md"
               }
             }
           }
@@ -159,10 +146,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "cc55a6a65f82298b",
+  "active": "4c16b3d10ed20a85",
   "lastOpenFiles": [
-    "Python/sorted.md",
+    "Algorithm/병합 정렬(Merge Sort).md",
+    "Algorithm/시간 복잡도.md",
     "Implement/그래프 자체를 이동하는 구현.md",
+    "Python/sorted.md",
     "Python/set.md",
     "Python/sep.md",
     "Python/self.md",
@@ -172,7 +161,6 @@
     "Data Structure/큐(Queue).md",
     "Data Structure/스택(Stack).md",
     "Python/클래스(class).md",
-    "Algorithm/시간 복잡도.md",
     "Implement/입력.md",
     "Algorithm/가중치 그래프(weighted graph).md",
     "Implement/이차원 리스트의 순회.md",
@@ -187,7 +175,6 @@
     "Implement/상하좌우 이동.md",
     "Python/*.md",
     "Algorithm/퀵 정렬(Quick Sort).md",
-    "Algorithm/병합 정렬(Merge Sort).md",
     "image/Pasted image 20240105215609.png",
     "Data Structure",
     "image/스크린샷 2024-01-03 오후 9.17.48.png",

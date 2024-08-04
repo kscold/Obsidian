@@ -11,6 +11,8 @@
 - 또한 복사를 하고 [[객체(Object)]]를 수정하면 두 [[변수(Variable)]]는 똑같은 참조를 가리키고 있기 때문에 기존 [[객체(Object)]]를 저장한 [[변수(Variable)]]에 영향을 끼친다.
 - 이처럼 객체의 참조값(주소값)을 복사하는 것을 [[얕은 복사]]라고 한다.
 
+- [[불변성 유지]]가 되지 않기 때문에 [[확산 연산자(spread operator)]]나 [[배열(Array)]]의 내장 [[메서드(Method)]]들을 적극 활용하는 것이 좋다.
+
 
 ## 참조 타입의 예시
 
@@ -53,6 +55,43 @@ console.log(copyArr); // ["hello"]
 - 따라서 [[객체(Object)]]를 복사할 때  =  키워드나 push 같은 [[메서드(Method)]] 사용해서 복사하면 얕은 복사가 돼서 기존 변수 또한 수정되기 떄문에 [[확산 연산자(spread operator)]], [[map()]], [[filter()]], [[slice()]], reduce 등등 새로운 [[배열(Array)]]을 반환하는 [[메서드(Method)]]들을 활용해야 한다.
 
 - 만일 이러한 특성을 고려하지 않은 채 중요한 정보를 담고있는 [[객체(Object)]]나 [[배열(Array)]]에 수정 및 복사를 가하게되면 원본 데이터가 예상치 못한 방향 으로 변경될 수 있으므로 항상 이를 고려하자.
+
+
+## 참조에 의한 함수 호출 방식
+
+```js
+const a  = 100;
+const objA = { value: 100 };
+
+function changeArg(num,obj) {
+	num = 200;
+	obj.value = 200;
+	
+	console.log(num);
+	console.log(obj);
+}
+
+changeArg(a,objA);
+
+console.log(a);
+console.log(objA);
+
+// 출력값
+// 200
+// { value : 200 }
+
+// 100
+// { value : 200 }
+```
+
+- [[원시 타입(Primitive type)]]과 참조 타입의 경우는 함수 호출 방식도 다르다.
+- [[원시 타입(Primitive type)]]은 값에 의한 호출(Call By Value)방식으로 동작한다. 
+
+- [[함수(Function)]]의 인자로 [[원시 타입(Primitive type)]]이 넘겨질 경우, 함수의 [[매개변수(parameter)]]로 복사된 값이 전달된다.
+- 따라서, [[함수(Function)]] 내부에서 [[매개변수(parameter)]]를 이용해 값을 변경해도, 실제로 호출된 변수의 값이 위 예제처럼 100에서 변경되지 않는다.
+
+- 반면 [[객체(Object)]]와 같은 참조 타입의 경우, 함수를 호출할 때 참조에 의한 호출(Call By Reference) 방식으로 동작한다.
+- 즉, 함수를 호출할 때, 객체의 참조값이 전달되고, 함수 내부에서 참조값을 이용해서 인자로 넘긴 실제 객체의 값을 200으로 변경할 수 있다.
 
 
 ## 참조 타입을 [[원시 타입(Primitive type)]]처럼 값으로 비교하는 방법

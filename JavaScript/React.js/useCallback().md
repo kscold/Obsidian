@@ -1,23 +1,31 @@
 - useCallback는 [[함수(Function)]]를 메모이제이션하고 [[함수(Function)]]를 반환한다.
-- useCallback은 자주 렌더링되는 [[컴포넌트(Component)]]에서 함수를 최적화하고, 불필요한 함수 재생성을 방지하는 데 사용한다.
+
+- 원래 [[컴포넌트(Component)]]가 렌더링 될 때 그 안에 있는 [[함수(Function)]]도 다시 만들게 된다.
+- 하지만 똑같은 [[함수(Function)]]를 [[컴포넌트(Component)]]가 렌더링 된다고 해서 계속 다시 만드는 것은 좋은 현상이 아니다.
+- 만약, 이 함수가 자식 [[컴포넌트(Component)]]로 [[props]]를 내려준다면 [[함수(Function)]]를 포함하고 있는 [[컴포넌트(Component)]]가 [[리렌더링(Re-rendering)]] 될 때마다 자식 [[컴포넌트(Component)]]도 [[함수(Function)]]가 새롭게 만들어지니 계속 [[리렌더링(Re-rendering)]]하게 된다.
+
+- 따라서 useCallback은 자주 렌더링되는 [[컴포넌트(Component)]]에서 함수를 최적화하고, 불필요한 함수 재생성을 방지하는 데 사용한다.
 
 - 예를 들어, 자식 컴포넌트에 전달되는 [[콜백 함수(Callback Function)]]를 최적화하고 싶은 경우나, 외부에서 값을 가져오는 api를 호출하는 경우에 사용한다.
 
+
 ## 이벤트 핸들러 함수가 자주 재생성되는 경우
 
-- useCallback을 사용하지 않으면 이벤트 핸들러 함수는 매번 새로운 인스턴스가 생성된다.
+- useCallback을 사용하지 않으면 이벤트 핸들러 함수는 매번 새로운 [[인스턴스(Instance)]]가 생성된다.
 - 그러나 useCallback을 사용하면 함수가 처음 생성될 때 한 번만 생성되며, 나중에는 동일한 함수 인스턴스를 재사용하게 된다.
+
+
 ## 자식 컴포넌트에 props로 함수가 자주 재생성되는 경우
 
 - 먼저 [[함수(Function)]]는 값이 아닌 참조([[참조 타입(Reference Type)]])로 비교된다.
 
 ```js
 const functionOne = function() {
-  return 5;
+	return 5;
 };
 
 const functionTwo = function() {
-  return 5;
+	return 5;
 };
 
 // 서로의 참조가 다르기 때문에 false기 나옴
@@ -27,23 +35,23 @@ console.log(functionOne === functionTwo);
 - 동일한 값을 반환하지만 참조가 다르기 때문에 false가 나온다.
 - 위와 같이 [[컴포넌트(Component)]]에서 특정 함수를 정의할 경우 각각의 함수들은 모두 고유한 함수가 된다.
 
-- 이런 고유한 함수가 생성될 경우, 부모를 통해 [[props]]에 함수를 전달받는 자식 컴포넌트에서는 [[props]]가 변경되었다고 판단해 리렌더링이 발생하게 된다.
+- 이런 고유한 함수([[순수 함수(Pure function)]])가 생성될 경우, 부모를 통해 [[props]]에 함수를 전달받는 자식 [[컴포넌트(Component)]]에서는 [[props]]가 변경되었다고 판단해 [[리렌더링(Re-rendering)]]이 발생하게 된다.
 
 ```jsx
 function App() {
-  const [name, setName] = useState('');
-  const onSave = () => {};
-
-  return (
-    <div className="App">
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <Profile onSave={onSave} />
-    </div>
-  );
+	const [name, setName] = useState('');
+	const onSave = () => {};
+	
+	return (
+		<div className="App">
+		    <input
+			    type="text"
+			    value={name}
+			    onChange={(e) => setName(e.target.value)}
+		    />
+		    <Profile onSave={onSave} />
+		</div>
+	);
 }
 ```
 

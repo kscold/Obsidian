@@ -1,13 +1,13 @@
 - 일급 함수란 함수를 [[일급 객체(First Class Object)]]로 취급하는 것을 말한다. 
 - 자바스크립트 또는 다른 [[함수형 프로그래밍(Functional Programming)]]언어 함수들은 전부 [[객체(Object)]]이기 때문이다.
-- 따라서 일급 객체 및 일급 함수라고 부른다. 
+- 따라서 [[일급 객체(First Class Object)]] 및 일급 함수라고 부른다. 
 
 - 자바스크립트에서, 함수는 객체의 특별한 타입이다. 
 - 함수는 `Function` 객체이다.
 
 - 자바스크립트가 [[일급 객체(First Class Object)]]이기 때문에 아래와 같은 것들을 할 수 있다.
 	- [[콜백 함수(Callback Function)]]  
-	- [[JavaScript/고차함수(Higher Order Function)]]
+	- [[고차함수(Higher Order Function)]]
 	- [[클로저(Closure)]]
 
 ## 예시

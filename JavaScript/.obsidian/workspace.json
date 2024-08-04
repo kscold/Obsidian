@@ -23,11 +23,28 @@
             "id": "4bcd1aeb81e13347",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript/호출 스택(Call Stack).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0fe4988ac2f8449a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript/호출 스택(Call Stack).md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaScript/구현/배열 정렬.md",
+                "file": "JavaScript/호출 스택(Call Stack).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaScript/구현/배열 정렬.md",
+                "file": "JavaScript/호출 스택(Call Stack).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaScript/구현/배열 정렬.md"
+                "file": "JavaScript/호출 스택(Call Stack).md"
               }
             }
           }
@@ -154,35 +171,35 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "6fe34cfadf2da823",
+  "active": "0fe4988ac2f8449a",
   "lastOpenFiles": [
-    "JavaScript/구현/2차원 배열.md",
-    "JavaScript/구현/배열 정렬.md",
-    "JavaScript/for.md",
-    "sort().md",
-    "JavaScript/구현",
-    "Node.js/fill().md",
-    "JavaScript/forEach().md",
-    "JavaScript/배열(Array).md",
-    "JavaScript/Shift().md",
-    "JavaScript/localStorage.md",
-    "JavaScript/JSON.stringify().md",
-    "React.js/useMemo().md",
-    "React.js/React.memo().md",
-    "React.js/useCallback().md",
-    "React.js/HOC(Higher-Order-Components).md",
-    "React.js/Libaray/Redux/dispatch().md",
-    "React.js/Libaray/Redux/useDispatch().md",
-    "React.js/불변성 유지.md",
-    "React.js/Libaray/Redux/connect().md",
-    "React.js/Libaray/Redux/스토어(Store).md",
-    "JavaScript/인스턴스(Instance).md",
-    "React.js/리렌더링(Re-rendering).md",
+    "JavaScript/실행 컨텍스트(execution context).md",
+    "JavaScript/호출 스택(Call Stack).md",
+    "JavaScript/DOM/DOM(Document Object Model).md",
+    "JavaScript/Web API.md",
+    "JavaScript/Promise.md",
+    "JavaScript/고차함수(Higher Order Function).md",
+    "JavaScript/일급 함수(First Class Function).md",
+    "JavaScript/this.md",
+    "JavaScript/바인딩(binding).md",
+    "Node.js/Error 객체.md",
+    "JavaScript/prototype.md",
+    "JavaScript/try catch.md",
+    "JavaScript/throw.md",
+    "Node.js/에러(error).md",
+    "Error.md",
+    "JavaScript/비동기(asynchronous).md",
+    "JavaScript/콜백 함수(Callback Function).md",
+    "JavaScript/클로저(Closure).md",
+    "JavaScript/렉시컬 환경(Lexical Environment).md",
+    "JavaScript/가비지 콜렉터(garbage collector).md",
+    "JavaScript/일급 객체(First Class Object).md",
     "JavaScript/참조 타입(Reference Type).md",
     "JavaScript/원시 타입(Primitive type).md",
-    "JavaScript/얕은 복사.md",
-    "JavaScript/splice().md",
-    "JavaScript/slice().md",
+    "JavaScript/sort().md",
+    "JavaScript/Number().md",
+    "JavaScript/이벤트 루프(Event Loop).md",
+    "JavaScript/구현",
     "image/Pasted image 20240626175122.png",
     "image/Pasted image 20240626160831.png",
     "무제 파일.canvas",

@@ -11,6 +11,7 @@
 - key, value 형식으로추가한다.
 
 - localStorage에 아이템을 추가하기 위해서는 setItem() 함수를 사용한다.
+- 이때 [[객체(Object)]]나 [[배열(Array)]]을 저장할 경우, `[object Object]` 형식으로 표현되는데 이 경우를 방지하기 위해서는 [[JSON.stringify()]]를 사용하여 문자열로 바꾸어서 저장하면 된다.
 
 ```js
 window.localStorage.setItem(key, value)

@@ -1,6 +1,6 @@
-- 일급객체(First-class Object)란 다른 [[객체(Object)]]들에 일반적으로 적용 가능한 연산을 모두 지원하는 객체를 가리킨다. 
+- 일급객체(First-class Object)란 다른 [[객체(Object)]]들에 일반적으로 적용 가능한 연산을 모두 지원하는 [[객체(Object)]]를 가리킨다. 
 
- - 변수에 할당(assignment)할 수 있다.
+ - [[변수(Variable)]]에 할당(assignment)할 수 있다.
  - 다른 함수를 인자(argument)로 전달 받는다.
  - 다른 함수의 결과로서 리턴될 수 있다.
 

@@ -8,6 +8,9 @@
 
 - 주로 [[비동기(asynchronous)]] 작업에서 사용되며, 작업이 완료되었을 때 호출(비동기 [[JavaScript/고차함수(Higher Order Function)]]]되어 특정 동작이나 로직을 수행한다.
 
+- 콜백 함수를 호출하는 함수를 [[고차함수(Higher Order Function)]]라고 한다.
+
+
 ## 콜백 함수의 예시
 
 - [[setTimeout()]]의 경우, 콜백 함수를 [[매개변수(parameter)]]로 가지는 대표적인 함수이다.
@@ -39,4 +42,4 @@ setTimeout(() => {
 
 - 중첩순차적으로 처리되지 못한 작업을 [[비동기(asynchronous)]]적인 작업이라고 하고 순차적으로 처리된 작업을 [[동기(Synchronous)]]적인 작업이라고 한다.
 
-- 비동기 작업을 동기적으로 처리하기 위해 콜백 함수가 존재한다.
+- [[비동기(asynchronous)]] 작업을 [[동기(Synchronous)]]적으로 처리하기 위해 콜백 함수가 존재한다.

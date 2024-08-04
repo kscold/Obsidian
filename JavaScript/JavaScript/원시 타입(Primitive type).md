@@ -1,4 +1,4 @@
-- 자바 스크립트의 [[변수(Variable)]] 타입에는 크게 Primitive type(원시타입)과 [[참조 타입(Reference Type)]]으로 나누어져 있다. 
+- 자바 스크립트의 [[변수(Variable)]] 타입에는 크게 Primitive type(원시타입)과 [[참조 타입(Reference Type)]]으로 나누어져 있다.
 - 원시 값이라고도 한다.
 
 - 원시 타입의 종류는 Boolean, String, Number, null, [[undefined]], Symbol이 있다.
