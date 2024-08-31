@@ -1,8 +1,8 @@
-- Koa나 [[express]]의 Context는 [[HTTP(Hyper Tranfer Protocol)]] 요청(request), 응답(response) [[객체(Object)]]를 단일 [[객체(Object)]]로 캡슐화하여 웹 애플리케이션 및 API 작성에 유용한 많은 [[메서드(Method)]]를 제공한다.
+- Koa나 [[Express]]의 Context는 [[HTTP(Hyper Tranfer Protocol)]] 요청(request), 응답(response) [[객체(Object)]]를 단일 [[객체(Object)]]로 캡슐화하여 웹 애플리케이션 및 API 작성에 유용한 많은 [[메서드(Method)]]를 제공한다.
 
 - Context는 [[HTTP(Hyper Tranfer Protocol)]] 요청마다 생성되며 아래와 같은 형태로 [[미들웨어(Middleware)]]에서 참조된다.
 
-- [[express]] 라이브러리의 [[req]], [[res]] [[객체(Object)]]와 거의 유사하다.
+- [[Express]] 라이브러리의 [[req]], [[res]] [[객체(Object)]]와 거의 유사하다.
 
 ## 문법
 

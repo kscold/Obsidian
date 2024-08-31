@@ -1,4 +1,4 @@
-- [[노드(Node.js)]]의 [[express]] 라이브버리의 res [[객체(Object)]]에 정의 되어있는 res.sendFile() [[메서드(Method)]]는 말 그대로 response에 해당 파일을 전송하는 명령어이다.
+- [[노드(Node.js)]]의 [[Express]] 라이브버리의 res [[객체(Object)]]에 정의 되어있는 res.sendFile() [[메서드(Method)]]는 말 그대로 response에 해당 파일을 전송하는 명령어이다.
 
 - 보통은 이 [[메서드(Method)]]를 통해 클라이언트 즉, FE단(view)으로 데이터를 전송하는데 쓰인다.
 

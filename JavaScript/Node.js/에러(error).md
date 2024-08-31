@@ -16,7 +16,7 @@ setInterval(() => {
 }, 1000);
 ```
 
-- [[express]]와 같은 [[모듈(Module)]]에서는 err를 [[매개변수(parameter)]] next에 넣어준다.
+- [[Express]]와 같은 [[모듈(Module)]]에서는 err를 [[매개변수(parameter)]] next에 넣어준다.
 
 ```js
 app.use((req, res, next) => {

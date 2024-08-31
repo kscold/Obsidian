@@ -1,4 +1,4 @@
-- res.send()는 [[노드(Node.js)]]의 [[express]] 라이브러리에서 response 보내는 역할을 한다.
+- res.send()는 [[노드(Node.js)]]의 [[Express]] 라이브러리에서 response 보내는 역할을 한다.
 - 즉, 기본 응답 [[객체(Object)]]라고 생각하면 된다.
 
 - 원래 기본적으로 [[노드(Node.js)]] [[서버(Server)]]에서 [[http]] [[모듈(Module)]]에서 response처리를 할 때 Content-Type을 지정해주어야 한다.
@@ -12,7 +12,7 @@
 
 ## 문법
 
-- [[express]] 서버가 [[HTTP(Hyper Tranfer Protocol)]] 요청을 받게되면, [[app.get()]] [[메서드(Method)]]를 사용할 때 2번째 [[매개변수(parameter)]] 안에는 [[콜백 함수(Callback Function)]]가 들어가는데 이 때 [[콜백 함수(Callback Function)]]의 [[매개변수(parameter)]]는 (req, res)가 사용되며 res를 반환하게 된다.
+- [[Express]] 서버가 [[HTTP(Hyper Tranfer Protocol)]] 요청을 받게되면, [[app.get()]] [[메서드(Method)]]를 사용할 때 2번째 [[매개변수(parameter)]] 안에는 [[콜백 함수(Callback Function)]]가 들어가는데 이 때 [[콜백 함수(Callback Function)]]의 [[매개변수(parameter)]]는 (req, res)가 사용되며 res를 반환하게 된다.
 
 ```js
 app.get("/api/login", (req, res) => {
@@ -31,7 +31,7 @@ app.get("/api/login", (req, res) => {
 
 ## res.send(), res.json(), res.end()의 차이
 
-- [[express]]에서 한 라우트(경로)에서 2번 이상의 res.send(), res.json(), res.end()가 중복되면 ERR_HTTP_HEADERS_SENT 오류가 난다.
+- [[Express]]에서 한 라우트(경로)에서 2번 이상의 res.send(), res.json(), res.end()가 중복되면 ERR_HTTP_HEADERS_SENT 오류가 난다.
 - 즉, 하나의 [[res]] [[객체(Object)]]의 응답을 해야 한다.
 
 ### res.send()

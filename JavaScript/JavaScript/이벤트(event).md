@@ -133,3 +133,46 @@ const Say = () => {
 
 export default Say;
 ```
+
+
+## [[노드(Node.js)]]에서 이벤트
+
+- [[노드(Node.js)]]에서 [[이벤트(event)]]는 [[비동기(asynchronous)]]적인 프로그래밍에서 중요한 개념 중 하나이다.
+- 이벤트는 특정한 동작이나 상황을 나타내며, 이러한 이벤트가 발생했을 때 그에 따른 동작을 실행할 수 있다.
+
+- 이벤트를 처리하기 위해서는 이벤트를 발생시키는(emit) 측과 그 이벤트를 감지하고 처리하는(listener) 측이 있다.
+
+### [[이벤트 에밋(Event Emit)]]
+
+- 이벤트를 발생시키는 것을 의미한다.
+- 특정한 상황이나 조건이 충족되었을 때 이벤트를 발생시켜 다른 부분에 알리는 역할을 한다.
+
+- 주로 `emit()` 메서드를 사용하여 이벤트를 발생시킨다.
+- 이 [[메서드(Method)]]를 호출하면 해당 이벤트가 발생하고, 등록된 리스너들이 이를 감지할 수 있다.
+
+### [[이벤트 리스너(Event Listener)]]
+
+- 이벤트를 감지하고 그에 따른 동작을 정의하는 역할을 한다.
+- 즉, 특정한 이벤트가 발생했을 때 실행될 콜백 함수를 정의한다.
+
+- [[on()]] 메서드를 사용하여 특정 이벤트에 대한 리스너를 등록할 수 있다.
+- 이 때, 해당 이벤트가 발생하면 등록된 [[콜백 함수(Callback Function)]]가 실행된다.
+
+### 이벤트 사용 예시
+
+-  아래 코드는 `myEmitter`라는 이벤트 발생기를 생성하고, 이벤트인 `customEvent`를 발생시키고 이를 감지하는 리스너를 등록하는 예시이다.
+
+```js
+const EventEmitter = require('events');  // 이벤트 발생기 생성 
+const myEmitter = new EventEmitter();  // 이벤트 리스너 등록 
+
+myEmitter.on('customEvent', () => {   
+	console.log('Custom event occurred'); 
+}); // 이벤트 발생
+
+myEmitter.emit('customEvent');
+```
+`
+
+- 위 코드에서 `emit()`은 [[이벤트(event)]]를 발생시키고, [[on()]]은 [[이벤트 리스너(Event Listener)]]를 등록한다.
+- 따라서 `customEvent`가 발생하면 이를 감지하여 "Custom event occurred"를 출력한다.

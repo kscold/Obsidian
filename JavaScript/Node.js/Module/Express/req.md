@@ -1,4 +1,4 @@
-- [[노드(Node.js)]]에서 [[express]]에서 사용되는 요청 [[객체(Object)]]이다.
+- [[노드(Node.js)]]에서 [[Express]]에서 사용되는 요청 [[객체(Object)]]이다.
 
 
 ## req의 [[메서드(Method)]]

@@ -1,4 +1,4 @@
-- [[세션(Session)]]을 관리하기 위한 [[express]] [[미들웨어(Middleware)]] [[모듈(Module)]]이다.
+- [[세션(Session)]]을 관리하기 위한 [[Express]] [[미들웨어(Middleware)]] [[모듈(Module)]]이다.
 
 
 ## seseion() 객체 설정

@@ -1,5 +1,5 @@
-- 현재 [[express]]에서는 bodyparser [[모듈(Module)]]을 따로 설치하지 않아도 내장이 되어 있다.
-- [[express]] 4.16.0 버전이전에는 bodyParser라는 [[모듈(Module)]]을 설치해서 사용했어야 했다.
+- 현재 [[Express]]에서는 bodyparser [[모듈(Module)]]을 따로 설치하지 않아도 내장이 되어 있다.
+- [[Express]] 4.16.0 버전이전에는 bodyParser라는 [[모듈(Module)]]을 설치해서 사용했어야 했다.
 
 ## 모듈 설치 시 사용법
 

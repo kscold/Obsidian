@@ -1,9 +1,9 @@
-- [[express]]에서 [[req]](POST 또는 PUT)보낸 req 혹은 [[콜백 함수(Callback Function)]]의 req.body의 [[객체(Object)]]에서 title, body를 추출한다.
+- [[Express]]에서 [[req]](POST 또는 PUT)보낸 req 혹은 [[콜백 함수(Callback Function)]]의 req.body의 [[객체(Object)]]에서 title, body를 추출한다.
 
-- [[express]]를 사용하면서 특별한 설정없이 클라이언트 요청의 body값을 읽으면 [[undefined]]값이 나오게 된다.
+- [[Express]]를 사용하면서 특별한 설정없이 클라이언트 요청의 body값을 읽으면 [[undefined]]값이 나오게 된다.
 - 따라서 req.body의 기본 값으로 undefined로 설정되어 있기 때문에 express.json() 나 express.urlencoded()와 같은 [[미들웨어(Middleware)]]를 사용해서 접근해야 한다.
 
-- [[express]]는 내장으로 [[body-parser]] [[모듈(Module)]]을 가지고 있기 때문에 전역 [[미들웨어(Middleware)]]를 사용하기 편하다.
+- [[Express]]는 내장으로 [[body-parser]] [[모듈(Module)]]을 가지고 있기 때문에 전역 [[미들웨어(Middleware)]]를 사용하기 편하다.
 
 
 ## 문법

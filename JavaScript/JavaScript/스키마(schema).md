@@ -1,4 +1,4 @@
-- mongoose에는 스키마(schema)와 [[모델(model)]] 개념이 있는데, 이 둘은 혼동하기 쉽다. 
+- mongoose에는 스키마(schema)와 [[Node.js/모델(Model)]] 개념이 있는데, 이 둘은 혼동하기 쉽다. 
 
 - 스키마는 컬렉션에 들어가는 문서 내부의 각 필드([[열(Column)]])가 어떤 형식으로 되어 있는지 정의하는 [[객체(Object)]]이다. 
 - [[JavaScript/스키마(schema)|스키마(schema)]]는 [[데이터베이스(DataBase)]]에 어떤 형식의 데이터를 넣을지에 대한 정보를 가리킨다.

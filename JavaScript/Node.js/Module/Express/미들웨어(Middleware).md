@@ -1,4 +1,4 @@
-- [[노드(Node.js)]]의 [[express]] 또는 koa의 미들웨어(Middleware)는 [[HTTP(Hyper Tranfer Protocol)]] 요청이 들어온 순간부터 순차적으로 시작이 된다.
+- [[노드(Node.js)]]의 [[Express]] 또는 koa의 미들웨어(Middleware)는 [[HTTP(Hyper Tranfer Protocol)]] 요청이 들어온 순간부터 순차적으로 시작이 된다.
 - 미들웨어는 [[HTTP(Hyper Tranfer Protocol)]] 요청과 응답 [[객체(Object)]]를 처리하거나, 다음 미들웨어를 실행할 수 있다.
 
 - [[HTTP(Hyper Tranfer Protocol)]] 응답이 마무리될 때까지 미들웨어 동작 사이클이 실행된다.

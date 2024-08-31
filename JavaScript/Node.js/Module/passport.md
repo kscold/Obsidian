@@ -21,7 +21,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 ```
 
-- `app.use(passport.initialize())` passport를 사용한다고 [[express]]에게 알린다.
+- `app.use(passport.initialize())` passport를 사용한다고 [[Express]]에게 알린다.
 - `app.use(passport.session());` session을 이용하여 passport를 동작한다.
 - passport는 session을 사용하기 때문에 [[세션(Session)]]을 등록한`app.use(session({...}))` 코드 다음에 passport 미들웨어를 등록한다.
 

@@ -1,4 +1,4 @@
-- [[express]]나 koa 라이브러리에서 const app = require('express') 혹은 require('Koa')로 연결을 만들어 사용한다.
+- [[Express]]나 koa 라이브러리에서 const app = require('express') 혹은 require('Koa')로 연결을 만들어 사용한다.
 
 - [[HTTP(Hyper Tranfer Protocol)]] [[메서드(Method)]]중에서 Get 방식을 이용하여 주소창에서 데이터를 전달하는 방식이다.
 - 즉, 백엔드 API를 통해 Response를 받는데 그 과정을 만들기 위해 사용하는 [[메서드(Method)]]이다.

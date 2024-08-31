@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Node.js/Nest.js/의존성 주입(Dependency Injection).md",
+                "file": "Node.js/Nest.js/NestJS.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Node.js/Nest.js/의존성 주입(Dependency Injection).md",
+                "file": "Node.js/Nest.js/NestJS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Node.js/Nest.js/의존성 주입(Dependency Injection).md",
+                "file": "Node.js/Nest.js/NestJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Node.js/Nest.js/의존성 주입(Dependency Injection).md"
+                "file": "Node.js/Nest.js/NestJS.md"
               }
             }
           }
@@ -168,33 +168,34 @@
   },
   "active": "1926029c881274da",
   "lastOpenFiles": [
+    "React.js/Jest/Jest.md",
+    "Node.js/Nest.js/NestJS.md",
+    "Node.js/Nest.js/DTO(Data Transfer Object).md",
+    "TypeScript/타입스크립트(TypeScript).md",
+    "Pipe.md",
+    "Node.js/Module/Express/route.route().md",
+    "Node.js/Module/Express/express.Router().md",
+    "Node.js/Nest.js/리파지터리(Repository).md",
+    "Node.js/모델(Model).md",
+    "Node.js/Nest.js/엔티티(Entity).md",
+    "Node.js/Nest.js/모델(Model).md",
+    "Node.js/노드(Node.js).md",
+    "JavaScript/이벤트(event).md",
     "TypeScript/void.md",
+    "Node.js/Module/TypeORM",
+    "Node.js/Module/TypeORM/TypeORM.md",
+    "Node.js/Nest.js/컨트롤러(Controller).md",
+    "Node.js/Nest.js/@Body.md",
+    "Node.js/Module/Express/Express.md",
+    "Node.js/Nest.js/서비스(Service).md",
+    "Node.js/Nest.js/의존성 주입(Dependency Injection).md",
     "TypeScript/tsc.md",
     "TypeScript/tsconfig.json.md",
     "TypeScript/Never.md",
     "TypeScript/타입 표기(Type Annotation).md",
     "TypeScript/데코레이터(Decorator).md",
     "TypeScript/any.md",
-    "TypeScript/tuple.md",
-    "TypeScript/enum.md",
-    "TypeScript/private.md",
-    "TypeScript/타입스크립트(TypeScript).md",
-    "TypeScript/접근 제한자(Access modifier).md",
-    "TypeScript/protected.md",
-    "TypeScript/public.md",
-    "Node.js/Nest.js/의존성 주입(Dependency Injection).md",
-    "JavaScript/생성자(Constructor).md",
-    "Node.js/Nest.js/Providers.md",
-    "Node.js/Nest.js/핸들러(Handler).md",
-    "Node.js/Nest.js/@Injectable.md",
-    "Node.js/Nest.js/서비스(Service).md",
-    "Node.js/Nest.js/Nest CLI.md",
     "Node.js/Nest.js",
-    "JavaScript/구현/배열 정렬.md",
-    "JavaScript/호출 스택(Call Stack).md",
-    "JavaScript/실행 컨텍스트(execution context).md",
-    "JavaScript/DOM/DOM(Document Object Model).md",
-    "JavaScript/Web API.md",
     "JavaScript/구현",
     "image/Pasted image 20240626175122.png",
     "image/Pasted image 20240626160831.png",
@@ -213,7 +214,6 @@
     "image/Pasted image 20240413031623.png",
     "image/Pasted image 20231115000103.png",
     "Node.js/Module/fs",
-    "Node.js/Module/koa",
-    "Node.js/Module/http"
+    "Node.js/Module/koa"
   ]
 }

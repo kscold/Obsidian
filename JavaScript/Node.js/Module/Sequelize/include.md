@@ -21,7 +21,7 @@ const user = await User.findOne({
 console.log(user.Comment) ; // 사용자 댓글
 ```
 
-- [[다대다(ManyToMany)]] [[모델(model)]]은 다음과 같이 접근이 가능하다.
+- [[다대다(ManyToMany)]] [[Node.js/모델(Model)]]은 다음과 같이 접근이 가능하다.
 
 ```js
 db.sequelize.models.PostHashtag

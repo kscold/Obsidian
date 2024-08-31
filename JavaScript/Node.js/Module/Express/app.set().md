@@ -1,4 +1,4 @@
-- 주로 [[노드(Node.js)]]의 Koa나 [[express]]와 같은 웹 프레임워크에서 사용한다.
+- 주로 [[노드(Node.js)]]의 Koa나 [[Express]]와 같은 웹 프레임워크에서 사용한다.
 - ctx.set() 형식으로 사용하여 [[HTTP(Hyper Tranfer Protocol)]] 응답 헤더를 설정한다.
 
 - 쉽게 생각하면 [[변수(Variable)]]와 거의 비슷한데 [[모듈(Module)]]에서 사용할 수 있을 [[속성(Property)]]을 정의한다고 생각하면 된다.

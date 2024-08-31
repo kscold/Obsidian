@@ -1,4 +1,4 @@
-- [[노드(Node.js)]]의 [[express]] [[미들웨어(Middleware)]]를 만드는 [[메서드(Method)]]이다.
+- [[노드(Node.js)]]의 [[Express]] [[미들웨어(Middleware)]]를 만드는 [[메서드(Method)]]이다.
 - 라우터 기능을 만들어 다양한 경로를 처리할 수 있다.
 
 - 모든 유형의 post, put, get, delete [[메서드(Method)]]에 대해서 반응한다.

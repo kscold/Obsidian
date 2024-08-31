@@ -31,4 +31,4 @@
 </form>
 ```
 
-- [[express]]에서 파일 처리를 담당하는 [[미들웨어(Middleware)]]인 [[multer]]를 사용할 때 주로 사용한다.
+- [[Express]]에서 파일 처리를 담당하는 [[미들웨어(Middleware)]]인 [[multer]]를 사용할 때 주로 사용한다.

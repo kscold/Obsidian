@@ -1,4 +1,4 @@
-- [[노드(Node.js)]]의 write()는 추가 프레임워크 [[express]] 없이,기본 [[모듈(Module)]]인 [[HTTP(Hyper Tranfer Protocol)]]만으로 가능한 기초 전송 [[메서드(Method)]]이다.
+- [[노드(Node.js)]]의 write()는 추가 프레임워크 [[Express]] 없이,기본 [[모듈(Module)]]인 [[HTTP(Hyper Tranfer Protocol)]]만으로 가능한 기초 전송 [[메서드(Method)]]이다.
 
 - 특징으로는 여러 번 보낼 수 있다.
 - 즉, 호출할 수 있다.
