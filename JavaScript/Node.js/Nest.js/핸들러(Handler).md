@@ -1,0 +1,1 @@
+- 핸들러란 @Get, @Post, @Delete 등과 같은 [[데코레이터(Decorator)]]로 장식된 컨드롤러 [[클래스(class)]] 내의 단순한 [[메서드(Method)]]를 의미한다.

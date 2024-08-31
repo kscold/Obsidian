@@ -4,47 +4,42 @@
     "type": "split",
     "children": [
       {
-        "id": "604f136700d3db1f",
+        "id": "0b6d05f95284d136",
         "type": "tabs",
         "children": [
           {
-            "id": "6fe34cfadf2da823",
+            "id": "1926029c881274da",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/구현/배열 정렬.md",
+                "file": "Node.js/Nest.js/의존성 주입(Dependency Injection).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4bcd1aeb81e13347",
+            "id": "fb98b33b54955c7b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/호출 스택(Call Stack).md",
+                "file": "TypeScript/타입스크립트(TypeScript).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0fe4988ac2f8449a",
+            "id": "2d3e3ebf7b3c2922",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript/호출 스택(Call Stack).md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299.5
+    "width": 298.5
   },
   "right": {
     "id": "84986afa53e23371",
@@ -110,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaScript/호출 스택(Call Stack).md",
+                "file": "Node.js/Nest.js/의존성 주입(Dependency Injection).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaScript/호출 스택(Call Stack).md",
+                "file": "Node.js/Nest.js/의존성 주입(Dependency Injection).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaScript/호출 스택(Call Stack).md"
+                "file": "Node.js/Nest.js/의존성 주입(Dependency Injection).md"
               }
             }
           }
@@ -163,42 +158,43 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:퀵 스위처 열기": false,
-      "graph:그래프 뷰 열기": false,
-      "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 데일리 노트 열기": false,
-      "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
-  "active": "0fe4988ac2f8449a",
+  "active": "1926029c881274da",
   "lastOpenFiles": [
-    "JavaScript/실행 컨텍스트(execution context).md",
+    "TypeScript/void.md",
+    "TypeScript/tsc.md",
+    "TypeScript/tsconfig.json.md",
+    "TypeScript/Never.md",
+    "TypeScript/타입 표기(Type Annotation).md",
+    "TypeScript/데코레이터(Decorator).md",
+    "TypeScript/any.md",
+    "TypeScript/tuple.md",
+    "TypeScript/enum.md",
+    "TypeScript/private.md",
+    "TypeScript/타입스크립트(TypeScript).md",
+    "TypeScript/접근 제한자(Access modifier).md",
+    "TypeScript/protected.md",
+    "TypeScript/public.md",
+    "Node.js/Nest.js/의존성 주입(Dependency Injection).md",
+    "JavaScript/생성자(Constructor).md",
+    "Node.js/Nest.js/Providers.md",
+    "Node.js/Nest.js/핸들러(Handler).md",
+    "Node.js/Nest.js/@Injectable.md",
+    "Node.js/Nest.js/서비스(Service).md",
+    "Node.js/Nest.js/Nest CLI.md",
+    "Node.js/Nest.js",
+    "JavaScript/구현/배열 정렬.md",
     "JavaScript/호출 스택(Call Stack).md",
+    "JavaScript/실행 컨텍스트(execution context).md",
     "JavaScript/DOM/DOM(Document Object Model).md",
     "JavaScript/Web API.md",
-    "JavaScript/Promise.md",
-    "JavaScript/고차함수(Higher Order Function).md",
-    "JavaScript/일급 함수(First Class Function).md",
-    "JavaScript/this.md",
-    "JavaScript/바인딩(binding).md",
-    "Node.js/Error 객체.md",
-    "JavaScript/prototype.md",
-    "JavaScript/try catch.md",
-    "JavaScript/throw.md",
-    "Node.js/에러(error).md",
-    "Error.md",
-    "JavaScript/비동기(asynchronous).md",
-    "JavaScript/콜백 함수(Callback Function).md",
-    "JavaScript/클로저(Closure).md",
-    "JavaScript/렉시컬 환경(Lexical Environment).md",
-    "JavaScript/가비지 콜렉터(garbage collector).md",
-    "JavaScript/일급 객체(First Class Object).md",
-    "JavaScript/참조 타입(Reference Type).md",
-    "JavaScript/원시 타입(Primitive type).md",
-    "JavaScript/sort().md",
-    "JavaScript/Number().md",
-    "JavaScript/이벤트 루프(Event Loop).md",
     "JavaScript/구현",
     "image/Pasted image 20240626175122.png",
     "image/Pasted image 20240626160831.png",
@@ -218,7 +214,6 @@
     "image/Pasted image 20231115000103.png",
     "Node.js/Module/fs",
     "Node.js/Module/koa",
-    "Node.js/Module/http",
-    "Node.js/Module/Express"
+    "Node.js/Module/http"
   ]
 }
