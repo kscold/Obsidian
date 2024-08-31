@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Node.js/Nest.js/NestJS.md",
+                "file": "추상 클래스(Abstract Class).md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Node.js/Nest.js/NestJS.md",
+                "file": "추상 클래스(Abstract Class).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Node.js/Nest.js/NestJS.md",
+                "file": "추상 클래스(Abstract Class).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Node.js/Nest.js/NestJS.md"
+                "file": "추상 클래스(Abstract Class).md"
               }
             }
           }
@@ -168,33 +168,33 @@
   },
   "active": "1926029c881274da",
   "lastOpenFiles": [
-    "React.js/Jest/Jest.md",
-    "Node.js/Nest.js/NestJS.md",
+    "Interface.md",
+    "추상 클래스(Abstract Class).md",
+    "추상 메서드(Abstract Method).md",
     "Node.js/Nest.js/DTO(Data Transfer Object).md",
+    "class-validator.md",
+    "Node.js/Nest.js/NestJS.md",
+    "TypeScript/void.md",
+    "Node.js/엔티티(Entity).md",
+    "Node.js/CRUD.md",
+    "Node.js/모델(Model).md",
+    "React.js/Jest/Jest.md",
     "TypeScript/타입스크립트(TypeScript).md",
     "Pipe.md",
     "Node.js/Module/Express/route.route().md",
     "Node.js/Module/Express/express.Router().md",
-    "Node.js/Nest.js/리파지터리(Repository).md",
-    "Node.js/모델(Model).md",
-    "Node.js/Nest.js/엔티티(Entity).md",
+    "Node.js/리파지터리(Repository).md",
     "Node.js/Nest.js/모델(Model).md",
     "Node.js/노드(Node.js).md",
     "JavaScript/이벤트(event).md",
-    "TypeScript/void.md",
     "Node.js/Module/TypeORM",
     "Node.js/Module/TypeORM/TypeORM.md",
-    "Node.js/Nest.js/컨트롤러(Controller).md",
+    "Node.js/컨트롤러(Controller).md",
     "Node.js/Nest.js/@Body.md",
     "Node.js/Module/Express/Express.md",
-    "Node.js/Nest.js/서비스(Service).md",
+    "Node.js/서비스(Service).md",
     "Node.js/Nest.js/의존성 주입(Dependency Injection).md",
     "TypeScript/tsc.md",
-    "TypeScript/tsconfig.json.md",
-    "TypeScript/Never.md",
-    "TypeScript/타입 표기(Type Annotation).md",
-    "TypeScript/데코레이터(Decorator).md",
-    "TypeScript/any.md",
     "Node.js/Nest.js",
     "JavaScript/구현",
     "image/Pasted image 20240626175122.png",
