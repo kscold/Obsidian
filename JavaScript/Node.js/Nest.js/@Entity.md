@@ -1,0 +1,2 @@
+- @Entity [[데코레이터(Decorator)]]는 [[클래스(class)]] Board 클래스가 엔티티임을 나타내는 데 사용된다.
+- [[CREATE]] TABLE board 부분이다.

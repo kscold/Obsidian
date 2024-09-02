@@ -194,7 +194,7 @@ array.sort(function(x, y) {
 
 - 배열을 특정 조건에 따라 정렬한다.
 
-### 배열.indexOf(찾을 것), 배열.lastIndexOf(찾을 것)
+### 배열.[[indexOf()]](찾을 것), 배열.lastIndexOf(찾을 것)
 
 - 문자열처럼 배열에서 찾는다.
 - 여러 개가 있더라도 처음으로 찾은 위치만을 알려준다.

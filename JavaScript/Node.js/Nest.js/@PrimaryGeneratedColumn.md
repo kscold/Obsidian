@@ -1,0 +1,1 @@
+- @PrimaryGeneratedColumn [[데코레이터(Decorator)]] [[클래스(class)]]는 id [[열(Column)]]이 Board [[엔티티(Entity)]]의 [[기본 키(Primary Key)]] [[열(Column)]]임을 나타내는 데 사용된다.

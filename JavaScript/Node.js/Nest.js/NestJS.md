@@ -39,7 +39,7 @@
 
 - 실제 [[데이터베이스(DataBase)]] 처리를 담당하는 부분이다.
 
-- NestJS의 [[컨트롤러(Controller)]]는 [[Express]]의 [[express.Router()]]와 같은 역할을 담당하고 있으며, 데이터 유효성 검사 등의 [[Pipe]]를 배치시킬 수 있다. 
+- NestJS의 [[컨트롤러(Controller)]]는 [[Express]]의 [[express.Router()]]와 같은 역할을 담당하고 있으며, 데이터 유효성 검사 등의 [[파이프(Pipe)]]를 배치시킬 수 있다. 
 
 - 또한, NestJS에서 모든 비즈니스 로직 처리는 [[서비스(Service)]]에서 담당하며, 이는 [[Express]]의 [[컨트롤러(Controller)]]와 비슷하다.
 - 단, [[Express]]의 [[컨트롤러(Controller)]]에서는 비즈니스 로직 처리와 [[데이터베이스(DataBase)]] 처리를 모두 담당하지만, NestJS에서는 각각 [[서비스(Service)]]와 [[리파지터리(Repository)]]로 구분되어 있다.

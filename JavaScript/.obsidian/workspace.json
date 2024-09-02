@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "추상 클래스(Abstract Class).md",
+                "file": "Node.js/Nest.js/Built-in pipe.md",
                 "mode": "source",
                 "source": false
               }
@@ -35,11 +35,16 @@
             "id": "2d3e3ebf7b3c2922",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Node.js/리파지터리(Repository).md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -105,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "추상 클래스(Abstract Class).md",
+                "file": "Node.js/리파지터리(Repository).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "추상 클래스(Abstract Class).md",
+                "file": "Node.js/리파지터리(Repository).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "추상 클래스(Abstract Class).md"
+                "file": "Node.js/리파지터리(Repository).md"
               }
             }
           }
@@ -166,35 +171,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1926029c881274da",
+  "active": "2d3e3ebf7b3c2922",
   "lastOpenFiles": [
-    "Interface.md",
-    "추상 클래스(Abstract Class).md",
-    "추상 메서드(Abstract Method).md",
-    "Node.js/Nest.js/DTO(Data Transfer Object).md",
-    "class-validator.md",
-    "Node.js/Nest.js/NestJS.md",
-    "TypeScript/void.md",
-    "Node.js/엔티티(Entity).md",
-    "Node.js/CRUD.md",
-    "Node.js/모델(Model).md",
-    "React.js/Jest/Jest.md",
-    "TypeScript/타입스크립트(TypeScript).md",
-    "Pipe.md",
-    "Node.js/Module/Express/route.route().md",
-    "Node.js/Module/Express/express.Router().md",
+    "extends.md",
     "Node.js/리파지터리(Repository).md",
-    "Node.js/Nest.js/모델(Model).md",
-    "Node.js/노드(Node.js).md",
-    "JavaScript/이벤트(event).md",
+    "Node.js/Nest.js/@EntityRepository.md",
+    "Node.js/Nest.js/@Column.md",
+    "Node.js/Nest.js/@PrimaryGeneratedColumn.md",
+    "Node.js/Nest.js/@Entity.md",
+    "indexOf().md",
+    "JavaScript/배열(Array).md",
+    "transform().md",
+    "Node.js/Nest.js/커스텀 파이프(Custom Pipe).md",
+    "PipeTransform.md",
+    "Node.js/Nest.js/Built-in pipe.md",
+    "Node.js/Nest.js/DTO(Data Transfer Object).md",
+    "Node.js/Module/class-transformer.md",
+    "Node.js/Module/class-validator/@IsEmail().md",
+    "Node.js/Nest.js/NotFoundException().md",
+    "Node.js/Module/class-validator/@IsString.md",
+    "Node.js/Nest.js/ValidationPipe.md",
+    "Node.js/Nest.js/파이프(Pipe).md",
+    "Node.js/Module/class-validator/@IsNotEmpty.md",
+    "Node.js/Module/class-validator/@IsOptional().md",
+    "Node.js/Module/class-validator/class-validator.md",
+    "Node.js/Module/class-validator",
+    "Node.js/Module/class-validator/@UsePipes.md",
+    "Node.js/Nest.js/@Param.md",
+    "Node.js/Nest.js/핸들러(Handler).md",
+    "Node.js/Nest.js/Data vaildation.md",
+    "image/Pasted image 20240901164101.png",
     "Node.js/Module/TypeORM",
-    "Node.js/Module/TypeORM/TypeORM.md",
-    "Node.js/컨트롤러(Controller).md",
-    "Node.js/Nest.js/@Body.md",
-    "Node.js/Module/Express/Express.md",
-    "Node.js/서비스(Service).md",
-    "Node.js/Nest.js/의존성 주입(Dependency Injection).md",
-    "TypeScript/tsc.md",
     "Node.js/Nest.js",
     "JavaScript/구현",
     "image/Pasted image 20240626175122.png",
@@ -212,8 +219,6 @@
     "image/Pasted image 20240413030438.png",
     "image/Pasted image 20240413032627.png",
     "image/Pasted image 20240413031623.png",
-    "image/Pasted image 20231115000103.png",
-    "Node.js/Module/fs",
-    "Node.js/Module/koa"
+    "Node.js/Module/fs"
   ]
 }

@@ -1,0 +1,1 @@
+- @Column [[데코레이터(Decorator)]] [[클래스(class)]]는 Board [[엔티티(Entity)]] title 및 description과 같은 다른 [[열(Column)]]을 나타내는 데 사용된다.
