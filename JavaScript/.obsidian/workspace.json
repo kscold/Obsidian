@@ -25,26 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript/타입스크립트(TypeScript).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2d3e3ebf7b3c2922",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Node.js/리파지터리(Repository).md",
+                "file": "Node.js/Nest.js/Nest CLI.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Node.js/리파지터리(Repository).md",
+                "file": "Node.js/Nest.js/Nest CLI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Node.js/리파지터리(Repository).md",
+                "file": "Node.js/Nest.js/Nest CLI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Node.js/리파지터리(Repository).md"
+                "file": "Node.js/Nest.js/Nest CLI.md"
               }
             }
           }
@@ -171,10 +159,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2d3e3ebf7b3c2922",
+  "active": "fb98b33b54955c7b",
   "lastOpenFiles": [
-    "extends.md",
+    "TypeScript/타입스크립트(TypeScript).md",
+    "Untitled.canvas",
+    "Node.js/Nest.js/Built-in pipe.md",
+    "2024-09-04.md",
+    "Node.js/Nest.js/Nest CLI.md",
     "Node.js/리파지터리(Repository).md",
+    "extends.md",
     "Node.js/Nest.js/@EntityRepository.md",
     "Node.js/Nest.js/@Column.md",
     "Node.js/Nest.js/@PrimaryGeneratedColumn.md",
@@ -184,7 +177,6 @@
     "transform().md",
     "Node.js/Nest.js/커스텀 파이프(Custom Pipe).md",
     "PipeTransform.md",
-    "Node.js/Nest.js/Built-in pipe.md",
     "Node.js/Nest.js/DTO(Data Transfer Object).md",
     "Node.js/Module/class-transformer.md",
     "Node.js/Module/class-validator/@IsEmail().md",
@@ -196,10 +188,6 @@
     "Node.js/Module/class-validator/@IsOptional().md",
     "Node.js/Module/class-validator/class-validator.md",
     "Node.js/Module/class-validator",
-    "Node.js/Module/class-validator/@UsePipes.md",
-    "Node.js/Nest.js/@Param.md",
-    "Node.js/Nest.js/핸들러(Handler).md",
-    "Node.js/Nest.js/Data vaildation.md",
     "image/Pasted image 20240901164101.png",
     "Node.js/Module/TypeORM",
     "Node.js/Nest.js",
