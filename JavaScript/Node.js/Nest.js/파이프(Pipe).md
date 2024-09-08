@@ -1,4 +1,4 @@
-- 파이프(Pipe)는 [[@Injectable]] [[데코레이터(Decorator)]]로 주석이 달린 [[클래스(class)]]이다.
+- 파이프(Pipe)는 [[@Injectable()]] [[데코레이터(Decorator)]]로 주석이 달린 [[클래스(class)]]이다.
 
 - 파이프는 [[Data Transformation]]과 [[Data vaildation]]을 위해서 사용된다.
 - 파이프는 [[컨트롤러(Controller)]] 경로 처리기에 의해 처리되는 인자에 대해 작동한다.
@@ -32,7 +32,7 @@
 
 ### Handler-level Pipes
 
-- [[핸들러(Handler)]] 레벨에서 [[@UsePipes]] [[데코레이터(Decorator)]]를 이용해서 사용할 수 있다.
+- [[핸들러(Handler)]] 레벨에서 [[@UsePipes()]] [[데코레이터(Decorator)]]를 이용해서 사용할 수 있다.
 - 이 파이프는 모든 [[매개변수(parameter)]]에 적용된다.
 
 ```ts
