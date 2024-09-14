@@ -1,4 +1,4 @@
-- [[NestJS]]에서 [[엔티티(Entity)]]나 [[DTO(Data Transfer Object)]]의 특정 필드([[열(Column)]])을 유니크하게 만들기 위해서 사용하는 [[데코레이터(Decorator)]]이다.
+- [[Node.js/Nest.js/NestJS]]에서 [[엔티티(Entity)]]나 [[DTO(Data Transfer Object)]]의 특정 필드([[열(Column)]])을 유니크하게 만들기 위해서 사용하는 [[데코레이터(Decorator)]]이다.
 
 
 ## 문법

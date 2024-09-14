@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Node.js/Nest.js/InternalServerErrorException().md",
+                "file": "Node.js/Nest.js/가드(Guard).md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 296.5
   },
   "right": {
     "id": "84986afa53e23371",
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Node.js/Nest.js/InternalServerErrorException().md",
+                "file": "Node.js/Nest.js/가드(Guard).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Node.js/Nest.js/InternalServerErrorException().md",
+                "file": "Node.js/Nest.js/가드(Guard).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Node.js/Nest.js/InternalServerErrorException().md"
+                "file": "Node.js/Nest.js/가드(Guard).md"
               }
             }
           }
@@ -154,34 +154,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ddc8a6cb12182786",
+  "active": "edc002dfb78ff5ff",
   "lastOpenFiles": [
-    "Node.js/Nest.js/NotFoundException().md",
-    "Node.js/Nest.js/InternalServerErrorException().md",
-    "Node.js/Nest.js/ConflictException().md",
-    "Node.js/Nest.js/@Unique().md",
-    "Node.js/Nest.js/@EntityRepository().md",
-    "Node.js/Nest.js/ValidationPipe.md",
-    "Node.js/Module/class-validator/@UsePipes().md",
-    "Node.js/Module/class-validator/@IsString().md",
-    "Node.js/Module/class-validator/@IsNotEmpty().md",
-    "Node.js/Nest.js/@Body().md",
-    "Node.js/Nest.js/@Column().md",
-    "Node.js/Nest.js/@Entity().md",
-    "Node.js/Nest.js/@Injectable().md",
-    "Node.js/Nest.js/@Param().md",
-    "Node.js/Nest.js/@PrimaryGeneratedColumn().md",
-    "Node.js/Nest.js/Built-in pipe.md",
-    "Node.js/Nest.js/Nest CLI.md",
-    "TypeScript/데코레이터(Decorator).md",
-    "Node.js/Nest.js/핸들러(Handler).md",
-    "Node.js/Module/class-validator/@Matches().md",
-    "Node.js/Module/class-validator/@MinLength().md",
-    "Node.js/Module/class-validator/@MaxLength().md",
-    "TypeOrmModule.forRoot().md",
+    "Node.js/Nest.js/NestJS 미들웨어(Middleware).md",
+    "Node.js/Nest.js/인터셉터(Interceptor).md",
+    "Node.js/Nest.js/가드(Guard).md",
+    "Node.js/Nest.js/필터(Filter).md",
     "Node.js/Nest.js/NestJS 모듈(module).md",
-    "TypeOrmModule.forFeature().md",
-    "@Module().md",
+    "Node.js/Module/passport/@nestjs-passport/Passport Module.md",
+    "Node.js/Module/passport/@nestjs-passport/jwt.strategy.ts.md",
+    "Node.js/Module/passport/@nestjs-passport/@UseGuards().md",
+    "Node.js/Module/passport/passport-local.md",
+    "Node.js/Module/passport/passport-jwt.md",
+    "Node.js/Module/passport/passport.md",
+    "Node.js/Module/passport/done().md",
+    "Node.js/Module/passport/UseGuards.md",
+    "Node.js/Module/passport/passport-jwt",
+    "Node.js/Nest.js/providers.md",
+    "Node.js/Module/passport/@nestjs-passport",
+    "Node.js/JWT(JSON Web Token).md",
+    "image/Pasted image 20240914212528.png",
+    "Node.js/Module/TypeORM/TypeOrmModule.forRoot().md",
+    "Node.js/Module/TypeORM/TypeOrmModule.forFeature().md",
+    "Node.js/Nest.js/@Module().md",
+    "Node.js/Nest.js/파이프(Pipe).md",
+    "Node.js/Module/class-validator/class-validator.md",
+    "Node.js/Module/class-validator/@UsePipes().md",
+    "Node.js/리파지터리(Repository).md",
+    "Node.js/서비스(Service).md",
+    "TypeScript/private.md",
+    "Node.js/Nest.js/@EntityRepository().md",
+    "Node.js/Nest.js/핸들러(Handler).md",
     "Untitled.canvas",
     "Node.js/Module/class-validator",
     "image/Pasted image 20240901164101.png",
@@ -197,12 +200,9 @@
     "Node.js/Module/passport",
     "Node.js/Module/Sequelize",
     "Node.js/Module/MongoDB",
-    "Node.js/MongoDB",
     "image/Pasted image 20240413032925.png",
     "image/Pasted image 20240413030415.png",
     "image/Pasted image 20240413030438.png",
-    "image/Pasted image 20240413032627.png",
-    "image/Pasted image 20240413031623.png",
-    "Node.js/Module/fs"
+    "image/Pasted image 20240413032627.png"
   ]
 }

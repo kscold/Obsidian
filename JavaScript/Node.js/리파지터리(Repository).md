@@ -1,4 +1,4 @@
-- 일반적으로 [[NestJS]]에서는 name.repository.ts으로 이름을 설정한다.
+- 일반적으로 [[Node.js/Nest.js/NestJS]]에서는 name.repository.ts으로 이름을 설정한다.
 
 - [[@EntityRepository()]]
 

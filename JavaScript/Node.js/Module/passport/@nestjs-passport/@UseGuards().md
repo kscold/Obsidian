@@ -1,0 +1,1 @@
+- @UseGuards()는 @nestjs/passport([[Passport Module]])에서 가져온 [[AuthGuard()]]를 이용하면 요청(Request) 안에 유저 정보를 넣어 줄 수 있다.

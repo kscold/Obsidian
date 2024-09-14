@@ -1,10 +1,10 @@
 - Module이란, [[@Module()]] [[데코레이터(Decorator)]]가 붙어있는 [[클래스(class)]]를 의미한다.
-- @Module() 데코레이터는 [[NestJS]]가 전체 어플리케이션의 구조를 만들어나가는데 사용하기 위한 메타데이터를 제공한다.
+- @Module() 데코레이터는 [[Node.js/Nest.js/NestJS]]가 전체 어플리케이션의 구조를 만들어나가는데 사용하기 위한 메타데이터를 제공한다.
 
-- [[NestJS]] 의 프로젝트에는 최소 한 개 이상의 모듈이 존재하며, 이때 최초 프로젝트 생성 시에 만들어지는 **최소 한 개**의 모듈은 Root Module이다.
+- [[Node.js/Nest.js/NestJS]] 의 프로젝트에는 최소 한 개 이상의 모듈이 존재하며, 이때 최초 프로젝트 생성 시에 만들어지는 **최소 한 개**의 모듈은 Root Module이다.
 - 즉, 프로젝트 내에 Root Module 만 존재하는 태초의 상태이다.
 
-- 모듈은 기본적으로 [[Providers]]들을 캡슐화하고 있다.
+- 모듈은 기본적으로 [[providers]]들을 캡슐화하고 있다.
 - 이 말은 즉, 사용하려고 하는(또는 의존성 주입되는) Provider 가 해당 모듈 안에 직접적으로 속해있지 않거나, 또는 특정 모듈에서 다른 외부 모듈에 속한 Provider 를 필요로 할 때 Export 속성에 의해 지정되지 않은 Provider 는 사용하지 못 한다는 것이다. 
 - 따라서, 어떤 Provider 를 Export 한다는 것은 어플리케이션의 다른 모듈에서 사용할 수 있는 Public Interface 또는 API 로 허용한다는 것을 의미한다. 
 - 자바로 정의하면, 말 그대로 접근제어자를 private 에서 public 으로 변경하는 것과 같은 효과이다.
@@ -12,8 +12,8 @@
 
 ## NestJS의 모듈 구조
 
-- Root Module 은 [[NestJS]] 가 Application Graph를 구축하는데 필요한 시작점이다.
-- 또한, [[NestJS]]가 Module과 [[Providers]]간의 관계, 그리고 종속성 관리를 위해 사용하는 내부적인 데이터 구조이다.
+- Root Module 은 [[Node.js/Nest.js/NestJS]] 가 Application Graph를 구축하는데 필요한 시작점이다.
+- 또한, [[Node.js/Nest.js/NestJS]]가 Module과 [[providers]]간의 관계, 그리고 종속성 관리를 위해 사용하는 내부적인 데이터 구조이다.
 
 ![](https://velog.velcdn.com/images/dinb1242/post/c500f78d-b3a9-42a7-94da-ae0bb076d295/image.png)
 

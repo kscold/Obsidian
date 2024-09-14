@@ -1,19 +1,7 @@
-- passport는 여권이라는 이름과 같이 [[서버(Server)]]에서 사용자를 인증하기 위해 사용하는 [[노드(Node.js)]]용 [[미들웨어(Middleware)]]이다.
-
-- 기본적인 인증 시스템 지원과 더불어 구글, 트위터, 페이스북 과 같이 소셜로그인도 passport를 이용해 간편하게 할 수 있다.
-- passport는 어플마다 고유의 인증방식이 있음을 간주하고. 각 인증방식을 stragies라는 개별적인 [[모듈(Module)]]로 만든다.
-- stragies를 통해 local이나 google과 같은 인증방식을 구현할 수 있다.
+- [[Express]]의 [[passport]]에서 passport-local을 사용한 구현 방법이다.
 
 
-## Strategies
-
-- passport.js에서 다양한 인증 방법을 stragies로 제공한다. 
-- 공식문서를 보면 다양한 stragies가 존재함을 볼 수 있다. 
-
-
-## passport-local구현
-
-### [[미들웨어(Middleware)]] 등록
+##  [[미들웨어(Middleware)]] 등록
 
 ```js
 // app.js
@@ -26,7 +14,7 @@ app.use(passport.session());
 - passport는 session을 사용하기 때문에 [[세션(Session)]]을 등록한`app.use(session({...}))` 코드 다음에 passport 미들웨어를 등록한다.
 
 
-### 인증 라우터 등록
+## 인증 라우터 등록
 
 ```js
 app.post('/login', 
@@ -44,7 +32,7 @@ app.post('/login',
 - 인증 실패했을때 `/login`으로 이한다.
 
 
-### 자격검증 (Strategies)
+## 자격검증 (Strategies)
 
 ```js
 var passport = require('passport'), LocalStrategy = require('passport-local').Strategy;
@@ -84,7 +72,7 @@ passport.use(new LocalStrategy(
 - 검사중에 [[에러(error)]]가 발생하면 `done(err)`에러를 리턴한다.
 
 
-### Session
+## Session
 
 ```jsx
 passport.serializeUser(function(user, done) {
@@ -109,13 +97,13 @@ passport.deserializeUser(function(id, done) {
 - 해당 사용자를 찾아 `done(err, user)` user를 done함수에 2번째 인자로 전달하면 request.user 객체에 전달된다.
 
 
-### 로그인 판별
+## 로그인 판별
 
 - deserializeUser를 통해 request.user의 정보를 받을 수 있다.
 - 로그인이 되었다면 request.user가 있을 것이고 로그인 되지 않았다면 request.user가 없을 것이다.
 
 
-### 로그아웃
+## 로그아웃
 
 ```js
 app.get('/logout', function(req, res){
