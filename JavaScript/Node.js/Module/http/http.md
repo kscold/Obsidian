@@ -1,6 +1,6 @@
 - [[노드(Node.js)]]는 자바스크립트 [[런타임(runtime)]] 플랫폼이라고 하는데 쉽게 말해서 [[서버(Server)]]를 구축하는 데 도움이 되는 툴이다. 
 
-- node.js는 [[HTTP(Hyper Tranfer Protocol)]]의 도구를 제공하기 때문에 http [[모듈(Module)]]을 통해서 [[서버(Server)]]에 요청하고 응답을 보내고자 한다.  
+- [[노드(Node.js)]]는 [[HTTP(Hyper Tranfer Protocol)]]의 도구를 제공하기 때문에 http [[모듈(Module)]]을 통해서 [[서버(Server)]]에 요청하고 응답을 보내고자 한다.  
 
   
 ## http 모듈을 이용한 [[서버(Server)]] 생성

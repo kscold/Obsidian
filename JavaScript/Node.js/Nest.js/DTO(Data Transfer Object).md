@@ -15,4 +15,4 @@
 
 ## Class vs Interface
 
-- DTO 파일을 작성할 때, [[클래스(class)]]는 [[Interface]]
+- DTO 파일을 작성할 때, [[클래스(class)]]는 [[interface]]

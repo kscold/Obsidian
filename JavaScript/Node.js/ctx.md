@@ -4,6 +4,7 @@
 
 - [[Express]] 라이브러리의 [[req]], [[res]] [[객체(Object)]]와 거의 유사하다.
 
+
 ## 문법
 
 ```js
@@ -78,10 +79,10 @@ ctx.etag=
 
 - Express의 request와 response [[객체(Object)]]를 의미한다.
 
+
 ## ctx.request, ctx.response
 
 - Koa의 request와 response [[객체(Object)]]를 의미한다.
-
 - Koa.request와 Koa.response의 객체를 출력하면 아래와 같다.
 
 ```json

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Node.js/Nest.js/가드(Guard).md",
+                "file": "createParamDecorator().md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Node.js/Nest.js/가드(Guard).md",
+                "file": "createParamDecorator().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Node.js/Nest.js/가드(Guard).md",
+                "file": "createParamDecorator().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Node.js/Nest.js/가드(Guard).md"
+                "file": "createParamDecorator().md"
               }
             }
           }
@@ -154,37 +154,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "edc002dfb78ff5ff",
+  "active": "ddc8a6cb12182786",
   "lastOpenFiles": [
-    "Node.js/Nest.js/NestJS 미들웨어(Middleware).md",
-    "Node.js/Nest.js/인터셉터(Interceptor).md",
+    "Node.js/ctx.md",
+    "createParamDecorator().md",
+    "Node.js/Nest.js/커스텀 데코레이터(Custom Decorator).md",
+    "Node.js/Nest.js/CanActivate.md",
+    "Untitled.md",
     "Node.js/Nest.js/가드(Guard).md",
-    "Node.js/Nest.js/필터(Filter).md",
-    "Node.js/Nest.js/NestJS 모듈(module).md",
-    "Node.js/Module/passport/@nestjs-passport/Passport Module.md",
-    "Node.js/Module/passport/@nestjs-passport/jwt.strategy.ts.md",
-    "Node.js/Module/passport/@nestjs-passport/@UseGuards().md",
-    "Node.js/Module/passport/passport-local.md",
-    "Node.js/Module/passport/passport-jwt.md",
-    "Node.js/Module/passport/passport.md",
-    "Node.js/Module/passport/done().md",
-    "Node.js/Module/passport/UseGuards.md",
-    "Node.js/Module/passport/passport-jwt",
-    "Node.js/Nest.js/providers.md",
-    "Node.js/Module/passport/@nestjs-passport",
-    "Node.js/JWT(JSON Web Token).md",
-    "image/Pasted image 20240914212528.png",
-    "Node.js/Module/TypeORM/TypeOrmModule.forRoot().md",
-    "Node.js/Module/TypeORM/TypeOrmModule.forFeature().md",
-    "Node.js/Nest.js/@Module().md",
-    "Node.js/Nest.js/파이프(Pipe).md",
-    "Node.js/Module/class-validator/class-validator.md",
-    "Node.js/Module/class-validator/@UsePipes().md",
-    "Node.js/리파지터리(Repository).md",
-    "Node.js/서비스(Service).md",
-    "TypeScript/private.md",
-    "Node.js/Nest.js/@EntityRepository().md",
+    "Node.js/Module/passport/@nestjs-passport/AuthGuard().md",
+    "Node.js/switchToHttp().md",
+    "Node.js/ArgumentsHost.md",
+    "Node.js/Nest.js/ExecutionContext.md",
+    "Node.js/GraphQL.md",
+    "Node.js/Express/next().md",
+    "Node.js/Express/req.md",
     "Node.js/Nest.js/핸들러(Handler).md",
+    "TypeScript/덕 타이핑(Duck typing).md",
+    "TypeScript/readonly.md",
+    "TypeScript/type.md",
+    "TypeScript/선언적 확장(Declaration Merging).md",
+    "JavaScript/extends.md",
+    "TypeScript/implements.md",
+    "TypeScript/interface.md",
+    "Node.js/에러(error).md",
+    "TypeScript/Union.md",
+    "TypeScript/타입 표기(Type Annotation).md",
+    "JavaScript/함수형 프로그래밍(Functional Programming).md",
+    "Node.js/서버(Server).md",
+    "Node.js/Module/passport/passport-jwt",
+    "Node.js/Module/passport/@nestjs-passport",
+    "image/Pasted image 20240914212528.png",
     "Untitled.canvas",
     "Node.js/Module/class-validator",
     "image/Pasted image 20240901164101.png",

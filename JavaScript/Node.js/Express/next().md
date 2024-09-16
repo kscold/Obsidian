@@ -1,6 +1,6 @@
 - [[app.use()]]의 next() 메서드는 [[콜백 함수(Callback Function)]]의 [[매개변수(parameter)]]로 다음 작업 혹은 [[미들웨어(Middleware)]]를 실행하는 [[함수(Function)]]이다.
 
-- 만약 next()의 경우 인자가 있으면 그 미들웨어로 이동한다.
+- 만약 next()의 경우 인자가 있으면 그 [[미들웨어(Middleware)]]로 이동한다.
 
 
 ## next(error 객체)

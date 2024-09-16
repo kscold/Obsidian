@@ -5,19 +5,19 @@
 ## Type Annotation의 종류
 
 - 타입스크립트의 기본 타입은 크게 12가지가 있다.
+### Boolean
+### Number
+### String
+### Object
+### Array
+### [[tuple]]
+### [[enum]]
+### [[any]]
+### [[void]]
+### Null
+### Undefined
+### [[Never]]
 
-- Boolean
-- Number
-- String
-- Object
-- Array
-- [[tuple]]
-- [[enum]]
-- [[any]]
-- [[void]]
-- Null
-- Undefined
-- [[Never]]
 
 ## 문법
 
