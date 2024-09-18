@@ -1,0 +1,1 @@
+- [[TypeORM]]에서 [[QueryBuilder]]를 실행한 결과가 하나일 때, 사용하는 [[메서드(Method)]]이다.

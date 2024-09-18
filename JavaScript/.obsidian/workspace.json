@@ -13,21 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "createParamDecorator().md",
+                "file": "Node.js/Module/TypeORM/createParamDecorator().md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1926029c881274da",
+            "id": "b5109dd435800494",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Node.js/Nest.js/providers.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "createParamDecorator().md",
+                "file": "Node.js/Nest.js/providers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "createParamDecorator().md",
+                "file": "Node.js/Nest.js/providers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "createParamDecorator().md"
+                "file": "Node.js/Nest.js/providers.md"
               }
             }
           }
@@ -154,34 +159,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ddc8a6cb12182786",
+  "active": "b5109dd435800494",
   "lastOpenFiles": [
-    "Node.js/ctx.md",
-    "createParamDecorator().md",
-    "Node.js/Nest.js/커스텀 데코레이터(Custom Decorator).md",
-    "Node.js/Nest.js/CanActivate.md",
-    "Untitled.md",
-    "Node.js/Nest.js/가드(Guard).md",
-    "Node.js/Module/passport/@nestjs-passport/AuthGuard().md",
-    "Node.js/switchToHttp().md",
-    "Node.js/ArgumentsHost.md",
-    "Node.js/Nest.js/ExecutionContext.md",
-    "Node.js/GraphQL.md",
-    "Node.js/Express/next().md",
-    "Node.js/Express/req.md",
-    "Node.js/Nest.js/핸들러(Handler).md",
-    "TypeScript/덕 타이핑(Duck typing).md",
-    "TypeScript/readonly.md",
-    "TypeScript/type.md",
-    "TypeScript/선언적 확장(Declaration Merging).md",
-    "JavaScript/extends.md",
     "TypeScript/implements.md",
-    "TypeScript/interface.md",
-    "Node.js/에러(error).md",
-    "TypeScript/Union.md",
+    "Node.js/Module/TypeORM/createParamDecorator().md",
     "TypeScript/타입 표기(Type Annotation).md",
-    "JavaScript/함수형 프로그래밍(Functional Programming).md",
-    "Node.js/서버(Server).md",
+    "Node.js/Nest.js/Logger().md",
+    "Node.js/Nest.js/forFeature().md",
+    "SQL/테이블(Table).md",
+    "Node.js/Nest.js/forRoot().md",
+    "Node.js/서비스(Service).md",
+    "Node.js/Nest.js/Hot Reload.md",
+    "Node.js/import.md",
+    "TypeScript/declare.md",
+    "Node.js/Module/Config.md",
+    "Node.js/Module/TypeORM/getMany().md",
+    "Node.js/Module/TypeORM/getOne().md",
+    "Node.js/Module/TypeORM/QueryBuilder.md",
+    "Node.js/Module/TypeORM/createQueryBuilder().md",
+    "Node.js/Nest.js/DataSource.md",
+    "Node.js/CRUD.md",
+    "SQL/쿼리(Query).md",
+    "Node.js/Module/TypeORM/@ManyToMany().md",
+    "Untitled.md",
+    "Node.js/Module/TypeORM/@OneToMany().md",
+    "Node.js/Module/TypeORM/TypeORM.md",
+    "SQL/연관 관계(Relationships).md",
+    "SQL/단방향(unidirectional).md",
+    "SQL/양방향(bidirectional).md",
     "Node.js/Module/passport/passport-jwt",
     "Node.js/Module/passport/@nestjs-passport",
     "image/Pasted image 20240914212528.png",

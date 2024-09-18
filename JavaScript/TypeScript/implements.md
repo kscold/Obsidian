@@ -3,3 +3,5 @@
 
 - 부모 [[클래스(class)]]부터 자식클래스로 [[클래스(class)]]를 [[interface]]로 상속할 때, 사용하는 [[키워드(Keyword)]]이고, 이를 통해서, [[interface]]와 [[클래스(class)]]를 동시에 확장할 수 있다.
 
+- implements로 [[상속(Inheritance)]]을 받으면 인터페이스([[interface]])의 [[메서드(Method)]]를 반드시 구현을 해야하기 때문에, 실수와 오류를 줄일 수 있다.
+

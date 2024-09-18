@@ -1,0 +1,2 @@
+- [[객체(Object)]] 관계에서 양쪽이 서로 참조한다.
+- owning side와 inverse side이다.

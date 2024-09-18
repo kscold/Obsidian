@@ -66,7 +66,7 @@ export class CommonModule {}
 export class AlarmsModule {}
 ```
 
-### [[TypeOrmModule.forRoot()]]
+### [[forRoot()]]
 
 - 동적 모듈을 한번 구성하고 해당 구성을 여러 위치에서 재사용한다.
 
@@ -95,7 +95,7 @@ import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
 export class MysqlModule {}
 ```
 
-### [[TypeOrmModule.forFeature()]]
+### [[forFeature()]]
 
 - 루트용 동적 모듈의 구성을 사용할 예정이지만 호출 모듈의 필요에 따라 일부 구성을 수정해야 한다.  
 - 자체 주입 토큰이 있는 동적 공급자를 생성하기 위해 사용한다.  
