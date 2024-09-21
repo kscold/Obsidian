@@ -5,8 +5,11 @@
 
 - [[React Router]]를 사용한다면 [[useParams()]]를 사용하여 URL 파라미터를 추출할 수 있다.
 
+- [[NestJS]]에서는 [[@Param()]] [[데코레이터(Decorator)]]를 통해서 URL 파라미터를 [[매개변수(parameter)]]화 시켜서 사용할 수 있다.
+
+
 ## URL 형식
 
 ```
-/profile/velopert
+/:id // :id가 URL 파라미터가 됨
 ```

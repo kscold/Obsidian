@@ -48,3 +48,29 @@
 
 - 위와 같은 경우에 [[map()]]의 두 번째 [[매개변수(parameter)]]인 index를 key로 사용하면 key의 대한 value가 변하게 된다.
 - 따라서 index를 key로 사용하는 경우는 권장되지 않는다.
+
+
+## 예시
+
+- [[key]]값을 설정할 때는 [[map()]]의 인자로 전달되는 [[함수(Function)]] 내부에서 [[컴포넌트(Component)]] [[props]]를 선정하듯이 설정하면 된다.
+- [[key]]값은 언제나 유일(unique)해야 한다.
+
+```jsx
+const articleList = articles.map(article => ()
+	<Article
+		title={article.title}
+		key={article.writer}
+		key={article.id}
+	/>
+));
+```
+
+- 하지만 위의 예시처럼 교유 번호(id)가 없을 때에는 map 함수에 전달되는 콜백 함수의 인수인 index 값을 사용하면 된다.
+
+```jsx
+const IterationSample = () => {
+	const names = ['눈사람', '얼음', '눈', '바람'];
+	const nameList = names.map((name, index) => <li key={index}>{name}</li>);
+	return <ul>{nameList}</ul>;
+}
+```

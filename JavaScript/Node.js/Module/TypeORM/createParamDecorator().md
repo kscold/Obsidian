@@ -4,7 +4,7 @@
 
 - 인자로는 [[콜백 함수(Callback Function)]]를 받는다.
 - 이 [[콜백 함수(Callback Function)]]는 해당 [[매개변수(parameter)]]에서 추출하려는 데이터를 반환한다.
-​
+ ​
 
 ## 문법
 

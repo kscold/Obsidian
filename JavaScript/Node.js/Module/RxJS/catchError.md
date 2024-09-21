@@ -1,0 +1,1 @@
+- [[RxJS(Reactive Extensions For JavaScript)]] [[모듈(Module)]]에 정의 되어 있는 기능으로 [[에러(error)]] [[객체(Object)]]에 대한 정보가 들어있다.

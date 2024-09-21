@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "providers",
+  "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -17,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.4815327351269345,
+  "scale": 0.533243236060034,
   "close": false
 }

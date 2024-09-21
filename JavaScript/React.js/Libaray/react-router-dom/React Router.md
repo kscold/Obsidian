@@ -109,6 +109,6 @@ const Home = () => {
 export default Home;
 ```
 
-## [[URL 파라미터]]와 [[쿼리스트링(Querystring)]]
+## [[URL 파라미터(URL Parameter)]]와 [[쿼리스트링(Querystring)]]
 
-- [[URL 파라미터]]는 주로 ID 또는 이름을 사용하여 특정 데이터를 조회할 때 사용하고, [[쿼리스트링(Querystring)]]은 키워드 검색, 페이지네이션, 정렬 방식 등 데이터 조회에 필요한 옵션을 전달할 때 사용한다.
+- [[URL 파라미터(URL Parameter)]]는 주로 ID 또는 이름을 사용하여 특정 데이터를 조회할 때 사용하고, [[쿼리스트링(Querystring)]]은 키워드 검색, 페이지네이션, 정렬 방식 등 데이터 조회에 필요한 옵션을 전달할 때 사용한다.
