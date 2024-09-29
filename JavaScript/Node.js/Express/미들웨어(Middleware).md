@@ -2,6 +2,7 @@
 - 미들웨어는 [[HTTP(Hyper Tranfer Protocol)]] 요청과 응답 [[객체(Object)]]를 처리하거나, 다음 미들웨어를 실행할 수 있다.
 
 - [[HTTP(Hyper Tranfer Protocol)]] 응답이 마무리될 때까지 미들웨어 동작 사이클이 실행된다.
+- 미들웨어도 [[AOP(Aspect-Oriented Programming)]]의 개념을 사용한다.
 
 ## Route Handler
 

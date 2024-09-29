@@ -23,11 +23,16 @@
             "id": "ddc8a6cb12182786",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Node.js/Module/Swagger/Swagger.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Node.js/Module/RxJS/RxJS(Reactive Extensions For JavaScript).md",
+                "file": "Node.js/Module/Swagger/Swagger.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Node.js/Module/RxJS/RxJS(Reactive Extensions For JavaScript).md",
+                "file": "Node.js/Module/Swagger/Swagger.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Node.js/Module/RxJS/RxJS(Reactive Extensions For JavaScript).md"
+                "file": "Node.js/Module/Swagger/Swagger.md"
               }
             }
           }
@@ -154,10 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6c9295d9fe03a7c6",
+  "active": "ddc8a6cb12182786",
   "lastOpenFiles": [
-    "리액티브 프로그래밍(Reactive Programming).md",
+    "Node.js/Express/미들웨어(Middleware).md",
     "Node.js/Module/RxJS/RxJS(Reactive Extensions For JavaScript).md",
+    "리액티브 프로그래밍(Reactive Programming).md",
     "JavaScript/이벤트(event).md",
     "Node.js/Nest.js/@UseInterceptors().md",
     "@UseInterceptors() 1.md",
@@ -182,7 +188,6 @@
     "Node.js/URL 파라미터(URL Parameter).md",
     "Node.js/WAS(Web Application Server).md",
     "Node.js/Nest.js/핸들러(Handler).md",
-    "Node.js/Nest.js/providers.md",
     "Node.js/Module/Swagger",
     "Node.js/Module/passport/passport-jwt",
     "Node.js/Module/passport/@nestjs-passport",

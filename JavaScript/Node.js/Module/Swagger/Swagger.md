@@ -59,7 +59,8 @@ bootstrap();
 - [[@ApiTag()]]를 사용하여 api를 그룹화할 수 있다.
   - [[@ApiOperation()]]를 사용하여 api에 대한 보충설명한다.
   - [[@ApiQuery()]]를 사용하여 [[쿼리스트링(Querystring)]]를 보충설명한다.  
+  - [[@ApiParam()]]를 사용하여 [[URL 파라미터(URL Parameter)]]를 보충설명한다.
   - [[@ApiResponse()]]를 통해 응답 [[객체(Object)]]와 [[HTTP 응답 상태(status)]]를 정의할 수 있다.
-### [[DTO(Data Transfer Object)]]
+### [[엔티티(Entity)]]
 
-- [[@ApiProperty()]]를 사용하여 [[DTO(Data Transfer Object)]]의 [[속성(Property)]]들에 대한 보충설명을 한다.
+- [[@ApiProperty()]]를 사용하여 [[DTO(Data Transfer Object)]]의 [[속성(Property)]]들에 대한 보충설명을 하고 [[엔티티(Entity)]]에 붙이는 것이 이후 [[DTO(Data Transfer Object)]]를 서언할 때, 그래도 적용되어 편하다.
