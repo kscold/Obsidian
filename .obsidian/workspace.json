@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "bee44edc891049ea",
+        "id": "dc0523d32f12478c",
         "type": "tabs",
         "children": [
           {
-            "id": "763975dfcfd814df",
+            "id": "9d75214237c78755",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -130,15 +130,15 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:퀵 스위처 열기": false,
-      "graph:그래프 뷰 열기": false,
-      "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 데일리 노트 열기": false,
-      "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
-  "active": "763975dfcfd814df",
+  "active": "9d75214237c78755",
   "lastOpenFiles": [
     "스프링/스프링/@Autowired.md"
   ]

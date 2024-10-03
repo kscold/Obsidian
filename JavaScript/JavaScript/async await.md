@@ -49,6 +49,9 @@ getData()
 
 - try/catch로 [[Promise]] [[객체(Object)]]가 reject 된 경우를 catch한다.
 
+- 또한 async [[함수(Function)]]의 경우 [[throw]]를 해도 [[서버(Server)]]가 멈추지 않는다.
+- async [[함수(Function)]]에서는 [[throw]]를 해도 자동으로 [[catch()]]가 되어버리기 때문이다.
+
 ```js
 async function getData() {
 	let user;
