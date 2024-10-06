@@ -1,6 +1,6 @@
 - 렉시컬 환경(Lexical Environment)은 코드 block, [[함수(Function)]], script를 실행하기 앞서 생성되는 특별한 [[객체(Object)]]로, 실행할 [[스코프(Scope)]] 범위 안에 있는 [[변수(Variable)]]와 [[함수(Function)]]를 [[속성(Property)]]으로 저장하는 [[객체(Object)]]다.
 
-- 즉 우리가 소스 코드를 실행하면서 참조가 필요한 [[변수(Variable)]]의 값을 이 Lexical Environment라는 [[객체(Object)]]에서 [[식별자(Identifier)]] 이름을 키로 찾는다고 보면 된다.
+- 즉 우리가 소스 코드를 실행하면서 참조가 필요한 [[변수(Variable)]]의 값을 이 Lexical Environment라는 [[객체(Object)]]에서 [[Node.js/식별자(Identifier)]] 이름을 키로 찾는다고 보면 된다.
 
 
 ## [[실행 컨텍스트(execution context)]]와의 관계

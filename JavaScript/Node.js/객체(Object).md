@@ -26,7 +26,7 @@ var zero = {
 - 따라서 zero 객체에는 `firstName: 'Zero'`와 `lastName: 'Cho'`까지 두 개의 [[속성(Property)]]이 있다.
 - [[속성(Property)]]끼리는 쉼표로 구분해준다. 
 
-- 자바스크립트는 [[클래스(Class)]] 내부에 정의 된 [[함수(Function)]]를 [[메서드(Method)]]라고 부르는 것 뿐만 아니라 [[속성(Property)]]값이 [[함수(Function)]]인 것을 [[메서드(Method)]]라고 부른다.
+- 자바스크립트는 [[클래스(class)]] 내부에 정의 된 [[함수(Function)]]를 [[메서드(Method)]]라고 부르는 것 뿐만 아니라 [[속성(Property)]]값이 [[함수(Function)]]인 것을 [[메서드(Method)]]라고 부른다.
 
 
 ## 객체 [[리터럴(literal)]]

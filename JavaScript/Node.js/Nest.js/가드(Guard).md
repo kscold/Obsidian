@@ -1,3 +1,7 @@
+- 가드(Guard)의 주요 목적은 보통 [[컨트롤러(Controller)]]에 접근하기 전의 권한을 체크(401, 403)는 것에 주로 쓰인다.
+- 물론 데이터 자체도 제대로 체크할 수 있지만, 이런 기능은 [[class-validator]]가 많이 대신한다.
+- [[NestJS 미들웨어(Middleware)]]
+
 - 가드(Guard)는 [[@Injectable()]] [[데코레이터(Decorator)]]를 사용하며 [[CanActivate]] 인터페이스([[interface]])를 구현한 [[클래스(class)]]이다.
 
 - [[@Injectable()]]를 사용한 이유는 [[인스턴스(Instance)]] 대신 타입을 전달하여 사용하고, [[인스턴스(Instance)]]화에 대한 책임은 프레임워크에 남겨두고 [[의존성 주입(Dependency Injection)]]을 가능하게 하기 위해서이다. 

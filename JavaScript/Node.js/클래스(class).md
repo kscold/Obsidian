@@ -105,7 +105,7 @@ let kim = new Korean("KIMJINYOUNG", 24);
 
 ## 자바스크립트의 [[상속(Inheritance)]]
 
-- [[클래스(Class)]] 문법 이전에 [[상속(Inheritance)]]을 하기 위해서는 밑의 코드처럼 [[prototype]]의 create() [[메서드(Method)]]를 이용해서 사용을 해야 했다.
+- [[클래스(class)]] 문법 이전에 [[상속(Inheritance)]]을 하기 위해서는 밑의 코드처럼 [[prototype]]의 create() [[메서드(Method)]]를 이용해서 사용을 해야 했다.
 
 ```js
 var Human = function(type) {
@@ -136,7 +136,7 @@ var oldZero = new Zero('human', 'Zero', 'Cho');
 Human.isHuman(oldZero); // true
 ```
 
-- [[클래스(Class)]] 문법 이후는 더 직관적으로 지바와 비슷하게 extends [[키워드(Keyword)]]를 이용해서 [[상속(Inheritance)]] 관계 확인이 가능해졌고 훨신 적은 코드로 [[상속(Inheritance)]]이 가능해졌다.
+- [[클래스(class)]] 문법 이후는 더 직관적으로 지바와 비슷하게 extends [[키워드(Keyword)]]를 이용해서 [[상속(Inheritance)]] 관계 확인이 가능해졌고 훨신 적은 코드로 [[상속(Inheritance)]]이 가능해졌다.
 - [[super()]]를 통해 부모 클래스의 [[생성자(Constructor)]]([[생성자 함수(Constructor Function)]])를 가져올 수 있다.
 
 ```js

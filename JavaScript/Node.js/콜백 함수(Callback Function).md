@@ -6,7 +6,7 @@
 
 - 주로 [[화살표 함수(Arrow function)]]를 사용하여 표현한다.
 
-- 주로 [[비동기(asynchronous)]] 작업에서 사용되며, 작업이 완료되었을 때 호출(비동기 [[JavaScript/고차함수(Higher Order Function)]]]되어 특정 동작이나 로직을 수행한다.
+- 주로 [[비동기(asynchronous)]] 작업에서 사용되며, 작업이 완료되었을 때 호출(비동기 [[고차함수(Higher Order Function)]]]되어 특정 동작이나 로직을 수행한다.
 
 - 콜백 함수를 호출하는 함수를 [[고차함수(Higher Order Function)]]라고 한다.
 

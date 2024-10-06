@@ -13,22 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Node.js/리액티브 프로그래밍(Reactive Programming).md",
+                "file": "Node.js/async 함수.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ddc8a6cb12182786",
+            "id": "c59c8c5c9cfe2478",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Node.js/catch().md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ],
@@ -98,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Node.js/catch().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Node.js/catch().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Node.js/catch().md"
-              }
+              "state": {}
             }
           }
         ]
@@ -159,35 +151,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ddc8a6cb12182786",
+  "active": "c59c8c5c9cfe2478",
   "lastOpenFiles": [
-    "JavaScript/catch() 1.md",
-    "Node.js/catch().md",
-    "JavaScript/async await.md",
-    "Node.js/throw.md",
-    "Node.js/리액티브 프로그래밍(Reactive Programming).md",
-    "Node.js/Module/RxJS/RxJS(Reactive Extensions For JavaScript).md",
-    "JavaScript/이벤트(event).md",
-    "Node.js/Nest.js/@UseInterceptors().md",
-    "@UseInterceptors() 1.md",
-    "Node.js/Nest.js/인터셉터(Interceptor).md",
-    "Node.js/Nest.js/AOP(Aspect-Oriented Programming).md",
-    "Node.js/Nest.js/NestInterceptor.md",
-    "Node.js/Nest.js/CallHandler.md",
-    "Node.js/Module/RxJS/catchError.md",
-    "Node.js/Module/RxJS",
+    "Node.js/렉시컬 환경(Lexical Environment).md",
     "Node.js/Nest.js/NestJS.md",
-    "Node.js/Nest.js/DTO(Data Transfer Object).md",
-    "Node.js/Module/모듈(Module).md",
-    "Node.js/Module/Swagger/Swagger.md",
-    "Node.js/Module/Swagger/@ApiResponse().md",
-    "Node.js/Module/Swagger/@ApiProperty().md",
-    "Node.js/Module/Swagger/@ApiParam().md",
-    "Node.js/Module/TypeORM/@ManyToMany().md",
-    "Node.js/Module/TypeORM/createParamDecorator().md",
-    "Node.js/Module/Swagger/@ApiTag().md",
-    "Node.js/Module/Swagger/@ApiOperation().md",
-    "Node.js/Module/Swagger/@ApiQuery().md",
+    "Node.js/Nest.js/@Unique().md",
+    "Node.js/Nest.js/@PrimaryGeneratedColumn().md",
+    "Node.js/Nest.js/@Column().md",
+    "Node.js/Nest.js/@Injectable().md",
+    "Node.js/Nest.js/@EntityRepository().md",
+    "Node.js/Nest.js/@Param().md",
+    "Node.js/async 함수.md",
+    "Node.js/WAS(Web Application Server).md",
+    "JavaScript/URL 파라미터(URL Parameter).md",
+    "Node.js/extends.md",
+    "Node.js/concat().md",
+    "Node.js/apply().md",
+    "Node.js/bind().md",
+    "Node.js/템플릿 리터럴(Template Literals).md",
+    "Node.js/파싱(Parsing).md",
+    "Node.js/표현식(expression).md",
+    "Node.js/정규표현식(Regex).md",
+    "JavaScript/전역 객체(Global Object).md",
+    "JavaScript/이벤트(event).md",
+    "Node.js/참조 타입(Reference Type).md",
+    "Node.js/커링 함수(Curry Fuction).md",
+    "Node.js/익명 함수.md",
+    "JavaScript/이벤트 루프(Event Loop).md",
+    "JavaScript/이벤트 캡처링(Event Capturing).md",
+    "Node.js/Module/RxJS",
     "Node.js/Module/Swagger",
     "Node.js/Module/passport/passport-jwt",
     "Node.js/Module/passport/@nestjs-passport",

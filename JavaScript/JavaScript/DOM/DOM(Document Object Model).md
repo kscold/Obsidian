@@ -11,7 +11,7 @@
 
 ![[Pasted image 20240101213717.png]]
 
-- 예를 들어 DOM 안에 [[클래스(Class)]]가 버튼이라는 이름을 가진 요소에 접근한다면 document.querySelector와 같은 [[window]] [[객체(Object)]]의 기능을 이용하여 접근을 할 수 있는 것이다.
+- 예를 들어 DOM 안에 [[클래스(class)]]가 버튼이라는 이름을 가진 요소에 접근한다면 document.querySelector와 같은 [[window]] [[객체(Object)]]의 기능을 이용하여 접근을 할 수 있는 것이다.
 - 또한 document.querySelector와 같은 코드는 자바스크립트 안에 있지만 실제 자바스크립트 코드는 아니다.
 
 - DOM이 존재하기 때문에 자바스크립트는 [[HTML(Hyper Text Markup Language)]] 태그들을 수정할 수 있는 것이다.

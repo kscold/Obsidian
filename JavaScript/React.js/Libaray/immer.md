@@ -2,7 +2,7 @@
 - [[확산 연산자(spread operator)]]와 [[배열(Array)]] 내장 함수를 사용하여 [[불변성 유지]]하는 것은 어렵지 않지만 상태([[state]])가 복잡해진다면 조금 귀찮은 작업이 될 수도 있다.
 
 - 따라서 immer를 사용하면 [[불변성 유지]]하는 작업을 매우 간단하게 처리할 수 있다.
-- 즉 immer의 produce() 메서드를 사용하면 자동적으로 [[불변성 유지]]가 되므로 [[배열(Array)]]처럼 사용할 수 있으므로 [[push()]]나 [[splice()]], [[JavaScript/find()|find()]] [[findIndex()]]같은 [[메서드(Method)]]를 사용하기 편하다.
+- 즉 immer의 produce() 메서드를 사용하면 자동적으로 [[불변성 유지]]가 되므로 [[배열(Array)]]처럼 사용할 수 있으므로 [[push()]]나 [[splice()]], [[Node.js/find()|find()]] [[findIndex()]]같은 [[메서드(Method)]]를 사용하기 편하다.
 
 
 ## produce() 문법

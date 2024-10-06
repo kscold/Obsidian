@@ -3,7 +3,7 @@
 
 - instanceof는 해당하는 [[변수(Variable)]]가 사용하고 있는 [[prototype]]의 chain을 2번째 인자와 쭉 비교해서 true/false 값을 리턴한다.
 
-- 쉬운말로 하자면, 해당하는 [[변수(Variable)]]의 [[클래스(Class)]]와 비교해서 리턴해주는, java에서 많이 쓰던것과 비슷하다고 볼 수 있다.
+- 쉬운말로 하자면, 해당하는 [[변수(Variable)]]의 [[클래스(class)]]와 비교해서 리턴해주는, java에서 많이 쓰던것과 비슷하다고 볼 수 있다.
 
 ## instanceof의 특징
   
@@ -19,7 +19,7 @@ inst instanceof Object; // === true
 typeof inst; // === 'object'
 ```
 
-- instanceof는 [[클래스(Class)]]의 타입을 감지하는 역할을 하고, 위의 코드를 통해 모든 [[클래스(Class)]]는 기본 클래스인 Object를 확장한다는 것을 알 수 있다.
+- instanceof는 [[클래스(class)]]의 타입을 감지하는 역할을 하고, 위의 코드를 통해 모든 [[클래스(class)]]는 기본 클래스인 Object를 확장한다는 것을 알 수 있다.
 
 - 하지만 자바스크립트라는 언어의 특징 때문에 그 동작하는 것은 부분부분 매우 다르기도 하다. 
 - instanceof가 동작을 다르게 한다기 보다는 자바스크립트라는 언어 자체가 다르게 동작을 하는 것으로 보면 된다.
@@ -28,7 +28,7 @@ typeof inst; // === 'object'
 
 ## instanceof의 [[원시 타입(Primitive type)]]
 
-- 하지만 다른 [[원시 타입(Primitive type)]]들에 대해서는 [[클래스(Class)]]로 instanceof를 할 수가 없다.
+- 하지만 다른 [[원시 타입(Primitive type)]]들에 대해서는 [[클래스(class)]]로 instanceof를 할 수가 없다.
 
 ```js
 // 원시 타입들은 불가능
@@ -77,4 +77,4 @@ function String() {
   - "foo".constructor는 [[함수(Function)]] [[인스턴스(Instance)]]인 것이다.
   - 즉, String 자체는 [[함수(Function)]]의 [[인스턴스(Instance)]]인 것이다.
 
-  * [[원시 타입(Primitive type)]]을 구분할 때에는 typeof를 사용하고 [[클래스(Class)]]의 타입([[참조 타입(Reference Type)]])을 구분할 때에는 instanceof를 사용하면 된다.
+  * [[원시 타입(Primitive type)]]을 구분할 때에는 typeof를 사용하고 [[클래스(class)]]의 타입([[참조 타입(Reference Type)]])을 구분할 때에는 instanceof를 사용하면 된다.

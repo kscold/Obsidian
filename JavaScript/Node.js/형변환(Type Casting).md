@@ -5,7 +5,7 @@
 
 ## 함수 이용 타입 변환
 
-- 대표적인 [[클래스(Class)]]인 String()과 Number()를 사용하여 변환시킬 수 있다.
+- 대표적인 [[클래스(class)]]인 String()과 Number()를 사용하여 변환시킬 수 있다.
 - String 타입일 때는 toString() [[메서드(Method)]]와 문자의 길이를 측정하는 length를 사용할 수 있다.
 
 ```js

@@ -2,7 +2,7 @@
 - 참조값이라고도 한다.
 
 - [[원시 타입(Primitive type)]]을 제외한 나머지는 참조 타입이다.
-- [[함수(Function)]], [[배열(Array)]], [[클래스(Class)]], [[객체(Object)]]가 있다.
+- [[함수(Function)]], [[배열(Array)]], [[클래스(class)]], [[객체(Object)]]가 있다.
 - [[원시 타입(Primitive type)]]과 가장 큰 차이점은 [[변수(Variable)]]의 크기가 동적으로 변한다는 것이다. 
 
 - 참조값을 복사할 때는 [[변수(Variable)]]가 [[객체(Object)]]의 참조(Reference)를 가리키고 있기 때문에 복사된 [[변수(Variable)]] 또한 [[객체(Object)]]가 저장된 메모리 공간의 참조를 가리키고 있다.

@@ -18,7 +18,7 @@
 
 
 
-- [[constructor()]]: [[컴포넌트(Component)]]를 새로 만들 때마다 호출되는 [[클래스(Class)]] [[생성자(Constructor)]] 메서드이다.
+- [[constructor()]]: [[컴포넌트(Component)]]를 새로 만들 때마다 호출되는 [[클래스(class)]] [[생성자(Constructor)]] 메서드이다.
 - [[getDerivedStateFromProps()]]: [[props]]에 있는 값을 [[state]]에 넣을 때 사용하는 메서드이다.
 - [[JavaScript/render()]]: 준비한 UI를 렌더링하는 메서드이다.
 - [[componentDidMount()]]: [[컴포넌트(Component)]]가 웹 브라우저상에 나타나 후 호출하는 메서드이다.

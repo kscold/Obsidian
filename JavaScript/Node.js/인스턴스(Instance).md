@@ -1,4 +1,4 @@
-- [[생성자 함수(Constructor Function)]]를 만들거나 [[클래스(Class)]]로 선언된 [[함수(Function)]]의 원형을 찍어내듯 사용하는데 이렇게 생성된 [[객체(Object)]]를 인스턴스라고 한다.
+- [[생성자 함수(Constructor Function)]]를 만들거나 [[클래스(class)]]로 선언된 [[함수(Function)]]의 원형을 찍어내듯 사용하는데 이렇게 생성된 [[객체(Object)]]를 인스턴스라고 한다.
 
 ## 예시
 

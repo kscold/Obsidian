@@ -3,7 +3,7 @@
 - [[콜백 함수(Callback Function)]]는 [[비동기(asynchronous)]] [[함수(Function)]]에서 결과 값을 반환할 때 호출되는 반면에, 이벤트는 옵저버 패턴에 의해 작동 된다.
 - 이벤트 리스너(Event Listener)가 [[이벤트(event)]]가 발생하기를 기다리다가, [[이벤트(event)]]가 발생하면 이벤트 핸들링 [[함수(Function)]]를 실행한다.
 
-- [[노드(Node.js)]]에는 이런 [[이벤트(event)]]를 보내고 받을 수 있도록 EventEmitter [[클래스(Class)]]가 정의되어 있다. 
+- [[노드(Node.js)]]에는 이런 [[이벤트(event)]]를 보내고 받을 수 있도록 EventEmitter [[클래스(class)]]가 정의되어 있다. 
 - 객체들은 EventEmitter를 [[상속(Inheritance)]]받아, on()과 emit() [[메서드(Method)]] 등을 사용하여 [[이벤트(event)]]를 주고 받는다.
 
 

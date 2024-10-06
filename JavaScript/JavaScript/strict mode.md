@@ -9,7 +9,7 @@
 1. 바닐라 자바스크립트에서는 "use strict" 지시어를 자바스크립트 파일에 사용하면 사용할 수 있다.
 2. 특정 [[함수(Function)]] 안에서만 "use strict" 지시어를 사용해 그 [[함수(Function)]]만 strict mode를 사용할 수 있다.
 3. [[HTML(Hyper Text Markup Language)]] `<script>` 속성에 type="module"를 주어 사용할 수 있다.
-4. [[클래스(Class)]] [[키워드(Keyword)]]를 주면 사용이 자동적으로 strict mode가 사용 가능하다.
+4. [[클래스(class)]] [[키워드(Keyword)]]를 주면 사용이 자동적으로 strict mode가 사용 가능하다.
 
 
 ## [[리액트(React)]]

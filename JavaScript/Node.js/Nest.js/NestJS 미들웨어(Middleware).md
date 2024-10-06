@@ -19,8 +19,10 @@
 - 각 요청 전후에 이를 실행하는 기능은 매우 강력하고유용하다.
 
 
+
 ## 각각 [[미들웨어(Middleware)]]가 불러지는(called) 순서
 
 - 아래 흐름은 각가의 [[미들웨어(Middleware)]]가 움직이는 순서이다.
+- 즉, [[NestJS]]의 [[미들웨어(Middleware)]]들은 [[NestJS LifeCycle(생명 주기)]]을 가지고 있다.
 
 - [[미들웨어(Middleware)]] -> [[가드(Guard)]] -> [[인터셉터(Interceptor)]](before) -> [[파이프(Pipe)]] -> [[컨트롤러(Controller)]] -> [[서비스(Service)]] -> [[인터셉터(Interceptor)]](after) -> [[필터(Filter)]] (if applicable) -> 클라이언트(client)

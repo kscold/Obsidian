@@ -1,9 +1,9 @@
-- [[객체(Object)]] 형식의 [[스키마(schema)]]와 적용된 [[Node.js/모델(Model)]]을 가지고 있을 때 Joi [[모듈(Module)]]을 이용하려 검증할 수 있다.
+- [[객체(Object)]] 형식의 [[SQL/스키마(Schema)]]와 적용된 [[Node.js/모델(Model)]]을 가지고 있을 때 Joi [[모듈(Module)]]을 이용하려 검증할 수 있다.
 
 
 ## 예시
 
-- 아래와 같은 [[객체(Object)]]([[스키마(schema)]])를 가지고 있다고 가정한다.
+- 아래와 같은 [[객체(Object)]]([[SQL/스키마(Schema)]])를 가지고 있다고 가정한다.
 
 ```json
 {
