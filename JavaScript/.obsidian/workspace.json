@@ -23,8 +23,12 @@
             "id": "c59c8c5c9cfe2478",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Node.js/Module/passport/@nestjs-passport/request.isAuthenticated().md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -78,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.5
+    "width": 294.5
   },
   "right": {
     "id": "84986afa53e23371",
@@ -94,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Node.js/Module/passport/@nestjs-passport/request.isAuthenticated().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Node.js/Module/passport/@nestjs-passport/request.isAuthenticated().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Node.js/Module/passport/@nestjs-passport/request.isAuthenticated().md"
+              }
             }
           }
         ]
@@ -153,6 +161,11 @@
   },
   "active": "c59c8c5c9cfe2478",
   "lastOpenFiles": [
+    "Node.js/Module/passport/@nestjs-passport/AuthGuard().md",
+    "Node.js/Module/passport/@nestjs-passport/request.isAuthenticated().md",
+    "Node.js/Module/TypeORM/TypeORM.findOneOrFail().md",
+    "Node.js/Module/TypeORM/TypeORM.findOne().md",
+    "TypeORM.findOne 1.md",
     "Node.js/렉시컬 환경(Lexical Environment).md",
     "Node.js/Nest.js/NestJS.md",
     "Node.js/Nest.js/@Unique().md",
@@ -174,11 +187,6 @@
     "Node.js/정규표현식(Regex).md",
     "JavaScript/전역 객체(Global Object).md",
     "JavaScript/이벤트(event).md",
-    "Node.js/참조 타입(Reference Type).md",
-    "Node.js/커링 함수(Curry Fuction).md",
-    "Node.js/익명 함수.md",
-    "JavaScript/이벤트 루프(Event Loop).md",
-    "JavaScript/이벤트 캡처링(Event Capturing).md",
     "Node.js/Module/RxJS",
     "Node.js/Module/Swagger",
     "Node.js/Module/passport/passport-jwt",
