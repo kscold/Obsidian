@@ -1,0 +1,1 @@
+- [[class-validator]]에서 해당 필드가 불리언(Boolean) 값인지 검증하는 [[데코레이터(Decorator)]]이다.

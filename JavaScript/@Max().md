@@ -1,0 +1,1 @@
+- [[class-validator]]에서 해당 필드([[열(Column)]])가 값이 특정 최대값 이하 값인지 검증하는 [[데코레이터(Decorator)]]이다.

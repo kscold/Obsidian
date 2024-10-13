@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6c9295d9fe03a7c6",
+            "id": "c59c8c5c9cfe2478",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Node.js/async 함수.md",
+                "file": "Node.js/Module/class-validator/@IsArray().md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c59c8c5c9cfe2478",
+            "id": "092fb864d68d6e6d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Node.js/Module/passport/@nestjs-passport/request.isAuthenticated().md",
+                "file": "@Max().md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Node.js/Module/passport/@nestjs-passport/request.isAuthenticated().md",
+                "file": "@Max().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Node.js/Module/passport/@nestjs-passport/request.isAuthenticated().md",
+                "file": "@Max().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,11 +138,28 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Node.js/Module/passport/@nestjs-passport/request.isAuthenticated().md"
+                "file": "@Max().md"
               }
             }
+          },
+          {
+            "id": "ca92f7b7c5084a2c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "ac8def0b8c42554b",
+            "type": "leaf",
+            "state": {
+              "type": "Saved Queries View",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -151,42 +168,42 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "c59c8c5c9cfe2478",
+  "active": "092fb864d68d6e6d",
   "lastOpenFiles": [
-    "Node.js/Module/passport/@nestjs-passport/AuthGuard().md",
+    "Node.js/Module/class-validator/class-validator.md",
+    "@Min().md",
+    "@IsNegative().md",
+    "@isPositive().md",
+    "Node.js/Module/class-validator/@Isin().md",
+    "Node.js/Module/class-validator/@IsBoolean().md",
+    "@IsDivisibleBy().md",
+    "@Max().md",
+    "Node.js/Module/class-validator/@IsDateString().md",
+    "Node.js/Module/class-validator/@IsEnum().md",
+    "Node.js/Module/class-validator/@Equals().md",
+    "Node.js/Module/class-validator/@IsArray().md",
+    "Node.js/Module/class-validator/@IsNumber().md",
+    "Node.js/Module/class-validator/@IsInt().md",
+    "Node.js/Module/class-validator/@IsString().md",
+    "Node.js/Module/class-validator/@IsEmpty().md",
+    "Node.js/Module/class-validator/@IsDefined().md",
+    "Node.js/Module/class-validator/@IsNotEmpty().md",
+    "Node.js/Module/class-validator/@IsEmail().md",
+    "Node.js/Module/class-validator/@NotEquals().md",
+    "TypeScript/데코레이터(Decorator).md",
+    "Node.js/Module/class-validator/@IsOptional().md",
+    "Node.js/Nest.js/@UsePipes().md",
     "Node.js/Module/passport/@nestjs-passport/request.isAuthenticated().md",
+    "Node.js/Module/passport/@nestjs-passport/AuthGuard().md",
     "Node.js/Module/TypeORM/TypeORM.findOneOrFail().md",
-    "Node.js/Module/TypeORM/TypeORM.findOne().md",
-    "TypeORM.findOne 1.md",
-    "Node.js/렉시컬 환경(Lexical Environment).md",
-    "Node.js/Nest.js/NestJS.md",
-    "Node.js/Nest.js/@Unique().md",
-    "Node.js/Nest.js/@PrimaryGeneratedColumn().md",
-    "Node.js/Nest.js/@Column().md",
-    "Node.js/Nest.js/@Injectable().md",
-    "Node.js/Nest.js/@EntityRepository().md",
-    "Node.js/Nest.js/@Param().md",
-    "Node.js/async 함수.md",
-    "Node.js/WAS(Web Application Server).md",
-    "JavaScript/URL 파라미터(URL Parameter).md",
-    "Node.js/extends.md",
-    "Node.js/concat().md",
-    "Node.js/apply().md",
-    "Node.js/bind().md",
-    "Node.js/템플릿 리터럴(Template Literals).md",
-    "Node.js/파싱(Parsing).md",
-    "Node.js/표현식(expression).md",
-    "Node.js/정규표현식(Regex).md",
-    "JavaScript/전역 객체(Global Object).md",
-    "JavaScript/이벤트(event).md",
     "Node.js/Module/RxJS",
     "Node.js/Module/Swagger",
     "Node.js/Module/passport/passport-jwt",

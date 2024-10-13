@@ -8,7 +8,7 @@
 
 ### @IsString()
 
-- @IsString()은 class-validator 라이브러리에서 제공하는 데코레이터로, 해당 필드의 값이 문자열(string) 형식인지를 검증한다. 
+- @IsString()은 [[class-validator]] [[모듈(Module)]]에서 제공하는 [[데코레이터(Decorator)]]로, 해당 필드의 값이 문자열(string) 형식인지를 검증한다.
 - 즉, 입력된 값이 문자열이 아닌 경우 유효성 검사를 통과하지 못하게 된다.
 - 이 데코레이터를 사용하여 [[DTO(Data Transfer Object)]] [[클래스(class)]]의 name 필드가 문자열 형식으로 제공되어야 함을 나타낸다.
 

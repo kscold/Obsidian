@@ -1,0 +1,12 @@
+.markdown-preview-view pre code {
+    tab-size: 4;
+}
+
+.cm-tab {
+    tab-size: 4;
+}
+
+pre, code {
+    white-space: pre-wrap;
+    tab-size: 4;
+}
