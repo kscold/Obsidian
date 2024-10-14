@@ -1,4 +1,10 @@
 - SQL은 [[관계형 데이터베이스(Relational DataBase)]]를 관리하기 위해 설계된 프로그래밍 언어이다.
+
+- 특정 [[키워드(Keyword)]]를 통해 [[CRUD]] 작업을 할 수 있다.
+
+- [[데이터베이스(DataBase)]] [[SQL/스키마(Schema)|스키마(Schema)]]를 변경 할 수 있는 DDL을 포함한다.
+- BEGIN, COMMIT, ROLLBACK [[키워드(Keyword)]]를 통한 ACID [[트랜잭션(Transaction)]]를 지원한다.
+
 - MySQL, Oracle, PosrgreSQL, MariaDB 등에서 사용한다.
 
 

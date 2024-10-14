@@ -1,4 +1,4 @@
-- [[SQL]]에서 [[테이블(Table)]]을 삭제할 때 사용하는 
+- [[SQL(Structured Query Language)]]에서 [[테이블(Table)]]을 삭제할 때 사용하는 
 
 ## 문법
 

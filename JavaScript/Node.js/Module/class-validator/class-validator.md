@@ -5,6 +5,9 @@
 - 비슷한 라이브러리로 [[class-transformer]]가 있다.
 - [[NestJS]]에서 필수적으로 사용하는 라이브러리 중 하나이다.
 
+- class-validator는 유효성을 검증을 할 뿐 데이터를 변환해주지는 않는다.
+- 따라서 데이터를 변환해 줄려면 [[class-transformer]]를 사용해야 한다.
+
 
 
 ## class-validator의 종류

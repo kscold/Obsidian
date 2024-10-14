@@ -1,4 +1,4 @@
-- [[노드(Node.js)]]에서 [[SQL]] 작업을 쉽게 할 수 있도록 도와주는 라이브러리([[모듈(Module)]])로 [[ORM(Object Relational Mapping)]]를 통해 여러 [[SQL]]류의 [[관계형 데이터베이스(Relational DataBase)]]와도 호환된다.
+- [[노드(Node.js)]]에서 [[SQL(Structured Query Language)]] 작업을 쉽게 할 수 있도록 도와주는 라이브러리([[모듈(Module)]])로 [[ORM(Object Relational Mapping)]]를 통해 여러 [[SQL(Structured Query Language)]]류의 [[관계형 데이터베이스(Relational DataBase)]]와도 호환된다.
 
 - 즉, 자바스크립트 문법으로도 [[데이터베이스(DataBase)]] 조작이 가능하다.
 
@@ -49,11 +49,11 @@ module.exports = db;
 - 데이터 베이스를 생성하는 명령어는 npx sequelize db:create이다.
 
 
-## [[SQL]]과 시퀄라이즈 [[쿼리(Query)]] 변환
+## [[SQL(Structured Query Language)]]과 시퀄라이즈 [[쿼리(Query)]] 변환
 
 ### [[CREATE]]
 
-- 아래 [[SQL]]은 nodejs [[데이터베이스(DataBase)]]에 users [[테이블(Table)]]에 필드([[열(Column)]])에 값을 넣는 [[쿼리(Query)]]문이다.
+- 아래 [[SQL(Structured Query Language)]]은 nodejs [[데이터베이스(DataBase)]]에 users [[테이블(Table)]]에 필드([[열(Column)]])에 값을 넣는 [[쿼리(Query)]]문이다.
 
 ```sql
 INSERT INTO nodejs.users (name, age, married, comment) VALUES ('zero', 24, 0, '자기소개1'); 

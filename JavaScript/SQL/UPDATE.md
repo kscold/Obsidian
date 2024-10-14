@@ -12,6 +12,7 @@
 UPDATE 테이블명 SET 속성명 = 변경할 값 WHERE 조건;
 ```
 
+
 ## 예시
 
 - [[SELECT]] * FROM userTbl를 통해 밑의 이미지와 같은 userTbl이 있다고 가정하자.
@@ -58,3 +59,12 @@ SELECT * FROM userTbl
 
 ![](https://t1.daumcdn.net/cfile/tistory/27588E3951AB2D0923) 
 
+```sql
+update movie
+set genre = 'Science Fiction'
+where title = 'Inception'; -- 제목이 Inception인 영화 장르를 Science Fiction로 설정
+
+update movie
+set genre = 'Drama' 
+where genre = 'Crime'; -- 장르가 Crime인 영화 장르를 Drama로 설정
+```

@@ -27,7 +27,7 @@ WHERE 'point' >= 300000
 
 - 원하는 [[테이블(Table)]](users)에서 조건(name = '이**')인 데이터를 보려면 아래와 같이 [[쿼리(Query)]]문을 작성하면 된다.
 
-- [[SQL]]에서는 일반적인 코딩과 다르게 = 는 대입의 의미가 아니라 수학과 같이 같다는 의미이다.
+- [[SQL(Structured Query Language)]]에서는 일반적인 코딩과 다르게 = 는 대입의 의미가 아니라 수학과 같이 같다는 의미이다.
 
 ```sql
 SELECT * FROM Users  

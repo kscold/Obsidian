@@ -4,6 +4,31 @@
 - 즉, 요청이 [[컨트롤러(Controller)]]에 있는 [[핸들러(Handler)]]로 들어왔을 때, [[DTO(Data Transfer Object)]]에 있는 유효성 조건에 맞게 체크를 해주려면 ValidationPipe를 사용하면 된다.
 
 
+## 문법
+
+- `main.ts`에 아래와 같이 ValidationPipe [[객체(Object)]]를 전역으로 적용시킴으로써 [[class-validator]]가 사용 가능하다.
+```ts
+import { NestFactory } from '@nestjs/core';  
+import { AppModule } from './app.module';  
+import { ValidationPipe } from '@nestjs/common';  
+  
+async function bootstrap() {  
+    const app = await NestFactory.create(AppModule);  
+	  
+    app.useGlobalPipes(new ValidationPipe({ 
+	    whitelist: true, forbidNonWhitelisted: true 
+	})); 
+	  
+    await app.listen(8080);  
+}  
+  
+bootstrap();
+```
+
+- 이때, whitelist: true 옵션을 줌으로써 [[DTO(Data Transfer Object)]]나 [[엔티티(Entity)]]에 정의되지 않은 [[속성(Property)]]을 무시할 수 있다.
+- forbidNonWhitelisted: true 옵션은 있으면 안되는 [[속성(Property)]]이 존재했을 때, [[에러(error)]]를 반환한다.
+
+
 ## 예시
 
 - 아래 코드는 [[DTO(Data Transfer Object)]]에 ValidationPipe를 적용하는 예시이다.
@@ -37,5 +62,5 @@ export class CreateUserDto {
 }
 ```
 
-- 여기서 [[@IsString()]]이나 [[@IsEmail()]]과 같은 데코레이터는 해당 클래스 프로퍼티가 맞는 형식인지 검증한다.  
+- 여기서 [[@IsString()]]이나 [[@IsEmail()]]과 같은 [[데코레이터(Decorator)]]는 해당 클래스 프로퍼티가 맞는 형식인지 검증한다.  
 - 이를 사용하기 위해서는 [[class-validator]]에서 제공하는 [[데코레이터(Decorator)]]를 불러와 사용하면 된다.

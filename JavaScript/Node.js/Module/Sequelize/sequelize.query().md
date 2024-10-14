@@ -3,7 +3,7 @@
 
 ## 예시
 
-- 아래 예시처럼 직접 [[SQL]]문법을 사용할 수 있다.₩
+- 아래 예시처럼 직접 [[SQL(Structured Query Language)]]문법을 사용할 수 있다.₩
 
 ```js
 const [result, metadata] = await sequelize.query('SELECT * FROM comments');

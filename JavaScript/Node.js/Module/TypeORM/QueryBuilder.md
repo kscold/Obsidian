@@ -1,10 +1,10 @@
-- 쿼리빌더(QueryBuilder)는 [[TypeORM]]의 강력한 기능들 중 하나로, 명쾌하고 편리한 구문을 이용해 [[SQL]] 쿼리들문을 작성하여, 자동적으로 실행하고 변형된 [[엔티티(Entity)]]들을 자동적으로 얻을 수 있도록 하는 기능이다. 
+- 쿼리빌더(QueryBuilder)는 [[TypeORM]]의 강력한 기능들 중 하나로, 명쾌하고 편리한 구문을 이용해 [[SQL(Structured Query Language)]] 쿼리들문을 작성하여, 자동적으로 실행하고 변형된 [[엔티티(Entity)]]들을 자동적으로 얻을 수 있도록 하는 기능이다. 
 
 - [[createQueryBuilder()]] [[메서드(Method)]]로 쿼리빌더(QueryBuilder)를 사용한다.
 
-## [[SQL]]과 쿼리빌더(QueryBuilder)
+## [[SQL(Structured Query Language)]]과 쿼리빌더(QueryBuilder)
 
-- 예를 들어보자면, [[SQL]]문으로 user의 id가 1번인 user의 id, firstName, lastName을 출력하는 [[SQL]]문은 다음과 같다.
+- 예를 들어보자면, [[SQL(Structured Query Language)]]문으로 user의 id가 1번인 user의 id, firstName, lastName을 출력하는 [[SQL(Structured Query Language)]]문은 다음과 같다.
 
 ```sql
 SELECT
@@ -15,7 +15,7 @@ FROM users user
 WHERE user.id = 1
 ```
 
-- DBMS에서 직접 [[SQL]]문을 작성하지 않고, [[TypeORM]]을 이용해 [[데이터베이스(DataBase)]]에 직접 접근하여 원하는 데이터를 조회하려면 다음과 같이 작성할 수 있다.
+- DBMS에서 직접 [[SQL(Structured Query Language)]]문을 작성하지 않고, [[TypeORM]]을 이용해 [[데이터베이스(DataBase)]]에 직접 접근하여 원하는 데이터를 조회하려면 다음과 같이 작성할 수 있다.
 
 ```ts
 const firstUser = await dataSource
@@ -42,8 +42,8 @@ const firstUser = await dataSource
 - 따라서 [[연관 관계(Relationships)]]를 맺은 특정 [[테이블(Table)]]을 조회하기 위해선 직접 query builder로 [[쿼리(Query)]]를 작성해야 한다.  
   
 - 결론은, 일부 쿼리는 ORM 작업으로 표현할 수 없다.
-- 이러한 복잡한 [[쿼리(Query)]]는 직접 [[SQL]]문으로 작성하는 작업으로 회귀해야 한다.
-- 예를 들어 밑의 [[SQL]] 같이, 쿼리 내에 서브 쿼리가 포함된 경우 혹은 [[테이블(Table)]] 간 [[JOIN]]이 필요한 경우, [[ORM(Object Relational Mapping)]]으로 명확하게 표현할 수 없다.  
+- 이러한 복잡한 [[쿼리(Query)]]는 직접 [[SQL(Structured Query Language)]]문으로 작성하는 작업으로 회귀해야 한다.
+- 예를 들어 밑의 [[SQL(Structured Query Language)]] 같이, 쿼리 내에 서브 쿼리가 포함된 경우 혹은 [[테이블(Table)]] 간 [[JOIN]]이 필요한 경우, [[ORM(Object Relational Mapping)]]으로 명확하게 표현할 수 없다.  
 
 ```sql
 select * from users

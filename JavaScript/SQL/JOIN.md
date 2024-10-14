@@ -113,3 +113,76 @@ SELECT A.emp AS '부하직원', B.emp AS '직속상관', B.empTEL AS '직속상�
 
 ![](https://blog.kakaocdn.net/dn/bkoKle/btqXu5DCmfb/3cWsvoJ7YA2TCb6EcC4ryk/img.png)
 
+
+```sql
+create table movie (
+	id	  serial    primary key,
+	title    text,
+	genre	 text
+);
+
+insert into movie (title, genre)
+	values
+	('Inception', 'Sci-Fi'),
+	('The Godfather', 'Crime'),
+	('The Dark Knight', 'Action'),
+	('Pulp Fiction', 'Crime'),
+	('Forrest Gump', 'Drama');
+
+-- movie 테이블 정의 및 값 넣기
+```
+
+
+```sql
+create table director (
+	id		serial	  primary key,
+	name	text
+)
+
+insert into director(
+	name
+) values
+	('Christopher Nolan'),
+	('Francis Ford Coppola'),
+	('Quentin Tarantino');
+
+-- director 테이블 정의 및 값 넣기
+```
+
+```sql
+alter table movie
+add column director_id integer,
+add constraint fk_director
+foreign key (director_id) references director (id);
+```
+
+- [[ALTER]] 문법을 이용하여 [[외래 키(Foreign Key)]]와 [[제약조건(constraint)]]을 추가한다.
+
+```sql
+update movie
+	set director_id = (select id from director where name = 'Christopher Nolan')
+where title in ('Inception', 'The Dark Knight');
+
+update movie
+	set director_id = (select id from director where name = 'Francis Ford Coppola')
+where title = 'The Godfather';
+
+update movie
+	set director_id = (select id from director where name = 'Quentin Tarantino')
+where title = 'Pulp Fiction';
+
+-- 기본적으로는 movie 테이블과 director 테이블이 둘다 null이 아닌 inner join임
+select m.title, m.genre, d.name
+from movie m 
+join director d on m.director_id = d.id;
+
+-- left join은 movie 테이블이 null인 값을 포함하고 director 테이블은 null이 아님
+select m.title, m.genre, d.name
+from movie m 
+join director d on m.director_id = d.id;
+
+-- right join은 movie 테이블이 null이 아니고 director 테이블은 null인 값을 포함함
+select m.title, m.genre, d.name
+from movie m 
+join director d on m.director_id = d.id;
+```

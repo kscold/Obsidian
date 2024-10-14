@@ -11,12 +11,8 @@
             "id": "c59c8c5c9cfe2478",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Node.js/Module/class-validator/@IsArray().md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -25,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "@Max().md",
+                "file": "SQL/ALTER.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "@Max().md",
+                "file": "SQL/ALTER.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "@Max().md",
+                "file": "SQL/ALTER.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "@Max().md"
+                "file": "SQL/ALTER.md"
               }
             }
           },
@@ -176,34 +172,35 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "092fb864d68d6e6d",
+  "active": "edc002dfb78ff5ff",
   "lastOpenFiles": [
-    "Node.js/Module/class-validator/class-validator.md",
-    "@Min().md",
-    "@IsNegative().md",
-    "@isPositive().md",
-    "Node.js/Module/class-validator/@Isin().md",
-    "Node.js/Module/class-validator/@IsBoolean().md",
-    "@IsDivisibleBy().md",
-    "@Max().md",
-    "Node.js/Module/class-validator/@IsDateString().md",
-    "Node.js/Module/class-validator/@IsEnum().md",
-    "Node.js/Module/class-validator/@Equals().md",
-    "Node.js/Module/class-validator/@IsArray().md",
-    "Node.js/Module/class-validator/@IsNumber().md",
-    "Node.js/Module/class-validator/@IsInt().md",
-    "Node.js/Module/class-validator/@IsString().md",
-    "Node.js/Module/class-validator/@IsEmpty().md",
-    "Node.js/Module/class-validator/@IsDefined().md",
-    "Node.js/Module/class-validator/@IsNotEmpty().md",
-    "Node.js/Module/class-validator/@IsEmail().md",
-    "Node.js/Module/class-validator/@NotEquals().md",
-    "TypeScript/데코레이터(Decorator).md",
-    "Node.js/Module/class-validator/@IsOptional().md",
-    "Node.js/Nest.js/@UsePipes().md",
-    "Node.js/Module/passport/@nestjs-passport/request.isAuthenticated().md",
-    "Node.js/Module/passport/@nestjs-passport/AuthGuard().md",
-    "Node.js/Module/TypeORM/TypeORM.findOneOrFail().md",
+    "SQL/JOIN.md",
+    "SQL/제약조건(constraint).md",
+    "SQL/ALTER.md",
+    "SQL/대체키(Alternate Key).md",
+    "SQL/DELETE.md",
+    "SQL/UPDATE.md",
+    "SQL/SELECT.md",
+    "SQL/WHERE.md",
+    "Node.js/Module/cookie-parser.md",
+    "Node.js/Module/util.md",
+    "Node.js/Nest.js/@Body().md",
+    "Node.js/Nest.js/@Column().md",
+    "Node.js/Nest.js/@Param().md",
+    "Node.js/Nest.js/@Module().md",
+    "Node.js/Nest.js/@Injectable().md",
+    "Node.js/Nest.js/@Entity().md",
+    "Node.js/Nest.js/@Query().md",
+    "Node.js/Nest.js/@Unique().md",
+    "Node.js/Nest.js/커스텀 파이프(Custom Pipe).md",
+    "Node.js/Nest.js/NestJS 모듈(module).md",
+    "Node.js/모델(model).md",
+    "Node.js/서비스(Service).md",
+    "Node.js/변수(Variable).md",
+    "Node.js/배열(Array).md",
+    "Node.js/리액티브 프로그래밍(Reactive Programming).md",
+    "Node.js/동기(Synchronous).md",
+    "Node.js/Module/class-transformer",
     "Node.js/Module/RxJS",
     "Node.js/Module/Swagger",
     "Node.js/Module/passport/passport-jwt",
@@ -221,7 +218,6 @@
     "image/Pasted image 20240501134435.png",
     "JavaScript/DOM",
     "image/Pasted image 20240430002056.png",
-    "Node.js/Module/passport",
     "image/Pasted image 20240413032925.png",
     "image/Pasted image 20240413030415.png",
     "image/Pasted image 20240413030438.png",

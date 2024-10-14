@@ -1,4 +1,4 @@
-- [[SQL]] 명령어로 특정 [[테이블(Table)]]의 데이터를 가져오고 싶을 때 사용하는 명령어이다.
+- [[SQL(Structured Query Language)]] 명령어로 특정 [[테이블(Table)]]의 데이터를 가져오고 싶을 때 사용하는 명령어이다.
 
 - 전체 데이터를 가져오고 싶을 때 SELECT 명령문을 활용하여 * 전체 데이터를 가져온다.
 - 즉, [[행(Row)]]를 가져온다.
@@ -38,6 +38,7 @@ LIMIT 1 -- 한개만 조회
 OFFSET 1; -- 특정 행(레코드)를 스킵 가능
 ```
 
+
 ## 유저 생성 및 확인(MySQL)
 
 - [[CREATE]]를 통해 user [[테이블(Table)]]에 아이디와 비빌번호 정보를 생성한 뒤, user 테이블을 선택해 확인한다.
@@ -58,6 +59,7 @@ grant all on 'board'.* to 'kscold'@'localhost' with grant option; -- 모든 권�
 flush privileges; -- 정상적으로 동작하는지 log를 통해 확인할 수 있음
 ```
 
+
 ## 예시
 
 - 밑에 코드는 orders [[테이블(Table)]]에서 특정 [[열(Column)]] order_no, created_at, payment_method의 데이터를 불러오는 예시이다.
@@ -77,4 +79,36 @@ SELECT _id, name FROM mens;
 
 -- 조건 선택해 보기
 SELECT * FROM mens WHERE name = 'Kidongg' AND age = '27';
+```
+
+```sql
+create table movie ( -- 테이블 생성
+	id    serial	primary key,
+	title    text,
+	genre    text
+);
+
+insert into movie (title, genre) -- 값 넣기
+	values
+	('Inception', 'Sci-Fi'),
+	('The Godfather', 'Crime'),
+	('The Dark Knight', 'Action'),
+	('Pulp Fiction', 'Crime'),
+	('Forrest Gump', 'Drama');
+	
+
+select * from movie;
+
+select title, genre from movie;
+
+select * from movie where genre = 'Crime';
+
+select * from movie order by id desc; -- 내림차순
+
+select count(*) from movie; -- 전체 카운트
+
+select genre, count(*) 
+from movie 
+group by genre
+having count(*) > 1; -- genre로 카운트 센 테이블 중에 1 이상인 값
 ```

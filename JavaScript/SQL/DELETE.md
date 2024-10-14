@@ -25,3 +25,12 @@ WHERE
 ```sql
 DELETE FROM emp03 WHERE emp_id = 4;
 ```
+
+
+```sql
+delete from movie
+where title = 'Forrest Gump' -- 영화 제목이 Forrest Gump인 데이터를 삭제
+
+delete from movie
+where genre = 'Drama' -- 영화 장르가 Dream인 데이터를 삭제
+```

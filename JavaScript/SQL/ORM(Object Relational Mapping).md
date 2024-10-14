@@ -7,9 +7,9 @@
 
 ## ORM의 등장배경
 
-- ORM을 사용하지 않을 경우 개발자가 개발을 위하여 [[데이터베이스(DataBase)]]에 접근하기 위해서는 [[SQL]] [[쿼리(Query)]]문을 직접 만들었다.
+- ORM을 사용하지 않을 경우 개발자가 개발을 위하여 [[데이터베이스(DataBase)]]에 접근하기 위해서는 [[SQL(Structured Query Language)]] [[쿼리(Query)]]문을 직접 만들었다.
 
-- [[SQL]]문법을 알고 있어야하는 문제가 있었다.
+- [[SQL(Structured Query Language)]]문법을 알고 있어야하는 문제가 있었다.
 - 쿼리문 작성시간이 오래걸려 개발이 지체되는 문제가 발생했다.
 
 - 개발 코드와 [[데이터베이스(DataBase)]]가 서로 종속된다.
@@ -49,7 +49,7 @@
 
 - DB에 직접 명령을 내리지 않고 한단계 거쳐가기 때문에 조금 느리다.
 
-## Raw [[SQL]] vs TypeORM vs [[시퀄라이즈(Sequelize)]] vs Knex
+## Raw [[SQL(Structured Query Language)]] vs TypeORM vs [[시퀄라이즈(Sequelize)]] vs Knex
 
 - 다음은 각각의 문법의 비교이다.
 

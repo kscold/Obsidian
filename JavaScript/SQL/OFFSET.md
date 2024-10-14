@@ -1,4 +1,4 @@
-- OFFSET이란 [[SQL]]에서 조회를 시작할 기준점을 의미한다.
+- OFFSET이란 [[SQL(Structured Query Language)]]에서 조회를 시작할 기준점을 의미한다.
 
 - limit은 조회할 결과의 개수를 의미한다.
 
