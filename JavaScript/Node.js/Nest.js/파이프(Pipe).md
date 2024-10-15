@@ -3,11 +3,11 @@
 - 파이프는 [[Data Transformation]]과 [[Data vaildation]]을 위해서 사용된다.
 - 파이프는 [[컨트롤러(Controller)]] 경로 처리기에 의해 처리되는 인자에 대해 작동한다.
 
-- [[Node.js/Nest.js/NestJS]]는 [[메서드(Method)]]가 호출되기 직전에 파이프를 삽입하고 파이프는 [[메서드(Method)]]로 향하는 인자를 수신하고 이에 대해 작동한다.
+- [[NestJS]]는 [[메서드(Method)]]가 호출되기 직전에 파이프를 삽입하고 파이프는 [[메서드(Method)]]로 향하는 인자를 수신하고 이에 대해 작동한다.
 
 - 즉, 파이프는 [[Express]]의 [[미들웨어(Middleware)]]와 비슷한 개념이다.
 
-- [[Node.js/Nest.js/NestJS]]에서는 바로 사용할 수 있는 [[Built-in pipe]] 들을 제공해준다. 
+- [[NestJS]]에서는 바로 사용할 수 있는 [[Built-in pipe]] 들을 제공해준다. 
 - 해당 파이프들은 `@nestjs/common` 안에 들어있다.
 
 

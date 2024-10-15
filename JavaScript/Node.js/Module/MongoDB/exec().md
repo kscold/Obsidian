@@ -1,4 +1,4 @@
-- [[mongoDB]]에 들어있는 [[메서드(Method)]]로 query를 Promise([[비동기(asynchronous)]])처리를 해주기 위해서 사용gksek.
+- [[MongoDB]]에 들어있는 [[메서드(Method)]]로 query를 Promise([[비동기(asynchronous)]])처리를 해주기 위해서 사용gksek.
 
 - 몽고4버전부턴 생략가능 하다고는 하는데, 그래도 써주는 것이 좋다.
 - async/await로 대체 가능하다.

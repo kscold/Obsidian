@@ -8,27 +8,26 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c59c8c5c9cfe2478",
+            "id": "07677f38894a69c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Node.js/Nest.js/@Column().md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "53d4f2753c69198e",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {}
             }
-          },
-          {
-            "id": "092fb864d68d6e6d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SQL/ALTER.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.5
+    "width": 296.5
   },
   "right": {
     "id": "84986afa53e23371",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL/ALTER.md",
+                "file": "Node.js/Nest.js/@Column().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL/ALTER.md",
+                "file": "Node.js/Nest.js/@Column().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,20 +133,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL/ALTER.md"
+                "file": "Node.js/Nest.js/@Column().md"
               }
             }
           },
           {
-            "id": "ca92f7b7c5084a2c",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "ac8def0b8c42554b",
+            "id": "97bc64d867e42908",
             "type": "leaf",
             "state": {
               "type": "Saved Queries View",
@@ -155,7 +146,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -172,34 +163,34 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "edc002dfb78ff5ff",
+  "active": "07677f38894a69c7",
   "lastOpenFiles": [
-    "SQL/JOIN.md",
-    "SQL/제약조건(constraint).md",
-    "SQL/ALTER.md",
-    "SQL/대체키(Alternate Key).md",
-    "SQL/DELETE.md",
-    "SQL/UPDATE.md",
-    "SQL/SELECT.md",
-    "SQL/WHERE.md",
-    "Node.js/Module/cookie-parser.md",
-    "Node.js/Module/util.md",
-    "Node.js/Nest.js/@Body().md",
-    "Node.js/Nest.js/@Column().md",
-    "Node.js/Nest.js/@Param().md",
-    "Node.js/Nest.js/@Module().md",
-    "Node.js/Nest.js/@Injectable().md",
+    "Node.js/Nest.js/@CreateDateColumn().md",
     "Node.js/Nest.js/@Entity().md",
-    "Node.js/Nest.js/@Query().md",
-    "Node.js/Nest.js/@Unique().md",
-    "Node.js/Nest.js/커스텀 파이프(Custom Pipe).md",
-    "Node.js/Nest.js/NestJS 모듈(module).md",
+    "@VersionColumn().md",
+    "@DeleteDateColumn().md",
+    "@UpdateDateColumn().md",
+    "Node.js/Nest.js/@Column().md",
+    "Node.js/Nest.js/DataSource.md",
+    "Node.js/엔티티(Entity).md",
+    "SQL/스키마(Schema).md",
     "Node.js/모델(model).md",
-    "Node.js/서비스(Service).md",
-    "Node.js/변수(Variable).md",
-    "Node.js/배열(Array).md",
-    "Node.js/리액티브 프로그래밍(Reactive Programming).md",
-    "Node.js/동기(Synchronous).md",
+    "Node.js/Module/MongoDB/MongoDB.md",
+    "Node.js/스키마(schema).md",
+    "Node.js/Module/TypeORM/TypeORM.md",
+    "Node.js/OOP(Object-Oriented Programming).md",
+    "JavaScript/역직렬화 (Deserialization).md",
+    "JavaScript/직렬화(Serialization).md",
+    "React.js/컴포넌트(Component).md",
+    "SQL/ALTER.md",
+    "Node.js/Module/class-validator/@IsAlphanumeric().md",
+    "Node.js/Module/class-validator/@Contains().md",
+    "Node.js/Module/class-validator/class-validator.md",
+    "Node.js/Nest.js/NestJS LifeCycle(생명 주기).md",
+    "Node.js/Nest.js/NestJS 생명 주기(LifeCycle).md",
+    "SQL/트랜잭션(Transaction).md",
+    "SQL/SQL(Structured Query Language).md",
+    "SQL/CRUD.md",
     "Node.js/Module/class-transformer",
     "Node.js/Module/RxJS",
     "Node.js/Module/Swagger",

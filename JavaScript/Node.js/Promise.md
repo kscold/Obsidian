@@ -30,7 +30,7 @@
 
 - Promise 상태([[state]])가 Pending(대기)일 때는 Result가 [[undefined]]가 된다.
 - Promise 상태([[state]])가 Fulfilled(성공)일 때는 Result 결과값이 보통 [[JSON(Java Script Object Notation)]]과 같은 데이터가 된다.
-- Promise 상태([[state]])가 Rejected(실패)일 때는 Result가 [[Error]] [[객체(Object)]]가 들어간다.
+- Promise 상태([[state]])가 Rejected(실패)일 때는 Result가 [[에러(error)]] [[객체(Object)]]가 들어간다.
 
 ## Promise 문법
 

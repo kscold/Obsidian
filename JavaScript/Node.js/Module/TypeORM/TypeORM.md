@@ -1,5 +1,12 @@
+- TypeORM은 [[OOP(Object-Oriented Programming)]]를 사용해서 [[데이터베이스(DataBase)]] [[테이블(Table)]]을 [[클래스(class)]]로 관리할 수 있게 해주는 [[ORM(Object Relational Mapping)]]이다.
 
+- 다양한 [[데이터베이스(DataBase)]]를 지원한다.(MySQL, PostgreSQL, MariaDB, SQLite, Mongodb 등)
+-  Active Record와 Data Mapper 패턴을 모두 지원한다.
 
+- 자체적으로 Migration 기능을 지원하며 점진적인 [[데이터베이스(DataBase)]] 구조 변경과 버저닝을 모두 지원한다.
+- Eager & Lazy 로딩을 모두 지원하기 때문에 어떤 방식의 데이터를 불러올지 완전한 컨트롤이 가능하다.
+
+- [[DataSource]] [[객체(Object)]]를 통해 사용할 [[데이터베이스(DataBase)]] 지정 및 정보 제공 역할을 설정한다.
 
 
 ## [[연관 관계(Relationships)]]
@@ -8,7 +15,7 @@
 
  - [[일대일(OneToOne)]] - [[@OneToOne()]],  [[다대일(ManyToOne)]] - [[@ManyToOne()]], [[일대다(OnetoMany)]] - [[@OneToMany()]], [[다대다(ManyToMany)]] - [[@ManyToMany()]]로 표현할 수 있다.
  - 이런 TypeORM의 연관관계 설정 [[데코레이터(Decorator)]]는 모두 다 [[매개변수(parameter)]]는 type, inverseSide, option를 가진다.
-
+ 
 ### Option
 
 - createForeignKeyConstraints : `boolean` false면 외래키 제약조건을 없앨수 있다.

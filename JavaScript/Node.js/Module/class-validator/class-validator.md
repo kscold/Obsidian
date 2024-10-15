@@ -40,9 +40,9 @@
 
 ### 문자
 
-@Contains
-@NotContains
-@IsAlphanumeric
+[[@Contains()]]
+@NotContains()
+[[@IsAlphanumeric()]]
 @IsCreditCard
 @IsHexColor
 [[@MaxLength()]]

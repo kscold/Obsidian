@@ -1,4 +1,4 @@
-- [[mongoDB]]
+- [[MongoDB]]
 - Mongoose 모델에서 데이터를 검색하는 [[메서드(Method)]]이다.
 - find() 메서드는 일치하는 모든 데이터를 찾아 [[배열(Array)]]로 반환한다.
 
