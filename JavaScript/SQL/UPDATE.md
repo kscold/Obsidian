@@ -1,6 +1,6 @@
 - [[데이터베이스(DataBase)]]에 [[테이블(Table)]]의 값([[행(Row)]])을 UPDATE할 때 사용하는 문법으로. SET과 같이 연결하여 사용한다.
 
-- [[WHERE]] 조건이 없는 경우에는 [[테이블(Table)]]에 있는 필드([[열(Column)]]) 전체가 변경할값으로 SET 된다.
+- [[WHERE]] 조건이 없는 경우에는 [[테이블(Table)]]에 있는 필드([[열(Column)]]) 전체가 변경할 값으로 SET 된다.
 - 따라서 거의 [[WHERE]]와 함께 쓰인다.
 
 
@@ -23,14 +23,14 @@ UPDATE 테이블명 SET 속성명 = 변경할 값 WHERE 조건;
 - NULL 값을 SET 하는 경우는 조건을 넣어주면 됩니다. 
 
 ```sql
-UPDATE [테이블] SET [열]= '변경할값' WHERE [열] IS NULL
+UPDATE [테이블] SET [열] = '변경할값' WHERE [열] IS NULL
 ```
 
 - 반대로 NULL이 아닌 값을 찾아 업데이트 해주는 방법도 있다.
 - NULL 부분은 NOT NULL로 변경 해주면 된다.
 
 ```sql
-UPDATE [테이블] SET [열]= '변경할값' WHERE [열] IS NOT NULL
+UPDATE [테이블] SET [열] = '변경할값' WHERE [열] IS NOT NULL
 ```
 
 - 밑에 예시는 UPDATE를 통해 모든 유저에게 Money 10000원 과 아이템을 하나씩 지급해보도록 가정한다.

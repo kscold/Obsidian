@@ -1,0 +1,2 @@
+- [[TypeORM]]의 restore() [[메서드(Method)]]를 사용하면 삭제하는 데이터([[행(Row)]])을 복구할 수 있다.
+- 다만 Soft Delete를 하였을 때 즉, [[TypeORM.softDelete()]]의 [[메서드(Method)]]를 사용하여 데이터([[행(Row)]])을 삭제하였을 때 restore() [[메서드(Method)]]를 통해 복구가 가능하다.

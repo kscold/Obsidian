@@ -1,5 +1,6 @@
 - [[SQL(Structured Query Language)]] 명령어로 INSERT를 사용해서 [[테이블(Table)]]에 [[행(Row)]]를 삽입한다.
 
+
 ## 문법
 
 ```sql
