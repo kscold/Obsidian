@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Node.js/Module/TypeORM/FindOptionsCache.md",
+                "file": "FindManyOptions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FindOptionsCache"
+              "title": "FindManyOptions"
             }
           },
           {
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Node.js/Module/TypeORM/FindOptionsCache.md",
+                "file": "FindManyOptions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "FindOptionsCache의 백링크"
+              "title": "FindManyOptions의 백링크"
             }
           },
           {
@@ -122,12 +122,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Node.js/Module/TypeORM/FindOptionsCache.md",
+                "file": "FindManyOptions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "FindOptionsCache의 나가는 링크"
+              "title": "FindManyOptions의 나가는 링크"
             }
           },
           {
@@ -149,10 +149,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Node.js/Module/TypeORM/FindOptionsCache.md"
+                "file": "FindManyOptions.md"
               },
               "icon": "lucide-list",
-              "title": "FindOptionsCache 개요"
+              "title": "FindManyOptions 개요"
             }
           },
           {
@@ -193,12 +193,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "edc002dfb78ff5ff",
+  "active": "c59c8c5c9cfe2478",
   "lastOpenFiles": [
     "Node.js/Module/TypeORM/FindOptions.md",
+    "FindManyOptions.md",
     "Node.js/Module/TypeORM/FindOptionsCache.md",
-    "Node.js/Module/TypeORM/FindOptionsRelations.md",
     "Node.js/Module/TypeORM/FindOptionsSelect.md",
+    "Node.js/Module/TypeORM/FindOptionsRelations.md",
     "Node.js/Module/TypeORM/FindOptionsOrder.md",
     "Node.js/Module/TypeORM/FindOptionsWhere.md",
     "Node.js/속성(Property).md",
@@ -220,7 +221,6 @@
     "SQL/ALTER.md",
     "SQL/UPDATE.md",
     "Node.js/Module/TypeORM/@UpdateDateColumn().md",
-    "Node.js/Module/TypeORM/TypeORM.softDelete().md",
     "Node.js/Module/class-transformer",
     "Node.js/Module/RxJS",
     "Node.js/Module/Swagger",

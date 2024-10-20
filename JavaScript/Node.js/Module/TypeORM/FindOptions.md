@@ -39,15 +39,8 @@ export interface FindOneOptions<Entity = any> {
 ### [[FindOptionsCache]]
 
  - [[FindOptionsOrder]]의 [[속성(Property)]]은 캐싱 기간을 지정할 수 있다.
- 
+### [[FindManyOptions]]
 
-```ts
-export interface FindManyOptions<Entity = any> extends FindOneOptions<Entity>{
-	skip?: number
-	
-	take?: number
-}
-```
 
 
 ## FindOptions를 사용하는 find [[메서드(Method)]]들 
