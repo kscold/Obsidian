@@ -1,0 +1,1 @@
+- [[SQL(Structured Query Language)]]에서 필드([[열(Column)]])명이나 [[테이블(Table)]]의 이름을 다시 지을 때 쓴다.

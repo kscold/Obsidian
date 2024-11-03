@@ -178,7 +178,7 @@ User.findAll({
 });
 ```
 
-- [[OFFSET]]으로 기준점이 1로 설정하는 예시이다.
+- [[LIMIT OFFSET]]으로 기준점이 1로 설정하는 예시이다.
 
 ```sql
 SELECT id, name FROM users ORDER BY age DESC LIMIT 1;

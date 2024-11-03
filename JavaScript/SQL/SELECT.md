@@ -2,6 +2,8 @@
 
 - 전체 데이터를 가져오고 싶을 때 SELECT 명령문을 활용하여 * 전체 데이터를 가져온다.
 - 즉, [[행(Row)]]를 가져온다.
+- SELECT가 명시되어 있는 [[키워드(Keyword)]]가 가장 마지막에 동작한다.
+
 
 ## 문법
 
@@ -24,19 +26,13 @@ WHERE
 	조건;
 ```
 
-### ORDER BY
+### [[ORDER BY]]
 
 - 아래 [[쿼리(Query)]]문과 같이 ORDER BY 필드명 DESC 형식으로 내림차순 및 오름차순을 선택할 수 있다.
 
-```sql
-SELECT 
-	필드명
-FROM
-	테이블명
-ORDER BY 필드명 ASC -- 또는 DESC
-LIMIT 1 -- 한개만 조회
-OFFSET 1; -- 특정 행(레코드)를 스킵 가능
-```
+
+
+## [[LIMIT OFFSET]]
 
 
 ## 유저 생성 및 확인(MySQL)
