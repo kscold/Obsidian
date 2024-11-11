@@ -6,6 +6,19 @@
 
 ## 문법
 
+- 아래 [[SQL(Structured Query Language)]]과 같이 그룹화할 필드([[열(Column)]])명을 GROUP BY에 명시하고 [[SELECT]]한다.
+- 추가적으로 [[집계 함수(Aggregate Function)]]를 사용한 필드([[열(Column)]])명을 명시하여 그룹화된 데이터와 매칭시킨다.
+
+```sql
+SELECT 그룹화할 필드명, 집계 함수(필드명) -- SUM이나 AVG 등
+FROM 테이블명 
+GROUP BY 그룹화할 필드명;
+```
+
+
+## 예시
+
+- 아래와 같이 [[쿼리(Query)]]을 만들어서 감독별의 수익을 확인할 수 있는 결과를 도출할 수 있다.
 
 ```sql
 SELECT -- 4

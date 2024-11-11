@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0b6d05f95284d136",
+        "id": "3a15da21d563b813",
         "type": "tabs",
         "children": [
           {
-            "id": "092fb864d68d6e6d",
+            "id": "0a7402d719ced7a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL/집계 함수(Aggregate Function).md",
+                "file": "Node.js/Module/TypeORM/QueryBuilder.subQuery().md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "집계 함수(Aggregate Function)"
+              "title": "QueryBuilder.subQuery()"
             }
           }
         ]
@@ -193,35 +193,35 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "092fb864d68d6e6d",
+  "active": "0a7402d719ced7a1",
   "lastOpenFiles": [
-    "SQL/COUNT.md",
+    "Node.js/Module/TypeORM/QueryBuilder.getOne().md",
+    "Node.js/Module/TypeORM/QueryBuilder.subQuery().md",
+    "Node.js/Module/TypeORM/QueryBuilder.md",
+    "Node.js/Module/TypeORM/QueryBuilder.where().md",
+    "Node.js/Module/TypeORM/QueryBuilder.getMany().md",
+    "Node.js/Module/TypeORM/QueryBuilder.execute().md",
+    "SQL/MIN MAX.md",
+    "Node.js/Module/TypeORM/DataSource.md",
+    "Node.js/Module/TypeORM/@ManyToMany().md",
+    "SQL/ROUND.md",
+    "Node.js/Module/TypeORM/@OneToMany().md",
+    "Node.js/Module/TypeORM/@ManyToOne().md",
+    "Node.js/Module/TypeORM/@OneToOne().md",
+    "SQL/GROUP BY.md",
     "SQL/집계 함수(Aggregate Function).md",
+    "SQL/COUNT.md",
     "TypeScript/void.md",
     "SQL/AVG SUM.md",
-    "MIN MAX.md",
     "MIN / MAX.md",
     "MIN ",
     "Node.js/ORM(Object Relational Mapping).md",
-    "SQL/GROUP BY.md",
     "SQL/LIMIT OFFSET.md",
     "Node.js/Module/Sequelize/시퀄라이즈(Sequelize).md",
     "SQL/OFFSET.md",
     "SQL/SELECT.md",
     "SQL/ORDER BY.md",
     "SQL/SQL(Structured Query Language).md",
-    "SQL/SELECT CASE.md",
-    "SQL/LIKE.md",
-    "SQL/IS NULL.md",
-    "SQL/AS.md",
-    "Node.js/Nest.js/NestJS 미들웨어(Middleware).md",
-    "Node.js/Nest.js/AOP(Aspect-Oriented Programming).md",
-    "Node.js/Nest.js/필터(Filter).md",
-    "Node.js/Nest.js/NestJS 모듈(module).md",
-    "Node.js/Nest.js/핸들러(Handler).md",
-    "Node.js/Express/미들웨어(Middleware).md",
-    "Node.js/Nest.js/가드(Guard).md",
-    "Node.js/Nest.js/인터셉터(Interceptor).md",
     "image/Pasted image 20241028232627.png",
     "image/Pasted image 20241028224823.png",
     "Node.js/Module/class-transformer",
