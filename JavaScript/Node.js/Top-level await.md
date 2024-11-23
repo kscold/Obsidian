@@ -1,5 +1,8 @@
 - [[비동기(asynchronous)]] 처리를 위해 사용되는 [[async await]]는 한 세트이기 때문에, await 혼자서는 동작이 불가능했지만 ES2022부터는 모듈의 최상위 레벨에서 await를 사용할 수 있게 되었다.
 
+
+## 예시
+
 ```js
 // todoList.mjs
 let todoList;
@@ -78,5 +81,5 @@ console.log(todoList);
 
 - Top-level await를 사용한 todoList.mjs은 [[import]] 하는 index.mjs는, todoList.mjs의 await가 모두 실행되기 전(비동기 처리가 완료되기 전까지) 동작을 중지하게 된다.
 
-- 마치 Top-level await를 사용한 [[모듈(Module)]]이 하나의 거대한 async 함수처럼 동작하게 된다.
+- 마치 Top-level await를 사용한 [[모듈(Module)]]이 하나의 거대한 [[async 함수]]처럼 동작하게 된다.
 - 따라서 B 모듈에서는 todoList로 바로 접근을 해도, 비동기 처리가 완료됐다는 것을 보장하기 때문에 원하던 결과를 얻을 수 있게 된다.

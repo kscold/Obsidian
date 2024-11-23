@@ -1,4 +1,4 @@
-- [[TypeORM]]에서 [[QueryBuilder]]를 [[쿼리(Query)]]를 실행할 때, 내부적으로 한번 더 [[쿼리(Query)]]를 실행하는 방법이다.
+- [[TypeORM]]에서 [[쿼리빌더(QueryBuilder)]]를 [[쿼리(Query)]]를 실행할 때, 내부적으로 한번 더 [[쿼리(Query)]]를 실행하는 방법이다.
 - [[QueryBuilder.where()]]에서 [[화살표 함수(Arrow function)]]를 사용하여 순서대로 [[쿼리(Query)]]를 실행한다.
 
 

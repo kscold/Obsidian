@@ -1,0 +1,2 @@
+- 어떤 [[객체(Object)]](Source Object)에 있는 필드([[열(Column)]]) 값들을 자동으로 원하는 [[객체(Object)]](Destination Object)에 Mapping시켜주는 라이브러리를 의미한다.
+- [[NestJS]]에는 대표적으로 [[class-transformer]]를  사용한다.

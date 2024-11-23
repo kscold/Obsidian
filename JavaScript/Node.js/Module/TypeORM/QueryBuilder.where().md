@@ -1,4 +1,4 @@
-- [[TypeORM]]에서 [[QueryBuilder]]를 실행할 때 특정 조건 즉, [[WHERE]]를 사용할 수 있는 [[메서드(Method)]]이다.
+- [[TypeORM]]에서 [[쿼리빌더(QueryBuilder)]]를 실행할 때 특정 조건 즉, [[WHERE]]를 사용할 수 있는 [[메서드(Method)]]이다.
 
 
 ## 예시

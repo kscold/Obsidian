@@ -1,5 +1,7 @@
 - class-transformer는 [[타입스크립트(TypeScript)]]와 JavaScript에서 [[객체(Object)]]를 [[직렬화(Serialization)]]하고 [[역직렬화 (Deserialization)]]하는 데 사용되는 라이브러리이다. 
 
+- [[타입스크립트(TypeScript)]]에서 [[Model Mapper]]는 class-transform이 있다.
+
 - 이 [[모듈(Module)]]은 [[객체(Object)]]를 다른 형식으로 변환하거나 평범한 자바스크립트 [[객체(Object)]]를 [[클래스(class)]]로 변환하는 작업을 쉽게 처리할 수 있도록 도와준다.
 
 - 주로 [API 요청과 응답 데이터를 처리할 때 유용하며, [[클래스(class)]]에 정의된 구조를 유지하면서 데이터를 변환할 수 있게 해준다.

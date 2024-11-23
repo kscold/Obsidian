@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Node.js/Module/TypeORM/QueryBuilder.subQuery().md",
+                "file": "TypeScript/class type.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "QueryBuilder.subQuery()"
+              "title": "class type"
+            }
+          },
+          {
+            "id": "fac895694579d3c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Node.js/Module/TypeORM/쿼리러너(QueryRunner).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "쿼리러너(QueryRunner)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -52,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "DataSour",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -169,6 +184,26 @@
             "id": "d57488202c508a89",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          },
+          {
+            "id": "20ad9a53a9c5c474",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          },
+          {
+            "id": "6edab18bc62753ad",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -176,7 +211,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -193,35 +228,36 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "0a7402d719ced7a1",
+  "active": "fac895694579d3c2",
   "lastOpenFiles": [
-    "Node.js/Module/TypeORM/QueryBuilder.getOne().md",
-    "Node.js/Module/TypeORM/QueryBuilder.subQuery().md",
-    "Node.js/Module/TypeORM/QueryBuilder.md",
-    "Node.js/Module/TypeORM/QueryBuilder.where().md",
-    "Node.js/Module/TypeORM/QueryBuilder.getMany().md",
-    "Node.js/Module/TypeORM/QueryBuilder.execute().md",
-    "SQL/MIN MAX.md",
+    "Node.js/Module/TypeORM/쿼리빌더(QueryBuilder).md",
+    "Node.js/Module/TypeORM/쿼리러너(QueryRunner).md",
+    "Node.js/Module/TypeORM/TypeORM.count().md",
+    "Node.js/Module/TypeORM/TypeORM.create().md",
+    "Node.js/Module/TypeORM/TypeORM.delete().md",
+    "Node.js/Module/TypeORM/FindOptions.md",
+    "Node.js/Module/TypeORM/DeleteResult.md",
     "Node.js/Module/TypeORM/DataSource.md",
-    "Node.js/Module/TypeORM/@ManyToMany().md",
-    "SQL/ROUND.md",
-    "Node.js/Module/TypeORM/@OneToMany().md",
-    "Node.js/Module/TypeORM/@ManyToOne().md",
-    "Node.js/Module/TypeORM/@OneToOne().md",
-    "SQL/GROUP BY.md",
-    "SQL/집계 함수(Aggregate Function).md",
-    "SQL/COUNT.md",
-    "TypeScript/void.md",
-    "SQL/AVG SUM.md",
-    "MIN / MAX.md",
-    "MIN ",
+    "Node.js/Module/TypeORM/엔티티 상속(Entity Inheritance).md",
+    "Node.js/Module/TypeORM/엔티티 임베딩(Entity Embedding).md",
+    "Node.js/Module/TypeORM/FindOptionsCache.md",
+    "Node.js/Module/TypeORM/FindOptionsOrder.md",
+    "Node.js/Module/TypeORM/TypeORM.md",
+    "JavaScript/try catch.md",
+    "JavaScript/finally().md",
+    "Node.js/Module/TypeORM/createQueryBuilder().md",
     "Node.js/ORM(Object Relational Mapping).md",
-    "SQL/LIMIT OFFSET.md",
-    "Node.js/Module/Sequelize/시퀄라이즈(Sequelize).md",
-    "SQL/OFFSET.md",
-    "SQL/SELECT.md",
-    "SQL/ORDER BY.md",
-    "SQL/SQL(Structured Query Language).md",
+    "Node.js/Module/TypeORM/createQueryRunner().md",
+    "SQL/CRUD.md",
+    "JavaScript/리포지토리(Repository).md",
+    "DBMS(Database Management System).md",
+    "JavaScript/export.md",
+    "JavaScript/변수(Variable).md",
+    "JavaScript/초기화(initialization).md",
+    "SQL/트랜잭션(Transaction).md",
+    "image/Pasted image 20241123191251.png",
+    "SQL/Phantom Reads.md",
+    "MIN ",
     "image/Pasted image 20241028232627.png",
     "image/Pasted image 20241028224823.png",
     "Node.js/Module/class-transformer",
@@ -234,14 +270,13 @@
     "Node.js/Module/class-validator",
     "image/Pasted image 20240901164101.png",
     "Node.js/Module/TypeORM",
-    "Node.js/Nest.js",
+    "Node.js/NestJS",
     "JavaScript/구현",
     "image/Pasted image 20240626175122.png",
     "image/Pasted image 20240626160831.png",
     "무제 파일.canvas",
     "image/Pasted image 20240501134435.png",
     "image/Pasted image 20240430002056.png",
-    "image/Pasted image 20240413032925.png",
-    "image/Pasted image 20240413030415.png"
+    "image/Pasted image 20240413032925.png"
   ]
 }

@@ -1,6 +1,6 @@
 - [[NestJS]]에서 [[passport]]을 사용하기 위해서는 Passport 모듈을 생성해주면 된다.
 
-- 필요한 [[NestJS 모듈(module)]]에서 [[passport]]를 등록해주면 되지만 그렇게 되면 위에서 구현한 JwtStrategy 또한 [[providers]]로 등록을 해야한다.
+- 필요한 [[NestJS 모듈(module)]]에서 [[passport]]를 등록해주면 되지만 그렇게 되면 위에서 구현한 JwtStrategy 또한 [[Providers]]로 등록을 해야한다.
 
 
 - 원하는 것은 다른 `configModule`들 처럼 `app.module`에서 설정을 포함한 Passport 모듈을 import하고, 사용하는 `module`에서 Passport 모듈만 import하여 쓰기를 원하기 때문에 아래와 같이 작성하였다.
