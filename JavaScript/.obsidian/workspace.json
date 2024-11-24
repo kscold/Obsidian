@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript/class type.md",
+                "file": "TypeScript/Composition.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "class type"
+              "title": "Composition"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Node.js/Module/TypeORM/쿼리러너(QueryRunner).md",
+                "file": "Node.js/NestJS/DefaultValuePipe.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "쿼리러너(QueryRunner)"
+              "title": "DefaultValuePipe"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -67,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "DataSour",
+                "query": "파이프",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -228,35 +227,37 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "fac895694579d3c2",
+  "active": "0a7402d719ced7a1",
   "lastOpenFiles": [
-    "Node.js/Module/TypeORM/쿼리빌더(QueryBuilder).md",
-    "Node.js/Module/TypeORM/쿼리러너(QueryRunner).md",
-    "Node.js/Module/TypeORM/TypeORM.count().md",
-    "Node.js/Module/TypeORM/TypeORM.create().md",
-    "Node.js/Module/TypeORM/TypeORM.delete().md",
-    "Node.js/Module/TypeORM/FindOptions.md",
-    "Node.js/Module/TypeORM/DeleteResult.md",
-    "Node.js/Module/TypeORM/DataSource.md",
-    "Node.js/Module/TypeORM/엔티티 상속(Entity Inheritance).md",
-    "Node.js/Module/TypeORM/엔티티 임베딩(Entity Embedding).md",
-    "Node.js/Module/TypeORM/FindOptionsCache.md",
-    "Node.js/Module/TypeORM/FindOptionsOrder.md",
-    "Node.js/Module/TypeORM/TypeORM.md",
-    "JavaScript/try catch.md",
-    "JavaScript/finally().md",
-    "Node.js/Module/TypeORM/createQueryBuilder().md",
-    "Node.js/ORM(Object Relational Mapping).md",
-    "Node.js/Module/TypeORM/createQueryRunner().md",
-    "SQL/CRUD.md",
-    "JavaScript/리포지토리(Repository).md",
-    "DBMS(Database Management System).md",
-    "JavaScript/export.md",
-    "JavaScript/변수(Variable).md",
-    "JavaScript/초기화(initialization).md",
-    "SQL/트랜잭션(Transaction).md",
+    "TypeScript/Mapped Type.md",
+    "TypeScript/Composition.md",
+    "TypeScript/Intersection.md",
+    "TypeScript/Omit.md",
+    "TypeScript/Pick.md",
+    "TypeScript/옵셔널(Optional).md",
+    "TypeScript/Partial.md",
+    "Node.js/NestJS/ArgumentMetadata.md",
+    "Node.js/NestJS/커스텀 파이프(Custom Pipe).md",
+    "TypeScript/제네릭(Generic).md",
+    "Node.js/NestJS/DefaultValuePipe.md",
+    "Node.js/NestJS/ParseIntPipe.md",
+    "SQL/DBMS(Database Management System).md",
+    "TypeScript/타입 변수(Type Variable).md",
+    "SQL/마이그레이션(Migration).md",
+    "Node.js/NestJS/PipeTransform.md",
+    "JavaScript/apply().md",
+    "Node.js/NestJS/ExecutionContext.md",
+    "Node.js/React.js/useState().md",
+    "Node.js/NestJS/Built-in pipe.md",
+    "Node.js/NestJS/ValidationPipe.md",
+    "Node.js/NestJS/파이프(Pipe).md",
+    "Node.js/NestJS/@UsePipes().md",
+    "Node.js/NestJS/Data vaildation.md",
+    "Node.js/NestJS/Data Transformation.md",
+    "Node.js/NestJS/NestJS 미들웨어(Middleware).md",
+    "image/Pasted image 20241124170503.png",
+    "image/Pasted image 20241124170436.png",
     "image/Pasted image 20241123191251.png",
-    "SQL/Phantom Reads.md",
     "MIN ",
     "image/Pasted image 20241028232627.png",
     "image/Pasted image 20241028224823.png",
@@ -275,8 +276,6 @@
     "image/Pasted image 20240626175122.png",
     "image/Pasted image 20240626160831.png",
     "무제 파일.canvas",
-    "image/Pasted image 20240501134435.png",
-    "image/Pasted image 20240430002056.png",
-    "image/Pasted image 20240413032925.png"
+    "image/Pasted image 20240501134435.png"
   ]
 }

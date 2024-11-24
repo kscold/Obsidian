@@ -9,7 +9,7 @@
 
 - validation pipe은 [[class-validator]] 패키지와 해당 패키지에서 제공하는 데코레이터를 활용하여 요청 데이터의 유효성을 검증하는 기능이다.
 
-### ParseIntPipe
+### [[ParseIntPipe]]
 
 - 원래 [[매개변수(parameter)]] 값으로 숫자가 들어와야하는 [[핸들러(Handler)]]가 있다고 가정한다.
 
@@ -28,6 +28,6 @@ findOne(@Param('id', ParseIntPipe) id: number) {
 
 ### ParseUUIDPipe
 
-### DefaultValuePipe
+### [[DefaultValuePipe]]
 
 

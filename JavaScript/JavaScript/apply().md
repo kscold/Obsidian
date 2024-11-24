@@ -22,7 +22,7 @@ func.apply(thisArg, [argsArray]);
 
 - func이 호출되어야 하는 인자를 지정하는 유사 배열 객체, 함수에 제공된 인수가 없을 경우 또는 [[undefined]]이다.
 
-- ECMAScript 5의 시작으로 이러한 인자들은 [[배열(Array)]] 대신 제네릭 유사 [[배열(Array)]] [[객체(Object)]]로 사용될 수 있다.
+- ECMAScript 5의 시작으로 이러한 인자들은 [[배열(Array)]] 대신 [[제네릭(Generic)]] 유사 [[배열(Array)]] [[객체(Object)]]로 사용될 수 있다.
 
 ### 반환 값
 
