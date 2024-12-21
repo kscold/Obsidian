@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3a15da21d563b813",
+        "id": "10de8dc8b7bf25be",
         "type": "tabs",
         "children": [
           {
-            "id": "0a7402d719ced7a1",
+            "id": "d4f6da5f62a4c960",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript/Composition.md",
+                "file": "Node.js/Module/passport/@nestjs-passport/AuthGuard().md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Composition"
-            }
-          },
-          {
-            "id": "fac895694579d3c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Node.js/NestJS/DefaultValuePipe.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DefaultValuePipe"
+              "title": "AuthGuard()"
             }
           }
         ]
@@ -66,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "파이프",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -203,6 +189,16 @@
             "id": "6edab18bc62753ad",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          },
+          {
+            "id": "6ddbaf5d85615d6c",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -210,7 +206,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
@@ -227,9 +223,34 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "0a7402d719ced7a1",
+  "active": "6ddbaf5d85615d6c",
   "lastOpenFiles": [
+    "Node.js/Module/passport/@nestjs-passport/@UseGuards().md",
+    "Node.js/Module/passport/@nestjs-passport/AuthGuard().md",
+    "Node.js/Module/passport/@nestjs-passport/jwt.strategy.ts.md",
+    "Node.js/Module/passport/@nestjs-passport/request.isAuthenticated().md",
+    "Node.js/Module/passport/done().md",
+    "Node.js/Module/passport/passport-local.md",
+    "Node.js/Module/passport/passport-jwt.md",
+    "Node.js/Module/passport/passport.md",
+    "Node.js/Module/passport/@nestjs-passport/Passport Module.md",
+    "Node.js/NestJS/NestJS 모듈(module).md",
+    "Node.js/Module/class-transformer/@Exclude().md",
+    "Node.js/Module/class-transformer/class-transformer.md",
+    "Node.js/Module/class-transformer/@Expose().md",
+    "implement/process/회원가입 로그인.md",
+    "Node.js/JWT(JSON Web Token).md",
+    "image/Pasted image 20241128222801.png",
+    "image/Pasted image 20241128222713.png",
+    "image/Pasted image 20241128222640.png",
+    "image/Pasted image 20241128222551.png",
+    "image/Pasted image 20241128222453.png",
+    "implement/skill/배열 정렬.md",
+    "implement/process",
+    "Node.js/encodeURIComponet.md",
+    "implement/skill",
     "TypeScript/Mapped Type.md",
+    "Node.js/NestJS/DefaultValuePipe.md",
     "TypeScript/Composition.md",
     "TypeScript/Intersection.md",
     "TypeScript/Omit.md",
@@ -237,24 +258,6 @@
     "TypeScript/옵셔널(Optional).md",
     "TypeScript/Partial.md",
     "Node.js/NestJS/ArgumentMetadata.md",
-    "Node.js/NestJS/커스텀 파이프(Custom Pipe).md",
-    "TypeScript/제네릭(Generic).md",
-    "Node.js/NestJS/DefaultValuePipe.md",
-    "Node.js/NestJS/ParseIntPipe.md",
-    "SQL/DBMS(Database Management System).md",
-    "TypeScript/타입 변수(Type Variable).md",
-    "SQL/마이그레이션(Migration).md",
-    "Node.js/NestJS/PipeTransform.md",
-    "JavaScript/apply().md",
-    "Node.js/NestJS/ExecutionContext.md",
-    "Node.js/React.js/useState().md",
-    "Node.js/NestJS/Built-in pipe.md",
-    "Node.js/NestJS/ValidationPipe.md",
-    "Node.js/NestJS/파이프(Pipe).md",
-    "Node.js/NestJS/@UsePipes().md",
-    "Node.js/NestJS/Data vaildation.md",
-    "Node.js/NestJS/Data Transformation.md",
-    "Node.js/NestJS/NestJS 미들웨어(Middleware).md",
     "image/Pasted image 20241124170503.png",
     "image/Pasted image 20241124170436.png",
     "image/Pasted image 20241123191251.png",
@@ -266,16 +269,9 @@
     "Node.js/Module/Swagger",
     "Node.js/Module/passport/passport-jwt",
     "Node.js/Module/passport/@nestjs-passport",
-    "image/Pasted image 20240914212528.png",
     "Untitled.canvas",
     "Node.js/Module/class-validator",
-    "image/Pasted image 20240901164101.png",
     "Node.js/Module/TypeORM",
-    "Node.js/NestJS",
-    "JavaScript/구현",
-    "image/Pasted image 20240626175122.png",
-    "image/Pasted image 20240626160831.png",
-    "무제 파일.canvas",
-    "image/Pasted image 20240501134435.png"
+    "무제 파일.canvas"
   ]
 }

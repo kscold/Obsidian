@@ -4,10 +4,15 @@
 - 즉, 정보를 안전하게 저할 때 혹은 유저의 권한 같은 것을 체크를 하기 위해서 사용하는데 유용한 [[모듈(Module)]]이다.
 
 
-## JWT의 구조
+## JWT의 특징
 
 ![[Pasted image 20240914212528.png]]
 
+- 무상태(Stateless) 인증에 사용된다.
+- 인터넷으로 전송할만큼 작으며 인증에 필요한 모든 정보가 자체적으로 담겨있다.
+- Header, Payload, Signature 세 개의 구간으로 이루어져있다.
+- 표준화된 클레임이 존재한다. (iss, exp, sub, aud 등)
+- 인증(Authentication), 인가(Authorization)에 효율적이다.
 
 ### Header
 
