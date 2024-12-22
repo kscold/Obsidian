@@ -1,6 +1,6 @@
 - [[NestJS]]에서 [[passport]]을 사용하기 위해서는 [[passport]] [[NestJS 모듈(module)]]을 생성해주면 된다.
 
-- 필요한 [[NestJS 모듈(module)]]에서 [[passport]]를 등록해주면 되지만 그렇게 되면 위에서 구현한 JwtStrategy 또한 [[Providers]]로 등록을 해야한다.
+- 필요한 [[NestJS 모듈(module)]]에서 [[passport]]를 등록해주면 되지만 그렇게 되면 위에서 구현한 JwtStrategy 또한 [[프로바이더(Provider)]]로 등록을 해야한다.
 
 
 ## Passport 특징

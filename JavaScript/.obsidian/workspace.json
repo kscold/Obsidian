@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "10de8dc8b7bf25be",
+        "id": "0b6d05f95284d136",
         "type": "tabs",
         "children": [
           {
-            "id": "d4f6da5f62a4c960",
+            "id": "07677f38894a69c7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Node.js/Module/passport/@nestjs-passport/AuthGuard().md",
+                "file": "Node.js/Module/TypeORM/@OneToOne().md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AuthGuard()"
+              "title": "@OneToOne()"
+            }
+          },
+          {
+            "id": "53d4f2753c69198e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Node.js/NestJS/HttpException.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "HttpException"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -52,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "가드",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.5
+    "width": 296.5
   },
   "right": {
     "id": "84986afa53e23371",
@@ -93,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Node.js/Module/TypeORM/TypeORM.count().md",
+                "file": "Node.js/Module/TypeORM/@OneToOne().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "TypeORM.count()의 백링크"
+              "title": "@OneToOne()의 백링크"
             }
           },
           {
@@ -112,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Node.js/Module/TypeORM/TypeORM.count().md",
+                "file": "Node.js/Module/TypeORM/@OneToOne().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "TypeORM.count()의 나가는 링크"
+              "title": "@OneToOne()의 나가는 링크"
             }
           },
           {
@@ -139,14 +154,14 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Node.js/Module/TypeORM/TypeORM.count().md"
+                "file": "Node.js/Module/TypeORM/@OneToOne().md"
               },
               "icon": "lucide-list",
-              "title": "TypeORM.count() 개요"
+              "title": "@OneToOne() 개요"
             }
           },
           {
-            "id": "ca92f7b7c5084a2c",
+            "id": "97bc64d867e42908",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -156,7 +171,7 @@
             }
           },
           {
-            "id": "ac8def0b8c42554b",
+            "id": "ce797d35e385946a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -166,37 +181,7 @@
             }
           },
           {
-            "id": "d57488202c508a89",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "20ad9a53a9c5c474",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "6edab18bc62753ad",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "6ddbaf5d85615d6c",
+            "id": "ec8b835fcea8d52d",
             "type": "leaf",
             "state": {
               "type": "Saved Queries View",
@@ -206,7 +191,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -223,55 +208,55 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "6ddbaf5d85615d6c",
+  "active": "53d4f2753c69198e",
   "lastOpenFiles": [
-    "Node.js/Module/passport/@nestjs-passport/@UseGuards().md",
-    "Node.js/Module/passport/@nestjs-passport/AuthGuard().md",
-    "Node.js/Module/passport/@nestjs-passport/jwt.strategy.ts.md",
-    "Node.js/Module/passport/@nestjs-passport/request.isAuthenticated().md",
-    "Node.js/Module/passport/done().md",
-    "Node.js/Module/passport/passport-local.md",
-    "Node.js/Module/passport/passport-jwt.md",
-    "Node.js/Module/passport/passport.md",
-    "Node.js/Module/passport/@nestjs-passport/Passport Module.md",
+    "Node.js/NestJS/커스텀 필터(Filter).md",
+    "Node.js/NestJS/HttpException.md",
+    "Node.js/NestJS/필터(Filter).md",
+    "Node.js/NestJS/커스텀 가드(Custom Garud).md",
+    "Node.js/NestJS/프로바이더(Provider).md",
+    "Node.js/NestJS/useFactory.md",
     "Node.js/NestJS/NestJS 모듈(module).md",
-    "Node.js/Module/class-transformer/@Exclude().md",
-    "Node.js/Module/class-transformer/class-transformer.md",
-    "Node.js/Module/class-transformer/@Expose().md",
+    "Node.js/NestJS/forFeature().md",
+    "Node.js/NestJS/ConfigModule.md",
+    "TypeScript/Interface.md",
+    "Node.js/NestJS/메타데이터(Metadata).md",
+    "Node.js/Module/모듈(Module).md",
+    "Node.js/NestJS/ExecutionContext.md",
+    "JavaScript/실행 컨텍스트(execution context).md",
+    "JavaScript/소스코드의 평가 과정.md",
+    "Node.js/NestJS/CanActivate.md",
+    "Node.js/NestJS/CallHandler.md",
+    "Node.js/NestJS/가드(Guard).md",
+    "Node.js/NestJS/인터셉터(Interceptor).md",
+    "Node.js/NestJS/커스텀 데코레이터(Custom Decorator).md",
+    "Node.js/NestJS/@SetMetadata().md",
+    "Node.js/NestJS/Reflector.md",
+    "implement/skill/배열 정렬.md",
+    "implement/skill/2차원 배열.md",
     "implement/process/회원가입 로그인.md",
-    "Node.js/JWT(JSON Web Token).md",
+    "implement/skill",
+    "implement/process",
+    "implement",
     "image/Pasted image 20241128222801.png",
     "image/Pasted image 20241128222713.png",
     "image/Pasted image 20241128222640.png",
     "image/Pasted image 20241128222551.png",
     "image/Pasted image 20241128222453.png",
-    "implement/skill/배열 정렬.md",
-    "implement/process",
-    "Node.js/encodeURIComponet.md",
-    "implement/skill",
-    "TypeScript/Mapped Type.md",
-    "Node.js/NestJS/DefaultValuePipe.md",
-    "TypeScript/Composition.md",
-    "TypeScript/Intersection.md",
-    "TypeScript/Omit.md",
-    "TypeScript/Pick.md",
-    "TypeScript/옵셔널(Optional).md",
-    "TypeScript/Partial.md",
-    "Node.js/NestJS/ArgumentMetadata.md",
     "image/Pasted image 20241124170503.png",
     "image/Pasted image 20241124170436.png",
     "image/Pasted image 20241123191251.png",
-    "MIN ",
+    "TypeScript/타입 변수(Type Variable).md",
+    "Node.js/React.js/Libaray/react-router-dom",
+    "Node.js/React.js/Libaray/Redux",
+    "Node.js/React.js/Next.js",
+    "Node.js/React.js/Libaray",
+    "Node.js/React.js/Jest",
+    "Node.js/React.js",
+    "Node.js/NestJS",
     "image/Pasted image 20241028232627.png",
     "image/Pasted image 20241028224823.png",
-    "Node.js/Module/class-transformer",
-    "Node.js/Module/RxJS",
-    "Node.js/Module/Swagger",
-    "Node.js/Module/passport/passport-jwt",
-    "Node.js/Module/passport/@nestjs-passport",
     "Untitled.canvas",
-    "Node.js/Module/class-validator",
-    "Node.js/Module/TypeORM",
     "무제 파일.canvas"
   ]
 }

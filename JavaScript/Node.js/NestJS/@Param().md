@@ -1,4 +1,4 @@
-- [[NestJS]]에서 [[Providers]]의 @GET 요청일 때, [[URL 파라미터(URL Parameter)]]에 값을 추출하여 가져올 때 사용하는 [[데코레이터(Decorator)]]이다.
+- [[NestJS]]에서 [[프로바이더(Provider)]]의 @GET 요청일 때, [[URL 파라미터(URL Parameter)]]에 값을 추출하여 가져올 때 사용하는 [[데코레이터(Decorator)]]이다.
 
 
 ## 문법
