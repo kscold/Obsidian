@@ -1,15 +1,12 @@
-- [[노드(Node.js)]]의 [[Express]] 또는 koa의 미들웨어(Middleware)는 [[HTTP(Hyper Tranfer Protocol)]] 요청이 들어온 순간부터 순차적으로 시작이 된다.
+- [[노드(Node.js)]]의 [[Express]] [[NestJS]] 등의 미들웨어(Middleware)는 [[HTTP(Hyper Tranfer Protocol)]] 요청이 들어온 순간부터 순차적으로 시작이 된다.
 - 미들웨어는 [[HTTP(Hyper Tranfer Protocol)]] 요청과 응답 [[객체(Object)]]를 처리하거나, 다음 미들웨어를 실행할 수 있다.
+
+- 미들웨어(Middleware)는 [[라우트 핸들러(Route Handler)]]가 실행되기 전에 실행된다.
+- [[req]]와 [[res]] [[객체(Object)]]에 접근할 수 있다.
 
 - [[HTTP(Hyper Tranfer Protocol)]] 응답이 마무리될 때까지 미들웨어 동작 사이클이 실행된다.
 - 미들웨어도 [[AOP(Aspect-Oriented Programming)]]의 개념을 사용한다.
 
-## Route Handler
-
-- Route Handler도 미들웨어의 한 종류이다.
-
-- 라우팅 함수(get, post, put, delete 등)에 적용된 미들웨어이다.
-- 일반적인 미들웨어와는 다르게 path parameter를 사용할 수 있다.
 
 ## 미들웨어의 사용법
 
@@ -37,13 +34,12 @@ const auth = (req, res, next) => {
 };
 ```
 
-- req, res, next를 인자로 갖는 함수를 작성하면 미들웨어가 된다.
+- [[req]], [[res]], [[next()]]를 인자로 갖는 함수를 작성하면 미들웨어가 된다.
 
-- req, res 객체를 통해 HTTP 요청과 응답을 처리하거나 next 함수를 통해 다음 미들웨어를 호출해야 한다.
-
+- [[req]], [[res]] [[객체(Object)]]를 통해 [[HTTP(Hyper Tranfer Protocol)]] 요청과 응답을 처리하거나 next()를 통해 다음 미들웨어를 호출해야 한다.
 - next() 함수가 호출되지 않으면 미들웨어 사이클이 멈추기 때문에 주의해야 된다.
 
-- 미들웨어는 적용되는 위치에 따라서 애플리케이션 미들웨어, 라우터 미들웨어, 오류처리 미들웨어로 분류가 가능하다.
+- 미들웨어는 적용되는 위치에 따라서 애플리케이션 미들웨어, 라우터 미들웨어, [[에러 미들웨어(Error Middleware)]]로 분류가 가능하다.
 - 필요한 동작 방식에 따라 미들웨어를 적용할 위치를 결정해야 된다.
 
 
@@ -103,7 +99,7 @@ app.get("/", logger, (req, res, next) => {
 - 주로 한 개의 경로에 특정해서 미들웨어를 적용하기 위해 사용한다.
 - 전달된 인자의 순서 순으로 동작한다.
 
-## 오류처리 미들웨어
+## [[에러 미들웨어(Error Middleware)]]
 
 - 일반적으로 가장 마지막에 위치한다.
 - err, req, res, next 네 가지 인자를 가지며, 앞선 미들웨어에서 next 함수에 인자가 전달되면 실행된다.

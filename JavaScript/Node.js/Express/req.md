@@ -1,8 +1,8 @@
 - [[노드(Node.js)]]에서 [[Express]]에서 사용되는 요청 [[객체(Object)]]이다.
+- Request [[객체(Object)]]이다.
 
 
 ## req의 [[메서드(Method)]]
-
 ### req.app
 
 - req 객체를 통한 app 객체로의 접근이다. 
@@ -66,7 +66,6 @@
 
 
 ## req [[객체(Object)]] [[메서드(Method)]] 사용 예시
-
 ### req.query
 
 ```js

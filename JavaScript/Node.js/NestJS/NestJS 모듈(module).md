@@ -22,20 +22,23 @@
 - 실제 배포된 어플리케이션은 다수의 모듈을 가지고 있을 것이며, 각각의 모듈은 밀접하게 관련있는 기능(인증, 게시판 등)들을 캡슐화하는 형태일 것이다.
 
 
+<<<<<<< Updated upstream
 ## NestJS의 [[모듈(Module)]]사용 패턴
 
 - 아래 코드처럼 Root Module을 정의한다.
+=======
+## NestJS의 모듈 사용 패턴
+### [[module.forRoot()]]
 
-```ts
-@Module({
-	imports: [],
-	controllers: [],
-	providers: [],
-})
+- 동적 모듈(Dynamic Module)을 전역으로 설정할 때 사용하는 정적 메서드이다.
+- 주로 애플리케이션 전체에서 공통으로 사용할 설정을 구성할 때 사용한다.
+>>>>>>> Stashed changes
 
-export class AppModule {}
-```
+- 한 번 구성된 설정을 여러 위치에서 재사용할 수 있다.
 
+### [[module.register()]]
+
+<<<<<<< Updated upstream
 ```ts
 // common.module.ts
 @Module({
@@ -51,51 +54,30 @@ export class AppModule {}
 })
 export class CommonModule {}
 ```
+=======
+- 동적 모듈(Dynamic Module)을 개별적으로 설정할 때 사용하는 정적 메서드이다.
+>>>>>>> Stashed changes
 
-```ts
-@Module({
-	imports:[
-	    TypeOrmModule.forFeature([
-		    Alarms, // entitie
-		    ClientAlarms, // entitie
-		    Counseling // entitie
-		]),
-	],
-	providers: [AlarmsService, AlarmsBuilder],
-	controllers: [AlarmsController]
-})
-export class AlarmsModule {}
-```
+- 각 모듈별로 다른 설정을 적용해야 할 때 사용한다.
 
-### [[forRoot()]]
+### [[module.registerAsync()]]
 
-- 동적 모듈을 한번 구성하고 해당 구성을 여러 위치에서 재사용한다.
+- 동적 모듈(Dynamic Module)을 [[비동기(asynchronous)]]적으로 설정할 때 사용하는 정적 메서드이다.
 
+<<<<<<< Updated upstream
 - 위의 두번째 코드 블럭에서 [[ConfigModule]]은 common.module.ts 파일에서 한번 구성하고, 다른 파일에서 [[import]]해서 사용한다.
+=======
+- 설정값을 [[비동기(asynchronous)]]적으로 불러와야 할 때 사용한다.
+- 예시로 데이터베이스에서 설정 로드 등이 있다.
+>>>>>>> Stashed changes
 
-```ts
-import { Module } from '@nestjs/common';
-import { ConfigModule, ConfigService } from '@nestjs/config';
-import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
+### [[module.forFeature()]]
 
-@Module({
-	imports: [
-	    TypeOrmModule.forRootAsync({
-		    imports: [ConfigModule],
-		    inject: [ConfigService],
-		    useFactory: async (configService: ConfigService) => {
-		        return {
-			        type: 'mysql',
-					...
-			    } as TypeOrmModuleOptions;
-		    },
-	    }),
-	],
-})
+- [[TypeORM]]과 같은 특정 기능 모듈에서 사용되는 [[메서드(Method)]]이다.
 
-export class MysqlModule {}
-```
+- 특정 [[엔티티(Entity)]]나 기능을 해당 모듈에서 사용하도록 등록할 때 사용한다.
 
+<<<<<<< Updated upstream
 ### [[forFeature()]]
 
 - 루트용 동적 모듈의 구성을 사용할 예정이지만 호출 모듈의 필요에 따라 일부 구성을 수정해야 한다.  
@@ -175,3 +157,6 @@ export class BoardsService {
 	...
 }
 ```
+=======
+- 각 기능 모듈별로 필요한 [[엔티티(Entity)]]나 설정을 독립적으로 구성할 수 있다.
+>>>>>>> Stashed changes

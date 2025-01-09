@@ -1,10 +1,10 @@
 - [[노드(Node.js)]]에서 [[Express]]에서 사용되는 응답 [[객체(Object)]]이다.
+- Request [[객체(Object)]]이다.
 
  - 주의해야될 점으로 [[res.end()]], res.json(), res.redirect(), res.render(), [[res.send()]], [[res.sendFile()]]는 각 라우터에 반드시 한번만 써야 한다.
 
 
 ## res의 [[메서드(Method)]]
-
 ### res.app
 
 - 똑같이 res [[객체(Object)]]를 통해 app [[객체(Object)]]에 접근한다. 
