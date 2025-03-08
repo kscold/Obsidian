@@ -13,15 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/재정의(Override).md",
+                "file": "Node.js/NestJS/예외 필터(Exception Filter).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "재정의(Override)"
+              "title": "예외 필터(Exception Filter)"
+            }
+          },
+          {
+            "id": "81def5fa027cf9eb",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -40,7 +51,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "파일 탐색기"
@@ -52,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "즉시 실행",
+                "query": "필터",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -209,6 +221,56 @@
             "id": "d5bc34b288ef7d40",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          },
+          {
+            "id": "5ab786654d32eb70",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          },
+          {
+            "id": "3167f4e5e3abf5d4",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          },
+          {
+            "id": "f516539d216ca766",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          },
+          {
+            "id": "caad62930701b88d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          },
+          {
+            "id": "87bcdb40f8b20d55",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -216,7 +278,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 15
       }
     ],
     "direction": "horizontal",
@@ -225,44 +287,46 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:퀵 스위처 열기": false,
+      "switcher:빠른 전환기 열기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "a4ed7fde30125de2",
+  "active": "81def5fa027cf9eb",
   "lastOpenFiles": [
-    "중복 정의(Overloading).md",
+    "Node.js/Module/TypeORM/TypeORM.md",
+    "JavaScript/확산 연산자(spread operator).md",
+    "JavaScript/참조 타입(Reference Type).md",
+    "JavaScript/함수(Function).md",
+    "JavaScript/비동기(asynchronous).md",
+    "JavaScript/동기(Synchronous).md",
+    "JavaScript/메서드(Method).md",
+    "JavaScript/객체(Object).md",
+    "예외 레이어(Exception Layer).md",
+    "Node.js/NestJS/예외 필터(Exception Filter).md",
+    "Node.js/NestJS/필터(Filter).md",
+    "예외 필터(Exception Filters).md",
+    "Node.js/NestJS/커스텀 필터(Filter).md",
+    "Node.js/React.js/컴포넌트(Component).md",
+    "JavaScript/중복 정의(Overloading).md",
+    "image/Pasted image 20250303201617.png",
+    "Node.js/Module/RxJS/tap().md",
+    "Node.js/Module/RxJS/delay().md",
+    "Node.js/Module/RxJS/RxJS(Reactive Extensions For JavaScript).md",
+    "Node.js/NestJS/인터셉터(Interceptor).md",
+    "image/Pasted image 20250301181155.png",
+    "Node.js/NestJS/@UseInterceptors().md",
+    "Node.js/RBAC(Role Based Access Control).md",
+    "SQL/사용자(USER).md",
     "JavaScript/재정의(Override).md",
+    "중복 정의(Overloading).md",
     "Node.js/Module/@nestjs/jwt/jwtService.signAsync.md",
     "Node.js/Module/@nestjs/jwt/jwtService.decode.md",
-    "Node.js/참조 타입(Reference Type).md",
-    "Node.js/NestJS/forRoot().md",
-    "JavaScript/환경변수.md",
-    "Node.js/NestJS/프로바이더(Provider).md",
-    "Node.js/NestJS/커스텀 필터(Filter).md",
-    "Node.js/NestJS/커스텀 가드(Custom Garud).md",
-    "Node.js/NestJS/메타데이터(Metadata).md",
-    "Node.js/NestJS/forFeature().md",
-    "Node.js/NestJS/Reflector.md",
-    "Node.js/NestJS/HttpException.md",
-    "Node.js/NestJS/ConfigModule.md",
-    "Node.js/NestJS/@SetMetadata().md",
-    "Node.js/Module/@nestjs/jwt/JwtService.md",
-    "Node.js/Module/@nestjs/jwt/JwtModule.md",
-    "Node.js/Module/@nestjs/jwt/jwtService.verifyAsync.md",
-    "Node.js/Module/@nestjs/config/ConfigService.md",
-    "JavaScript/환경 변수.md",
     "Node.js/Module/@nestjs/config",
-    "Node.js/Module/@nestjs/config.md",
     "Node.js/Module/@nestjs/config",
-    "Node.js/NestJS/module.registerAsync().md",
-    "Node.js/NestJS/의존성 주입(Dependency Injection).md",
-    "Node.js/NestJS/useFactory.md",
-    "JavaScript/정적 메서드(Static method).md",
     "Node.js/Module/@nestjs/jwt",
     "Node.js/Module/@nestjs",
     "image/Pasted image 20241128222801.png",
@@ -276,8 +340,6 @@
     "image/Pasted image 20241124170436.png",
     "image/Pasted image 20241123191251.png",
     "MIN ",
-    "image/Pasted image 20241028232627.png",
-    "image/Pasted image 20241028224823.png",
     "Node.js/Module/class-transformer",
     "Node.js/Module/RxJS",
     "Node.js/Module/Swagger",

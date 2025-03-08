@@ -1,5 +1,5 @@
 {
-  "collapse-filter": false,
+  "collapse-filter": true,
   "search": "",
   "showTags": false,
   "showAttachments": false,
@@ -17,18 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  "scale": 0.4489032681105477,
-=======
-<<<<<<< Updated upstream
-  "scale": 0.6337725052005919,
-=======
-  "scale": 0.6958165889613317,
->>>>>>> Stashed changes
->>>>>>> Stashed changes
-=======
-  "scale": 0.7366159521369142,
->>>>>>> Stashed changes
+  "scale": 0.9024764121687682,
   "close": true
 }
