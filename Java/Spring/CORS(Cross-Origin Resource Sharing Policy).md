@@ -42,8 +42,8 @@ public class SomeConfig implements WebMvcConfigurer {
 	    // CORS 설정을 하기 위해 메서드 추가  
 	    registry.addMapping("/**") // 모든 패스에서 설정  
 	            .maxAge(500) // 최대 시간 설정  
-	            .allowedMethods("GET","POST","PUT","DELETE","HEAD","OPTION") 
-	            // 허용할 메서드 설정, OPTION으로 preflight 허용을 설정함  
+	            .allowedMethods("GET","POST","PUT","DELETE","HEAD","OPTIONS") 
+	            // 허용할 메서드 설정, OPTIONS로 preflight 허용을 설정함  
 	            .allowedOrigins("*"); // 허락할 리소스를 모두로 설정  
 	}
 }

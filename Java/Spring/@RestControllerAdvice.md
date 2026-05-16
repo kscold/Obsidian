@@ -10,7 +10,7 @@
 @Retention(RetentionPolicy.RUNTIME) 
 @Documented 
 @ControllerAdvice 
-@ResponseBody // ResposeBody가 붙어있음
+@ResponseBody // ResponseBody가 붙어있음
 public @interface RestControllerAdvice {
     ... 
 } 

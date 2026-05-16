@@ -17,7 +17,7 @@ public class ApplicationConfig {
 - 위와 코드와 ArrayList같은 라이브러리등을 Bean으로 등록하기 위해서는 별도로 해당 라이브러리 객체를 반환하는 [[메서드(Method)]]를 만들고 @Bean어노테이션을 붙혀주면 된다. 
 - 이 경우 Bean어노테이션에 아무런 값을 지정하지 않았으므로 [[메서드(Method)]] 이름을 CamelCase로 변경한 것이 Bean id로 등록된다. 
 
-- 위의 코드처럼 [[메서드(Method)]] 이름이 arrayList()인 경우 arrayList가 Bean id가 된다.
+- 위의 코드처럼 [[메서드(Method)]] 이름이 `array()`인 경우 `array`가 Bean id가 된다.
 
 ```java
 @Configuration

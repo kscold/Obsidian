@@ -1,7 +1,7 @@
 - @Autowired란 [[스프링 컨테이너(Spring Container)]]에 등록한 빈([[Bean]])에게 의존 관계 주입이 필요할 때, [[DI(Dependency Injection)]](의존성 주입)을 도와주는 [[어노테이션(Annotation)]]이다.
 
 - [[스프링 컨테이너(Spring Container)]]에 [[Bean]]들을 모두 등록한 후에, 의존성 주입 단계가 이루어진다. 
-- [[@Component]]를 사용한 [[Bean]]의 의존성 주입([[DI(Dependency Injection)]])은 @Au.toWired 어노테이션을 이용하여 할 수 있다.
+- [[@Component]]를 사용한 [[Bean]]의 의존성 주입([[DI(Dependency Injection)]])은 @Autowired 어노테이션을 이용하여 할 수 있다.
 
 - 이 때 @Autowired 어노테이션이 부여된 [[메서드(Method)]]가 실행되며 필요한 [[인스턴스(Instance)]]를 주입해준다.
 
@@ -16,8 +16,9 @@
 	- [[Getter and Setter]]의 Setter
 	- [[Java/필드(Field)|필드(Field)]]
 
-- 그리고 @Autowired는 기본값이 true이기 때문에 의존성 주입([[DI(Dependency Injection)]])을 할 대상을 찾지 못한다면 애플리케이션 구동에 실패한다.
-- 404와 같은 오류가 발생한다.
+- 그리고 @Autowired는 `required` 속성이 기본값 true이기 때문에 의존성 주입([[DI(Dependency Injection)]])을 할 대상을 찾지 못한다면 애플리케이션 구동에 실패한다.
+- 이 때 발생하는 예외는 `NoSuchBeanDefinitionException` 또는 `UnsatisfiedDependencyException`이다. (HTTP 404와는 무관하며, 빈 등록·주입 단계에서 던져지는 예외이다.)
+- 주입 대상이 없어도 정상 기동시키고 싶다면 `@Autowired(required = false)` 또는 `Optional<T>` 타입으로 받을 수 있다.
 
 ### 생성자 주입
 
