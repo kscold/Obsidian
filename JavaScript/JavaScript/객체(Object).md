@@ -31,7 +31,7 @@ var zero = {
 
 ## 객체 [[리터럴(literal)]]
 
-- ES6([[ES module]]) 문법부터 객체의 [[메서드(Method)]]에 :funtcion을 붙이지 않아도 되게 바뀌었다.
+- ES6([[ES module]]) 문법부터 객체의 [[메서드(Method)]]에 :function을 붙이지 않아도 되게 바뀌었다.
 - 또한 shorthand property를 사용하여 `{ sayNode: sayNode }`를 `{ sayNode }`로 축약 가능해졌다.
 - [[변수(Variable)]] + 값 등의 형식으로 통해 [[속성(Property)]]명을 객체 [[속성(Property)]] 명으로 사용가능해졌다.
 

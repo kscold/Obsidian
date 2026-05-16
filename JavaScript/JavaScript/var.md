@@ -39,7 +39,7 @@ console.log(x); // Uncaught ReferenceError: x is not defined
 - 따라서 모호성이 있기 때문에 결과적으로 var은 현재 사용하지 않고 [[let]]과 [[const]]만 사용하면 된다.
 
 ```js
-funtcion a() {
+function a() {
 	var y = 3
 }
 

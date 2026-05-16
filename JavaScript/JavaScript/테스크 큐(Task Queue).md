@@ -5,6 +5,27 @@
 - Queue이기 때문에 선입선출 구조로 먼저 들어온 것들이 먼저 나간다.
 - [[이벤트 루프(Event Loop)]]가 큐의 첫 번째 태스크를 가져오는 것이 아니라, 태스크 큐에서 실행 가능한(runnable) 첫 번째 태스크를 가져오는 것이다.(태스크 중에서 가장 오래된 태스크를 가져온다.)
 
+## 매크로태스크 vs 마이크로태스크
+
+- 흔히 "태스크 큐"라고 부르는 것은 사실 **매크로태스크 큐(Macrotask Queue)** 이다.
+- 별도로 **마이크로태스크 큐(Microtask Queue)** 가 존재하며, 둘은 [[이벤트 루프(Event Loop)]]에서 우선순위와 처리 시점이 다르다.
+
+| 구분 | 들어가는 작업 | 처리 시점 |
+|---|---|---|
+| 매크로태스크 큐 | [[setTimeout()]], `setInterval`, I/O, UI 렌더링, [[이벤트(event)]] 콜백 | 매 tick마다 **하나씩** 꺼내 실행 |
+| 마이크로태스크 큐 | [[Promise]]의 `.then`/`.catch`/`.finally`, `queueMicrotask()`, `MutationObserver` | [[호출 스택(Call Stack)]]이 비면 **전부** 비울 때까지 실행 |
+
+- 즉, [[Promise]] 후속 작업은 [[setTimeout()]] 콜백보다 항상 먼저 실행된다.
+
+```js
+console.log('1');
+setTimeout(() => console.log('2'), 0);          // 매크로태스크
+Promise.resolve().then(() => console.log('3')); // 마이크로태스크
+console.log('4');
+
+// 출력: 1 → 4 → 3 → 2
+```
+
 ## 예시
 
 - 아래 코드는 [[이벤트 루프(Event Loop)]]와 테스크큐의 동작과정을 파악하기 위한 예시이다.
@@ -39,10 +60,10 @@ console.log("end", new Date())
 ![](https://blog.kakaocdn.net/dn/ckcVof/btsiFNQKLzV/oINA5XSCsQKSrKsrSBHSDK/img.png)
 
 - 그러나 [[setTimeout()]] 메서드가 2번째에 있고 동작시간을 0으로 처리했음에도 콜백안에 있는 console.log는 가장 나중에 출력되고 있는걸 볼 수 있다.  
-- 심지어 4번째 while문에서 강제로 블로킹 처리를 해서 페이지가 멈추는 현상까지 발생는데도 불구하고 [[setTimeout()]]이 가장 늦게 호출이 되었다.
+- 심지어 4번째 while문에서 강제로 블로킹 처리를 해서 페이지가 멈추는 현상까지 발생하는데도 불구하고 [[setTimeout()]]이 가장 늦게 호출이 되었다.
 
 - 위 예시의 실제 동작은 아래와 같다.
-	1. [[호출 스택(Call Stack)]]에 console,log("start")가 push되고 출력되면서 pop된다.
+	1. [[호출 스택(Call Stack)]]에 console.log("start")가 push되고 출력되면서 pop된다.
 	2. setTimeout이 [[호출 스택(Call Stack)]]에 push되고 콜백 내용이 테스크 큐(Task Queue)에 등록되면서 pop된다.
 	3. 0 ms가 지나고 [[이벤트 루프(Event Loop)]]는 [[호출 스택(Call Stack)]]이 비워질때까지 기다리면서 콜백을 실행시킬 준비를 한다.
 	4. wakeUpTime의 [[변수(Variable)]]가 메모리 [[힙(Heap)]]에 올라가고 이후부턴 [[호출 스택(Call Stack)]]들이 동작된다.

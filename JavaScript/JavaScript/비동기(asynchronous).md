@@ -13,15 +13,15 @@
 
 ![](https://blog.kakaocdn.net/dn/bMlLfs/btqFQ9i1iD3/ZQE2tqi7lx7LUhTwK1tDtK/img.png)
 
-- 브라우저에서의 자바스크립트 실행 환경(Runtime)에서는 자바스크립트 엔진 자체가 제공하지 않는 일부 기능인 [[DOM(Document Object Model)]] 조작이나 [[Ajax(Asynchronous JavaScript and XML)]] 같은 **비동기 처리를 위한** [[Web API]]를 제공**한다.
+- 브라우저에서의 자바스크립트 실행 환경(Runtime)에서는 자바스크립트 엔진 자체가 제공하지 않는 일부 기능인 [[DOM(Document Object Model)]] 조작이나 [[Ajax(Asynchronous JavaScript and XML)]] 같은 **비동기 처리를 위한** [[Web API]]를 제공한다.
 
-- 또, 이를 제어하기 위한 과정을 [[이벤트 루프(Event Loop)]]라고 부르모 이 [[이벤트 루프(Event Loop)]] 안에는 [[호출 스택(Call Stack)]]과  [[테스크 큐(Task Queue)]]가 존재한다.
+- 또, 이를 제어하기 위한 과정을 [[이벤트 루프(Event Loop)]]라고 부르며 이 [[이벤트 루프(Event Loop)]] 안에는 [[호출 스택(Call Stack)]]과  [[테스크 큐(Task Queue)]]가 존재한다.
 
 ### 비동기(asynchronous) 동작 원리
 
 1. [[호출 스택(Call Stack)]]에서 비동기 함수가 호출되면 [[호출 스택(Call Stack)]]에 먼저 쌓였다가 [[Web API]](백그라운드)로 이동한 후 해당 [[함수(Function)]]가 등록되고 [[호출 스택(Call Stack)]]에서 사라진다.
 
-2. 백그라운드([[Web API]]에서 비동기 함수의 [[이벤트(event)]]가 발생하면, 해당 [[콜백 함수(Callback Function)]]는 [[테스크 큐(Task Queue)]]에 이동(push)) 된다.
+2. 백그라운드([[Web API]])에서 비동기 함수의 [[이벤트(event)]]가 발생하면, 해당 [[콜백 함수(Callback Function)]]는 [[테스크 큐(Task Queue)]]에 이동(push)된다.
 
 3. 이제 [[호출 스택(Call Stack)]]이 비어있는지 [[이벤트 루프(Event Loop)]]가 확인을 하는데 만약 비어있으면, [[호출 스택(Call Stack)]]에 [[테스크 큐(Task Queue)]]에 있는 [[콜백 함수(Callback Function)]]를 이동(push)시켜 준다.
 
@@ -71,8 +71,8 @@ login('별코딩', (username) => {
 
 ```js
 // 1. 로그인
-function login(usernaem) {
-	return new Promise((reslove, reject) => {
+function login(username) {
+	return new Promise((resolve, reject) => {
 		setTimeout(() => {
 			if (username) {
 				resolve(username);
@@ -99,7 +99,7 @@ function addToCart(product) {
 // 3. 결제하기
 function makePayment(cardNumber, product) {
 	return new Promise((resolve, reject) => {
-		seTimeout(() => {
+		setTimeout(() => {
 			if (cardNumber.length !== 16) {
 				reject(new Error("잘못된 카드 번호 입니다."))
 				return
@@ -134,17 +134,17 @@ login('')
 	})
 	.catch((error) => {
 		console.log(error.message);
-	}).finallt(() => {
+	}).finally(() => {
 		console.log('마무리 작업');
 	})
 
 // return 생략
 login('')
 	.catch(() => '익명')
-	.﻿﻿then((username) => addToCart('')
-	.﻿catch(() => '옥수수')
+	.then((username) => addToCart(''))
+	.catch(() => '옥수수')
 	.then((product) => makePayment('1234123412341234', product))
-	.then(product) => (console.log(`${product}를 결제를 완료했습니다.`))
+	.then((product) => console.log(`${product}를 결제를 완료했습니다.`))
 	.catch((error) => console.log(error.message))
-	.finally(() => console. log('마무리 작업'));
+	.finally(() => console.log('마무리 작업'));
 ```

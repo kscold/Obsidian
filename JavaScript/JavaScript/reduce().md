@@ -10,7 +10,7 @@
 - 다음 4가지의 [[매개변수(parameter)]]를 가진다.
 
 ```js
-배열.reduce.(funtcion (accumulator, currentValue, currentIndex, array) {
+배열.reduce.(function (accumulator, currentValue, currentIndex, array) {
 	return accumulator + currentValue;
 })
 ```

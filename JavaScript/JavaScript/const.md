@@ -18,7 +18,7 @@ const b = { name: 'zerocho' };
 b.name = 'nerocho'; // 에러 없이 변경이 가능하다.
 ```
 
-- 즉, const를 생각할때 const [[키워드(Keyword)]]가 붙은 상수에는 =(대입)을 한번만 할 수 있다고 생각하면 펺하다.
+- 즉, const를 생각할때 const [[키워드(Keyword)]]가 붙은 상수에는 =(대입)을 한번만 할 수 있다고 생각하면 편하다.
 
 ```js
 const c;

@@ -34,7 +34,7 @@ import './App.css';
 import { React } from 'react';
 import LifecycleEx from './LifecycledEx';
 
-fuction App() {
+function App() {
 	return (
 		<div>
 			<h1>Start React 200!</h1>

@@ -44,11 +44,11 @@ a``; // 템플릿 문자열을 이용한 함수 호출(최신문법)
 ```js
 // 호이스팅이 되지 않음
 alert(foo()); // 에러
-var foo = funtion() { return 5; }
+var foo = function() { return 5; }
 
 // 호이스팅이 됨
 alert(foo()); // 5 
-funtion foo() { return 5; }
+function foo() { return 5; }
 ```
 
 ### 함수 선언식

@@ -16,7 +16,7 @@
 - [[setTimeout()]]의 경우, 콜백 함수를 [[매개변수(parameter)]]로 가지는 대표적인 함수이다.
 
 ```js
-funtion getData(callback) {
+function getData(callback) {
 	setTimeoit(() => {
 		console.log('서버에서 데이터를 받아왔어요');
 		callback({ name: "별코딩" }); // 후처리가 가능하다.

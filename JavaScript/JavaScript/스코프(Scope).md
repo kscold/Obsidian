@@ -4,7 +4,7 @@
 - var 키워드는 Scope가 함수  단위이다.
 
 ```js
-funtion myFunction() {
+function myFunction() {
 	var a = "hello";
 	if (true) {
 		var a = "bye";
@@ -20,7 +20,7 @@ myFunction()
 - 추가적으로 ES6 문법에서 var를 사용할 일은 없다.
 
 ```js
-funtion myFunction() {
+function myFunction() {
 	let a = 1;
 	if (true) {
 		let a = 2;
