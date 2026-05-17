@@ -2,7 +2,7 @@
 
 - Set은 [[배열(Array)]]과 유사하다.
 
-- Set은 순서를 보장하지 않는다.
+- Set은 ES2015 사양에 따라 삽입 순서(insertion order)를 보장한다.
 
 ## Set [[메서드(Method)]]
 ### add()

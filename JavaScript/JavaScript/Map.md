@@ -16,9 +16,9 @@
 ### get()
 
 - key를 사용하여 Map [[객체(Object)]] [[속성(Property)]]을 조회할 때 사용한다.
-### size()
+### size
 
-- size() [[메서드(Method)]]를 사용하여 [[속성(Property)]] 갯수를 조회한다.
+- `size`는 [[메서드(Method)]]가 아닌 [[속성(Property)]]으로, Map에 저장된 항목 수를 반환한다.
 
 ### has()
 
