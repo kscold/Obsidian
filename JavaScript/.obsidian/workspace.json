@@ -11,32 +11,13 @@
             "id": "9db507b6fec1ef2b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Node.js/NestJS/ParseIntPipe.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "ParseIntPipe"
-            }
-          },
-          {
-            "id": "a0e05b59280deab7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Node.js/NestJS/@EntityRepository().md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "@EntityRepository()"
+              "title": "새 탭"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -274,34 +255,41 @@
   },
   "active": "67651722b3a9ffdd",
   "lastOpenFiles": [
-    "Node.js/React.js/SyntheticEvent.md",
-    "Node.js/환경 변수.md",
-    "Node.js/REPL.md",
-    "Node.js/노드(Node.js).md",
-    "Node.js/버퍼(Buffer).md",
-    "Node.js/NestJS/예외 필터(Exception Filters).md",
-    "Node.js/NestJS/예외 레이어(Exception Layer).md",
-    "JavaScript/커링 함수(Curry Function).md",
-    "CSS/SCSS/@function.md",
-    "SQL/일대다(OneToMany).md",
-    "Node.js/모델(Model).md",
-    "JavaScript/웹(Web).md",
-    "JavaScript/이벤트 루프(Event Loop).md.tmp.81754.08c522e8c1cc",
-    "JavaScript/렉시컬 환경(Lexical Environment).md.tmp.81754.60c0b2142eea",
-    "JavaScript/렉시컬 환경(Lexical Environment).md.tmp.81754.95e46c5f65b7",
-    "Node.js/NestJS/@EntityRepository().md",
-    "Node.js/NestJS/커스텀 가드(Custom Garud).md",
-    "Claude.md",
-    "Node.js/NestJS/커스텀 파이프(Custom Pipe).md",
-    "Node.js/NestJS/커스텀 데코레이터(Custom Decorator).md",
-    "Node.js/NestJS/인터셉터(Interceptor).md",
-    "Node.js/NestJS/필터(Filter).md",
-    "Node.js/NestJS/Built-in pipe.md",
-    "Node.js/NestJS/CanActivate.md",
-    "Node.js/NestJS/Data Transformation.md",
-    "Node.js/NestJS/ConfigModule.md",
-    "Node.js/NestJS/ArgumentMetadata.md",
-    "Node.js/NestJS/AOP(Aspect-Oriented Programming).md",
-    "Node.js/NestJS/ConflictException().md"
+    "Backend/Node.js/Top-level await.md",
+    "Backend/Node.js/switchToHttp().md",
+    "Backend/Node.js/REPL.md",
+    "Backend/Node.js/process.md",
+    "Backend/Node.js/payload.md",
+    "Backend/Node.js/path.md",
+    "Backend/Node.js/module.exports().md",
+    "Backend/Node.js/JWT(JSON Web Token).md",
+    "Backend/Node.js/GraphQL.md",
+    "Backend/Node.js/encodeURIComponet.md",
+    "Backend/Node.js/ctx.md",
+    "Backend/Node.js/cors.md",
+    "Backend/Node.js/Cluster.md",
+    "Backend/Node.js/child_process.md",
+    "Backend/Node.js/ArgumentsHost.md",
+    "Backend/Node.js/스트림(Stream).md",
+    "Backend/Node.js/세션(Session).md",
+    "Backend/Node.js/서비스(Service).md",
+    "Backend/Node.js/서버(Server).md",
+    "Backend/Node.js/쿼리스트링(Querystring).md",
+    "Backend/Node.js/노드(Node.js).md",
+    "Backend/Node.js/모델(Model).md",
+    "Backend/Node.js/엔티티(Entity).md",
+    "Backend/Node.js/쿠키(Cookie).md",
+    "Backend/Node.js/컨트롤러(Controller).md",
+    "Backend/Node.js/버퍼(Buffer).md",
+    "Frontend/HTML/property",
+    "Frontend/HTML",
+    "Frontend/CSS/SCSS",
+    "Frontend/CSS",
+    "CS",
+    "Backend/Node.js",
+    "Backend/Module/passport/@nestjs-passport",
+    "Backend/Module/@nestjs/jwt",
+    "Backend/Module/@nestjs/config",
+    "Backend/Module/passport"
   ]
 }

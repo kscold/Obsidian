@@ -51,7 +51,7 @@ public interface PostRepository extends JpaRepository<Post, Long> {
 // → 쿼리 1번으로 Post + User 동시 조회
 ```
 
-## 해결방법 2: [[[[@[[엔티티(entity)]]]]Graph]]
+## 해결방법 2: [[@EntityGraph]]
 
 - JPQL 없이 [[어노테이션(Annotation)]]으로 fetch join과 동일한 효과를 낼 수 있다.
 - [[JPA(Java Persistence API)]] 메서드명 쿼리와 함께 사용 가능.

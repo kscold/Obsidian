@@ -57,7 +57,7 @@ flowchart TD
 ### CA 시스템 (일관성 + 가용성)
 
 - **분산 환경에서는 이론적으로 불가능** — 네트워크 분할을 완전히 막을 수 없기 때문.
-- 단일 노드 RDBMS([[[[MySQL(MariaDB)]]]], [[PostgreSQL]] 단독 서버)가 여기에 해당하지만, 분산 환경에서는 P가 발생한다.
+- 단일 노드 RDBMS([[MySQL(MariaDB)]], [[PostgreSQL]] 단독 서버)가 여기에 해당하지만, 분산 환경에서는 P가 발생한다.
 
 ## 주요 DB의 CAP 분류
 

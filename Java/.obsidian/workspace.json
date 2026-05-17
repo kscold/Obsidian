@@ -13,26 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/Spring Security/Spring Security.md",
+                "file": "Spring/Test/Spring/MockMvc.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spring Security"
+              "title": "MockMvc"
             }
           },
           {
-            "id": "8f3154af782b40a8",
+            "id": "69eff75426ddba40",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/Test/AssertJ.md",
+                "file": "Spring/Spring Data/MongoDB/@Document.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AssertJ"
+              "title": "@Document"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/Test/AssertJ.md",
+                "file": "Spring/Spring Data/MongoDB/@Document.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "AssertJ 의 백링크"
+              "title": "@Document 의 백링크"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/Test/AssertJ.md",
+                "file": "Spring/Spring Data/MongoDB/@Document.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "AssertJ 의 나가는 링크"
+              "title": "@Document 의 나가는 링크"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/Test/AssertJ.md",
+                "file": "Spring/Spring Data/MongoDB/@Document.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "AssertJ 의 개요"
+              "title": "@Document 의 개요"
             }
           }
         ]
@@ -185,42 +185,45 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "8f3154af782b40a8",
+  "active": "69eff75426ddba40",
   "lastOpenFiles": [
-    "Spring/SQL/데드락(Deadlock).md",
-    "Spring/Test/assertThat().md",
-    "Spring/Test/AssertJ.md",
-    "Spring/Test/테스트 메서드(Test Method).md",
-    "Spring/Test/일급 컬렉션(Frist Class Collection).md",
-    "Spring/Test/@WebMvcTest.md",
-    "Spring/JPA/DDL(Data Definition Language).md",
-    "Spring/SQL/MySQL/MySQL(MariaDB).md",
-    "Spring/SQL/MySQL/트랜잭션(Transaction).md",
-    "Spring/SQL/CAP 정리(CAP Theorem).md",
-    "Spring/SQL/ACID vs BASE.md",
-    "Spring/JPA/비관적 락(Pessimistic Lock).md",
-    "Spring/JPA/낙관적 락(Optimistic Lock).md",
-    "Spring/JPA/N+1 문제(N+1 Problem).md",
-    "Spring/JPA/영속성 컨텍스트(Persistence Context).md",
-    "Spring/SQL/MySQL/정규화(Normalization).md",
-    "Spring/SQL/MySQL/인덱스(Index).md",
-    "Spring/데이터베이스 인덱스 구조(Index Structure).md",
-    "Spring/SQL/MySQL/데이터 타입(Data Type).md",
-    "Spring/SQL/관계형 데이터베이스(Relational DataBase).md",
-    "Spring/SQL/PostgreSQL/시퀀스(Sequence).md",
-    "Spring/SQL/PostgreSQL/JSONB.md",
-    "Spring/SQL/PostgreSQL/PostgreSQL.md",
-    "Spring/SQL/PostgreSQL",
-    "Spring/SQL/MySQL",
-    "Spring/MongoDB/집계(Aggregation).md",
-    "Spring/MongoDB/MongoDB 인덱스(Index).md",
-    "Spring/MongoDB/MongoDB.md",
-    "Spring/MongoDB",
-    "도구",
+    "Spring/Test/Spring/MockMvc.md",
+    "Spring/Test/TDD(Test Driven Development).md",
+    "Spring/Test/Given-When-Then.md",
+    "Spring/Test/BDD.md",
+    "Spring/Test/JUnit5/@DisplayName.md",
+    "Spring/Test/AssertJ/assertThat().md",
+    "Spring/Test/JUnit5/@BeforeEach.md",
+    "Spring/Test/Spring/@WebMvcTest.md",
+    "Spring/Test/Spring/@SpringBootTest.md",
+    "Spring/Test/Spring/@MockBean.md",
+    "Spring/웹(Web)/Redirect.md",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/JSP/mustache/{{}}.md",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/JSP/mustache/{{변수}}.md",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/JSP/mustache/{{>}}.md",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/JSP/mustache/mustache.md",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/JSP/HTML/<input>.md",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/JSP/HTML/<form>.md",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/Servlet/생명 주기(Life Cycle).md",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/Servlet/getParameter().md",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/Servlet/WAS(Web Application Sever).md",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/Servlet/ServletConfig.md",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/Servlet/Servlet.md",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/Servlet/Servlet Container.md",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/Servlet/HttpStatus.md",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/Servlet/HttpSession.md",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/Servlet/HttpServletResponse.md",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/JSP/mustache",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/JSP/HTML",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/Servlet",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)/JSP",
+    "Spring/인프라(Infrastructure)/레거시 웹(Legacy Web)",
+    "Spring/인프라(Infrastructure)/JSP/mustache",
+    "Spring/인프라(Infrastructure)/JSP/HTML",
+    "Spring/인프라(Infrastructure)/JSP",
+    "Spring/인프라(Infrastructure)/Servlet",
+    "Spring/인프라(Infrastructure)/Docker",
     "image/Pasted image 20231012133632.png",
-    "image/무제 폴더",
-    "Spring/dependency",
-    "Spring/Spring Security",
     "image/Pasted image 20240229173714.png",
     "image/Pasted image 20240229150251.png",
     "image/Pasted image 20240226020336.png",
@@ -230,9 +233,6 @@
     "image/Pasted image 20240206212431.png",
     "image/Pasted image 20231101224851.png",
     "image/Pasted image 20231012205605.png",
-    "Spring/Servlet",
-    "Spring/DBCP",
-    "Spring/JDBC",
     "무제 파일.canvas"
   ]
 }
