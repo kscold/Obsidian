@@ -10,7 +10,7 @@
 - 브라우저에 실행되기 전에 코드가 번들링되는 과정에서 바벨을 사용하여 일반 자바스크립트 형태의 코드로 변환된다.
 
 ```jsx
-funtion App() {
+function App() {
 	return (
 	<div>
 		Hello <b>react</b>
@@ -22,7 +22,7 @@ funtion App() {
 위의 JSX 문법은 밑에 코드로 변환된다.
 
 ```js
-funtion App(){
+function App(){
 	return React.createElement("div", null, "Hello ", React.createElement("b", null, "react"))
 }
 ```
