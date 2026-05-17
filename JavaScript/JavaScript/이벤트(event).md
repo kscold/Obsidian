@@ -172,7 +172,6 @@ myEmitter.on('customEvent', () => {
 
 myEmitter.emit('customEvent');
 ```
-`
 
 - 위 코드에서 `emit()`은 [[이벤트(event)]]를 발생시키고, [[on()]]은 [[이벤트 리스너(Event Listener)]]를 등록한다.
 - 따라서 `customEvent`가 발생하면 이를 감지하여 "Custom event occurred"를 출력한다.

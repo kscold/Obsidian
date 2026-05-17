@@ -151,7 +151,7 @@ class Human {
 	}
 	
 	breathe() { // 인스턴스 메서드 선언
-		alert'h-a-a-a-m');
+		alert('h-a-a-a-m');
 	}
 };
 

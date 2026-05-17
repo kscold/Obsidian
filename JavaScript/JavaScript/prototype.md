@@ -4,6 +4,27 @@
 
 - 따라서 원래 자바스크립트는 기존의 [[객체(Object)]]를 복사하여(cloning) 새로운 [[객체(Object)]]를 생성하는 프로토타입 기반의 언어이다.
 
+## 프로토타입 체인(Prototype Chain)
+
+- 객체에서 [[속성(Property)]]이나 [[메서드(Method)]]를 찾을 때, 해당 객체에 없으면 `__proto__`를 따라 상위 프로토타입 객체를 순차적으로 탐색하는 구조다.
+- 탐색은 `Object.prototype`까지 올라가며, 거기서도 없으면 `undefined`를 반환한다.
+
+```mermaid
+flowchart BT
+  instance["joon 인스턴스\n{ __proto__ }"]
+  personProto["Person.prototype\n{ constructor, getType() }"]
+  objectProto["Object.prototype\n{ toString(), hasOwnProperty() ... }"]
+  null_node["null"]
+
+  instance -->|"__proto__"| personProto
+  personProto -->|"__proto__"| objectProto
+  objectProto -->|"__proto__"| null_node
+```
+
+- `joon.getType()` 호출 시: joon 자신 → Person.prototype에서 발견 → 실행
+- `joon.toString()` 호출 시: joon 자신 → Person.prototype → Object.prototype에서 발견 → 실행
+- 탐색 끝(null)까지 없으면 `TypeError`가 발생한다.
+
 - 프로토타입 기반 언어는 객체 원형인 프로토타입을 이용하여 새로운 객체를 만들어낸다.([[DOM(Document Object Model)]] 구조이다.)
 
 - 프로토타입 객체의 멤버를 읽는 경우에는 객체 또는 함수의 prototype 속성을 통해 접근할 수 있다. 
@@ -26,7 +47,7 @@
 ![[Pasted image 20231015173220.png]]
 
 ```js
-function Person()(}
+function Person(){}
 ```
 
 - 속성이 하나도 없는 Person이라는 함수가 정의되고, 파싱단계에 들어가면, Person 함수 Prototype 속성은 프로토타입 객체를 참조한다.
@@ -115,3 +136,15 @@ console.log(jisoo.getType());  // 사람
 
 - 함수의 prototype 속성을 이용하여 getType() 리턴 값을 사람으로 수정한다. 
 - 그리고 jisoo 객체를 이용하여 호출한 결과 사람이 나온다.
+
+## __proto__ vs prototype
+
+- `prototype`: [[함수(Function)]] 객체에만 존재하는 속성으로, `new` 연산자로 생성된 인스턴스의 원형이 되는 객체를 가리킨다.
+- `__proto__`: 모든 [[객체(Object)]]가 가지는 숨은 링크로, 해당 객체를 생성한 생성자 함수의 `prototype`을 가리킨다. (`[[Prototype]]` 내부 슬롯의 비표준 접근자)
+- 표준 방법으로는 `Object.getPrototypeOf(obj)`로 읽고, `Object.setPrototypeOf(obj, proto)`로 설정한다.
+
+| 구분 | 존재하는 곳 | 가리키는 대상 |
+|------|------------|-------------|
+| `prototype` | 함수 객체 | 인스턴스의 원형 객체 |
+| `__proto__` | 모든 객체 | 생성자 함수의 `prototype` |
+| `constructor` | prototype 객체 | 해당 객체를 만든 함수 |

@@ -11,6 +11,24 @@
 - 그리고 자바스크립트에서는 사실 모든 [[함수(Function)]]가 클로저인 셈이다.
 
 
+## 클로저 동작 흐름
+
+```mermaid
+flowchart TD
+  A["makeCounter() 호출\n새로운 렉시컬 환경 생성\ncount = 0"]
+  B["내부 함수 생성\ncounter.[[Environment]] →\nmakeCounter 렉시컬 환경 참조 저장"]
+  C["makeCounter() 종료\n스코프 소멸 → BUT 렉시컬 환경 유지\n(counter 함수가 참조 중이므로 GC 대상 아님)"]
+  D["counter() 호출\n새 렉시컬 환경 생성\n외부 참조로 count 접근 → count++"]
+  E["count 값 반환\n(0, 1, 2, ...)"]
+
+  A --> B --> C --> D --> E
+  E -->|"counter() 재호출"| D
+```
+
+- 클로저는 [[함수(Function)]]가 선언된 시점의 [[렉시컬 환경(Lexical Environment)]]을 `[[Environment]]` 속성에 저장하여 외부 함수 종료 후에도 변수에 접근할 수 있게 한다.
+- GC(가비지 컬렉션)는 참조가 남아 있는 렉시컬 환경을 수거하지 않으므로, 클로저가 살아있는 한 외부 변수도 메모리에 유지된다.
+
+
 ## 클로저가 가능한 이유
 
 - 이제 렉시컬 환경이 어떻게 클로저를 가능하게 하는지 살펴보자.
@@ -47,9 +65,9 @@ let counter = makeCounter();
 
 - 다시 한번 언급하지만 실행될 때가 아니고 함수가 만들어질 때다.
 - 위 예시로 들자면 makeCounter가 실행되면 counter 함수는 만들어지기만 한 상태이다. 
-- 이 때 이미 외부 [[렉시컬 환경(Lexical Environment)]] 즉, makeCounter의 렉시컬 환경에 대한 참조를 `counter.[[Enviroment]]` 프로퍼티에 저장한 것이다.
+- 이 때 이미 외부 [[렉시컬 환경(Lexical Environment)]] 즉, makeCounter의 렉시컬 환경에 대한 참조를 `counter.[[Environment]]` 프로퍼티에 저장한 것이다.
 
-- 그리고 counter [[함수(Function)]]가 나중에 호출될 때, 이 때 비로소 counter 함수의 렉시컬 환경 객체가 생성되고, 이 객체가 외부 렉시컬 환경에 대한 참조를 `counter.[[Enviroment]]` [[속성(Property)]]으로부터 가져온다.
+- 그리고 counter [[함수(Function)]]가 나중에 호출될 때, 이 때 비로소 counter 함수의 렉시컬 환경 객체가 생성되고, 이 객체가 외부 렉시컬 환경에 대한 참조를 `counter.[[Environment]]` [[속성(Property)]]으로부터 가져온다.
 - 그렇게 해서 이 counter함수가 언제 어디서 실행되든 이미 만들어질 때 makeCounter의 렉시컬 환경에 대한 참조를 저장했으므로 count 변수를 참조할 수 있다.
 
 - 그리고 이런 것을 클로저라고 한다.

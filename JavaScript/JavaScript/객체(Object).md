@@ -96,10 +96,11 @@ console.log(objWrap);
 /*
 {
 	obj1: {
-		a: "A"
+		a: "A",
 		b: "B"
+	},
 	obj2: {
-		a: "C"
+		a: "C",
 		b: "B"
 	}
 }
