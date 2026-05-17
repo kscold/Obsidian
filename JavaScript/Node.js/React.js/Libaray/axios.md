@@ -1,7 +1,7 @@
-- [[Ajax(Asynchronous JavaScript and XML)]] 요청 시 Response를 자동적으로 [[JSON(Java Script Object Notation)]]으로 바꿔서 보내줌으로 axios 라이브러리를 사용하는게 편하다.
+- [[AJAX(Asynchronous JavaScript and XML)]] 요청 시 Response를 자동적으로 [[JSON(Java Script Object Notation)]]으로 바꿔서 보내줌으로 axios 라이브러리를 사용하는게 편하다.
 - axios 라이브러리는 [[Promise]] [[객체(Object)]]를 공식적으로 지원하기 때문에 [[async await]] 문법이랑 같이 사용할 수 있다.
 
-- axios 라이브러리를 이용하여 이미지나 영상을 업로드하고 싶은 경우, 즉 [[HTML(Hyper Text Markup Language)]] [[<form>]] 태그에 담긴 데이터를 [[Ajax(Asynchronous JavaScript and XML)]] 요청으로 보내고 싶은 경우에는 [[FormData]] [[객체(Object)]]를 이용한다.
+- axios 라이브러리를 이용하여 이미지나 영상을 업로드하고 싶은 경우, 즉 [[HTML(Hyper Text Markup Language)]] [[<form>]] 태그에 담긴 데이터를 [[AJAX(Asynchronous JavaScript and XML)]] 요청으로 보내고 싶은 경우에는 [[FormData]] [[객체(Object)]]를 이용한다.
 
 ## HTML에서 사용하는 방법
 

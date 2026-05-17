@@ -1,4 +1,4 @@
-- @Equals() [[데코레이터(Decorator)]]는 [[class-validator]] [[모델(model)]]에서 제공하는 유효성 검사 [[데코레이터(Decorator)]]로, 특정 값과 같아야 하는지 검증할 때 사용된다. 
+- @Equals() [[데코레이터(Decorator)]]는 [[class-validator]] [[모델(Model)]]에서 제공하는 유효성 검사 [[데코레이터(Decorator)]]로, 특정 값과 같아야 하는지 검증할 때 사용된다. 
 - 반대로 [[@NotEquals()]] [[데코레이터(Decorator)]]도 있다.
 
 - 즉, 필드([[열(Column)]]) 값이 지정된 값과 정확히 일치하는지 확인한다.

@@ -1,5 +1,5 @@
 - [[클래스(class)]]에 직접 속하는 [[메서드(Method)]]이다.
-- [[인스턴스(instance)]]를 생성하지 않고도 호출할 수 있는 메서드이다.
+- [[인스턴스(Instance)]]를 생성하지 않고도 호출할 수 있는 메서드이다.
 - 즉, [[this]] 키워드를 사용할 수 없다.
 
 - [[클래스(class)]] 이름을 통해 직접 호출할 수 있다.
@@ -18,7 +18,7 @@ class Example {
 Example.staticMethod()
 ```
 
-- [[클래스(class)]]의 [[인스턴스(instance)]] 속성에 접근할 수 없다
+- [[클래스(class)]]의 [[인스턴스(Instance)]] 속성에 접근할 수 없다
 - 다른 [[정적 메서드(Static method)]]나 정적 [[속성(Property)]]에는 접근 가능하다
 
 

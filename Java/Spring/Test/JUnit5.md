@@ -6,9 +6,9 @@
 
 ```mermaid
 flowchart LR
-    Platform["JUnit Platform\n(테스트 런처 / IDE 통합)"]
-    Jupiter["JUnit Jupiter\n(JUnit 5 API + 엔진)"]
-    Vintage["JUnit Vintage\n(JUnit 3/4 하위 호환)"]
+    Platform["JUnit Platform<br/>(테스트 런처 / IDE 통합)"]
+    Jupiter["JUnit Jupiter<br/>(JUnit 5 API + 엔진)"]
+    Vintage["JUnit Vintage<br/>(JUnit 3/4 하위 호환)"]
 
     Platform --> Jupiter
     Platform --> Vintage

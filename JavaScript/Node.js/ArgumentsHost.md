@@ -1,6 +1,6 @@
-- [[ExecutionContext]] 인터페이스([[interface]])는 ArgumentsHost 인터페이스([[interface]])를 상위로 두고 있는 것을 확인할 수 있다.
+- [[ExecutionContext]] 인터페이스([[Interface]])는 ArgumentsHost 인터페이스([[Interface]])를 상위로 두고 있는 것을 확인할 수 있다.
 
-- 즉, context는 [[ExecutionContext]]에서 제공하는 [[메서드(Method)]]와 ArgumentsHost에서 제공하는 (위 ArgumentsHost [[interface]] 참조) [[메서드(Method)]]를 사용할 수 있게 된다.
+- 즉, context는 [[ExecutionContext]]에서 제공하는 [[메서드(Method)]]와 ArgumentsHost에서 제공하는 (위 ArgumentsHost [[Interface]] 참조) [[메서드(Method)]]를 사용할 수 있게 된다.
 
 
 ## ArgumentsHost 역할
@@ -14,7 +14,7 @@
 
 ## ArgumentsHost 인터페이스의 구성
 
-- ArgumentsHost 인터페이스([[interface]]) 구성은 아래와 같다.
+- ArgumentsHost 인터페이스([[Interface]]) 구성은 아래와 같다.
 
 ```ts
 export interface ArgumentsHost {

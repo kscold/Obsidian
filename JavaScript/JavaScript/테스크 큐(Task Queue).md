@@ -76,7 +76,7 @@ console.log("end", new Date())
 
 ![](https://blog.kakaocdn.net/dn/odxEo/btsiM9eNaUQ/DhCi8WlybuE3GSrhr7TukK/img.png)
 
-- 그림에서도 볼 수 있듯이 개발하면서 자주 사용했던 [[Ajax(Asynchronous JavaScript and XML)]], [[setTimeout()]]과 같은 [[비동기(asynchronous)]] 처리들은 자바스크립트가 해주는게 아니라 [[Web API]]영역에 따로 정의되어 있다. 
+- 그림에서도 볼 수 있듯이 개발하면서 자주 사용했던 [[AJAX(Asynchronous JavaScript and XML)]], [[setTimeout()]]과 같은 [[비동기(asynchronous)]] 처리들은 자바스크립트가 해주는게 아니라 [[Web API]]영역에 따로 정의되어 있다. 
 
 - Node.js에서는 동시성을 위해 libuv라이브러리를 도입했는데, 이 libuv라이브러리가 [[이벤트 루프(Event Loop)]]를 제공한다.
 

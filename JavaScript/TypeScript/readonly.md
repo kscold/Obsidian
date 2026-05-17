@@ -1,4 +1,4 @@
-- [[타입스크립트(TypeScript)]]의 타입 시스템은 [[interface]] [[속성(Property)]]을 readonly(읽기 전용)으로 지정할 수 있게 해준다. 
+- [[타입스크립트(TypeScript)]]의 타입 시스템은 [[Interface]] [[속성(Property)]]을 readonly(읽기 전용)으로 지정할 수 있게 해준다. 
 - 이를 통해 [[함수형 프로그래밍(Functional Programming)]] 방식이 가능해진다.
 
 
@@ -17,7 +17,7 @@ let config = { bar: 123, bas: 123 };
 foo(config); // config가 변경되지 않는다고 확신할 수 있음
 ```
 
-- 당연히 readonly는 [[interface]]와 [[type]] 정의에서 모두 사용할 수 있다.
+- 당연히 readonly는 [[Interface]]와 [[type]] 정의에서 모두 사용할 수 있다.
 
 ```ts
 type Foo = {

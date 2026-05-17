@@ -28,7 +28,7 @@ ROLLBACK;            -- 모두 취소
 
 ```mermaid
 flowchart LR
-    RU["READ UNCOMMITTED\n(가장 낮음)"] --> RC["READ COMMITTED"] --> RR["REPEATABLE READ\n(MySQL 기본)"] --> S["SERIALIZABLE\n(가장 높음)"]
+    RU["READ UNCOMMITTED<br/>(가장 낮음)"] --> RC["READ COMMITTED"] --> RR["REPEATABLE READ<br/>(MySQL 기본)"] --> S["SERIALIZABLE<br/>(가장 높음)"]
 ```
 
 | 격리 수준 | Dirty Read | Non-Repeatable Read | Phantom Read |

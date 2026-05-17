@@ -9,10 +9,10 @@
 
 ```mermaid
 flowchart LR
-    Controller["Controller\n(adapter/in/web)"] -->|UseCase 호출| AppService["ApplicationService\n(application/service)"]
-    AppService -->|도메인 포트 호출| DomainPort["도메인 리포지토리 포트\n(domain/port/out)"]
-    AppService -->|인프라 포트 호출| InfraPort["외부 인프라 포트\n(application/port/out)"]
-    DomainPort -->|구현| RepoAdapter["RepositoryAdapter\n(adapter/out/persistence)"]
+    Controller["Controller<br/>(adapter/in/web)"] -->|UseCase 호출| AppService["ApplicationService<br/>(application/service)"]
+    AppService -->|도메인 포트 호출| DomainPort["도메인 리포지토리 포트<br/>(domain/port/out)"]
+    AppService -->|인프라 포트 호출| InfraPort["외부 인프라 포트<br/>(application/port/out)"]
+    DomainPort -->|구현| RepoAdapter["RepositoryAdapter<br/>(adapter/out/persistence)"]
 ```
 
 ## 코드 예시

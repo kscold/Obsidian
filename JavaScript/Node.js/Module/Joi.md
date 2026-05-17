@@ -1,4 +1,4 @@
-- [[객체(Object)]] 형식의 [[SQL/스키마(Schema)|스키마(Schema)]]와 적용된 [[모델(model)]]을 가지고 있을 때 Joi [[모듈(Module)]]을 이용하려 검증할 수 있다.
+- [[객체(Object)]] 형식의 [[SQL/스키마(Schema)|스키마(Schema)]]와 적용된 [[모델(Model)]]을 가지고 있을 때 Joi [[모듈(Module)]]을 이용하려 검증할 수 있다.
 - [[NestJS]]에서는 [[환경 변수]]에서 많이 사용한다.
 
 

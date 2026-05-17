@@ -32,7 +32,7 @@
 ## 인터셉터 구현
 
 - 인터셉터도 [[@Injectable()]] [[데코레이터(Decorator)]]를 통해 [[의존성 주입(Dependency Injection)]]을 받는다.
-- 이후 [[implements]]를 통해 [[NestInterceptor]] 인터페이스([[interface]])를 [[상속(Inheritance)]]받는 것이 안전하다.
+- 이후 [[implements]]를 통해 [[NestInterceptor]] 인터페이스([[Interface]])를 [[상속(Inheritance)]]받는 것이 안전하다.
 
 - 웹스톰에서는 [[NestInterceptor]]를 [[상속(Inheritance)]]받으면 intercept [[메서드(Method)]]는 자동으로 구현된다.
 

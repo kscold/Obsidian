@@ -1,4 +1,4 @@
-- [[HTML(Hyper Text Markup Language)]]에서도 충분히 폼([[<form>]]) 데이터를 다룰수 있고 자바스크립트([[노드(Node.js)]])에서 [[Ajax(Asynchronous JavaScript and XML)]]로 폼([[<form>]]) 전송을 할 일이 거의 없다고 보면 된다.
+- [[HTML(Hyper Text Markup Language)]]에서도 충분히 폼([[<form>]]) 데이터를 다룰수 있고 자바스크립트([[노드(Node.js)]])에서 [[AJAX(Asynchronous JavaScript and XML)]]로 폼([[<form>]]) 전송을 할 일이 거의 없다고 보면 된다.
 
 - 하지만 [[HTML(Hyper Text Markup Language)]]이 아닌 자바스크립트 단 에서 form 전송 동작이 필요한 경우가 있는데, 이미지 같은 멀티미디어 파일을 페이지 전환 없이 폼 데이터를 [[비동기(asynchronous)]]로 제출 하고 싶을 때나, 자바스크립트로 좀더 타이트하게 폼 데이터를 관리하고 싶을때 formData [[객체(Object)]]를 이용한다고 보면 된다.
 

@@ -14,7 +14,7 @@
 
 ## ExecutionContext 인터페이스([[Interface]])의 구조
 
-- 인터페이스([[interface]])인 [[ArgumentsHost]]를 인터페이스([[interface]]) ExecutionContext로 [[상속(Inheritance)]]하고 있는 구조이다.
+- 인터페이스([[Interface]])인 [[ArgumentsHost]]를 인터페이스([[Interface]]) ExecutionContext로 [[상속(Inheritance)]]하고 있는 구조이다.
 
 ```ts
 export interface ExecutionContext extends ArgumentsHost {

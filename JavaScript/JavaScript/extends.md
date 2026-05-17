@@ -3,7 +3,7 @@
 
 - 어떤 [[클래스(class)]]를 상속받고 싶을 때 하위 클래스에 extends [[키워드(Keyword)]]를 사용하면 상속받을 수 있다.
 
-- [[타입스크립트(TypeScript)]]에서는 [[implements]] 키워드를 통해서, [[interface]]와 [[클래스(class)]]를 동시에 확장할 수 있다.
+- [[타입스크립트(TypeScript)]]에서는 [[implements]] 키워드를 통해서, [[Interface]]와 [[클래스(class)]]를 동시에 확장할 수 있다.
 
 
 ## 예시

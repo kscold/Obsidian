@@ -6,17 +6,17 @@
 
 ```mermaid
 flowchart TD
-    R["루트 노드\n[30, 70]"] --> L["내부 노드\n[10, 20]"]
-    R --> M["내부 노드\n[40, 60]"]
-    R --> RR["내부 노드\n[80, 90]"]
+    R["루트 노드<br/>[30, 70]"] --> L["내부 노드<br/>[10, 20]"]
+    R --> M["내부 노드<br/>[40, 60]"]
+    R --> RR["내부 노드<br/>[80, 90]"]
 
-    L --> LL["리프\n[1~9]"]
-    L --> LM["리프\n[10~19]"]
-    L --> LR["리프\n[20~29]"]
+    L --> LL["리프<br/>[1~9]"]
+    L --> LM["리프<br/>[10~19]"]
+    L --> LR["리프<br/>[20~29]"]
 
-    M --> ML["리프\n[30~39]"]
-    M --> MM["리프\n[40~59]"]
-    M --> MR["리프\n[60~69]"]
+    M --> ML["리프<br/>[30~39]"]
+    M --> MM["리프<br/>[40~59]"]
+    M --> MR["리프<br/>[60~69]"]
 ```
 
 - 모든 리프 노드가 같은 깊이 → **균형 트리(Balanced)** 유지.
@@ -48,10 +48,10 @@ flowchart LR
 ```mermaid
 flowchart TD
     subgraph Clustered["클러스터형 인덱스 (Primary Key)"]
-        I1["PK 순서로\n물리적 데이터 정렬"]
+        I1["PK 순서로<br/>물리적 데이터 정렬"]
     end
     subgraph NonClustered["비클러스터형 인덱스 (Secondary Index)"]
-        I2["별도 인덱스 구조\n→ 실제 데이터 포인터"]
+        I2["별도 인덱스 구조<br/>→ 실제 데이터 포인터"]
     end
 ```
 
@@ -87,9 +87,9 @@ flowchart TD
 ```mermaid
 flowchart TD
     Q{쿼리 패턴?}
-    Q -->|등호 조건만| A["단일 인덱스\n(= 조회)"]
-    Q -->|범위/정렬 포함| B["복합 인덱스\n(Composite Index)"]
-    Q -->|JSONB/배열 포함| C["GIN 인덱스\n(MongoDB/PostgreSQL)"]
+    Q -->|등호 조건만| A["단일 인덱스<br/>(= 조회)"]
+    Q -->|범위/정렬 포함| B["복합 인덱스<br/>(Composite Index)"]
+    Q -->|JSONB/배열 포함| C["GIN 인덱스<br/>(MongoDB/PostgreSQL)"]
     Q -->|전문 검색| D["Text 인덱스"]
     Q -->|분산 환경 샤딩| E["Hash 인덱스"]
 ```

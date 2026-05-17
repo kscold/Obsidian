@@ -16,15 +16,23 @@
                 "file": "Spring/Spring Security/Spring Security.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Spring Security"
             }
           },
           {
             "id": "8f3154af782b40a8",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Spring/SQL/MySQL/정규화(Normalization).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "정규화(Normalization)"
             }
           }
         ],
@@ -47,8 +55,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
             }
           },
           {
@@ -63,7 +74,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "검색"
             }
           },
           {
@@ -71,7 +84,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
             }
           }
         ]
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/Spring Security/Spring Security.md",
+                "file": "Spring/SQL/MySQL/정규화(Normalization).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +117,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "정규화(Normalization) 의 백링크"
             }
           },
           {
@@ -111,10 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/Spring Security/Spring Security.md",
+                "file": "Spring/SQL/MySQL/정규화(Normalization).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "정규화(Normalization) 의 나가는 링크"
             }
           },
           {
@@ -124,8 +143,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
             }
           },
           {
@@ -134,8 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/Spring Security/Spring Security.md"
-              }
+                "file": "Spring/SQL/MySQL/정규화(Normalization).md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "정규화(Normalization) 의 개요"
             }
           }
         ]
@@ -147,10 +175,11 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:퀵 스위처 열기": false,
+      "switcher:빠른 전환기 열기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "bases:새 베이스 생성하기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
       "obsidian-file-cleaner:Clean files": false
@@ -158,35 +187,39 @@
   },
   "active": "8f3154af782b40a8",
   "lastOpenFiles": [
-    "Spring/@Transactional.md",
+    "Spring/SQL/MySQL/인덱스(Index).md",
+    "Spring/데이터베이스 인덱스 구조(Index Structure).md",
+    "Spring/SQL/MySQL/데이터 타입(Data Type).md",
+    "Spring/SQL/MySQL/MySQL(MariaDB).md",
+    "Spring/SQL/관계형 데이터베이스(Relational DataBase).md",
+    "Spring/SQL/PostgreSQL/시퀀스(Sequence).md",
+    "Spring/SQL/PostgreSQL/JSONB.md",
+    "Spring/SQL/PostgreSQL/PostgreSQL.md",
+    "Spring/SQL/MySQL/정규화(Normalization).md",
+    "Spring/SQL/MySQL/트랜잭션(Transaction).md",
+    "Spring/SQL/PostgreSQL",
+    "Spring/SQL/MySQL",
+    "Spring/MongoDB/집계(Aggregation).md",
+    "Spring/MongoDB/MongoDB 인덱스(Index).md",
+    "Spring/MongoDB/MongoDB.md",
+    "Spring/MongoDB/원자적 업데이트(Atomic Update).md",
+    "Spring/MongoDB/Spring Data MongoDB.md",
+    "Spring/MongoDB/MongoTemplate.md",
+    "Spring/MongoDB/@Document.md",
+    "Spring/MongoDB",
+    "Spring/JPA/orphanRemoval.md",
+    "Spring/JPA/cascade.md",
+    "Spring/클린 아키텍처(Clean Architecture).md",
+    "Spring/ApplicationService.md",
+    "Spring/@ExceptionHandler.md",
+    "Spring/SQL/?(Placeholder).md",
+    "Java/인터페이스(Interface).md",
+    "Java/인스턴스(Instance).md",
+    "Spring/Spring Security/Spring Security.md",
+    "도구",
     "image/Pasted image 20231012133632.png",
     "image/무제 폴더",
-    "Java/클래스(Class).md",
-    "Java/생성자(constructor).md",
-    "Java/메서드(Method).md",
-    "Java/@Override.md",
-    "Java/어노테이션(Annotation).md",
-    "인텔리제이 단축키.md",
-    "Spring/객체(Object).md",
-    "Spring/SQL/SELECT.md",
-    "Spring/dependency/GSON.md",
-    "Spring/JPA/@JoinColumn.md",
-    "Java/싱글톤(Singleton).md",
-    "Spring/Bean.md",
-    "Java/new.md",
-    "Spring/모델(Model).md",
     "Spring/dependency",
-    "Spring/SQL/JOIN.md",
-    "Spring/Spring Security/CSRF.md",
-    "Spring/Spring Security/Spring Security.md",
-    "Spring/Spring Security/권한(Authority).md",
-    "Spring/Spring Security/SimpleGrantedAuthority.md",
-    "Spring/Spring Security/인가(Authorization).md",
-    "Spring/Spring Security/인증(Authentication).md",
-    "Spring/JPA/lombok/@log4j2.md",
-    "Spring/JPA/로깅(logging).md",
-    "Java/멀티스레드(Multi Thread).md",
-    "Spring/JPA/lombok/@SIf4j.md",
     "Spring/Spring Security",
     "image/Pasted image 20240229173714.png",
     "image/Pasted image 20240229150251.png",
@@ -200,10 +233,6 @@
     "Spring/Servlet",
     "Spring/DBCP",
     "Spring/JDBC",
-    "Java/Collection",
-    "Java/Stream",
-    "Spring/JPA/CrudRepository",
-    "Spring/Test",
     "무제 파일.canvas"
   ]
 }

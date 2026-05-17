@@ -1,34 +1,38 @@
 {
   "main": {
-    "id": "41f9b0789da54713",
+    "id": "2c7ac8d05c315f98",
     "type": "split",
     "children": [
       {
-        "id": "cee12ea71d5cbd01",
+        "id": "2e2e517992a857fb",
         "type": "tabs",
         "children": [
           {
-            "id": "a4ed7fde30125de2",
+            "id": "9db507b6fec1ef2b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Node.js/NestJS/예외 필터(Exception Filter).md",
+                "file": "Node.js/NestJS/ParseIntPipe.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "예외 필터(Exception Filter)"
+              "title": "ParseIntPipe"
             }
           },
           {
-            "id": "81def5fa027cf9eb",
+            "id": "a0e05b59280deab7",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "Node.js/NestJS/@EntityRepository().md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "@EntityRepository()"
             }
           }
         ],
@@ -38,15 +42,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "56061eb476080e2f",
+    "id": "f3b52b6dadfc3d3e",
     "type": "split",
     "children": [
       {
-        "id": "77ede7323b6233e3",
+        "id": "4109aac8135f1224",
         "type": "tabs",
         "children": [
           {
-            "id": "edc002dfb78ff5ff",
+            "id": "67651722b3a9ffdd",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -59,12 +63,12 @@
             }
           },
           {
-            "id": "c7b66afbe4b4fb9c",
+            "id": "7484972186288f30",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "필터",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,36 +80,35 @@
             }
           },
           {
-            "id": "2f0aee990ff1ba98",
+            "id": "00b7e42db7267bf3",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "북마크"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 294.5
+    "width": 300
   },
   "right": {
-    "id": "84986afa53e23371",
+    "id": "0e22ebc24e5de657",
     "type": "split",
     "children": [
       {
-        "id": "5aafa4364abc1727",
+        "id": "6e2500ccca190e1d",
         "type": "tabs",
         "children": [
           {
-            "id": "ffec422825df7692",
+            "id": "09e122bb3e0c4801",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Node.js/Module/TypeORM/TypeORM.count().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,50 +118,53 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "TypeORM.count()의 백링크"
+              "title": "백링크"
             }
           },
           {
-            "id": "a49e6a1179dc5192",
+            "id": "b4690b23c09a89ce",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Node.js/Module/TypeORM/TypeORM.count().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "TypeORM.count()의 나가는 링크"
+              "title": "나가는 링크"
             }
           },
           {
-            "id": "3768f1d6818aa340",
+            "id": "a239061370be8a41",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "태그"
             }
           },
           {
-            "id": "f221564cf52b2dbf",
+            "id": "546c5c1f0cf59630",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Node.js/Module/TypeORM/TypeORM.count().md"
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "TypeORM.count() 개요"
+              "title": "개요"
             }
           },
           {
-            "id": "ca92f7b7c5084a2c",
+            "id": "3d910cebc844bc30",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -168,7 +174,7 @@
             }
           },
           {
-            "id": "ac8def0b8c42554b",
+            "id": "2fcb9257455c9e75",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -178,7 +184,7 @@
             }
           },
           {
-            "id": "d57488202c508a89",
+            "id": "e97b8b46899a6b6f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -188,7 +194,7 @@
             }
           },
           {
-            "id": "20ad9a53a9c5c474",
+            "id": "eedc0190b4b563f8",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -198,7 +204,7 @@
             }
           },
           {
-            "id": "6edab18bc62753ad",
+            "id": "6387e1b25863871d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -208,7 +214,7 @@
             }
           },
           {
-            "id": "6ddbaf5d85615d6c",
+            "id": "5ef96349359ad412",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -218,7 +224,7 @@
             }
           },
           {
-            "id": "d5bc34b288ef7d40",
+            "id": "76fd103c18f4be84",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -228,7 +234,7 @@
             }
           },
           {
-            "id": "5ab786654d32eb70",
+            "id": "a83ef00f6d50ca43",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -238,37 +244,7 @@
             }
           },
           {
-            "id": "3167f4e5e3abf5d4",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "f516539d216ca766",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "caad62930701b88d",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "87bcdb40f8b20d55",
+            "id": "e07da40faf69fa37",
             "type": "leaf",
             "state": {
               "type": "Saved Queries View",
@@ -278,7 +254,7 @@
             }
           }
         ],
-        "currentTab": 15
+        "currentTab": 12
       }
     ],
     "direction": "horizontal",
@@ -287,63 +263,45 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:새 베이스 생성하기": false,
       "switcher:빠른 전환기 열기": false,
-      "daily-notes:오늘의 일일 노트 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "81def5fa027cf9eb",
+  "active": "67651722b3a9ffdd",
   "lastOpenFiles": [
-    "Node.js/Module/TypeORM/TypeORM.md",
-    "JavaScript/확산 연산자(spread operator).md",
-    "JavaScript/참조 타입(Reference Type).md",
-    "JavaScript/함수(Function).md",
-    "JavaScript/비동기(asynchronous).md",
-    "JavaScript/동기(Synchronous).md",
-    "JavaScript/메서드(Method).md",
-    "JavaScript/객체(Object).md",
-    "예외 레이어(Exception Layer).md",
-    "Node.js/NestJS/예외 필터(Exception Filter).md",
-    "Node.js/NestJS/필터(Filter).md",
-    "예외 필터(Exception Filters).md",
-    "Node.js/NestJS/커스텀 필터(Filter).md",
-    "Node.js/React.js/컴포넌트(Component).md",
-    "JavaScript/중복 정의(Overloading).md",
-    "image/Pasted image 20250303201617.png",
-    "Node.js/Module/RxJS/tap().md",
-    "Node.js/Module/RxJS/delay().md",
-    "Node.js/Module/RxJS/RxJS(Reactive Extensions For JavaScript).md",
+    "Node.js/React.js/SyntheticEvent.md",
+    "Node.js/환경 변수.md",
+    "Node.js/REPL.md",
+    "Node.js/노드(Node.js).md",
+    "Node.js/버퍼(Buffer).md",
+    "Node.js/NestJS/예외 필터(Exception Filters).md",
+    "Node.js/NestJS/예외 레이어(Exception Layer).md",
+    "JavaScript/커링 함수(Curry Function).md",
+    "CSS/SCSS/@function.md",
+    "SQL/일대다(OneToMany).md",
+    "Node.js/모델(Model).md",
+    "JavaScript/웹(Web).md",
+    "JavaScript/이벤트 루프(Event Loop).md.tmp.81754.08c522e8c1cc",
+    "JavaScript/렉시컬 환경(Lexical Environment).md.tmp.81754.60c0b2142eea",
+    "JavaScript/렉시컬 환경(Lexical Environment).md.tmp.81754.95e46c5f65b7",
+    "Node.js/NestJS/@EntityRepository().md",
+    "Node.js/NestJS/커스텀 가드(Custom Garud).md",
+    "Claude.md",
+    "Node.js/NestJS/커스텀 파이프(Custom Pipe).md",
+    "Node.js/NestJS/커스텀 데코레이터(Custom Decorator).md",
     "Node.js/NestJS/인터셉터(Interceptor).md",
-    "image/Pasted image 20250301181155.png",
-    "Node.js/NestJS/@UseInterceptors().md",
-    "Node.js/RBAC(Role Based Access Control).md",
-    "SQL/사용자(USER).md",
-    "JavaScript/재정의(Override).md",
-    "중복 정의(Overloading).md",
-    "Node.js/Module/@nestjs/jwt/jwtService.signAsync.md",
-    "Node.js/Module/@nestjs/jwt/jwtService.decode.md",
-    "Node.js/Module/@nestjs/config",
-    "Node.js/Module/@nestjs/config",
-    "Node.js/Module/@nestjs/jwt",
-    "Node.js/Module/@nestjs",
-    "image/Pasted image 20241128222801.png",
-    "image/Pasted image 20241128222713.png",
-    "image/Pasted image 20241128222640.png",
-    "image/Pasted image 20241128222551.png",
-    "image/Pasted image 20241128222453.png",
-    "implement/process",
-    "implement/skill",
-    "image/Pasted image 20241124170503.png",
-    "image/Pasted image 20241124170436.png",
-    "image/Pasted image 20241123191251.png",
-    "MIN ",
-    "Node.js/Module/class-transformer",
-    "Node.js/Module/RxJS",
-    "Node.js/Module/Swagger",
-    "Untitled.canvas",
-    "무제 파일.canvas"
+    "Node.js/NestJS/필터(Filter).md",
+    "Node.js/NestJS/Built-in pipe.md",
+    "Node.js/NestJS/CanActivate.md",
+    "Node.js/NestJS/Data Transformation.md",
+    "Node.js/NestJS/ConfigModule.md",
+    "Node.js/NestJS/ArgumentMetadata.md",
+    "Node.js/NestJS/AOP(Aspect-Oriented Programming).md",
+    "Node.js/NestJS/ConflictException().md"
   ]
 }

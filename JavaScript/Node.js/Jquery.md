@@ -4,7 +4,7 @@
 
 - jQuery는 MIT 라이선스로 배포되는 무료 오픈소스 소프트웨어이다.
 
-- jQuery는 여러 브라우저에서 동작하는 사용하기 쉬운 API를 통해 [[HTML(Hyper Text Markup Language)]] 문서 탐색과 조작, [[이벤트(event)]] 처리, 애니메이션, [[Ajax(Asynchronous JavaScript and XML)]] 등을 훨씬 더 간단하게 만들어준다.
+- jQuery는 여러 브라우저에서 동작하는 사용하기 쉬운 API를 통해 [[HTML(Hyper Text Markup Language)]] 문서 탐색과 조작, [[이벤트(event)]] 처리, 애니메이션, [[AJAX(Asynchronous JavaScript and XML)]] 등을 훨씬 더 간단하게 만들어준다.
 
 
 ## HTML 문서 탐색

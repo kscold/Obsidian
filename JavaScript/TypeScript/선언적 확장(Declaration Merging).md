@@ -1,4 +1,4 @@
-- 선언적 확장(Declaration Merging)은  [[타입스크립트(TypeScript)]]에서 같은 이름의 [[interface]]를 선언하면, 자동으로 확장되는 것을 의미한다.
+- 선언적 확장(Declaration Merging)은  [[타입스크립트(TypeScript)]]에서 같은 이름의 [[Interface]]를 선언하면, 자동으로 확장되는 것을 의미한다.
 
 
 ## 예시

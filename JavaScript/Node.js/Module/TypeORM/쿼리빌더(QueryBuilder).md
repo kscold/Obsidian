@@ -34,7 +34,7 @@ const firstUser = await dataSource
 
 - [[데이터베이스(DataBase)]] 관계가 복잡해질 수록 기존 [[리포지토리(Repository)]]를 이용한 [[메서드(Method)]]들을 통한 [[CRUD]] 사용이 어려워지는 경우가 존재한다고 한다.  
 
-- 예를들어 [[일대다(OnetoMany)]] 관계의 user, board [[연관 관계(Relationships)]]에 comment 댓글 기능을 추가한다고 가정한다.
+- 예를들어 [[일대다(OneToMany)]] 관계의 user, board [[연관 관계(Relationships)]]에 comment 댓글 기능을 추가한다고 가정한다.
 - user와 board와 [[다대일(ManyToOne)]] 관계를 맺는 comment entity가 추가되었을 때, 관련된 userRepo.save(), boardRepo.save()가 오작동하게 되며, query builder로 refactoring을 해야 하는 경우가 생긴다.
 - 따라서 [[연관 관계(Relationships)]]를 맺은 특정 [[테이블(Table)]]을 조회하기 위해선 직접 query builder로 [[쿼리(Query)]]를 작성해야 한다.  
   

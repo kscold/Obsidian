@@ -14,8 +14,8 @@
 
 ```mermaid
 flowchart TD
-    Req[HTTP 요청] --> Auth[인증 완료\nSecurityContext에 Authentication 저장]
-    Auth --> Check{authorizeHttpRequests\n규칙 매칭}
+    Req[HTTP 요청] --> Auth[인증 완료<br/>SecurityContext에 Authentication 저장]
+    Auth --> Check{authorizeHttpRequests<br/>규칙 매칭}
     Check -->|permitAll| Allow[접근 허용]
     Check -->|authenticated| AuthCheck{인증됨?}
     AuthCheck -->|Yes| Allow

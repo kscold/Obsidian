@@ -2,12 +2,12 @@
 
 - 그리고 canActivate() [[메서드(Method)]]를 안에 [[가드(Guard)]]의 로직을 작성할 수 있다.
 
-- CanActivate는 [[가드(Guard)]]에서 [[상속(Inheritance)]]하는 인터페이스([[interface]])이다.
+- CanActivate는 [[가드(Guard)]]에서 [[상속(Inheritance)]]하는 인터페이스([[Interface]])이다.
 
 
 ## CanActivate 구조
 
-- CanActive 인터페이스([[interface]])의 구조는 아래와 같다.
+- CanActive 인터페이스([[Interface]])의 구조는 아래와 같다.
 
 ```ts
 export interface CanActivate {

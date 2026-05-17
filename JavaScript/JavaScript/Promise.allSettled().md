@@ -38,11 +38,11 @@ promise.then((data) => {
 	0:
 		reason: Error: 에러: 이름이 없어요 // 만약 실패했다고 가정
 		status: "rejected"
-		[[Prototype]]: Object
+		[[prototype]]: Object
 	1:
 		status: "fulfilled"
 		value: "밥먹기"
-		[[Prototype]]: Object
+		[[prototype]]: Object
 	length: 2
-	[[Prototype]]: Array(0)
+	[[prototype]]: Array(0)
 ```

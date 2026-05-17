@@ -3,7 +3,7 @@
 - 예를들어, 입력 데이터의 유효성검사, 데이터 변환, 비즈니스 로직 처리 등이 가능하다. 
 - 이에 따라 [[파이프(Pipe)]] 로직도 다양하게 작성될수도 있다.
 
-- 커스텀 파이프를 만드려면 [[PipeTransform]] 인터페이스([[interface]])를 구현하는 [[클래스(class)]]를 작성해야 한다. 
+- 커스텀 파이프를 만드려면 [[PipeTransform]] 인터페이스([[Interface]])를 구현하는 [[클래스(class)]]를 작성해야 한다. 
 
 
 
@@ -13,7 +13,7 @@
 ## 커스텀 파이프 선언 방법
 
 - [[NestJS]]의 [[의존성 주입(Dependency Injection)]]를 사용하기 위해 [[@Injectable()]]를 한다.
-- [[PipeTransform]] 인터페이스([[interface]])는 [[transform()]] [[메서드(Method)]]를 정의한다.
+- [[PipeTransform]] 인터페이스([[Interface]])는 [[transform()]] [[메서드(Method)]]를 정의한다.
 - [[ArgumentMetadata]] [[메서드(Method)]]의 [[매개변수(parameter)]] 정보를 포함하며, [[메서드(Method)]]로 전달되는 인자의 메타데이터를 나타낸다.
 
 - BadRequestException 등을 통해 유효성 검사 실패시 던질 예외 [[HTTP 응답 상태(status)]] 400 등을 반환한다.

@@ -6,7 +6,7 @@
 
 ```mermaid
 flowchart LR
-    Input[Collection 입력] --> M["$match\n(필터)"] --> G["$group\n(그룹화)"] --> P["$project\n(필드 선택)"] --> S["$sort\n(정렬)"] --> L["$limit\n(결과 수 제한)"] --> Output[결과]
+    Input[Collection 입력] --> M["$match<br/>(필터)"] --> G["$group<br/>(그룹화)"] --> P["$project<br/>(필드 선택)"] --> S["$sort<br/>(정렬)"] --> L["$limit<br/>(결과 수 제한)"] --> Output[결과]
 ```
 
 - 각 단계의 출력이 다음 단계의 입력이 된다.

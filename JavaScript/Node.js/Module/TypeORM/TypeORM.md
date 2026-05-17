@@ -13,7 +13,7 @@
 
 - TypeORM의 [[데코레이터(Decorator)]]를 사용하면 관련 [[엔티티(Entity)]]에서 쉽게 사용 가능하며 다음과 같은 유형의 관계 설정이 가능하다.
 
- - [[일대일(OneToOne)]] - [[@OneToOne()]],  [[다대일(ManyToOne)]] - [[@ManyToOne()]], [[일대다(OnetoMany)]] - [[@OneToMany()]], [[다대다(ManyToMany)]] - [[@ManyToMany()]]로 표현할 수 있다.
+ - [[일대일(OneToOne)]] - [[@OneToOne()]],  [[다대일(ManyToOne)]] - [[@ManyToOne()]], [[일대다(OneToMany)]] - [[@OneToMany()]], [[다대다(ManyToMany)]] - [[@ManyToMany()]]로 표현할 수 있다.
  - 이런 TypeORM의 연관관계 설정 [[데코레이터(Decorator)]]는 모두 다 [[매개변수(parameter)]]는 type, inverseSide, option를 가진다.
  
 ### Option

@@ -2,7 +2,7 @@
 
 ## LifeCycle 다이어그램
 
-![notion image](https://www.rldnd.net/_next/image?url=https%3A%2F%2Fwww.notion.so%2Fimage%2Fhttps%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252F442cd1be-1041-4a55-b613-f7fe3a999b63%252Flifecycle-events.png%3Ftable%3Dblock%26id%3D07cd8b96-ffc5-4650-8a62-6dcb08174c22%26cache%3Dv2&w=2048&q=75)
+![notion image|90](https://www.rldnd.net/_next/image?url=https%3A%2F%2Fwww.notion.so%2Fimage%2Fhttps%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252F442cd1be-1041-4a55-b613-f7fe3a999b63%252Flifecycle-events.png%3Ftable%3Dblock%26id%3D07cd8b96-ffc5-4650-8a62-6dcb08174c22%26cache%3Dv2&w=2048&q=75)
 
 - 순서는 아래와 같이 간단하게 3가지로 정리할 수 있다.
 

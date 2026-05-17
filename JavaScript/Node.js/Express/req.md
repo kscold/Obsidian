@@ -47,7 +47,7 @@
 - 요청 호스트 이름을 반환하는 간단한 메서드. 조작될 수 있으므로 보안 목적으로는 사용하면 안된다.
 ### req.xhr
 
-- 요청이 [[Ajax(Asynchronous JavaScript and XML)]] 호출로 시작되었다면 true를 반환하는 프로퍼티이다.
+- 요청이 [[AJAX(Asynchronous JavaScript and XML)]] 호출로 시작되었다면 true를 반환하는 프로퍼티이다.
 ### req.protocol
 
 - 현재 요청의 프로토콜을 구분한다.

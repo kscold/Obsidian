@@ -28,8 +28,8 @@ flowchart LR
         Redis
     end
 
-    RDB -->|스키마 고정\nACID 보장| UseRDB[정형 데이터\n복잡한 관계]
-    NoSQL -->|스키마 유연\n수평 확장 용이| UseNoSQL[비정형 데이터\n대규모 분산]
+    RDB -->|스키마 고정<br/>ACID 보장| UseRDB[정형 데이터<br/>복잡한 관계]
+    NoSQL -->|스키마 유연<br/>수평 확장 용이| UseNoSQL[비정형 데이터<br/>대규모 분산]
 ```
 
 | 항목 | 관계형 DB | NoSQL |

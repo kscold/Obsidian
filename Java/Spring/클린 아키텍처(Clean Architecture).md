@@ -10,7 +10,7 @@ flowchart TD
         subgraph Middle["인터페이스 어댑터 (Interface Adapters)"]
             subgraph Inner["유스케이스 (Use Cases)"]
                 subgraph Core["엔티티 (Entities)"]
-                    E[도메인 모델\n비즈니스 규칙]
+                    E[도메인 모델<br/>비즈니스 규칙]
                 end
                 U[애플리케이션 비즈니스 규칙]
             end

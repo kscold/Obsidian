@@ -13,7 +13,7 @@
 
 ![](https://blog.kakaocdn.net/dn/bMlLfs/btqFQ9i1iD3/ZQE2tqi7lx7LUhTwK1tDtK/img.png)
 
-- 브라우저에서의 자바스크립트 실행 환경(Runtime)에서는 자바스크립트 엔진 자체가 제공하지 않는 일부 기능인 [[DOM(Document Object Model)]] 조작이나 [[Ajax(Asynchronous JavaScript and XML)]] 같은 **비동기 처리를 위한** [[Web API]]를 제공한다.
+- 브라우저에서의 자바스크립트 실행 환경(Runtime)에서는 자바스크립트 엔진 자체가 제공하지 않는 일부 기능인 [[DOM(Document Object Model)]] 조작이나 [[AJAX(Asynchronous JavaScript and XML)]] 같은 **비동기 처리를 위한** [[Web API]]를 제공한다.
 
 - 또, 이를 제어하기 위한 과정을 [[이벤트 루프(Event Loop)]]라고 부르며 이 [[이벤트 루프(Event Loop)]] 안에는 [[호출 스택(Call Stack)]]과  [[테스크 큐(Task Queue)]]가 존재한다.
 
