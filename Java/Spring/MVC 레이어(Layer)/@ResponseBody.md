@@ -1,23 +1,57 @@
-- 스프링에서 [[비동기(Asynchronous)]] 응답(Response) 처리를 하는 경우 @ResponseBody를 사용한다.
-- 자바 [[객체(Object)]]를 [[HTTP]] 요청의 body(본문) 내용으로 매핑하여 클라이언트로 전송한다.
+- `@ResponseBody`는 [[컨트롤러(Controller)]] [[메서드(Method)]]의 반환값을 [[HTTP]] 응답 body에 직접 직렬화해서 전송하는 [[어노테이션(Annotation)]]이다.
+- `HttpMessageConverter`가 미디어타입(`application/json` 등)에 맞게 자바 [[객체(Object)]]를 변환한다.
+- [[@RestController]] 사용 시 클래스 전체에 묵시적으로 적용된다.
 
-- @ResponseBody가 붙은 매개변수가 있으면 [[HTTP]]요청의 미디어타입과 매개변수의 타입을 먼저 확인한다.
-- dispatcher-servlet.xml 의 `<annotation-drvien>` 태그 내에 선언하는 `<message-converter>` 에서 확인한다.
+## 동작 원리
 
-![](https://blog.kakaocdn.net/dn/Ljh4L/btq4dcqj9lb/kNckzEIKwF6tXQ4z4ItSC0/img.png)
+```mermaid
+flowchart LR
+    M["Controller 메서드<br/>반환값"] --> C["HttpMessageConverter"]
+    C -->|"application/json"| J["JSON 직렬화<br/>(MappingJackson2HttpMessageConverter)"]
+    C -->|"text/plain"| T["문자열 반환<br/>(StringHttpMessageConverter)"]
+    J & T --> R["HTTP Response Body"]
+```
 
-- 메세지 변환기 중에서 해당 미디어타입과 파라미터 타입을 처리할 수 있다면, HTTP요청의 본문 부분을 통째로 변환해서 지정된 [[메서드(Method)]] 매개변수로 전달해준다.
+- 클라이언트의 `Accept` 헤더와 메서드 반환 타입을 확인해 적절한 `HttpMessageConverter`를 선택한다.
+- `MappingJackson2HttpMessageConverter`가 객체를 JSON으로 변환하는 것이 일반적이다.
+
+## 사용 예시
 
 ```java
-@ResponseBody
-@RequestMapping(value = "/ajaxTest.do")
-public UserVO ajaxTest() throws Exception {
+// @Controller에서 개별 메서드에 명시
+@Controller
+public class UserController {
 
-  UserVO userVO = new UserVO();
-  userVO.setId("테스트");
+    @ResponseBody
+    @GetMapping("/api/users/{id}")
+    public UserResponse getUser(@PathVariable Long id) {
+        return userService.findById(id);
+    }
+}
 
-  return userVO;
+// @RestController를 사용하면 @ResponseBody 생략 가능
+@RestController
+public class UserController {
+
+    @GetMapping("/api/users/{id}")
+    public UserResponse getUser(@PathVariable Long id) {
+        return userService.findById(id);
+    }
 }
 ```
 
-- 즉, @Responsebody [[어노테이션(Annotation)]]을 사용하면 [[HTTP]] 요청 body를 자바 [[객체(Object)]]로 전달받을 수 있다.
+## @RequestBody와의 차이
+
+| 어노테이션 | 방향 | 역할 |
+| ---- | ---- | ---- |
+| `@ResponseBody` | 응답 (서버 → 클라이언트) | 반환값 → HTTP body 직렬화 |
+| `@RequestBody` | 요청 (클라이언트 → 서버) | HTTP body → 자바 객체 역직렬화 |
+
+## 관련
+
+- [[@RestController]]
+- [[@Controller]]
+- [[@RequestBody]]
+- [[HTTP]]
+- [[JSON(Java Script Object Notation)]]
+- [[DispatcherServlet]]
