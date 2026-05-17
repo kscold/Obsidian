@@ -1,4 +1,4 @@
-- HikariCP는 **Spring Boot 기본 내장 커넥션 풀 라이브러리**이다.
+- HikariCP는 **Spring Boot 기본 내장 [[DBCP(Database Connection Pool)]] 라이브러리**이다.
 - "오버헤드 제로"를 표방하며, 약 130KB의 경량 라이브러리로 성능이 매우 뛰어나다.
 - [[DBCP(Database Connection Pool)]]를 구현한 라이브러리 중 가장 빠른 것으로 알려져 있다.
 - Spring Boot 2.0부터 기본 커넥션 풀로 채택되어 별도 설정 없이 자동 적용된다.
@@ -43,7 +43,7 @@ spring:
 | ---- | ---- | ---- |
 | `maximum-pool-size` | 10 | 풀의 최대 커넥션 수. 초과 요청은 대기. |
 | `minimum-idle` | maximum-pool-size와 동일 | 항상 유지할 최소 유휴 커넥션 수. |
-| `connection-timeout` | 30,000ms | 커넥션이 없을 때 대기 최대 시간. 초과 시 SQLException. |
+| `connection-timeout` | 30,000ms | 커넥션이 없을 때 대기 최대 시간. 초과 시 [[SQL]]Exception. |
 | `idle-timeout` | 600,000ms | 유휴 커넥션이 풀에서 제거되기 전 대기 시간. |
 | `max-lifetime` | 1,800,000ms | 커넥션 최대 수명. DB의 wait_timeout보다 짧게 설정해야 함. |
 | `keepalive-time` | 0 (비활성) | 설정 시 해당 주기마다 DB에 keepalive 쿼리 전송. |
@@ -83,7 +83,7 @@ GET /actuator/metrics/hikaricp.connections.pending   # 대기 중인 요청 수
 
 ## max-lifetime과 DB wait_timeout 관계
 
-- MySQL의 `wait_timeout` (기본 8시간): 유휴 연결을 DB가 강제로 끊는 시간.
+- [[MySQL(MariaDB)]]의 `wait_timeout` (기본 8시간): 유휴 연결을 DB가 강제로 끊는 시간.
 - HikariCP `max-lifetime`은 **항상 DB wait_timeout보다 짧게** 설정해야 한다.
 - 그렇지 않으면 DB가 먼저 끊은 연결을 풀이 재사용하여 `Communications link failure` 에러 발생.
 

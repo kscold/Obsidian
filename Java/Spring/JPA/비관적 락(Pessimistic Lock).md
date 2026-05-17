@@ -1,5 +1,5 @@
-- 비관적 락(Pessimistic Lock)은 **충돌이 자주 발생할 것이라고 비관적으로 가정**하고, 미리 DB 락을 걸어 다른 트랜잭션의 접근을 막는 동시성 제어 방식이다.
-- `SELECT ... FOR UPDATE` SQL로 동작하며 해당 Row에 배타적 락(X-Lock)을 건다.
+- 비관적 락(Pessimistic Lock)은 **충돌이 자주 발생할 것이라고 비관적으로 가정**하고, 미리 DB 락을 걸어 다른 [[트랜잭션(Transaction)]]의 접근을 막는 동시성 제어 방식이다.
+- `SELECT ... FOR UPDATE` [[SQL]]로 동작하며 해당 Row에 배타적 락(X-Lock)을 건다.
 - 락을 획득하지 못한 트랜잭션은 **락이 해제될 때까지 대기**한다.
 - [[낙관적 락(Optimistic Lock)]]과 달리 충돌 자체를 원천 차단하므로 **데이터 정합성이 강력히 보장**된다.
 
@@ -20,7 +20,7 @@ sequenceDiagram
     B->>DB: COMMIT
 ```
 
-## @Lock 어노테이션
+## @Lock [[어노테이션(Annotation)]]
 
 ```java
 public interface StockRepository extends JpaRepository<Stock, Long> {
@@ -41,7 +41,7 @@ public interface StockRepository extends JpaRepository<Stock, Long> {
 | LockModeType | SQL | 다른 읽기 | 다른 쓰기 |
 | ---- | ---- | ---- | ---- |
 | `PESSIMISTIC_WRITE` | `SELECT FOR UPDATE` | 대기 | 대기 |
-| `PESSIMISTIC_READ` | `SELECT FOR SHARE` (MySQL: `LOCK IN SHARE MODE`) | 허용 | 대기 |
+| `PESSIMISTIC_READ` | `SELECT FOR SHARE` ([[MySQL([[MySQL(MariaDB)]])]]: `LOCK IN SHARE MODE`) | 허용 | 대기 |
 | `PESSIMISTIC_FORCE_INCREMENT` | `SELECT FOR UPDATE` + version 증가 | 대기 | 대기 |
 
 ## 재고 감소 예시 (실무 패턴)
@@ -94,7 +94,7 @@ public interface StockRepository extends JpaRepository<Stock, Long> {
 }
 ```
 
-## 낙관적 락 vs 비관적 락 선택 기준
+## [[낙관적 락(Optimistic Lock)]] vs 비관적 락 선택 기준
 
 | 상황 | 권장 방식 |
 | ---- | ---- |

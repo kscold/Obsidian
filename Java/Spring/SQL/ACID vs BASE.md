@@ -1,10 +1,10 @@
 - ACID와 BASE는 **분산 데이터베이스 시스템의 두 가지 일관성 모델**이다.
-- ACID는 **관계형 데이터베이스(RDBMS)**의 트랜잭션 보장 원칙이다.
+- ACID는 **[[관계형 데이터베이스(Relational DataBase)]](RDBMS)**의 [[트랜잭션(Transaction)]] 보장 원칙이다.
 - BASE는 **NoSQL 분산 데이터베이스**에서 가용성과 성능을 위해 일관성을 일부 포기하는 모델이다.
 
 ## ACID
 
-- **관계형 DB(MySQL, PostgreSQL)가 트랜잭션에서 보장하는 4가지 성질**.
+- **관계형 DB([[MySQL(MariaDB)]], [[PostgreSQL]])가 트랜잭션에서 보장하는 4가지 성질**.
 
 | 속성 | 영문 | 설명 |
 | ---- | ---- | ---- |
@@ -37,7 +37,7 @@ COMMIT;
 
 ## BASE
 
-- **분산 NoSQL DB(MongoDB, Cassandra, DynamoDB 등)**에서 사용하는 일관성 모델.
+- **분산 NoSQL DB([[MongoDB]], Cassandra, DynamoDB 등)**에서 사용하는 일관성 모델.
 - ACID의 강한 일관성 대신 **가용성과 성능을 우선시**한다.
 
 | 속성 | 영문 | 설명 |

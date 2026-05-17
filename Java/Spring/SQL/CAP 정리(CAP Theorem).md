@@ -34,7 +34,7 @@ flowchart TD
 
 - 네트워크 분할 발생 시 **응답을 거부(에러 반환)**하여 일관성을 유지한다.
 - 오래된 데이터를 절대 반환하지 않는다.
-- 예: MongoDB (기본 설정), HBase, Zookeeper, Redis
+- 예: [[MongoDB]] (기본 설정), HBase, Zookeeper, Redis
 
 ```
 노드 A: 쓰기 완료 (재고=9)
@@ -57,7 +57,7 @@ flowchart TD
 ### CA 시스템 (일관성 + 가용성)
 
 - **분산 환경에서는 이론적으로 불가능** — 네트워크 분할을 완전히 막을 수 없기 때문.
-- 단일 노드 RDBMS(MySQL, PostgreSQL 단독 서버)가 여기에 해당하지만, 분산 환경에서는 P가 발생한다.
+- 단일 노드 RDBMS([[[[MySQL(MariaDB)]]]], [[PostgreSQL]] 단독 서버)가 여기에 해당하지만, 분산 환경에서는 P가 발생한다.
 
 ## 주요 DB의 CAP 분류
 
@@ -96,7 +96,7 @@ L 또는 C 선택 (Latency vs Consistency)
 
 - **금융, 결제, 재고**: 일관성 우선 → CP 시스템 또는 단일 RDBMS.
 - **SNS 피드, 뉴스 피드**: 가용성 우선 → AP 시스템 (Cassandra, MongoDB).
-- **글로벌 서비스 캐싱**: 각 리전별 독립 + 결과적 일관성 허용.
+- **글로벌 [[서비스(Service)]] 캐싱**: 각 리전별 독립 + 결과적 일관성 허용.
 
 ## 관련
 

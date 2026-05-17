@@ -1,6 +1,6 @@
 - 낙관적 락(Optimistic Lock)은 **충돌이 드물 것이라고 낙관적으로 가정**하고, 실제 충돌이 발생했을 때 감지하는 동시성 제어 방식이다.
 - DB 락을 걸지 않고 `@Version` 컬럼으로 버전 번호를 관리하여 충돌을 감지한다.
-- 충돌 감지 시 `OptimisticLockException`을 던지며 트랜잭션이 롤백된다.
+- 충돌 감지 시 `OptimisticLockException`을 던지며 [[트랜잭션(Transaction)]]이 롤백된다.
 - [[비관적 락(Pessimistic Lock)]]과 달리 DB 락 없이 동작하므로 **읽기 성능이 좋다**.
 
 ## 동작 원리
@@ -18,7 +18,7 @@ sequenceDiagram
     DB-->>B: 0 rows affected → OptimisticLockException
 ```
 
-## @Version 어노테이션
+## @Version [[어노테이션(Annotation)]]
 
 ```java
 @Entity
@@ -33,10 +33,10 @@ public class Post {
 }
 ```
 
-- 엔티티 수정 시 JPA가 자동으로 `WHERE version = ?` 조건을 추가하고 버전을 1 증가시킨다.
+- [[엔티티(entity)]] 수정 시 JPA가 자동으로 `WHERE version = ?` 조건을 추가하고 버전을 1 증가시킨다.
 - 버전 불일치 → 업데이트된 row가 0개 → `OptimisticLockException` 발생.
 
-## UPDATE 쿼리 확인
+## [[UPDATE]] 쿼리 확인
 
 ```sql
 -- JPA가 내부적으로 실행하는 UPDATE
@@ -94,12 +94,12 @@ public interface PostRepository extends JpaRepository<Post, Long> {
 | `OPTIMISTIC` | @Version 기반 기본 낙관적 락 |
 | `OPTIMISTIC_FORCE_INCREMENT` | 읽기 시에도 버전 증가 (집계 엔티티 등 간접 수정 감지) |
 
-## 낙관적 락 vs 비관적 락
+## 낙관적 락 vs [[비관적 락(Pessimistic Lock)]]
 
 | 항목 | 낙관적 락 | 비관적 락 |
 | ---- | ---- | ---- |
 | 충돌 가정 | 드물다 | 자주 발생한다 |
-| DB 락 | 없음 | SELECT FOR UPDATE |
+| DB 락 | 없음 | [[SELECT]] FOR UPDATE |
 | 성능 | 읽기 빠름 | 락 대기 시간 발생 |
 | 충돌 시 | OptimisticLockException | 락 획득 대기 |
 | 적합한 상황 | 읽기 많고 충돌 드문 경우 | 재고/잔액 등 충돌 빈번한 경우 |

@@ -1,6 +1,6 @@
-- N+1 문제는 **연관된 엔티티를 조회할 때 예상치 못하게 N개의 추가 쿼리가 발생**하는 JPA 성능 문제이다.
-- 1번의 쿼리로 N개의 엔티티를 가져온 뒤, 각 엔티티의 연관 객체를 조회하느라 N번의 추가 쿼리가 실행된다.
-- **지연 로딩(LAZY)** 설정에서 연관 객체에 접근할 때 주로 발생한다.
+- N+1 문제는 **연관된 [[엔티티(entity)]]를 조회할 때 예상치 못하게 N개의 추가 쿼리가 발생**하는 [[JPA(Java Persistence API)]] 성능 문제이다.
+- 1번의 쿼리로 N개의 [[엔티티(entity)]]를 가져온 뒤, 각 [[엔티티(entity)]]의 연관 [[객체(Object)]]를 조회하느라 N번의 추가 쿼리가 실행된다.
+- **[[지연 로딩(Lazy Loading)]](LAZY)** 설정에서 연관 객체에 접근할 때 주로 발생한다.
 
 ## 발생 원리
 
@@ -17,8 +17,8 @@ flowchart TD
 // Post - User 다대일 관계 (LAZY 기본)
 @Entity
 public class Post {
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "author_id")
+    @ManyToOne(fetch = FetchType.LAZY)   // [[Fetch Type]] 참고
+    @JoinColumn(name = "author_id")       // [[외래 키(Foreign Key)]] 컬럼
     private User author;
 }
 
@@ -33,9 +33,9 @@ public void problem() {
 }
 ```
 
-## 해결방법 1: fetch join (JPQL)
+## 해결방법 1: [[fetch Join]] ([[JPQL(Java Persitence Query Language)]])
 
-- 가장 기본적인 해결책. **연관 엔티티를 한 번의 JOIN 쿼리로 함께 조회**한다.
+- 가장 기본적인 해결책. **연관 엔티티를 한 번의 [[JOIN]] 쿼리로 함께 조회**한다.
 - 페이징과 함께 `@OneToMany` fetch join은 메모리에서 처리되어 성능 문제 발생 가능.
 
 ```java
@@ -51,10 +51,10 @@ public interface PostRepository extends JpaRepository<Post, Long> {
 // → 쿼리 1번으로 Post + User 동시 조회
 ```
 
-## 해결방법 2: @EntityGraph
+## 해결방법 2: [[[[@[[엔티티(entity)]]]]Graph]]
 
-- JPQL 없이 어노테이션으로 fetch join과 동일한 효과를 낼 수 있다.
-- Spring Data JPA 메서드명 쿼리와 함께 사용 가능.
+- JPQL 없이 [[어노테이션(Annotation)]]으로 fetch join과 동일한 효과를 낼 수 있다.
+- [[JPA(Java Persistence API)]] 메서드명 쿼리와 함께 사용 가능.
 
 ```java
 public interface PostRepository extends JpaRepository<Post, Long> {
@@ -93,10 +93,10 @@ SELECT * FROM users WHERE id IN (1, 2, 3, ..., 100)
 -- N번이 아닌 ceil(N/100)번으로 줄어듦
 ```
 
-## 해결방법 4: DTO 직접 조회 (가장 성능 좋음)
+## 해결방법 4: [[DTO(Data Transfer Object)]] 직접 조회 (가장 성능 좋음)
 
 - 엔티티 대신 **DTO를 직접 반환하는 JPQL**을 작성한다.
-- 필요한 컬럼만 SELECT하므로 데이터 전송량도 줄어든다.
+- 필요한 컬럼만 [[SELECT]]하므로 데이터 전송량도 줄어든다.
 
 ```java
 // DTO 클래스
@@ -118,7 +118,7 @@ public interface PostRepository extends JpaRepository<Post, Long> {
 
 | 방법 | 코드 변경 | 페이징 | 여러 컬렉션 | 권장 상황 |
 | ---- | ---- | ---- | ---- | ---- |
-| fetch join | 쿼리 작성 | @OneToMany 주의 | 불가 (카테시안 곱) | 단순 연관 조회 |
+| fetch join | 쿼리 작성 | [[일대다(OnetoMany)]] 주의 | 불가 (카테시안 곱) | 단순 연관 조회 |
 | @EntityGraph | 어노테이션 | @OneToMany 주의 | 불가 | 메서드명 쿼리 + 연관 |
 | @BatchSize | 설정만 | 가능 | 가능 | 컬렉션 페이징 |
 | DTO 조회 | 쿼리 작성 | 가능 | 가능 | 읽기 전용 API, 성능 최적화 |
