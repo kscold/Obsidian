@@ -1,4 +1,4 @@
-- ApplicationEvent는 [[스프링 컨테이너(Spring Container)]]가 제공하는 **이벤트 발행/구독 메커니즘**으로, 같은 JVM 내의 [[빈(Bean)]]들이 직접 의존하지 않고 메시지로만 협력하게 해준다.
+- ApplicationEvent는 [[스프링 컨테이너(Spring Container)]]가 제공하는 **이벤트 발행/구독 메커니즘**으로, 같은 JVM 내의 [[Bean]]들이 직접 의존하지 않고 메시지로만 협력하게 해준다.
 - 발행자(Publisher)는 `ApplicationEventPublisher.publishEvent(event)`를 호출하고, 구독자(Listener)는 `@EventListener` 또는 `@TransactionalEventListener`로 받는다.
 
 - Spring 4.2+부터 임의의 [[객체(Object)]]가 이벤트가 될 수 있다 (예전엔 `ApplicationEvent` 상속 필요).
