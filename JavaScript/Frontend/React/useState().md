@@ -27,3 +27,62 @@ const onIncrease = useCallback(
 ```jsx
 const [form, setForm] = useState({ username: '', message: '' });
 ```
+
+## 함수형 업데이트(Functional Update)
+
+- 이전 상태를 기반으로 새 상태를 계산해야 할 때 `setState(prev => newValue)` 형태를 사용한다.
+- [[비동기(asynchronous)]] 콜백이나 [[클로저(Closure)]] 안에서 최신 상태를 안전하게 참조할 수 있다.
+
+```js
+// 잘못된 방법 — 동시 호출 시 최신 값 반영 안 됨
+setCount(count + 1);
+setCount(count + 1); // 두 번 호출해도 1만 증가
+
+// 올바른 방법 — 항상 이전 상태 기반으로 증가
+setCount(prev => prev + 1);
+setCount(prev => prev + 1); // 정확히 2 증가
+```
+
+## 스테일 클로저(Stale Closure) 문제
+
+- `setTimeout`, 이벤트 핸들러 등 [[클로저(Closure)]] 안에서 `state`를 참조하면, 클로저가 생성된 시점의 값을 캡처한다.
+- 이 문제는 [[useRef()]]로 최신 상태를 추적하거나, 함수형 업데이트로 해결한다.
+
+```js
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  const handleDelayedAlert = () => {
+    setTimeout(() => {
+      // 클릭 시점의 count를 캡처 — 이후 setCount 호출해도 이 값은 바뀌지 않음
+      alert(`클릭 시점의 count: ${count}`);
+    }, 3000);
+  };
+
+  return (
+    <>
+      <p>{count}</p>
+      <button onClick={() => setCount(c => c + 1)}>증가</button>
+      <button onClick={handleDelayedAlert}>3초 후 알림</button>
+    </>
+  );
+}
+```
+
+## 객체/배열 상태 업데이트
+
+- `state`가 [[객체(Object)]]나 배열인 경우, 반드시 **새 참조**를 만들어야 React가 변경을 감지한다.
+
+```js
+// 잘못된 방법 — 기존 객체 직접 수정
+const [user, setUser] = useState({ name: '홍길동', age: 20 });
+user.age = 21; // 참조 동일 → 리렌더링 안 됨
+setUser(user);
+
+// 올바른 방법 — 스프레드로 새 객체 생성
+setUser(prev => ({ ...prev, age: 21 }));
+
+// 배열 — push 금지, 새 배열 생성
+setItems(prev => [...prev, newItem]);
+setItems(prev => prev.filter(item => item.id !== targetId));
+```
