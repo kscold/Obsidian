@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/SQL/MySQL/정규화(Normalization).md",
+                "file": "Spring/SQL/MySQL/트랜잭션(Transaction).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "정규화(Normalization)"
+              "title": "트랜잭션(Transaction)"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/SQL/MySQL/정규화(Normalization).md",
+                "file": "Spring/SQL/MySQL/트랜잭션(Transaction).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "정규화(Normalization) 의 백링크"
+              "title": "트랜잭션(Transaction) 의 백링크"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/SQL/MySQL/정규화(Normalization).md",
+                "file": "Spring/SQL/MySQL/트랜잭션(Transaction).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "정규화(Normalization) 의 나가는 링크"
+              "title": "트랜잭션(Transaction) 의 나가는 링크"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/SQL/MySQL/정규화(Normalization).md",
+                "file": "Spring/SQL/MySQL/트랜잭션(Transaction).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "정규화(Normalization) 의 개요"
+              "title": "트랜잭션(Transaction) 의 개요"
             }
           }
         ]
@@ -187,6 +187,13 @@
   },
   "active": "8f3154af782b40a8",
   "lastOpenFiles": [
+    "Spring/SQL/CAP 정리(CAP Theorem).md",
+    "Spring/SQL/ACID vs BASE.md",
+    "Spring/JPA/비관적 락(Pessimistic Lock).md",
+    "Spring/JPA/낙관적 락(Optimistic Lock).md",
+    "Spring/JPA/N+1 문제(N+1 Problem).md",
+    "Spring/JPA/영속성 컨텍스트(Persistence Context).md",
+    "Spring/SQL/MySQL/정규화(Normalization).md",
     "Spring/SQL/MySQL/인덱스(Index).md",
     "Spring/데이터베이스 인덱스 구조(Index Structure).md",
     "Spring/SQL/MySQL/데이터 타입(Data Type).md",
@@ -195,7 +202,6 @@
     "Spring/SQL/PostgreSQL/시퀀스(Sequence).md",
     "Spring/SQL/PostgreSQL/JSONB.md",
     "Spring/SQL/PostgreSQL/PostgreSQL.md",
-    "Spring/SQL/MySQL/정규화(Normalization).md",
     "Spring/SQL/MySQL/트랜잭션(Transaction).md",
     "Spring/SQL/PostgreSQL",
     "Spring/SQL/MySQL",
@@ -210,12 +216,6 @@
     "Spring/JPA/orphanRemoval.md",
     "Spring/JPA/cascade.md",
     "Spring/클린 아키텍처(Clean Architecture).md",
-    "Spring/ApplicationService.md",
-    "Spring/@ExceptionHandler.md",
-    "Spring/SQL/?(Placeholder).md",
-    "Java/인터페이스(Interface).md",
-    "Java/인스턴스(Instance).md",
-    "Spring/Spring Security/Spring Security.md",
     "도구",
     "image/Pasted image 20231012133632.png",
     "image/무제 폴더",
