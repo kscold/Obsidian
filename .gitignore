@@ -65,3 +65,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/obsidian,macos,windows
+
+# Claude Code 로컬 전용 파일
+Claude.md
