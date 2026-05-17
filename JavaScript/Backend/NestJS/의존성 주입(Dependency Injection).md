@@ -41,3 +41,44 @@ export class BoardsController {
 	constructor(private boardsService: BoardsService) {}
 }
 ```
+
+## Provider 타입
+
+- NestJS의 `@Module()` providers 배열에는 단순 클래스 외에도 여러 방식으로 의존성을 등록할 수 있다.
+
+| 타입 | 용도 |
+|------|------|
+| `useClass` | 클래스를 직접 등록 (기본값) |
+| `useValue` | 상수, 설정값, Mock 객체 등록 |
+| `useFactory` | 팩토리 함수로 동적으로 인스턴스 생성 |
+| `useExisting` | 기존 프로바이더의 별칭(alias) 생성 |
+
+```ts
+@Module({
+  providers: [
+    // useClass (기본)
+    UserService,
+
+    // useValue — 설정 객체나 Mock 주입
+    { provide: 'CONFIG', useValue: { apiUrl: 'https://api.example.com' } },
+
+    // useFactory — 비동기 설정, 조건부 생성
+    {
+      provide: 'DB_CONNECTION',
+      useFactory: async (config: ConfigService) => {
+        return await createConnection(config.get('DATABASE_URL'));
+      },
+      inject: [ConfigService],
+    },
+
+    // useExisting — 별칭
+    { provide: 'AliasService', useExisting: UserService },
+  ],
+})
+export class AppModule {}
+```
+
+- [[프로바이더(Provider)]]는 `provide` 키로 토큰을 지정하고, 해당 토큰으로 `@Inject()`하여 주입받는다.
+- [[useFactory]]는 `inject` 배열에 의존성을 명시하면 팩토리 함수의 인자로 순서대로 전달된다.
+- [[ConfigModule]]과 함께 `useFactory`를 조합하면 환경변수 기반 동적 설정 주입이 가능하다.
+```
