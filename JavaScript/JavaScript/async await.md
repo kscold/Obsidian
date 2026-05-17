@@ -82,10 +82,31 @@ async function fetchData() {
 	const response = await fetch("https://jsonplaceholder.typicode.com/users");
 	const data = await response.json()
 
-	console.log(resopnse);
+	console.log(response);
 }
 
 fetchData()
 ```
 
 
+## async/await와 Promise의 관계
+
+- `async` 함수는 항상 [[Promise]]를 반환한다. 일반 값을 `return`하면 자동으로 `Promise.resolve(값)`으로 감싼다.
+- `await`는 [[Promise]]가 `settled` 상태가 될 때까지 현재 `async` 함수의 실행을 일시 중단한다. 단, 메인 스레드를 블로킹하지 않는다.
+- `async/await`는 [[Promise]] 체이닝의 가독성을 높인 **문법적 설탕(Syntactic Sugar)**이다.
+
+```js
+// Promise 체이닝 방식
+function fetchUser() {
+  return fetch('/api/user')
+    .then(res => res.json())
+    .then(data => data.name);
+}
+
+// async/await 방식 (동일한 동작)
+async function fetchUser() {
+  const res = await fetch('/api/user');
+  const data = await res.json();
+  return data.name;
+}
+```

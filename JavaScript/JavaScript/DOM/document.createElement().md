@@ -2,9 +2,9 @@
 - createElement [[메서드(Method)]] 태그 이름을 넣어 요소 생성할 수 있다.
 
 
-## crrateElement 태그의 attribute 추가 방법
+## createElement 태그의 attribute 추가 방법
 
-- crrateElement()로 [[인스턴스(Instance)]]를 만들어서 속성(attribute)을 추가하는 방법이다.
+- createElement()로 [[인스턴스(Instance)]]를 만들어서 속성(attribute)을 추가하는 방법이다.
 
 ```js
 // element로 li 태그 생성

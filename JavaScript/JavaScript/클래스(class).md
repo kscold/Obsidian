@@ -3,7 +3,7 @@
 - 자바스크립트는 사실 일반적인 클래스 개념이 아닌 프로토타입([[prototype]])기반의 언어이다.
 - 따라서 [[prototype]]를 통해 초기 [[메서드(Method)]] 정의 및 오버라이딩이 가능하다.
 
-- ES6부터 추가된 class [[키워드(Keyword)]]는 직관적으로 쉽게 코드를 읽을 수 있게 만들어 줄 뿐만 아니라, 작성하기도 쉽고 또 class 기반 언어에 익숙한 개발자가 더 빠르게 적응할 수 있다.
+- ES6부터 추가된 class [[키워드(Keyword)]]는 직관적으로 쉽게 코드를 읽을 수 있게 만들어 줄 뿐만 아니라, 작성하기도 쉽고 또 class 기반 언어에 익숙한 개발자가 더 빠르게 적응할 수 있다.
 - 즉, 자바와 비슷하게 코딩이 가능해졌다.
 - 정적([[static]])와 메서드는 어떤 특정한 객체가 아닌 클래스에 속한 함수를 구현하고자할 때 주로 사용된다.
 
@@ -69,23 +69,23 @@ class Korean {
 }
 ```
 
-- 자바스크립트에서도 class [[키워드(Keyword)]] 내에 정의된 [[함수(Function)]]를 [[메서드(Method)]]라고 부른다.
+- 자바스크립트에서도 class [[키워드(Keyword)]] 내에 정의된 [[함수(Function)]]를 [[메서드(Method)]]라고 부른다.
 - 또한 class를 통해 생성된 [[객체(Object)]]를 [[인스턴스(Instance)]]라고 부른다.
 
 - 클래스도 [[함수(Function)]]처럼 호출하기 전까지는 코드가 실행되지 않는다. 
-- 우의 예시에서는 단지 Korean이라는 클래스를 정의만 했을 뿐이다.
+- 우의 예시에서는 단지 Korean이라는 클래스를 정의만 했을 뿐이다.
 
 - [[new]] [[키워드(Keyword)]]와 소괄호`()`를 사용하여 호출할 수 있다.
 
-- 클래스 이름은 Korean과 같이 항상 대문자로 시작한다.
+- 클래스 이름은 Korean과 같이 항상 대문자로 시작한다.
 
-- [[constructor()]]는 class에서 필요한 기초 정보([[생성자 함수(Constructor Function)]])를 세팅하는 곳이다.
+- [[constructor()]]는 class에서 필요한 기초 정보([[생성자 함수(Constructor Function)]])를 세팅하는 곳이다.
 
-- [[객체(Object)]]를 [[new]]로 생성할 때 가장먼저 자동으로 호출된다.
-    - [[constructor()]] [[메서드(Method)]]에서 `name`과 `age`, 2개의 [[매개변수(parameter)]]로 `Korean` [[인스턴스(Instance)]]의 `name`, `age` [[속성(Property)]]에 값을 할당했다.
+- [[객체(Object)]]를 [[new]]로 생성할 때 가장먼저 자동으로 호출된다.
+    - [[constructor()]] [[메서드(Method)]]에서 `name`과 `age`, 2개의 [[매개변수(parameter)]]로 `Korean` [[인스턴스(Instance)]]의 `name`, `age` [[속성(Property)]]에 값을 할당했다.
     
-    - [[this]] 는 본인 [[객체(Object)]]를 의미한다. 
-    - 클래스 내에서 [[메서드(Method)]]끼리 소통하기 위해서는 [[this]]가 필요하다.
+    - [[this]] 는 본인 [[객체(Object)]]를 의미한다. 
+    - 클래스 내에서 [[메서드(Method)]]끼리 소통하기 위해서는 [[this]]가 필요하다.
 
 ```js
 let kim = new Korean("KIMJINYOUNG", 24);
@@ -101,7 +101,7 @@ let kim = new Korean("KIMJINYOUNG", 24);
 // >> }
 ```
 
-- 따라서 위와 같이 Korean 클래스를 이용해 kim [[객체(Object)]]를 만들면 위와 같은 [[인스턴스(Instance)]]가 생성된다.
+- 따라서 위와 같이 Korean 클래스를 이용해 kim [[객체(Object)]]를 만들면 위와 같은 [[인스턴스(Instance)]]가 생성된다.
 
 
 ## 자바스크립트의 [[상속(Inheritance)]]
@@ -180,15 +180,88 @@ const oldZero = new Zero('human', 'Zero', 'Cho');
 - 다음은 자바스크립트에서 지원하지 않지만, [[타입스크립트(TypeScript)]]에서 사용할 수 있는 Class와 관련된 기능들이다.
 ### [[readonly]]
 
-- 필드에는 [[readonly]] 제어자를 접두사로 사용할 수 있다.
+- 필드에는 [[readonly]] 제어자를 접두사로 사용할 수 있다.
 - 이렇게 하면 [[생성자 함수(Constructor Function)]]가아닌 곳에서 할당을 방지할 수 있다.
 ### overload
 
 - 자바스크립트는 [[함수(Function)]]의 [[매개변수(parameter)]]의 갯수와 자료형이 자유롭기 때문에, overload에 대한 개념이사실상 없다.
 - 단지, 매개변수의 조건에 따른 분기를 작성하는 정도이다.
 
-- 타입스크립트에서는 다양한 방식으로 호출할 수 있는 [[함수(Function)]]에 대해 구체적으로 오버로드 signature를 작성할 수 있다.
+- 타입스크립트에서는 다양한 방식으로 호출할 수 있는 [[함수(Function)]]에 대해 구체적으로 오버로드 signature를 작성할 수 있다.
 ### override
 
 - [[타입스크립트(TypeScript)]]에서는 파생 클래스가 항상 기본 클래스의 하위 유형이 되도록 한다.
 ### [[접근 제어자(Access modifier)]]
+
+## 접근자(Getter / Setter)
+
+- `get`과 `set` 키워드로 [[속성(Property)]]처럼 접근하지만 내부적으로 [[함수(Function)]]가 실행되는 접근자를 정의한다.
+- 값을 읽을 때 `get`, 값을 쓸 때 `set`이 호출된다.
+- setter에서 유효성 검사나 파생 값 계산에 자주 사용된다.
+
+```js
+class Circle {
+  constructor(radius) {
+    this._radius = radius;
+  }
+
+  get radius() {
+    return this._radius;
+  }
+
+  set radius(value) {
+    if (value < 0) throw new Error('반지름은 0 이상이어야 합니다.');
+    this._radius = value;
+  }
+
+  get area() {
+    return Math.PI * this._radius ** 2;
+  }
+}
+
+const c = new Circle(5);
+console.log(c.radius); // 5
+console.log(c.area);   // 78.53...
+c.radius = 10;
+c.radius = -1; // Error: 반지름은 0 이상이어야 합니다.
+```
+
+## 프라이빗 필드(Private Fields)
+
+- `#` 접두사를 붙인 필드는 클래스 외부에서 접근이 불가능한 진정한 [[캡슐화(Encapsulation)]]를 제공한다.
+- ES2022 표준으로 확정된 문법이며, TypeScript의 `private`과 달리 런타임에서도 실제로 접근이 차단된다.
+
+```js
+class BankAccount {
+  #balance = 0;
+
+  deposit(amount) {
+    this.#balance += amount;
+  }
+
+  get balance() {
+    return this.#balance;
+  }
+}
+
+const account = new BankAccount();
+account.deposit(1000);
+console.log(account.balance);  // 1000
+console.log(account.#balance); // SyntaxError: 클래스 외부에서 접근 불가
+```
+
+## 클래스 상속 구조
+
+```mermaid
+flowchart BT
+  Animal["Animal\n+ name\n+ speak()"]
+  Dog["Dog extends Animal\n+ breed\n+ fetch()"]
+  GuideDog["GuideDog extends Dog\n+ owner\n+ guide()"]
+
+  Dog -->|"extends"| Animal
+  GuideDog -->|"extends"| Dog
+```
+
+- `extends`로 부모 클래스를 상속받으며, `super()`로 부모 [[생성자(Constructor)]]를 호출한다.
+- 자식 클래스는 부모의 모든 [[메서드(Method)]]와 [[속성(Property)]]을 물려받고 재정의(override)할 수 있다.
+- 프로토타입 체인 상에서 `GuideDog.prototype.__proto__ === Dog.prototype`이 성립한다.
