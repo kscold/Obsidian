@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/SQL/MySQL/MySQL(MariaDB).md",
+                "file": "Spring/Test/AssertJ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MySQL(MariaDB)"
+              "title": "AssertJ"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/SQL/MySQL/MySQL(MariaDB).md",
+                "file": "Spring/Test/AssertJ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "MySQL(MariaDB) 의 백링크"
+              "title": "AssertJ 의 백링크"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/SQL/MySQL/MySQL(MariaDB).md",
+                "file": "Spring/Test/AssertJ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "MySQL(MariaDB) 의 나가는 링크"
+              "title": "AssertJ 의 나가는 링크"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/SQL/MySQL/MySQL(MariaDB).md",
+                "file": "Spring/Test/AssertJ.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "MySQL(MariaDB) 의 개요"
+              "title": "AssertJ 의 개요"
             }
           }
         ]
@@ -187,8 +187,15 @@
   },
   "active": "8f3154af782b40a8",
   "lastOpenFiles": [
-    "Spring/SQL/MySQL/트랜잭션(Transaction).md",
+    "Spring/SQL/데드락(Deadlock).md",
+    "Spring/Test/assertThat().md",
+    "Spring/Test/AssertJ.md",
+    "Spring/Test/테스트 메서드(Test Method).md",
+    "Spring/Test/일급 컬렉션(Frist Class Collection).md",
+    "Spring/Test/@WebMvcTest.md",
+    "Spring/JPA/DDL(Data Definition Language).md",
     "Spring/SQL/MySQL/MySQL(MariaDB).md",
+    "Spring/SQL/MySQL/트랜잭션(Transaction).md",
     "Spring/SQL/CAP 정리(CAP Theorem).md",
     "Spring/SQL/ACID vs BASE.md",
     "Spring/JPA/비관적 락(Pessimistic Lock).md",
@@ -208,14 +215,7 @@
     "Spring/MongoDB/집계(Aggregation).md",
     "Spring/MongoDB/MongoDB 인덱스(Index).md",
     "Spring/MongoDB/MongoDB.md",
-    "Spring/MongoDB/원자적 업데이트(Atomic Update).md",
-    "Spring/MongoDB/Spring Data MongoDB.md",
-    "Spring/MongoDB/MongoTemplate.md",
-    "Spring/MongoDB/@Document.md",
     "Spring/MongoDB",
-    "Spring/JPA/orphanRemoval.md",
-    "Spring/JPA/cascade.md",
-    "Spring/클린 아키텍처(Clean Architecture).md",
     "도구",
     "image/Pasted image 20231012133632.png",
     "image/무제 폴더",

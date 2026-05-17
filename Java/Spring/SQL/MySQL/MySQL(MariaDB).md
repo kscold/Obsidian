@@ -51,7 +51,7 @@ runtimeOnly 'com.mysql:mysql-connector-j'
 runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
 ```
 
-## DDL 자동 설정 (ddl-auto)
+## [[DDL(Data Definition Language)]] 자동 설정 (ddl-auto)
 
 | 값 | 동작 | 권장 환경 |
 | ---- | ---- | ---- |
