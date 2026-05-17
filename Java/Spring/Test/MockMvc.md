@@ -1,8 +1,130 @@
-- 애플리케이션을 배포하지 않고도, 서버의 [[MVC(Mode View Controller)]] 동작을 테스트 할 수 있는 MockMvc의 라이브러리이다. 
-- 주로 [[컨트롤러(Controller)]] 레이어 단위테스트에 많이 사용된다.
+- MockMvc는 **실제 서버를 배포하지 않고 [[컨트롤러(Controller)]] 레이어를 테스트**하는 Spring 테스트 프레임워크이다.
+- [[Servlet Container]]를 실제로 띄우지 않고 [[MVC(Mode View Controller)]] 동작을 시뮬레이션한다.
+- [[JUnit5]] + [[AssertJ]]와 함께 사용하며, [[BDD]]의 [[Given-When-Then]] 패턴으로 작성한다.
+- `@WebMvcTest`와 함께 사용하면 웹 계층만 로드하여 빠른 테스트가 가능하다.
 
-- 즉, [[컨트롤러(Controller)]] 테스트를 하고싶을 때 실제 서버에 구현한 애플리케이션을 올리지 않고(실제 서블릿 컨테이너([[Servlet Container]])를 사용하지 않고) 테스트용으로 시뮬레이션하여 [[MVC(Mode View Controller)]]가 되도록 도와주는 클래스다
+## @WebMvcTest — 컨트롤러 슬라이스 테스트 (권장)
 
+- 웹 레이어([[컨트롤러(Controller)]], Filter, HandlerInterceptor)만 로드 → `@Service`, `@Repository`는 제외.
+- 제외된 의존성은 `@MockBean`으로 대체한다.
+
+```java
+@WebMvcTest(PostController.class)
+@AutoConfigureMockMvc(addFilters = false)  // 인증 필터 제외
+class PostControllerTest {
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @Autowired
+    private ObjectMapper objectMapper;  // JSON 변환
+
+    @MockBean
+    private PostUseCase postUseCase;   // 서비스 레이어 Mock
+
+    @Test
+    @DisplayName("게시글 단건 조회 - 200 OK 반환")
+    void getPost_success() throws Exception {
+        // Given
+        PostResponse response = new PostResponse(1L, "Spring Boot 입문", "PUBLISHED");
+        given(postUseCase.findById(1L)).willReturn(response);
+
+        // When & Then
+        mockMvc.perform(get("/api/posts/1")
+                .contentType(MediaType.APPLICATION_JSON))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.id").value(1L))
+            .andExpect(jsonPath("$.title").value("Spring Boot 입문"))
+            .andDo(print());
+    }
+
+    @Test
+    @DisplayName("게시글 생성 - 201 Created 반환")
+    void createPost_success() throws Exception {
+        // Given
+        CreatePostRequest request = new CreatePostRequest("제목", "내용");
+        PostResponse response = new PostResponse(1L, "제목", "DRAFT");
+        given(postUseCase.create(any())).willReturn(response);
+
+        // When & Then
+        mockMvc.perform(post("/api/posts")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(request)))
+            .andExpect(status().isCreated())
+            .andExpect(jsonPath("$.id").value(1L))
+            .andDo(print());
+    }
+
+    @Test
+    @DisplayName("존재하지 않는 게시글 조회 - 404 반환")
+    void getPost_notFound() throws Exception {
+        // Given
+        given(postUseCase.findById(999L))
+            .willThrow(new ResourceNotFoundException("Post not found: 999"));
+
+        // When & Then
+        mockMvc.perform(get("/api/posts/999"))
+            .andExpect(status().isNotFound())
+            .andExpect(jsonPath("$.message").value("Post not found: 999"));
+    }
+}
+```
+
+## @SpringBootTest + MockMvc — 통합 테스트
+
+- 전체 [[스프링 컨테이너(Spring Container)]]를 로드하므로 무겁지만 실제 환경에 가장 가깝다.
+
+```java
+@SpringBootTest
+@AutoConfigureMockMvc
+@Transactional
+class PostApiIntegrationTest {
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @Autowired
+    private PostRepository postRepository;
+
+    @BeforeEach
+    void setUp() {
+        postRepository.deleteAll();
+    }
+}
+```
+
+## @WebMvcTest vs @SpringBootTest
+
+| 항목 | @WebMvcTest | @SpringBootTest |
+| ---- | ---- | ---- |
+| 로드 범위 | 웹 레이어만 | 전체 컨텍스트 |
+| 속도 | 빠름 | 느림 |
+| 실제 DB | X (Mock 사용) | O |
+| @MockBean 필요 | O (서비스 레이어) | X (실제 Bean) |
+
+## jsonPath — JSON 응답 검증
+
+```java
+.andExpect(jsonPath("$.id").value(1))
+.andExpect(jsonPath("$.title").value("Spring Boot"))
+.andExpect(jsonPath("$.items").isArray())
+.andExpect(jsonPath("$.items[0].id").value(1))
+.andExpect(jsonPath("$.id").exists())
+.andExpect(jsonPath("$.deletedAt").doesNotExist())
+```
+
+## Spring Security 인증 테스트
+
+```java
+@Test
+@WithMockUser(username = "user", roles = "USER")   // 인증된 사용자 시뮬레이션
+@DisplayName("인증된 사용자는 게시글 조회 가능")
+void authenticated_returnsPost() throws Exception {
+    given(postUseCase.findById(1L)).willReturn(new PostResponse(1L, "제목", "PUBLISHED"));
+    mockMvc.perform(get("/api/posts/1"))
+        .andExpect(status().isOk());
+}
+```
 
 ## MockMvc 사용법
 

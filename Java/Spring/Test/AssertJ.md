@@ -1,49 +1,189 @@
-- AssertJ는 자바 테스트에서 유창하고 풍부한 assertions를 작성하는데 사용되는 오픈소스 라이브러리이다.
+- AssertJ는 **Java 테스트에서 체이닝(메서드 연결) 방식으로 직관적인 단언(Assertion)을 작성**하는 오픈소스 라이브러리이다.
+- [[JUnit5]]와 함께 사용하며, Spring Boot Test에 기본으로 포함되어 있다.
+- JUnit의 `assertEquals(expected, actual)` 보다 **가독성이 훨씬 높고** 실패 시 메시지도 상세하다.
+- [[BDD]]의 [[Given-When-Then]] 패턴의 Then 단계에서 주로 사용한다.
 
-
-## [[테스트 메서드(Test Method)]]
-
-### [[assertThat()]]
-
-- assertThat은 주로 값을 비교하는 데 사용한다.
-- 예를 들어, [[객체(Object)]]의 [[Java/필드(Field)|필드(Field)]]나 [[메서드(Method)]] 호출 결과와 기대값을 비교할 때 주로 사용된다.
-
-- assertThat은 예외를 기대하지 않는다.
-- 즉, 테스트 메서드 안에서 예외가 발생하면 해당 테스트는 실패한다.
-- assertThat은 값을 검증할 때 사용한다.
+## assertThat() — 값 검증
 
 ```java
-assertThat(actualValue).isEqualTo(expectedValue);
+import static org.assertj.core.api.Assertions.*;
+
+// 기본 동등 비교
+assertThat(post.getTitle()).isEqualTo("Spring Boot 입문");
+assertThat(post.getId()).isNotNull();
+assertThat(post.getStatus()).isEqualTo("PUBLISHED");
+
+// 숫자 비교
+assertThat(post.getViewCount()).isGreaterThan(0);
+assertThat(post.getViewCount()).isBetween(1, 1000);
+assertThat(score).isCloseTo(3.14, offset(0.01));
+
+// Boolean
+assertThat(post.isPublished()).isTrue();
+assertThat(post.isDeleted()).isFalse();
+
+// Null 체크
+assertThat(result).isNull();
+assertThat(result).isNotNull();
+
+// 문자열
+assertThat(title).contains("Spring");
+assertThat(title).startsWith("Spring").endsWith("Boot");
+assertThat(title).hasSize(14);
+assertThat(slug).matches("[a-z0-9-]+");  // 정규식 패턴
 ```
 
-### assertThatCode 
-
-- 예외가 발생하지 않을 때 테스트가 성공한다는 것이다.
-- 에러가 발생하면 안되고 에러가 발생하면 실패한다.
-
-- assertThatCode은 코드 블록을 실행하고 예외가 발생하는 경우에 대한 테스트를 수행한다.
-- 예외가 발생하지 않는 경우 코드 블록이 예상대로 실행됐는지 확인한다.
-
-- 즉, assertThatCode은 코드 블록 실행 중 예외 처리를 검증한다.(주로 예외 처리를 테스트할 때 사용된다.)
-
-- doesNotThrowAnyException()를 붙이면 실행 중 예외가 발생하면 안된다.
+## 컬렉션 검증
 
 ```java
-// 코드 블록 실행 중 예외가 발생하지 않아야 함 
-assertThatCode(() -> someMethod()).doesNotThrowAnyException(); 
+List<Post> posts = postService.findAll();
 
-// 코드 블록 실행 중 특정 예외가 발생해야 함
-assertThatCode(() -> someMethod()).isInstanceOf(SomeException.class)                                   .hasMessageContaining("expected message");`
+// 크기
+assertThat(posts).hasSize(3);
+assertThat(posts).isNotEmpty();
+assertThat(posts).isEmpty();
+
+// 포함 여부
+assertThat(posts).contains(post1, post2);
+assertThat(posts).containsExactly(post1, post2, post3);     // 순서까지 일치
+assertThat(posts).containsExactlyInAnyOrder(post3, post1, post2);  // 순서 무관
+
+// 특정 필드 추출 후 검증
+assertThat(posts)
+    .extracting("title")
+    .containsExactly("제목1", "제목2", "제목3");
+
+// 여러 필드 동시 검증
+assertThat(posts)
+    .extracting("title", "status")
+    .containsExactly(
+        tuple("제목1", "PUBLISHED"),
+        tuple("제목2", "DRAFT")
+    );
+
+// 조건 필터링
+assertThat(posts)
+    .filteredOn(p -> p.getStatus().equals("PUBLISHED"))
+    .hasSize(2);
 ```
 
-- assertThatCode는 예외를 기대하고, 특정 조건을 만족하지 않을 경우에만 테스트를 실패시킨다.
-- [[isinstance()]]
+## 객체 필드 검증
 
-### assertThatThrownBy 
+```java
+Post post = postService.findById(1L);
 
-- 반드시 예외를 발생하는 코드가 존재해야 한다.
-- 테스트하는 코드에서 예외가 발생하지 않으면, 즉각 에러가 터진다.
-- 따라서 ThrowableAssert.ThrowingCallable이나 람다식에서 예외가 발생하는 코드가 발생해야 한다.
+// usingRecursiveComparison: 재귀적으로 모든 필드 비교 (equals 구현 불필요)
+assertThat(post)
+    .usingRecursiveComparison()
+    .ignoringFields("createdAt", "updatedAt")  // 제외할 필드 지정
+    .isEqualTo(expectedPost);
 
-- 즉, AssertThatThrownBy는 에러가 발생해야 하는 상황을 테스트하는 코드인 것이다.
-- 에러가 터져야 하는데 터지지 않으면 실패라고 생각하면 된다.
+// 특정 필드만 검증
+assertThat(post)
+    .hasFieldOrPropertyWithValue("title", "Spring Boot 입문")
+    .hasFieldOrPropertyWithValue("status", "PUBLISHED");
+```
+
+## assertThatThrownBy — 예외 검증
+
+```java
+// 예외가 반드시 발생해야 통과
+assertThatThrownBy(() -> postService.findById(999L))
+    .isInstanceOf(ResourceNotFoundException.class)
+    .hasMessage("Post not found: 999")
+    .hasMessageContaining("not found");
+
+// 예외 발생 + 원인(cause) 확인
+assertThatThrownBy(() -> service.create(command))
+    .isInstanceOf(DuplicateResourceException.class)
+    .hasCauseInstanceOf(DataIntegrityViolationException.class);
+```
+
+## assertThatCode — 예외 발생/미발생 검증
+
+```java
+// 예외가 발생하지 않아야 통과
+assertThatCode(() -> postService.create(validCommand))
+    .doesNotThrowAnyException();
+
+// 예외가 발생해야 하지만, assertThatThrownBy보다 유연한 검증
+assertThatCode(() -> invalidOperation())
+    .isInstanceOf(IllegalArgumentException.class);
+```
+
+## assertThat vs assertThatThrownBy vs assertThatCode 비교
+
+| 메서드 | 목적 | 예외 발생 시 |
+| ---- | ---- | ---- |
+| `assertThat(value)` | 일반 값 검증 | 테스트 실패 |
+| `assertThatThrownBy(lambda)` | 예외 발생을 검증 | 예외 없으면 실패 |
+| `assertThatCode(lambda)` | 예외 없음 또는 예외 검증 | `doesNotThrowAnyException()` 사용 |
+
+## 실제 테스트 코드 종합 예시 (BDD 패턴)
+
+```java
+@DisplayName("PostService 테스트")
+class PostServiceTest {
+
+    private PostService postService;
+    private FakePostRepository fakePostRepository;
+
+    @BeforeEach
+    void setUp() {
+        fakePostRepository = new FakePostRepository();
+        postService = new PostService(fakePostRepository);
+    }
+
+    @Test
+    @DisplayName("제목과 내용으로 게시글을 생성하면 저장된 게시글을 반환한다")
+    void createPost_success() {
+        // Given
+        CreatePostCommand command = new CreatePostCommand("제목", "내용", "PUBLISHED");
+
+        // When
+        Post post = postService.create(command);
+
+        // Then
+        assertThat(post.getId()).isNotNull();
+        assertThat(post.getTitle()).isEqualTo("제목");
+        assertThat(post.getStatus()).isEqualTo("PUBLISHED");
+    }
+
+    @Test
+    @DisplayName("존재하지 않는 게시글 조회 시 ResourceNotFoundException이 발생한다")
+    void findById_notFound_throwsException() {
+        // When & Then
+        assertThatThrownBy(() -> postService.findById(999L))
+            .isInstanceOf(ResourceNotFoundException.class)
+            .hasMessageContaining("999");
+    }
+}
+```
+
+## SoftAssertions — 여러 검증 한꺼번에
+
+```java
+// 일반 assertThat: 첫 번째 실패 시 멈춤
+// SoftAssertions: 모든 검증 실행 후 전체 실패 목록 출력
+
+@Test
+void checkMultipleFields() {
+    SoftAssertions soft = new SoftAssertions();
+
+    soft.assertThat(post.getTitle()).isEqualTo("제목");
+    soft.assertThat(post.getStatus()).isEqualTo("PUBLISHED");
+    soft.assertThat(post.getViewCount()).isGreaterThanOrEqualTo(0);
+
+    soft.assertAll();  // 실패한 검증 전부 출력
+}
+```
+
+## 관련
+
+- [[JUnit5]]
+- [[BDD]]
+- [[Given-When-Then]]
+- [[@Test]]
+- [[@BeforeEach]]
+- [[MockMvc]]
+- [[TDD(Test Driven Development)]]
