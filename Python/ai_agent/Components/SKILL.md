@@ -9,16 +9,26 @@
 
 ## SKILL 패키지 구조
 
-```
-skills/
-├── docx/
-│   ├── SKILL.md          # 무엇을 할 수 있는지 / 언제 호출하는지
-│   ├── helpers.py        # 실제 함수
-│   ├── validators.py
-│   └── scripts/
-└── weather/
-    ├── SKILL.md
-    └── weather.py
+```mermaid
+flowchart TD
+    Skills["skills/"]
+    Docx["docx/"]
+    DocxSkill["SKILL.md<br/>무엇을 할 수 있는지 / 언제 호출하는지"]
+    Helpers["helpers.py<br/>실제 함수"]
+    Validators["validators.py"]
+    Scripts["scripts/"]
+    Weather["weather/"]
+    WeatherSkill["SKILL.md"]
+    WeatherPy["weather.py"]
+
+    Skills --> Docx
+    Docx --> DocxSkill
+    Docx --> Helpers
+    Docx --> Validators
+    Docx --> Scripts
+    Skills --> Weather
+    Weather --> WeatherSkill
+    Weather --> WeatherPy
 ```
 
 ## SKILL.md 형식 (개념)
@@ -40,14 +50,15 @@ when_to_use:
 
 ## Progressive Disclosure 동작
 
-```
-[1] LLM에는 SKILL 카탈로그만 노출 (each: name + 한 줄 설명)
-       ↓ 사용자 발화
-[2] LLM이 관련 SKILL을 선택 (예: "docx")
-       ↓
-[3] 해당 SKILL.md 의 상세 내용과 도구만 로드
-       ↓
-[4] LLM이 도구 호출
+```mermaid
+flowchart TD
+    Catalog["1. LLM에는 SKILL 카탈로그만 노출<br/>name + 한 줄 설명"]
+    User["사용자 발화"]
+    Select["2. LLM이 관련 SKILL 선택<br/>예: docx"]
+    Load["3. 해당 SKILL.md의 상세 내용과 도구만 로드"]
+    Call["4. LLM이 도구 호출"]
+
+    Catalog --> User --> Select --> Load --> Call
 ```
 
 ## Strands 자동 로딩

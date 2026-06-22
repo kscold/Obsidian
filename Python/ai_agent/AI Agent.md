@@ -36,12 +36,14 @@
 ### Frameworks (프레임워크)
 - [[LangChain]]
 - [[LangGraph]]
+- [[LangGraph StateGraph]]
 - [[LlamaIndex]]
 - [[Strands Agents]]
 - [[CrewAI]]
 - [[AutoGen]]
 
 ### Architecture (아키텍처 · 토폴로지)
+- [[LangGraph 워크플로우 아키텍처]]
 - [[Single Agent]]
 - [[Multi Agent]]
 - [[Supervisor 패턴]]
@@ -49,9 +51,13 @@
 - [[Hierarchical Agent]]
 - [[Agent Graph]]
 - [[Agent as Tool]]
+- [[Sub-LLM as Tool]]
 
 ### Components (핵심 구성요소)
 - [[Tool Calling]]
+- [[LangChain @tool]]
+- [[LLM Tool Selection]]
+- [[LangGraph ToolNode]]
 - [[Memory]]
 - [[Planning]]
 - [[Reflection]]
@@ -70,6 +76,16 @@
 - [[LLM Provider 추상화]]
 - [[MCP(Model Context Protocol)]]
 - [[SKILL]]
+
+### LangGraph 실습
+- [[AI Agent 실습 MOC]]
+- [[LangGraph 개념 MOC]]
+- [[LangGraph 문법 치트시트]]
+- [[LangGraph State]]
+- [[LangGraph Node]]
+- [[LangGraph Edge]]
+- [[Workflow Node vs Tool]]
+- [[Retrieve-Generate 패턴]]
 
 ### Python 문법 (인접 폴더)
 - [[LLM(Large Language Model)]]

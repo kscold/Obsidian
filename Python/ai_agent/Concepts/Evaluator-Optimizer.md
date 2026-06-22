@@ -3,12 +3,18 @@
 
 ## 구조
 
-```
-입력 → Optimizer (draft) → Evaluator (score, critique)
-                              ↓
-                  score >= threshold ? → 출력
-                              │ else
-                  critique + draft 를 Optimizer로 되먹임 → 반복
+```mermaid
+flowchart TD
+    Input["입력"]
+    Optimizer["Optimizer<br/>draft 생성"]
+    Evaluator["Evaluator<br/>score, critique"]
+    Check{"score >= threshold?"}
+    Output["출력"]
+    Feedback["critique + draft를<br/>Optimizer로 되먹임"]
+
+    Input --> Optimizer --> Evaluator --> Check
+    Check -- "예" --> Output
+    Check -- "아니오" --> Feedback --> Optimizer
 ```
 
 ## 코드

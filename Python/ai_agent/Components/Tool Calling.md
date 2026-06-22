@@ -3,12 +3,21 @@
 
 ## 동작 흐름
 
-```
-1. 개발자: 도구 스키마(이름, 설명, 파라미터 JSON Schema)를 LLM에 전달
-2. 사용자: "오늘 서울 날씨?"
-3. LLM: tool_call = {name: "get_weather", arguments: {"city": "서울"}}
-4. 호출자: 실제 함수 실행 → 결과를 다시 LLM에 전달
-5. LLM: 결과를 자연어로 답변 생성
+```mermaid
+sequenceDiagram
+    participant D as 개발자
+    participant U as 사용자
+    participant L as LLM
+    participant C as 호출자 / 프레임워크
+    participant T as 실제 함수
+
+    D->>L: 도구 스키마 전달<br/>이름, 설명, 파라미터 JSON Schema
+    U->>L: 오늘 서울 날씨?
+    L->>C: tool_call<br/>get_weather(city="서울")
+    C->>T: 실제 함수 실행
+    T-->>C: 실행 결과
+    C-->>L: 결과 전달
+    L-->>U: 자연어 답변 생성
 ```
 
 - 3단계까지가 LLM의 일, 4단계는 사용자(또는 프레임워크)의 일. LLM이 직접 함수를 실행하지는 않는다.
@@ -55,6 +64,39 @@ llm = ChatOpenAI().bind_tools([get_weather])
 ```
 
 - 함수 시그니처 + docstring이 자동으로 JSON Schema로 변환된다.
+- 자세한 개념 정리는 [[LangChain @tool]] 참고.
+
+### LLM이 보는 도구 설명
+
+`@tool`에서 LLM이 주로 보는 것은 함수의 docstring이다.
+
+```python
+@tool
+def care_tool(care: str):
+    """감기에 걸렸을 때 해야 할 조치를 알려줄 때 사용한다."""
+    return "충분히 쉬세요."
+```
+
+이 docstring은 도구 스키마의 설명으로 들어가므로 LLM이 도구 선택에 활용한다.
+
+반면 `# 일반 주석`은 보통 tool schema에 포함되지 않는다.
+
+```python
+# 이 도구는 감기 조치를 알려준다.
+@tool
+def care_tool(care: str):
+    return "충분히 쉬세요."
+```
+
+이런 주석만으로는 LLM에게 도구 용도가 전달되지 않을 수 있다.
+
+관련: [[LangChain @tool]]
+
+## LangGraph — ToolNode
+
+- LangGraph에서는 LLM이 만든 tool call을 실제 도구 실행으로 연결하기 위해 [[LangGraph ToolNode]]를 사용할 수 있다.
+- `@tool` 함수는 도구 정의이고, `ToolNode`는 도구 실행 노드이다.
+- `retrieve` 같은 워크플로우 노드와 `@tool` 함수의 차이는 [[Workflow Node vs Tool]] 참고.
 
 ## 좋은 도구 설계 원칙
 
@@ -83,3 +125,6 @@ results = await asyncio.gather(*[tools[tc.name].arun(tc.args) for tc in tool_cal
 - [[Memory]] — 도구 결과의 누적.
 - [[MCP(Model Context Protocol)]] — 도구를 외부 프로세스로 표준화한 프로토콜.
 - [[Pydantic]] — 인자 검증.
+- [[LangChain @tool]]
+- [[LangGraph ToolNode]]
+- [[Workflow Node vs Tool]]

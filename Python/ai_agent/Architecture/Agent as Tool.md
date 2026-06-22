@@ -3,15 +3,22 @@
 
 ## 구조
 
-```
-       ┌──> Tool: search_web
-Top ──┼──> Tool: calculator
-       └──> Tool: research_agent  ← 사실은 다른 에이전트!
-                       ↓
-                  [Researcher Agent]
-                       ↓
-                ┌──> Tool: search_paper
-                └──> Tool: read_pdf
+```mermaid
+flowchart LR
+    Top["Top Agent / Supervisor"]
+    Search["Tool: search_web"]
+    Calc["Tool: calculator"]
+    ResearchTool["Tool: research_agent"]
+    Researcher["Researcher Agent"]
+    Paper["Tool: search_paper"]
+    PDF["Tool: read_pdf"]
+
+    Top --> Search
+    Top --> Calc
+    Top --> ResearchTool
+    ResearchTool --> Researcher
+    Researcher --> Paper
+    Researcher --> PDF
 ```
 
 ## Strands 구현
@@ -48,6 +55,23 @@ def call_research_agent(query: str) -> str:
     return research_graph.invoke({"messages": [HumanMessage(query)]})["messages"][-1].content
 ```
 
+## Sub-LLM as Tool과의 관계
+
+[[Sub-LLM as Tool]]은 Agent as Tool보다 단순한 형태이다.
+
+Agent as Tool은 도구 내부에 별도의 에이전트나 그래프가 들어갈 수 있지만, Sub-LLM as Tool은 도구 내부에 `prompt | llm | parser` 같은 단발 LLM 체인을 넣는다.
+
+```mermaid
+flowchart TD
+    ToolA["Tool"]
+    AgentGraph["내부 agent / graph"]
+    ToolB["Tool"]
+    LLMChain["내부 LLM chain"]
+
+    ToolA --> AgentGraph
+    ToolB --> LLMChain
+```
+
 ## 장점
 
 - **분리·재사용** — research agent를 다른 supervisor에서도 그대로 가져다 쓸 수 있다.
@@ -71,3 +95,4 @@ def call_research_agent(query: str) -> str:
 - [[Multi Agent]] · [[Supervisor 패턴]] · [[Swarm 패턴]] · [[Hierarchical Agent]].
 - [[A2A 프로토콜]] — 외부 조직 에이전트를 도구화하는 표준.
 - [[Tool Calling]] — 기본 메커니즘.
+- [[Sub-LLM as Tool]]

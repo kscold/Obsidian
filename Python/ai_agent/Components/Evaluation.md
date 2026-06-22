@@ -67,6 +67,39 @@ score = llm.invoke(prompt)
 | **Latency / Cost** | 응답 속도·토큰 비용 | 운영 KPI |
 | **Safety** | 유해·민감 응답 여부 | [[Guardrails]] |
 
+## 작업별 대표 지표
+
+강의자료 기준으로 평가 지표는 작업 종류에 맞춰 골라야 한다.
+
+| 작업 | 대표 지표 | 감각 |
+|---|---|---|
+| 분류 | Accuracy, Precision, Recall, F1 | 정답 라벨과 비교 가능 |
+| 번역 | BLEU, BERTScore, Human Eval | 문장 품질과 의미 보존 평가 |
+| 요약 | ROUGE, BERTScore, LLM-as-Judge | 원문 핵심을 잘 담았는지 평가 |
+| QA | Exact Match, F1, LLM-as-Judge | 정답이 있으면 자동 평가 가능 |
+| 자유 생성 | LLM-as-Judge, Human Eval | 정답이 하나가 아니므로 rubric 필요 |
+| 에이전트 도구 사용 | Tool Accuracy, Reference Trajectory | 어떤 도구를 어떤 순서로 썼는지 평가 |
+
+## LLM-as-Judge를 쓰는 경우
+
+정답이 딱 하나로 정해지지 않는 생성형 작업에서는 강한 LLM에게 rubric을 주고 평가시킨다.
+
+```mermaid
+flowchart LR
+    Input["질문"]
+    Answer["에이전트 답변"]
+    Rubric["평가 기준"]
+    Judge["Judge LLM"]
+    Score["점수 + 이유"]
+
+    Input --> Judge
+    Answer --> Judge
+    Rubric --> Judge
+    Judge --> Score
+```
+
+단, judge도 LLM이므로 완벽한 채점자가 아니다. 중요한 평가는 샘플링해서 사람이 확인한다.
+
 ## Ground Truth 3형태
 
 - **Reference Answer** — "정답"이 텍스트로 있음.

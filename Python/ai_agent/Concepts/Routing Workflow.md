@@ -3,15 +3,20 @@
 
 ## 구조
 
-```
-입력
- ↓
-[Router LLM] — 분류 결정
- ↓
-┌──── refund     → Refund handler (gpt-4o-mini)
-├──── shipping   → Shipping handler (rules + RAG)
-├──── complaint  → Complaint handler (gpt-4o + 사람 인계)
-└──── general    → Default chat (gpt-4o-mini)
+```mermaid
+flowchart TD
+    Input["입력"]
+    Router["Router LLM<br/>분류 결정"]
+    Refund["Refund handler<br/>gpt-4o-mini"]
+    Shipping["Shipping handler<br/>rules + RAG"]
+    Complaint["Complaint handler<br/>gpt-4o + 사람 인계"]
+    General["Default chat<br/>gpt-4o-mini"]
+
+    Input --> Router
+    Router -- "refund" --> Refund
+    Router -- "shipping" --> Shipping
+    Router -- "complaint" --> Complaint
+    Router -- "general" --> General
 ```
 
 ## 간단 구현
@@ -56,12 +61,13 @@ def handle(user_msg: str):
 
 ## 다단계 라우팅 ([[Hierarchical Agent|계층]])
 
-```
-1단계: 도메인 (금융 / 의료 / 일반)
-   ↓
-2단계: 세부 카테고리
-   ↓
-3단계: 실제 핸들러
+```mermaid
+flowchart TD
+    Domain["1단계: 도메인<br/>금융 / 의료 / 일반"]
+    Category["2단계: 세부 카테고리"]
+    Handler["3단계: 실제 핸들러"]
+
+    Domain --> Category --> Handler
 ```
 
 - 카테고리가 20+ 이면 단층으로는 정확도 ↓ → 계층 분류로 쪼개기.

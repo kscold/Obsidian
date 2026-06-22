@@ -5,11 +5,24 @@
 
 | 용어 | 의미 |
 |------|------|
-| `State` | 그래프 전체에서 공유되는 상태(TypedDict, Pydantic) |
-| `Node` | 상태를 입력받아 부분 상태를 반환하는 함수 |
-| `Edge` | 노드 → 노드 연결. 무조건/조건부 |
+| `State` | 그래프 전체에서 공유되는 상태(TypedDict, Pydantic). 자세히는 [[LangGraph State]] |
+| `Node` | 상태를 입력받아 부분 상태를 반환하는 함수. 자세히는 [[LangGraph Node]] |
+| `Edge` | 노드 → 노드 연결. 무조건/조건부. 자세히는 [[LangGraph Edge]] |
 | `Conditional Edge` | 함수가 다음 노드를 결정 (LLM 라우팅 등) |
 | `Checkpoint` | 상태를 영속화 (DB) — 재시작·HITL 가능 |
+
+## 개념 노트
+
+- [[LangGraph 개념 MOC]]
+- [[LangGraph 문법 치트시트]]
+- [[LangGraph StateGraph]]
+- [[LangGraph State]]
+- [[LangGraph Node]]
+- [[LangGraph Edge]]
+- [[LangGraph 워크플로우 아키텍처]]
+- [[Workflow Node vs Tool]]
+- [[LangGraph ToolNode]]
+- [[Retrieve-Generate 패턴]]
 
 ## 가장 단순한 ReAct 에이전트
 
@@ -104,3 +117,5 @@ graph.invoke(None, config=config)
 
 - [[LangChain]] — 컴포넌트 계층.
 - [[Supervisor 패턴]] · [[Swarm 패턴]] · [[Hierarchical Agent]] — LangGraph로 구현 가능한 멀티 에이전트 토폴로지.
+- [[LangGraph StateGraph]]
+- [[Workflow Node vs Tool]]

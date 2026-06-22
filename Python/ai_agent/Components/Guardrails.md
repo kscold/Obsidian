@@ -3,10 +3,19 @@
 
 ## 어디에 둘까
 
-```
-사용자 입력 → [Input Guardrail] → LLM → [Output Guardrail] → 사용자
-                                  ↓
-                            Tool Call → [Tool Guardrail] → 실제 실행
+```mermaid
+flowchart LR
+    UserInput["사용자 입력"]
+    InputGuard["Input Guardrail"]
+    LLM["LLM"]
+    OutputGuard["Output Guardrail"]
+    User["사용자"]
+    ToolCall["Tool Call"]
+    ToolGuard["Tool Guardrail"]
+    Execute["실제 실행"]
+
+    UserInput --> InputGuard --> LLM --> OutputGuard --> User
+    LLM --> ToolCall --> ToolGuard --> Execute
 ```
 
 ## 입력 가드레일 — 막아야 할 것

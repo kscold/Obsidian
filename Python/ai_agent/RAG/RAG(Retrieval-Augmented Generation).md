@@ -4,13 +4,23 @@
 
 ## 전체 흐름
 
-```
-[Indexing 단계 — 한 번]
-원본 문서 → 청킹([[청킹(Chunking)]]) → 임베딩([[임베딩(Embedding)]]) → [[벡터 데이터베이스]] 저장
+```mermaid
+flowchart TD
+    subgraph Indexing["Indexing 단계 - 한 번"]
+        Docs["원본 문서"] --> Chunk["청킹"]
+        Chunk --> EmbedDocs["임베딩"]
+        EmbedDocs --> VectorDB["벡터 데이터베이스 저장"]
+    end
 
-[Retrieval + Generation 단계 — 매 요청]
-사용자 질의 → 질의 임베딩 → 벡터DB에서 top-k 검색 → 프롬프트에 컨텍스트 삽입 → LLM 생성
+    subgraph Runtime["Retrieval + Generation 단계 - 매 요청"]
+        Query["사용자 질의"] --> QueryEmbed["질의 임베딩"]
+        QueryEmbed --> TopK["벡터DB에서 top-k 검색"]
+        TopK --> Prompt["프롬프트에 컨텍스트 삽입"]
+        Prompt --> LLM["LLM 생성"]
+    end
 ```
+
+- LangGraph로 표현한 단순 검색-생성 흐름은 [[Retrieve-Generate 패턴]] 참고.
 
 ## 가장 단순한 구현 (LangChain)
 

@@ -41,14 +41,17 @@
 
 ## 준비 절차 (단순화)
 
-```
-[1] 비즈니스 질문 수집      ── "AI로 답하고 싶은 것은?"
-[2] 필요한 데이터 식별      ── 정형·비정형 모두
-[3] Ontology 설계            ── 엔티티·관계·메트릭
-[4] 정제 & 표준화            ── 결측·중복·표기
-[5] KG / Vector / Catalog 구축
-[6] 시맨틱 레이어 API 노출
-[7] Agent가 호출
+```mermaid
+flowchart TD
+    Q["1. 비즈니스 질문 수집<br/>AI로 답하고 싶은 것은?"]
+    Data["2. 필요한 데이터 식별<br/>정형 / 비정형 모두"]
+    Ontology["3. Ontology 설계<br/>엔티티 / 관계 / 메트릭"]
+    Clean["4. 정제 & 표준화<br/>결측 / 중복 / 표기"]
+    Build["5. KG / Vector / Catalog 구축"]
+    API["6. 시맨틱 레이어 API 노출"]
+    Agent["7. Agent가 호출"]
+
+    Q --> Data --> Ontology --> Clean --> Build --> API --> Agent
 ```
 
 ## 흔한 함정

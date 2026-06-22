@@ -3,17 +3,24 @@
 
 ## 일반 RAG와의 차이
 
-```
-[일반 RAG]
-질의 → 임베딩 → 검색 → 컨텍스트 + 질의 → LLM → 답
+```mermaid
+flowchart TD
+    subgraph Normal["일반 RAG"]
+        Q1["질의"] --> Embed["임베딩"] --> Search["검색"] --> Context["컨텍스트 + 질의"] --> LLM1["LLM"] --> Answer1["답"]
+    end
 
-[Agentic RAG]
-질의 → LLM 결정 ──┬→ 검색 도구 (필요 시)
-                  ├→ 메타데이터 필터 갱신
-                  ├→ 후속 질의 생성 (decompose)
-                  ├→ 외부 API
-                  └→ 충분하면 답
-       ↑──── 루프 ────┘
+    subgraph Agentic["Agentic RAG"]
+        Q2["질의"] --> Decide["LLM 결정"]
+        Decide --> SearchTool["검색 도구<br/>필요 시"]
+        Decide --> Filter["메타데이터 필터 갱신"]
+        Decide --> Decompose["후속 질의 생성<br/>decompose"]
+        Decide --> API["외부 API"]
+        Decide --> Answer2["충분하면 답"]
+        SearchTool --> Decide
+        Filter --> Decide
+        Decompose --> Decide
+        API --> Decide
+    end
 ```
 
 ## 어떤 결정을 하나

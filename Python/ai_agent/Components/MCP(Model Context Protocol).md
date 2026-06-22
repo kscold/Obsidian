@@ -8,10 +8,14 @@
 
 ## 구조
 
-```
-[Client (Claude Desktop, IDE 등)] ←→ [MCP Server (도구 호스팅)]
-                                          ↑
-                                   [실제 자원: DB, FS, API]
+```mermaid
+flowchart LR
+    Client["Client<br/>Claude Desktop, IDE, Agent"]
+    Server["MCP Server<br/>도구 호스팅"]
+    Resource["실제 자원<br/>DB, FS, API"]
+
+    Client <--> Server
+    Server --> Resource
 ```
 
 - 통신은 JSON-RPC. 로컬은 stdio, 원격은 SSE/HTTP.

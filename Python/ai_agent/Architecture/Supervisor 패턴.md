@@ -3,10 +3,18 @@
 
 ## 구조
 
-```
-              ┌──> Researcher Agent
-사용자 → Supervisor ─┼──> Coder Agent
-              └──> Reviewer Agent
+```mermaid
+flowchart LR
+    User["사용자"]
+    Supervisor["Supervisor"]
+    Researcher["Researcher Agent"]
+    Coder["Coder Agent"]
+    Reviewer["Reviewer Agent"]
+
+    User --> Supervisor
+    Supervisor --> Researcher
+    Supervisor --> Coder
+    Supervisor --> Reviewer
 ```
 
 - Supervisor는 워커들의 능력(`description`)을 system prompt로 알고 있고, 매 턴 다음에 누구를 부를지 결정.

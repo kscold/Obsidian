@@ -3,12 +3,18 @@
 
 ## 구조
 
-```
-1. Actor — 작업 실행 ([[ReAct 패턴]] 등)
-2. Evaluator — 결과 평가 (성공/실패, 점수)
-3. Self-Reflection — 실패 원인을 자연어로 정리
-4. Memory에 저장 → 다음 시도 프롬프트에 포함
-5. 종료 조건까지 반복
+```mermaid
+flowchart TD
+    Actor["Actor<br/>작업 실행"]
+    Evaluator["Evaluator<br/>결과 평가"]
+    Success{"성공?"}
+    Reflection["Self-Reflection<br/>실패 원인을 자연어로 정리"]
+    Memory["Memory에 저장<br/>다음 시도 프롬프트에 포함"]
+    Final["최종 답변"]
+
+    Actor --> Evaluator --> Success
+    Success -- "예" --> Final
+    Success -- "아니오" --> Reflection --> Memory --> Actor
 ```
 
 ## 의사 구현

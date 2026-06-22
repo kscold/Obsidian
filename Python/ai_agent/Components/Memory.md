@@ -54,6 +54,52 @@ store = InMemoryStore()
 
 - LangGraph는 단기(`checkpointer`)와 장기(`store`)를 분리해 다룬다.
 
+## LangGraph에서 꼭 구분할 것
+
+| 구분 | [[LangGraph Checkpointer]] | [[LangGraph Store]] |
+|---|---|---|
+| 핵심 목적 | 그래프 실행 상태 저장 | 재사용 가능한 장기 지식 저장 |
+| 기억 범위 | 같은 `thread_id` 중심 | 여러 thread/session에서 재사용 |
+| 대표 데이터 | `messages`, interrupt 위치, 다음 실행 지점 | 사용자 선호, 프로젝트 지식, 장기 프로필 |
+| 실습 구현 | `InMemorySaver`, `SqliteSaver` | `InMemoryStore` |
+| 한 줄 감각 | "대화를 이어가기" | "나중에도 기억하기" |
+
+```mermaid
+flowchart LR
+    User["사용자"]
+    Graph["LangGraph"]
+    CP["Checkpointer<br/>thread 상태"]
+    Store["Store<br/>long-term memory"]
+
+    User --> Graph
+    Graph <--> CP
+    Graph <--> Store
+```
+
+### InMemorySaver
+
+- RAM에 checkpoint를 저장한다.
+- 빠르고 실습용으로 좋다.
+- 프로세스가 꺼지면 기억이 사라질 수 있다.
+- 자세한 정리: [[LangGraph InMemorySaver]]
+
+### SqliteSaver
+
+- sqlite 파일에 checkpoint를 저장한다.
+- 노트북/로컬 실습에서 이어 실행을 확인하기 좋다.
+- `interrupt`나 여러 턴 대화 실습에 적합하다.
+
+### InMemoryStore
+
+- 장기 기억의 인터페이스를 실습하기 좋다.
+- 이름은 InMemory라서 영구 저장은 아니지만, Checkpointer와 Store의 역할 차이를 이해하기 좋다.
+
+## 강의자료 기준 핵심 문장
+
+- [[LangGraph Checkpointer]]는 그래프의 실행 상태를 매 단계마다 저장해 같은 대화, 즉 같은 [[LangGraph thread_id]]를 이어갈 수 있게 한다.
+- [[LangGraph Store]]는 대화 thread를 넘어 재사용할 지식을 [[LangGraph namespace]]로 분류해 저장한다.
+- [[LangGraph InMemorySaver]]는 메모리(RAM)에 저장되므로 코드 실행 상태가 내려가면 함께 휘발된다.
+
 ## 흔한 함정
 
 - **모든 걸 LLM 컨텍스트에 욱여넣기** — 비용·지연·환각이 모두 폭증. 필요한 것만 검색해 넣는 게 원칙.
@@ -65,3 +111,9 @@ store = InMemoryStore()
 - [[Tool Calling]] — 도구 결과도 메모리의 일부.
 - [[RAG(Retrieval-Augmented Generation)]] — 장기 메모리 검색은 사실상 RAG.
 - [[Reflexion]] — 자기 피드백을 메모리로 활용.
+- [[LangGraph Checkpointer]]
+- [[LangGraph InMemorySaver]]
+- [[LangGraph Store]]
+- [[LangGraph thread_id]]
+- [[LangGraph namespace]]
+- [[LangGraph 메모리 상태 관리]]

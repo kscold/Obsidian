@@ -8,17 +8,21 @@
 
 ## 구조
 
-```
-[Indexing]
-1. 원본 문서를 [[청킹(Chunking)|청크]]로 분할
-2. LLM이 각 청크에서 (entity, relation, entity) 트리플 추출
-3. 동일 엔티티 병합 → Knowledge Graph 구성
-4. 그래프를 커뮤니티(Leiden 알고리즘)로 클러스터링
-5. 각 커뮤니티에 대해 LLM이 요약 생성 → "Community Summary"
+```mermaid
+flowchart TD
+    subgraph Indexing["Indexing"]
+        Docs["원본 문서"] --> Chunk["청크로 분할"]
+        Chunk --> Triple["LLM이 트리플 추출<br/>(entity, relation, entity)"]
+        Triple --> Merge["동일 엔티티 병합"]
+        Merge --> KG["Knowledge Graph 구성"]
+        KG --> Cluster["커뮤니티 클러스터링<br/>Leiden 알고리즘"]
+        Cluster --> Summary["Community Summary 생성"]
+    end
 
-[Query]
-- Local search: 질의에 가까운 엔티티 주변 그래프 탐색
-- Global search: 모든 Community Summary를 map-reduce로 LLM에 전달
+    subgraph Query["Query"]
+        UserQ["질의"] --> Local["Local search<br/>가까운 엔티티 주변 그래프 탐색"]
+        UserQ --> Global["Global search<br/>Community Summary를 map-reduce로 전달"]
+    end
 ```
 
 ## 의사 코드 (개념적)

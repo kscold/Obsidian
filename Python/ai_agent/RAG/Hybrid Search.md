@@ -71,12 +71,13 @@ tokens = [t.form for t in kiwi.tokenize(text) if t.tag.startswith(("N", "V"))]
 
 ## 권장 조합
 
-```
-1차 검색: Hybrid (top-50)
-   ↓
-2차: [[Reranking|Cross-encoder Rerank]] (top-5)
-   ↓
-3차: LLM 생성
+```mermaid
+flowchart TD
+    Hybrid["1차 검색<br/>Hybrid top-50"]
+    Rerank["2차<br/>Cross-encoder Rerank top-5"]
+    LLM["3차<br/>LLM 생성"]
+
+    Hybrid --> Rerank --> LLM
 ```
 
 - 이 3단 구조가 production RAG의 거의 표준.

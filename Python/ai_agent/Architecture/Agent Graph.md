@@ -29,6 +29,31 @@ g.add_edge("finalizer", END)
 
 - 같은 입력에 대해 researcher / coder가 동시에 작업 → reviewer가 둘을 합산.
 
+## 직렬 에이전트 그래프
+
+에이전트 그래프는 병렬 DAG뿐 아니라 직렬 파이프라인도 표현할 수 있다.
+
+```mermaid
+flowchart LR
+    Start["START"]
+    News["news_agent"]
+    Stock["stock_agent"]
+    Reporter["reporter"]
+    End["END"]
+
+    Start --> News --> Stock --> Reporter --> End
+```
+
+LangGraph에서는 `create_react_agent()`로 만든 agent 자체도 노드가 될 수 있다.
+
+```python
+builder.add_node("news_agent", news_agent)
+builder.add_node("stock_agent", stock_agent)
+builder.add_node("reporter", report_node)
+```
+
+이 구조는 [[Serial Agent Pipeline]]으로 정리할 수 있다.
+
 ## 조건부 엣지 — 동적 분기
 
 ```python
@@ -67,4 +92,5 @@ g.add_conditional_edges("planner", route)
 
 - [[LangGraph]] — 표준 구현.
 - [[Multi Agent]] · [[Agent as Tool]] — 노드를 다른 에이전트로 만들 때.
+- [[Serial Agent Pipeline]] — 에이전트들을 순서대로 연결하는 그래프.
 - [[Agentic Loop]] — 단일 에이전트도 결국 그래프의 특수 케이스.

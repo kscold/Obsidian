@@ -44,21 +44,54 @@ with tracer.start_as_current_span("agent.invoke") as span:
 import os
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_API_KEY"] = "..."
+os.environ["LANGCHAIN_PROJECT"] = "ai-agent-practice"
 
 # 이후 모든 LangChain/LangGraph 호출이 자동 트레이싱
 agent.invoke({"input": "..."})
 ```
 
+## LangGraph에서 특히 봐야 할 것
+
+LangGraph는 노드 단위로 실행되기 때문에, LangSmith 같은 도구에서 다음을 보면 디버깅이 쉬워진다.
+
+| 봐야 할 것 | 이유 |
+|---|---|
+| 어떤 노드가 실행됐는가 | 그래프 경로가 의도대로 갔는지 확인 |
+| 각 노드의 latency | 병목 노드 찾기 |
+| 각 노드의 token/cost | 비용이 큰 단계 찾기 |
+| tool call args | LLM이 도구 인자를 제대로 넣었는지 확인 |
+| 반복 횟수 | [[Loop Control]]이 필요한지 확인 |
+
+```mermaid
+flowchart TD
+    Trace["LangSmith Trace"]
+    Node1["news_agent<br/>tokens/latency"]
+    Node2["stock_agent<br/>tokens/latency"]
+    Node3["reporter<br/>tokens/latency"]
+
+    Trace --> Node1
+    Trace --> Node2
+    Trace --> Node3
+```
+
 ## 트레이스 단위 — Span 설계 권장
 
-```
-agent.invoke (root)
-├── intent.classify
-├── planner.create_plan
-├── llm.call (model=gpt-4o-mini, 1.2s, 432 tokens)
-├── tool.search_web (0.8s)
-├── llm.call (412 tokens)
-└── response.format
+```mermaid
+flowchart TD
+    Root["agent.invoke<br/>root span"]
+    Intent["intent.classify"]
+    Plan["planner.create_plan"]
+    LLM1["llm.call<br/>model=gpt-4o-mini<br/>1.2s, 432 tokens"]
+    Tool["tool.search_web<br/>0.8s"]
+    LLM2["llm.call<br/>412 tokens"]
+    Format["response.format"]
+
+    Root --> Intent
+    Root --> Plan
+    Root --> LLM1
+    Root --> Tool
+    Root --> LLM2
+    Root --> Format
 ```
 
 - 각 노드(LangGraph) / 에이전트(Strands) / 도구를 span으로.

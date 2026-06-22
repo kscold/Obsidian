@@ -3,12 +3,18 @@
 
 ## 구조
 
-```
-1. Planner LLM → 계획 수립 (단계 리스트)
-2. Executor → 각 단계 수행 ([[Tool Calling]]) 
-3. 결과 누적
-4. Replanner LLM → 계획 갱신 또는 종료 판단
-5. 종료 조건 만족 시 Final Answer
+```mermaid
+flowchart TD
+    Planner["Planner LLM<br/>계획 수립 (단계 리스트)"]
+    Executor["Executor<br/>각 단계 수행"]
+    Accumulate["결과 누적"]
+    Replanner["Replanner LLM<br/>계획 갱신 또는 종료 판단"]
+    Done{"종료 조건 만족?"}
+    Final["Final Answer"]
+
+    Planner --> Executor --> Accumulate --> Replanner --> Done
+    Done -- "아니오" --> Executor
+    Done -- "예" --> Final
 ```
 
 ## 의사 구현

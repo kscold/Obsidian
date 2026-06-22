@@ -8,16 +8,22 @@
 
 ## 3단계 파이프라인 (실무 표준)
 
-```
-입력
- ↓
-[1단계] Rule / Regex   ── 명확한 키워드, 명령어 (~5ms)
- ↓ unmatched
-[2단계] Embedding KNN  ── 의미 유사도, 동의어 (~30ms)
- ↓ low confidence
-[3단계] LLM Classifier ── 모호한 자연어 (~500ms)
- ↓
-intent + confidence → Router → 전문 에이전트/도구
+```mermaid
+flowchart TD
+    Input["입력"]
+    Rule["1단계: Rule / Regex<br/>명확한 키워드, 명령어 (~5ms)"]
+    Embedding["2단계: Embedding KNN<br/>의미 유사도, 동의어 (~30ms)"]
+    LLM["3단계: LLM Classifier<br/>모호한 자연어 (~500ms)"]
+    Result["intent + confidence"]
+    Router["Router"]
+    Specialist["전문 에이전트 / 도구"]
+
+    Input --> Rule
+    Rule -- "unmatched" --> Embedding
+    Embedding -- "low confidence" --> LLM
+    Rule -- "matched" --> Result
+    Embedding -- "high confidence" --> Result
+    LLM --> Result --> Router --> Specialist
 ```
 
 - 빠른 단계에서 잡히는 게 90%면 비용·지연이 크게 줄어든다.

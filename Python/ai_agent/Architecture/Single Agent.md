@@ -3,9 +3,14 @@
 
 ## 구조
 
-```
-사용자 → [Agent (LLM + Tools + Memory)] → 응답
-              ↑─────────루프─────────┘
+```mermaid
+flowchart LR
+    User["사용자"]
+    Agent["Agent<br/>LLM + Tools + Memory"]
+    Response["응답"]
+
+    User --> Agent --> Response
+    Agent -. "루프" .-> Agent
 ```
 
 ## 코드 예 (LangGraph 기반 ReAct 단일 에이전트)

@@ -18,11 +18,16 @@
 
 ## 통신 흐름
 
-```
-1. Client Agent: GET /.well-known/agent.json  → Server Agent의 능력 확인
-2. POST /tasks/send  → Task 생성, Message 전달
-3. (long-running 경우) GET /tasks/{id}        → 상태 폴링 또는 SSE 스트림
-4. Task complete → Artifact 반환
+```mermaid
+sequenceDiagram
+    participant C as Client Agent
+    participant S as Server Agent
+
+    C->>S: GET /.well-known/agent.json
+    S-->>C: Agent Card 반환
+    C->>S: POST /tasks/send<br/>Task 생성, Message 전달
+    C->>S: GET /tasks/{id}<br/>상태 폴링 또는 SSE 스트림
+    S-->>C: Task complete<br/>Artifact 반환
 ```
 
 ## 최소 Agent Card 예

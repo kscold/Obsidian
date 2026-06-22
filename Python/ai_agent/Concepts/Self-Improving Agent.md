@@ -50,12 +50,13 @@ def recall(query: str) -> list[str]:
 
 ## 공통 메커니즘 — Retrieve · Modify · Persist
 
-```
-[Retrieve]  현재 상태(프롬프트/도구/메모리) 로딩
-    ↓
-[Modify]    LLM이 판단해 변경
-    ↓
-[Persist]   디스크·DB·git에 저장 (다음 세션에 반영)
+```mermaid
+flowchart TD
+    Retrieve["Retrieve<br/>현재 상태 로딩<br/>프롬프트 / 도구 / 메모리"]
+    Modify["Modify<br/>LLM이 판단해 변경"]
+    Persist["Persist<br/>디스크 / DB / git에 저장<br/>다음 세션에 반영"]
+
+    Retrieve --> Modify --> Persist
 ```
 
 ## 안전장치

@@ -41,6 +41,7 @@ def send_email(to: str, body: str) -> str:
 ## 구현 시 고려사항
 
 - **Checkpointer 필수** — 사람이 응답하기까지 시간이 걸리므로 그래프 상태가 영속화돼야 한다 (LangGraph: `SqliteSaver`, `PostgresSaver`).
+- `interrupt`는 그래프를 멈추는 기능이고, [[LangGraph Checkpointer]]는 멈춘 지점을 다시 찾게 해주는 저장 장치다.
 - **타임아웃** — 영원히 기다리면 자원이 묶인다.
 - **컨텍스트 제공** — 사람이 판단할 수 있도록 결정의 근거를 같이 보여줄 것.
 - **취소·수정 옵션** — 단순 yes/no가 아니라 "수정해서 진행"도 가능하게.
