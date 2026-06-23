@@ -161,6 +161,28 @@ export LANGSMITH_PROJECT="ai-agent-practice"
 - `LANGSMITH_PROJECT`: trace를 모을 프로젝트 이름.
 - 예전 예제에서는 `LANGCHAIN_TRACING_V2`, `LANGCHAIN_API_KEY`, `LANGCHAIN_PROJECT`를 쓰는 경우도 있다. 최신 문서에서는 `LANGSMITH_*` 계열을 우선 보면 된다.
 
+## 연결 확인 체크리스트
+
+- API key를 넣고 `LANGSMITH_TRACING=true`가 설정되어 있으면 trace 전송 준비가 된 것이다.
+- 프로젝트가 실제로 보이는지 확인하려면 `langsmith.Client()`로 프로젝트 목록을 조회한다.
+
+```python
+import langsmith
+
+client = langsmith.Client()
+for project in client.list_projects():
+    print(project.name)
+```
+
+- 프로젝트 이름을 확실히 바꾸고 싶으면 `setdefault`보다 직접 대입이 명확하다.
+
+```python
+os.environ["LANGSMITH_PROJECT"] = "test"
+```
+
+- `os.environ.setdefault("LANGSMITH_PROJECT", "test")`는 이미 값이 있으면 기존 값을 유지한다.
+- 그래서 노트북에서 예전 프로젝트명이 남아 있으면 trace가 예상과 다른 프로젝트로 들어갈 수 있다.
+
 ## 실습에서 봐야 할 화면
 
 - Trace tree: 어떤 단계가 어떤 순서로 실행됐는지.
@@ -198,6 +220,8 @@ export LANGSMITH_PROJECT="ai-agent-practice"
 - [[Observability]]
 - [[Evaluation]]
 - [[LLM-as-Judge]]
+- [[다수결 평가]]
+- [[라벨 정규화]]
 - [[Trajectory]]
 - [[LangChain]]
 - [[LangGraph]]

@@ -41,6 +41,8 @@ def eval_exact_match(answer, expected):
 
 - 정답이 명확한 경우 (분류, 수식 결과).
 - 빠르고 결정론적.
+- 감정 분류처럼 정답 라벨이 있으면 [[라벨 정규화]] 후 [[분류 평가 지표|Accuracy]]를 계산할 수 있다.
+- 여러 모델의 라벨을 합칠 때는 [[다수결 평가]]를 쓴다.
 
 ### 2. [[LLM-as-Judge]]
 
@@ -86,6 +88,8 @@ score = llm.invoke(prompt)
 - **분류 문제**라면 [[분류 평가 지표]]를 먼저 본다.
   - 예: 이 질문이 뉴스 도구로 가야 하는가, 주가 도구로 가야 하는가.
   - 전체 정답률은 Accuracy, 오탐/미탐 균형은 Precision/Recall/F1로 본다.
+  - 여러 모델을 동시에 돌린다면 [[다수결 평가]]로 최종 라벨을 고를 수 있다.
+  - LLM 출력이 라벨 외 문장을 포함하면 [[라벨 정규화]]가 필요하다.
 - **숫자 예측 문제**라면 [[회귀 평가 지표]]를 본다.
   - 예: 가격, 수요, 점수, 지연시간 예측.
   - 평균적으로 얼마나 틀렸는지는 MAE, 큰 실수를 얼마나 줄였는지는 RMSE를 본다.
@@ -139,6 +143,8 @@ flowchart LR
 - [[분류 평가 지표]] — Accuracy, Precision, Recall, F1.
 - [[회귀 평가 지표]] — MAE, MSE, RMSE.
 - [[텍스트 생성 평가 지표]] — BLEU, ROUGE, BERTScore.
+- [[다수결 평가]] — 여러 모델의 분류 라벨을 합치는 패턴.
+- [[라벨 정규화]] — LLM 출력을 평가 가능한 라벨로 변환.
 - [[LangSmith]] — trace, dataset, evaluator, experiment 관리.
 - [[LLM-as-Judge]] — 평가자 LLM.
 - [[Observability]] — Production Loop의 인프라.

@@ -49,6 +49,33 @@ verdict = judge.invoke(rubric_prompt)
 - **Pairwise** — 두 답변을 비교해 선호. 상대 평가, 일관성이 더 좋음.
 - 운영에서는 pairwise로 모델/프롬프트를 비교, pointwise로 절대 품질 모니터링.
 
+## 다수결 평가와의 차이
+
+- [[다수결 평가]]는 여러 모델의 라벨을 모아 코드로 최빈값을 고른다.
+- LLM-as-Judge는 평가자 LLM이 원문과 후보 답변을 다시 읽고 판단한다.
+- 정답 라벨이 있는 감정 분류라면 다수결 평가와 [[분류 평가 지표|Accuracy]]가 단순하고 빠르다.
+- 리포트, 요약, 상담 답변처럼 정답 문장이 하나로 고정되지 않으면 LLM-as-Judge가 더 적합하다.
+
+```mermaid
+flowchart TD
+    Input["입력"]
+    A["모델 A"]
+    B["모델 B"]
+    C["모델 C"]
+    Vote["다수결 평가<br/>코드 규칙"]
+    Judge["LLM-as-Judge<br/>평가자 LLM"]
+
+    Input --> A
+    Input --> B
+    Input --> C
+    A --> Vote
+    B --> Vote
+    C --> Vote
+    A --> Judge
+    B --> Judge
+    C --> Judge
+```
+
 ## Reference-based vs Reference-free
 
 | | Reference-based | Reference-free |
@@ -88,6 +115,8 @@ verdict = judge.invoke(rubric_prompt)
 
 - [[AI 평가 지표]]
 - [[텍스트 생성 평가 지표]]
+- [[다수결 평가]]
+- [[라벨 정규화]]
 - [[Evaluation]] — 상위 개념.
 - [[Reflection]] · [[Reflexion]] — 자기 평가에도 같은 메커니즘이 적용.
 - [[Trajectory]] — 행동 시퀀스에 대한 LLM 채점.
