@@ -44,7 +44,7 @@ flowchart TD
 - 같은 대화, 즉 같은 [[LangGraph thread_id]]를 이어갈 수 있게 해준다.
 - 예를 들어 사용자가 한 번 질문하고, 다음 질문에서 이전 대화를 이어가려면 checkpointer가 필요하다.
 - Checkpointer가 저장하는 것은 "장기 지식"이라기보다 "그래프가 어디까지 실행됐는가"에 가깝다.
-- 그래서 `interrupt`로 멈췄다가 다시 실행하는 [[Human-in-the-loop]]에서도 checkpointer가 중요하다.
+- 그래서 [[LangGraph interrupt]]로 멈췄다가 다시 실행하는 [[Human-in-the-loop]]에서도 checkpointer가 중요하다.
 
 ```mermaid
 sequenceDiagram
@@ -159,6 +159,7 @@ flowchart TD
 - [[LangGraph Checkpointer]]
 - [[LangGraph InMemorySaver]]
 - [[LangGraph SqliteSaver]]
+- [[LangGraph PostgresSaver]]
 - [[LangGraph Store]]
 - [[LangGraph InMemoryStore]]
 - [[LangGraph thread_id]]

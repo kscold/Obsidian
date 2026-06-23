@@ -29,7 +29,7 @@ tags:
 Checkpointer는 그래프 실행 상태를 저장한다.
 
 - 같은 `thread_id`의 대화를 이어가기 위해 필요하다.
-- `interrupt` 후 다시 실행하기 위해 필요하다.
+- [[LangGraph interrupt]] 후 다시 실행하기 위해 필요하다.
 - 장애 후 복구하려면 영속 저장소가 필요하다.
 
 운영에서는 보통 다음을 고려한다.
@@ -70,7 +70,7 @@ Store는 재사용할 지식을 저장한다.
 | 저장할 것 | 추천 저장 계층 |
 |---|---|
 | 같은 대화의 실행 상태 | Checkpointer |
-| interrupt 후 재개 상태 | Checkpointer |
+| [[LangGraph interrupt]] 후 재개 상태 | Checkpointer |
 | 사용자 선호 | Store |
 | 프로젝트 규칙 | Store |
 | 문서 검색용 지식 | Vector DB / RAG 저장소 |
@@ -86,7 +86,7 @@ Store는 재사용할 지식을 저장한다.
 
 ## 한 줄 요약
 
-- 실습: InMemorySaver, SqliteSaver, InMemoryStore로 개념을 익힌다.
+- 실습: [[LangGraph InMemorySaver]], [[LangGraph SqliteSaver]], [[LangGraph InMemoryStore]]로 개념을 익힌다.
 - 운영: PostgreSQL/MySQL/Redis/Vector DB 같은 외부 저장소를 사용한다.
 - 핵심: Checkpointer는 실행 상태, Store는 재사용 지식이다.
 

@@ -10,7 +10,7 @@
 
 ## 패턴
 
-### 1. Interrupt (그래프 중단)
+### 1. [[LangGraph interrupt|Interrupt]] (그래프 중단)
 
 ```python
 # LangGraph
@@ -21,7 +21,7 @@ def need_approval(state):
     return {"approved": decision}
 ```
 
-- `interrupt`가 호출되면 그래프가 **그 자리에서 멈추고 상태를 저장**, 사용자 응답을 받으면 같은 thread로 resume.
+- [[LangGraph interrupt|`interrupt`]]가 호출되면 그래프가 **그 자리에서 멈추고 상태를 저장**, 사용자 응답을 받으면 같은 [[LangGraph thread_id|thread]]로 resume.
 
 ### 2. Tool 안에 승인 게이트
 
@@ -40,8 +40,10 @@ def send_email(to: str, body: str) -> str:
 
 ## 구현 시 고려사항
 
-- **Checkpointer 필수** — 사람이 응답하기까지 시간이 걸리므로 그래프 상태가 영속화돼야 한다 (LangGraph: `SqliteSaver`, `PostgresSaver`).
-- `interrupt`는 그래프를 멈추는 기능이고, [[LangGraph Checkpointer]]는 멈춘 지점을 다시 찾게 해주는 저장 장치다.
+- **[[LangGraph Checkpointer|Checkpointer]] 필수** — 사람이 응답하기까지 시간이 걸리므로 그래프 상태가 저장되어야 한다.
+- 노트북 실습은 [[LangGraph InMemorySaver]], 로컬 파일 기반 재개는 [[LangGraph SqliteSaver]], 운영 서비스는 [[LangGraph PostgresSaver]]를 고려한다.
+- [[LangGraph interrupt|`interrupt`]]는 그래프를 멈추는 기능이고, [[LangGraph Checkpointer]]는 멈춘 지점을 다시 찾게 해주는 저장 장치다.
+- 같은 흐름으로 재개하려면 동일한 [[LangGraph thread_id]]를 사용해야 한다.
 - **타임아웃** — 영원히 기다리면 자원이 묶인다.
 - **컨텍스트 제공** — 사람이 판단할 수 있도록 결정의 근거를 같이 보여줄 것.
 - **취소·수정 옵션** — 단순 yes/no가 아니라 "수정해서 진행"도 가능하게.
@@ -54,6 +56,12 @@ def send_email(to: str, body: str) -> str:
 
 ## 관련
 
-- [[LangGraph]] — `interrupt`, checkpoint 기반 HITL 표준.
+- [[LangGraph]] — interrupt, checkpoint 기반 HITL 표준.
+- [[LangGraph interrupt]]
+- [[LangGraph Checkpointer]]
+- [[LangGraph thread_id]]
+- [[LangGraph InMemorySaver]]
+- [[LangGraph SqliteSaver]]
+- [[LangGraph PostgresSaver]]
 - [[Tool Calling]] — 부작용 큰 도구에 게이트 추가.
 - [[Memory]] — 사람의 수정 이력을 다음 결정에 반영.

@@ -9,7 +9,7 @@
 | `Node` | 상태를 입력받아 부분 상태를 반환하는 함수. 자세히는 [[LangGraph Node]] |
 | `Edge` | 노드 → 노드 연결. 무조건/조건부. 자세히는 [[LangGraph Edge]] |
 | `Conditional Edge` | 함수가 다음 노드를 결정 (LLM 라우팅 등) |
-| `Checkpoint` | 상태를 영속화 (DB) — 재시작·HITL 가능 |
+| `Checkpoint` | [[LangGraph Checkpointer|상태 저장 장치]] — 재시작·[[Human-in-the-loop|HITL]] 가능 |
 
 ## 개념 노트
 
@@ -23,6 +23,9 @@
 - [[Workflow Node vs Tool]]
 - [[LangGraph ToolNode]]
 - [[Retrieve-Generate 패턴]]
+- [[Human-in-the-loop]]
+- [[LangGraph Checkpointer]]
+- [[LangGraph thread_id]]
 
 ## 가장 단순한 ReAct 에이전트
 
@@ -86,7 +89,7 @@ graph.add_conditional_edges("supervisor", route)
 
 - 이걸로 [[Supervisor 패턴]] · [[Hierarchical Agent]] 다 구현 가능.
 
-## Checkpointing — 휴먼 인 더 루프
+## Checkpointing — [[Human-in-the-loop|휴먼 인 더 루프]]
 
 ```python
 from langgraph.checkpoint.memory import MemorySaver
@@ -99,13 +102,16 @@ graph.invoke(input, config=config)
 graph.invoke(None, config=config)
 ```
 
-- DB(`SqliteSaver`, `PostgresSaver`)로 바꾸면 영속화. 장기 실행·복구·다중 세션이 자연스러워진다.
+- 이 구조에서 `MemorySaver`는 실습용 메모리 기반 [[LangGraph Checkpointer|checkpointer]]로 이해하면 된다. 관련 개념은 [[LangGraph InMemorySaver]] 참고.
+- `thread_id`는 같은 실행 흐름을 다시 찾기 위한 세션 키다. 자세히는 [[LangGraph thread_id]] 참고.
+- 중간 상태에서 사람이 승인해야 하는 흐름은 [[LangGraph interrupt]]와 [[Human-in-the-loop]] 개념으로 이어진다.
+- DB 기반 [[LangGraph SqliteSaver]]나 [[LangGraph PostgresSaver]]로 바꾸면 영속화된다. 장기 실행·복구·다중 세션이 자연스러워진다.
 
 ## LangGraph가 빛나는 시나리오
 
 - **반복(loop)** 이 있는 에이전트 — ReAct, Reflection, 재시도.
 - **여러 [[Multi Agent|에이전트]]가 협업** — Supervisor, Swarm.
-- **휴먼 승인 단계** 가 필요한 워크플로우.
+- **[[Human-in-the-loop|휴먼 승인 단계]]** 가 필요한 워크플로우.
 - 같은 작업을 여러 번 **재현**하거나 **시각화**해 디버깅해야 할 때 (LangGraph Studio).
 
 ## 한계
@@ -119,3 +125,7 @@ graph.invoke(None, config=config)
 - [[Supervisor 패턴]] · [[Swarm 패턴]] · [[Hierarchical Agent]] — LangGraph로 구현 가능한 멀티 에이전트 토폴로지.
 - [[LangGraph StateGraph]]
 - [[Workflow Node vs Tool]]
+- [[Human-in-the-loop]]
+- [[LangGraph Checkpointer]]
+- [[LangGraph interrupt]]
+- [[LangGraph thread_id]]

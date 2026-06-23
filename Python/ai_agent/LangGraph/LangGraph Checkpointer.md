@@ -17,7 +17,7 @@ tags:
 
 - 현재 `messages`
 - 그래프가 어디까지 실행됐는지
-- `interrupt`로 멈춘 지점
+- [[LangGraph interrupt]]로 멈춘 지점
 - 같은 [[LangGraph thread_id]]에서 이어서 실행할 상태
 - 다음에 실행해야 할 노드의 위치
 - 중간 노드들이 반환한 State 값
@@ -49,7 +49,7 @@ flowchart TD
 |---|---|
 | [[LangGraph InMemorySaver]] | RAM에 저장. 빠르지만 프로세스가 꺼지면 사라짐 |
 | [[LangGraph SqliteSaver]] | 로컬 SQLite 파일에 저장. 런타임이 죽어도 파일이 남으면 유지 |
-| `PostgresSaver` | 서버/운영 환경에 적합 |
+| [[LangGraph PostgresSaver]] | 서버/운영 환경에 적합 |
 
 ## Checkpointer vs Store
 
@@ -78,6 +78,8 @@ flowchart TD
 - [[LangGraph Store]]
 - [[LangGraph InMemorySaver]]
 - [[LangGraph SqliteSaver]]
+- [[LangGraph PostgresSaver]]
+- [[LangGraph interrupt]]
 - [[LangGraph thread_id]]
 - [[Human-in-the-loop]]
 - [[LangGraph State]]

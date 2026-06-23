@@ -73,7 +73,7 @@ flowchart TD
 - InMemorySaver는 파일이나 DB에 저장하지 않는다.
 - 저장 위치가 메모리이므로 Jupyter 커널을 재시작하면 저장된 checkpoint도 사라진다.
 - Python 프로세스가 종료되어도 마찬가지로 사라진다.
-- 그래서 중요한 대화 상태를 오래 보존해야 한다면 `SqliteSaver`나 `PostgresSaver`를 사용해야 한다.
+- 그래서 중요한 대화 상태를 오래 보존해야 한다면 [[LangGraph SqliteSaver]]나 [[LangGraph PostgresSaver]]를 사용해야 한다.
 - 로컬 파일로 유지하려면 [[LangGraph SqliteSaver]]를 고려한다.
 - 운영 서버에서는 [[LangGraph 운영용 메모리 저장소]] 기준으로 PostgreSQL 같은 저장소를 고려한다.
 
@@ -100,7 +100,7 @@ flowchart LR
 - 운영 환경에서 사용자별 대화 이력을 보존해야 할 때
 - 장애가 나도 그래프 실행 상태를 복구해야 할 때
 
-이런 경우에는 `SqliteSaver`, `PostgresSaver` 같은 영구 저장 checkpointer를 고려한다.
+이런 경우에는 [[LangGraph SqliteSaver]], [[LangGraph PostgresSaver]] 같은 영구 저장 checkpointer를 고려한다.
 
 ## 한 줄 요약
 
@@ -112,6 +112,7 @@ flowchart LR
 
 - [[LangGraph Checkpointer]]
 - [[LangGraph SqliteSaver]]
+- [[LangGraph PostgresSaver]]
 - [[LangGraph thread_id]]
 - [[LangGraph 메모리 상태 관리]]
 - [[LangGraph 운영용 메모리 저장소]]

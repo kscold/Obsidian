@@ -74,7 +74,7 @@ chain.invoke("환불 정책?")
 - **langchain** — 체인·리트리버·에이전트 기본 구현.
 - **langchain-community** — 외부 통합(벡터DB, 로더 등).
 - **langchain-openai / anthropic / aws / google** — 공급사별 패키지.
-- **[[LangGraph]]** — 상태 머신 기반 에이전트.
+- **[[LangGraph]]** — 상태 머신 기반 에이전트. 복잡한 분기, 반복, [[Human-in-the-loop]], [[LangGraph Checkpointer|checkpointing]]은 이쪽이 담당한다.
 - **[[LangSmith]]** — 트레이싱·평가·프롬프트 관리 플랫폼.
 
 ## 비판과 대안
