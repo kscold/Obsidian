@@ -72,8 +72,27 @@ flowchart TD
 
 - 카테고리가 20+ 이면 단층으로는 정확도 ↓ → 계층 분류로 쪼개기.
 
+## 여러 노드로 라우팅하기
+
+- Routing Workflow는 꼭 하나의 노드만 고르는 것은 아니다.
+- LangGraph에서는 라우터가 여러 노드 이름을 리스트로 반환할 수 있다.
+- 이 경우 조건에 따라 병렬 실행이 생기므로 [[LangGraph Conditional Fan-out]]으로 볼 수 있다.
+
+```python
+def route(state):
+    if state["found"]:
+        return ["db_agent", "csv_agent"]
+    return ["web_agent"]
+```
+
+- 로컬 데이터가 있으면 DB와 CSV를 함께 본다.
+- 로컬 데이터가 없으면 웹 검색 fallback으로 간다.
+- 이 구조는 [[로컬 우선 정보 수집 MAS]]에서 자주 쓰인다.
+
 ## 관련
 
 - [[Agent vs Workflow]] · [[Intent Classification]] · [[Structured Output]].
 - [[Supervisor 패턴]] — 라우팅의 동적·반복 버전.
 - [[LLM Provider 추상화]] — 카테고리별 모델 라우팅과 결합.
+- [[LangGraph Conditional Fan-out]]
+- [[로컬 우선 정보 수집 MAS]]

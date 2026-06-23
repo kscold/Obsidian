@@ -48,6 +48,34 @@ flowchart TD
 | `stock_agent` | yfinance API |
 | `reporter` | 수집 결과 종합 |
 
+질병 건강관리 리포트 실습은 로컬 정보와 웹 정보를 함께 쓰는 형태다.
+
+| 에이전트 | 정보 출처 | 역할 |
+|---|---|---|
+| `db_agent` | [[SQLite 데이터 소스|SQLite DB]] | 식단과 운동 조회 |
+| `csv_agent` | CSV 파일 | 증상과 주의사항 조회 |
+| `web_agent` | Tavily / Web | 로컬에 없을 때 외부 검색 |
+| `reporter` | 수집된 메시지 | 통합 건강관리 리포트 작성 |
+
+```mermaid
+flowchart TD
+    Entry["entry<br/>로컬 데이터 확인"]
+    DB["db_agent"]
+    CSV["csv_agent"]
+    Web["web_agent"]
+    Reporter["reporter"]
+
+    Entry -- "found=True" --> DB
+    Entry -- "found=True" --> CSV
+    Entry -- "found=False" --> Web
+    DB --> Reporter
+    CSV --> Reporter
+    Web --> Reporter
+```
+
+- 이 구조는 [[로컬 우선 정보 수집 MAS]]로 볼 수 있다.
+- `route()`가 `["db_agent", "csv_agent"]`처럼 여러 노드를 반환하므로 [[LangGraph Conditional Fan-out]]이기도 하다.
+
 ## 내부 정보 우선 전략
 
 운영 환경에서는 보통 내부 정보를 먼저 본다.
@@ -76,6 +104,9 @@ flowchart TD
 
 - [[RAG(Retrieval-Augmented Generation)]]
 - [[Parallel Agent Fan-out]]
+- [[LangGraph Conditional Fan-out]]
+- [[로컬 우선 정보 수집 MAS]]
+- [[SQLite 데이터 소스]]
 - [[Serial Agent Pipeline]]
 - [[Fallback]]
 - [[Observability]]

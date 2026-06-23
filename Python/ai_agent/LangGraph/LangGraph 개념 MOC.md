@@ -49,9 +49,11 @@ tags:
 - [[Agent System Topologies]]
 - [[Serial Agent Pipeline]]
 - [[Parallel Agent Fan-out]]
+- [[LangGraph Conditional Fan-out]]
 - [[Sub-LLM as Tool]]
 - [[Agent as Tool]]
 - [[External Information MAS]]
+- [[로컬 우선 정보 수집 MAS]]
 
 ## 신뢰성 / 메모리 / 운영
 
@@ -99,6 +101,8 @@ tags:
 - 기본 ReAct 도구 호출 agent를 빠르게 만드는 함수는? → [[LangGraph create_react_agent]]
 - 여러 에이전트를 정해진 순서대로 실행하는 구조는? → [[Serial Agent Pipeline]]
 - 여러 에이전트를 동시에 실행 후 합치는 구조는? → [[Parallel Agent Fan-out]]
+- 조건에 따라 여러 노드 또는 한 노드로 분기하려면? → [[LangGraph Conditional Fan-out]]
+- 로컬 DB/CSV를 먼저 보고 없을 때 웹 검색하려면? → [[로컬 우선 정보 수집 MAS]]
 - 그래프 실행 상태를 이어가려면? → [[LangGraph Checkpointer]]
 - 세션별 대화 상태를 구분하는 값은? → [[LangGraph thread_id]]
 - 메모리 기반 checkpointer 실습 구현은? → [[LangGraph InMemorySaver]]

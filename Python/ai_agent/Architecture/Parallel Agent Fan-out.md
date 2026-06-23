@@ -160,6 +160,19 @@ builder.add_conditional_edges(
 
 실습 초반에는 Static Fan-out부터 이해하면 된다. 조건부 분기는 구조가 복잡해지므로, 정말 필요한 경우에만 쓴다.
 
+질병 건강관리 리포트 실습처럼 라우터가 여러 노드 목록을 반환하면 [[LangGraph Conditional Fan-out]]이다.
+
+```python
+def route(state):
+    if state["found"]:
+        return ["db_agent", "csv_agent"]
+    return ["web_agent"]
+```
+
+- `found=True`: 로컬 DB/CSV agent를 동시에 실행.
+- `found=False`: 웹 검색 agent만 실행.
+- 즉 "항상 병렬"이 아니라 "조건에 따라 병렬 실행 대상이 달라지는" 구조다.
+
 ## 병렬 배치 정답 체크리스트
 
 이번 실습 코드가 병렬 배치로 맞으려면 다음 조건을 만족해야 한다.
@@ -298,5 +311,6 @@ flowchart TD
 - [[Serial Agent Pipeline]]
 - [[Multi Agent]]
 - [[Agent Graph]]
+- [[LangGraph Conditional Fan-out]]
 - [[LangGraph State]]
 - [[LangGraph Edge]]

@@ -111,6 +111,39 @@ flowchart TD
     Chatbot -- "tool call 없음" --> End
 ```
 
+## 조건부 Fan-out
+
+조건부 Edge의 라우터는 노드 하나가 아니라 여러 노드 이름을 반환할 수도 있다.
+
+```python
+def route(state):
+    if state["found"]:
+        return ["db_agent", "csv_agent"]
+    return ["web_agent"]
+
+builder.add_conditional_edges(
+    "entry",
+    route,
+    ["db_agent", "csv_agent", "web_agent"],
+)
+```
+
+```mermaid
+flowchart TD
+    Entry["entry"]
+    DB["db_agent"]
+    CSV["csv_agent"]
+    Web["web_agent"]
+
+    Entry -- "found=True" --> DB
+    Entry -- "found=True" --> CSV
+    Entry -- "found=False" --> Web
+```
+
+- 이 구조는 [[LangGraph Conditional Fan-out]]이다.
+- `found=True`이면 DB/CSV 노드가 함께 실행된다.
+- `found=False`이면 Web 노드만 실행된다.
+
 ## 예시 코드 의미
 
 ```python
@@ -143,3 +176,4 @@ builder.add_edge("generate", END)
 - [[LangGraph END]]
 - [[Routing Workflow]]
 - [[Parallel Agent Fan-out]]
+- [[LangGraph Conditional Fan-out]]

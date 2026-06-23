@@ -31,6 +31,14 @@ tags:
 - [[Retrieve-Generate 패턴]]
 - [[RAG(Retrieval-Augmented Generation)]]
 
+## 외부 정보 / DB 연동
+
+- [[External Information MAS]]
+- [[로컬 우선 정보 수집 MAS]]
+- [[SQLite 데이터 소스]]
+- [[LangGraph Conditional Fan-out]]
+- [[Fallback]]
+
 ## 핵심 키워드
 
 - State
@@ -45,6 +53,11 @@ tags:
 - LLM Workflow
 - `@tool`
 - ToolNode
+- Conditional Fan-out
+- Local-first
+- SQLite DB
+- CSV Agent
+- Web Agent
 
 ## 평가
 
