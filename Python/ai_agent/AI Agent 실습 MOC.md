@@ -30,6 +30,10 @@ tags:
 
 - [[Retrieve-Generate 패턴]]
 - [[RAG(Retrieval-Augmented Generation)]]
+- [[RAG Agent]]
+- [[OCR]]
+- [[VLM]]
+- [[PyMuPDF]]
 
 ## 외부 정보 / DB 연동
 
