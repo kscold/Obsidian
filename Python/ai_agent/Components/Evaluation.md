@@ -75,8 +75,8 @@ score = llm.invoke(prompt)
 |---|---|---|
 | 분류 | [[분류 평가 지표|Accuracy, Precision, Recall, F1]] | 정답 라벨과 비교 가능 |
 | 회귀 | [[회귀 평가 지표|MAE, MSE, RMSE]] | 실제 숫자와 예측 숫자의 차이를 평가 |
-| 번역 | BLEU, BERTScore, Human Eval | 문장 품질과 의미 보존 평가 |
-| 요약 | ROUGE, BERTScore, LLM-as-Judge | 원문 핵심을 잘 담았는지 평가 |
+| 번역 | [[BLEU]], [[BERTScore]], Human Eval | 문장 품질과 의미 보존 평가 |
+| 요약 | [[ROUGE]], [[BERTScore]], [[LLM-as-Judge]] | 원문 핵심을 잘 담았는지 평가 |
 | QA | Exact Match, F1, LLM-as-Judge | 정답이 있으면 자동 평가 가능 |
 | 자유 생성 | LLM-as-Judge, Human Eval | 정답이 하나가 아니므로 rubric 필요 |
 | 에이전트 도구 사용 | Tool Accuracy, Reference Trajectory | 어떤 도구를 어떤 순서로 썼는지 평가 |
@@ -92,6 +92,10 @@ score = llm.invoke(prompt)
 - **자유 형식 답변**이라면 [[LLM-as-Judge]]나 사람 평가를 쓴다.
   - 예: 리포트, 요약, 상담 답변, RAG 최종 답변.
   - 이때는 정답 숫자보다 rubric이 더 중요하다.
+- **번역/요약처럼 참조문이 있는 텍스트 생성 문제**라면 [[텍스트 생성 평가 지표]]를 본다.
+  - 단어 겹침은 [[BLEU]], [[ROUGE]].
+  - 의미 유사도는 [[BERTScore]].
+  - 업무 품질 판단은 [[LLM-as-Judge]].
 
 ## LLM-as-Judge를 쓰는 경우
 
@@ -134,6 +138,7 @@ flowchart LR
 - [[AI 평가 지표]] — 분류/회귀/생성형 평가의 전체 지도.
 - [[분류 평가 지표]] — Accuracy, Precision, Recall, F1.
 - [[회귀 평가 지표]] — MAE, MSE, RMSE.
+- [[텍스트 생성 평가 지표]] — BLEU, ROUGE, BERTScore.
 - [[LLM-as-Judge]] — 평가자 LLM.
 - [[Observability]] — Production Loop의 인프라.
 - [[Guardrails]] — Safety 평가와 보완.

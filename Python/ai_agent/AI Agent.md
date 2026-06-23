@@ -19,10 +19,12 @@
 - [[Routing Workflow]]
 - [[Evaluator-Optimizer]]
 - [[A2A 프로토콜]]
+- [[BERT]]
 
 ### RAG (검색 증강 생성)
 - [[RAG(Retrieval-Augmented Generation)]]
 - [[임베딩(Embedding)]]
+- [[코사인 유사도]]
 - [[벡터 데이터베이스]]
 - [[청킹(Chunking)]]
 - [[Hybrid Search]]
@@ -69,6 +71,8 @@
 - [[Trajectory]]
 - [[Human-in-the-loop]]
 - [[Evaluation]]
+- [[AI 평가 지표]]
+- [[텍스트 생성 평가 지표]]
 - [[LLM-as-Judge]]
 - [[Guardrails]]
 - [[Observability]]

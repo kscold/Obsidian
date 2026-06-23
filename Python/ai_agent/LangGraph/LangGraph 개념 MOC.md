@@ -72,6 +72,8 @@ tags:
 - [[AI 평가 지표]]
 - [[분류 평가 지표]]
 - [[회귀 평가 지표]]
+- [[텍스트 생성 평가 지표]]
+- [[BERTScore]]
 - [[LLM-as-Judge]]
 - [[Observability]]
 

@@ -24,6 +24,7 @@ def cosine_similarity(a: np.ndarray, b: np.ndarray) -> float:
 - **Cosine similarity** — 각도 기반, 가장 흔함.
 - **Dot product** — 임베딩이 정규화돼 있으면 cosine과 같음.
 - **Euclidean distance** — 거리가 작을수록 유사. 잘 안 씀.
+- 자세한 직관은 [[코사인 유사도]] 참고.
 
 ## OpenAI 임베딩 호출
 
@@ -57,3 +58,8 @@ vectors = [d.embedding for d in res.data]
 
 - 정확한 키워드·고유명사 매칭이 약하다 → [[Hybrid Search]]로 BM25 보강.
 - 의미는 비슷한데 답이 아닌 문서가 끼어든다 → [[Reranking]] 추가.
+
+## 평가 지표와의 연결
+
+- [[BERTScore]]는 생성문과 참조문을 [[BERT]] 임베딩으로 바꾼 뒤 [[코사인 유사도]]로 의미가 얼마나 비슷한지 본다.
+- 그래서 BLEU/ROUGE처럼 단어가 그대로 겹치는지만 보는 지표보다 표현 변화에 강하다.
