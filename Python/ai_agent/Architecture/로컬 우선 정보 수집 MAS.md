@@ -125,6 +125,23 @@ collected = "\n\n".join(m.content for m in state["messages"])
 | CSV | 만들기 쉽고 실습에 적합 | 규모가 커지면 관리가 어려움 |
 | Web | 최신 정보 가능 | 신뢰도·출처 검증 필요 |
 
+## RAG Agent로 보강하는 경우
+
+- DB Agent, CSV Agent, Web Agent가 모두 충분한 정보를 찾지 못하면 [[RAG Agent]]로 넘길 수 있다.
+- 이때 RAG Agent는 내부 PDF, 강의자료, 매뉴얼, 보고서 등을 [[벡터 데이터베이스]]에서 의미 기반으로 검색한다.
+- 로컬 DB/CSV는 정확한 key 조회에 강하고, RAG Agent는 표현이 달라도 의미가 비슷한 문서를 찾는 데 강하다.
+- 따라서 운영 구조는 `정형 데이터 조회 -> 웹 검색 또는 RAG 보강 -> Reporter 종합`처럼 설계할 수 있다.
+
+```mermaid
+flowchart TD
+    User[사용자 질문] --> Local[DB/CSV/Web Agent]
+    Local --> Check{충분한 정보?}
+    Check -->|예| Reporter[Reporter]
+    Check -->|아니오| RAGAgent[RAG Agent]
+    RAGAgent --> Reporter
+    Reporter --> End[END]
+```
+
 ## 운영 설계 감각
 
 - 실습에서는 SQLite와 CSV를 mock 데이터로 썼다.
