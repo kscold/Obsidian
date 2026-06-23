@@ -16,13 +16,13 @@
 
 - 개발 중 즉시 피드백.
 - **[[ReAct 패턴]] / [[Tool Calling]] trajectory 확인** + 빠른 회귀 테스트.
-- 도구: `pytest`, [[LangChain]] LangSmith 로컬 모드, Strands Evaluations.
+- 도구: `pytest`, [[LangChain]], [[LangSmith]], Strands Evaluations.
 
 ### Outer Loop — 릴리즈 전 회귀
 
 - 데이터셋(수십~수백 시나리오)에 대해 일괄 평가.
 - 변경 전/후 점수를 비교하고 **A/B 테스트**.
-- 도구: AgentCore Evaluation, RAGAS, DeepEval, LangSmith eval.
+- 도구: AgentCore Evaluation, RAGAS, DeepEval, [[LangSmith]] eval.
 
 ### Production Loop — 운영 모니터링
 
@@ -139,6 +139,7 @@ flowchart LR
 - [[분류 평가 지표]] — Accuracy, Precision, Recall, F1.
 - [[회귀 평가 지표]] — MAE, MSE, RMSE.
 - [[텍스트 생성 평가 지표]] — BLEU, ROUGE, BERTScore.
+- [[LangSmith]] — trace, dataset, evaluator, experiment 관리.
 - [[LLM-as-Judge]] — 평가자 LLM.
 - [[Observability]] — Production Loop의 인프라.
 - [[Guardrails]] — Safety 평가와 보완.

@@ -71,6 +71,7 @@ tags:
 - [[Fallback]]
 - [[Human-in-the-loop]]
 - [[Evaluation]]
+- [[LangSmith]]
 - [[AI 평가 지표]]
 - [[분류 평가 지표]]
 - [[회귀 평가 지표]]
@@ -105,3 +106,4 @@ tags:
 - 무한 루프를 막으려면? → [[Loop Control]]
 - END 없는 반복 그래프를 강제로 끊으려면? → [[LangGraph recursion_limit]]
 - 반복 제한에 걸렸을 때 나는 에러는? → [[GraphRecursionError]]
+- LangGraph 실행을 trace로 보고 싶다면? → [[LangSmith]]

@@ -75,7 +75,7 @@ chain.invoke("환불 정책?")
 - **langchain-community** — 외부 통합(벡터DB, 로더 등).
 - **langchain-openai / anthropic / aws / google** — 공급사별 패키지.
 - **[[LangGraph]]** — 상태 머신 기반 에이전트.
-- **LangSmith** — 트레이싱·평가·프롬프트 관리 (유료 SaaS).
+- **[[LangSmith]]** — 트레이싱·평가·프롬프트 관리 플랫폼.
 
 ## 비판과 대안
 

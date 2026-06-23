@@ -32,7 +32,7 @@ with tracer.start_as_current_span("agent.invoke") as span:
 
 | 도구 | 특징 |
 |------|------|
-| **LangSmith** | [[LangChain]] 친화, prompt/trace/eval 통합 SaaS |
+| **[[LangSmith]]** | [[LangChain]] 친화, prompt/trace/eval 통합 SaaS |
 | **Langfuse** | 오픈소스, self-host 가능 |
 | **Weights & Biases Weave** | 실험·평가 결합 |
 | **Arize Phoenix** | 오픈소스, OTel 호환 |
@@ -42,17 +42,20 @@ with tracer.start_as_current_span("agent.invoke") as span:
 
 ```python
 import os
-os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_API_KEY"] = "..."
-os.environ["LANGCHAIN_PROJECT"] = "ai-agent-practice"
+os.environ["LANGSMITH_TRACING"] = "true"
+os.environ["LANGSMITH_API_KEY"] = "..."
+os.environ["LANGSMITH_PROJECT"] = "ai-agent-practice"
 
 # 이후 모든 LangChain/LangGraph 호출이 자동 트레이싱
 agent.invoke({"input": "..."})
 ```
 
+- 예전 예제에서는 `LANGCHAIN_TRACING_V2`, `LANGCHAIN_API_KEY`, `LANGCHAIN_PROJECT`를 쓰기도 한다.
+- 최신 LangSmith 문서 기준으로는 `LANGSMITH_*` 환경 변수를 먼저 보면 된다.
+
 ## LangGraph에서 특히 봐야 할 것
 
-LangGraph는 노드 단위로 실행되기 때문에, LangSmith 같은 도구에서 다음을 보면 디버깅이 쉬워진다.
+LangGraph는 노드 단위로 실행되기 때문에, [[LangSmith]] 같은 도구에서 다음을 보면 디버깅이 쉬워진다.
 
 | 봐야 할 것 | 이유 |
 |---|---|
@@ -116,5 +119,6 @@ flowchart TD
 ## 관련
 
 - [[Evaluation]] — 트레이스가 평가의 원료.
+- [[LangSmith]] — LangChain/LangGraph 친화 observability/evaluation 플랫폼.
 - [[Trajectory]] — 트레이스를 의미 단위로 묶은 단위.
 - [[Cost와 Token]] — 비용 모니터링.

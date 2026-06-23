@@ -27,7 +27,7 @@
 
 ## 수집 방법
 
-- [[Observability]] 시스템(OpenTelemetry, LangSmith)에서 트레이스로 자동 수집.
+- [[Observability]] 시스템(OpenTelemetry, [[LangSmith]])에서 트레이스로 자동 수집.
 - 또는 그래프 상태에 명시적으로 push.
 
 ```python
