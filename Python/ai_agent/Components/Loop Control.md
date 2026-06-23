@@ -67,6 +67,46 @@ graph.invoke(
 
 - 명시적인 종료 조건을 만들기 어렵거나, 실습 중 무한 루프를 막을 때 유용하다.
 - 운영에서는 `recursion_limit`만 믿지 말고, State 기반 종료 조건을 함께 두는 것이 좋다.
+- 자세한 정리: [[LangGraph recursion_limit]]
+
+## 조건부 종료 vs recursion_limit
+
+| 구분 | 조건부 종료 | `recursion_limit` |
+|---|---|---|
+| 목적 | 업무 로직에 따른 정상 종료 | 무한 루프 방지용 강제 중단 |
+| 구현 | `add_conditional_edges`로 [[END]] 연결 | `graph.invoke(..., {"recursion_limit": n})` |
+| 결과 | 정상 `result` 반환 | `GraphRecursionError` 발생 가능 |
+| 예시 | 목표 금액 달성 시 종료 | END 없는 자기 반복 그래프 중단 |
+| 실무 감각 | 반드시 설계해야 하는 종료 조건 | 마지막 안전장치 |
+
+```mermaid
+flowchart LR
+    A["조건부 종료"]
+    B["END로 이동"]
+    C["정상 result 반환"]
+
+    X["recursion_limit"]
+    Y["반복 제한 도달"]
+    Z["GraphRecursionError"]
+
+    A --> B --> C
+    X --> Y --> Z
+```
+
+## GraphRecursionError
+
+```python
+from langgraph.errors import GraphRecursionError
+
+try:
+    graph.invoke({"count": 0}, {"recursion_limit": 10})
+except GraphRecursionError:
+    print("recursion_limit 도달, 에러 중단")
+```
+
+- `GraphRecursionError`는 그래프가 허용된 반복 제한을 넘었을 때 발생한다.
+- 이 에러가 났다는 것은 그래프가 정상적으로 [[END]]에 도달하지 못했다는 신호다.
+- 그래서 원인을 보려면 edge 구조와 라우터 함수를 먼저 확인해야 한다.
 
 ## 실무 감각
 
@@ -81,5 +121,6 @@ graph.invoke(
 
 - [[Agentic Loop]]
 - [[LangGraph Edge]]
+- [[LangGraph recursion_limit]]
 - [[Fallback]]
 - [[Observability]]
