@@ -68,6 +68,15 @@ sequenceDiagram
 - 메모리 상에 저장되기 때문에 코드 실행 상태가 내려가면 저장된 내용도 함께 휘발된다.
 - 그래서 실습에는 좋지만, 운영 환경의 영구 저장 용도로는 부족하다.
 
+## SqliteSaver
+
+- [[LangGraph SqliteSaver]]는 checkpointer의 한 종류다.
+- 그래프의 상태(state)를 SQLite 데이터베이스 파일에 저장한다.
+- InMemorySaver와 똑같이 [[LangGraph thread_id]]를 기준으로 세션별 기억을 관리한다.
+- 차이는 런타임이 죽거나 세션이 끝나도 SQLite 파일이 남아 있으면 기억이 유지된다는 점이다.
+- 저장 형식은 사람이 읽는 텍스트가 아니라 msgpack 같은 바이너리 직렬화 데이터다.
+- 그래서 DB 파일을 열어도 일반 대화록처럼 읽기 쉽지는 않다.
+
 ## Store
 
 - Store는 대화 thread를 넘어 재사용할 지식을 저장하는 장치다.
@@ -76,6 +85,14 @@ sequenceDiagram
 - 예를 들어 사용자별 기억, 프로젝트별 기억, 도메인별 기억을 namespace로 나눌 수 있다.
 - Store에 들어가는 것은 실행 위치가 아니라 재사용 가능한 정보다.
 - 예를 들면 사용자 선호, 프로젝트 규칙, 과거 작업 요약 같은 것들이다.
+
+## InMemoryStore
+
+- [[LangGraph InMemoryStore]]는 Store의 한 구현체다.
+- 기억을 메모리(RAM)에 저장한다.
+- 대화 세션을 넘어 유지할 지식을 누적하는 개념을 실습하기 좋다.
+- 다만 RAM 기반이므로 프로세스가 종료되면 저장된 장기 기억도 사라질 수 있다.
+- 운영에서는 보통 PostgreSQL, MySQL, Redis, Vector DB 같은 외부 저장소를 함께 고려한다.
 
 ```mermaid
 flowchart TD
@@ -96,7 +113,7 @@ flowchart TD
 | 목적 | 그래프 실행 상태 저장 | 재사용할 지식 저장 |
 | 기준 | `thread_id` | `namespace` |
 | 범위 | 같은 대화 안 | 여러 대화/세션 전체 |
-| 대표 구현 | `InMemorySaver`, `SqliteSaver` | `InMemoryStore` |
+| 대표 구현 | [[LangGraph InMemorySaver]], [[LangGraph SqliteSaver]] | [[LangGraph InMemoryStore]] |
 | 예시 | 이전 메시지, interrupt 위치 | 사용자 선호, 프로젝트 지식 |
 
 - Checkpointer는 같은 `thread_id` 안에서 대화를 이어가게 해준다.
@@ -110,16 +127,30 @@ flowchart TD
 |---|---|
 | "같은 대화를 이어가려면?" | [[LangGraph Checkpointer]] |
 | "InMemorySaver는 왜 꺼지면 날아가?" | [[LangGraph InMemorySaver]] |
+| "런타임이 죽어도 파일로 기억하려면?" | [[LangGraph SqliteSaver]] |
 | "세션을 어떻게 구분해?" | [[LangGraph thread_id]] |
 | "다른 대화에서도 기억하려면?" | [[LangGraph Store]] |
+| "RAM 기반 Store 실습 구현은?" | [[LangGraph InMemoryStore]] |
 | "기억을 사용자별로 나누려면?" | [[LangGraph namespace]] |
+| "운영에서는 어떤 저장소를 쓰나?" | [[LangGraph 운영용 메모리 저장소]] |
+
+## 저장소 선택 기준
+
+| 상황 | 추천 |
+|---|---|
+| 노트북에서 빠르게 세션 기억 실습 | [[LangGraph InMemorySaver]] |
+| 로컬 파일로 checkpoint 유지 | [[LangGraph SqliteSaver]] |
+| 장기 기억 Store 개념 실습 | [[LangGraph InMemoryStore]] |
+| 실제 서비스 운영 | [[LangGraph 운영용 메모리 저장소]] |
 
 ## 한 줄 요약
 
 - [[LangGraph Checkpointer]] = 같은 대화의 실행 상태를 이어가기 위한 기억.
 - [[LangGraph InMemorySaver]] = RAM에 저장하는 실습용 checkpointer.
+- [[LangGraph SqliteSaver]] = SQLite 파일에 저장하는 로컬 영속 checkpointer.
 - [[LangGraph thread_id]] = 어떤 대화를 이어갈지 구분하는 세션 ID.
 - [[LangGraph Store]] = 여러 대화를 넘어 재사용할 장기 지식 저장소.
+- [[LangGraph InMemoryStore]] = RAM에 저장하는 실습용 Store.
 - [[LangGraph namespace]] = Store 안에서 기억을 분류하는 폴더 같은 기준.
 
 ## 관련
@@ -127,6 +158,9 @@ flowchart TD
 - [[Memory]]
 - [[LangGraph Checkpointer]]
 - [[LangGraph InMemorySaver]]
+- [[LangGraph SqliteSaver]]
 - [[LangGraph Store]]
+- [[LangGraph InMemoryStore]]
 - [[LangGraph thread_id]]
 - [[LangGraph namespace]]
+- [[LangGraph 운영용 메모리 저장소]]

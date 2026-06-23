@@ -48,7 +48,7 @@ flowchart TD
 | 구현 | 특징 |
 |---|---|
 | [[LangGraph InMemorySaver]] | RAM에 저장. 빠르지만 프로세스가 꺼지면 사라짐 |
-| `SqliteSaver` | 로컬 sqlite 파일에 저장. 실습/개인 프로젝트에 적합 |
+| [[LangGraph SqliteSaver]] | 로컬 SQLite 파일에 저장. 런타임이 죽어도 파일이 남으면 유지 |
 | `PostgresSaver` | 서버/운영 환경에 적합 |
 
 ## Checkpointer vs Store
@@ -65,11 +65,20 @@ flowchart TD
 - Checkpointer = 그래프 실행 상태를 저장해서 같은 `thread_id`의 대화를 이어주는 장치.
 - Store = 대화 세션을 넘어 재사용할 장기 지식을 저장하는 장치.
 
+## 운영에서의 감각
+
+- 실습에서는 [[LangGraph InMemorySaver]]나 [[LangGraph SqliteSaver]]로 충분하다.
+- 실제 서비스에서는 서버 재시작, 여러 사용자, 장애 복구, 백업을 고려해야 한다.
+- 그래서 운영에서는 PostgreSQL 같은 서버형 DB 기반 checkpointer를 고려한다.
+- MySQL류 DB도 애플리케이션 저장소로는 사용할 수 있지만, LangGraph checkpointer로 쓰려면 해당 구현체나 커스텀 저장 계층이 필요하다.
+
 ## 관련
 
 - [[Memory]]
 - [[LangGraph Store]]
 - [[LangGraph InMemorySaver]]
+- [[LangGraph SqliteSaver]]
 - [[LangGraph thread_id]]
 - [[Human-in-the-loop]]
 - [[LangGraph State]]
+- [[LangGraph 운영용 메모리 저장소]]

@@ -60,6 +60,16 @@ graph = builder.compile(store=store)
 - 프로세스가 종료되면 사라질 수 있다.
 - 실습에서 장기 메모리 개념을 확인하기 좋다.
 - 이름은 Store지만 구현이 InMemory라면 영구 저장은 아니다.
+- 자세한 정리: [[LangGraph InMemoryStore]]
+
+## 운영에서의 감각
+
+- Store는 재사용할 지식을 저장하므로 운영에서는 영속 저장소가 필요하다.
+- PostgreSQL, MySQL, Redis, Vector DB 같은 외부 저장소를 함께 고려한다.
+- 사용자별 기억은 [[LangGraph namespace]]로 분리한다.
+- 검색이 필요한 장기 지식은 RAG 저장소나 벡터 DB와 연결할 수도 있다.
+- 중요한 점은 Checkpointer와 Store를 섞지 않는 것이다.
+- Checkpointer는 실행 상태, Store는 재사용 지식이다.
 
 ## Checkpointer와 헷갈리지 않기
 
@@ -82,5 +92,7 @@ flowchart LR
 
 - [[Memory]]
 - [[LangGraph Checkpointer]]
+- [[LangGraph InMemoryStore]]
 - [[LangGraph namespace]]
+- [[LangGraph 운영용 메모리 저장소]]
 - [[RAG(Retrieval-Augmented Generation)]]

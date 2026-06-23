@@ -74,6 +74,8 @@ flowchart TD
 - 저장 위치가 메모리이므로 Jupyter 커널을 재시작하면 저장된 checkpoint도 사라진다.
 - Python 프로세스가 종료되어도 마찬가지로 사라진다.
 - 그래서 중요한 대화 상태를 오래 보존해야 한다면 `SqliteSaver`나 `PostgresSaver`를 사용해야 한다.
+- 로컬 파일로 유지하려면 [[LangGraph SqliteSaver]]를 고려한다.
+- 운영 서버에서는 [[LangGraph 운영용 메모리 저장소]] 기준으로 PostgreSQL 같은 저장소를 고려한다.
 
 ```mermaid
 flowchart LR
@@ -109,6 +111,8 @@ flowchart LR
 ## 관련
 
 - [[LangGraph Checkpointer]]
+- [[LangGraph SqliteSaver]]
 - [[LangGraph thread_id]]
 - [[LangGraph 메모리 상태 관리]]
+- [[LangGraph 운영용 메모리 저장소]]
 - [[Memory]]
