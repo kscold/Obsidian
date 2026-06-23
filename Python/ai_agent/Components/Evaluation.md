@@ -73,12 +73,25 @@ score = llm.invoke(prompt)
 
 | 작업 | 대표 지표 | 감각 |
 |---|---|---|
-| 분류 | Accuracy, Precision, Recall, F1 | 정답 라벨과 비교 가능 |
+| 분류 | [[분류 평가 지표|Accuracy, Precision, Recall, F1]] | 정답 라벨과 비교 가능 |
+| 회귀 | [[회귀 평가 지표|MAE, MSE, RMSE]] | 실제 숫자와 예측 숫자의 차이를 평가 |
 | 번역 | BLEU, BERTScore, Human Eval | 문장 품질과 의미 보존 평가 |
 | 요약 | ROUGE, BERTScore, LLM-as-Judge | 원문 핵심을 잘 담았는지 평가 |
 | QA | Exact Match, F1, LLM-as-Judge | 정답이 있으면 자동 평가 가능 |
 | 자유 생성 | LLM-as-Judge, Human Eval | 정답이 하나가 아니므로 rubric 필요 |
 | 에이전트 도구 사용 | Tool Accuracy, Reference Trajectory | 어떤 도구를 어떤 순서로 썼는지 평가 |
+
+## 지표 선택 기준
+
+- **분류 문제**라면 [[분류 평가 지표]]를 먼저 본다.
+  - 예: 이 질문이 뉴스 도구로 가야 하는가, 주가 도구로 가야 하는가.
+  - 전체 정답률은 Accuracy, 오탐/미탐 균형은 Precision/Recall/F1로 본다.
+- **숫자 예측 문제**라면 [[회귀 평가 지표]]를 본다.
+  - 예: 가격, 수요, 점수, 지연시간 예측.
+  - 평균적으로 얼마나 틀렸는지는 MAE, 큰 실수를 얼마나 줄였는지는 RMSE를 본다.
+- **자유 형식 답변**이라면 [[LLM-as-Judge]]나 사람 평가를 쓴다.
+  - 예: 리포트, 요약, 상담 답변, RAG 최종 답변.
+  - 이때는 정답 숫자보다 rubric이 더 중요하다.
 
 ## LLM-as-Judge를 쓰는 경우
 
@@ -118,6 +131,9 @@ flowchart LR
 
 ## 관련
 
+- [[AI 평가 지표]] — 분류/회귀/생성형 평가의 전체 지도.
+- [[분류 평가 지표]] — Accuracy, Precision, Recall, F1.
+- [[회귀 평가 지표]] — MAE, MSE, RMSE.
 - [[LLM-as-Judge]] — 평가자 LLM.
 - [[Observability]] — Production Loop의 인프라.
 - [[Guardrails]] — Safety 평가와 보완.

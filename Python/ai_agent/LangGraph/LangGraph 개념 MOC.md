@@ -69,6 +69,10 @@ tags:
 - [[Fallback]]
 - [[Human-in-the-loop]]
 - [[Evaluation]]
+- [[AI 평가 지표]]
+- [[분류 평가 지표]]
+- [[회귀 평가 지표]]
+- [[LLM-as-Judge]]
 - [[Observability]]
 
 ## 핵심 질문

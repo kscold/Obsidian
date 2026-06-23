@@ -45,3 +45,11 @@ tags:
 - LLM Workflow
 - `@tool`
 - ToolNode
+
+## 평가
+
+- [[Evaluation]]
+- [[AI 평가 지표]]
+- [[분류 평가 지표]]
+- [[회귀 평가 지표]]
+- [[LLM-as-Judge]]
