@@ -28,7 +28,7 @@ class State(TypedDict):
     loop_count: int
 ```
 
-노드가 실행될 때마다 `loop_count`를 증가시키고, 일정 횟수를 넘으면 [[END]] 또는 fallback 노드로 보낸다.
+노드가 실행될 때마다 `loop_count`를 증가시키고, 일정 횟수를 넘으면 [[LangGraph END|END]] 또는 fallback 노드로 보낸다.
 
 ```mermaid
 flowchart TD
@@ -74,7 +74,7 @@ graph.invoke(
 | 구분 | 조건부 종료 | `recursion_limit` |
 |---|---|---|
 | 목적 | 업무 로직에 따른 정상 종료 | 무한 루프 방지용 강제 중단 |
-| 구현 | `add_conditional_edges`로 [[END]] 연결 | `graph.invoke(..., {"recursion_limit": n})` |
+| 구현 | `add_conditional_edges`로 [[LangGraph END|END]] 연결 | `graph.invoke(..., {"recursion_limit": n})` |
 | 결과 | 정상 `result` 반환 | `GraphRecursionError` 발생 가능 |
 | 예시 | 목표 금액 달성 시 종료 | END 없는 자기 반복 그래프 중단 |
 | 실무 감각 | 반드시 설계해야 하는 종료 조건 | 마지막 안전장치 |
@@ -105,7 +105,7 @@ except GraphRecursionError:
 ```
 
 - `GraphRecursionError`는 그래프가 허용된 반복 제한을 넘었을 때 발생한다.
-- 이 에러가 났다는 것은 그래프가 정상적으로 [[END]]에 도달하지 못했다는 신호다.
+- 이 에러가 났다는 것은 그래프가 정상적으로 [[LangGraph END|END]]에 도달하지 못했다는 신호다.
 - 그래서 원인을 보려면 edge 구조와 라우터 함수를 먼저 확인해야 한다.
 
 ## 실무 감각

@@ -19,7 +19,7 @@ tags:
 - [[LangGraph State]]: 노드들이 공유하는 데이터 구조
 - [[LangGraph Node]]: State를 입력받아 작업을 수행하는 함수
 - [[LangGraph Edge]]: 노드 간 실행 순서
-- `START`, `END`: 그래프의 시작점과 종료점
+- [[LangGraph START|START]], [[LangGraph END|END]]: 그래프의 시작점과 종료점
 
 ## 기본 구조
 

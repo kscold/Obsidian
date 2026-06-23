@@ -23,6 +23,8 @@ tags:
 - [[LangGraph State]]
 - [[LangGraph Node]]
 - [[LangGraph Edge]]
+- [[LangGraph START]]
+- [[LangGraph END]]
 - [[invoke]]
 
 ## Workflow와 Tool
@@ -84,6 +86,8 @@ tags:
 - 도구를 쥐어준 뒤 누가 도구를 고르는가? → [[LLM Tool Selection]]
 - 노드들이 공유하는 데이터는 어디에 담기는가? → [[LangGraph State]]
 - 실행 순서는 어디서 정하는가? → [[LangGraph Edge]]
+- 그래프 시작점은? → [[LangGraph START]]
+- 그래프 정상 종료 지점은? → [[LangGraph END]]
 - 검색 후 생성 구조는 무엇인가? → [[Retrieve-Generate 패턴]]
 - 입력을 넣고 실제 실행하는 메서드는? → [[invoke]]
 - 하위 전문가 LLM을 도구처럼 쓰는 구조는? → [[Sub-LLM as Tool]]

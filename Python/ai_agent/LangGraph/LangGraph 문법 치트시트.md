@@ -27,8 +27,8 @@ from langchain_openai import ChatOpenAI
 | `TypedDict` | Python | State 구조 정의 |
 | `Annotated` | Python | 타입에 reducer 같은 추가 정보 부여 |
 | `StateGraph` | LangGraph | 그래프 워크플로우 생성 |
-| `START` | LangGraph | 그래프 시작 지점 |
-| `END` | LangGraph | 그래프 종료 지점 |
+| `START` | [[LangGraph START]] | 그래프 시작 지점 |
+| `END` | [[LangGraph END]] | 그래프 종료 지점 |
 | `add_messages` | LangGraph | messages 누적 reducer |
 | `ToolNode` | LangGraph | LLM이 요청한 도구를 실제 실행 |
 | `tools_condition` | LangGraph | tool call 여부에 따라 라우팅 |

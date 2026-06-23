@@ -29,9 +29,9 @@ flowchart LR
 
 ## START와 END
 
-`START`는 그래프의 시작점이다.
+[[LangGraph START|START]]는 그래프의 시작점이다.
 
-`END`는 그래프의 종료점이다.
+[[LangGraph END|END]]는 그래프의 종료점이다.
 
 ```python
 from langgraph.graph import START, END
@@ -139,5 +139,7 @@ builder.add_edge("generate", END)
 
 - [[LangGraph StateGraph]]
 - [[LangGraph Node]]
+- [[LangGraph START]]
+- [[LangGraph END]]
 - [[Routing Workflow]]
 - [[Parallel Agent Fan-out]]

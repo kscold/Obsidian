@@ -15,7 +15,7 @@ tags:
 
 ## 언제 발생하나
 
-- 그래프에 [[END]]로 가는 edge가 없을 때
+- 그래프에 [[LangGraph END|END]]로 가는 edge가 없을 때
 - 같은 노드로 계속 돌아가는 edge가 있을 때
 - 라우터 함수가 계속 `"loop"`만 반환할 때
 - agent가 같은 tool call을 반복할 때
@@ -34,7 +34,7 @@ except GraphRecursionError:
 
 ## 확인할 것
 
-- [[LangGraph Edge]]가 [[END]]로 이어지는지 확인한다.
+- [[LangGraph Edge]]가 [[LangGraph END|END]]로 이어지는지 확인한다.
 - `add_conditional_edges`의 라우터 함수가 종료 조건을 반환하는지 확인한다.
 - State 값이 반복 중 실제로 변하는지 확인한다.
 - 의도한 반복 횟수보다 `recursion_limit`이 너무 낮지 않은지 확인한다.
@@ -49,3 +49,4 @@ except GraphRecursionError:
 - [[LangGraph recursion_limit]]
 - [[Loop Control]]
 - [[LangGraph Edge]]
+- [[LangGraph END]]

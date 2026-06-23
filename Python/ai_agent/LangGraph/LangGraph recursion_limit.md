@@ -11,7 +11,7 @@ tags:
 
 - `recursion_limit`은 [[LangGraph]] 그래프가 너무 많이 반복될 때 강제로 중단시키는 안전장치다.
 - 정상적인 업무 종료 조건이 아니라, 무한 루프를 막기 위한 보험에 가깝다.
-- 그래프에 [[END]]로 가는 길이 없거나, 조건이 잘못되어 같은 노드를 계속 돌 때 사용한다.
+- 그래프에 [[LangGraph END|END]]로 가는 길이 없거나, 조건이 잘못되어 같은 노드를 계속 돌 때 사용한다.
 
 ## 왜 필요한가
 
@@ -61,7 +61,7 @@ flowchart TD
 
 - `START`에서 `increment`로 간다.
 - `increment`가 끝나면 다시 `increment`로 간다.
-- [[END]]로 가는 edge가 없다.
+- [[LangGraph END|END]]로 가는 edge가 없다.
 - 그래서 LangGraph는 정상 종료할 수 없다.
 - 이때 `recursion_limit`이 없으면 계속 반복될 수 있다.
 
@@ -78,7 +78,7 @@ graph.invoke({"count": 0}, {"recursion_limit": 10})
 
 ## 정상 루프 제어와 차이
 
-정상 루프 제어는 조건을 만족하면 [[END]]로 간다.
+정상 루프 제어는 조건을 만족하면 [[LangGraph END|END]]로 간다.
 
 ```python
 def route(state: State):
@@ -111,7 +111,7 @@ flowchart TD
     Route -->|count >= 5| End
 ```
 
-반면 `recursion_limit`은 [[END]]로 보내는 로직이 아니다.
+반면 `recursion_limit`은 [[LangGraph END|END]]로 보내는 로직이 아니다.
 
 - 조건부 종료: 정상 종료
 - `recursion_limit`: 강제 중단
@@ -127,13 +127,13 @@ flowchart TD
 ## 언제 의존하면 안 되나
 
 - 업무상 정상 종료 조건을 `recursion_limit`으로 대신하면 안 된다.
-- 예를 들어 "목표 금액 달성 시 종료" 같은 문제는 조건부 edge로 [[END]]에 보내야 한다.
+- 예를 들어 "목표 금액 달성 시 종료" 같은 문제는 조건부 edge로 [[LangGraph END|END]]에 보내야 한다.
 - `recursion_limit`에 걸리면 에러로 끝나기 때문에 원하는 `result`를 안정적으로 받기 어렵다.
 
 ## 한 줄 요약
 
 - `recursion_limit` = 무한 반복을 막는 강제 안전장치.
-- 정상 종료는 `add_conditional_edges`와 [[END]]로 설계해야 한다.
+- 정상 종료는 `add_conditional_edges`와 [[LangGraph END|END]]로 설계해야 한다.
 - 실무에서는 조건부 종료 + `recursion_limit` 보험을 함께 두는 것이 좋다.
 
 ## 관련
@@ -141,4 +141,5 @@ flowchart TD
 - [[Loop Control]]
 - [[LangGraph Edge]]
 - [[LangGraph StateGraph]]
+- [[LangGraph END]]
 - [[GraphRecursionError]]
