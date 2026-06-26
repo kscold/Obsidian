@@ -22,7 +22,7 @@ from typing import Optional, Union, Any, Literal, Callable, TypedDict, Annotated
 Optional[int]              # = int | None
 Union[int, str]            # = int | str
 Literal["a", "b"]          # 정확히 "a" 또는 "b"
-Callable[[int, int], int]  # (int, int) -> int 함수
+Callable[Params, int]      # Params가 [int, int]이면 (int, int) -> int 함수
 Any                        # 검사 비활성화 (탈출구)
 ```
 

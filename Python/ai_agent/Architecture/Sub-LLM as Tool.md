@@ -214,7 +214,7 @@ sequenceDiagram
 
 ### 2. 같은 모델을 써도 역할은 분리된다
 
-코드에서는 상위 agent와 하위 전문가 도구들이 모두 같은 `llm` 객체를 사용한다.
+단순한 구성에서는 상위 agent와 하위 전문가 도구들이 모두 같은 `llm` 객체를 사용할 수 있다.
 
 ```python
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
