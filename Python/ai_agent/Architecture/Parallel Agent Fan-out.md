@@ -78,7 +78,7 @@ builder.add_edge(START, "stock_agent")
 | Map | 독립 작업을 각각 수행 | 뉴스 수집, 주가 조회 |
 | Reduce | 결과를 합쳐 최종 산출물 생성 | 투자 리포트 작성 |
 
-이번 코드에서는 다음과 같다.
+예시 구조는 다음과 같다.
 
 ```mermaid
 flowchart TD

@@ -45,7 +45,7 @@ flowchart LR
 
 ## 핵심 아이디어
 
-일반 Python 코드에서는 함수가 함수를 직접 호출한다.
+일반 Python 함수 호출에서는 함수가 함수를 직접 호출한다.
 
 ```python
 docs = retrieve(question)

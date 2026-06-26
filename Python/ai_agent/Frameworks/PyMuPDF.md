@@ -13,7 +13,7 @@ tags:
 
 - PyMuPDF는 Python에서 PDF를 다루기 좋은 라이브러리다.
 - 설치 패키지 이름은 `pymupdf`이고, 코드에서 import할 때는 보통 `fitz`라는 이름을 쓴다.
-- 그래서 실습 코드에서는 `pip install pymupdf` 후 `import fitz` 형태가 자주 나온다.
+- 그래서 실습에서는 `pip install pymupdf` 후 `import fitz` 형태가 자주 나온다.
 
 ## 왜 fitz라고 import하나
 
@@ -26,7 +26,7 @@ import fitz
 ```
 
 - `fitz`는 PyMuPDF의 오래된 모듈 이름이다.
-- 라이브러리 이름은 PyMuPDF지만, 실제 코드에서는 `fitz.open(...)`처럼 사용하는 경우가 많다.
+- 라이브러리 이름은 PyMuPDF지만, 사용할 때는 `fitz.open(...)`처럼 쓰는 경우가 많다.
 - 따라서 `pymupdf라는 라이브러리를 설치하고 fitz로 import한다`고 기억하면 된다.
 
 ## 기본 텍스트 추출
