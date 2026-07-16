@@ -25,6 +25,8 @@ tags:
 - [[LangGraph Edge]]
 - [[LangGraph START]]
 - [[LangGraph END]]
+- [[LangGraph Command]]
+- [[LangGraph Send]]
 - [[invoke]]
 
 ## Workflow와 Tool
@@ -34,6 +36,8 @@ tags:
 - [[LLM Tool Selection]]
 - [[LangGraph ToolNode]]
 - [[Tool Calling]]
+- [[Concurrent Tool Execution]]
+- [[Agent Middleware]]
 
 ## RAG 패턴
 
@@ -60,6 +64,7 @@ tags:
 - [[Memory]]
 - [[LangGraph 메모리 상태 관리]]
 - [[LangGraph Checkpointer]]
+- [[LangGraph Durable Execution]]
 - [[LangGraph InMemorySaver]]
 - [[LangGraph SqliteSaver]]
 - [[LangGraph PostgresSaver]]
@@ -110,6 +115,9 @@ tags:
 - 운영용 DB 기반 checkpoint는? → [[LangGraph PostgresSaver]]
 - 사람이 승인할 때까지 그래프를 멈추는 기능은? → [[LangGraph interrupt]]
 - 여러 대화에서 재사용할 기억을 저장하려면? → [[LangGraph Store]]
+- state 갱신과 다음 노드 이동을 한 번에 표현하려면? → [[LangGraph Command]]
+- 런타임 항목마다 worker를 fan-out하려면? → [[LangGraph Send]]
+- 중단·재시작에도 외부 효과를 안전하게 유지하려면? → [[LangGraph Durable Execution]]
 - RAM 기반 Store 실습 구현은? → [[LangGraph InMemoryStore]]
 - Store의 장기 기억을 분류하는 기준은? → [[LangGraph namespace]]
 - 운영에서 메모리를 DB에 저장하려면? → [[LangGraph 운영용 메모리 저장소]]

@@ -37,7 +37,7 @@ def evaluator_optimizer_loop(task: str, threshold: float = 0.8, max_iters: int =
 
 | | Reflection | Evaluator-Optimizer |
 |--|-----------|---------------------|
-| 평가자 | 같은 LLM 자기 비평 | 별도 [[LLM-as-Judge|평가자 LLM]] (보통 더 강함) |
+| 평가자 | 같은 LLM 자기 비평 | 별도 [[LLM-as-Judge\|평가자 LLM]] (보통 더 강함) |
 | 종료 조건 | 비결정적 | 점수 임계치 |
 | 적합 영역 | 빠른 자기교정 | 품질이 객관적으로 평가되는 작업 |
 

@@ -11,7 +11,7 @@
 | `Tool` | 함수를 LLM이 호출 가능한 도구로 변환 |
 | `Retriever` | [[RAG(Retrieval-Augmented Generation)]] 검색 인터페이스 |
 | `Memory` | 대화 이력 보관 |
-| `Runnable` / LCEL | 컴포넌트를 `|`로 연결하는 표현식 |
+| `Runnable` / LCEL | 컴포넌트를 파이프 연산자로 연결하는 표현식 |
 
 ## LCEL (LangChain Expression Language)
 

@@ -21,6 +21,9 @@ tags:
 - [[LangGraph State]]
 - [[LangGraph Node]]
 - [[LangGraph Edge]]
+- [[LangGraph Command]]
+- [[LangGraph Send]]
+- [[LangGraph Durable Execution]]
 - [[LangGraph 워크플로우 아키텍처]]
 
 ## Workflow와 Tool 구분
@@ -29,6 +32,7 @@ tags:
 - [[LangChain @tool]]
 - [[LangGraph ToolNode]]
 - [[Tool Calling]]
+- [[Concurrent Tool Execution]]
 
 ## AI Workflow 구현 패턴
 
@@ -71,6 +75,8 @@ tags:
 - [[Qdrant]]
 - [[Reciprocal Rank Fusion]]
 - [[Agentic Search Tool]]
+- [[Graph Data Modeling]]
+- [[Retrieval Evaluation]]
 
 ## RAG 흐름
 

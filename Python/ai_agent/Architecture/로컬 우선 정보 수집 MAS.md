@@ -121,7 +121,7 @@ collected = "\n\n".join(m.content for m in state["messages"])
 
 | 출처 | 장점 | 한계 |
 |---|---|---|
-| [[SQLite 데이터 소스|SQLite DB]] | 구조화된 조회, 정확한 키 검색 | DB에 없는 내용은 못 찾음 |
+| [[SQLite 데이터 소스\|SQLite DB]] | 구조화된 조회, 정확한 키 검색 | DB에 없는 내용은 못 찾음 |
 | CSV | 만들기 쉽고 실습에 적합 | 규모가 커지면 관리가 어려움 |
 | Web | 최신 정보 가능 | 신뢰도·출처 검증 필요 |
 

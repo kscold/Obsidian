@@ -52,7 +52,7 @@ flowchart TD
 
 | 에이전트 | 정보 출처 | 역할 |
 |---|---|---|
-| `db_agent` | [[SQLite 데이터 소스|SQLite DB]] | 식단과 운동 조회 |
+| `db_agent` | [[SQLite 데이터 소스\|SQLite DB]] | 식단과 운동 조회 |
 | `csv_agent` | CSV 파일 | 증상과 주의사항 조회 |
 | `web_agent` | Tavily / Web | 로컬에 없을 때 외부 검색 |
 | `reporter` | 수집된 메시지 | 통합 건강관리 리포트 작성 |
