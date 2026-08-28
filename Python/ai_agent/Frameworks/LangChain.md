@@ -82,3 +82,11 @@ chain.invoke("환불 정책?")
 - "추상화가 과하다", "버전 호환성이 자주 깨진다"는 비판이 있음.
 - 단순 케이스는 OpenAI SDK 직접 호출이나 [[LlamaIndex]], [[Strands Agents]]가 더 가벼움.
 - 그래도 통합 폭이 압도적이라 PoC·프로토타이핑엔 여전히 1순위.
+
+## 관련
+
+- [[Ollama]] — `ChatOllama`로 로컬 모델 연결.
+- [[with_structured_output]] — 스키마 강제 메서드.
+- [[LangChain VectorStore 메서드]] — Qdrant를 감싸는 실제 경로.
+- [[LLM 호출 원장과 예산]] — Runnable 래핑 시 파생까지 전파해야 하는 이유.
+- [[LLM 샘플링 파라미터]] · [[LLM Provider 추상화]]

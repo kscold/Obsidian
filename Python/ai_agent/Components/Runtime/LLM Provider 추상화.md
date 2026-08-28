@@ -93,3 +93,7 @@ for provider_spec in PRIMARY, SECONDARY, TERTIARY:
 - [[Guardrails]] — Gateway의 보안 책임.
 - [[LLM Routing]] — 목적·능력·비용·가용성에 따라 모델을 고르는 상위 정책.
 - [[Prompt Caching]] — 안정적인 prefix 재사용과 cache token 관측.
+- [[Ollama]] — 로컬 provider. keep_alive·reasoning·num_ctx가 OpenAI와 다른 지점.
+- [[LLM 샘플링 파라미터]] — provider마다 이름이 다른 인자를 빌더가 흡수한다.
+- [[LLM 호출 원장과 예산]] — provider 경계에서의 실측.
+- [[sLLM(소형 LLM) 운용]] — 작은 모델을 같은 파이프라인에 태우기.

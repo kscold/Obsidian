@@ -125,6 +125,16 @@ Structured Output은 자유 텍스트 파싱 오류를 줄여 주지만 [[Guardr
 - **Optional 필드 남발** — 모델이 비울지 채울지 헷갈림. 가능하면 default 값 부여.
 - **description을 안 채움** — 필드 이름만으로 모델이 의미를 추측. `Field(description=...)`을 적자.
 
+## 더 깊이
+
+| 알고 싶은 것 | 노트 |
+|---|---|
+| LangChain 메서드와 method/include_raw | [[with_structured_output]] |
+| provider마다 반환 모양이 다른 문제 | [[Structured Output 정규화]] |
+| 스키마 형식 자체 | [[JSON Schema]] |
+| Pydantic v2 메서드 | [[Pydantic v2 메서드 사전]] |
+| 작은 모델에서의 준수율 | [[sLLM(소형 LLM) 운용]] |
+
 ## 관련
 
 - [[Pydantic]] — 스키마 정의 표준.
@@ -132,6 +142,8 @@ Structured Output은 자유 텍스트 파싱 오류를 줄여 주지만 [[Guardr
 - [[Intent Classification]] · [[Planning]] · [[LLM-as-Judge]] — 대표 활용처.
 - [[Contract Guardrail Pipeline]]
 - [[Guardrails]]
+- [[with_structured_output]] · [[Structured Output 정규화]] · [[JSON Schema]]
+- [[Ollama]] · [[sLLM(소형 LLM) 운용]]
 
 ## 공식 문서
 
