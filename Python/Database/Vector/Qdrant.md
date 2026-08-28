@@ -42,6 +42,19 @@ store = QdrantVectorStore(
 
 Qdrant 연결은 무겁기 때문에 모듈 import 시점이 아니라 실제 검색이 필요할 때 초기화하는 편이 안전하다. 이것이 [[Lazy Initialization]] 패턴이다.
 
+## 더 깊이
+
+| 알고 싶은 것 | 노트 |
+|---|---|
+| 저장 단위와 메타데이터 | [[Qdrant Point와 Payload]] |
+| 검색 호출의 인자 전부 | [[Qdrant query_points]] |
+| 조건 필터 (must/should/must_not) | [[Qdrant 메타데이터 필터]] |
+| 필터를 쓰려면 필요한 인덱스 | [[Payload Index]] |
+| 필터 시점이 왜 중요한가 | [[Pre-filtering vs Post-filtering]] |
+| 유사도 컷라인 | [[score_threshold]] |
+| 내부 인덱스 원리 | [[HNSW]] |
+| 인덱스를 안전하게 다시 만들기 | [[Qdrant 인덱스 재빌드 전략]] |
+
 ## 한 줄 정리
 
 Qdrant는 **임베딩 벡터를 저장하고 코사인 유사도로 비슷한 문서를 찾아주는 벡터 DB**이다.
@@ -52,3 +65,7 @@ Qdrant는 **임베딩 벡터를 저장하고 코사인 유사도로 비슷한 �
 - [[벡터 데이터베이스]]
 - [[코사인 유사도]]
 - [[Hybrid RAG Search]]
+- [[HNSW]]
+- [[Qdrant Point와 Payload]]
+- [[Qdrant query_points]]
+- [[데이터베이스 MOC]]

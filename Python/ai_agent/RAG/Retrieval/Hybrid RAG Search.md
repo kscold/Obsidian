@@ -71,3 +71,7 @@ Hybrid RAG Search는 **의미 검색, 키워드 검색, 그래프 관계, 구조
 - [[GraphRAG]]
 - [[Graph Data Modeling]]
 - [[Retrieval Evaluation]]
+- [[구조화 검색 채널]]
+- [[Hybrid Search]]
+- [[score_threshold]]
+- [[Pre-filtering vs Post-filtering]]

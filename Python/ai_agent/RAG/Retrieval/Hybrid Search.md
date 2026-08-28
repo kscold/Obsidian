@@ -81,3 +81,12 @@ flowchart TD
 ```
 
 - 이 3단 구조가 production RAG의 거의 표준.
+
+## 관련
+
+- [[BM25]] · [[TF-IDF]] · [[한국어 토크나이징과 BM25]]
+- [[Reciprocal Rank Fusion]]
+- [[Hybrid RAG Search]]
+- [[구조화 검색 채널]]
+- [[Qdrant]] · [[HNSW]]
+- [[Reranking]]
