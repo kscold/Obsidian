@@ -123,3 +123,8 @@ class Strict(BaseModel):
 - [[typing 모듈]] — 기반 타입 시스템.
 - [[데코레이터(Decorator)]] — `@field_validator` 등.
 - [[Tool Calling]] — args_schema로 정밀 제어.
+- [[Pydantic v2 메서드 사전]] — model_validate/model_dump/ConfigDict 실무 레퍼런스.
+- [[JSON Schema]] — model_json_schema()가 만들어 내는 것.
+- [[Structured Output 정규화]] — LLM 출력이 스키마를 안 지킬 때.
+- [[TypeVar와 제네릭]] — `bound=BaseModel` 패턴.
+- [[Enum]] · [[Literal]] — 허용값 표현.

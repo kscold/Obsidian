@@ -24,4 +24,8 @@ RowCountBand = Literal["tiny", "small", "medium", "large"]
 
 데이터/agent 상태 모델에서는 `RowCountBand`, `ProblemType` 같은 도메인 라벨을 `Literal`로 정의할 수 있다. 이렇게 하면 `"classification"`, `"regression"`, `"clustering"`, `"eda"`처럼 허용되는 problem type이 코드에 명시된다.
 
-관련: [[TypedDict]], [[Protocol]], [[dataclass]]
+## Enum과의 선택
+
+런타임 객체가 필요하거나 값 목록을 순회해야 하면 [[Enum]]이 맞고, "이 중 하나"만 표현하면 `Literal`이 가볍고 충분하다. [[Structured Output]] 스키마에서는 대부분 `Literal`을 쓴다 — [[JSON Schema]]의 `enum`으로 똑같이 변환되면서 코드가 더 얇다.
+
+관련: [[TypedDict]], [[Protocol]], [[dataclass]], [[Enum]], [[TypeVar와 제네릭]], [[Pydantic v2 메서드 사전]]
